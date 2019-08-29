@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item.html#var">Var Details</a></header>
+<main>
+<h1>item <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a></aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/_onclick/drag_drop.dm#L87">
+        <img src="git.png" width="16" height="16" title="code&#x2F;_onclick&#x2F;drag_drop.dm 87"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/item.html#var/actions">actions</a></th><td>List of /datum/action's that this item has.</td></tr>
+            <tr><th><a href="obj/item.html#var/actions_types">actions_types</a></th><td>List of paths of action datums to give to the item on New().</td></tr>
+            <tr><th><a href="obj/item.html#var/allowed">allowed</a></th><td>A list of items that can be put in this item for like suit storage or something?? I honestly have no idea.</td></tr>
+            <tr><th><a href="obj/item.html#var/alternate_worn_icon">alternate_worn_icon</a></th><td>If this is set, update_icons() will find on mob (WORN, NOT INHANDS) states in this file instead, primary use: badminnery/events</td></tr>
+            <tr><th><a href="obj/item.html#var/alternate_worn_layer">alternate_worn_layer</a></th><td>If this is set, update_icons() will force the on mob state (WORN, NOT INHANDS) onto this layer, instead of it's default</td></tr>
+            <tr><th><a href="obj/item.html#var/armour_penetration">armour_penetration</a></th><td>Percentage of armour effectiveness to remove</td></tr>
+            <tr><th><a href="obj/item.html#var/attack_verb">attack_verb</a></th><td>Used in attackby() to say how something was attacked &quot;[x] has been [z.attack_verb] by [y] with [z]&quot;</td></tr>
+            <tr><th><a href="obj/item.html#var/block_chance">block_chance</a></th><td>The chance that holding this item will block attacks.</td></tr>
+            <tr><th><a href="obj/item.html#var/body_parts_covered">body_parts_covered</a></th><td>The body parts this item covers when worn. Used mostly for armor. See _DEFINES/setup.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/breakouttime">breakouttime</a></th><td>In deciseconds, how long it takes to break out of an item by using resist. ex: handcuffs</td></tr>
+            <tr><th><a href="obj/item.html#var/cold_protection">cold_protection</a></th><td>Flags which determine which body parts are protected from cold. Use the HEAD, CHEST, GROIN, etc. flags. See setup.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/embedding">embedding</a></th><td>Used for when things get stuck in you and need to be surgically removed. See [/datum/embedding_behavior]</td></tr>
+            <tr><th><a href="obj/item.html#var/equip_delay_other">equip_delay_other</a></th><td>In deciseconds, how long an item takes to put on another person</td></tr>
+            <tr><th><a href="obj/item.html#var/equip_delay_self">equip_delay_self</a></th><td>In deciseconds, how long an item takes to equip; counts only for normal clothing slots, not pockets etc.</td></tr>
+            <tr><th><a href="obj/item.html#var/flags_cover">flags_cover</a></th><td>For flags such as GLASSESCOVERSEYES to show which slots this item can cover. See _DEFINES/inventory.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/flags_inv">flags_inv</a></th><td>This flag is used to determine when items in someone's inventory cover others. IE helmets making it so you can't see glasses, etc.</td></tr>
+            <tr><th><a href="obj/item.html#var/force_string">force_string</a></th><td>String form of an item's force. This appears in the tooltip of the item. Edit this var only to set a custom force string. For example toolboxes are &quot;robust&quot;</td></tr>
+            <tr><th><a href="obj/item.html#var/gas_transfer_coefficient">gas_transfer_coefficient</a></th><td>For leaking gas from turf to mask and vice-versa (for masks right now, but at some point, i'd like to include space helmets)</td></tr>
+            <tr><th><a href="obj/item.html#var/grind_results">grind_results</a></th><td>A reagent list containing the reagents this item produces when ground up in a grinder - this can be an empty list to allow for reagent transferring only</td></tr>
+            <tr><th><a href="obj/item.html#var/heat">heat</a></th><td>Used to define how hot it's flame will be when lit. Used it igniters, lighters, flares, candles, etc.</td></tr>
+            <tr><th><a href="obj/item.html#var/heat_protection">heat_protection</a></th><td>Flags which determine which body parts are protected from heat. Use the HEAD, CHEST, GROIN, etc. flags. See setup.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/hitsound">hitsound</a></th><td>The sound played when you hit things with it.</td></tr>
+            <tr><th><a href="obj/item.html#var/inhand_x_dimension">inhand_x_dimension</a></th><td>x dimension of the inhand sprite</td></tr>
+            <tr><th><a href="obj/item.html#var/inhand_y_dimension">inhand_y_dimension</a></th><td>y dimension of the inhand sprite</td></tr>
+            <tr><th><a href="obj/item.html#var/interaction_flags_item">interaction_flags_item</a></th><td>Flags for clicking the item with your hand. See _DEFINES/interaction_flags.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/item_color">item_color</a></th><td>Used in picking icon_states based on the string color here. Also used for cables or something. This could probably do with being deprecated.</td></tr>
+            <tr><th><a href="obj/item.html#var/item_flags">item_flags</a></th><td>See _DEFINES/obj_flags.dm for a list of item flags</td></tr>
+            <tr><th><a href="obj/item.html#var/item_state">item_state</a></th><td>The icon state for the icons that appear in the players hand while holding it. Gotten from /client/var/lefthand_file and /client/var/righthand_file</td></tr>
+            <tr><th><a href="obj/item.html#var/juice_results">juice_results</a></th><td>A reagent list containing the reagents this item produces when JUICED in a grinder!</td></tr>
+            <tr><th><a href="obj/item.html#var/last_force_string_check">last_force_string_check</a></th><td>When the force_string was last updated so we know when it's time to update it again. In my opinion this is dumb and uneeded. - qwerty</td></tr>
+            <tr><th><a href="obj/item.html#var/lefthand_file">lefthand_file</a></th><td>The icon for holding in hand icon states for the left hand.</td></tr>
+            <tr><th><a href="obj/item.html#var/master">master</a></th><td>Used for attaching items to other items. An item's master is the item it's attached to.</td></tr>
+            <tr><th><a href="obj/item.html#var/materials">materials</a></th><td>List of materials it contains as the keys and the quantities as the vals. Like when you pop it into an autolathe these are the materials you get out of it. Also used in microwaves to see if there is enough iron to make it explode. Oh yeah it's used for a ton of other things too. Less exciting things though.</td></tr>
+            <tr><th><a href="obj/item.html#var/max_heat_protection_temperature">max_heat_protection_temperature</a></th><td>Set this variable to determine up to which temperature (IN KELVIN) the item protects against heat damage. Keep at null to disable protection. Only protects areas set by heat_protection flags</td></tr>
+            <tr><th><a href="obj/item.html#var/min_cold_protection_temperature">min_cold_protection_temperature</a></th><td>Set this variable to determine down to which temperature (IN KELVIN) the item protects against cold damage. 0 is NOT an acceptable number due to if(varname) tests!! Keep at null to disable protection. Only protects areas set by cold_protection flags</td></tr>
+            <tr><th><a href="obj/item.html#var/permeability_coefficient">permeability_coefficient</a></th><td>For leaking chemicals/diseases from turf to mask and vice-versa</td></tr>
+            <tr><th><a href="obj/item.html#var/reach">reach</a></th><td>In tiles, how far this weapon can reach; 1 for adjacent, which is default</td></tr>
+            <tr><th><a href="obj/item.html#var/righthand_file">righthand_file</a></th><td>The icon for holding in hand icon states for the right hand.</td></tr>
+            <tr><th><a href="obj/item.html#var/rpg_loot">rpg_loot</a></th><td>For when wizards use rpg loot. See [/datum/rpg_loot]</td></tr>
+            <tr><th><a href="obj/item.html#var/sharpness">sharpness</a></th><td>IS_BLUNT | IS_SHARP | IS_SHARP_ACCURATE Used to define whether the item is sharp or blunt. IS_SHARP is used if the item is supposed to be able to cut open things. See _DEFINES/combat.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/siemens_coefficient">siemens_coefficient</a></th><td>For electrical admittance/conductance (electrocution checks and shit)</td></tr>
+            <tr><th><a href="obj/item.html#var/slot_equipment_priority">slot_equipment_priority</a></th><td>The list of slots by priority. equip_to_appropriate_slot() uses this list. Doesn't matter if a mob type doesn't have a slot. For default list, see /mob/proc/equip_to_appropriate_slot()</td></tr>
+            <tr><th><a href="obj/item.html#var/slot_flags">slot_flags</a></th><td>This is used to determine on which inventory slots an item can fit.</td></tr>
+            <tr><th><a href="obj/item.html#var/slowdown">slowdown</a></th><td>How much clothing is slowing you down. Negative values speeds you up</td></tr>
+            <tr><th><a href="obj/item.html#var/species_exception">species_exception</a></th><td>list() of species types, if a species cannot put items in a certain slot, but species type is in list, it will be able to wear that item</td></tr>
+            <tr><th><a href="obj/item.html#var/strip_delay">strip_delay</a></th><td>In deciseconds, how long an item takes to remove from another person</td></tr>
+            <tr><th><a href="obj/item.html#var/throwhitsound">throwhitsound</a></th><td>The sound played when you throw it at something and it hits that something.</td></tr>
+            <tr><th><a href="obj/item.html#var/tip_timer">tip_timer</a></th><td>Used for tracking the callback timer for the delay it takes for the tooltip to appear after hovering over the item in your inventory.</td></tr>
+            <tr><th><a href="obj/item.html#var/tool_behaviour">tool_behaviour</a></th><td>What this thing does when used like a tool. NONE if it isn't a tool. If I give a piece of paper TOOL_WRENCH I can use it to unwrench tables. See _DEFINES/tools.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/toolspeed">toolspeed</a></th><td>The tool speed multiplier of how long it takes to do the tool action.</td></tr>
+            <tr><th><a href="obj/item.html#var/transparent_protection">transparent_protection</a></th><td>This flag is used to determine when items in someone's inventory cover others, however you can still see through that item and know what it covers. ex: You can see someone's mask through their transparent visor, but you can't reach it.</td></tr>
+            <tr><th><a href="obj/item.html#var/trigger_guard">trigger_guard</a></th><td>Seemingly used only for guns so I'm not sure why it's here. Basically used to see whether you are able to pull the gun trigger. See _DEFINES/combat.dm</td></tr>
+            <tr><th><a href="obj/item.html#var/usesound">usesound</a></th><td>If it's a tool, this is the sound played when the tool is used. For example when you use a wrench it goes <em>ccTCTHCHHTHCHT</em></td></tr>
+            <tr><th><a href="obj/item.html#var/w_class">w_class</a></th><td>The weight class of an object. Used to determine tons of things, like if it's too cumbersome for you to drag, if it can fit in certain storage items, how long it takes to burn, and more. See _DEFINES/inventory.dm to see all weight classes.</td></tr>
+            <tr><th><a href="obj/item.html#var/worn_x_dimension">worn_x_dimension</a></th><td>x dimension of the worn sprite</td></tr>
+            <tr><th><a href="obj/item.html#var/worn_y_dimension">worn_y_dimension</a></th><td>y dimension of the worn sprite</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/actions">actions</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L72">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 72"/></a></h3>
+        <p>List of /datum/action's that this item has.</p><h3><aside class="declaration">var </aside><a name="var/actions_types">actions_types</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L74">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 74"/></a></h3>
+        <p>List of paths of action datums to give to the item on New().</p><h3><aside class="declaration">var </aside><a name="var/allowed">allowed</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L101">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 101"/></a></h3>
+        <p>A list of items that can be put in this item for like suit storage or something?? I honestly have no idea.</p><h3><aside class="declaration">var </aside><a name="var/alternate_worn_icon">alternate_worn_icon</a>
+            <aside>&ndash; /icon</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 34"/></a></h3>
+        <p>If this is set, update_icons() will find on mob (WORN, NOT INHANDS) states in this file instead, primary use: badminnery/events</p><h3><aside class="declaration">var </aside><a name="var/alternate_worn_layer">alternate_worn_layer</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 36"/></a></h3>
+        <p>If this is set, update_icons() will force the on mob state (WORN, NOT INHANDS) onto this layer, instead of it's default</p><h3><aside class="declaration">var </aside><a name="var/armour_penetration">armour_penetration</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L99">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 99"/></a></h3>
+        <p>Percentage of armour effectiveness to remove</p><h3><aside class="declaration">var </aside><a name="var/attack_verb">attack_verb</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L115">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 115"/></a></h3>
+        <p>Used in attackby() to say how something was attacked &quot;[x] has been [z.attack_verb] by [y] with [z]&quot;</p><h3><aside class="declaration">var </aside><a name="var/block_chance">block_chance</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L139">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 139"/></a></h3>
+        <p>The chance that holding this item will block attacks.</p><h3><aside class="declaration">var </aside><a name="var/body_parts_covered">body_parts_covered</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L88">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 88"/></a></h3>
+        <p>The body parts this item covers when worn. Used mostly for armor. See _DEFINES/setup.dm</p><h3><aside class="declaration">var </aside><a name="var/breakouttime">breakouttime</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L109">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 109"/></a></h3>
+        <p>In deciseconds, how long it takes to break out of an item by using resist. ex: handcuffs</p><h3><aside class="declaration">var </aside><a name="var/cold_protection">cold_protection</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 65"/></a></h3>
+        <p>Flags which determine which body parts are protected from cold. Use the HEAD, CHEST, GROIN, etc. flags. See setup.dm</p><h3><aside class="declaration">var </aside><a name="var/embedding">embedding</a>
+            <aside>&ndash; /<a href="datum.html">datum</a>/embedding_behavior</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L124">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 124"/></a></h3>
+        <p>Used for when things get stuck in you and need to be surgically removed. See [/datum/embedding_behavior]</p><h3><aside class="declaration">var </aside><a name="var/equip_delay_other">equip_delay_other</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L105">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 105"/></a></h3>
+        <p>In deciseconds, how long an item takes to put on another person</p><h3><aside class="declaration">var </aside><a name="var/equip_delay_self">equip_delay_self</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L103">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 103"/></a></h3>
+        <p>In deciseconds, how long an item takes to equip; counts only for normal clothing slots, not pockets etc.</p><h3><aside class="declaration">var </aside><a name="var/flags_cover">flags_cover</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L127">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 127"/></a></h3>
+        <p>For flags such as GLASSESCOVERSEYES to show which slots this item can cover. See _DEFINES/inventory.dm</p><h3><aside class="declaration">var </aside><a name="var/flags_inv">flags_inv</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L77">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 77"/></a></h3>
+        <p>This flag is used to determine when items in someone's inventory cover others. IE helmets making it so you can't see glasses, etc.</p><h3><aside class="declaration">var </aside><a name="var/force_string">force_string</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L158">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 158"/></a></h3>
+        <p>String form of an item's force. This appears in the tooltip of the item. Edit this var only to set a custom force string. For example toolboxes are &quot;robust&quot;</p><h3><aside class="declaration">var </aside><a name="var/gas_transfer_coefficient">gas_transfer_coefficient</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 90"/></a></h3>
+        <p>For leaking gas from turf to mask and vice-versa (for masks right now, but at some point, i'd like to include space helmets)</p><h3><aside class="declaration">var </aside><a name="var/grind_results">grind_results</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L169">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 169"/></a></h3>
+        <p>A reagent list containing the reagents this item produces when ground up in a grinder - this can be an empty list to allow for reagent transferring only</p><h3><aside class="declaration">var </aside><a name="var/heat">heat</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L129">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 129"/></a></h3>
+        <p>Used to define how hot it's flame will be when lit. Used it igniters, lighters, flares, candles, etc.</p><h3><aside class="declaration">var </aside><a name="var/heat_protection">heat_protection</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L63">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 63"/></a></h3>
+        <p>Flags which determine which body parts are protected from heat. Use the HEAD, CHEST, GROIN, etc. flags. See setup.dm</p><h3><aside class="declaration">var </aside><a name="var/hitsound">hitsound</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 46"/></a></h3>
+        <p>The sound played when you hit things with it.</p><h3><aside class="declaration">var </aside><a name="var/inhand_x_dimension">inhand_x_dimension</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 28"/></a></h3>
+        <p>x dimension of the inhand sprite</p><h3><aside class="declaration">var </aside><a name="var/inhand_y_dimension">inhand_y_dimension</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 30"/></a></h3>
+        <p>y dimension of the inhand sprite</p><h3><aside class="declaration">var </aside><a name="var/interaction_flags_item">interaction_flags_item</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L82">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 82"/></a></h3>
+        <p>Flags for clicking the item with your hand. See _DEFINES/interaction_flags.dm</p><h3><aside class="declaration">var </aside><a name="var/item_color">item_color</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 85"/></a></h3>
+        <p>Used in picking icon_states based on the string color here. Also used for cables or something. This could probably do with being deprecated.</p><h3><aside class="declaration">var </aside><a name="var/item_flags">item_flags</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L43">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 43"/></a></h3>
+        <p>See _DEFINES/obj_flags.dm for a list of item flags</p><h3><aside class="declaration">var </aside><a name="var/item_state">item_state</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 12"/></a></h3>
+        <p>The icon state for the icons that appear in the players hand while holding it. Gotten from /client/var/lefthand_file and /client/var/righthand_file</p><h3><aside class="declaration">var </aside><a name="var/juice_results">juice_results</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L173">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 173"/></a></h3>
+        <p>A reagent list containing the reagents this item produces when JUICED in a grinder!</p><h3><aside class="declaration">var </aside><a name="var/last_force_string_check">last_force_string_check</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L160">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 160"/></a></h3>
+        <p>When the force_string was last updated so we know when it's time to update it again. In my opinion this is dumb and uneeded. - qwerty</p><h3><aside class="declaration">var </aside><a name="var/lefthand_file">lefthand_file</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L14">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 14"/></a></h3>
+        <p>The icon for holding in hand icon states for the left hand.</p><h3><aside class="declaration">var </aside><a name="var/master">master</a>
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a></aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 60"/></a></h3>
+        <p>Used for attaching items to other items. An item's master is the item it's attached to.</p><h3><aside class="declaration">var </aside><a name="var/materials">materials</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L112">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 112"/></a></h3>
+        <p>List of materials it contains as the keys and the quantities as the vals. Like when you pop it into an autolathe these are the materials you get out of it. Also used in microwaves to see if there is enough iron to make it explode. Oh yeah it's used for a ton of other things too. Less exciting things though.</p><h3><aside class="declaration">var </aside><a name="var/max_heat_protection_temperature">max_heat_protection_temperature</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L67">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 67"/></a></h3>
+        <p>Set this variable to determine up to which temperature (IN KELVIN) the item protects against heat damage. Keep at null to disable protection. Only protects areas set by heat_protection flags</p><h3><aside class="declaration">var </aside><a name="var/min_cold_protection_temperature">min_cold_protection_temperature</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L69">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 69"/></a></h3>
+        <p>Set this variable to determine down to which temperature (IN KELVIN) the item protects against cold damage. 0 is NOT an acceptable number due to if(varname) tests!! Keep at null to disable protection. Only protects areas set by cold_protection flags</p><h3><aside class="declaration">var </aside><a name="var/permeability_coefficient">permeability_coefficient</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L92">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 92"/></a></h3>
+        <p>For leaking chemicals/diseases from turf to mask and vice-versa</p><h3><aside class="declaration">var </aside><a name="var/reach">reach</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 143"/></a></h3>
+        <p>In tiles, how far this weapon can reach; 1 for adjacent, which is default</p><h3><aside class="declaration">var </aside><a name="var/righthand_file">righthand_file</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 16"/></a></h3>
+        <p>The icon for holding in hand icon states for the right hand.</p><h3><aside class="declaration">var </aside><a name="var/rpg_loot">rpg_loot</a>
+            <aside>&ndash; /<a href="datum.html">datum</a>/rpg_loot</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L153">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 153"/></a></h3>
+        <p>For when wizards use rpg loot. See [/datum/rpg_loot]</p><h3><aside class="declaration">var </aside><a name="var/sharpness">sharpness</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L131">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 131"/></a></h3>
+        <p>IS_BLUNT | IS_SHARP | IS_SHARP_ACCURATE Used to define whether the item is sharp or blunt. IS_SHARP is used if the item is supposed to be able to cut open things. See _DEFINES/combat.dm</p><h3><aside class="declaration">var </aside><a name="var/siemens_coefficient">siemens_coefficient</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L95">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 95"/></a></h3>
+        <p>For electrical admittance/conductance (electrocution checks and shit)</p><h3><aside class="declaration">var </aside><a name="var/slot_equipment_priority">slot_equipment_priority</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L146">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 146"/></a></h3>
+        <p>The list of slots by priority. equip_to_appropriate_slot() uses this list. Doesn't matter if a mob type doesn't have a slot. For default list, see /mob/proc/equip_to_appropriate_slot()</p><h3><aside class="declaration">var </aside><a name="var/slot_flags">slot_flags</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 54"/></a></h3>
+        <p>This is used to determine on which inventory slots an item can fit.</p><h3><aside class="declaration">var </aside><a name="var/slowdown">slowdown</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L97">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 97"/></a></h3>
+        <p>How much clothing is slowing you down. Negative values speeds you up</p><h3><aside class="declaration">var </aside><a name="var/species_exception">species_exception</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L117">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 117"/></a></h3>
+        <p>list() of species types, if a species cannot put items in a certain slot, but species type is in list, it will be able to wear that item</p><h3><aside class="declaration">var </aside><a name="var/strip_delay">strip_delay</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L107">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 107"/></a></h3>
+        <p>In deciseconds, how long an item takes to remove from another person</p><h3><aside class="declaration">var </aside><a name="var/throwhitsound">throwhitsound</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L50">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 50"/></a></h3>
+        <p>The sound played when you throw it at something and it hits that something.</p><h3><aside class="declaration">var </aside><a name="var/tip_timer">tip_timer</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L162">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 162"/></a></h3>
+        <p>Used for tracking the callback timer for the delay it takes for the tooltip to appear after hovering over the item in your inventory.</p><h3><aside class="declaration">var </aside><a name="var/tool_behaviour">tool_behaviour</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L134">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 134"/></a></h3>
+        <p>What this thing does when used like a tool. NONE if it isn't a tool. If I give a piece of paper TOOL_WRENCH I can use it to unwrench tables. See _DEFINES/tools.dm</p><h3><aside class="declaration">var </aside><a name="var/toolspeed">toolspeed</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L136">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 136"/></a></h3>
+        <p>The tool speed multiplier of how long it takes to do the tool action.</p><h3><aside class="declaration">var </aside><a name="var/transparent_protection">transparent_protection</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L79">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 79"/></a></h3>
+        <p>This flag is used to determine when items in someone's inventory cover others, however you can still see through that item and know what it covers. ex: You can see someone's mask through their transparent visor, but you can't reach it.</p><h3><aside class="declaration">var </aside><a name="var/trigger_guard">trigger_guard</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L165">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 165"/></a></h3>
+        <p>Seemingly used only for guns so I'm not sure why it's here. Basically used to see whether you are able to pull the gun trigger. See _DEFINES/combat.dm</p><h3><aside class="declaration">var </aside><a name="var/usesound">usesound</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 48"/></a></h3>
+        <p>If it's a tool, this is the sound played when the tool is used. For example when you use a wrench it goes <em>ccTCTHCHHTHCHT</em></p><h3><aside class="declaration">var </aside><a name="var/w_class">w_class</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 52"/></a></h3>
+        <p>The weight class of an object. Used to determine tons of things, like if it's too cumbersome for you to drag, if it can fit in certain storage items, how long it takes to burn, and more. See _DEFINES/inventory.dm to see all weight classes.</p><h3><aside class="declaration">var </aside><a name="var/worn_x_dimension">worn_x_dimension</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 22"/></a></h3>
+        <p>x dimension of the worn sprite</p><h3><aside class="declaration">var </aside><a name="var/worn_y_dimension">worn_y_dimension</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/items.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items.dm 24"/></a></h3>
+        <p>y dimension of the worn sprite</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

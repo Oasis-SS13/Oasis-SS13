@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj.html#var">Var Details</a> - <a href="obj.html#proc">Proc Details</a></header>
+<main>
+<h1>/<a href="obj.html">obj</a><aside> inherits /<a href="atom.html">atom</a>/movable</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 2"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj.html#var/acid_level">acid_level</a></th><td>How much acid is on that obj</td></tr>
+            <tr><th><a href="obj.html#var/integrity_failure">integrity_failure</a></th><td>The object will break once obj_integrity reaches this amount in take_damage(). 0 if we have no special broken behavior.</td></tr>
+            <tr><th><a href="obj.html#var/max_integrity">max_integrity</a></th><td>The maximum integrity the object can have.</td></tr>
+            <tr><th><a href="obj.html#var/obj_integrity">obj_integrity</a></th><td>The integrity the object starts at. Defaults to max_integrity.</td></tr>
+            <tr><th><a href="obj.html#var/persistence_replacement">persistence_replacement</a></th><td>Have something WAY too amazing to live to the next round? Set a new path here. Overuse of this var will make me upset. Will replace the object with the type you specify during persistence.</td></tr>
+            <tr><th><a href="obj.html#var/renamedByPlayer">renamedByPlayer</a></th><td>Set when a player uses a pen on a renamable object</td></tr>
+            <tr><th><a href="obj.html#var/resistance_flags">resistance_flags</a></th><td>INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ON_FIRE | UNACIDABLE | ACID_PROOF</td></tr>
+            <tr><th><a href="obj.html#var/set_obj_flags">set_obj_flags</a></th><td>ONLY FOR MAPPING: Sets flags from a string list, handled in Initialize. Usage: set_obj_flags = &quot;EMAGGED;!CAN_BE_HIT&quot; to set EMAGGED and clear CAN_BE_HIT.</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj.html#proc/fire_act">fire_act</a></th><td>FIRE</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/acid_level">acid_level</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 24"/></a></h3>
+        <p>How much acid is on that obj</p><h3><aside class="declaration">var </aside><a name="var/integrity_failure">integrity_failure</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 18"/></a></h3>
+        <p>The object will break once obj_integrity reaches this amount in take_damage(). 0 if we have no special broken behavior.</p><h3><aside class="declaration">var </aside><a name="var/max_integrity">max_integrity</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 16"/></a></h3>
+        <p>The maximum integrity the object can have.</p><h3><aside class="declaration">var </aside><a name="var/obj_integrity">obj_integrity</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L14">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 14"/></a></h3>
+        <p>The integrity the object starts at. Defaults to max_integrity.</p><h3><aside class="declaration">var </aside><a name="var/persistence_replacement">persistence_replacement</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 27"/></a></h3>
+        <p>Have something WAY too amazing to live to the next round? Set a new path here. Overuse of this var will make me upset. Will replace the object with the type you specify during persistence.</p><h3><aside class="declaration">var </aside><a name="var/renamedByPlayer">renamedByPlayer</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 38"/></a></h3>
+        <p>Set when a player uses a pen on a renamable object</p><h3><aside class="declaration">var </aside><a name="var/resistance_flags">resistance_flags</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 21"/></a></h3>
+        <p>INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ON_FIRE | UNACIDABLE | ACID_PROOF</p><h3><aside class="declaration">var </aside><a name="var/set_obj_flags">set_obj_flags</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/objs.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;objs.dm 7"/></a></h3>
+        <p>ONLY FOR MAPPING: Sets flags from a string list, handled in Initialize. Usage: set_obj_flags = &quot;EMAGGED;!CAN_BE_HIT&quot; to set EMAGGED and clear CAN_BE_HIT.</p><h2><a name="proc">Proc Details</a></h2><h3><a name="proc/fire_act">fire_act</a><aside>(exposed_temperature, exposed_volume) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/objects/obj_defense.dm#L204">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;obj_defense.dm 204"/></a></aside>
+        </h3>
+        <p>FIRE</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

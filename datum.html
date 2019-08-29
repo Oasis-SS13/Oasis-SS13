@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum.html#var">Var Details</a> - <a href="datum.html#proc">Proc Details</a></header>
+<main>
+<h1>/<a href="datum.html">datum</a>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 11"/></a></h1>
+
+<p>The absolute base class for everything</p>
+<p>A datum instantiated has no physical world prescence, use an atom if you want something
+that actually lives in the world</p>
+<p>Be very mindful about adding variables to this class, they are inherited by every single
+thing in the entire game, and so you can easily cause memory usage to rise a lot with careless
+use of variables at this level</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum.html#var/active_timers">active_timers</a></th><td>Active timers with this datum as the target</td></tr>
+            <tr><th><a href="datum.html#var/comp_lookup">comp_lookup</a></th><td>Any datum registered to receive signals from this datum is in this list</td></tr>
+            <tr><th><a href="datum.html#var/datum_components">datum_components</a></th><td>Components attached to this datum</td></tr>
+            <tr><th><a href="datum.html#var/datum_flags">datum_flags</a></th><td>Datum level flags</td></tr>
+            <tr><th><a href="datum.html#var/gc_destroyed">gc_destroyed</a></th><td>Tick count time when this object was destroyed.</td></tr>
+            <tr><th><a href="datum.html#var/signal_enabled">signal_enabled</a></th><td>Is this datum capable of sending signals?</td></tr>
+            <tr><th><a href="datum.html#var/signal_procs">signal_procs</a></th><td>List of callbacks for signal procs</td></tr>
+            <tr><th><a href="datum.html#var/status_traits">status_traits</a></th><td>Status traits attached to this datum</td></tr>
+            <tr><th><a href="datum.html#var/weak_reference">weak_reference</a></th><td>A weak reference to another datum</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum.html#proc/Destroy">Destroy</a></th><td>Default implementation of clean-up code.</td></tr>
+            <tr><th><a href="datum.html#proc/deserialize_json">deserialize_json</a></th><td>Deserializes from JSON. Does not parse type.</td></tr>
+            <tr><th><a href="datum.html#proc/deserialize_list">deserialize_list</a></th><td>Accepts a LIST from deserialize_datum. Should return src or another datum.</td></tr>
+            <tr><th><a href="datum.html#proc/serialize_json">serialize_json</a></th><td>Serializes into JSON. Does not encode type.</td></tr>
+            <tr><th><a href="datum.html#proc/serialize_list">serialize_list</a></th><td>Return a LIST for serialize_datum to encode! Not the actual json!</td></tr>
+            <tr><th><a href="datum.html#proc/ui_act">ui_act</a></th><td>public</td></tr>
+            <tr><th><a href="datum.html#proc/ui_base_html">ui_base_html</a></th><td>public</td></tr>
+            <tr><th><a href="datum.html#proc/ui_close">ui_close</a></th><td>public</td></tr>
+            <tr><th><a href="datum.html#proc/ui_data">ui_data</a></th><td>public</td></tr>
+            <tr><th><a href="datum.html#proc/ui_host">ui_host</a></th><td>private</td></tr>
+            <tr><th><a href="datum.html#proc/ui_interact">ui_interact</a></th><td>tgui external</td></tr>
+            <tr><th><a href="datum.html#proc/ui_status">ui_status</a></th><td>tgui states</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/active_timers">active_timers</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 21"/></a></h3>
+        <p>Active timers with this datum as the target</p><h3><aside class="declaration">var </aside><a name="var/comp_lookup">comp_lookup</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 27"/></a></h3>
+        <p>Any datum registered to receive signals from this datum is in this list</p><h3><aside class="declaration">var </aside><a name="var/datum_components">datum_components</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L23">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 23"/></a></h3>
+        <p>Components attached to this datum</p><h3><aside class="declaration">var </aside><a name="var/datum_flags">datum_flags</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 33"/></a></h3>
+        <p>Datum level flags</p><h3><aside class="declaration">var </aside><a name="var/gc_destroyed">gc_destroyed</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 18"/></a></h3>
+        <p>Tick count time when this object was destroyed.</p>
+<p>If this is non zero then the object has been garbage collected and is awaiting either
+a hard del by the GC subsystme, or to be autocollected (if it has no references)</p><h3><aside class="declaration">var </aside><a name="var/signal_enabled">signal_enabled</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 31"/></a></h3>
+        <p>Is this datum capable of sending signals?</p><h3><aside class="declaration">var </aside><a name="var/signal_procs">signal_procs</a>
+            <aside>&ndash; /list/list/datum/callback</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 29"/></a></h3>
+        <p>List of callbacks for signal procs</p><h3><aside class="declaration">var </aside><a name="var/status_traits">status_traits</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 25"/></a></h3>
+        <p>Status traits attached to this datum</p><h3><aside class="declaration">var </aside><a name="var/weak_reference">weak_reference</a>
+            <aside>&ndash; /<a href="datum.html">datum</a>/weakref</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L47">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 47"/></a></h3>
+        <p>A weak reference to another datum</p><h2><a name="proc">Proc Details</a></h2><h3><aside class="declaration">proc </aside><a name="proc/Destroy">Destroy</a><aside>(force, ...) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L63">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 63"/></a></aside>
+        </h3>
+        <p>Default implementation of clean-up code.</p>
+<p>This should be overridden to remove all references pointing to the object being destroyed, if
+you do override it, make sure to call the parent and return it's return value by default</p>
+<p>Return an appropriate QDEL_HINT to modify handling of your deletion;
+in most cases this is QDEL_HINT_QUEUE.</p>
+<p>The base case is responsible for doing the following</p>
+<ul>
+<li>Erasing timers pointing to this datum</li>
+<li>Erasing compenents on this datum</li>
+<li>Notifying datums listening to signals from this datum that we are going away</li>
+</ul>
+<p>Returns QDEL_HINT_QUEUE</p><h3><aside class="declaration">proc </aside><a name="proc/deserialize_json">deserialize_json</a><aside>(/list/input, /list/options) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L154">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 154"/></a></aside>
+        </h3>
+        <p>Deserializes from JSON. Does not parse type.</p><h3><aside class="declaration">proc </aside><a name="proc/deserialize_list">deserialize_list</a><aside>(json, /list/options) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L142">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 142"/></a></aside>
+        </h3>
+        <p>Accepts a LIST from deserialize_datum. Should return src or another datum.</p><h3><aside class="declaration">proc </aside><a name="proc/serialize_json">serialize_json</a><aside>(/list/options) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L146">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 146"/></a></aside>
+        </h3>
+        <p>Serializes into JSON. Does not encode type.</p><h3><aside class="declaration">proc </aside><a name="proc/serialize_list">serialize_list</a><aside>(/list/options) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L138">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 138"/></a></aside>
+        </h3>
+        <p>Return a LIST for serialize_datum to encode! Not the actual json!</p><h3><aside class="declaration">proc </aside><a name="proc/ui_act">ui_act</a><aside>(action, /list/params, /<a href="datum.html">datum</a>/<a href="datum/tgui.html">tgui</a>/ui, /<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/state) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 48"/></a></aside>
+        </h3>
+        <p>public</p>
+<p>Called on a UI when the UI receieves a href.
+Think of this as Topic().</p>
+<p>required action string The action/button that has been invoked by the user.
+required params list A list of parameters attached to the button.</p>
+<p>return bool If the UI should be updated or not.</p><h3><aside class="declaration">proc </aside><a name="proc/ui_base_html">ui_base_html</a><aside>(html) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 64"/></a></aside>
+        </h3>
+        <p>public</p>
+<p>Called on an object when a tgui object is being created, allowing you to customise the html
+For example: inserting a custom stylesheet that you need in the head</p>
+<p>For this purpose, some tags are available in the html, to be parsed out with replacetext
+(customheadhtml) - Additions to the head tag</p>
+<p>required html the html base text</p><h3><aside class="declaration">proc </aside><a name="proc/ui_close">ui_close</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 90"/></a></aside>
+        </h3>
+        <p>public</p>
+<p>Called on a UI's object when the UI is closed, not to be confused with client/verb/uiclose(), which closes the ui window</p><h3><aside class="declaration">proc </aside><a name="proc/ui_data">ui_data</a><aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 33"/></a></aside>
+        </h3>
+        <p>public</p>
+<p>Data to be sent to the UI.
+This must be implemented for a UI to work.</p>
+<p>required user mob The mob interacting with the UI.</p>
+<p>return list Data to be sent to the UI.</p><h3><aside class="declaration">proc </aside><a name="proc/ui_host">ui_host</a><aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L74">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 74"/></a></aside>
+        </h3>
+        <p>private</p>
+<p>The UI's host object (usually src_object).
+This allows modules/datums to have the UI attached to them,
+and be a part of another object.</p><h3><aside class="declaration">proc </aside><a name="proc/ui_interact">ui_interact</a><aside>(/<a href="mob.html">mob</a>/user, ui_key, /<a href="datum.html">datum</a>/<a href="datum/tgui.html">tgui</a>/ui, force_open, /<a href="datum.html">datum</a>/<a href="datum/tgui.html">tgui</a>/master_ui, /<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/state) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/external.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;external.dm 20"/></a></aside>
+        </h3>
+        <p>tgui external</p>
+<p>Contains all external tgui declarations.</p>
+<p>public</p>
+<p>Used to open and update UIs.
+If this proc is not implemented properly, the UI will not update correctly.</p>
+<p>required user mob The mob who opened/is using the UI.
+optional ui_key string The ui_key of the UI.
+optional ui datum/tgui The UI to be updated, if it exists.
+optional force_open bool If the UI should be re-opened instead of updated.
+optional master_ui datum/tgui The parent UI.
+optional state datum/ui_state The state used to determine status.</p><h3><aside class="declaration">proc </aside><a name="proc/ui_status">ui_status</a><aside>(/<a href="mob.html">mob</a>/user, /<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/state) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/tgui/states.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states.dm 17"/></a></aside>
+        </h3>
+        <p>tgui states</p>
+<p>Base state and helpers for states. Just does some sanity checks, implement a state for in-depth checks.</p>
+<p>public</p>
+<p>Checks the UI state for a mob.</p>
+<p>required user mob The mob who opened/is using the UI.
+required state datum/ui_state The state to check.</p>
+<p>return UI_state The state of the UI.</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

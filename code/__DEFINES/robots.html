@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;robots.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/robots.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/robots.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_IDLE">BOT_IDLE</a></th><td>idle</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_HUNT">BOT_HUNT</a></th><td>found target, hunting</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_PREP_ARREST">BOT_PREP_ARREST</a></th><td>at target, preparing to arrest</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_ARREST">BOT_ARREST</a></th><td>arresting target</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_START_PATROL">BOT_START_PATROL</a></th><td>start patrol</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_PATROL">BOT_PATROL</a></th><td>patrolling</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_SUMMON">BOT_SUMMON</a></th><td>summoned by PDA</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_CLEANING">BOT_CLEANING</a></th><td>cleaning (cleanbots)</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_REPAIRING">BOT_REPAIRING</a></th><td>repairing hull breaches (floorbots)</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_MOVING">BOT_MOVING</a></th><td>for clean/floor/med bots, when moving.</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_HEALING">BOT_HEALING</a></th><td>healing people (medbots)</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_RESPONDING">BOT_RESPONDING</a></th><td>responding to a call from the AI</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_DELIVER">BOT_DELIVER</a></th><td>moving to deliver</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_GO_HOME">BOT_GO_HOME</a></th><td>returning to home</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_BLOCKED">BOT_BLOCKED</a></th><td>blocked</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_NAV">BOT_NAV</a></th><td>computing navigation</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_WAIT_FOR_NAV">BOT_WAIT_FOR_NAV</a></th><td>waiting for nav computation</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/BOT_NO_ROUTE">BOT_NO_ROUTE</a></th><td>no destination beacon found (or no route)</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/SEC_BOT">SEC_BOT</a></th><td>Secutritrons (Beepsky) and ED-209s</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/MULE_BOT">MULE_BOT</a></th><td>MULEbots</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/FLOOR_BOT">FLOOR_BOT</a></th><td>Floorbots</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/CLEAN_BOT">CLEAN_BOT</a></th><td>Cleanbots</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/MED_BOT">MED_BOT</a></th><td>Medibots</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/HONK_BOT">HONK_BOT</a></th><td>Honkbots &amp; ED-Honks</td></tr>
+        <tr><th><a href="code/__DEFINES/robots.html#define/FIRE_BOT">FIRE_BOT</a></th><td>Firebots</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/BOT_ARREST">BOT_ARREST</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 15"/></a>
+    </h3>
+    <p>arresting target</p><h3><aside class="declaration">#define </aside><a name="define/BOT_BLOCKED">BOT_BLOCKED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L26">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 26"/></a>
+    </h3>
+    <p>blocked</p><h3><aside class="declaration">#define </aside><a name="define/BOT_CLEANING">BOT_CLEANING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L19">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 19"/></a>
+    </h3>
+    <p>cleaning (cleanbots)</p><h3><aside class="declaration">#define </aside><a name="define/BOT_DELIVER">BOT_DELIVER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 24"/></a>
+    </h3>
+    <p>moving to deliver</p><h3><aside class="declaration">#define </aside><a name="define/BOT_GO_HOME">BOT_GO_HOME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 25"/></a>
+    </h3>
+    <p>returning to home</p><h3><aside class="declaration">#define </aside><a name="define/BOT_HEALING">BOT_HEALING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 22"/></a>
+    </h3>
+    <p>healing people (medbots)</p><h3><aside class="declaration">#define </aside><a name="define/BOT_HUNT">BOT_HUNT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L13">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 13"/></a>
+    </h3>
+    <p>found target, hunting</p><h3><aside class="declaration">#define </aside><a name="define/BOT_IDLE">BOT_IDLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 12"/></a>
+    </h3>
+    <p>idle</p><h3><aside class="declaration">#define </aside><a name="define/BOT_MOVING">BOT_MOVING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 21"/></a>
+    </h3>
+    <p>for clean/floor/med bots, when moving.</p><h3><aside class="declaration">#define </aside><a name="define/BOT_NAV">BOT_NAV</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 27"/></a>
+    </h3>
+    <p>computing navigation</p><h3><aside class="declaration">#define </aside><a name="define/BOT_NO_ROUTE">BOT_NO_ROUTE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 29"/></a>
+    </h3>
+    <p>no destination beacon found (or no route)</p><h3><aside class="declaration">#define </aside><a name="define/BOT_PATROL">BOT_PATROL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 17"/></a>
+    </h3>
+    <p>patrolling</p><h3><aside class="declaration">#define </aside><a name="define/BOT_PREP_ARREST">BOT_PREP_ARREST</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L14">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 14"/></a>
+    </h3>
+    <p>at target, preparing to arrest</p><h3><aside class="declaration">#define </aside><a name="define/BOT_REPAIRING">BOT_REPAIRING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 20"/></a>
+    </h3>
+    <p>repairing hull breaches (floorbots)</p><h3><aside class="declaration">#define </aside><a name="define/BOT_RESPONDING">BOT_RESPONDING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L23">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 23"/></a>
+    </h3>
+    <p>responding to a call from the AI</p><h3><aside class="declaration">#define </aside><a name="define/BOT_START_PATROL">BOT_START_PATROL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 16"/></a>
+    </h3>
+    <p>start patrol</p><h3><aside class="declaration">#define </aside><a name="define/BOT_SUMMON">BOT_SUMMON</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 18"/></a>
+    </h3>
+    <p>summoned by PDA</p><h3><aside class="declaration">#define </aside><a name="define/BOT_WAIT_FOR_NAV">BOT_WAIT_FOR_NAV</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 28"/></a>
+    </h3>
+    <p>waiting for nav computation</p><h3><aside class="declaration">#define </aside><a name="define/CLEAN_BOT">CLEAN_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 35"/></a>
+    </h3>
+    <p>Cleanbots</p><h3><aside class="declaration">#define </aside><a name="define/FIRE_BOT">FIRE_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 38"/></a>
+    </h3>
+    <p>Firebots</p><h3><aside class="declaration">#define </aside><a name="define/FLOOR_BOT">FLOOR_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 34"/></a>
+    </h3>
+    <p>Floorbots</p><h3><aside class="declaration">#define </aside><a name="define/HONK_BOT">HONK_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 37"/></a>
+    </h3>
+    <p>Honkbots &amp; ED-Honks</p><h3><aside class="declaration">#define </aside><a name="define/MED_BOT">MED_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 36"/></a>
+    </h3>
+    <p>Medibots</p><h3><aside class="declaration">#define </aside><a name="define/MULE_BOT">MULE_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 33"/></a>
+    </h3>
+    <p>MULEbots</p><h3><aside class="declaration">#define </aside><a name="define/SEC_BOT">SEC_BOT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/robots.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;robots.dm 32"/></a>
+    </h3>
+    <p>Secutritrons (Beepsky) and ED-209s</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

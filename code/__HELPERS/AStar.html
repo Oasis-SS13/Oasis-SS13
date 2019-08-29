@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__HELPERS&#x2F;AStar.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__HELPERS/AStar.html#define">Define Details</a></header>
+<main>
+<h1>code/__HELPERS/AStar.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/AStar.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;AStar.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><td colspan="2"><p>!</p>
+<h3>A Star pathfinding algorithm</h3>
+<p>Returns a list of tiles forming a path from A to B, taking dense objects as well as walls, and the orientation of windows along the route into account.</p>
+<p><strong>Use:</strong></p>
+<pre><code>your_list = AStar(start location, end location, moving atom, distance proc, max nodes, maximum node depth, minimum distance to target, adjacent proc, atom id, turfs to exclude, check only simulated)
+</code></pre>
+<p>Optional extras to add on (in order):</p>
+<ul>
+<li>Distance proc: the distance used in every A* calculation (length of path and heuristic)</li>
+<li>MaxNodes: The maximum number of nodes the returned path can be (0 = infinite)</li>
+<li>Maxnodedepth: The maximum number of nodes to search (default: 30, 0 = infinite)</li>
+<li>Mintargetdist: Minimum distance to the target before path returns, could be used to get near a target, but not right to it - for an AI mob with a gun, for example.</li>
+<li>Adjacent proc: returns the turfs to consider around the actually processed node</li>
+<li>Simulated only: whether to consider unsimulated turfs or not (used by some Adjacent proc)</li>
+</ul>
+<p>Also added 'exclude' turf to avoid travelling over; defaults to null</p>
+<p>Actual Adjacent procs :</p>
+<ul>
+<li>
+<p><code>/turf/proc/reachableAdjacentTurfs</code>: returns reachable turfs in cardinal directions (uses simulated_only)</p>
+</li>
+<li>
+<p><code>/turf/proc/reachableAdjacentAtmosTurfs</code>: returns turfs in cardinal directions reachable via atmos</p>
+</li>
+</ul></td></tr>
+        <tr><th><a href="code/__HELPERS/AStar.html#define/PF_TIEBREAKER">PF_TIEBREAKER</a></th><td>Tiebreker weight.To help to choose between equal paths</td></tr>
+        <tr><td colspan="2"><h3>A* nodes variables</h3>
+</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/PF_TIEBREAKER">PF_TIEBREAKER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/AStar.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;AStar.dm 31"/></a>
+    </h3>
+    <p>Tiebreker weight.To help to choose between equal paths</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

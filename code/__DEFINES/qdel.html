@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;qdel.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/qdel.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/qdel.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_QUEUE">QDEL_HINT_QUEUE</a></th><td>qdel should queue the object for deletion.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_LETMELIVE">QDEL_HINT_LETMELIVE</a></th><td>qdel should let the object live after calling destory.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_IWILLGC">QDEL_HINT_IWILLGC</a></th><td>functionally the same as the above. qdel should assume the object will gc on its own, and not check it.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_HARDDEL">QDEL_HINT_HARDDEL</a></th><td>qdel should assume this object won't gc, and queue a hard delete using a hard reference.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_HARDDEL_NOW">QDEL_HINT_HARDDEL_NOW</a></th><td>qdel should assume this object won't gc, and hard del it post haste.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_FINDREFERENCE">QDEL_HINT_FINDREFERENCE</a></th><td>functionally identical to QDEL_HINT_QUEUE if TESTING is not enabled in _compiler_options.dm. if TESTING is enabled, qdel will call this object's find_references() verb.</td></tr>
+        <tr><th><a href="code/__DEFINES/qdel.html#define/QDEL_HINT_IFFAIL_FINDREFERENCE">QDEL_HINT_IFFAIL_FINDREFERENCE</a></th><td>QDEL_HINT_FINDREFERENCE but only if gc fails.</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_FINDREFERENCE">QDEL_HINT_FINDREFERENCE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 9"/></a>
+    </h3>
+    <p>functionally identical to QDEL_HINT_QUEUE if TESTING is not enabled in _compiler_options.dm. if TESTING is enabled, qdel will call this object's find_references() verb.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_HARDDEL">QDEL_HINT_HARDDEL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 7"/></a>
+    </h3>
+    <p>qdel should assume this object won't gc, and queue a hard delete using a hard reference.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_HARDDEL_NOW">QDEL_HINT_HARDDEL_NOW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 8"/></a>
+    </h3>
+    <p>qdel should assume this object won't gc, and hard del it post haste.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_IFFAIL_FINDREFERENCE">QDEL_HINT_IFFAIL_FINDREFERENCE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L10">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 10"/></a>
+    </h3>
+    <p>QDEL_HINT_FINDREFERENCE but only if gc fails.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_IWILLGC">QDEL_HINT_IWILLGC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 6"/></a>
+    </h3>
+    <p>functionally the same as the above. qdel should assume the object will gc on its own, and not check it.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_LETMELIVE">QDEL_HINT_LETMELIVE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 5"/></a>
+    </h3>
+    <p>qdel should let the object live after calling destory.</p><h3><aside class="declaration">#define </aside><a name="define/QDEL_HINT_QUEUE">QDEL_HINT_QUEUE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/qdel.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;qdel.dm 4"/></a>
+    </h3>
+    <p>qdel should queue the object for deletion.</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

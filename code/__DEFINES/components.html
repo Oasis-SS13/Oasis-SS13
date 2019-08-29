@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;components.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/components.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/components.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/components.html#define/ELEMENT_INCOMPATIBLE">ELEMENT_INCOMPATIBLE</a></th><td>Return value to cancel attaching</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_DUPE_HIGHLANDER">COMPONENT_DUPE_HIGHLANDER</a></th><td>old component is deleted (default)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_DUPE_ALLOWED">COMPONENT_DUPE_ALLOWED</a></th><td>duplicates allowed</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_DUPE_UNIQUE">COMPONENT_DUPE_UNIQUE</a></th><td>new component is deleted</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_DUPE_UNIQUE_PASSARGS">COMPONENT_DUPE_UNIQUE_PASSARGS</a></th><td>old component is given the initialization args of the new</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GLOB_NEW_Z">COMSIG_GLOB_NEW_Z</a></th><td>from base of datum/controller/subsystem/mapping/proc/add_new_zlevel(): (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GLOB_VAR_EDIT">COMSIG_GLOB_VAR_EDIT</a></th><td>called after a successful var edit somewhere in the world: (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GLOB_MOB_CREATED">COMSIG_GLOB_MOB_CREATED</a></th><td>mob was created somewhere : (mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GLOB_MOB_DEATH">COMSIG_GLOB_MOB_DEATH</a></th><td>mob died somewhere : (mob , gibbed)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GLOB_LIVING_SAY_SPECIAL">COMSIG_GLOB_LIVING_SAY_SPECIAL</a></th><td>global living say plug - use sparingly: (mob/speaker , message)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_COMPONENT_ADDED">COMSIG_COMPONENT_ADDED</a></th><td>when a component is added to a datum: (/datum/component)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_COMPONENT_REMOVING">COMSIG_COMPONENT_REMOVING</a></th><td>before a component is removed from a datum because of RemoveComponent: (/datum/component)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PARENT_PREQDELETED">COMSIG_PARENT_PREQDELETED</a></th><td>before a datum's Destroy() is called: (force), returning a nonzero value will cancel the qdel operation</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PARENT_QDELETING">COMSIG_PARENT_QDELETING</a></th><td>just before a datum's Destroy() is called: (force), at this point none of the other components chose to interrupt qdel and Destroy will be called</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PARENT_ATTACKBY">COMSIG_PARENT_ATTACKBY</a></th><td>from base of atom/attackby(): (/obj/item, /mob/living, params)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_NO_AFTERATTACK">COMPONENT_NO_AFTERATTACK</a></th><td>Return this in response if you don't want afterattack to be called</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_HULK_ATTACK">COMSIG_ATOM_HULK_ATTACK</a></th><td>from base of atom/attack_hulk(): (/mob/living/carbon/human)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PARENT_EXAMINE">COMSIG_PARENT_EXAMINE</a></th><td>from base of atom/examine(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_GET_EXAMINE_NAME">COMSIG_ATOM_GET_EXAMINE_NAME</a></th><td>from base of atom/get_examine_name(): (/mob, list/overrides)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_ENTERED">COMSIG_ATOM_ENTERED</a></th><td>from base of atom/Entered(): (atom/movable/entering, /atom)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_EXIT">COMSIG_ATOM_EXIT</a></th><td>from base of atom/Exit(): (/atom/movable/exiting, /atom/newloc)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_EXITED">COMSIG_ATOM_EXITED</a></th><td>from base of atom/Exited(): (atom/movable/exiting, atom/newloc)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_EX_ACT">COMSIG_ATOM_EX_ACT</a></th><td>from base of atom/ex_act(): (severity, target)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_EMP_ACT">COMSIG_ATOM_EMP_ACT</a></th><td>from base of atom/emp_act(): (severity)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_FIRE_ACT">COMSIG_ATOM_FIRE_ACT</a></th><td>from base of atom/fire_act(): (exposed_temperature, exposed_volume)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_BULLET_ACT">COMSIG_ATOM_BULLET_ACT</a></th><td>from base of atom/bullet_act(): (/obj/item/projectile, def_zone)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_BLOB_ACT">COMSIG_ATOM_BLOB_ACT</a></th><td>from base of atom/blob_act(): (/obj/structure/blob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_ACID_ACT">COMSIG_ATOM_ACID_ACT</a></th><td>from base of atom/acid_act(): (acidpwr, acid_volume)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_EMAG_ACT">COMSIG_ATOM_EMAG_ACT</a></th><td>from base of atom/emag_act(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RAD_ACT">COMSIG_ATOM_RAD_ACT</a></th><td>from base of atom/rad_act(intensity)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_NARSIE_ACT">COMSIG_ATOM_NARSIE_ACT</a></th><td>from base of atom/narsie_act(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RATVAR_ACT">COMSIG_ATOM_RATVAR_ACT</a></th><td>from base of atom/ratvar_act(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RCD_ACT">COMSIG_ATOM_RCD_ACT</a></th><td>from base of atom/rcd_act(): (/mob, /obj/item/construction/rcd, passed_mode)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_SING_PULL">COMSIG_ATOM_SING_PULL</a></th><td>from base of atom/singularity_pull(): (S, current_size)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_SET_LIGHT">COMSIG_ATOM_SET_LIGHT</a></th><td>from base of atom/set_light(): (l_range, l_power, l_color)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_DIR_CHANGE">COMSIG_ATOM_DIR_CHANGE</a></th><td>from base of atom/setDir(): (old_dir, new_dir)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_CONTENTS_DEL">COMSIG_ATOM_CONTENTS_DEL</a></th><td>from base of atom/handle_atom_del(): (atom/deleted)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_HAS_GRAVITY">COMSIG_ATOM_HAS_GRAVITY</a></th><td>from base of atom/has_gravity(): (turf/location, list/forced_gravities)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RAD_PROBE">COMSIG_ATOM_RAD_PROBE</a></th><td>from proc/get_rad_contents(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RAD_CONTAMINATING">COMSIG_ATOM_RAD_CONTAMINATING</a></th><td>from base of datum/radiation_wave/radiate(): (strength)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_RAD_WAVE_PASSING">COMSIG_ATOM_RAD_WAVE_PASSING</a></th><td>from base of datum/radiation_wave/check_obstructions(): (datum/radiation_wave, width)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_CANREACH">COMSIG_ATOM_CANREACH</a></th><td>from internal loop in atom/movable/proc/CanReach(): (list/next)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_SCREWDRIVER_ACT">COMSIG_ATOM_SCREWDRIVER_ACT</a></th><td>from base of atom/screwdriver_act(): (mob/living/user, obj/item/I)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_INTERCEPT_TELEPORT">COMSIG_ATOM_INTERCEPT_TELEPORT</a></th><td>called when teleporting into a protected turf: (channel, turf/origin)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_ATTACK_GHOST">COMSIG_ATOM_ATTACK_GHOST</a></th><td>from base of atom/attack_ghost(): (mob/dead/observer/ghost)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_ATTACK_HAND">COMSIG_ATOM_ATTACK_HAND</a></th><td>from base of atom/attack_hand(): (mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ATOM_ATTACK_PAW">COMSIG_ATOM_ATTACK_PAW</a></th><td>from base of atom/attack_paw(): (mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ENTER_AREA">COMSIG_ENTER_AREA</a></th><td>from base of area/Entered(): (/area)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_EXIT_AREA">COMSIG_EXIT_AREA</a></th><td>from base of area/Exited(): (/area)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLICK">COMSIG_CLICK</a></th><td>from base of atom/Click(): (location, control, params, mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLICK_SHIFT">COMSIG_CLICK_SHIFT</a></th><td>from base of atom/ShiftClick(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLICK_CTRL">COMSIG_CLICK_CTRL</a></th><td>from base of atom/CtrlClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLICK_ALT">COMSIG_CLICK_ALT</a></th><td>from base of atom/AltClick(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLICK_CTRL_SHIFT">COMSIG_CLICK_CTRL_SHIFT</a></th><td>from base of atom/CtrlShiftClick(/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOUSEDROP_ONTO">COMSIG_MOUSEDROP_ONTO</a></th><td>from base of atom/MouseDrop(): (/atom/over, /mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOUSEDROPPED_ONTO">COMSIG_MOUSEDROPPED_ONTO</a></th><td>from base of atom/MouseDrop_T: (/atom/from, /mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_AREA_ENTERED">COMSIG_AREA_ENTERED</a></th><td>from base of area/Entered(): (atom/movable/M)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_AREA_EXITED">COMSIG_AREA_EXITED</a></th><td>from base of area/Exited(): (atom/movable/M)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TURF_CHANGE">COMSIG_TURF_CHANGE</a></th><td>from base of turf/ChangeTurf(): (path, list/new_baseturfs, flags, list/transferring_comps)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TURF_HAS_GRAVITY">COMSIG_TURF_HAS_GRAVITY</a></th><td>from base of atom/has_gravity(): (atom/asker, list/forced_gravities)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TURF_MULTIZ_NEW">COMSIG_TURF_MULTIZ_NEW</a></th><td>from base of turf/New(): (turf/source, direction)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_PRE_MOVE">COMSIG_MOVABLE_PRE_MOVE</a></th><td>from base of atom/movable/Moved(): (/atom)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_MOVED">COMSIG_MOVABLE_MOVED</a></th><td>from base of atom/movable/Moved(): (/atom, dir)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_CROSS">COMSIG_MOVABLE_CROSS</a></th><td>from base of atom/movable/Cross(): (/atom/movable)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_CROSSED">COMSIG_MOVABLE_CROSSED</a></th><td>from base of atom/movable/Crossed(): (/atom/movable)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_UNCROSS">COMSIG_MOVABLE_UNCROSS</a></th><td>from base of atom/movable/Uncross(): (/atom/movable)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_UNCROSSED">COMSIG_MOVABLE_UNCROSSED</a></th><td>from base of atom/movable/Uncrossed(): (/atom/movable)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_BUMP">COMSIG_MOVABLE_BUMP</a></th><td>from base of atom/movable/Bump(): (/atom)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_IMPACT">COMSIG_MOVABLE_IMPACT</a></th><td>from base of atom/movable/throw_impact(): (/atom/hit_atom, /datum/thrownthing/throwingdatum)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_IMPACT_ZONE">COMSIG_MOVABLE_IMPACT_ZONE</a></th><td>from base of mob/living/hitby(): (mob/living/target, hit_zone)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_BUCKLE">COMSIG_MOVABLE_BUCKLE</a></th><td>from base of atom/movable/buckle_mob(): (mob, force)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_UNBUCKLE">COMSIG_MOVABLE_UNBUCKLE</a></th><td>from base of atom/movable/unbuckle_mob(): (mob, force)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_PRE_THROW">COMSIG_MOVABLE_PRE_THROW</a></th><td>from base of atom/movable/throw_at(): (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_POST_THROW">COMSIG_MOVABLE_POST_THROW</a></th><td>from base of atom/movable/throw_at(): (datum/thrownthing, spin)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_Z_CHANGED">COMSIG_MOVABLE_Z_CHANGED</a></th><td>from base of atom/movable/onTransitZ(): (old_z, new_z)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_SECLUDED_LOCATION">COMSIG_MOVABLE_SECLUDED_LOCATION</a></th><td>called when the movable is placed in an unaccessible area, used for stationloving: ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_HEAR">COMSIG_MOVABLE_HEAR</a></th><td>from base of atom/movable/Hear(): (message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOVABLE_DISPOSING">COMSIG_MOVABLE_DISPOSING</a></th><td>called when the movable is added to a disposal holder object for disposal movement: (obj/structure/disposalholder/holder, obj/machinery/disposal/source)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_DEATH">COMSIG_MOB_DEATH</a></th><td>from base of mob/death(): (gibbed)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_CLICKON">COMSIG_MOB_CLICKON</a></th><td>from base of mob/clickon(): (atom/A, params)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_ALLOWED">COMSIG_MOB_ALLOWED</a></th><td>from base of obj/allowed(mob/M): (/obj) returns bool, if TRUE the mob has id access to the obj</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_RECEIVE_MAGIC">COMSIG_MOB_RECEIVE_MAGIC</a></th><td>from base of mob/anti_magic_check(): (mob/user, magic, holy, major, self, protection_sources)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_HUD_CREATED">COMSIG_MOB_HUD_CREATED</a></th><td>from base of mob/create_mob_hud(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_ATTACK_HAND">COMSIG_MOB_ATTACK_HAND</a></th><td>from base of</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_ITEM_ATTACK">COMSIG_MOB_ITEM_ATTACK</a></th><td>from base of /obj/item/attack(): (mob/M, mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_APPLY_DAMGE">COMSIG_MOB_APPLY_DAMGE</a></th><td>from base of /mob/living/proc/apply_damage(): (damage, damagetype, def_zone)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_ITEM_AFTERATTACK">COMSIG_MOB_ITEM_AFTERATTACK</a></th><td>from base of obj/item/afterattack(): (atom/target, mob/user, proximity_flag, click_parameters)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_ATTACK_RANGED">COMSIG_MOB_ATTACK_RANGED</a></th><td>from base of mob/RangedAttack(): (atom/A, params)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_THROW">COMSIG_MOB_THROW</a></th><td>from base of /mob/throw_item(): (atom/target)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_MOB_UPDATE_SIGHT">COMSIG_MOB_UPDATE_SIGHT</a></th><td>from base of /mob/update_sight(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_RESIST">COMSIG_LIVING_RESIST</a></th><td>from base of mob/living/resist() (/mob/living)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_IGNITED">COMSIG_LIVING_IGNITED</a></th><td>from base of mob/living/IgniteMob() (/mob/living)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_EXTINGUISHED">COMSIG_LIVING_EXTINGUISHED</a></th><td>from base of mob/living/ExtinguishMob() (/mob/living)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_ELECTROCUTE_ACT">COMSIG_LIVING_ELECTROCUTE_ACT</a></th><td>from base of mob/living/electrocute_act(): (shock_damage)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_MINOR_SHOCK">COMSIG_LIVING_MINOR_SHOCK</a></th><td>sent by stuff like stunbatons and tasers: ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_STUN">COMSIG_LIVING_STATUS_STUN</a></th><td>from base of mob/living/Stun() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_KNOCKDOWN">COMSIG_LIVING_STATUS_KNOCKDOWN</a></th><td>from base of mob/living/Knockdown() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_PARALYZE">COMSIG_LIVING_STATUS_PARALYZE</a></th><td>from base of mob/living/Paralyze() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_IMMOBILIZE">COMSIG_LIVING_STATUS_IMMOBILIZE</a></th><td>from base of mob/living/Immobilize() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_UNCONSCIOUS">COMSIG_LIVING_STATUS_UNCONSCIOUS</a></th><td>from base of mob/living/Unconscious() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_LIVING_STATUS_SLEEP">COMSIG_LIVING_STATUS_SLEEP</a></th><td>from base of mob/living/Sleeping() (amount, update, ignore)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CARBON_SOUNDBANG">COMSIG_CARBON_SOUNDBANG</a></th><td>from base of mob/living/carbon/soundbang_act(): (list(intensity))</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_OBJ_DECONSTRUCT">COMSIG_OBJ_DECONSTRUCT</a></th><td>from base of obj/deconstruct(): (disassembled)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_OBJ_SETANCHORED">COMSIG_OBJ_SETANCHORED</a></th><td>called in /obj/structure/setAnchored(): (value)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_ATTACK">COMSIG_ITEM_ATTACK</a></th><td>from base of obj/item/attack(): (/mob/living/target, /mob/living/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_ATTACK_SELF">COMSIG_ITEM_ATTACK_SELF</a></th><td>from base of obj/item/attack_self(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_ATTACK_OBJ">COMSIG_ITEM_ATTACK_OBJ</a></th><td>from base of obj/item/attack_obj(): (/obj, /mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_PRE_ATTACK">COMSIG_ITEM_PRE_ATTACK</a></th><td>from base of obj/item/pre_attack(): (atom/target, mob/user, params)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_AFTERATTACK">COMSIG_ITEM_AFTERATTACK</a></th><td>from base of obj/item/afterattack(): (atom/target, mob/user, params)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_EQUIPPED">COMSIG_ITEM_EQUIPPED</a></th><td>from base of obj/item/equipped(): (/mob/equipper, slot)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_DROPPED">COMSIG_ITEM_DROPPED</a></th><td>from base of obj/item/dropped(): (mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_PICKUP">COMSIG_ITEM_PICKUP</a></th><td>from base of obj/item/pickup(): (/mob/taker)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_ATTACK_ZONE">COMSIG_ITEM_ATTACK_ZONE</a></th><td>from base of mob/living/carbon/attacked_by(): (mob/living/carbon/target, mob/living/user, hit_zone)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_IMBUE_SOUL">COMSIG_ITEM_IMBUE_SOUL</a></th><td>return a truthy value to prevent ensouling, checked in /obj/effect/proc_holder/spell/targeted/lichdom/cast(): (mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_MARK_RETRIEVAL">COMSIG_ITEM_MARK_RETRIEVAL</a></th><td>called before marking an object for retrieval, checked in /obj/effect/proc_holder/spell/targeted/summonitem/cast() : (mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ITEM_HIT_REACT">COMSIG_ITEM_HIT_REACT</a></th><td>from base of obj/item/hit_reaction(): (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_SHOES_STEP_ACTION">COMSIG_SHOES_STEP_ACTION</a></th><td>from base of obj/item/clothing/shoes/proc/step_action(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_IMPLANT_ACTIVATED">COMSIG_IMPLANT_ACTIVATED</a></th><td>from base of /obj/item/implant/proc/activate(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_IMPLANT_IMPLANTING">COMSIG_IMPLANT_IMPLANTING</a></th><td>from base of /obj/item/implant/proc/implant(): (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_IMPLANT_OTHER">COMSIG_IMPLANT_OTHER</a></th><td>called on already installed implants when a new one is being added in /obj/item/implant/proc/implant(): (list/args, obj/item/implant/new_implant)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_IMPLANT_EXISTING_UPLINK">COMSIG_IMPLANT_EXISTING_UPLINK</a></th><td>called on implants being implanted into someone with an uplink implant: (datum/component/uplink)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PDA_CHANGE_RINGTONE">COMSIG_PDA_CHANGE_RINGTONE</a></th><td>called on pda when the user changes the ringtone: (mob/living/user, new_ringtone)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_RADIO_NEW_FREQUENCY">COMSIG_RADIO_NEW_FREQUENCY</a></th><td>called from base of /obj/item/radio/proc/set_frequency(): (list/args)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_PEN_ROTATED">COMSIG_PEN_ROTATED</a></th><td>called after rotation in /obj/item/pen/attack_self(): (rotation, mob/living/carbon/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_HUMAN_MELEE_UNARMED_ATTACK">COMSIG_HUMAN_MELEE_UNARMED_ATTACK</a></th><td>from mob/living/carbon/human/UnarmedAttack(): (atom/target)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_HUMAN_MELEE_UNARMED_ATTACKBY">COMSIG_HUMAN_MELEE_UNARMED_ATTACKBY</a></th><td>from mob/living/carbon/human/UnarmedAttack(): (mob/living/carbon/human/attacker)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_HUMAN_DISARM_HIT">COMSIG_HUMAN_DISARM_HIT</a></th><td>Hit by successful disarm attack (mob/living/carbon/human/attacker,zone_targeted)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_SPECIES_GAIN">COMSIG_SPECIES_GAIN</a></th><td>from datum/species/on_species_gain(): (datum/species/new_species, datum/species/old_species)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_SPECIES_LOSS">COMSIG_SPECIES_LOSS</a></th><td>from datum/species/on_species_loss(): (datum/species/lost_species)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TURF_IS_WET">COMSIG_TURF_IS_WET</a></th><td>Component Specific Signals
+(): Returns bitflags of wet values.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TURF_MAKE_DRY">COMSIG_TURF_MAKE_DRY</a></th><td>(max_strength, immediate, duration_decrease = INFINITY): Returns bool.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_COMPONENT_CLEAN_ACT">COMSIG_COMPONENT_CLEAN_ACT</a></th><td>called on an object to clean it of cleanables. Usualy with soap: (num/strength)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_FOOD_EATEN">COMSIG_FOOD_EATEN</a></th><td>from base of obj/item/reagent_containers/food/snacks/attack(): (mob/living/eater, mob/feeder)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_GIBS_STREAK">COMSIG_GIBS_STREAK</a></th><td>from base of /obj/effect/decal/cleanable/blood/gibs/streak(): (list/directions, list/diseases)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ADD_MOOD_EVENT">COMSIG_ADD_MOOD_EVENT</a></th><td>Called when you send a mood event from anywhere in the code.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CLEAR_MOOD_EVENT">COMSIG_CLEAR_MOOD_EVENT</a></th><td>Called when you clear a mood event from anywhere in the code.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_COMPONENT_NTNET_RECEIVE">COMSIG_COMPONENT_NTNET_RECEIVE</a></th><td>called on an object by its NTNET connection component on receive. (sending_id(number), sending_netname(text), data(datum/netdata))</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_HAS_NANITES">COMSIG_HAS_NANITES</a></th><td>() returns TRUE if nanites are found</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_GET_PROGRAMS">COMSIG_NANITE_GET_PROGRAMS</a></th><td>(list/nanite_programs) - makes the input list a copy the nanites' program list</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SET_VOLUME">COMSIG_NANITE_SET_VOLUME</a></th><td>(amount) Sets current nanite volume to the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_ADJUST_VOLUME">COMSIG_NANITE_ADJUST_VOLUME</a></th><td>(amount) Adjusts nanite volume by the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SET_MAX_VOLUME">COMSIG_NANITE_SET_MAX_VOLUME</a></th><td>(amount) Sets maximum nanite volume to the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SET_CLOUD">COMSIG_NANITE_SET_CLOUD</a></th><td>(amount(0-100)) Sets cloud ID to the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SET_SAFETY">COMSIG_NANITE_SET_SAFETY</a></th><td>(amount) Sets safety threshold to the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SET_REGEN">COMSIG_NANITE_SET_REGEN</a></th><td>(amount) Sets regeneration rate to the given amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SIGNAL">COMSIG_NANITE_SIGNAL</a></th><td>(code(1-9999)) Called when sending a nanite signal to a mob.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SCAN">COMSIG_NANITE_SCAN</a></th><td>(mob/user, full_scan) - sends to chat a scan of the nanites to the user, returns TRUE if nanites are detected</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_UI_DATA">COMSIG_NANITE_UI_DATA</a></th><td>(list/data, scan_level) - adds nanite data to the given data list - made for ui_data procs</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_ADD_PROGRAM">COMSIG_NANITE_ADD_PROGRAM</a></th><td>(datum/nanite_program/new_program, datum/nanite_program/source_program) Called when adding a program to a nanite component</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_PROGRAM_INSTALLED">COMPONENT_PROGRAM_INSTALLED</a></th><td>Installation successful</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMPONENT_PROGRAM_NOT_INSTALLED">COMPONENT_PROGRAM_NOT_INSTALLED</a></th><td>Installation failed, but there are still nanites</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_NANITE_SYNC">COMSIG_NANITE_SYNC</a></th><td>(datum/component/nanites, full_overwrite, copy_activation) Called to sync the target's nanites to a given nanite component</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_CONTAINS_STORAGE">COMSIG_CONTAINS_STORAGE</a></th><td>() - returns bool.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_INSERT">COMSIG_TRY_STORAGE_INSERT</a></th><td>(obj/item/inserting, mob/user, silent, force) - returns bool</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_SHOW">COMSIG_TRY_STORAGE_SHOW</a></th><td>(mob/show_to, force) - returns bool.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_HIDE_FROM">COMSIG_TRY_STORAGE_HIDE_FROM</a></th><td>(mob/hide_from) - returns bool</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_HIDE_ALL">COMSIG_TRY_STORAGE_HIDE_ALL</a></th><td>returns bool</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_SET_LOCKSTATE">COMSIG_TRY_STORAGE_SET_LOCKSTATE</a></th><td>(newstate)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_IS_STORAGE_LOCKED">COMSIG_IS_STORAGE_LOCKED</a></th><td>() - returns bool. MUST CHECK IF STORAGE IS THERE FIRST!</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_TAKE_TYPE">COMSIG_TRY_STORAGE_TAKE_TYPE</a></th><td>(type, atom/destination, amount = INFINITY, check_adjacent, force, mob/user, list/inserted) - returns bool - type can be a list of types.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_FILL_TYPE">COMSIG_TRY_STORAGE_FILL_TYPE</a></th><td>(type, amount = INFINITY, force = FALSE)			//don't fuck this up. Force will ignore max_items, and amount is normally clamped to max_items.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_TAKE">COMSIG_TRY_STORAGE_TAKE</a></th><td>(obj, new_loc, force = FALSE) - returns bool</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_QUICK_EMPTY">COMSIG_TRY_STORAGE_QUICK_EMPTY</a></th><td>(loc) - returns bool - if loc is null it will dump at parent location.</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_RETURN_INVENTORY">COMSIG_TRY_STORAGE_RETURN_INVENTORY</a></th><td>(list/list_to_inject_results_into, recursively_search_inside_storages = TRUE)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_TRY_STORAGE_CAN_INSERT">COMSIG_TRY_STORAGE_CAN_INSERT</a></th><td>(obj/item/insertion_candidate, mob/user, silent) - returns bool</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_ACTION_TRIGGER">COMSIG_ACTION_TRIGGER</a></th><td>from base of datum/action/proc/Trigger(): (datum/action)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/REDIRECT_TRANSFER_WITH_TURF">REDIRECT_TRANSFER_WITH_TURF</a></th><td>Non-Signal Component Related Defines</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/ARCH_PROB">ARCH_PROB</a></th><td>Probability for each item</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/ARCH_MAXDROP">ARCH_MAXDROP</a></th><td>each item's max drop amount</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_SLIME_CLICK_CTRL">COMSIG_XENO_SLIME_CLICK_CTRL</a></th><td>from slime CtrlClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_SLIME_CLICK_ALT">COMSIG_XENO_SLIME_CLICK_ALT</a></th><td>from slime AltClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_SLIME_CLICK_SHIFT">COMSIG_XENO_SLIME_CLICK_SHIFT</a></th><td>from slime ShiftClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_TURF_CLICK_SHIFT">COMSIG_XENO_TURF_CLICK_SHIFT</a></th><td>from turf ShiftClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_TURF_CLICK_CTRL">COMSIG_XENO_TURF_CLICK_CTRL</a></th><td>from turf AltClickOn(): (/mob)</td></tr>
+        <tr><th><a href="code/__DEFINES/components.html#define/COMSIG_XENO_MONKEY_CLICK_CTRL">COMSIG_XENO_MONKEY_CLICK_CTRL</a></th><td>from monkey CtrlClickOn(): (/mob)</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/ARCH_MAXDROP">ARCH_MAXDROP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L287">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 287"/></a>
+    </h3>
+    <p>each item's max drop amount</p><h3><aside class="declaration">#define </aside><a name="define/ARCH_PROB">ARCH_PROB</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L286">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 286"/></a>
+    </h3>
+    <p>Probability for each item</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_DUPE_ALLOWED">COMPONENT_DUPE_ALLOWED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 16"/></a>
+    </h3>
+    <p>duplicates allowed</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_DUPE_HIGHLANDER">COMPONENT_DUPE_HIGHLANDER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 15"/></a>
+    </h3>
+    <p>old component is deleted (default)</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_DUPE_UNIQUE">COMPONENT_DUPE_UNIQUE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 17"/></a>
+    </h3>
+    <p>new component is deleted</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_DUPE_UNIQUE_PASSARGS">COMPONENT_DUPE_UNIQUE_PASSARGS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 18"/></a>
+    </h3>
+    <p>old component is given the initialization args of the new</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_NO_AFTERATTACK">COMPONENT_NO_AFTERATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L43">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 43"/></a>
+    </h3>
+    <p>Return this in response if you don't want afterattack to be called</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_PROGRAM_INSTALLED">COMPONENT_PROGRAM_INSTALLED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L257">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 257"/></a>
+    </h3>
+    <p>Installation successful</p><h3><aside class="declaration">#define </aside><a name="define/COMPONENT_PROGRAM_NOT_INSTALLED">COMPONENT_PROGRAM_NOT_INSTALLED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L258">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 258"/></a>
+    </h3>
+    <p>Installation failed, but there are still nanites</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ACTION_TRIGGER">COMSIG_ACTION_TRIGGER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L277">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 277"/></a>
+    </h3>
+    <p>from base of datum/action/proc/Trigger(): (datum/action)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ADD_MOOD_EVENT">COMSIG_ADD_MOOD_EVENT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L238">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 238"/></a>
+    </h3>
+    <p>Called when you send a mood event from anywhere in the code.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_AREA_ENTERED">COMSIG_AREA_ENTERED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L103">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 103"/></a>
+    </h3>
+    <p>from base of area/Entered(): (atom/movable/M)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_AREA_EXITED">COMSIG_AREA_EXITED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L104">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 104"/></a>
+    </h3>
+    <p>from base of area/Exited(): (atom/movable/M)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_ACID_ACT">COMSIG_ATOM_ACID_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L61">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 61"/></a>
+    </h3>
+    <p>from base of atom/acid_act(): (acidpwr, acid_volume)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_ATTACK_GHOST">COMSIG_ATOM_ATTACK_GHOST</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L84">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 84"/></a>
+    </h3>
+    <p>from base of atom/attack_ghost(): (mob/dead/observer/ghost)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_ATTACK_HAND">COMSIG_ATOM_ATTACK_HAND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 85"/></a>
+    </h3>
+    <p>from base of atom/attack_hand(): (mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_ATTACK_PAW">COMSIG_ATOM_ATTACK_PAW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L86">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 86"/></a>
+    </h3>
+    <p>from base of atom/attack_paw(): (mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_BLOB_ACT">COMSIG_ATOM_BLOB_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 60"/></a>
+    </h3>
+    <p>from base of atom/blob_act(): (/obj/structure/blob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_BULLET_ACT">COMSIG_ATOM_BULLET_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L59">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 59"/></a>
+    </h3>
+    <p>from base of atom/bullet_act(): (/obj/item/projectile, def_zone)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_CANREACH">COMSIG_ATOM_CANREACH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L78">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 78"/></a>
+    </h3>
+    <p>from internal loop in atom/movable/proc/CanReach(): (list/next)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_CONTENTS_DEL">COMSIG_ATOM_CONTENTS_DEL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L70">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 70"/></a>
+    </h3>
+    <p>from base of atom/handle_atom_del(): (atom/deleted)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_DIR_CHANGE">COMSIG_ATOM_DIR_CHANGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L69">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 69"/></a>
+    </h3>
+    <p>from base of atom/setDir(): (old_dir, new_dir)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_EMAG_ACT">COMSIG_ATOM_EMAG_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L62">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 62"/></a>
+    </h3>
+    <p>from base of atom/emag_act(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_EMP_ACT">COMSIG_ATOM_EMP_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L57">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 57"/></a>
+    </h3>
+    <p>from base of atom/emp_act(): (severity)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_ENTERED">COMSIG_ATOM_ENTERED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 52"/></a>
+    </h3>
+    <p>from base of atom/Entered(): (atom/movable/entering, /atom)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_EXIT">COMSIG_ATOM_EXIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L53">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 53"/></a>
+    </h3>
+    <p>from base of atom/Exit(): (/atom/movable/exiting, /atom/newloc)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_EXITED">COMSIG_ATOM_EXITED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L55">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 55"/></a>
+    </h3>
+    <p>from base of atom/Exited(): (atom/movable/exiting, atom/newloc)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_EX_ACT">COMSIG_ATOM_EX_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 56"/></a>
+    </h3>
+    <p>from base of atom/ex_act(): (severity, target)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_FIRE_ACT">COMSIG_ATOM_FIRE_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L58">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 58"/></a>
+    </h3>
+    <p>from base of atom/fire_act(): (exposed_temperature, exposed_volume)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_GET_EXAMINE_NAME">COMSIG_ATOM_GET_EXAMINE_NAME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 46"/></a>
+    </h3>
+    <p>from base of atom/get_examine_name(): (/mob, list/overrides)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_HAS_GRAVITY">COMSIG_ATOM_HAS_GRAVITY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L71">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 71"/></a>
+    </h3>
+    <p>from base of atom/has_gravity(): (turf/location, list/forced_gravities)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_HULK_ATTACK">COMSIG_ATOM_HULK_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 44"/></a>
+    </h3>
+    <p>from base of atom/attack_hulk(): (/mob/living/carbon/human)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_INTERCEPT_TELEPORT">COMSIG_ATOM_INTERCEPT_TELEPORT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L81">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 81"/></a>
+    </h3>
+    <p>called when teleporting into a protected turf: (channel, turf/origin)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_NARSIE_ACT">COMSIG_ATOM_NARSIE_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 64"/></a>
+    </h3>
+    <p>from base of atom/narsie_act(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RAD_ACT">COMSIG_ATOM_RAD_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L63">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 63"/></a>
+    </h3>
+    <p>from base of atom/rad_act(intensity)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RAD_CONTAMINATING">COMSIG_ATOM_RAD_CONTAMINATING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L74">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 74"/></a>
+    </h3>
+    <p>from base of datum/radiation_wave/radiate(): (strength)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RAD_PROBE">COMSIG_ATOM_RAD_PROBE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L72">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 72"/></a>
+    </h3>
+    <p>from proc/get_rad_contents(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RAD_WAVE_PASSING">COMSIG_ATOM_RAD_WAVE_PASSING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L76">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 76"/></a>
+    </h3>
+    <p>from base of datum/radiation_wave/check_obstructions(): (datum/radiation_wave, width)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RATVAR_ACT">COMSIG_ATOM_RATVAR_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 65"/></a>
+    </h3>
+    <p>from base of atom/ratvar_act(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_RCD_ACT">COMSIG_ATOM_RCD_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L66">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 66"/></a>
+    </h3>
+    <p>from base of atom/rcd_act(): (/mob, /obj/item/construction/rcd, passed_mode)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_SCREWDRIVER_ACT">COMSIG_ATOM_SCREWDRIVER_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L80">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 80"/></a>
+    </h3>
+    <p>from base of atom/screwdriver_act(): (mob/living/user, obj/item/I)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_SET_LIGHT">COMSIG_ATOM_SET_LIGHT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L68">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 68"/></a>
+    </h3>
+    <p>from base of atom/set_light(): (l_range, l_power, l_color)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ATOM_SING_PULL">COMSIG_ATOM_SING_PULL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L67">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 67"/></a>
+    </h3>
+    <p>from base of atom/singularity_pull(): (S, current_size)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CARBON_SOUNDBANG">COMSIG_CARBON_SOUNDBANG</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L167">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 167"/></a>
+    </h3>
+    <p>from base of mob/living/carbon/soundbang_act(): (list(intensity))</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLEAR_MOOD_EVENT">COMSIG_CLEAR_MOOD_EVENT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L239">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 239"/></a>
+    </h3>
+    <p>Called when you clear a mood event from anywhere in the code.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLICK">COMSIG_CLICK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L93">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 93"/></a>
+    </h3>
+    <p>from base of atom/Click(): (location, control, params, mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLICK_ALT">COMSIG_CLICK_ALT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L96">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 96"/></a>
+    </h3>
+    <p>from base of atom/AltClick(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLICK_CTRL">COMSIG_CLICK_CTRL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L95">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 95"/></a>
+    </h3>
+    <p>from base of atom/CtrlClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLICK_CTRL_SHIFT">COMSIG_CLICK_CTRL_SHIFT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L97">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 97"/></a>
+    </h3>
+    <p>from base of atom/CtrlShiftClick(/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CLICK_SHIFT">COMSIG_CLICK_SHIFT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L94">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 94"/></a>
+    </h3>
+    <p>from base of atom/ShiftClick(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_COMPONENT_ADDED">COMSIG_COMPONENT_ADDED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 36"/></a>
+    </h3>
+    <p>when a component is added to a datum: (/datum/component)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_COMPONENT_CLEAN_ACT">COMSIG_COMPONENT_CLEAN_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L229">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 229"/></a>
+    </h3>
+    <p>called on an object to clean it of cleanables. Usualy with soap: (num/strength)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_COMPONENT_NTNET_RECEIVE">COMSIG_COMPONENT_NTNET_RECEIVE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L242">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 242"/></a>
+    </h3>
+    <p>called on an object by its NTNET connection component on receive. (sending_id(number), sending_netname(text), data(datum/netdata))</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_COMPONENT_REMOVING">COMSIG_COMPONENT_REMOVING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 37"/></a>
+    </h3>
+    <p>before a component is removed from a datum because of RemoveComponent: (/datum/component)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_CONTAINS_STORAGE">COMSIG_CONTAINS_STORAGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L262">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 262"/></a>
+    </h3>
+    <p>() - returns bool.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ENTER_AREA">COMSIG_ENTER_AREA</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 90"/></a>
+    </h3>
+    <p>from base of area/Entered(): (/area)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_EXIT_AREA">COMSIG_EXIT_AREA</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L91">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 91"/></a>
+    </h3>
+    <p>from base of area/Exited(): (/area)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_FOOD_EATEN">COMSIG_FOOD_EATEN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L232">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 232"/></a>
+    </h3>
+    <p>from base of obj/item/reagent_containers/food/snacks/attack(): (mob/living/eater, mob/feeder)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GIBS_STREAK">COMSIG_GIBS_STREAK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L235">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 235"/></a>
+    </h3>
+    <p>from base of /obj/effect/decal/cleanable/blood/gibs/streak(): (list/directions, list/diseases)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GLOB_LIVING_SAY_SPECIAL">COMSIG_GLOB_LIVING_SAY_SPECIAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 31"/></a>
+    </h3>
+    <p>global living say plug - use sparingly: (mob/speaker , message)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GLOB_MOB_CREATED">COMSIG_GLOB_MOB_CREATED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 29"/></a>
+    </h3>
+    <p>mob was created somewhere : (mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GLOB_MOB_DEATH">COMSIG_GLOB_MOB_DEATH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 30"/></a>
+    </h3>
+    <p>mob died somewhere : (mob , gibbed)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GLOB_NEW_Z">COMSIG_GLOB_NEW_Z</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 27"/></a>
+    </h3>
+    <p>from base of datum/controller/subsystem/mapping/proc/add_new_zlevel(): (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_GLOB_VAR_EDIT">COMSIG_GLOB_VAR_EDIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 28"/></a>
+    </h3>
+    <p>called after a successful var edit somewhere in the world: (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_HAS_NANITES">COMSIG_HAS_NANITES</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L245">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 245"/></a>
+    </h3>
+    <p>() returns TRUE if nanites are found</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_HUMAN_DISARM_HIT">COMSIG_HUMAN_DISARM_HIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L219">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 219"/></a>
+    </h3>
+    <p>Hit by successful disarm attack (mob/living/carbon/human/attacker,zone_targeted)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_HUMAN_MELEE_UNARMED_ATTACK">COMSIG_HUMAN_MELEE_UNARMED_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L217">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 217"/></a>
+    </h3>
+    <p>from mob/living/carbon/human/UnarmedAttack(): (atom/target)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_HUMAN_MELEE_UNARMED_ATTACKBY">COMSIG_HUMAN_MELEE_UNARMED_ATTACKBY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L218">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 218"/></a>
+    </h3>
+    <p>from mob/living/carbon/human/UnarmedAttack(): (mob/living/carbon/human/attacker)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_IMPLANT_ACTIVATED">COMSIG_IMPLANT_ACTIVATED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L195">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 195"/></a>
+    </h3>
+    <p>from base of /obj/item/implant/proc/activate(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_IMPLANT_EXISTING_UPLINK">COMSIG_IMPLANT_EXISTING_UPLINK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L202">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 202"/></a>
+    </h3>
+    <p>called on implants being implanted into someone with an uplink implant: (datum/component/uplink)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_IMPLANT_IMPLANTING">COMSIG_IMPLANT_IMPLANTING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L196">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 196"/></a>
+    </h3>
+    <p>from base of /obj/item/implant/proc/implant(): (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_IMPLANT_OTHER">COMSIG_IMPLANT_OTHER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L198">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 198"/></a>
+    </h3>
+    <p>called on already installed implants when a new one is being added in /obj/item/implant/proc/implant(): (list/args, obj/item/implant/new_implant)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_IS_STORAGE_LOCKED">COMSIG_IS_STORAGE_LOCKED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L268">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 268"/></a>
+    </h3>
+    <p>() - returns bool. MUST CHECK IF STORAGE IS THERE FIRST!</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_AFTERATTACK">COMSIG_ITEM_AFTERATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L181">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 181"/></a>
+    </h3>
+    <p>from base of obj/item/afterattack(): (atom/target, mob/user, params)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_ATTACK">COMSIG_ITEM_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L174">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 174"/></a>
+    </h3>
+    <p>from base of obj/item/attack(): (/mob/living/target, /mob/living/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_ATTACK_OBJ">COMSIG_ITEM_ATTACK_OBJ</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L177">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 177"/></a>
+    </h3>
+    <p>from base of obj/item/attack_obj(): (/obj, /mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_ATTACK_SELF">COMSIG_ITEM_ATTACK_SELF</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L175">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 175"/></a>
+    </h3>
+    <p>from base of obj/item/attack_self(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_ATTACK_ZONE">COMSIG_ITEM_ATTACK_ZONE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L185">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 185"/></a>
+    </h3>
+    <p>from base of mob/living/carbon/attacked_by(): (mob/living/carbon/target, mob/living/user, hit_zone)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_DROPPED">COMSIG_ITEM_DROPPED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L183">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 183"/></a>
+    </h3>
+    <p>from base of obj/item/dropped(): (mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_EQUIPPED">COMSIG_ITEM_EQUIPPED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L182">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 182"/></a>
+    </h3>
+    <p>from base of obj/item/equipped(): (/mob/equipper, slot)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_HIT_REACT">COMSIG_ITEM_HIT_REACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L189">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 189"/></a>
+    </h3>
+    <p>from base of obj/item/hit_reaction(): (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_IMBUE_SOUL">COMSIG_ITEM_IMBUE_SOUL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L186">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 186"/></a>
+    </h3>
+    <p>return a truthy value to prevent ensouling, checked in /obj/effect/proc_holder/spell/targeted/lichdom/cast(): (mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_MARK_RETRIEVAL">COMSIG_ITEM_MARK_RETRIEVAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L187">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 187"/></a>
+    </h3>
+    <p>called before marking an object for retrieval, checked in /obj/effect/proc_holder/spell/targeted/summonitem/cast() : (mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_PICKUP">COMSIG_ITEM_PICKUP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L184">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 184"/></a>
+    </h3>
+    <p>from base of obj/item/pickup(): (/mob/taker)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_ITEM_PRE_ATTACK">COMSIG_ITEM_PRE_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L179">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 179"/></a>
+    </h3>
+    <p>from base of obj/item/pre_attack(): (atom/target, mob/user, params)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_ELECTROCUTE_ACT">COMSIG_LIVING_ELECTROCUTE_ACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L154">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 154"/></a>
+    </h3>
+    <p>from base of mob/living/electrocute_act(): (shock_damage)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_EXTINGUISHED">COMSIG_LIVING_EXTINGUISHED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L153">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 153"/></a>
+    </h3>
+    <p>from base of mob/living/ExtinguishMob() (/mob/living)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_IGNITED">COMSIG_LIVING_IGNITED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L152">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 152"/></a>
+    </h3>
+    <p>from base of mob/living/IgniteMob() (/mob/living)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_MINOR_SHOCK">COMSIG_LIVING_MINOR_SHOCK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L155">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 155"/></a>
+    </h3>
+    <p>sent by stuff like stunbatons and tasers: ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_RESIST">COMSIG_LIVING_RESIST</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L151">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 151"/></a>
+    </h3>
+    <p>from base of mob/living/resist() (/mob/living)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_IMMOBILIZE">COMSIG_LIVING_STATUS_IMMOBILIZE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L161">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 161"/></a>
+    </h3>
+    <p>from base of mob/living/Immobilize() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_KNOCKDOWN">COMSIG_LIVING_STATUS_KNOCKDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L159">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 159"/></a>
+    </h3>
+    <p>from base of mob/living/Knockdown() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_PARALYZE">COMSIG_LIVING_STATUS_PARALYZE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L160">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 160"/></a>
+    </h3>
+    <p>from base of mob/living/Paralyze() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_SLEEP">COMSIG_LIVING_STATUS_SLEEP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L163">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 163"/></a>
+    </h3>
+    <p>from base of mob/living/Sleeping() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_STUN">COMSIG_LIVING_STATUS_STUN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L158">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 158"/></a>
+    </h3>
+    <p>from base of mob/living/Stun() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_LIVING_STATUS_UNCONSCIOUS">COMSIG_LIVING_STATUS_UNCONSCIOUS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L162">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 162"/></a>
+    </h3>
+    <p>from base of mob/living/Unconscious() (amount, update, ignore)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_ALLOWED">COMSIG_MOB_ALLOWED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L138">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 138"/></a>
+    </h3>
+    <p>from base of obj/allowed(mob/M): (/obj) returns bool, if TRUE the mob has id access to the obj</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_APPLY_DAMGE">COMSIG_MOB_APPLY_DAMGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L144">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 144"/></a>
+    </h3>
+    <p>from base of /mob/living/proc/apply_damage(): (damage, damagetype, def_zone)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_ATTACK_HAND">COMSIG_MOB_ATTACK_HAND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L142">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 142"/></a>
+    </h3>
+    <p>from base of</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_ATTACK_RANGED">COMSIG_MOB_ATTACK_RANGED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L146">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 146"/></a>
+    </h3>
+    <p>from base of mob/RangedAttack(): (atom/A, params)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_CLICKON">COMSIG_MOB_CLICKON</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L136">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 136"/></a>
+    </h3>
+    <p>from base of mob/clickon(): (atom/A, params)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_DEATH">COMSIG_MOB_DEATH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L135">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 135"/></a>
+    </h3>
+    <p>from base of mob/death(): (gibbed)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_HUD_CREATED">COMSIG_MOB_HUD_CREATED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L141">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 141"/></a>
+    </h3>
+    <p>from base of mob/create_mob_hud(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_ITEM_AFTERATTACK">COMSIG_MOB_ITEM_AFTERATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L145">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 145"/></a>
+    </h3>
+    <p>from base of obj/item/afterattack(): (atom/target, mob/user, proximity_flag, click_parameters)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_ITEM_ATTACK">COMSIG_MOB_ITEM_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 143"/></a>
+    </h3>
+    <p>from base of /obj/item/attack(): (mob/M, mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_RECEIVE_MAGIC">COMSIG_MOB_RECEIVE_MAGIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L139">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 139"/></a>
+    </h3>
+    <p>from base of mob/anti_magic_check(): (mob/user, magic, holy, major, self, protection_sources)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_THROW">COMSIG_MOB_THROW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L147">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 147"/></a>
+    </h3>
+    <p>from base of /mob/throw_item(): (atom/target)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOB_UPDATE_SIGHT">COMSIG_MOB_UPDATE_SIGHT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L148">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 148"/></a>
+    </h3>
+    <p>from base of /mob/update_sight(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOUSEDROPPED_ONTO">COMSIG_MOUSEDROPPED_ONTO</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L100">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 100"/></a>
+    </h3>
+    <p>from base of atom/MouseDrop_T: (/atom/from, /mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOUSEDROP_ONTO">COMSIG_MOUSEDROP_ONTO</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L98">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 98"/></a>
+    </h3>
+    <p>from base of atom/MouseDrop(): (/atom/over, /mob/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_BUCKLE">COMSIG_MOVABLE_BUCKLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L124">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 124"/></a>
+    </h3>
+    <p>from base of atom/movable/buckle_mob(): (mob, force)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_BUMP">COMSIG_MOVABLE_BUMP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L121">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 121"/></a>
+    </h3>
+    <p>from base of atom/movable/Bump(): (/atom)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_CROSS">COMSIG_MOVABLE_CROSS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L116">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 116"/></a>
+    </h3>
+    <p>from base of atom/movable/Cross(): (/atom/movable)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_CROSSED">COMSIG_MOVABLE_CROSSED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L117">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 117"/></a>
+    </h3>
+    <p>from base of atom/movable/Crossed(): (/atom/movable)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_DISPOSING">COMSIG_MOVABLE_DISPOSING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L132">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 132"/></a>
+    </h3>
+    <p>called when the movable is added to a disposal holder object for disposal movement: (obj/structure/disposalholder/holder, obj/machinery/disposal/source)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_HEAR">COMSIG_MOVABLE_HEAR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L131">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 131"/></a>
+    </h3>
+    <p>from base of atom/movable/Hear(): (message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_IMPACT">COMSIG_MOVABLE_IMPACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L122">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 122"/></a>
+    </h3>
+    <p>from base of atom/movable/throw_impact(): (/atom/hit_atom, /datum/thrownthing/throwingdatum)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_IMPACT_ZONE">COMSIG_MOVABLE_IMPACT_ZONE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L123">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 123"/></a>
+    </h3>
+    <p>from base of mob/living/hitby(): (mob/living/target, hit_zone)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_MOVED">COMSIG_MOVABLE_MOVED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L115">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 115"/></a>
+    </h3>
+    <p>from base of atom/movable/Moved(): (/atom, dir)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_POST_THROW">COMSIG_MOVABLE_POST_THROW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L128">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 128"/></a>
+    </h3>
+    <p>from base of atom/movable/throw_at(): (datum/thrownthing, spin)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_PRE_MOVE">COMSIG_MOVABLE_PRE_MOVE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L113">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 113"/></a>
+    </h3>
+    <p>from base of atom/movable/Moved(): (/atom)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_PRE_THROW">COMSIG_MOVABLE_PRE_THROW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L126">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 126"/></a>
+    </h3>
+    <p>from base of atom/movable/throw_at(): (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_SECLUDED_LOCATION">COMSIG_MOVABLE_SECLUDED_LOCATION</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L130">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 130"/></a>
+    </h3>
+    <p>called when the movable is placed in an unaccessible area, used for stationloving: ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_UNBUCKLE">COMSIG_MOVABLE_UNBUCKLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L125">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 125"/></a>
+    </h3>
+    <p>from base of atom/movable/unbuckle_mob(): (mob, force)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_UNCROSS">COMSIG_MOVABLE_UNCROSS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L118">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 118"/></a>
+    </h3>
+    <p>from base of atom/movable/Uncross(): (/atom/movable)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_UNCROSSED">COMSIG_MOVABLE_UNCROSSED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L120">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 120"/></a>
+    </h3>
+    <p>from base of atom/movable/Uncrossed(): (/atom/movable)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_MOVABLE_Z_CHANGED">COMSIG_MOVABLE_Z_CHANGED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L129">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 129"/></a>
+    </h3>
+    <p>from base of atom/movable/onTransitZ(): (old_z, new_z)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_ADD_PROGRAM">COMSIG_NANITE_ADD_PROGRAM</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L256">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 256"/></a>
+    </h3>
+    <p>(datum/nanite_program/new_program, datum/nanite_program/source_program) Called when adding a program to a nanite component</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_ADJUST_VOLUME">COMSIG_NANITE_ADJUST_VOLUME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L248">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 248"/></a>
+    </h3>
+    <p>(amount) Adjusts nanite volume by the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_GET_PROGRAMS">COMSIG_NANITE_GET_PROGRAMS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L246">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 246"/></a>
+    </h3>
+    <p>(list/nanite_programs) - makes the input list a copy the nanites' program list</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SCAN">COMSIG_NANITE_SCAN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L254">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 254"/></a>
+    </h3>
+    <p>(mob/user, full_scan) - sends to chat a scan of the nanites to the user, returns TRUE if nanites are detected</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SET_CLOUD">COMSIG_NANITE_SET_CLOUD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L250">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 250"/></a>
+    </h3>
+    <p>(amount(0-100)) Sets cloud ID to the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SET_MAX_VOLUME">COMSIG_NANITE_SET_MAX_VOLUME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L249">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 249"/></a>
+    </h3>
+    <p>(amount) Sets maximum nanite volume to the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SET_REGEN">COMSIG_NANITE_SET_REGEN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L252">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 252"/></a>
+    </h3>
+    <p>(amount) Sets regeneration rate to the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SET_SAFETY">COMSIG_NANITE_SET_SAFETY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L251">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 251"/></a>
+    </h3>
+    <p>(amount) Sets safety threshold to the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SET_VOLUME">COMSIG_NANITE_SET_VOLUME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L247">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 247"/></a>
+    </h3>
+    <p>(amount) Sets current nanite volume to the given amount</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SIGNAL">COMSIG_NANITE_SIGNAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L253">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 253"/></a>
+    </h3>
+    <p>(code(1-9999)) Called when sending a nanite signal to a mob.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_SYNC">COMSIG_NANITE_SYNC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L259">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 259"/></a>
+    </h3>
+    <p>(datum/component/nanites, full_overwrite, copy_activation) Called to sync the target's nanites to a given nanite component</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_NANITE_UI_DATA">COMSIG_NANITE_UI_DATA</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L255">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 255"/></a>
+    </h3>
+    <p>(list/data, scan_level) - adds nanite data to the given data list - made for ui_data procs</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_OBJ_DECONSTRUCT">COMSIG_OBJ_DECONSTRUCT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L170">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 170"/></a>
+    </h3>
+    <p>from base of obj/deconstruct(): (disassembled)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_OBJ_SETANCHORED">COMSIG_OBJ_SETANCHORED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L171">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 171"/></a>
+    </h3>
+    <p>called in /obj/structure/setAnchored(): (value)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PARENT_ATTACKBY">COMSIG_PARENT_ATTACKBY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 42"/></a>
+    </h3>
+    <p>from base of atom/attackby(): (/obj/item, /mob/living, params)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PARENT_EXAMINE">COMSIG_PARENT_EXAMINE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 45"/></a>
+    </h3>
+    <p>from base of atom/examine(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PARENT_PREQDELETED">COMSIG_PARENT_PREQDELETED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 38"/></a>
+    </h3>
+    <p>before a datum's Destroy() is called: (force), returning a nonzero value will cancel the qdel operation</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PARENT_QDELETING">COMSIG_PARENT_QDELETING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 39"/></a>
+    </h3>
+    <p>just before a datum's Destroy() is called: (force), at this point none of the other components chose to interrupt qdel and Destroy will be called</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PDA_CHANGE_RINGTONE">COMSIG_PDA_CHANGE_RINGTONE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L206">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 206"/></a>
+    </h3>
+    <p>called on pda when the user changes the ringtone: (mob/living/user, new_ringtone)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_PEN_ROTATED">COMSIG_PEN_ROTATED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L213">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 213"/></a>
+    </h3>
+    <p>called after rotation in /obj/item/pen/attack_self(): (rotation, mob/living/carbon/user)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_RADIO_NEW_FREQUENCY">COMSIG_RADIO_NEW_FREQUENCY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L210">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 210"/></a>
+    </h3>
+    <p>called from base of /obj/item/radio/proc/set_frequency(): (list/args)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_SHOES_STEP_ACTION">COMSIG_SHOES_STEP_ACTION</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L192">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 192"/></a>
+    </h3>
+    <p>from base of obj/item/clothing/shoes/proc/step_action(): ()</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_SPECIES_GAIN">COMSIG_SPECIES_GAIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L222">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 222"/></a>
+    </h3>
+    <p>from datum/species/on_species_gain(): (datum/species/new_species, datum/species/old_species)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_SPECIES_LOSS">COMSIG_SPECIES_LOSS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L223">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 223"/></a>
+    </h3>
+    <p>from datum/species/on_species_loss(): (datum/species/lost_species)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_CAN_INSERT">COMSIG_TRY_STORAGE_CAN_INSERT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L274">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 274"/></a>
+    </h3>
+    <p>(obj/item/insertion_candidate, mob/user, silent) - returns bool</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_FILL_TYPE">COMSIG_TRY_STORAGE_FILL_TYPE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L270">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 270"/></a>
+    </h3>
+    <p>(type, amount = INFINITY, force = FALSE)			//don't fuck this up. Force will ignore max_items, and amount is normally clamped to max_items.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_HIDE_ALL">COMSIG_TRY_STORAGE_HIDE_ALL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L266">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 266"/></a>
+    </h3>
+    <p>returns bool</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_HIDE_FROM">COMSIG_TRY_STORAGE_HIDE_FROM</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L265">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 265"/></a>
+    </h3>
+    <p>(mob/hide_from) - returns bool</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_INSERT">COMSIG_TRY_STORAGE_INSERT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L263">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 263"/></a>
+    </h3>
+    <p>(obj/item/inserting, mob/user, silent, force) - returns bool</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_QUICK_EMPTY">COMSIG_TRY_STORAGE_QUICK_EMPTY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L272">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 272"/></a>
+    </h3>
+    <p>(loc) - returns bool - if loc is null it will dump at parent location.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_RETURN_INVENTORY">COMSIG_TRY_STORAGE_RETURN_INVENTORY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L273">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 273"/></a>
+    </h3>
+    <p>(list/list_to_inject_results_into, recursively_search_inside_storages = TRUE)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_SET_LOCKSTATE">COMSIG_TRY_STORAGE_SET_LOCKSTATE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L267">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 267"/></a>
+    </h3>
+    <p>(newstate)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_SHOW">COMSIG_TRY_STORAGE_SHOW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L264">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 264"/></a>
+    </h3>
+    <p>(mob/show_to, force) - returns bool.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_TAKE">COMSIG_TRY_STORAGE_TAKE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L271">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 271"/></a>
+    </h3>
+    <p>(obj, new_loc, force = FALSE) - returns bool</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TRY_STORAGE_TAKE_TYPE">COMSIG_TRY_STORAGE_TAKE_TYPE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L269">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 269"/></a>
+    </h3>
+    <p>(type, atom/destination, amount = INFINITY, check_adjacent, force, mob/user, list/inserted) - returns bool - type can be a list of types.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TURF_CHANGE">COMSIG_TURF_CHANGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L107">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 107"/></a>
+    </h3>
+    <p>from base of turf/ChangeTurf(): (path, list/new_baseturfs, flags, list/transferring_comps)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TURF_HAS_GRAVITY">COMSIG_TURF_HAS_GRAVITY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L108">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 108"/></a>
+    </h3>
+    <p>from base of atom/has_gravity(): (atom/asker, list/forced_gravities)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TURF_IS_WET">COMSIG_TURF_IS_WET</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L227">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 227"/></a>
+    </h3>
+    <p>Component Specific Signals
+(): Returns bitflags of wet values.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TURF_MAKE_DRY">COMSIG_TURF_MAKE_DRY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L228">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 228"/></a>
+    </h3>
+    <p>(max_strength, immediate, duration_decrease = INFINITY): Returns bool.</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_TURF_MULTIZ_NEW">COMSIG_TURF_MULTIZ_NEW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L109">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 109"/></a>
+    </h3>
+    <p>from base of turf/New(): (turf/source, direction)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_MONKEY_CLICK_CTRL">COMSIG_XENO_MONKEY_CLICK_CTRL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L299">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 299"/></a>
+    </h3>
+    <p>from monkey CtrlClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_SLIME_CLICK_ALT">COMSIG_XENO_SLIME_CLICK_ALT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L295">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 295"/></a>
+    </h3>
+    <p>from slime AltClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_SLIME_CLICK_CTRL">COMSIG_XENO_SLIME_CLICK_CTRL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L294">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 294"/></a>
+    </h3>
+    <p>from slime CtrlClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_SLIME_CLICK_SHIFT">COMSIG_XENO_SLIME_CLICK_SHIFT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L296">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 296"/></a>
+    </h3>
+    <p>from slime ShiftClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_TURF_CLICK_CTRL">COMSIG_XENO_TURF_CLICK_CTRL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L298">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 298"/></a>
+    </h3>
+    <p>from turf AltClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/COMSIG_XENO_TURF_CLICK_SHIFT">COMSIG_XENO_TURF_CLICK_SHIFT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L297">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 297"/></a>
+    </h3>
+    <p>from turf ShiftClickOn(): (/mob)</p><h3><aside class="declaration">#define </aside><a name="define/ELEMENT_INCOMPATIBLE">ELEMENT_INCOMPATIBLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 8"/></a>
+    </h3>
+    <p>Return value to cancel attaching</p><h3><aside class="declaration">#define </aside><a name="define/REDIRECT_TRANSFER_WITH_TURF">REDIRECT_TRANSFER_WITH_TURF</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/components.dm#L283">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;components.dm 283"/></a>
+    </h3>
+    <p>Non-Signal Component Related Defines</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;mobs.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/mobs.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/mobs.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_DAMAGE_LEVEL_1">HEAT_DAMAGE_LEVEL_1</a></th><td>Amount of damage applied when your body temperature just passes the 360.15k safety point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_DAMAGE_LEVEL_2">HEAT_DAMAGE_LEVEL_2</a></th><td>Amount of damage applied when your body temperature passes the 400K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_DAMAGE_LEVEL_3">HEAT_DAMAGE_LEVEL_3</a></th><td>Amount of damage applied when your body temperature passes the 460K point and you are on fire</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_DAMAGE_LEVEL_1">COLD_DAMAGE_LEVEL_1</a></th><td>Amount of damage applied when your body temperature just passes the 260.15k safety point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_DAMAGE_LEVEL_2">COLD_DAMAGE_LEVEL_2</a></th><td>Amount of damage applied when your body temperature passes the 200K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_DAMAGE_LEVEL_3">COLD_DAMAGE_LEVEL_3</a></th><td>Amount of damage applied when your body temperature passes the 120K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_GAS_DAMAGE_LEVEL_1">HEAT_GAS_DAMAGE_LEVEL_1</a></th><td>Amount of damage applied when the current breath's temperature just passes the 360.15k safety point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_GAS_DAMAGE_LEVEL_2">HEAT_GAS_DAMAGE_LEVEL_2</a></th><td>Amount of damage applied when the current breath's temperature passes the 400K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HEAT_GAS_DAMAGE_LEVEL_3">HEAT_GAS_DAMAGE_LEVEL_3</a></th><td>Amount of damage applied when the current breath's temperature passes the 1000K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_GAS_DAMAGE_LEVEL_1">COLD_GAS_DAMAGE_LEVEL_1</a></th><td>Amount of damage applied when the current breath's temperature just passes the 260.15k safety point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_GAS_DAMAGE_LEVEL_2">COLD_GAS_DAMAGE_LEVEL_2</a></th><td>Amount of damage applied when the current breath's temperature passes the 200K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/COLD_GAS_DAMAGE_LEVEL_3">COLD_GAS_DAMAGE_LEVEL_3</a></th><td>Amount of damage applied when the current breath's temperature passes the 120K point</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/TRAUMA_RESILIENCE_BASIC">TRAUMA_RESILIENCE_BASIC</a></th><td>Curable with chems</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/TRAUMA_RESILIENCE_SURGERY">TRAUMA_RESILIENCE_SURGERY</a></th><td>Curable with brain surgery</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/TRAUMA_RESILIENCE_LOBOTOMY">TRAUMA_RESILIENCE_LOBOTOMY</a></th><td>Curable with lobotomy</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/TRAUMA_RESILIENCE_MAGIC">TRAUMA_RESILIENCE_MAGIC</a></th><td>Curable only with magic</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/TRAUMA_RESILIENCE_ABSOLUTE">TRAUMA_RESILIENCE_ABSOLUTE</a></th><td>This is here to stay</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_FOLLOW">SLIME_FRIENDSHIP_FOLLOW</a></th><td>Min friendship to order it to follow</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_STOPEAT">SLIME_FRIENDSHIP_STOPEAT</a></th><td>Min friendship to order it to stop eating someone</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_STOPEAT_NOANGRY">SLIME_FRIENDSHIP_STOPEAT_NOANGRY</a></th><td>Min friendship to order it to stop eating someone without it losing friendship</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_STOPCHASE">SLIME_FRIENDSHIP_STOPCHASE</a></th><td>Min friendship to order it to stop chasing someone (their target)</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_STOPCHASE_NOANGRY">SLIME_FRIENDSHIP_STOPCHASE_NOANGRY</a></th><td>Min friendship to order it to stop chasing someone (their target) without it losing friendship</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_STAY">SLIME_FRIENDSHIP_STAY</a></th><td>Min friendship to order it to stay</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_FRIENDSHIP_ATTACK">SLIME_FRIENDSHIP_ATTACK</a></th><td>Min friendship to order it to attack</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/INCORPOREAL_MOVE_SHADOW">INCORPOREAL_MOVE_SHADOW</a></th><td>leaves a trail of shadows</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/INCORPOREAL_MOVE_JAUNT">INCORPOREAL_MOVE_JAUNT</a></th><td>is blocked by holy water/salt</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/AGE_MIN">AGE_MIN</a></th><td>youngest a character can be</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/AGE_MAX">AGE_MAX</a></th><td>oldest a character can be</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/WIZARD_AGE_MIN">WIZARD_AGE_MIN</a></th><td>youngest a wizard can be</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/APPRENTICE_AGE_MIN">APPRENTICE_AGE_MIN</a></th><td>youngest an apprentice can be</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SHOES_SLOWDOWN">SHOES_SLOWDOWN</a></th><td>How much shoes slow you down by default. Negative values speed you up</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/POCKET_STRIP_DELAY">POCKET_STRIP_DELAY</a></th><td>time taken (in deciseconds) to search somebody's pockets</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/DOOR_CRUSH_DAMAGE">DOOR_CRUSH_DAMAGE</a></th><td>the amount of damage that airlocks deal when they crush you</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HUNGER_FACTOR">HUNGER_FACTOR</a></th><td>factor at which mob nutrition decreases</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/ETHEREAL_CHARGE_FACTOR">ETHEREAL_CHARGE_FACTOR</a></th><td>factor at which ethereal's charge decreases</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/HYGIENE_FACTOR">HYGIENE_FACTOR</a></th><td>factor at which mob hygiene decreases</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/REAGENTS_METABOLISM">REAGENTS_METABOLISM</a></th><td>How many units of reagent are consumed per tick, by default.</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/REAGENTS_EFFECT_MULTIPLIER">REAGENTS_EFFECT_MULTIPLIER</a></th><td>By defining the effect multiplier this way, it'll exactly adjust all effects according to how they originally were with the 0.4 metabolism</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/MAX_QUIRKS">MAX_QUIRKS</a></th><td>The maximum amount of quirks one character can have at roundstart</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/AI_VOX">AI_VOX</a></th><td>Comment out if you don't want VOX to be enabled and have players download the voice sounds.</td></tr>
+        <tr><td colspan="2"><h2>control what things can spawn species</h2></td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/MIRROR_BADMIN">MIRROR_BADMIN</a></th><td>Badmin magic mirror</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/MIRROR_MAGIC">MIRROR_MAGIC</a></th><td>Standard magic mirror (wizard)</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/MIRROR_PRIDE">MIRROR_PRIDE</a></th><td>Pride ruin mirror</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/RACE_SWAP">RACE_SWAP</a></th><td>Race swap wizard event</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/ERT_SPAWN">ERT_SPAWN</a></th><td>ERT spawn template (avoid races that don't function without correct gear)</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/SLIME_EXTRACT">SLIME_EXTRACT</a></th><td>xenobio black crossbreed</td></tr>
+        <tr><th><a href="code/__DEFINES/mobs.html#define/WABBAJACK">WABBAJACK</a></th><td>Wabbacjack staff projectiles</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/AGE_MAX">AGE_MAX</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L260">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 260"/></a>
+    </h3>
+    <p>oldest a character can be</p><h3><aside class="declaration">#define </aside><a name="define/AGE_MIN">AGE_MIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L259">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 259"/></a>
+    </h3>
+    <p>youngest a character can be</p><h3><aside class="declaration">#define </aside><a name="define/AI_VOX">AI_VOX</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L279">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 279"/></a>
+    </h3>
+    <p>Comment out if you don't want VOX to be enabled and have players download the voice sounds.</p><h3><aside class="declaration">#define </aside><a name="define/APPRENTICE_AGE_MIN">APPRENTICE_AGE_MIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L262">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 262"/></a>
+    </h3>
+    <p>youngest an apprentice can be</p><h3><aside class="declaration">#define </aside><a name="define/COLD_DAMAGE_LEVEL_1">COLD_DAMAGE_LEVEL_1</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L80">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 80"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature just passes the 260.15k safety point</p><h3><aside class="declaration">#define </aside><a name="define/COLD_DAMAGE_LEVEL_2">COLD_DAMAGE_LEVEL_2</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L81">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 81"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature passes the 200K point</p><h3><aside class="declaration">#define </aside><a name="define/COLD_DAMAGE_LEVEL_3">COLD_DAMAGE_LEVEL_3</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L82">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 82"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature passes the 120K point</p><h3><aside class="declaration">#define </aside><a name="define/COLD_GAS_DAMAGE_LEVEL_1">COLD_GAS_DAMAGE_LEVEL_1</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L89">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 89"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature just passes the 260.15k safety point</p><h3><aside class="declaration">#define </aside><a name="define/COLD_GAS_DAMAGE_LEVEL_2">COLD_GAS_DAMAGE_LEVEL_2</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 90"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature passes the 200K point</p><h3><aside class="declaration">#define </aside><a name="define/COLD_GAS_DAMAGE_LEVEL_3">COLD_GAS_DAMAGE_LEVEL_3</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L91">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 91"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature passes the 120K point</p><h3><aside class="declaration">#define </aside><a name="define/DOOR_CRUSH_DAMAGE">DOOR_CRUSH_DAMAGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L265">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 265"/></a>
+    </h3>
+    <p>the amount of damage that airlocks deal when they crush you</p><h3><aside class="declaration">#define </aside><a name="define/ERT_SPAWN">ERT_SPAWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L306">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 306"/></a>
+    </h3>
+    <p>ERT spawn template (avoid races that don't function without correct gear)</p><h3><aside class="declaration">#define </aside><a name="define/ETHEREAL_CHARGE_FACTOR">ETHEREAL_CHARGE_FACTOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L268">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 268"/></a>
+    </h3>
+    <p>factor at which ethereal's charge decreases</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_DAMAGE_LEVEL_1">HEAT_DAMAGE_LEVEL_1</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L76">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 76"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature just passes the 360.15k safety point</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_DAMAGE_LEVEL_2">HEAT_DAMAGE_LEVEL_2</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L77">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 77"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature passes the 400K point</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_DAMAGE_LEVEL_3">HEAT_DAMAGE_LEVEL_3</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L78">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 78"/></a>
+    </h3>
+    <p>Amount of damage applied when your body temperature passes the 460K point and you are on fire</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_GAS_DAMAGE_LEVEL_1">HEAT_GAS_DAMAGE_LEVEL_1</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 85"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature just passes the 360.15k safety point</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_GAS_DAMAGE_LEVEL_2">HEAT_GAS_DAMAGE_LEVEL_2</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L86">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 86"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature passes the 400K point</p><h3><aside class="declaration">#define </aside><a name="define/HEAT_GAS_DAMAGE_LEVEL_3">HEAT_GAS_DAMAGE_LEVEL_3</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L87">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 87"/></a>
+    </h3>
+    <p>Amount of damage applied when the current breath's temperature passes the 1000K point</p><h3><aside class="declaration">#define </aside><a name="define/HUNGER_FACTOR">HUNGER_FACTOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L267">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 267"/></a>
+    </h3>
+    <p>factor at which mob nutrition decreases</p><h3><aside class="declaration">#define </aside><a name="define/HYGIENE_FACTOR">HYGIENE_FACTOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L269">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 269"/></a>
+    </h3>
+    <p>factor at which mob hygiene decreases</p><h3><aside class="declaration">#define </aside><a name="define/INCORPOREAL_MOVE_JAUNT">INCORPOREAL_MOVE_JAUNT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L229">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 229"/></a>
+    </h3>
+    <p>is blocked by holy water/salt</p><h3><aside class="declaration">#define </aside><a name="define/INCORPOREAL_MOVE_SHADOW">INCORPOREAL_MOVE_SHADOW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L228">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 228"/></a>
+    </h3>
+    <p>leaves a trail of shadows</p><h3><aside class="declaration">#define </aside><a name="define/MAX_QUIRKS">MAX_QUIRKS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L275">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 275"/></a>
+    </h3>
+    <p>The maximum amount of quirks one character can have at roundstart</p><h3><aside class="declaration">#define </aside><a name="define/MIRROR_BADMIN">MIRROR_BADMIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L298">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 298"/></a>
+    </h3>
+    <p>Badmin magic mirror</p><h3><aside class="declaration">#define </aside><a name="define/MIRROR_MAGIC">MIRROR_MAGIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L300">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 300"/></a>
+    </h3>
+    <p>Standard magic mirror (wizard)</p><h3><aside class="declaration">#define </aside><a name="define/MIRROR_PRIDE">MIRROR_PRIDE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L302">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 302"/></a>
+    </h3>
+    <p>Pride ruin mirror</p><h3><aside class="declaration">#define </aside><a name="define/POCKET_STRIP_DELAY">POCKET_STRIP_DELAY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L264">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 264"/></a>
+    </h3>
+    <p>time taken (in deciseconds) to search somebody's pockets</p><h3><aside class="declaration">#define </aside><a name="define/RACE_SWAP">RACE_SWAP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L304">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 304"/></a>
+    </h3>
+    <p>Race swap wizard event</p><h3><aside class="declaration">#define </aside><a name="define/REAGENTS_EFFECT_MULTIPLIER">REAGENTS_EFFECT_MULTIPLIER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L271">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 271"/></a>
+    </h3>
+    <p>By defining the effect multiplier this way, it'll exactly adjust all effects according to how they originally were with the 0.4 metabolism</p><h3><aside class="declaration">#define </aside><a name="define/REAGENTS_METABOLISM">REAGENTS_METABOLISM</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L270">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 270"/></a>
+    </h3>
+    <p>How many units of reagent are consumed per tick, by default.</p><h3><aside class="declaration">#define </aside><a name="define/SHOES_SLOWDOWN">SHOES_SLOWDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L263">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 263"/></a>
+    </h3>
+    <p>How much shoes slow you down by default. Negative values speed you up</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_EXTRACT">SLIME_EXTRACT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L308">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 308"/></a>
+    </h3>
+    <p>xenobio black crossbreed</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_ATTACK">SLIME_FRIENDSHIP_ATTACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L195">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 195"/></a>
+    </h3>
+    <p>Min friendship to order it to attack</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_FOLLOW">SLIME_FRIENDSHIP_FOLLOW</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L189">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 189"/></a>
+    </h3>
+    <p>Min friendship to order it to follow</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_STAY">SLIME_FRIENDSHIP_STAY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L194">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 194"/></a>
+    </h3>
+    <p>Min friendship to order it to stay</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_STOPCHASE">SLIME_FRIENDSHIP_STOPCHASE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L192">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 192"/></a>
+    </h3>
+    <p>Min friendship to order it to stop chasing someone (their target)</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_STOPCHASE_NOANGRY">SLIME_FRIENDSHIP_STOPCHASE_NOANGRY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L193">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 193"/></a>
+    </h3>
+    <p>Min friendship to order it to stop chasing someone (their target) without it losing friendship</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_STOPEAT">SLIME_FRIENDSHIP_STOPEAT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L190">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 190"/></a>
+    </h3>
+    <p>Min friendship to order it to stop eating someone</p><h3><aside class="declaration">#define </aside><a name="define/SLIME_FRIENDSHIP_STOPEAT_NOANGRY">SLIME_FRIENDSHIP_STOPEAT_NOANGRY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L191">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 191"/></a>
+    </h3>
+    <p>Min friendship to order it to stop eating someone without it losing friendship</p><h3><aside class="declaration">#define </aside><a name="define/TRAUMA_RESILIENCE_ABSOLUTE">TRAUMA_RESILIENCE_ABSOLUTE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L107">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 107"/></a>
+    </h3>
+    <p>This is here to stay</p><h3><aside class="declaration">#define </aside><a name="define/TRAUMA_RESILIENCE_BASIC">TRAUMA_RESILIENCE_BASIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L103">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 103"/></a>
+    </h3>
+    <p>Curable with chems</p><h3><aside class="declaration">#define </aside><a name="define/TRAUMA_RESILIENCE_LOBOTOMY">TRAUMA_RESILIENCE_LOBOTOMY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L105">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 105"/></a>
+    </h3>
+    <p>Curable with lobotomy</p><h3><aside class="declaration">#define </aside><a name="define/TRAUMA_RESILIENCE_MAGIC">TRAUMA_RESILIENCE_MAGIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L106">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 106"/></a>
+    </h3>
+    <p>Curable only with magic</p><h3><aside class="declaration">#define </aside><a name="define/TRAUMA_RESILIENCE_SURGERY">TRAUMA_RESILIENCE_SURGERY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L104">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 104"/></a>
+    </h3>
+    <p>Curable with brain surgery</p><h3><aside class="declaration">#define </aside><a name="define/WABBAJACK">WABBAJACK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L310">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 310"/></a>
+    </h3>
+    <p>Wabbacjack staff projectiles</p><h3><aside class="declaration">#define </aside><a name="define/WIZARD_AGE_MIN">WIZARD_AGE_MIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/mobs.dm#L261">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;mobs.dm 261"/></a>
+    </h3>
+    <p>youngest a wizard can be</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

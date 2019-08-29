@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>(global) - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="global.html#var">Var Details</a> - <a href="global.html#proc">Proc Details</a></header>
+<main>
+<h1>(global)
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/(unknown)">
+        <img src="git.png" width="16" height="16" title="(unknown)"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="global.html#var/Failsafe">Failsafe</a></th><td>Failsafe</td></tr>
+            <tr><th><a href="global.html#var/Master">Master</a></th><td>StonedMC</td></tr>
+            <tr><th><a href="global.html#var/SSfastprocess">SSfastprocess</a></th><td>obj/item/weapon/implant/integrated_circuit</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="global.html#proc/BitCount">BitCount</a></th><td>counts the number of bits in Byond's 16-bit width field in constant time and memory!</td></tr>
+            <tr><th><a href="global.html#proc/DisplayEnergy">DisplayEnergy</a></th><td>Format an energy value measured in Power Cell units.</td></tr>
+            <tr><th><a href="global.html#proc/DisplayJoules">DisplayJoules</a></th><td>Format an energy value in J, kJ, MJ, or GJ. 1W = 1J/s.</td></tr>
+            <tr><th><a href="global.html#proc/DisplayPower">DisplayPower</a></th><td>Format a power value in W, kW, MW, or GW.</td></tr>
+            <tr><th><a href="global.html#proc/DisplayTimeText">DisplayTimeText</a></th><td>Takes a value of time in deciseconds. Returns a text value of that number in hours, minutes, or seconds.</td></tr>
+            <tr><th><a href="global.html#proc/GUID">GUID</a></th><td>returns a GUID like identifier, (using a mostly made up record format) Guids are not on their own suitable for access or security tokens, as most of their bits are predictable (But may make a nice salt to one)</td></tr>
+            <tr><th><a href="global.html#proc/Gcd">Gcd</a></th><td>Greatest Common Divisor - Euclid's algorithm</td></tr>
+            <tr><th><a href="global.html#proc/Get_Angle">Get_Angle</a></th><td>Get the angle between two atoms</td></tr>
+            <tr><th><a href="global.html#proc/Get_Pixel_Angle">Get_Pixel_Angle</a></th><td>For getting the angle when animating something's pixel_x and pixel_y (normalized pixel deltas)</td></tr>
+            <tr><th><a href="global.html#proc/Gibberish">Gibberish</a></th><td>Turn text into complete gibberish!</td></tr>
+            <tr><th><a href="global.html#proc/IsAdminGhost">IsAdminGhost</a></th><td>Is the passed in mob an admin ghost</td></tr>
+            <tr><th><a href="global.html#proc/IsGuestKey">IsGuestKey</a></th><td>Returns whether or not a player is a guest using their ckey as an input</td></tr>
+            <tr><th><a href="global.html#proc/PathWeightCompare">PathWeightCompare</a></th><td>the weighting function, used in the A* algorithm</td></tr>
+            <tr><th><a href="global.html#proc/REF">REF</a></th><td>\ref behaviour got changed in 512 so this is necesary to replicate old behaviour.</td></tr>
+            <tr><th><a href="global.html#proc/SQLtime">SQLtime</a></th><td>returns timestamp in a sql and a not-quite-compliant ISO 8601 friendly format</td></tr>
+            <tr><th><a href="global.html#proc/SolveQuadratic">SolveQuadratic</a></th><td>The quadratic formula. Returns a list with the solutions, or an empty list if they are imaginary.</td></tr>
+            <tr><th><a href="global.html#proc/above_neck">above_neck</a></th><td>Would this zone be above the neck</td></tr>
+            <tr><th><a href="global.html#proc/active_ais">active_ais</a></th><td>Returns a list of AI's</td></tr>
+            <tr><th><a href="global.html#proc/active_free_borgs">active_free_borgs</a></th><td>Returns a list of unslaved cyborgs</td></tr>
+            <tr><th><a href="global.html#proc/add_lspace">add_lspace</a></th><td>Adds <code>u</code> number of spaces ahead of the text <code>t</code></td></tr>
+            <tr><th><a href="global.html#proc/add_tspace">add_tspace</a></th><td>Adds <code>u</code> number of spaces behind the text <code>t</code></td></tr>
+            <tr><th><a href="global.html#proc/add_zero">add_zero</a></th><td>Adds <code>u</code> number of zeros ahead of the text <code>t</code></td></tr>
+            <tr><th><a href="global.html#proc/adminscrub">adminscrub</a></th><td>Runs byond's sanitization proc along-side strip_html_simple. I believe strip_html_simple() is required to run first to prevent '&lt;' from displaying as '&lt;' that html_encode() would cause</td></tr>
+            <tr><th><a href="global.html#proc/angle2dir">angle2dir</a></th><td>Converts an angle (degrees) into an ss13 direction bitmask</td></tr>
+            <tr><th><a href="global.html#proc/angle2dir_cardinal">angle2dir_cardinal</a></th><td>Converts an angle to a cardinal ss13 direction bitmask</td></tr>
+            <tr><th><a href="global.html#proc/angle2text">angle2text</a></th><td>Returns the angle in english</td></tr>
+            <tr><th><a href="global.html#proc/apply_text_macros">apply_text_macros</a></th><td>Used for applying byonds text macros to strings that are loaded at runtime</td></tr>
+            <tr><th><a href="global.html#proc/avoid_assoc_duplicate_keys">avoid_assoc_duplicate_keys</a></th><td>takes an input_key, as text, and the list of keys already used, outputting a replacement key in the format of &quot;[input_key] ([number_of_duplicates])&quot; if it finds a duplicate</td></tr>
+            <tr><th><a href="global.html#proc/bitfield2list">bitfield2list</a></th><td>Converts a bitfield to a list of numbers (or words if a wordlist is provided)</td></tr>
+            <tr><th><a href="global.html#proc/blendMode2iconMode">blendMode2iconMode</a></th><td>Converts a blend_mode constant to one acceptable to icon.Blend()</td></tr>
+            <tr><th><a href="global.html#proc/body_parts_covered2organ_names">body_parts_covered2organ_names</a></th><td>Turns a Body_parts_covered bitfield into a list of organ/limb names. (I challenge you to find a use for this)</td></tr>
+            <tr><th><a href="global.html#proc/callback_select">callback_select</a></th><td>Runs a list of callbacks asyncronously, returning only when all have finished</td></tr>
+            <tr><th><a href="global.html#proc/can_see">can_see</a></th><td>Step-towards method of determining whether one atom can see another. Similar to viewers()</td></tr>
+            <tr><th><a href="global.html#proc/capitalize">capitalize</a></th><td>Returns a string with the first element of the string capitalized.</td></tr>
+            <tr><th><a href="global.html#proc/center_image">center_image</a></th><td>Center's an image.</td></tr>
+            <tr><th><a href="global.html#proc/check_zone">check_zone</a></th><td>Convert a PRECISE ZONE into the BODY_ZONE</td></tr>
+            <tr><th><a href="global.html#proc/clearlist">clearlist</a></th><td>Empties the list by setting the length to 0. Hopefully the elements get garbage collected</td></tr>
+            <tr><th><a href="global.html#proc/closer_angle_difference">closer_angle_difference</a></th><td>Finds the shortest angle that angle A has to change to get to angle B. Aka, whether to move clock or counterclockwise.</td></tr>
+            <tr><th><a href="global.html#proc/color2hex">color2hex</a></th><td>Converts a text color like &quot;red&quot; to a hex color (&quot;#FF0000&quot;)</td></tr>
+            <tr><th><a href="global.html#proc/color_hex2num">color_hex2num</a></th><td>Converts a hex code to a number</td></tr>
+            <tr><th><a href="global.html#proc/color_matrix2color_hex">color_matrix2color_hex</a></th><td>Will drop all values not on the diagonal</td></tr>
+            <tr><th><a href="global.html#proc/completed_bounty_count">completed_bounty_count</a></th><td>Subtype Gens</td></tr>
+            <tr><th><a href="global.html#proc/count_by_type">count_by_type</a></th><td>Counts how many items there are of the specified type in a list</td></tr>
+            <tr><th><a href="global.html#proc/cultslur">cultslur</a></th><td>Makes you talk like you got cult stunned, which is slurring but with some dark messages</td></tr>
+            <tr><th><a href="global.html#proc/dd_centertext">dd_centertext</a></th><td>Centers text by adding spaces to either side of the string.</td></tr>
+            <tr><th><a href="global.html#proc/dd_hasprefix">dd_hasprefix</a></th><td>Checks the beginning of a string for a specified sub-string. Returns the position of the substring or 0 if it was not found</td></tr>
+            <tr><th><a href="global.html#proc/dd_hasprefix_case">dd_hasprefix_case</a></th><td>Checks the beginning of a string for a specified sub-string. This proc is case sensitive. Returns the position of the substring or 0 if it was not found</td></tr>
+            <tr><th><a href="global.html#proc/dd_hassuffix">dd_hassuffix</a></th><td>Checks the end of a string for a specified substring. Returns the position of the substring or 0 if it was not found</td></tr>
+            <tr><th><a href="global.html#proc/dd_hassuffix_case">dd_hassuffix_case</a></th><td>Checks the end of a string for a specified substring. This proc is case sensitive. Returns the position of the substring or 0 if it was not found</td></tr>
+            <tr><th><a href="global.html#proc/dd_limittext">dd_limittext</a></th><td>Limits the length of the text. Note: MAX_MESSAGE_LEN and MAX_NAME_LEN are widely used for this purpose</td></tr>
+            <tr><th><a href="global.html#proc/deepCopyList">deepCopyList</a></th><td>Copies a list, and all lists inside it recusively. Does not copy any other reference type</td></tr>
+            <tr><th><a href="global.html#proc/derpspeech">derpspeech</a></th><td>Convert a message to derpy speak</td></tr>
+            <tr><th><a href="global.html#proc/difflist">difflist</a></th><td>Returns list containing all the entries from first list that are not present in second.
+If skiprep = 1, repeated elements are treated as one.
+If either of arguments is not a list, returns null</td></tr>
+            <tr><th><a href="global.html#proc/dir2angle">dir2angle</a></th><td>Returns the north-zero clockwise angle in degrees, given a direction</td></tr>
+            <tr><th><a href="global.html#proc/do_atom">do_atom</a></th><td>same as do_mob except for movables and it allows both to drift and doesn't draw progressbar</td></tr>
+            <tr><th><a href="global.html#proc/dview">dview</a></th><td>Version of view() which ignores darkness, because BYOND doesn't have it (I actually suggested it but it was tagged redundant, BUT HEARERS IS A T- /rant).</td></tr>
+            <tr><th><a href="global.html#proc/english_list">english_list</a></th><td>Returns a list in plain english as a string</td></tr>
+            <tr><th><a href="global.html#proc/findname">findname</a></th><td>Find if the message has the real name of any user mob in the mob_list</td></tr>
+            <tr><th><a href="global.html#proc/flatten_list">flatten_list</a></th><td>Flattens a keyed list into a list of it's contents</td></tr>
+            <tr><th><a href="global.html#proc/gameTimestamp">gameTimestamp</a></th><td>Returns wtime (defaults world.time) into hh:mm:ss</td></tr>
+            <tr><th><a href="global.html#proc/getElementByVar">getElementByVar</a></th><td>return first thing in L which has <code>var/varname == value</code></td></tr>
+            <tr><th><a href="global.html#proc/getPixelDistance">getPixelDistance</a></th><td>Finds the distance between two atoms, in pixels</td></tr>
+            <tr><th><a href="global.html#proc/get_area_instance_from_text">get_area_instance_from_text</a></th><td>Takes: Area type as a text string from a variable.</td></tr>
+            <tr><th><a href="global.html#proc/get_area_turfs">get_area_turfs</a></th><td>Takes: Area type as text string or as typepath OR an instance of the area.</td></tr>
+            <tr><th><a href="global.html#proc/get_areas">get_areas</a></th><td>Takes: Area type as text string or as typepath OR an instance of the area.</td></tr>
+            <tr><th><a href="global.html#proc/get_edge_target_turf">get_edge_target_turf</a></th><td>Returns the turf located at the map edge in the specified direction relative to A. Used for mass driver</td></tr>
+            <tr><th><a href="global.html#proc/get_offset_target_turf">get_offset_target_turf</a></th><td>returns turf relative to A offset in dx and dy tiles, bound to map limits</td></tr>
+            <tr><th><a href="global.html#proc/get_overlap">get_overlap</a></th><td>Returns a list where [1] is all x values and [2] is all y values that overlap between the given pair of rectangles</td></tr>
+            <tr><th><a href="global.html#proc/get_ranged_target_turf">get_ranged_target_turf</a></th><td>Returns turf relative to A in given direction at set range, result is bounded to map size. Note: range is non-pythagorean. Used for disposal system</td></tr>
+            <tr><th><a href="global.html#proc/get_turf_pixel">get_turf_pixel</a></th><td>Gets the turf this atom's <em>ICON</em> appears to inhabit</td></tr>
+            <tr><th><a href="global.html#proc/getleftblocks">getleftblocks</a></th><td>DNA HELPER-PROCS</td></tr>
+            <tr><th><a href="global.html#proc/getline">getline</a></th><td>Ultra-Fast Bresenham Line-Drawing Algorithm</td></tr>
+            <tr><th><a href="global.html#proc/getpois">getpois</a></th><td>Returns a list of all items of interest with their name</td></tr>
+            <tr><th><a href="global.html#proc/goonchem_vortex">goonchem_vortex</a></th><td>Simulates a vortex that moves nearby movable atoms towards or away from the turf T. Range also determines the strength of the effect. High values cause nearby objects to be thrown.</td></tr>
+            <tr><th><a href="global.html#proc/heat2colour">heat2colour</a></th><td>adapted from http://www.tannerhelland.com/4435/convert-temperature-rgb-algorithm-code</td></tr>
+            <tr><th><a href="global.html#proc/hextostr">hextostr</a></th><td>Decodes hex to raw byte string. If safe=TRUE, returns null on incorrect input strings instead of CRASHing</td></tr>
+            <tr><th><a href="global.html#proc/hsl2rgb">hsl2rgb</a></th><td>Converts an HSL color to an RGB color</td></tr>
+            <tr><th><a href="global.html#proc/hue2rgb">hue2rgb</a></th><td>Converts an ABH color to an RGB color</td></tr>
+            <tr><th><a href="global.html#proc/invertHTML">invertHTML</a></th><td>Inverts the colour of an HTML string</td></tr>
+            <tr><th><a href="global.html#proc/ionnum">ionnum</a></th><td>Picks a string of symbols to display as the law number for hacked or ion laws</td></tr>
+            <tr><th><a href="global.html#proc/isDay">isDay</a></th><td>Returns 1 if it is the selected month and day</td></tr>
+            <tr><th><a href="global.html#proc/isLeap">isLeap</a></th><td>Returns whether the specified year is a leap year</td></tr>
+            <tr><th><a href="global.html#proc/is_blind">is_blind</a></th><td>Checks if passed through item is blind</td></tr>
+            <tr><th><a href="global.html#proc/is_blocked_turf">is_blocked_turf</a></th><td>Returns TRUE if the turf cannot be moved onto</td></tr>
+            <tr><th><a href="global.html#proc/is_special_character">is_special_character</a></th><td>Is this mob special to the gamemode?</td></tr>
+            <tr><th><a href="global.html#proc/is_string_in_list">is_string_in_list</a></th><td>Checks for a string in a list</td></tr>
+            <tr><th><a href="global.html#proc/is_type_in_list">is_type_in_list</a></th><td>Checks for specific types in a list</td></tr>
+            <tr><th><a href="global.html#proc/isemptylist">isemptylist</a></th><td>Checks if the list is empty</td></tr>
+            <tr><th><a href="global.html#proc/item_heal_robotic">item_heal_robotic</a></th><td>Heal a robotic body part on a mob</td></tr>
+            <tr><th><a href="global.html#proc/json_deserialize_datum">json_deserialize_datum</a></th><td>Convert a list of json to datum</td></tr>
+            <tr><th><a href="global.html#proc/json_serialize_datum">json_serialize_datum</a></th><td>Convert a datum into a json blob</td></tr>
+            <tr><th><a href="global.html#proc/listclearnulls">listclearnulls</a></th><td>Removes any null entries from the list. Returns TRUE if the list had nulls, FALSE otherwise</td></tr>
+            <tr><th><a href="global.html#proc/listgetindex">listgetindex</a></th><td>Returns list element or null. Should prevent &quot;index out of bounds&quot; error.</td></tr>
+            <tr><th><a href="global.html#proc/load_map">load_map</a></th><td>Shortcut function to parse a map and apply it to the world.</td></tr>
+            <tr><th><a href="global.html#proc/log_combat">log_combat</a></th><td>Log a combat message in the attack log</td></tr>
+            <tr><th><a href="global.html#proc/log_directed_talk">log_directed_talk</a></th><td>Helper for logging of messages with only one sender and receiver</td></tr>
+            <tr><th><a href="global.html#proc/merge_text">merge_text</a></th><td>merges non-null characters (3rd argument) from &quot;from&quot; into &quot;into&quot;. Returns result.</td></tr>
+            <tr><th><a href="global.html#proc/moveElement">moveElement</a></th><td>Move a single element from position fromIndex within a list, to position toIndex</td></tr>
+            <tr><th><a href="global.html#proc/moveRange">moveRange</a></th><td>Move elements [fromIndex,fromIndex+len) to [toIndex-len, toIndex)</td></tr>
+            <tr><th><a href="global.html#proc/movespeed_data_null_check">movespeed_data_null_check</a></th><td>Checks if a move speed modifier is valid and not missing any data</td></tr>
+            <tr><th><a href="global.html#proc/next_list_item">next_list_item</a></th><td>Returns the next item in a list</td></tr>
+            <tr><th><a href="global.html#proc/ninjaspeak">ninjaspeak</a></th><td>Convert a message into leet non gaijin speak</td></tr>
+            <tr><th><a href="global.html#proc/non_zero_min">non_zero_min</a></th><td>html_encode helper proc that returns the smallest non null of two numbers, or 0 if they're both null (needed because of findtext returning 0 when a value is not present)</td></tr>
+            <tr><th><a href="global.html#proc/notify_ghosts">notify_ghosts</a></th><td>Fancy notifications for ghosts</td></tr>
+            <tr><th><a href="global.html#proc/offer_control">offer_control</a></th><td>Offer control of the passed in mob to dead player</td></tr>
+            <tr><th><a href="global.html#proc/pick_n_take">pick_n_take</a></th><td>Pick a random element from the list and remove it from the list.</td></tr>
+            <tr><th><a href="global.html#proc/pickweight">pickweight</a></th><td>*Picks a random element from a list based on a weighting system:</td></tr>
+            <tr><th><a href="global.html#proc/pop">pop</a></th><td>Returns the top(last) element from the list and removes it from the list (typical stack function)</td></tr>
+            <tr><th><a href="global.html#proc/popleft">popleft</a></th><td>Returns the bottom(first) element from the list and removes it from the list (typical stack function)</td></tr>
+            <tr><th><a href="global.html#proc/previous_list_item">previous_list_item</a></th><td>Returns the previous item in a list</td></tr>
+            <tr><th><a href="global.html#proc/process_teleport_locs">process_teleport_locs</a></th><td>Generate a list of turfs you can teleport to from the areas list</td></tr>
+            <tr><th><a href="global.html#proc/ran_zone">ran_zone</a></th><td>Return the zone or randomly, another valid zone</td></tr>
+            <tr><th><a href="global.html#proc/random_capital_letter">random_capital_letter</a></th><td>Returns a random capital letter, like the uh, proc name kind of obviously suggests</td></tr>
+            <tr><th><a href="global.html#proc/random_color">random_color</a></th><td>Returns a random hex color 6 digits long</td></tr>
+            <tr><th><a href="global.html#proc/random_short_color">random_short_color</a></th><td>Returns a random hex color 3 digits long</td></tr>
+            <tr><th><a href="global.html#proc/random_string">random_string</a></th><td>Returns a random string of <code>length</code> length and made up of chars from <code>characters</code></td></tr>
+            <tr><th><a href="global.html#proc/reject_bad_name">reject_bad_name</a></th><td>Filters out undesirable characters from names</td></tr>
+            <tr><th><a href="global.html#proc/reject_bad_text">reject_bad_text</a></th><td>Returns null if there is any bad text in the string</td></tr>
+            <tr><th><a href="global.html#proc/removeNullsFromList">removeNullsFromList</a></th><td>remove all nulls from a list</td></tr>
+            <tr><th><a href="global.html#proc/remove_strings_from_list">remove_strings_from_list</a></th><td>Removes a string from a list</td></tr>
+            <tr><th><a href="global.html#proc/repeat_string">repeat_string</a></th><td>Returns <code>string</code> repeated <code>times</code> times</td></tr>
+            <tr><th><a href="global.html#proc/reverseRange">reverseRange</a></th><td>reverseList, but a range of the list specified</td></tr>
+            <tr><th><a href="global.html#proc/reverse_text">reverse_text</a></th><td>Returns a reversed version of <code>text</code></td></tr>
+            <tr><th><a href="global.html#proc/rgb2hsl">rgb2hsl</a></th><td>Converts an RGB color to an HSL color</td></tr>
+            <tr><th><a href="global.html#proc/rights2text">rights2text</a></th><td>Converts a rights bitfield into a string</td></tr>
+            <tr><th><a href="global.html#proc/safepick">safepick</a></th><td>Return either pick(list) or null if list is not of type /list or is empty</td></tr>
+            <tr><th><a href="global.html#proc/sanitize">sanitize</a></th><td>Runs byond's sanitization proc along-side sanitize_simple</td></tr>
+            <tr><th><a href="global.html#proc/sanitizeSQL">sanitizeSQL</a></th><td>Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.</td></tr>
+            <tr><th><a href="global.html#proc/sanitize_filename">sanitize_filename</a></th><td>Sanitizes a string to act as a file path</td></tr>
+            <tr><th><a href="global.html#proc/sanitize_gender">sanitize_gender</a></th><td>Return <code>gender</code> if it is a valid gender, otherwise <code>default</code>. No I did not mean to offend you. -qwerty</td></tr>
+            <tr><th><a href="global.html#proc/sanitize_hexcolor">sanitize_hexcolor</a></th><td>Return <code>color</code> if it is a valid hex color, otherwise <code>default</code></td></tr>
+            <tr><th><a href="global.html#proc/sanitize_inlist">sanitize_inlist</a></th><td>Return <code>value</code> if it's in List, otherwise <code>default</code></td></tr>
+            <tr><th><a href="global.html#proc/sanitize_integer">sanitize_integer</a></th><td>Return <code>number</code> if it is in the range <code>min to max</code>, otherwise <code>default</code></td></tr>
+            <tr><th><a href="global.html#proc/sanitize_islist">sanitize_islist</a></th><td>Return <code>value</code> if it is a list, otherwise <code>default</code></td></tr>
+            <tr><th><a href="global.html#proc/sanitize_ooccolor">sanitize_ooccolor</a></th><td>Return <code>color</code> as a formatted ooc valid hex color</td></tr>
+            <tr><th><a href="global.html#proc/sanitize_simple">sanitize_simple</a></th><td>Removes all characters in <code>repl_chars</code></td></tr>
+            <tr><th><a href="global.html#proc/sanitize_text">sanitize_text</a></th><td>Return <code>text</code> if it is text, otherwise <code>default</code></td></tr>
+            <tr><th><a href="global.html#proc/select_active_ai">select_active_ai</a></th><td>Select a random and active free AI</td></tr>
+            <tr><th><a href="global.html#proc/select_active_ai_with_fewest_borgs">select_active_ai_with_fewest_borgs</a></th><td>Find an active ai with the least borgs. VERBOSE PROCNAME HUH!</td></tr>
+            <tr><th><a href="global.html#proc/select_active_free_borg">select_active_free_borg</a></th><td>Select a random active and free borg</td></tr>
+            <tr><th><a href="global.html#proc/send2chat">send2chat</a></th><td>sends a message to chat</td></tr>
+            <tr><th><a href="global.html#proc/servants_and_ghosts">servants_and_ghosts</a></th><td>Returns a list of all servants of Ratvar and observers.</td></tr>
+            <tr><th><a href="global.html#proc/shake_camera">shake_camera</a></th><td>Shake the camera of the person viewing the mob SO REAL!</td></tr>
+            <tr><th><a href="global.html#proc/shuffle">shuffle</a></th><td>Randomize: Return the list in a random order</td></tr>
+            <tr><th><a href="global.html#proc/shuffle_inplace">shuffle_inplace</a></th><td>Randomize a list, but returns nothing and acts on list in place</td></tr>
+            <tr><th><a href="global.html#proc/slot2body_zone">slot2body_zone</a></th><td>Returns the body_zone a given slot appears on</td></tr>
+            <tr><th><a href="global.html#proc/slur">slur</a></th><td>Makes you speak like you're drunk</td></tr>
+            <tr><th><a href="global.html#proc/sortKey">sortKey</a></th><td>for sorting clients or mobs by ckey</td></tr>
+            <tr><th><a href="global.html#proc/sortList">sortList</a></th><td>sorting any value in a list with any comparator</td></tr>
+            <tr><th><a href="global.html#proc/sortNames">sortNames</a></th><td>uses sortList() but uses the var's name specifically. This should probably be using mergeAtom() instead</td></tr>
+            <tr><th><a href="global.html#proc/sortRecord">sortRecord</a></th><td>Specifically for sorting record datums in a list.</td></tr>
+            <tr><th><a href="global.html#proc/sortmobs">sortmobs</a></th><td>Orders mobs by type then by name</td></tr>
+            <tr><th><a href="global.html#proc/spiral_range">spiral_range</a></th><td>similar function to range(), but with no limitations on the distance; will search spiralling outwards from the center</td></tr>
+            <tr><th><a href="global.html#proc/spiral_range_turfs">spiral_range_turfs</a></th><td>similar function to RANGE_TURFS(), but will search spiralling outwards from the center (like spiral_range, but only turfs)</td></tr>
+            <tr><th><a href="global.html#proc/stack_trace">stack_trace</a></th><td>gives us the stack trace from CRASH() without ending the current proc.</td></tr>
+            <tr><th><a href="global.html#proc/stars">stars</a></th><td>Convert random parts of a passed in message to stars</td></tr>
+            <tr><th><a href="global.html#proc/station_time">station_time</a></th><td>Returns the station time in deciseconds</td></tr>
+            <tr><th><a href="global.html#proc/station_time_timestamp">station_time_timestamp</a></th><td>Returns the station time in hh:mm:ss</td></tr>
+            <tr><th><a href="global.html#proc/stoplag">stoplag</a></th><td>Returns the number of ticks slept</td></tr>
+            <tr><th><a href="global.html#proc/string2listofvars">string2listofvars</a></th><td>This is a weird one: It returns a list of all var names found in the string. These vars must be in the [var_name] format</td></tr>
+            <tr><th><a href="global.html#proc/stringpercent">stringpercent</a></th><td>This proc returns the number of chars of the string that is the character. This is used for detective work to determine fingerprint completion.</td></tr>
+            <tr><th><a href="global.html#proc/strip_html">strip_html</a></th><td>Runs sanitize and strip_html_simple. I believe strip_html_simple() is required to run first to prevent '&lt;' from displaying as '&lt;' after sanitize() calls byond's html_encode()</td></tr>
+            <tr><th><a href="global.html#proc/strip_html_simple">strip_html_simple</a></th><td>Simply removes &lt; and &gt; and limits the length of the message</td></tr>
+            <tr><th><a href="global.html#proc/stripped_input">stripped_input</a></th><td>Used to get a properly sanitized input, of max_length. no_trim is self explanatory but it prevents the input from being trimed if you intend to parse newlines or whitespace.</td></tr>
+            <tr><th><a href="global.html#proc/stripped_multiline_input">stripped_multiline_input</a></th><td>Used to get a properly sanitized multiline input, of max_length</td></tr>
+            <tr><th><a href="global.html#proc/strtohex">strtohex</a></th><td>Encodes a string to hex</td></tr>
+            <tr><th><a href="global.html#proc/stutter">stutter</a></th><td>Adds stuttering to the message passed in</td></tr>
+            <tr><th><a href="global.html#proc/swapRange">swapRange</a></th><td>Move elements from [fromIndex, fromIndex+len) to [toIndex, toIndex+len)</td></tr>
+            <tr><th><a href="global.html#proc/text2dir">text2dir</a></th><td>Turns text into proper direction bitmasks</td></tr>
+            <tr><th><a href="global.html#proc/text_in_list">text_in_list</a></th><td>Checks if any of a given list of needles is in the haystack</td></tr>
+            <tr><th><a href="global.html#proc/text_in_list_case">text_in_list_case</a></th><td>Checks if any of a given list of needles is in the haystack, case sensitive</td></tr>
+            <tr><th><a href="global.html#proc/thtotext">thtotext</a></th><td>Replacement for the \th macro when you want the whole word output as text (first instead of 1st)</td></tr>
+            <tr><th><a href="global.html#proc/time_stamp">time_stamp</a></th><td>Returns the world time into hh:mm:ss with the option of showing deciseconds</td></tr>
+            <tr><th><a href="global.html#proc/trim">trim</a></th><td>Returns a string with reserved characters and spaces before the first word and after the last word removed.</td></tr>
+            <tr><th><a href="global.html#proc/trim_left">trim_left</a></th><td>Returns a string with reserved characters and spaces before the first letter removed</td></tr>
+            <tr><th><a href="global.html#proc/trim_right">trim_right</a></th><td>Returns a string with reserved characters and spaces after the last letter removed</td></tr>
+            <tr><th><a href="global.html#proc/twitterize">twitterize</a></th><td>Takes a list of values, sanitizes it down for readability and character count, then exports it as a json file at data/npc_saves/[filename].json. As far as SS13 is concerned this is write only data. You can't change something in the json file and have it be reflected in the in game item/mob it came from. (That's what things like savefiles are for) Note that this list is not shuffled.</td></tr>
+            <tr><th><a href="global.html#proc/typecache_filter_list">typecache_filter_list</a></th><td>returns a new list with only atoms that are in typecache L</td></tr>
+            <tr><th><a href="global.html#proc/typecache_filter_list_reverse">typecache_filter_list_reverse</a></th><td>returns a new list with only atoms that are NOT in typecache L</td></tr>
+            <tr><th><a href="global.html#proc/typecache_filter_multi_list_exclusion">typecache_filter_multi_list_exclusion</a></th><td>returns a new list with only atoms that are in typecache typecache_include but NOT in typecache_exclude</td></tr>
+            <tr><th><a href="global.html#proc/typecacheof">typecacheof</a></th><td>Like typesof() or subtypesof(), but returns a typecache instead of a list</td></tr>
+            <tr><th><a href="global.html#proc/unintelligize">unintelligize</a></th><td>Makes the message a lot dumber</td></tr>
+            <tr><th><a href="global.html#proc/uniqueList">uniqueList</a></th><td>Return a list with no duplicate entries</td></tr>
+            <tr><th><a href="global.html#proc/uniquemergelist">uniquemergelist</a></th><td>Returns list containing entries that are in either list but not both.
+If skipref = 1, repeated elements are treated as one.
+If either of arguments is not a list, returns null</td></tr>
+            <tr><th><a href="global.html#proc/unix2date">unix2date</a></th><td>Very ugly, BYOND doesn't support unix time and rounding errors make it really hard to convert it to BYOND time. returns &quot;YYYY-MM-DD&quot; by default</td></tr>
+            <tr><th><a href="global.html#proc/voice_of_god">voice_of_god</a></th><td>VOICE OF GOD</td></tr>
+            <tr><th><a href="global.html#proc/weekdayofthemonth">weekdayofthemonth</a></th><td>Returns which week of the month we are in</td></tr>
+            <tr><th><a href="global.html#proc/worldtime2text">worldtime2text</a></th><td>Returns the world time in hh:mm:ss</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/Failsafe">Failsafe</a>
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/controller/failsafe</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/controllers/failsafe.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;failsafe.dm 7"/></a></h3>
+        <p>Failsafe</p>
+<p>Pretty much pokes the MC to make sure it's still alive.</p><h3><aside class="declaration">var </aside><a name="var/Master">Master</a>
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/controller/master</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/controllers/master.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;master.dm 11"/></a></h3>
+        <p>StonedMC</p>
+<p>Designed to properly split up a given tick among subsystems
+Note: if you read parts of this code and think &quot;why is it doing it that way&quot;
+Odds are, there is a reason</p><h3><aside class="declaration">var </aside><a name="var/SSfastprocess">SSfastprocess</a>
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/processing/fastprocess</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/controllers/subsystem/processing/fastprocess.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;processing&#x2F;fastprocess.dm 3"/></a></h3>
+        <p>obj/item/weapon/implant/integrated_circuit</p><h2><a name="proc">Proc Details</a></h2><h3><aside class="declaration">proc </aside><a name="proc/BitCount">BitCount</a><aside>(bitfield) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1380">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1380"/></a></aside>
+        </h3>
+        <p>counts the number of bits in Byond's 16-bit width field in constant time and memory!</p><h3><aside class="declaration">proc </aside><a name="proc/DisplayEnergy">DisplayEnergy</a><aside>(units) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L386">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 386"/></a></aside>
+        </h3>
+        <p>Format an energy value measured in Power Cell units.</p><h3><aside class="declaration">proc </aside><a name="proc/DisplayJoules">DisplayJoules</a><aside>(units) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L376">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 376"/></a></aside>
+        </h3>
+        <p>Format an energy value in J, kJ, MJ, or GJ. 1W = 1J/s.</p><h3><aside class="declaration">proc </aside><a name="proc/DisplayPower">DisplayPower</a><aside>(powerused) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L366">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 366"/></a></aside>
+        </h3>
+        <p>Format a power value in W, kW, MW, or GW.</p><h3><aside class="declaration">proc </aside><a name="proc/DisplayTimeText">DisplayTimeText</a><aside>(time_value, round_seconds_to) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L70">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 70"/></a></aside>
+        </h3>
+        <p>Takes a value of time in deciseconds. Returns a text value of that number in hours, minutes, or seconds.</p><h3><aside class="declaration">proc </aside><a name="proc/GUID">GUID</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1424">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1424"/></a></aside>
+        </h3>
+        <p>returns a GUID like identifier, (using a mostly made up record format) Guids are not on their own suitable for access or security tokens, as most of their bits are predictable (But may make a nice salt to one)</p><h3><aside class="declaration">proc </aside><a name="proc/Gcd">Gcd</a><aside>(a, b) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 56"/></a></aside>
+        </h3>
+        <p>Greatest Common Divisor - Euclid's algorithm</p><h3><aside class="declaration">proc </aside><a name="proc/Get_Angle">Get_Angle</a><aside>(/<a href="atom.html">atom</a>/movable/start, /<a href="atom.html">atom</a>/movable/end) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 30"/></a></aside>
+        </h3>
+        <p>Get the angle between two atoms</p><h3><aside class="declaration">proc </aside><a name="proc/Get_Pixel_Angle">Get_Pixel_Angle</a><aside>(y, x) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 46"/></a></aside>
+        </h3>
+        <p>For getting the angle when animating something's pixel_x and pixel_y (normalized pixel deltas)</p><h3><aside class="declaration">proc </aside><a name="proc/Gibberish">Gibberish</a><aside>(t, p) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L207">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 207"/></a></aside>
+        </h3>
+        <p>Turn text into complete gibberish!</p>
+<p>t is the inputted message, and any value higher than 70 for p will cause letters to be replaced instead of added</p><h3><aside class="declaration">proc </aside><a name="proc/IsAdminGhost">IsAdminGhost</a><aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L467">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 467"/></a></aside>
+        </h3>
+        <p>Is the passed in mob an admin ghost</p><h3><aside class="declaration">proc </aside><a name="proc/IsGuestKey">IsGuestKey</a><aside>(key) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L188">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 188"/></a></aside>
+        </h3>
+        <p>Returns whether or not a player is a guest using their ckey as an input</p><h3><aside class="declaration">proc </aside><a name="proc/PathWeightCompare">PathWeightCompare</a><aside>(/<a href="datum.html">datum</a>/<a href="datum/PathNode.html">PathNode</a>/a, /<a href="datum.html">datum</a>/<a href="datum/PathNode.html">PathNode</a>/b) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/AStar.dm#L78">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;AStar.dm 78"/></a></aside>
+        </h3>
+        <p>the weighting function, used in the A* algorithm</p><h3><aside class="declaration">proc </aside><a name="proc/REF">REF</a><aside>(/<a href="datum.html">datum</a>/input) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1448">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1448"/></a></aside>
+        </h3>
+        <p>\ref behaviour got changed in 512 so this is necesary to replicate old behaviour.</p>
+<p>If it ever becomes necesary to get a more performant REF(), this lies here in wait:</p>
+<pre><code>#define REF(thing) (thing &amp;&amp; istype(thing, /datum) &amp;&amp; (thing:datum_flags &amp; DF_USE_TAG) &amp;&amp; thing:tag ? &quot;[thing:tag]&quot; : &quot;\ref[thing]&quot;)
+</code></pre><h3><aside class="declaration">proc </aside><a name="proc/SQLtime">SQLtime</a><aside>(timevar) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L43">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 43"/></a></aside>
+        </h3>
+        <p>returns timestamp in a sql and a not-quite-compliant ISO 8601 friendly format</p><h3><aside class="declaration">proc </aside><a name="proc/SolveQuadratic">SolveQuadratic</a><aside>(a, b, c) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L92">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 92"/></a></aside>
+        </h3>
+        <p>The quadratic formula. Returns a list with the solutions, or an empty list if they are imaginary.</p><h3><aside class="declaration">proc </aside><a name="proc/above_neck">above_neck</a><aside>(zone) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 45"/></a></aside>
+        </h3>
+        <p>Would this zone be above the neck</p><h3><aside class="declaration">proc </aside><a name="proc/active_ais">active_ais</a><aside>(check_mind) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L260">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 260"/></a></aside>
+        </h3>
+        <p>Returns a list of AI's</p><h3><aside class="declaration">proc </aside><a name="proc/active_free_borgs">active_free_borgs</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L248">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 248"/></a></aside>
+        </h3>
+        <p>Returns a list of unslaved cyborgs</p><h3><aside class="declaration">proc </aside><a name="proc/add_lspace">add_lspace</a><aside>(t, u) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L232">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 232"/></a></aside>
+        </h3>
+        <p>Adds <code>u</code> number of spaces ahead of the text <code>t</code></p><h3><aside class="declaration">proc </aside><a name="proc/add_tspace">add_tspace</a><aside>(t, u) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L238">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 238"/></a></aside>
+        </h3>
+        <p>Adds <code>u</code> number of spaces behind the text <code>t</code></p><h3><aside class="declaration">proc </aside><a name="proc/add_zero">add_zero</a><aside>(t, u) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L226">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 226"/></a></aside>
+        </h3>
+        <p>Adds <code>u</code> number of zeros ahead of the text <code>t</code></p><h3><aside class="declaration">proc </aside><a name="proc/adminscrub">adminscrub</a><aside>(t, limit) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 60"/></a></aside>
+        </h3>
+        <p>Runs byond's sanitization proc along-side strip_html_simple. I believe strip_html_simple() is required to run first to prevent '&lt;' from displaying as '&lt;' that html_encode() would cause</p><h3><aside class="declaration">proc </aside><a name="proc/angle2dir">angle2dir</a><aside>(degree) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L119">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 119"/></a></aside>
+        </h3>
+        <p>Converts an angle (degrees) into an ss13 direction bitmask</p><h3><aside class="declaration">proc </aside><a name="proc/angle2dir_cardinal">angle2dir_cardinal</a><aside>(angle) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 143"/></a></aside>
+        </h3>
+        <p>Converts an angle to a cardinal ss13 direction bitmask</p><h3><aside class="declaration">proc </aside><a name="proc/angle2text">angle2text</a><aside>(degree) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L177">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 177"/></a></aside>
+        </h3>
+        <p>Returns the angle in english</p><h3><aside class="declaration">proc </aside><a name="proc/apply_text_macros">apply_text_macros</a><aside>(string) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L682">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 682"/></a></aside>
+        </h3>
+        <p>Used for applying byonds text macros to strings that are loaded at runtime</p><h3><aside class="declaration">proc </aside><a name="proc/avoid_assoc_duplicate_keys">avoid_assoc_duplicate_keys</a><aside>(input_key, /list/used_key_list) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L530">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 530"/></a></aside>
+        </h3>
+        <p>takes an input_key, as text, and the list of keys already used, outputting a replacement key in the format of &quot;[input_key] ([number_of_duplicates])&quot; if it finds a duplicate</p>
+<p>use this for lists of things that might have the same name, like mobs or objects, that you plan on giving to a player as input</p><h3><aside class="declaration">proc </aside><a name="proc/bitfield2list">bitfield2list</a><aside>(bitfield, /list/wordlist) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L362">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 362"/></a></aside>
+        </h3>
+        <p>Converts a bitfield to a list of numbers (or words if a wordlist is provided)</p><h3><aside class="declaration">proc </aside><a name="proc/blendMode2iconMode">blendMode2iconMode</a><aside>(blend_mode) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L181">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 181"/></a></aside>
+        </h3>
+        <p>Converts a blend_mode constant to one acceptable to icon.Blend()</p><h3><aside class="declaration">proc </aside><a name="proc/body_parts_covered2organ_names">body_parts_covered2organ_names</a><aside>(bpc) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L344">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 344"/></a></aside>
+        </h3>
+        <p>Turns a Body_parts_covered bitfield into a list of organ/limb names. (I challenge you to find a use for this)</p><h3><aside class="declaration">proc </aside><a name="proc/callback_select">callback_select</a><aside>(/list/callbacks, /list/callback_args, savereturns, resolution) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/callback.dm#L205">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;callback.dm 205"/></a></aside>
+        </h3>
+        <p>Runs a list of callbacks asyncronously, returning only when all have finished</p>
+<p>Callbacks can be repeated, to call it multiple times</p>
+<p>Arguments:</p>
+<ul>
+<li>list/callbacks the list of callbacks to be called</li>
+<li>list/callback_args the list of lists of arguments to pass into each callback</li>
+<li>savereturns Optionally save and return the list of returned values from each of the callbacks</li>
+<li>resolution The number of byond ticks between each time you check if all callbacks are complete</li>
+</ul><h3><aside class="declaration">proc </aside><a name="proc/can_see">can_see</a><aside>(/<a href="atom.html">atom</a>/source, /<a href="atom.html">atom</a>/target, length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L498">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 498"/></a></aside>
+        </h3>
+        <p>Step-towards method of determining whether one atom can see another. Similar to viewers()</p><h3><aside class="declaration">proc </aside><a name="proc/capitalize">capitalize</a><aside>(t) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L265">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 265"/></a></aside>
+        </h3>
+        <p>Returns a string with the first element of the string capitalized.</p><h3><aside class="declaration">proc </aside><a name="proc/center_image">center_image</a><aside>(/image/I, x_dimension, y_dimension) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L968">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 968"/></a></aside>
+        </h3>
+        <p>Center's an image.</p>
+<p>Requires:</p>
+<ul>
+<li>The Image</li>
+<li>The x dimension of the icon file used in the image</li>
+<li>The y dimension of the icon file used in the image</li>
+</ul>
+<p>eg: <code>center_image(I, 32,32)</code></p>
+<p>eg2: <code>center_image(I, 96,96)</code></p><h3><aside class="declaration">proc </aside><a name="proc/check_zone">check_zone</a><aside>(zone) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 11"/></a></aside>
+        </h3>
+        <p>Convert a PRECISE ZONE into the BODY_ZONE</p><h3><aside class="declaration">proc </aside><a name="proc/clearlist">clearlist</a><aside>(/list/list) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L180">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 180"/></a></aside>
+        </h3>
+        <p>Empties the list by setting the length to 0. Hopefully the elements get garbage collected</p><h3><aside class="declaration">proc </aside><a name="proc/closer_angle_difference">closer_angle_difference</a><aside>(a, b) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L115">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 115"/></a></aside>
+        </h3>
+        <p>Finds the shortest angle that angle A has to change to get to angle B. Aka, whether to move clock or counterclockwise.</p><h3><aside class="declaration">proc </aside><a name="proc/color2hex">color2hex</a><aside>(color) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L452">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 452"/></a></aside>
+        </h3>
+        <p>Converts a text color like &quot;red&quot; to a hex color (&quot;#FF0000&quot;)</p><h3><aside class="declaration">proc </aside><a name="proc/color_hex2num">color_hex2num</a><aside>(A) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L532">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 532"/></a></aside>
+        </h3>
+        <p>Converts a hex code to a number</p><h3><aside class="declaration">proc </aside><a name="proc/color_matrix2color_hex">color_matrix2color_hex</a><aside>(/list/the_matrix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L556">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 556"/></a></aside>
+        </h3>
+        <p>Will drop all values not on the diagonal</p><h3><aside class="declaration">proc </aside><a name="proc/completed_bounty_count">completed_bounty_count</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/cargo/bounty.dm#L177">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;cargo&#x2F;bounty.dm 177"/></a></aside>
+        </h3>
+        <p>Subtype Gens</p>
+<p>Strict Type Gens</p>
+<p>Dynamic Gens</p>
+<p>Cutoff for Non-Low Priority Bounties</p>
+<p>Low Priority Gens</p><h3><aside class="declaration">proc </aside><a name="proc/count_by_type">count_by_type</a><aside>(/list/L, type) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L379">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 379"/></a></aside>
+        </h3>
+        <p>Counts how many items there are of the specified type in a list</p><h3><aside class="declaration">proc </aside><a name="proc/cultslur">cultslur</a><aside>(n) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L118">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 118"/></a></aside>
+        </h3>
+        <p>Makes you talk like you got cult stunned, which is slurring but with some dark messages</p><h3><aside class="declaration">proc </aside><a name="proc/dd_centertext">dd_centertext</a><aside>(message, length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L269">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 269"/></a></aside>
+        </h3>
+        <p>Centers text by adding spaces to either side of the string.</p><h3><aside class="declaration">proc </aside><a name="proc/dd_hasprefix">dd_hasprefix</a><aside>(text, prefix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L187">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 187"/></a></aside>
+        </h3>
+        <p>Checks the beginning of a string for a specified sub-string. Returns the position of the substring or 0 if it was not found</p><h3><aside class="declaration">proc </aside><a name="proc/dd_hasprefix_case">dd_hasprefix_case</a><aside>(text, prefix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L193">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 193"/></a></aside>
+        </h3>
+        <p>Checks the beginning of a string for a specified sub-string. This proc is case sensitive. Returns the position of the substring or 0 if it was not found</p><h3><aside class="declaration">proc </aside><a name="proc/dd_hassuffix">dd_hassuffix</a><aside>(text, suffix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L199">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 199"/></a></aside>
+        </h3>
+        <p>Checks the end of a string for a specified substring. Returns the position of the substring or 0 if it was not found</p><h3><aside class="declaration">proc </aside><a name="proc/dd_hassuffix_case">dd_hassuffix_case</a><aside>(text, suffix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L206">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 206"/></a></aside>
+        </h3>
+        <p>Checks the end of a string for a specified substring. This proc is case sensitive. Returns the position of the substring or 0 if it was not found</p><h3><aside class="declaration">proc </aside><a name="proc/dd_limittext">dd_limittext</a><aside>(message, length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L286">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 286"/></a></aside>
+        </h3>
+        <p>Limits the length of the text. Note: MAX_MESSAGE_LEN and MAX_NAME_LEN are widely used for this purpose</p><h3><aside class="declaration">proc </aside><a name="proc/deepCopyList">deepCopyList</a><aside>(/list/l) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L507">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 507"/></a></aside>
+        </h3>
+        <p>Copies a list, and all lists inside it recusively. Does not copy any other reference type</p><h3><aside class="declaration">proc </aside><a name="proc/derpspeech">derpspeech</a><aside>(message, stuttering) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L184">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 184"/></a></aside>
+        </h3>
+        <p>Convert a message to derpy speak</p><h3><aside class="declaration">proc </aside><a name="proc/difflist">difflist</a><aside>(/list/first, /list/second, skiprep) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L197">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 197"/></a></aside>
+        </h3>
+        <p>Returns list containing all the entries from first list that are not present in second.
+If skiprep = 1, repeated elements are treated as one.
+If either of arguments is not a list, returns null</p><h3><aside class="declaration">proc </aside><a name="proc/dir2angle">dir2angle</a><aside>(D) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L155">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 155"/></a></aside>
+        </h3>
+        <p>Returns the north-zero clockwise angle in degrees, given a direction</p><h3><aside class="declaration">proc </aside><a name="proc/do_atom">do_atom</a><aside>(/<a href="atom.html">atom</a>/movable/user, /<a href="atom.html">atom</a>/movable/target, time, uninterruptible, /<a href="datum.html">datum</a>/<a href="datum/callback.html">callback</a>/extra_checks) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1386">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1386"/></a></aside>
+        </h3>
+        <p>same as do_mob except for movables and it allows both to drift and doesn't draw progressbar</p><h3><aside class="declaration">proc </aside><a name="proc/dview">dview</a><aside>(range, center, invis_flags) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1299">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1299"/></a></aside>
+        </h3>
+        <p>Version of view() which ignores darkness, because BYOND doesn't have it (I actually suggested it but it was tagged redundant, BUT HEARERS IS A T- /rant).</p><h3><aside class="declaration">proc </aside><a name="proc/english_list">english_list</a><aside>(/list/input, nothing_text, and_text, comma_text, final_comma_text) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 54"/></a></aside>
+        </h3>
+        <p>Returns a list in plain english as a string</p><h3><aside class="declaration">proc </aside><a name="proc/findname">findname</a><aside>(msg) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L275">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 275"/></a></aside>
+        </h3>
+        <p>Find if the message has the real name of any user mob in the mob_list</p><h3><aside class="declaration">proc </aside><a name="proc/flatten_list">flatten_list</a><aside>(/list/key_list) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L546">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 546"/></a></aside>
+        </h3>
+        <p>Flattens a keyed list into a list of it's contents</p><h3><aside class="declaration">proc </aside><a name="proc/gameTimestamp">gameTimestamp</a><aside>(format, wtime) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 11"/></a></aside>
+        </h3>
+        <p>Returns wtime (defaults world.time) into hh:mm:ss</p><h3><aside class="declaration">proc </aside><a name="proc/getElementByVar">getElementByVar</a><aside>(/list/L, varname, value) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L493">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 493"/></a></aside>
+        </h3>
+        <p>return first thing in L which has <code>var/varname == value</code></p>
+<p>this is typecaste as list/L, but you could actually feed it an atom instead.</p><h3><aside class="declaration">proc </aside><a name="proc/getPixelDistance">getPixelDistance</a><aside>(/<a href="atom.html">atom</a>/A, /<a href="atom.html">atom</a>/B, centered) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L757">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 757"/></a></aside>
+        </h3>
+        <p>Finds the distance between two atoms, in pixels</p>
+<ul>
+<li><code>centered = FALSE</code> counts from turf edge to edge</li>
+<li><code>centered = TRUE</code> counts from turf center to turf center</li>
+</ul>
+<p>of course mathematically this is just adding <code>world.icon_size</code> on again</p><h3><aside class="declaration">proc </aside><a name="proc/get_area_instance_from_text">get_area_instance_from_text</a><aside>(areatext) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L594">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 594"/></a></aside>
+        </h3>
+        <p>Takes: Area type as a text string from a variable.</p>
+<p>Returns: Instance for the area in the world.</p><h3><aside class="declaration">proc </aside><a name="proc/get_area_turfs">get_area_turfs</a><aside>(areatype, target_z, subtypes) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L632">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 632"/></a></aside>
+        </h3>
+        <p>Takes: Area type as text string or as typepath OR an instance of the area.</p>
+<p>Returns: A list of all turfs in areas of that type of that type in the world.</p><h3><aside class="declaration">proc </aside><a name="proc/get_areas">get_areas</a><aside>(areatype, subtypes) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L604">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 604"/></a></aside>
+        </h3>
+        <p>Takes: Area type as text string or as typepath OR an instance of the area.</p>
+<p>Returns: A list of all areas of that type in the world.</p><h3><aside class="declaration">proc </aside><a name="proc/get_edge_target_turf">get_edge_target_turf</a><aside>(/<a href="atom.html">atom</a>/A, direction) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L413">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 413"/></a></aside>
+        </h3>
+        <p>Returns the turf located at the map edge in the specified direction relative to A. Used for mass driver</p><h3><aside class="declaration">proc </aside><a name="proc/get_offset_target_turf">get_offset_target_turf</a><aside>(/<a href="atom.html">atom</a>/A, dx, dy) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L453">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 453"/></a></aside>
+        </h3>
+        <p>returns turf relative to A offset in dx and dy tiles, bound to map limits</p><h3><aside class="declaration">proc </aside><a name="proc/get_overlap">get_overlap</a><aside>(x1, y1, x2, y2, x3, y3, x4, y4) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L182">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 182"/></a></aside>
+        </h3>
+        <p>Returns a list where [1] is all x values and [2] is all y values that overlap between the given pair of rectangles</p><h3><aside class="declaration">proc </aside><a name="proc/get_ranged_target_turf">get_ranged_target_turf</a><aside>(/<a href="atom.html">atom</a>/A, direction, range) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L436">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 436"/></a></aside>
+        </h3>
+        <p>Returns turf relative to A in given direction at set range, result is bounded to map size. Note: range is non-pythagorean. Used for disposal system</p><h3><aside class="declaration">proc </aside><a name="proc/get_turf_pixel">get_turf_pixel</a><aside>(/<a href="atom.html">atom</a>/AM) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L717">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 717"/></a></aside>
+        </h3>
+        <p>Gets the turf this atom's <em>ICON</em> appears to inhabit</p>
+<p>It takes into account:</p>
+<ul>
+<li>Pixel_x/y</li>
+<li>Matrix x/y</li>
+</ul>
+<blockquote>
+<p>NOTE: if your atom has non-standard bounds then this proc will handle it, but: if the bounds are even, then there are an even amount of &quot;middle&quot; turfs, the one to the EAST, NORTH, or BOTH is picked (this may seem bad, but you're atleast as close to the center of the atom as possible, better than byond's default loc being all the way off) if the bounds are odd, the true middle turf of the atom is returned</p>
+</blockquote><h3><aside class="declaration">proc </aside><a name="proc/getleftblocks">getleftblocks</a><aside>(input, blocknumber, blocksize) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/dna.dm#L457">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;dna.dm 457"/></a></aside>
+        </h3>
+        <p>DNA HELPER-PROCS</p><h3><aside class="declaration">proc </aside><a name="proc/getline">getline</a><aside>(/<a href="atom.html">atom</a>/M, /<a href="atom.html">atom</a>/N) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L156">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 156"/></a></aside>
+        </h3>
+        <p>Ultra-Fast Bresenham Line-Drawing Algorithm</p><h3><aside class="declaration">proc </aside><a name="proc/getpois">getpois</a><aside>(mobs_only, skip_mindless) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L304">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 304"/></a></aside>
+        </h3>
+        <p>Returns a list of all items of interest with their name</p><h3><aside class="declaration">proc </aside><a name="proc/goonchem_vortex">goonchem_vortex</a><aside>(/<a href="turf.html">turf</a>/T, setting_type, range) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/reagents/chemistry/recipes.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;reagents&#x2F;chemistry&#x2F;recipes.dm 52"/></a></aside>
+        </h3>
+        <p>Simulates a vortex that moves nearby movable atoms towards or away from the turf T. Range also determines the strength of the effect. High values cause nearby objects to be thrown.</p><h3><aside class="declaration">proc </aside><a name="proc/heat2colour">heat2colour</a><aside>(temp) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L420">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 420"/></a></aside>
+        </h3>
+        <p>adapted from http://www.tannerhelland.com/4435/convert-temperature-rgb-algorithm-code</p><h3><aside class="declaration">proc </aside><a name="proc/hextostr">hextostr</a><aside>(str, safe) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L609">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 609"/></a></aside>
+        </h3>
+        <p>Decodes hex to raw byte string. If safe=TRUE, returns null on incorrect input strings instead of CRASHing</p><h3><aside class="declaration">proc </aside><a name="proc/hsl2rgb">hsl2rgb</a><aside>(hue, saturation, lightness) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L262">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 262"/></a></aside>
+        </h3>
+        <p>Converts an HSL color to an RGB color</p><h3><aside class="declaration">proc </aside><a name="proc/hue2rgb">hue2rgb</a><aside>(a, b, hue) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L283">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 283"/></a></aside>
+        </h3>
+        <p>Converts an ABH color to an RGB color</p><h3><aside class="declaration">proc </aside><a name="proc/invertHTML">invertHTML</a><aside>(HTMLstring) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 8"/></a></aside>
+        </h3>
+        <p>Inverts the colour of an HTML string</p><h3><aside class="declaration">proc </aside><a name="proc/ionnum">ionnum</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L244">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 244"/></a></aside>
+        </h3>
+        <p>Picks a string of symbols to display as the law number for hacked or ion laws</p><h3><aside class="declaration">proc </aside><a name="proc/isDay">isDay</a><aside>(month, day) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 35"/></a></aside>
+        </h3>
+        <p>Returns 1 if it is the selected month and day</p><h3><aside class="declaration">proc </aside><a name="proc/isLeap">isLeap</a><aside>(y) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L338">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 338"/></a></aside>
+        </h3>
+        <p>Returns whether the specified year is a leap year</p><h3><aside class="declaration">proc </aside><a name="proc/is_blind">is_blind</a><aside>(A) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L329">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 329"/></a></aside>
+        </h3>
+        <p>Checks if passed through item is blind</p><h3><aside class="declaration">proc </aside><a name="proc/is_blocked_turf">is_blocked_turf</a><aside>(/<a href="turf.html">turf</a>/T, exclude_mobs) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L519">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 519"/></a></aside>
+        </h3>
+        <p>Returns TRUE if the turf cannot be moved onto</p><h3><aside class="declaration">proc </aside><a name="proc/is_special_character">is_special_character</a><aside>(/<a href="mob.html">mob</a>/M) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L347">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 347"/></a></aside>
+        </h3>
+        <p>Is this mob special to the gamemode?</p>
+<p>returns 1 for special characters and 2 for heroes of gamemode</p><h3><aside class="declaration">proc </aside><a name="proc/is_string_in_list">is_string_in_list</a><aside>(string, /list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L108">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 108"/></a></aside>
+        </h3>
+        <p>Checks for a string in a list</p><h3><aside class="declaration">proc </aside><a name="proc/is_type_in_list">is_type_in_list</a><aside>(/<a href="atom.html">atom</a>/A, /list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L96">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 96"/></a></aside>
+        </h3>
+        <p>Checks for specific types in a list</p><h3><aside class="declaration">proc </aside><a name="proc/isemptylist">isemptylist</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 90"/></a></aside>
+        </h3>
+        <p>Checks if the list is empty</p><h3><aside class="declaration">proc </aside><a name="proc/item_heal_robotic">item_heal_robotic</a><aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H, /<a href="mob.html">mob</a>/user, brute_heal, burn_heal) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L449">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 449"/></a></aside>
+        </h3>
+        <p>Heal a robotic body part on a mob</p><h3><aside class="declaration">proc </aside><a name="proc/json_deserialize_datum">json_deserialize_datum</a><aside>(/list/jsonlist, /list/options, target_type, strict_target_type) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L170">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 170"/></a></aside>
+        </h3>
+        <p>Convert a list of json to datum</p><h3><aside class="declaration">proc </aside><a name="proc/json_serialize_datum">json_serialize_datum</a><aside>(/<a href="datum.html">datum</a>/D, /list/options) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/datums/datum.dm#L161">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;datum.dm 161"/></a></aside>
+        </h3>
+        <p>Convert a datum into a json blob</p><h3><aside class="declaration">proc </aside><a name="proc/listclearnulls">listclearnulls</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L186">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 186"/></a></aside>
+        </h3>
+        <p>Removes any null entries from the list. Returns TRUE if the list had nulls, FALSE otherwise</p><h3><aside class="declaration">proc </aside><a name="proc/listgetindex">listgetindex</a><aside>(/list/L, index) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L75">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 75"/></a></aside>
+        </h3>
+        <p>Returns list element or null. Should prevent &quot;index out of bounds&quot; error.</p><h3><aside class="declaration">proc </aside><a name="proc/load_map">load_map</a><aside>(dmm_file, x_offset, y_offset, z_offset, cropMap, measureOnly, no_changeturf, x_lower, x_upper, y_lower, y_upper, placeOnTop) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mapping/reader.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mapping&#x2F;reader.dm 44"/></a></aside>
+        </h3>
+        <p>Shortcut function to parse a map and apply it to the world.</p>
+<ul>
+<li><code>dmm_file</code>: A .dmm file to load (Required).</li>
+<li><code>x_offset</code>, <code>y_offset</code>, <code>z_offset</code>: Positions representign where to load the map (Optional).</li>
+<li><code>cropMap</code>: When true, the map will be cropped to fit the existing world dimensions (Optional).</li>
+<li><code>measureOnly</code>: When true, no changes will be made to the world (Optional).</li>
+<li><code>no_changeturf</code>: When true, [turf/AfterChange] won't be called on loaded turfs</li>
+<li><code>x_lower</code>, <code>x_upper</code>, <code>y_lower</code>, <code>y_upper</code>: Coordinates (relative to the map) to crop to (Optional).</li>
+<li><code>placeOnTop</code>: Whether to use [turf/PlaceOnTop] rather than [turf/ChangeTurf] (Optional).</li>
+</ul><h3><aside class="declaration">proc </aside><a name="proc/log_combat">log_combat</a><aside>(/<a href="atom.html">atom</a>/user, /<a href="atom.html">atom</a>/target, what_done, /<a href="atom.html">atom</a>/object, addition) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/atoms.dm#L1033">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;atoms.dm 1033"/></a></aside>
+        </h3>
+        <p>Log a combat message in the attack log</p>
+<p>1 argument is the actor performing the action
+2 argument is the target of the action
+3 is a verb describing the action (e.g. punched, throwed, kicked, etc.)
+4 is a tool with which the action was made (usually an item)
+5 is any additional text, which will be appended to the rest of the log line</p><h3><aside class="declaration">proc </aside><a name="proc/log_directed_talk">log_directed_talk</a><aside>(/<a href="atom.html">atom</a>/source, /<a href="atom.html">atom</a>/target, message, message_type, tag) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/atoms.dm#L1015">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;atoms.dm 1015"/></a></aside>
+        </h3>
+        <p>Helper for logging of messages with only one sender and receiver</p><h3><aside class="declaration">proc </aside><a name="proc/merge_text">merge_text</a><aside>(into, from, null_char) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L378">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 378"/></a></aside>
+        </h3>
+        <p>merges non-null characters (3rd argument) from &quot;from&quot; into &quot;into&quot;. Returns result.</p>
+<pre><code>into = &quot;Hello World&quot;
+from = &quot;Seeya______&quot;
+</code></pre>
+<p>returns &quot;Seeya World&quot;</p>
+<p>The returned text is always the same length as into</p>
+<p>This was coded to handle DNA gene-splicing.</p><h3><aside class="declaration">proc </aside><a name="proc/moveElement">moveElement</a><aside>(/list/L, fromIndex, toIndex) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L405">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 405"/></a></aside>
+        </h3>
+        <p>Move a single element from position fromIndex within a list, to position toIndex</p>
+<p>All elements in the range [1,toIndex) before the move will be before the pivot afterwards</p>
+<p>All elements in the range [toIndex, L.len+1) before the move will be after the pivot afterwards</p>
+<p>In other words, it's as if the range [fromIndex,toIndex) have been rotated using a &lt;&lt;&lt; operation common to other languages.</p>
+<p>fromIndex and toIndex must be in the range [1,L.len+1]</p>
+<p>This will preserve associations ~Carnie</p><h3><aside class="declaration">proc </aside><a name="proc/moveRange">moveRange</a><aside>(/list/L, fromIndex, toIndex, len) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L423">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 423"/></a></aside>
+        </h3>
+        <p>Move elements [fromIndex,fromIndex+len) to [toIndex-len, toIndex)</p>
+<p>Same as moveElement but for ranges of elements</p>
+<p>This will preserve associations ~Carnie</p><h3><aside class="declaration">proc </aside><a name="proc/movespeed_data_null_check">movespeed_data_null_check</a><aside>(/list/data) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_movespeed.dm#L135">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_movespeed.dm 135"/></a></aside>
+        </h3>
+        <p>Checks if a move speed modifier is valid and not missing any data</p><h3><aside class="declaration">proc </aside><a name="proc/next_list_item">next_list_item</a><aside>(item, /list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L289">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 289"/></a></aside>
+        </h3>
+        <p>Returns the next item in a list</p><h3><aside class="declaration">proc </aside><a name="proc/ninjaspeak">ninjaspeak</a><aside>(n) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L233">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 233"/></a></aside>
+        </h3>
+        <p>Convert a message into leet non gaijin speak</p>
+<p>The difference with stutter is that this proc can stutter more than 1 letter</p>
+<p>The issue here is that anything that does not have a space is treated as one word (in many instances). For instance, &quot;LOOKING,&quot; is a word, including the comma.</p>
+<p>It's fairly easy to fix if dealing with single letters but not so much with compounds of letters./N</p><h3><aside class="declaration">proc </aside><a name="proc/non_zero_min">non_zero_min</a><aside>(a, b) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L175">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 175"/></a></aside>
+        </h3>
+        <p>html_encode helper proc that returns the smallest non null of two numbers, or 0 if they're both null (needed because of findtext returning 0 when a value is not present)</p><h3><aside class="declaration">proc </aside><a name="proc/notify_ghosts">notify_ghosts</a><aside>(message, ghost_sound, enter_link, /<a href="atom.html">atom</a>/source, /mutable_appearance/alert_overlay, action, flashwindow, ignore_mapload, ignore_key, header, notify_suiciders, notify_volume) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L413">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 413"/></a></aside>
+        </h3>
+        <p>Fancy notifications for ghosts</p>
+<p>The kitchen sink of notification procs</p>
+<p>Arguments:</p>
+<ul>
+<li>message </li>
+<li>ghost_sound sound to play</li>
+<li>enter_link Href link to enter the ghost role being notified for</li>
+<li>source The source of the notification</li>
+<li>alert_overlay The alert overlay to show in the alert message</li>
+<li>action What action to take upon the ghost interacting with the notification, defaults to NOTIFY_JUMP</li>
+<li>flashwindow Flash the byond client window</li>
+<li>ignore_key  Ignore keys if they're in the GLOB.poll_ignore list</li>
+<li>header The header of the notifiaction</li>
+<li>notify_suiciders If it should notify suiciders (who do not qualify for many ghost roles)</li>
+<li>notify_volume How loud the sound should be to spook the user</li>
+</ul><h3><aside class="declaration">proc </aside><a name="proc/offer_control">offer_control</a><aside>(/<a href="mob.html">mob</a>/M) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L485">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 485"/></a></aside>
+        </h3>
+        <p>Offer control of the passed in mob to dead player</p>
+<p>Automatic logging and uses pollCandidatesForMob, how convenient</p><h3><aside class="declaration">proc </aside><a name="proc/pick_n_take">pick_n_take</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L263">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 263"/></a></aside>
+        </h3>
+        <p>Pick a random element from the list and remove it from the list.</p><h3><aside class="declaration">proc </aside><a name="proc/pickweight">pickweight</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L230">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 230"/></a></aside>
+        </h3>
+        <p>*Picks a random element from a list based on a weighting system:</p>
+<ol>
+<li>Adds up the total of weights for each element</li>
+<li>Gets a number between 1 and that total</li>
+<li>For each element in the list, subtracts its weighting from that number</li>
+<li>If that makes the number 0 or less, return that element.</li>
+</ol><h3><aside class="declaration">proc </aside><a name="proc/pop">pop</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L271">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 271"/></a></aside>
+        </h3>
+        <p>Returns the top(last) element from the list and removes it from the list (typical stack function)</p><h3><aside class="declaration">proc </aside><a name="proc/popleft">popleft</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L277">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 277"/></a></aside>
+        </h3>
+        <p>Returns the bottom(first) element from the list and removes it from the list (typical stack function)</p><h3><aside class="declaration">proc </aside><a name="proc/previous_list_item">previous_list_item</a><aside>(item, /list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L299">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 299"/></a></aside>
+        </h3>
+        <p>Returns the previous item in a list</p><h3><aside class="declaration">proc </aside><a name="proc/process_teleport_locs">process_teleport_locs</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/area/areas.dm#L95">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;area&#x2F;areas.dm 95"/></a></aside>
+        </h3>
+        <p>Generate a list of turfs you can teleport to from the areas list</p>
+<p>Includes areas if they're not a shuttle or not not teleport or have no contents</p>
+<p>The chosen turf is the first item in the areas contents that is a station level</p>
+<p>The returned list of turfs is sorted by name</p><h3><aside class="declaration">proc </aside><a name="proc/ran_zone">ran_zone</a><aside>(zone, probability) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 37"/></a></aside>
+        </h3>
+        <p>Return the zone or randomly, another valid zone</p>
+<p>probability controls the chance it chooses the passed in zone, or another random zone
+defaults to 80</p><h3><aside class="declaration">proc </aside><a name="proc/random_capital_letter">random_capital_letter</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L771">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 771"/></a></aside>
+        </h3>
+        <p>Returns a random capital letter, like the uh, proc name kind of obviously suggests</p><h3><aside class="declaration">proc </aside><a name="proc/random_color">random_color</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L352">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 352"/></a></aside>
+        </h3>
+        <p>Returns a random hex color 6 digits long</p><h3><aside class="declaration">proc </aside><a name="proc/random_short_color">random_short_color</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L348">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 348"/></a></aside>
+        </h3>
+        <p>Returns a random hex color 3 digits long</p><h3><aside class="declaration">proc </aside><a name="proc/random_string">random_string</a><aside>(length, /list/characters) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L336">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 336"/></a></aside>
+        </h3>
+        <p>Returns a random string of <code>length</code> length and made up of chars from <code>characters</code></p><h3><aside class="declaration">proc </aside><a name="proc/reject_bad_name">reject_bad_name</a><aside>(t_in, allow_numbers, max_length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L101">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 101"/></a></aside>
+        </h3>
+        <p>Filters out undesirable characters from names</p><h3><aside class="declaration">proc </aside><a name="proc/reject_bad_text">reject_bad_text</a><aside>(text, max_length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 65"/></a></aside>
+        </h3>
+        <p>Returns null if there is any bad text in the string</p><h3><aside class="declaration">proc </aside><a name="proc/removeNullsFromList">removeNullsFromList</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L501">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 501"/></a></aside>
+        </h3>
+        <p>remove all nulls from a list</p><h3><aside class="declaration">proc </aside><a name="proc/remove_strings_from_list">remove_strings_from_list</a><aside>(string, /list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L117">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 117"/></a></aside>
+        </h3>
+        <p>Removes a string from a list</p><h3><aside class="declaration">proc </aside><a name="proc/repeat_string">repeat_string</a><aside>(times, string) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L342">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 342"/></a></aside>
+        </h3>
+        <p>Returns <code>string</code> repeated <code>times</code> times</p><h3><aside class="declaration">proc </aside><a name="proc/reverseRange">reverseRange</a><aside>(/list/L, start, end) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L472">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 472"/></a></aside>
+        </h3>
+        <p>reverseList, but a range of the list specified</p><h3><aside class="declaration">proc </aside><a name="proc/reverse_text">reverse_text</a><aside>(text) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L324">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 324"/></a></aside>
+        </h3>
+        <p>Returns a reversed version of <code>text</code></p><h3><aside class="declaration">proc </aside><a name="proc/rgb2hsl">rgb2hsl</a><aside>(red, green, blue) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L230">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 230"/></a></aside>
+        </h3>
+        <p>Converts an RGB color to an HSL color</p><h3><aside class="declaration">proc </aside><a name="proc/rights2text">rights2text</a><aside>(rights, seperator, prefix) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L193">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 193"/></a></aside>
+        </h3>
+        <p>Converts a rights bitfield into a string</p><h3><aside class="declaration">proc </aside><a name="proc/safepick">safepick</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 85"/></a></aside>
+        </h3>
+        <p>Return either pick(list) or null if list is not of type /list or is empty</p><h3><aside class="declaration">proc </aside><a name="proc/sanitize">sanitize</a><aside>(t, /list/repl_chars) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 52"/></a></aside>
+        </h3>
+        <p>Runs byond's sanitization proc along-side sanitize_simple</p><h3><aside class="declaration">proc </aside><a name="proc/sanitizeSQL">sanitizeSQL</a><aside>(t) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 17"/></a></aside>
+        </h3>
+        <p>Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.</p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_filename">sanitize_filename</a><aside>(t) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 48"/></a></aside>
+        </h3>
+        <p>Sanitizes a string to act as a file path</p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_gender">sanitize_gender</a><aside>(gender, neuter, plural, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 36"/></a></aside>
+        </h3>
+        <p>Return <code>gender</code> if it is a valid gender, otherwise <code>default</code>. No I did not mean to offend you. -qwerty</p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_hexcolor">sanitize_hexcolor</a><aside>(color, desired_format, include_crunch, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L53">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 53"/></a></aside>
+        </h3>
+        <p>Return <code>color</code> if it is a valid hex color, otherwise <code>default</code></p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_inlist">sanitize_inlist</a><aside>(value, /list/List, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 24"/></a></aside>
+        </h3>
+        <p>Return <code>value</code> if it's in List, otherwise <code>default</code></p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_integer">sanitize_integer</a><aside>(number, min, max, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 3"/></a></aside>
+        </h3>
+        <p>Return <code>number</code> if it is in the range <code>min to max</code>, otherwise <code>default</code></p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_islist">sanitize_islist</a><aside>(value, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 17"/></a></aside>
+        </h3>
+        <p>Return <code>value</code> if it is a list, otherwise <code>default</code></p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_ooccolor">sanitize_ooccolor</a><aside>(color) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L83">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 83"/></a></aside>
+        </h3>
+        <p>Return <code>color</code> as a formatted ooc valid hex color</p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_simple">sanitize_simple</a><aside>(t, /list/repl_chars) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 39"/></a></aside>
+        </h3>
+        <p>Removes all characters in <code>repl_chars</code></p><h3><aside class="declaration">proc </aside><a name="proc/sanitize_text">sanitize_text</a><aside>(text, default) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/sanitize_values.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;sanitize_values.dm 11"/></a></aside>
+        </h3>
+        <p>Return <code>text</code> if it is text, otherwise <code>default</code></p><h3><aside class="declaration">proc </aside><a name="proc/select_active_ai">select_active_ai</a><aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L294">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 294"/></a></aside>
+        </h3>
+        <p>Select a random and active free AI</p><h3><aside class="declaration">proc </aside><a name="proc/select_active_ai_with_fewest_borgs">select_active_ai_with_fewest_borgs</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L274">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 274"/></a></aside>
+        </h3>
+        <p>Find an active ai with the least borgs. VERBOSE PROCNAME HUH!</p><h3><aside class="declaration">proc </aside><a name="proc/select_active_free_borg">select_active_free_borg</a><aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L284">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 284"/></a></aside>
+        </h3>
+        <p>Select a random active and free borg</p><h3><aside class="declaration">proc </aside><a name="proc/send2chat">send2chat</a><aside>(message, config_setting) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1586">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1586"/></a></aside>
+        </h3>
+        <p>sends a message to chat</p>
+<p>config_setting should be one of the following:</p>
+<ul>
+<li>null - noop</li>
+<li>empty string - use TgsTargetBroadcast with <code>admin_only = FALSE</code></li>
+<li>other string - use TgsChatBroadcast with the tag that matches config_setting, only works with TGS4, if using TGS3 the above method is used</li>
+</ul><h3><aside class="declaration">proc </aside><a name="proc/servants_and_ghosts">servants_and_ghosts</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1467">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1467"/></a></aside>
+        </h3>
+        <p>Returns a list of all servants of Ratvar and observers.</p><h3><aside class="declaration">proc </aside><a name="proc/shake_camera">shake_camera</a><aside>(/<a href="mob.html">mob</a>/M, duration, strength) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L257">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 257"/></a></aside>
+        </h3>
+        <p>Shake the camera of the person viewing the mob SO REAL!</p><h3><aside class="declaration">proc </aside><a name="proc/shuffle">shuffle</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L309">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 309"/></a></aside>
+        </h3>
+        <p>Randomize: Return the list in a random order</p><h3><aside class="declaration">proc </aside><a name="proc/shuffle_inplace">shuffle_inplace</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L320">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 320"/></a></aside>
+        </h3>
+        <p>Randomize a list, but returns nothing and acts on list in place</p><h3><aside class="declaration">proc </aside><a name="proc/slot2body_zone">slot2body_zone</a><aside>(slot) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L396">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 396"/></a></aside>
+        </h3>
+        <p>Returns the body_zone a given slot appears on</p><h3><aside class="declaration">proc </aside><a name="proc/slur">slur</a><aside>(n) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L83">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 83"/></a></aside>
+        </h3>
+        <p>Makes you speak like you're drunk</p><h3><aside class="declaration">proc </aside><a name="proc/sortKey">sortKey</a><aside>(/list/L, order) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L344">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 344"/></a></aside>
+        </h3>
+        <p>for sorting clients or mobs by ckey</p><h3><aside class="declaration">proc </aside><a name="proc/sortList">sortList</a><aside>(/list/L, cmp) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L353">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 353"/></a></aside>
+        </h3>
+        <p>sorting any value in a list with any comparator</p><h3><aside class="declaration">proc </aside><a name="proc/sortNames">sortNames</a><aside>(/list/L, order) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L357">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 357"/></a></aside>
+        </h3>
+        <p>uses sortList() but uses the var's name specifically. This should probably be using mergeAtom() instead</p><h3><aside class="declaration">proc </aside><a name="proc/sortRecord">sortRecord</a><aside>(/list/L, field, order) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L348">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 348"/></a></aside>
+        </h3>
+        <p>Specifically for sorting record datums in a list.</p><h3><aside class="declaration">proc </aside><a name="proc/sortmobs">sortmobs</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L334">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 334"/></a></aside>
+        </h3>
+        <p>Orders mobs by type then by name</p><h3><aside class="declaration">proc </aside><a name="proc/spiral_range">spiral_range</a><aside>(dist, center, orange) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1015">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1015"/></a></aside>
+        </h3>
+        <p>similar function to range(), but with no limitations on the distance; will search spiralling outwards from the center</p><h3><aside class="declaration">proc </aside><a name="proc/spiral_range_turfs">spiral_range_turfs</a><aside>(dist, center, orange, /list/outlist, tick_checked) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1073">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1073"/></a></aside>
+        </h3>
+        <p>similar function to RANGE_TURFS(), but will search spiralling outwards from the center (like spiral_range, but only turfs)</p><h3><aside class="declaration">proc </aside><a name="proc/stack_trace">stack_trace</a><aside>(msg) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1205">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1205"/></a></aside>
+        </h3>
+        <p>gives us the stack trace from CRASH() without ending the current proc.</p><h3><aside class="declaration">proc </aside><a name="proc/stars">stars</a><aside>(n, pr) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L59">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 59"/></a></aside>
+        </h3>
+        <p>Convert random parts of a passed in message to stars</p>
+<ul>
+<li>n - the string to convert</li>
+<li>pr - probability any character gets changed</li>
+</ul>
+<p>This proc is dangerously laggy, avoid it or die</p><h3><aside class="declaration">proc </aside><a name="proc/station_time">station_time</a><aside>(display_only, wtime) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 17"/></a></aside>
+        </h3>
+        <p>Returns the station time in deciseconds</p><h3><aside class="declaration">proc </aside><a name="proc/station_time_timestamp">station_time_timestamp</a><aside>(format, wtime) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 21"/></a></aside>
+        </h3>
+        <p>Returns the station time in hh:mm:ss</p><h3><aside class="declaration">proc </aside><a name="proc/stoplag">stoplag</a><aside>(initial_delay) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/unsorted.dm#L1227">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;unsorted.dm 1227"/></a></aside>
+        </h3>
+        <p>Returns the number of ticks slept</p><h3><aside class="declaration">proc </aside><a name="proc/string2listofvars">string2listofvars</a><aside>(t_string, /<a href="datum.html">datum</a>/var_source) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L504">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 504"/></a></aside>
+        </h3>
+        <p>This is a weird one: It returns a list of all var names found in the string. These vars must be in the [var_name] format</p>
+<p>It's only a proc because it's used in more than one place</p>
+<p>Takes a string and a datum. The string is well, obviously the string being checked. The datum is used as a source for var names, to check validity. Otherwise every single word could technically be a variable!</p><h3><aside class="declaration">proc </aside><a name="proc/stringpercent">stringpercent</a><aside>(text, character) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L313">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 313"/></a></aside>
+        </h3>
+        <p>This proc returns the number of chars of the string that is the character. This is used for detective work to determine fingerprint completion.</p><h3><aside class="declaration">proc </aside><a name="proc/strip_html">strip_html</a><aside>(t, limit) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 56"/></a></aside>
+        </h3>
+        <p>Runs sanitize and strip_html_simple. I believe strip_html_simple() is required to run first to prevent '&lt;' from displaying as '&lt;' after sanitize() calls byond's html_encode()</p><h3><aside class="declaration">proc </aside><a name="proc/strip_html_simple">strip_html_simple</a><aside>(t, limit) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 28"/></a></aside>
+        </h3>
+        <p>Simply removes &lt; and &gt; and limits the length of the message</p><h3><aside class="declaration">proc </aside><a name="proc/stripped_input">stripped_input</a><aside>(/<a href="mob.html">mob</a>/user, message, title, default, max_length, no_trim) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 85"/></a></aside>
+        </h3>
+        <p>Used to get a properly sanitized input, of max_length. no_trim is self explanatory but it prevents the input from being trimed if you intend to parse newlines or whitespace.</p><h3><aside class="declaration">proc </aside><a name="proc/stripped_multiline_input">stripped_multiline_input</a><aside>(/<a href="mob.html">mob</a>/user, message, title, default, max_length, no_trim) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L93">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 93"/></a></aside>
+        </h3>
+        <p>Used to get a properly sanitized multiline input, of max_length</p><h3><aside class="declaration">proc </aside><a name="proc/strtohex">strtohex</a><aside>(str) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L598">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 598"/></a></aside>
+        </h3>
+        <p>Encodes a string to hex</p><h3><aside class="declaration">proc </aside><a name="proc/stutter">stutter</a><aside>(n) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/mob/mob_helpers.dm#L160">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;mob_helpers.dm 160"/></a></aside>
+        </h3>
+        <p>Adds stuttering to the message passed in</p><h3><aside class="declaration">proc </aside><a name="proc/swapRange">swapRange</a><aside>(/list/L, fromIndex, toIndex, len) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L450">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 450"/></a></aside>
+        </h3>
+        <p>Move elements from [fromIndex, fromIndex+len) to [toIndex, toIndex+len)</p>
+<p>Move any elements being overwritten by the move to the now-empty elements, preserving order</p>
+<p>Note: if the two ranges overlap, only the destination order will be preserved fully, since some elements will be within both ranges ~Carnie</p><h3><aside class="declaration">proc </aside><a name="proc/text2dir">text2dir</a><aside>(direction) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L97">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 97"/></a></aside>
+        </h3>
+        <p>Turns text into proper direction bitmasks</p><h3><aside class="declaration">proc </aside><a name="proc/text_in_list">text_in_list</a><aside>(haystack, /list/needle_list, start, end) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L212">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 212"/></a></aside>
+        </h3>
+        <p>Checks if any of a given list of needles is in the haystack</p><h3><aside class="declaration">proc </aside><a name="proc/text_in_list_case">text_in_list_case</a><aside>(haystack, /list/needle_list, start, end) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L219">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 219"/></a></aside>
+        </h3>
+        <p>Checks if any of a given list of needles is in the haystack, case sensitive</p><h3><aside class="declaration">proc </aside><a name="proc/thtotext">thtotext</a><aside>(number) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L738">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 738"/></a></aside>
+        </h3>
+        <p>Replacement for the \th macro when you want the whole word output as text (first instead of 1st)</p><h3><aside class="declaration">proc </aside><a name="proc/time_stamp">time_stamp</a><aside>(format, show_ds) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 6"/></a></aside>
+        </h3>
+        <p>Returns the world time into hh:mm:ss with the option of showing deciseconds</p><h3><aside class="declaration">proc </aside><a name="proc/trim">trim</a><aside>(text, max_length) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L259">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 259"/></a></aside>
+        </h3>
+        <p>Returns a string with reserved characters and spaces before the first word and after the last word removed.</p><h3><aside class="declaration">proc </aside><a name="proc/trim_left">trim_left</a><aside>(text) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L244">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 244"/></a></aside>
+        </h3>
+        <p>Returns a string with reserved characters and spaces before the first letter removed</p><h3><aside class="declaration">proc </aside><a name="proc/trim_right">trim_right</a><aside>(text) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L251">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 251"/></a></aside>
+        </h3>
+        <p>Returns a string with reserved characters and spaces after the last letter removed</p><h3><aside class="declaration">proc </aside><a name="proc/twitterize">twitterize</a><aside>(/list/proposed, filename, cullshort, storemax) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L595">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 595"/></a></aside>
+        </h3>
+        <p>Takes a list of values, sanitizes it down for readability and character count, then exports it as a json file at data/npc_saves/[filename].json. As far as SS13 is concerned this is write only data. You can't change something in the json file and have it be reflected in the in game item/mob it came from. (That's what things like savefiles are for) Note that this list is not shuffled.</p><h3><aside class="declaration">proc </aside><a name="proc/typecache_filter_list">typecache_filter_list</a><aside>(/list/atoms, /list/typecache) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L126">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 126"/></a></aside>
+        </h3>
+        <p>returns a new list with only atoms that are in typecache L</p><h3><aside class="declaration">proc </aside><a name="proc/typecache_filter_list_reverse">typecache_filter_list_reverse</a><aside>(/list/atoms, /list/typecache) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L135">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 135"/></a></aside>
+        </h3>
+        <p>returns a new list with only atoms that are NOT in typecache L</p><h3><aside class="declaration">proc </aside><a name="proc/typecache_filter_multi_list_exclusion">typecache_filter_multi_list_exclusion</a><aside>(/list/atoms, /list/typecache_include, /list/typecache_exclude) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L144">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 144"/></a></aside>
+        </h3>
+        <p>returns a new list with only atoms that are in typecache typecache_include but NOT in typecache_exclude</p><h3><aside class="declaration">proc </aside><a name="proc/typecacheof">typecacheof</a><aside>(path, ignore_root_path, only_root_path) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L152">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 152"/></a></aside>
+        </h3>
+        <p>Like typesof() or subtypesof(), but returns a typecache instead of a list</p><h3><aside class="declaration">proc </aside><a name="proc/unintelligize">unintelligize</a><aside>(message) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/text.dm#L775">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;text.dm 775"/></a></aside>
+        </h3>
+        <p>Makes the message a lot dumber</p><h3><aside class="declaration">proc </aside><a name="proc/uniqueList">uniqueList</a><aside>(/list/L) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L328">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 328"/></a></aside>
+        </h3>
+        <p>Return a list with no duplicate entries</p><h3><aside class="declaration">proc </aside><a name="proc/uniquemergelist">uniquemergelist</a><aside>(/list/first, /list/second, skiprep) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/_lists.dm#L214">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;_lists.dm 214"/></a></aside>
+        </h3>
+        <p>Returns list containing entries that are in either list but not both.
+If skipref = 1, repeated elements are treated as one.
+If either of arguments is not a list, returns null</p><h3><aside class="declaration">proc </aside><a name="proc/unix2date">unix2date</a><aside>(timestamp, seperator) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/type2type.dm#L297">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;type2type.dm 297"/></a></aside>
+        </h3>
+        <p>Very ugly, BYOND doesn't support unix time and rounding errors make it really hard to convert it to BYOND time. returns &quot;YYYY-MM-DD&quot; by default</p><h3><aside class="declaration">proc </aside><a name="proc/voice_of_god">voice_of_god</a><aside>(message, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/user, /list/span_list, base_multiplier, include_speaker, message_admins) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/surgery/organs/vocal_cords.dm#L122">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;surgery&#x2F;organs&#x2F;vocal_cords.dm 122"/></a></aside>
+        </h3>
+        <p>VOICE OF GOD</p><h3><aside class="declaration">proc </aside><a name="proc/weekdayofthemonth">weekdayofthemonth</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L55">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 55"/></a></aside>
+        </h3>
+        <p>Returns which week of the month we are in</p><h3><aside class="declaration">proc </aside><a name="proc/worldtime2text">worldtime2text</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__HELPERS/time.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__HELPERS&#x2F;time.dm 2"/></a></aside>
+        </h3>
+        <p>Returns the world time in hh:mm:ss</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

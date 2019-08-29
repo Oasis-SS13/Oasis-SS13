@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;combat.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/combat.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/combat.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><td colspan="2"><h2>Embedded objects</h2></td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_PAIN_CHANCE">EMBEDDED_PAIN_CHANCE</a></th><td>Chance for embedded objects to cause pain (damage user)</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_ITEM_FALLOUT">EMBEDDED_ITEM_FALLOUT</a></th><td>Chance for embedded object to fall out (causing pain but removing the object)</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBED_CHANCE">EMBED_CHANCE</a></th><td>Chance for an object to embed into somebody when thrown (if it's sharp)</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_PAIN_MULTIPLIER">EMBEDDED_PAIN_MULTIPLIER</a></th><td>Coefficient of multiplication for the damage the item does while embedded <code>(this*item.w_class)</code></td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_FALL_PAIN_MULTIPLIER">EMBEDDED_FALL_PAIN_MULTIPLIER</a></th><td>Coefficient of multiplication for the damage the item does when it falls out <code>(this*item.w_class)</code></td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_IMPACT_PAIN_MULTIPLIER">EMBEDDED_IMPACT_PAIN_MULTIPLIER</a></th><td>Coefficient of multiplication for the damage the item does when it first embeds <code>(this*item.w_class)</code></td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBED_THROWSPEED_THRESHOLD">EMBED_THROWSPEED_THRESHOLD</a></th><td>The minimum value of an item's throw_speed for it to embed (Unless it has embedded_ignore_throwspeed_threshold set to 1)</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_UNSAFE_REMOVAL_PAIN_MULTIPLIER">EMBEDDED_UNSAFE_REMOVAL_PAIN_MULTIPLIER</a></th><td>Coefficient of multiplication for the damage the item does when removed without a surgery <code>(this*item.w_class)</code></td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/EMBEDDED_UNSAFE_REMOVAL_TIME">EMBEDDED_UNSAFE_REMOVAL_TIME</a></th><td>A Time in ticks, total removal <code>time = (this*item.w_class)</code></td></tr>
+        <tr><td colspan="2"><h3>His Grace.</h3>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_SATIATED">HIS_GRACE_SATIATED</a></th><td>He hungers not. If bloodthirst is set to this, His Grace is asleep.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_PECKISH">HIS_GRACE_PECKISH</a></th><td>Slightly hungry.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_HUNGRY">HIS_GRACE_HUNGRY</a></th><td>Getting closer. Increases damage up to a minimum of 20.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_FAMISHED">HIS_GRACE_FAMISHED</a></th><td>Dangerous. Increases damage up to a minimum of 25 and cannot be dropped.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_STARVING">HIS_GRACE_STARVING</a></th><td>Incredibly close to breaking loose. Increases damage up to a minimum of 30.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_CONSUME_OWNER">HIS_GRACE_CONSUME_OWNER</a></th><td>His Grace consumes His owner at this point and becomes aggressive.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_FALL_ASLEEP">HIS_GRACE_FALL_ASLEEP</a></th><td>If it reaches this point, He falls asleep and resets.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/HIS_GRACE_FORCE_BONUS">HIS_GRACE_FORCE_BONUS</a></th><td>How much force is gained per kill.</td></tr>
+        <tr><td colspan="2"><h2><code>bullet_act()</code> return values</h2>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/BULLET_ACT_HIT">BULLET_ACT_HIT</a></th><td>It's a successful hit, whatever that means in the context of the thing it's hitting.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/BULLET_ACT_BLOCK">BULLET_ACT_BLOCK</a></th><td>It's a blocked hit, whatever that means in the context of the thing it's hitting.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/BULLET_ACT_FORCE_PIERCE">BULLET_ACT_FORCE_PIERCE</a></th><td>It pierces through the object regardless of the bullet being piercing by default.</td></tr>
+        <tr><th><a href="code/__DEFINES/combat.html#define/BULLET_ACT_TURF">BULLET_ACT_TURF</a></th><td>It hit us but it should hit something on the same turf too. Usually used for turfs.</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/BULLET_ACT_BLOCK">BULLET_ACT_BLOCK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L207">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 207"/></a>
+    </h3>
+    <p>It's a blocked hit, whatever that means in the context of the thing it's hitting.</p><h3><aside class="declaration">#define </aside><a name="define/BULLET_ACT_FORCE_PIERCE">BULLET_ACT_FORCE_PIERCE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L208">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 208"/></a>
+    </h3>
+    <p>It pierces through the object regardless of the bullet being piercing by default.</p><h3><aside class="declaration">#define </aside><a name="define/BULLET_ACT_HIT">BULLET_ACT_HIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L206">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 206"/></a>
+    </h3>
+    <p>It's a successful hit, whatever that means in the context of the thing it's hitting.</p><h3><aside class="declaration">#define </aside><a name="define/BULLET_ACT_TURF">BULLET_ACT_TURF</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L209">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 209"/></a>
+    </h3>
+    <p>It hit us but it should hit something on the same turf too. Usually used for turfs.</p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_FALL_PAIN_MULTIPLIER">EMBEDDED_FALL_PAIN_MULTIPLIER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L132">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 132"/></a>
+    </h3>
+    <p>Coefficient of multiplication for the damage the item does when it falls out <code>(this*item.w_class)</code></p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_IMPACT_PAIN_MULTIPLIER">EMBEDDED_IMPACT_PAIN_MULTIPLIER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L133">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 133"/></a>
+    </h3>
+    <p>Coefficient of multiplication for the damage the item does when it first embeds <code>(this*item.w_class)</code></p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_ITEM_FALLOUT">EMBEDDED_ITEM_FALLOUT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L129">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 129"/></a>
+    </h3>
+    <p>Chance for embedded object to fall out (causing pain but removing the object)</p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_PAIN_CHANCE">EMBEDDED_PAIN_CHANCE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L128">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 128"/></a>
+    </h3>
+    <p>Chance for embedded objects to cause pain (damage user)</p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_PAIN_MULTIPLIER">EMBEDDED_PAIN_MULTIPLIER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L131">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 131"/></a>
+    </h3>
+    <p>Coefficient of multiplication for the damage the item does while embedded <code>(this*item.w_class)</code></p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_UNSAFE_REMOVAL_PAIN_MULTIPLIER">EMBEDDED_UNSAFE_REMOVAL_PAIN_MULTIPLIER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L135">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 135"/></a>
+    </h3>
+    <p>Coefficient of multiplication for the damage the item does when removed without a surgery <code>(this*item.w_class)</code></p><h3><aside class="declaration">#define </aside><a name="define/EMBEDDED_UNSAFE_REMOVAL_TIME">EMBEDDED_UNSAFE_REMOVAL_TIME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L136">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 136"/></a>
+    </h3>
+    <p>A Time in ticks, total removal <code>time = (this*item.w_class)</code></p><h3><aside class="declaration">#define </aside><a name="define/EMBED_CHANCE">EMBED_CHANCE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L130">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 130"/></a>
+    </h3>
+    <p>Chance for an object to embed into somebody when thrown (if it's sharp)</p><h3><aside class="declaration">#define </aside><a name="define/EMBED_THROWSPEED_THRESHOLD">EMBED_THROWSPEED_THRESHOLD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L134">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 134"/></a>
+    </h3>
+    <p>The minimum value of an item's throw_speed for it to embed (Unless it has embedded_ignore_throwspeed_threshold set to 1)</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_CONSUME_OWNER">HIS_GRACE_CONSUME_OWNER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L170">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 170"/></a>
+    </h3>
+    <p>His Grace consumes His owner at this point and becomes aggressive.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_FALL_ASLEEP">HIS_GRACE_FALL_ASLEEP</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L171">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 171"/></a>
+    </h3>
+    <p>If it reaches this point, He falls asleep and resets.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_FAMISHED">HIS_GRACE_FAMISHED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L168">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 168"/></a>
+    </h3>
+    <p>Dangerous. Increases damage up to a minimum of 25 and cannot be dropped.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_FORCE_BONUS">HIS_GRACE_FORCE_BONUS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L173">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 173"/></a>
+    </h3>
+    <p>How much force is gained per kill.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_HUNGRY">HIS_GRACE_HUNGRY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L167">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 167"/></a>
+    </h3>
+    <p>Getting closer. Increases damage up to a minimum of 20.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_PECKISH">HIS_GRACE_PECKISH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L166">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 166"/></a>
+    </h3>
+    <p>Slightly hungry.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_SATIATED">HIS_GRACE_SATIATED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L165">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 165"/></a>
+    </h3>
+    <p>He hungers not. If bloodthirst is set to this, His Grace is asleep.</p><h3><aside class="declaration">#define </aside><a name="define/HIS_GRACE_STARVING">HIS_GRACE_STARVING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/combat.dm#L169">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;combat.dm 169"/></a>
+    </h3>
+    <p>Incredibly close to breaking loose. Increases damage up to a minimum of 30.</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

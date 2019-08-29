@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;inventory.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/inventory.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/inventory.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><td colspan="2"><h2>ITEM INVENTORY WEIGHT, FOR w_class</h2></td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_TINY">WEIGHT_CLASS_TINY</a></th><td>Usually items smaller then a human hand, (e.g. playing cards, lighter, scalpel, coins/holochips)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_SMALL">WEIGHT_CLASS_SMALL</a></th><td>Pockets can hold small and tiny items, (e.g. flashlight, multitool, grenades, GPS device)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_NORMAL">WEIGHT_CLASS_NORMAL</a></th><td>Standard backpacks can carry tiny, small &amp; normal items, (e.g. fire extinguisher, stun baton, gas mask, iron sheets)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_BULKY">WEIGHT_CLASS_BULKY</a></th><td>Items that can be weilded or equipped but not stored in an inventory, (e.g. defibrillator, backpack, space suits)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_HUGE">WEIGHT_CLASS_HUGE</a></th><td>Usually represents objects that require two hands to operate, (e.g. shotgun, two-handed melee weapons)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/WEIGHT_CLASS_GIGANTIC">WEIGHT_CLASS_GIGANTIC</a></th><td>Essentially means it cannot be picked up or placed in an inventory, (e.g. mech parts, safe)</td></tr>
+        <tr><td colspan="2"><h2>ITEM INVENTORY SLOT BITMASKS</h2>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/ITEM_SLOT_POCKET">ITEM_SLOT_POCKET</a></th><td>this is to allow items with a w_class of WEIGHT_CLASS_NORMAL or WEIGHT_CLASS_BULKY to fit in pockets.</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/ITEM_SLOT_DENYPOCKET">ITEM_SLOT_DENYPOCKET</a></th><td>this is to deny items with a w_class of WEIGHT_CLASS_SMALL or WEIGHT_CLASS_TINY to fit in pockets.</td></tr>
+        <tr><td colspan="2"><h2>SLOTS</h2>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/SLOT_HANDS">SLOT_HANDS</a></th><td>wherever you provide a slot for hands you provide SLOT_HANDS. SLOT_HANDS as a slot will pick ANY available hand</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/SLOTS_AMT">SLOTS_AMT</a></th><td>Keep this up to date!</td></tr>
+        <tr><td colspan="2"><h2>FLAGS FOR flags_inv</h2>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HIDEJUMPSUIT">HIDEJUMPSUIT</a></th><td>these first four are only used in exterior suits</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HIDEMASK">HIDEMASK</a></th><td>these last six are only used in masks and headgear.</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HIDEEARS">HIDEEARS</a></th><td>(ears means headsets and such)</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HIDEEYES">HIDEEYES</a></th><td>Whether eyes and glasses are hidden</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HIDEFACE">HIDEFACE</a></th><td>Whether we appear as unknown.</td></tr>
+        <tr><td colspan="2"><h2>flags for covering body parts</h2>
+</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/MASKCOVERSEYES">MASKCOVERSEYES</a></th><td>get rid of some of the other retardation in these flags</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/HEADCOVERSEYES">HEADCOVERSEYES</a></th><td>feel free to realloc these numbers for other purposes</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/MASKCOVERSMOUTH">MASKCOVERSMOUTH</a></th><td>on other items, these are just for mask/head</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/TINT_DARKENED">TINT_DARKENED</a></th><td>Threshold of tint level to apply weld mask overlay</td></tr>
+        <tr><th><a href="code/__DEFINES/inventory.html#define/TINT_BLIND">TINT_BLIND</a></th><td>Threshold of tint level to obscure vision fully</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/HEADCOVERSEYES">HEADCOVERSEYES</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L152">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 152"/></a>
+    </h3>
+    <p>feel free to realloc these numbers for other purposes</p><h3><aside class="declaration">#define </aside><a name="define/HIDEEARS">HIDEEARS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L105">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 105"/></a>
+    </h3>
+    <p>(ears means headsets and such)</p><h3><aside class="declaration">#define </aside><a name="define/HIDEEYES">HIDEEYES</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L106">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 106"/></a>
+    </h3>
+    <p>Whether eyes and glasses are hidden</p><h3><aside class="declaration">#define </aside><a name="define/HIDEFACE">HIDEFACE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L107">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 107"/></a>
+    </h3>
+    <p>Whether we appear as unknown.</p><h3><aside class="declaration">#define </aside><a name="define/HIDEJUMPSUIT">HIDEJUMPSUIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L102">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 102"/></a>
+    </h3>
+    <p>these first four are only used in exterior suits</p><h3><aside class="declaration">#define </aside><a name="define/HIDEMASK">HIDEMASK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L104">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 104"/></a>
+    </h3>
+    <p>these last six are only used in masks and headgear.</p><h3><aside class="declaration">#define </aside><a name="define/ITEM_SLOT_DENYPOCKET">ITEM_SLOT_DENYPOCKET</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 29"/></a>
+    </h3>
+    <p>this is to deny items with a w_class of WEIGHT_CLASS_SMALL or WEIGHT_CLASS_TINY to fit in pockets.</p><h3><aside class="declaration">#define </aside><a name="define/ITEM_SLOT_POCKET">ITEM_SLOT_POCKET</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 28"/></a>
+    </h3>
+    <p>this is to allow items with a w_class of WEIGHT_CLASS_NORMAL or WEIGHT_CLASS_BULKY to fit in pockets.</p><h3><aside class="declaration">#define </aside><a name="define/MASKCOVERSEYES">MASKCOVERSEYES</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L151">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 151"/></a>
+    </h3>
+    <p>get rid of some of the other retardation in these flags</p><h3><aside class="declaration">#define </aside><a name="define/MASKCOVERSMOUTH">MASKCOVERSMOUTH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L153">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 153"/></a>
+    </h3>
+    <p>on other items, these are just for mask/head</p><h3><aside class="declaration">#define </aside><a name="define/SLOTS_AMT">SLOTS_AMT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L57">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 57"/></a>
+    </h3>
+    <p>Keep this up to date!</p><h3><aside class="declaration">#define </aside><a name="define/SLOT_HANDS">SLOT_HANDS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 39"/></a>
+    </h3>
+    <p>wherever you provide a slot for hands you provide SLOT_HANDS. SLOT_HANDS as a slot will pick ANY available hand</p><h3><aside class="declaration">#define </aside><a name="define/TINT_BLIND">TINT_BLIND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L157">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 157"/></a>
+    </h3>
+    <p>Threshold of tint level to obscure vision fully</p><h3><aside class="declaration">#define </aside><a name="define/TINT_DARKENED">TINT_DARKENED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L156">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 156"/></a>
+    </h3>
+    <p>Threshold of tint level to apply weld mask overlay</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_BULKY">WEIGHT_CLASS_BULKY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 7"/></a>
+    </h3>
+    <p>Items that can be weilded or equipped but not stored in an inventory, (e.g. defibrillator, backpack, space suits)</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_GIGANTIC">WEIGHT_CLASS_GIGANTIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 9"/></a>
+    </h3>
+    <p>Essentially means it cannot be picked up or placed in an inventory, (e.g. mech parts, safe)</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_HUGE">WEIGHT_CLASS_HUGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 8"/></a>
+    </h3>
+    <p>Usually represents objects that require two hands to operate, (e.g. shotgun, two-handed melee weapons)</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_NORMAL">WEIGHT_CLASS_NORMAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 6"/></a>
+    </h3>
+    <p>Standard backpacks can carry tiny, small &amp; normal items, (e.g. fire extinguisher, stun baton, gas mask, iron sheets)</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_SMALL">WEIGHT_CLASS_SMALL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 5"/></a>
+    </h3>
+    <p>Pockets can hold small and tiny items, (e.g. flashlight, multitool, grenades, GPS device)</p><h3><aside class="declaration">#define </aside><a name="define/WEIGHT_CLASS_TINY">WEIGHT_CLASS_TINY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/inventory.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;inventory.dm 4"/></a>
+    </h3>
+    <p>Usually items smaller then a human hand, (e.g. playing cards, lighter, scalpel, coins/holochips)</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

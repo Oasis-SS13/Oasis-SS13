@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;clockcult.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/clockcult.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/clockcult.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/BELLIGERENT_EYE">BELLIGERENT_EYE</a></th><td>Use this for offensive and damaging scripture!</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/VANGUARD_COGWHEEL">VANGUARD_COGWHEEL</a></th><td>Use this for defensive and healing scripture!</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/GEIS_CAPACITOR">GEIS_CAPACITOR</a></th><td>Use this for niche scripture!</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/HIEROPHANT_ANSIBLE">HIEROPHANT_ANSIBLE</a></th><td>Use this for construction-related scripture!</td></tr>
+        <tr><td colspan="2"><p>The total value of all structures built by the clockwork cult
+How much Vitality is stored, total
+How many watts of power are globally available to the clockwork cult</p>
+<p>All clockwork items, structures, and effects in existence
+All clockwork SERVANTS (not creatures) in existence</p>
+<p>The servants can choose to &quot;herald&quot; Ratvar, permanently buffing them but announcing their presence to the crew.
+If Ratvar has been summoned; not a boolean, for proper handling of multiple Ratvars
+The Ark on the Reebe z-level</p>
+<p>if a gateway to the celestial derelict has ever been successfully activated
+If script scripture is available, through converting at least one crewmember
+If script scripture is available
+a list containing scripture instances; not used to track existing scripture</p></td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/MAX_CLOCKWORK_POWER">MAX_CLOCKWORK_POWER</a></th><td>The max power in W that the cult can stockpile</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/SCRIPT_UNLOCK_THRESHOLD">SCRIPT_UNLOCK_THRESHOLD</a></th><td>Scripts will unlock if the total power reaches this amount</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/APPLICATION_UNLOCK_THRESHOLD">APPLICATION_UNLOCK_THRESHOLD</a></th><td>Applications will unlock if the total powre reaches this amount</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/MIN_CLOCKCULT_POWER">MIN_CLOCKCULT_POWER</a></th><td>the minimum amount of power clockcult machines will handle gracefully</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/CLOCKCULT_POWER_UNIT">CLOCKCULT_POWER_UNIT</a></th><td>standard power amount for replica fabricator costs</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_STANDARD">POWER_STANDARD</a></th><td>how much power is in anything else; doesn't matter as much as the following</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_FLOOR">POWER_FLOOR</a></th><td>how much power is in a clockwork floor, determines the cost of clockwork floor production</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_WALL_MINUS_FLOOR">POWER_WALL_MINUS_FLOOR</a></th><td>how much power is in a clockwork wall, determines the cost of clockwork wall production</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_GEAR">POWER_GEAR</a></th><td>how much power is in a wall gear, minus the brass from the wall</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_WALL_TOTAL">POWER_WALL_TOTAL</a></th><td>how much power is in a clockwork wall and the floor under it</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_ROD">POWER_ROD</a></th><td>how much power is in one rod</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_IRON">POWER_IRON</a></th><td>how much power is in one sheet of iron</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/POWER_PLASTEEL">POWER_PLASTEEL</a></th><td>how much power is in one sheet of plasteel</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/GATEWAY_SUMMON_RATE">GATEWAY_SUMMON_RATE</a></th><td>the time amount the Gateway to the Celestial Derelict gets each process tick; defaults to 1 per tick</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/GATEWAY_REEBE_FOUND">GATEWAY_REEBE_FOUND</a></th><td>when progress is at or above this, the gateway finds reebe and begins drawing power</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/GATEWAY_RATVAR_COMING">GATEWAY_RATVAR_COMING</a></th><td>when progress is at or above this, ratvar has entered and is coming through the gateway</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/GATEWAY_RATVAR_ARRIVAL">GATEWAY_RATVAR_ARRIVAL</a></th><td>when progress is at or above this, game over ratvar's here everybody go home</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/SUPERHEATED_CLOCKWORK_WALL_LIMIT">SUPERHEATED_CLOCKWORK_WALL_LIMIT</a></th><td>How many walls can be superheated at once</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/SIGIL_ACCESS_RANGE">SIGIL_ACCESS_RANGE</a></th><td>range at which transmission sigils can access power</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/FABRICATOR_REPAIR_PER_TICK">FABRICATOR_REPAIR_PER_TICK</a></th><td>how much a fabricator repairs each tick, and also how many deciseconds each tick is</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/OCULAR_WARDEN_EXCLUSION_RANGE">OCULAR_WARDEN_EXCLUSION_RANGE</a></th><td>the range at which ocular wardens cannot be placed near other ocular wardens</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/CLOCKWORK_ARMOR_COOLDOWN">CLOCKWORK_ARMOR_COOLDOWN</a></th><td>The cooldown period between summoning suits of clockwork armor</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/RATVARIAN_SPEAR_COOLDOWN">RATVARIAN_SPEAR_COOLDOWN</a></th><td>The cooldown period between summoning another Ratvarian spear</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/MARAUDER_SCRIPTURE_SCALING_THRESHOLD">MARAUDER_SCRIPTURE_SCALING_THRESHOLD</a></th><td>The amount of deciseconds that must pass before marauder scripture will not gain a recital penalty</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/MARAUDER_SCRIPTURE_SCALING_TIME">MARAUDER_SCRIPTURE_SCALING_TIME</a></th><td>The amount of extra deciseconds tacked on to the marauder scripture recital time per recent marauder</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/MARAUDER_SCRIPTURE_SCALING_MAX">MARAUDER_SCRIPTURE_SCALING_MAX</a></th><td>The maximum extra time applied to the marauder scripture</td></tr>
+        <tr><th><a href="code/__DEFINES/clockcult.html#define/ARK_SCREAM_COOLDOWN">ARK_SCREAM_COOLDOWN</a></th><td>This much time has to pass between instances of the Ark taking damage before it will &quot;scream&quot; again</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/APPLICATION_UNLOCK_THRESHOLD">APPLICATION_UNLOCK_THRESHOLD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 33"/></a>
+    </h3>
+    <p>Applications will unlock if the total powre reaches this amount</p><h3><aside class="declaration">#define </aside><a name="define/ARK_SCREAM_COOLDOWN">ARK_SCREAM_COOLDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L91">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 91"/></a>
+    </h3>
+    <p>This much time has to pass between instances of the Ark taking damage before it will &quot;scream&quot; again</p><h3><aside class="declaration">#define </aside><a name="define/BELLIGERENT_EYE">BELLIGERENT_EYE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 2"/></a>
+    </h3>
+    <p>Use this for offensive and damaging scripture!</p><h3><aside class="declaration">#define </aside><a name="define/CLOCKCULT_POWER_UNIT">CLOCKCULT_POWER_UNIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L40">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 40"/></a>
+    </h3>
+    <p>standard power amount for replica fabricator costs</p><h3><aside class="declaration">#define </aside><a name="define/CLOCKWORK_ARMOR_COOLDOWN">CLOCKWORK_ARMOR_COOLDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L81">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 81"/></a>
+    </h3>
+    <p>The cooldown period between summoning suits of clockwork armor</p><h3><aside class="declaration">#define </aside><a name="define/FABRICATOR_REPAIR_PER_TICK">FABRICATOR_REPAIR_PER_TICK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L77">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 77"/></a>
+    </h3>
+    <p>how much a fabricator repairs each tick, and also how many deciseconds each tick is</p><h3><aside class="declaration">#define </aside><a name="define/GATEWAY_RATVAR_ARRIVAL">GATEWAY_RATVAR_ARRIVAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 65"/></a>
+    </h3>
+    <p>when progress is at or above this, game over ratvar's here everybody go home</p><h3><aside class="declaration">#define </aside><a name="define/GATEWAY_RATVAR_COMING">GATEWAY_RATVAR_COMING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L63">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 63"/></a>
+    </h3>
+    <p>when progress is at or above this, ratvar has entered and is coming through the gateway</p><h3><aside class="declaration">#define </aside><a name="define/GATEWAY_REEBE_FOUND">GATEWAY_REEBE_FOUND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L61">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 61"/></a>
+    </h3>
+    <p>when progress is at or above this, the gateway finds reebe and begins drawing power</p><h3><aside class="declaration">#define </aside><a name="define/GATEWAY_SUMMON_RATE">GATEWAY_SUMMON_RATE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L59">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 59"/></a>
+    </h3>
+    <p>the time amount the Gateway to the Celestial Derelict gets each process tick; defaults to 1 per tick</p><h3><aside class="declaration">#define </aside><a name="define/GEIS_CAPACITOR">GEIS_CAPACITOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 4"/></a>
+    </h3>
+    <p>Use this for niche scripture!</p><h3><aside class="declaration">#define </aside><a name="define/HIEROPHANT_ANSIBLE">HIEROPHANT_ANSIBLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 6"/></a>
+    </h3>
+    <p>Use this for construction-related scripture!</p><h3><aside class="declaration">#define </aside><a name="define/MARAUDER_SCRIPTURE_SCALING_MAX">MARAUDER_SCRIPTURE_SCALING_MAX</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L89">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 89"/></a>
+    </h3>
+    <p>The maximum extra time applied to the marauder scripture</p><h3><aside class="declaration">#define </aside><a name="define/MARAUDER_SCRIPTURE_SCALING_THRESHOLD">MARAUDER_SCRIPTURE_SCALING_THRESHOLD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 85"/></a>
+    </h3>
+    <p>The amount of deciseconds that must pass before marauder scripture will not gain a recital penalty</p><h3><aside class="declaration">#define </aside><a name="define/MARAUDER_SCRIPTURE_SCALING_TIME">MARAUDER_SCRIPTURE_SCALING_TIME</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L87">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 87"/></a>
+    </h3>
+    <p>The amount of extra deciseconds tacked on to the marauder scripture recital time per recent marauder</p><h3><aside class="declaration">#define </aside><a name="define/MAX_CLOCKWORK_POWER">MAX_CLOCKWORK_POWER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 31"/></a>
+    </h3>
+    <p>The max power in W that the cult can stockpile</p><h3><aside class="declaration">#define </aside><a name="define/MIN_CLOCKCULT_POWER">MIN_CLOCKCULT_POWER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 38"/></a>
+    </h3>
+    <p>the minimum amount of power clockcult machines will handle gracefully</p><h3><aside class="declaration">#define </aside><a name="define/OCULAR_WARDEN_EXCLUSION_RANGE">OCULAR_WARDEN_EXCLUSION_RANGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L79">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 79"/></a>
+    </h3>
+    <p>the range at which ocular wardens cannot be placed near other ocular wardens</p><h3><aside class="declaration">#define </aside><a name="define/POWER_FLOOR">POWER_FLOOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 44"/></a>
+    </h3>
+    <p>how much power is in a clockwork floor, determines the cost of clockwork floor production</p><h3><aside class="declaration">#define </aside><a name="define/POWER_GEAR">POWER_GEAR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 48"/></a>
+    </h3>
+    <p>how much power is in a wall gear, minus the brass from the wall</p><h3><aside class="declaration">#define </aside><a name="define/POWER_IRON">POWER_IRON</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 54"/></a>
+    </h3>
+    <p>how much power is in one sheet of iron</p><h3><aside class="declaration">#define </aside><a name="define/POWER_PLASTEEL">POWER_PLASTEEL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 56"/></a>
+    </h3>
+    <p>how much power is in one sheet of plasteel</p><h3><aside class="declaration">#define </aside><a name="define/POWER_ROD">POWER_ROD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 52"/></a>
+    </h3>
+    <p>how much power is in one rod</p><h3><aside class="declaration">#define </aside><a name="define/POWER_STANDARD">POWER_STANDARD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 42"/></a>
+    </h3>
+    <p>how much power is in anything else; doesn't matter as much as the following</p><h3><aside class="declaration">#define </aside><a name="define/POWER_WALL_MINUS_FLOOR">POWER_WALL_MINUS_FLOOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 46"/></a>
+    </h3>
+    <p>how much power is in a clockwork wall, determines the cost of clockwork wall production</p><h3><aside class="declaration">#define </aside><a name="define/POWER_WALL_TOTAL">POWER_WALL_TOTAL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L50">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 50"/></a>
+    </h3>
+    <p>how much power is in a clockwork wall and the floor under it</p><h3><aside class="declaration">#define </aside><a name="define/RATVARIAN_SPEAR_COOLDOWN">RATVARIAN_SPEAR_COOLDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L83">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 83"/></a>
+    </h3>
+    <p>The cooldown period between summoning another Ratvarian spear</p><h3><aside class="declaration">#define </aside><a name="define/SCRIPT_UNLOCK_THRESHOLD">SCRIPT_UNLOCK_THRESHOLD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 32"/></a>
+    </h3>
+    <p>Scripts will unlock if the total power reaches this amount</p><h3><aside class="declaration">#define </aside><a name="define/SIGIL_ACCESS_RANGE">SIGIL_ACCESS_RANGE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L75">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 75"/></a>
+    </h3>
+    <p>range at which transmission sigils can access power</p><h3><aside class="declaration">#define </aside><a name="define/SUPERHEATED_CLOCKWORK_WALL_LIMIT">SUPERHEATED_CLOCKWORK_WALL_LIMIT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L71">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 71"/></a>
+    </h3>
+    <p>How many walls can be superheated at once</p><h3><aside class="declaration">#define </aside><a name="define/VANGUARD_COGWHEEL">VANGUARD_COGWHEEL</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/clockcult.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;clockcult.dm 3"/></a>
+    </h3>
+    <p>Use this for defensive and healing scripture!</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;maths.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/maths.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/maths.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/maths.html#define/FLOOR">FLOOR</a></th><td><code>round()</code> acts like <code>floor(x, 1)</code> by default but can't handle other values</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/WRAP">WRAP</a></th><td>Similar to clamp but the bottom rolls around to the top and vice versa. min is inclusive, max is exclusive</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/MODULUS">MODULUS</a></th><td>Real modulus that handles decimals</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/TAN">TAN</a></th><td>Tangent</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/COT">COT</a></th><td>Cotangent</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/SEC">SEC</a></th><td>Secant</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/CSC">CSC</a></th><td>Cosecant</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/Lcm">Lcm</a></th><td>Least Common Multiple</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/INVERSE_SQUARE">INVERSE_SQUARE</a></th><td>Used for calculating the radioactive strength falloff</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/ISINRANGE">ISINRANGE</a></th><td>Returns true if val is from min to max, inclusive.</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/ROOT">ROOT</a></th><td>Returns the nth root of x.</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/SIMPLIFY_DEGREES">SIMPLIFY_DEGREES</a></th><td>Will filter out extra rotations and negative rotations E.g: 540 becomes 180. -180 becomes 180.</td></tr>
+        <tr><th><a href="code/__DEFINES/maths.html#define/TRANSFORM_USING_VARIABLE">TRANSFORM_USING_VARIABLE</a></th><td>A logarithm that converts an integer to a number scaled between 0 and 1. Currently, this is used for hydroponics-produce sprite transforming, but could be useful for other transform functions.</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/COT">COT</a>
+            <aside>(x)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 45"/></a>
+    </h3>
+    <p>Cotangent</p><h3><aside class="declaration">#define </aside><a name="define/CSC">CSC</a>
+            <aside>(x)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L51">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 51"/></a>
+    </h3>
+    <p>Cosecant</p><h3><aside class="declaration">#define </aside><a name="define/FLOOR">FLOOR</a>
+            <aside>(x, y)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 31"/></a>
+    </h3>
+    <p><code>round()</code> acts like <code>floor(x, 1)</code> by default but can't handle other values</p><h3><aside class="declaration">#define </aside><a name="define/INVERSE_SQUARE">INVERSE_SQUARE</a>
+            <aside>(initial_strength, cur_distance, initial_distance)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 65"/></a>
+    </h3>
+    <p>Used for calculating the radioactive strength falloff</p><h3><aside class="declaration">#define </aside><a name="define/ISINRANGE">ISINRANGE</a>
+            <aside>(val, min, max)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L74">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 74"/></a>
+    </h3>
+    <p>Returns true if val is from min to max, inclusive.</p><h3><aside class="declaration">#define </aside><a name="define/Lcm">Lcm</a>
+            <aside>(a, b)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 60"/></a>
+    </h3>
+    <p>Least Common Multiple</p><h3><aside class="declaration">#define </aside><a name="define/MODULUS">MODULUS</a>
+            <aside>(x, y)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 39"/></a>
+    </h3>
+    <p>Real modulus that handles decimals</p><h3><aside class="declaration">#define </aside><a name="define/ROOT">ROOT</a>
+            <aside>(n, x)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L89">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 89"/></a>
+    </h3>
+    <p>Returns the nth root of x.</p><h3><aside class="declaration">#define </aside><a name="define/SEC">SEC</a>
+            <aside>(x)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 48"/></a>
+    </h3>
+    <p>Secant</p><h3><aside class="declaration">#define </aside><a name="define/SIMPLIFY_DEGREES">SIMPLIFY_DEGREES</a>
+            <aside>(degrees)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L110">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 110"/></a>
+    </h3>
+    <p>Will filter out extra rotations and negative rotations E.g: 540 becomes 180. -180 becomes 180.</p><h3><aside class="declaration">#define </aside><a name="define/TAN">TAN</a>
+            <aside>(x)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 42"/></a>
+    </h3>
+    <p>Tangent</p><h3><aside class="declaration">#define </aside><a name="define/TRANSFORM_USING_VARIABLE">TRANSFORM_USING_VARIABLE</a>
+            <aside>(input, max)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L129">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 129"/></a>
+    </h3>
+    <p>A logarithm that converts an integer to a number scaled between 0 and 1. Currently, this is used for hydroponics-produce sprite transforming, but could be useful for other transform functions.</p><h3><aside class="declaration">#define </aside><a name="define/WRAP">WRAP</a>
+            <aside>(val, min, max)</aside>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/maths.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;maths.dm 36"/></a>
+    </h3>
+    <p>Similar to clamp but the bottom rolls around to the top and vice versa. min is inclusive, max is exclusive</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

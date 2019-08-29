@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;status_effects.dm - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/status_effects.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/status_effects.dm 
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><td colspan="2"><p><strong>These are all the different status effects. Use the paths for each effect in the defines.</strong></p></td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_MULTIPLE">STATUS_EFFECT_MULTIPLE</a></th><td>if it allows multiple instances of the effect</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_UNIQUE">STATUS_EFFECT_UNIQUE</a></th><td>if it allows only one, preventing new instances</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_REPLACE">STATUS_EFFECT_REPLACE</a></th><td>if it allows only one, but new instances replace</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_REFRESH">STATUS_EFFECT_REFRESH</a></th><td>if it only allows one, and new instances just instead refresh the timer</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SHADOW_MEND">STATUS_EFFECT_SHADOW_MEND</a></th><td>Quick, powerful heal that deals damage afterwards. Heals 15 brute/burn every second for 3 seconds.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_VANGUARD">STATUS_EFFECT_VANGUARD</a></th><td>Grants temporary stun absorption, but will stun the user based on how many stuns they absorbed.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_INATHNEQS_ENDOWMENT">STATUS_EFFECT_INATHNEQS_ENDOWMENT</a></th><td>A 15-second invulnerability and stun absorption, granted by Inath-neq.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_POWERREGEN">STATUS_EFFECT_POWERREGEN</a></th><td>Regenerates power on a given cyborg over time</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_HISGRACE">STATUS_EFFECT_HISGRACE</a></th><td>His Grace.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_WISH_GRANTERS_GIFT">STATUS_EFFECT_WISH_GRANTERS_GIFT</a></th><td>If you're currently resurrecting with the Wish Granter</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_BLOODDRUNK">STATUS_EFFECT_BLOODDRUNK</a></th><td>Stun immunity and greatly reduced damage taken</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_FLESHMEND">STATUS_EFFECT_FLESHMEND</a></th><td>Very fast healing; suppressed by fire, and heals less fire damage</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_EXERCISED">STATUS_EFFECT_EXERCISED</a></th><td>Prevents heart disease</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_HIPPOCRATIC_OATH">STATUS_EFFECT_HIPPOCRATIC_OATH</a></th><td>Gives you an aura of healing as well as regrowing the Rod of Asclepius if lost</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_ANTIMAGIC">STATUS_EFFECT_ANTIMAGIC</a></th><td>grants antimagic (and reapplies if lost) for the duration</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_STUN">STATUS_EFFECT_STUN</a></th><td>the affected is unable to move or use items</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_KNOCKDOWN">STATUS_EFFECT_KNOCKDOWN</a></th><td>the affected is unable to stand up</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_IMMOBILIZED">STATUS_EFFECT_IMMOBILIZED</a></th><td>the affected is unable to move</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_PARALYZED">STATUS_EFFECT_PARALYZED</a></th><td>the affected is unable to move, use items, or stand up.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_UNCONSCIOUS">STATUS_EFFECT_UNCONSCIOUS</a></th><td>the affected is unconscious</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SLEEPING">STATUS_EFFECT_SLEEPING</a></th><td>the affected is asleep</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_PACIFY">STATUS_EFFECT_PACIFY</a></th><td>the affected is pacified, preventing direct hostile actions</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_BELLIGERENT">STATUS_EFFECT_BELLIGERENT</a></th><td>forces the affected to walk, doing damage if they try to run</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_GEISTRACKER">STATUS_EFFECT_GEISTRACKER</a></th><td>if you're using geis, this tracks that and keeps you from using scripture</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_MANIAMOTOR">STATUS_EFFECT_MANIAMOTOR</a></th><td>disrupts, damages, and confuses the affected as long as they're in range of the motor</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/MAX_MANIA_SEVERITY">MAX_MANIA_SEVERITY</a></th><td>how high the mania severity can go</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/MANIA_DAMAGE_TO_CONVERT">MANIA_DAMAGE_TO_CONVERT</a></th><td>how much damage is required before it'll convert affected targets</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_CHOKINGSTRAND">STATUS_EFFECT_CHOKINGSTRAND</a></th><td>Choking Strand</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_HISWRATH">STATUS_EFFECT_HISWRATH</a></th><td>His Wrath.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SUMMONEDGHOST">STATUS_EFFECT_SUMMONEDGHOST</a></th><td>is a cult ghost and can't use manifest runes</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_CRUSHERMARK">STATUS_EFFECT_CRUSHERMARK</a></th><td>if struck with a proto-kinetic crusher, takes a ton of damage</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SAWBLEED">STATUS_EFFECT_SAWBLEED</a></th><td>if the bleed builds up enough, takes a ton of damage</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/CURSE_BLINDING">CURSE_BLINDING</a></th><td>makes the edges of the target's screen obscured</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/CURSE_SPAWNING">CURSE_SPAWNING</a></th><td>spawns creatures that attack the target only</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/CURSE_WASTING">CURSE_WASTING</a></th><td>causes gradual damage</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/CURSE_GRASPING">CURSE_GRASPING</a></th><td>hands reach out from the sides of the screen, doing damage and stunning if they hit the target</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_KINDLE">STATUS_EFFECT_KINDLE</a></th><td>A knockdown reduced by 1 second for every 3 points of damage the target takes.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_ICHORIAL_STAIN">STATUS_EFFECT_ICHORIAL_STAIN</a></th><td>Prevents a servant from being revived by vitality matrices for one minute.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_GONBOLAPACIFY">STATUS_EFFECT_GONBOLAPACIFY</a></th><td>Gives the user gondola traits while the gonbola is attached to them.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SPASMS">STATUS_EFFECT_SPASMS</a></th><td>causes random muscle spasms</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_DNA_MELT">STATUS_EFFECT_DNA_MELT</a></th><td>usually does something horrible to you when you hit 100 genetic instability</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_GO_AWAY">STATUS_EFFECT_GO_AWAY</a></th><td>makes you launch through walls in a single direction for a while</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_STASIS">STATUS_EFFECT_STASIS</a></th><td>Halts biological functions like bleeding, chemical processing, blood regeneration, walking, etc</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_CRUSHERDAMAGETRACKING">STATUS_EFFECT_CRUSHERDAMAGETRACKING</a></th><td>tracks total kinetic crusher damage on a target</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SYPHONMARK">STATUS_EFFECT_SYPHONMARK</a></th><td>tracks kills for the KA death syphon module</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_INLOVE">STATUS_EFFECT_INLOVE</a></th><td>Displays you as being in love with someone else, and makes hearts appear around them.</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_BUGGED">STATUS_EFFECT_BUGGED</a></th><td>Lets other mobs listen in on what it hears</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_BOUNTY">STATUS_EFFECT_BOUNTY</a></th><td>rewards the person who added this to the target with refreshed spells and a fair heal</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_RAINBOWPROTECTION">STATUS_EFFECT_RAINBOWPROTECTION</a></th><td>Invulnerable and pacifistic</td></tr>
+        <tr><th><a href="code/__DEFINES/status_effects.html#define/STATUS_EFFECT_SLIMESKIN">STATUS_EFFECT_SLIMESKIN</a></th><td>Increased armor</td></tr></table><h2><a name="define">Define Details</a></h2>
+<h3><aside class="declaration">#define </aside><a name="define/CURSE_BLINDING">CURSE_BLINDING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L81">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 81"/></a>
+    </h3>
+    <p>makes the edges of the target's screen obscured</p><h3><aside class="declaration">#define </aside><a name="define/CURSE_GRASPING">CURSE_GRASPING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L84">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 84"/></a>
+    </h3>
+    <p>hands reach out from the sides of the screen, doing damage and stunning if they hit the target</p><h3><aside class="declaration">#define </aside><a name="define/CURSE_SPAWNING">CURSE_SPAWNING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L82">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 82"/></a>
+    </h3>
+    <p>spawns creatures that attack the target only</p><h3><aside class="declaration">#define </aside><a name="define/CURSE_WASTING">CURSE_WASTING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L83">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 83"/></a>
+    </h3>
+    <p>causes gradual damage</p><h3><aside class="declaration">#define </aside><a name="define/MANIA_DAMAGE_TO_CONVERT">MANIA_DAMAGE_TO_CONVERT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L68">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 68"/></a>
+    </h3>
+    <p>how much damage is required before it'll convert affected targets</p><h3><aside class="declaration">#define </aside><a name="define/MAX_MANIA_SEVERITY">MAX_MANIA_SEVERITY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L67">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 67"/></a>
+    </h3>
+    <p>how high the mania severity can go</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_ANTIMAGIC">STATUS_EFFECT_ANTIMAGIC</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 42"/></a>
+    </h3>
+    <p>grants antimagic (and reapplies if lost) for the duration</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_BELLIGERENT">STATUS_EFFECT_BELLIGERENT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L62">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 62"/></a>
+    </h3>
+    <p>forces the affected to walk, doing damage if they try to run</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_BLOODDRUNK">STATUS_EFFECT_BLOODDRUNK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 30"/></a>
+    </h3>
+    <p>Stun immunity and greatly reduced damage taken</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_BOUNTY">STATUS_EFFECT_BOUNTY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L118">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 118"/></a>
+    </h3>
+    <p>rewards the person who added this to the target with refreshed spells and a fair heal</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_BUGGED">STATUS_EFFECT_BUGGED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L112">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 112"/></a>
+    </h3>
+    <p>Lets other mobs listen in on what it hears</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_CHOKINGSTRAND">STATUS_EFFECT_CHOKINGSTRAND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L70">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 70"/></a>
+    </h3>
+    <p>Choking Strand</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_CRUSHERDAMAGETRACKING">STATUS_EFFECT_CRUSHERDAMAGETRACKING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L106">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 106"/></a>
+    </h3>
+    <p>tracks total kinetic crusher damage on a target</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_CRUSHERMARK">STATUS_EFFECT_CRUSHERMARK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L76">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 76"/></a>
+    </h3>
+    <p>if struck with a proto-kinetic crusher, takes a ton of damage</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_DNA_MELT">STATUS_EFFECT_DNA_MELT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L94">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 94"/></a>
+    </h3>
+    <p>usually does something horrible to you when you hit 100 genetic instability</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_EXERCISED">STATUS_EFFECT_EXERCISED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 34"/></a>
+    </h3>
+    <p>Prevents heart disease</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_FLESHMEND">STATUS_EFFECT_FLESHMEND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 32"/></a>
+    </h3>
+    <p>Very fast healing; suppressed by fire, and heals less fire damage</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_GEISTRACKER">STATUS_EFFECT_GEISTRACKER</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 64"/></a>
+    </h3>
+    <p>if you're using geis, this tracks that and keeps you from using scripture</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_GONBOLAPACIFY">STATUS_EFFECT_GONBOLAPACIFY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L90">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 90"/></a>
+    </h3>
+    <p>Gives the user gondola traits while the gonbola is attached to them.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_GO_AWAY">STATUS_EFFECT_GO_AWAY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L96">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 96"/></a>
+    </h3>
+    <p>makes you launch through walls in a single direction for a while</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_HIPPOCRATIC_OATH">STATUS_EFFECT_HIPPOCRATIC_OATH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 36"/></a>
+    </h3>
+    <p>Gives you an aura of healing as well as regrowing the Rod of Asclepius if lost</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_HISGRACE">STATUS_EFFECT_HISGRACE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L26">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 26"/></a>
+    </h3>
+    <p>His Grace.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_HISWRATH">STATUS_EFFECT_HISWRATH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L72">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 72"/></a>
+    </h3>
+    <p>His Wrath.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_ICHORIAL_STAIN">STATUS_EFFECT_ICHORIAL_STAIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L88">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 88"/></a>
+    </h3>
+    <p>Prevents a servant from being revived by vitality matrices for one minute.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_IMMOBILIZED">STATUS_EFFECT_IMMOBILIZED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L52">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 52"/></a>
+    </h3>
+    <p>the affected is unable to move</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_INATHNEQS_ENDOWMENT">STATUS_EFFECT_INATHNEQS_ENDOWMENT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 21"/></a>
+    </h3>
+    <p>A 15-second invulnerability and stun absorption, granted by Inath-neq.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_INLOVE">STATUS_EFFECT_INLOVE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L110">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 110"/></a>
+    </h3>
+    <p>Displays you as being in love with someone else, and makes hearts appear around them.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_KINDLE">STATUS_EFFECT_KINDLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L86">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 86"/></a>
+    </h3>
+    <p>A knockdown reduced by 1 second for every 3 points of damage the target takes.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_KNOCKDOWN">STATUS_EFFECT_KNOCKDOWN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L50">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 50"/></a>
+    </h3>
+    <p>the affected is unable to stand up</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_MANIAMOTOR">STATUS_EFFECT_MANIAMOTOR</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L66">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 66"/></a>
+    </h3>
+    <p>disrupts, damages, and confuses the affected as long as they're in range of the motor</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_MULTIPLE">STATUS_EFFECT_MULTIPLE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 5"/></a>
+    </h3>
+    <p>if it allows multiple instances of the effect</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_PACIFY">STATUS_EFFECT_PACIFY</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 60"/></a>
+    </h3>
+    <p>the affected is pacified, preventing direct hostile actions</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_PARALYZED">STATUS_EFFECT_PARALYZED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 54"/></a>
+    </h3>
+    <p>the affected is unable to move, use items, or stand up.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_POWERREGEN">STATUS_EFFECT_POWERREGEN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 24"/></a>
+    </h3>
+    <p>Regenerates power on a given cyborg over time</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_RAINBOWPROTECTION">STATUS_EFFECT_RAINBOWPROTECTION</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L124">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 124"/></a>
+    </h3>
+    <p>Invulnerable and pacifistic</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_REFRESH">STATUS_EFFECT_REFRESH</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 11"/></a>
+    </h3>
+    <p>if it only allows one, and new instances just instead refresh the timer</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_REPLACE">STATUS_EFFECT_REPLACE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 9"/></a>
+    </h3>
+    <p>if it allows only one, but new instances replace</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SAWBLEED">STATUS_EFFECT_SAWBLEED</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L78">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 78"/></a>
+    </h3>
+    <p>if the bleed builds up enough, takes a ton of damage</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SHADOW_MEND">STATUS_EFFECT_SHADOW_MEND</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 17"/></a>
+    </h3>
+    <p>Quick, powerful heal that deals damage afterwards. Heals 15 brute/burn every second for 3 seconds.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SLEEPING">STATUS_EFFECT_SLEEPING</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L58">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 58"/></a>
+    </h3>
+    <p>the affected is asleep</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SLIMESKIN">STATUS_EFFECT_SLIMESKIN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L125">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 125"/></a>
+    </h3>
+    <p>Increased armor</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SPASMS">STATUS_EFFECT_SPASMS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L92">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 92"/></a>
+    </h3>
+    <p>causes random muscle spasms</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_STASIS">STATUS_EFFECT_STASIS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L98">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 98"/></a>
+    </h3>
+    <p>Halts biological functions like bleeding, chemical processing, blood regeneration, walking, etc</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_STUN">STATUS_EFFECT_STUN</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 48"/></a>
+    </h3>
+    <p>the affected is unable to move or use items</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SUMMONEDGHOST">STATUS_EFFECT_SUMMONEDGHOST</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L74">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 74"/></a>
+    </h3>
+    <p>is a cult ghost and can't use manifest runes</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_SYPHONMARK">STATUS_EFFECT_SYPHONMARK</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L108">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 108"/></a>
+    </h3>
+    <p>tracks kills for the KA death syphon module</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_UNCONSCIOUS">STATUS_EFFECT_UNCONSCIOUS</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 56"/></a>
+    </h3>
+    <p>the affected is unconscious</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_UNIQUE">STATUS_EFFECT_UNIQUE</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 7"/></a>
+    </h3>
+    <p>if it allows only one, preventing new instances</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_VANGUARD">STATUS_EFFECT_VANGUARD</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 20"/></a>
+    </h3>
+    <p>Grants temporary stun absorption, but will stun the user based on how many stuns they absorbed.</p><h3><aside class="declaration">#define </aside><a name="define/STATUS_EFFECT_WISH_GRANTERS_GIFT">STATUS_EFFECT_WISH_GRANTERS_GIFT</a>
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/__DEFINES/status_effects.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;status_effects.dm 28"/></a>
+    </h3>
+    <p>If you're currently resurrecting with the Wish Granter</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>

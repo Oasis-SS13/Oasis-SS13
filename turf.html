@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;turf - BeeStation 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">BeeStation 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="turf.html#var">Var Details</a> - <a href="turf.html#proc">Proc Details</a></header>
+<main>
+<h1>/<a href="turf.html">turf</a><aside> inherits /<a href="atom.html">atom</a></aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L1">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="turf.html#var/baseturfs">baseturfs</a></th><td></td></tr>
+            <tr><th><a href="turf.html#var/blocks_air">blocks_air</a></th><td>Whether the turf blocks atmos from passing through it or not</td></tr>
+            <tr><th><a href="turf.html#var/blueprint_data">blueprint_data</a></th><td>For the station blueprints, images of objects eg: pipes</td></tr>
+            <tr><th><a href="turf.html#var/bullet_bounce_sound">bullet_bounce_sound</a></th><td>Sound played when a shell casing is ejected ontop of the turf.</td></tr>
+            <tr><th><a href="turf.html#var/bullet_sizzle">bullet_sizzle</a></th><td>Used by ammo_casing/bounce_away() to determine if the shell casing should make a sizzle sound when it's ejected over the turf. ex: If the turf is supposed to be water, set TRUE.</td></tr>
+            <tr><th><a href="turf.html#var/intact">intact</a></th><td>If this is TRUE, that means this floor is on top of plating so pipes and wires and stuff will appear under it... or something like that it's not entirely clear.</td></tr>
+            <tr><th><a href="turf.html#var/temperature">temperature</a></th><td>How hot the turf is, in kelvin</td></tr>
+            <tr><th><a href="turf.html#var/tiled_dirt">tiled_dirt</a></th><td>Should we used the smooth tiled dirt decal or not</td></tr>
+            <tr><th><a href="turf.html#var/to_be_destroyed">to_be_destroyed</a></th><td>Used for fire, if a melting temperature was reached, it will be destroyed</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="turf.html#proc/conductivity_directions">conductivity_directions</a></th><td>SUPERCONDUCTIVITY</td></tr>
+            <tr><th><a href="turf.html#proc/fromShuttleMove">fromShuttleMove</a></th><td>Base procs</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/baseturfs">baseturfs</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 16"/></a></h3>
+        <ul>
+<li>
+<p>baseturfs are the turfs that will appear under a turf when said turf is destroyed. For instance: when a floor is destroyed, you get plating.</p>
+<pre><code>* This shouldn't be modified directly, use the helper procs.
+</code></pre>
+</li>
+</ul><h3><aside class="declaration">var </aside><a name="var/blocks_air">blocks_air</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L26">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 26"/></a></h3>
+        <p>Whether the turf blocks atmos from passing through it or not</p><h3><aside class="declaration">var </aside><a name="var/blueprint_data">blueprint_data</a>
+            <aside>&ndash; /list/image</aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 31"/></a></h3>
+        <p>For the station blueprints, images of objects eg: pipes</p><h3><aside class="declaration">var </aside><a name="var/bullet_bounce_sound">bullet_bounce_sound</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L40">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 40"/></a></h3>
+        <p>Sound played when a shell casing is ejected ontop of the turf.</p><h3><aside class="declaration">var </aside><a name="var/bullet_sizzle">bullet_sizzle</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 42"/></a></h3>
+        <p>Used by ammo_casing/bounce_away() to determine if the shell casing should make a sizzle sound when it's ejected over the turf. ex: If the turf is supposed to be water, set TRUE.</p><h3><aside class="declaration">var </aside><a name="var/intact">intact</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 6"/></a></h3>
+        <p>If this is TRUE, that means this floor is on top of plating so pipes and wires and stuff will appear under it... or something like that it's not entirely clear.</p><h3><aside class="declaration">var </aside><a name="var/temperature">temperature</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L19">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 19"/></a></h3>
+        <p>How hot the turf is, in kelvin</p><h3><aside class="declaration">var </aside><a name="var/tiled_dirt">tiled_dirt</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 45"/></a></h3>
+        <p>Should we used the smooth tiled dirt decal or not</p><h3><aside class="declaration">var </aside><a name="var/to_be_destroyed">to_be_destroyed</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/game/turfs/turf.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 22"/></a></h3>
+        <p>Used for fire, if a melting temperature was reached, it will be destroyed</p><h2><a name="proc">Proc Details</a></h2><h3><aside class="declaration">proc </aside><a name="proc/conductivity_directions">conductivity_directions</a><aside>() 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/atmospherics/environmental/LINDA_turf_tile.dm#L360">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;atmospherics&#x2F;environmental&#x2F;LINDA_turf_tile.dm 360"/></a></aside>
+        </h3>
+        <p>SUPERCONDUCTIVITY</p><h3><aside class="declaration">proc </aside><a name="proc/fromShuttleMove">fromShuttleMove</a><aside>(/<a href="turf.html">turf</a>/newT, move_mode) 
+        
+    
+            <a href="https://github.com/BeeStation/BeeStation-Hornet/blob/dff4908a5e00f48754b8140121f2801272cc46ad/code/modules/shuttle/on_move.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;shuttle&#x2F;on_move.dm 9"/></a></aside>
+        </h3>
+        <p>Base procs</p></main>
+<footer>
+    beestation.dme
+    <a href="https://github.com/BeeStation/BeeStation-Hornet/tree/dff4908a5e00f48754b8140121f2801272cc46ad">dff4908</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.0.0</a></footer>
+</body>
+</html>
