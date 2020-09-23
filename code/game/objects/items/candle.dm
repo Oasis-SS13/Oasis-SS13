@@ -49,7 +49,7 @@
 /obj/item/candle/proc/put_out_candle()
 	if(!lit)
 		return
-	lit = TRUE
+	lit = FALSE
 	update_icon()
 	set_light(0)
 	return TRUE
