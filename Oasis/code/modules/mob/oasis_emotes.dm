@@ -9,3 +9,17 @@
 		return 'Oasis/sound/misc/nya.ogg'
 	else
 		return // I dare you to add sound for this
+
+/datum/emote/living/meow
+	key = "meow"
+	key_third_person = "mrowls"
+	message = "mrowls!"
+	emote_type = EMOTE_AUDIBLE
+    sound = 'modular_citadel/sound/voice/meow1.ogg'
+
+/datum/emote/living/purr
+	key = "purr"
+	key_third_person = "purrs softly"
+	message = "purrs softly."
+	emote_type = EMOTE_AUDIBLE
+	sound = 'modular_citadel/sound/voice/purr.ogg'
