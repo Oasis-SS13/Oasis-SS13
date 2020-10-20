@@ -160,10 +160,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "xenomaint"
 	xenobiology_compatible = TRUE
 
-/area/maintenance/department/science/circuit_lab
-	name = "Circuit Lab"
-	icon_state = "cir_lab"
-
 //Maintenance - Generic
 
 /area/maintenance/aft
@@ -929,6 +925,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 //Science
 
+
+/area/science/circuit_lab
+	name = "Circuit Lab"
+	icon_state = "cir_lab"
+
 /area/science
 	name = "Science Division"
 	icon_state = "toxlab"
@@ -999,6 +1000,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/science/nanite
 	name = "Nanite Lab"
+	icon_state = "toxmisc"
+
+/area/science/shuttledock
+	name = "Science Shuttle Dock"
 	icon_state = "toxmisc"
 
 //Storage
