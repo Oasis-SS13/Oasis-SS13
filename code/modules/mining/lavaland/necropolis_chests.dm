@@ -85,10 +85,6 @@
 			new /obj/item/reagent_containers/glass/bottle/necropolis_seed(src)
 		if(31)
 			new /obj/item/book/granter/spell/fireball
-		if(32)
-			new /obj/item/book/granter/spell/timestop
-		if(33)
-			new /obj/item/book/granter/spell/lichdom
 
 //KA modkit design discs
 /obj/item/disk/design_disk/modkit_disc
