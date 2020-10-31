@@ -153,9 +153,6 @@
 								"<span class='userdanger'>[user] slams you onto \the [src]!</span>")
 	log_combat(user, pushed_mob, "tabled", null, "onto [src]")
 	SEND_SIGNAL(pushed_mob, COMSIG_ADD_MOOD_EVENT, "table", /datum/mood_event/table)
-	var/mob/living/carbon/human/H = pushed_mob // Oasis change by Xenomedes
-	if(iscatperson(H) && prob(10))
-		H.emote("nya") // Oasis change end
 
 /obj/structure/table/proc/tableheadsmash(mob/living/user, mob/living/pushed_mob)
 	pushed_mob.Knockdown(30)
