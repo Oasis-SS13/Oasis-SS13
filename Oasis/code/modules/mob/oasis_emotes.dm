@@ -15,11 +15,29 @@
 	key_third_person = "mrowls"
 	message = "mrowls!"
 	emote_type = EMOTE_AUDIBLE
-    sound = 'modular_citadel/sound/voice/meow1.ogg'
+	sound = 'Oasis/sound/misc/meow1_emote.ogg'
+
+/datum/emote/living/meow/can_run_emote(mob/user, status_check = TRUE, intentional)
+	if(!..())
+		return FALSE
+	var/mob/living/carbon/human/H = user
+	if(istype(H))
+		return iscatperson(H)
+	else
+		return iscat(user)
 
 /datum/emote/living/purr
 	key = "purr"
 	key_third_person = "purrs softly"
 	message = "purrs softly."
 	emote_type = EMOTE_AUDIBLE
-	sound = 'modular_citadel/sound/voice/purr.ogg'
+	sound = 'Oasis/sound/misc/purr.ogg'
+
+/datum/emote/living/purr/can_run_emote(mob/user, status_check = TRUE, intentional)
+	if(!..())
+		return FALSE
+	var/mob/living/carbon/human/H = user
+	if(istype(H))
+		return iscatperson(H)
+	else
+		return iscat(user)
