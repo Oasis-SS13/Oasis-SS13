@@ -39,6 +39,9 @@
 	var/info = ""
 	var/show_written_words = TRUE
 
+	/// The (text for the) stamps on the paper.
+	var/list/stamps			/// Positioning for the stamp in tgui
+	var/list/stamped		/// Overlay info
 	/// This REALLY should be a componenet.  Basicly used during, april fools
 	/// to honk at you
 	var/rigged = 0
@@ -47,7 +50,6 @@
 	/// The (text for the) stamps on the paper.
 	var/list/stamps			/// Positioning for the stamp in tgui
 	var/list/stamped		/// Overlay info
-
 	var/contact_poison // Reagent ID to transfer on contact
 	var/contact_poison_volume = 0
 
@@ -232,10 +234,22 @@
 			addtimer(CALLBACK(src, .proc/reset_spamflag), 20)
 	. = ..()
 
+
+// Again, we have to do this as autoupdate is off
+/obj/item/paper/proc/update_all_ui()
+	for(var/datum/tgui/ui in viewing_ui)
+		ui.update()
 /obj/item/paper/ui_assets(mob/user)
 	return list(
 		get_asset_datum(/datum/asset/spritesheet/simple/paper),
 	)
+
+// Again, we have to do this as autoupdate is off
+/obj/item/paper/proc/close_all_ui()
+	for(var/datum/tgui/ui in viewing_ui)
+		ui.close()
+	viewing_ui = list()
+>>>>>>> master
 
 /obj/item/paper/ui_interact(mob/user, datum/tgui/ui)
 	// Update the UI
