@@ -14,6 +14,7 @@ import marked from 'marked';
 import { useBackend } from '../backend';
 import { Box, Flex, Tabs, TextArea } from '../components';
 import { Window } from '../layouts';
+
 import marked from 'marked';
 import DOMPurify from 'dompurify';
 import { classes } from 'common/react';
@@ -24,7 +25,7 @@ import { isFalsy } from 'common/react';
 import { createLogger } from '../logging';
 import { vecScale, vecSubtract } from 'common/vector';
 const logger = createLogger('PaperSheet');
-const MAX_PAPER_LENGTH = 5000; // Question, should we send this with ui_data?
+
 
 const sanatize_text = value => {
   // This is VERY important to think first if you NEED
@@ -252,32 +253,12 @@ const PaperSheetView = (props, context) => {
     readOnly,
   } = props;
   const stamp_list = stamps || [];
-    + setInputReadonly(value, readonly) + "</span>" };
-  const text_html = {
-    __html: '<span class="paper-text">'
-      + setInputReadonly(value, readOnly)
-      + '</span>',
-  };
 
-  return (
-    <Box
-      position="relative"
-      backgroundColor={backgroundColor}
-      width="100%"
-      height="100%" >
-      <Box
-        fillPositionedParent
-        width="100%"
-        height="100%"
-        dangerouslySetInnerHTML={text_html}
-        p="10px" />
-      {stamp_list.map((o, i) => (
-        <Stamp key={o[0] + i}
-          image={{ sprite: o[0], x: o[1], y: o[2], rotate: o[3] }} />
-      ))}
-    </Box>
-  );
-};
+    + setInputReadonly(value, readonly) + "</span>" };
+
+
+
+
 
 // again, need the states for dragging and such
 class PaperSheetStamper extends Component {
