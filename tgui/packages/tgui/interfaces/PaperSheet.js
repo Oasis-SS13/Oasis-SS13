@@ -7,7 +7,7 @@
  * @license MIT
  */
 
-import { vecScale, vecSubtract } from 'common/vector';
+import { vecScale} from 'common/vector';
 import DOMPurify from 'dompurify';
 import { Component } from 'inferno';
 import marked from 'marked';
