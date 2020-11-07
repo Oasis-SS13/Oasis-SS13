@@ -7,7 +7,6 @@
  * @license MIT
  */
 
-import { classes } from 'common/react';
 import { vecScale, vecSubtract } from 'common/vector';
 import DOMPurify from 'dompurify';
 import { Component } from 'inferno';
