@@ -249,7 +249,6 @@
 	for(var/datum/tgui/ui in viewing_ui)
 		ui.close()
 	viewing_ui = list()
->>>>>>> master
 
 /obj/item/paper/ui_interact(mob/user, datum/tgui/ui)
 	// Update the UI
