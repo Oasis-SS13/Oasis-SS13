@@ -7,8 +7,8 @@
 	icon_state = "mining"
 	density = TRUE
 	circuit = /obj/item/circuitboard/machine/mining_equipment_vendor
-	ui_x = 425
-	ui_y = 600
+
+
 	var/icon_deny = "mining-deny"
 	var/obj/item/card/id/inserted_id
 	var/list/prize_list = list( //if you add something to this, please, for the love of god, sort it by price/type. use tabs and not spaces.
@@ -61,7 +61,9 @@
 		new /datum/data/mining_equipment("KA Range Increase",			/obj/item/borg/upgrade/modkit/range,								1000),
 		new /datum/data/mining_equipment("KA Damage Increase",			/obj/item/borg/upgrade/modkit/damage,								1000),
 		new /datum/data/mining_equipment("KA Cooldown Decrease",		/obj/item/borg/upgrade/modkit/cooldown,								1000),
-		new /datum/data/mining_equipment("KA AoE Damage",				/obj/item/borg/upgrade/modkit/aoe/mobs,								2000)
+		new /datum/data/mining_equipment("KA AoE Damage",				/obj/item/borg/upgrade/modkit/aoe/mobs,								2000),
+		new /datum/data/mining_equipment("Burn Healing Kit",			/obj/item/storage/firstaid/fire,									600),
+		new /datum/data/mining_equipment("Flight Potion Bottle ", 		/obj/item/reagent_containers/glass/bottle/potion/flight,			15000)
 		)
 
 /datum/data/mining_equipment
@@ -93,17 +95,19 @@
 	else
 		icon_state = "[initial(icon_state)]-off"
 
-/obj/machinery/mineral/equipment_vendor/ui_base_html(html)
-	var/datum/asset/spritesheet/assets = get_asset_datum(/datum/asset/spritesheet/vending)
-	. = replacetext(html, "<!--customheadhtml-->", assets.css_tag())
+/obj/machinery/mineral/equipment_vendor/ui_assets(mob/user)
+	return list(
+		get_asset_datum(/datum/asset/spritesheet/vending),
+	)
 
-/obj/machinery/mineral/equipment_vendor/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
-									datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+
+/obj/machinery/mineral/equipment_vendor/ui_state(mob/user)
+	return GLOB.default_state
+
+/obj/machinery/mineral/equipment_vendor/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		var/datum/asset/assets = get_asset_datum(/datum/asset/spritesheet/vending)
-		assets.send(user)
-		ui = new(user, src, ui_key, "MiningVendor", name, ui_x, ui_y, master_ui, state)
+		ui = new(user, src, "MiningVendor")
 		ui.open()
 
 /obj/machinery/mineral/equipment_vendor/ui_static_data(mob/user)
@@ -183,7 +187,7 @@
 		if("Survival Capsule and Explorer's Webbing")
 			new /obj/item/storage/belt/mining/vendor(drop_location)
 		if("Resonator Kit")
-			new /obj/item/extinguisher/mini(drop_location)
+			new /obj/item/storage/firstaid/brute(drop_location)
 			new /obj/item/resonator(drop_location)
 		if("Minebot Kit")
 			new /mob/living/simple_animal/hostile/mining_drone(drop_location)
