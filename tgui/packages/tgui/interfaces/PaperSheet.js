@@ -1,3 +1,4 @@
+  
 /**
  * @file
  * @copyright 2020 WarlockD (https://github.com/warlockd)
@@ -17,14 +18,18 @@ import { Window } from '../layouts';
 
 import marked from 'marked';
 import DOMPurify from 'dompurify';
-import { classes } from 'common/react';
-import { isFalsy } from 'common/react';
+import { classes, isFalsy } from "common/react";
 // There is a sanatize option in marked but they say its deprecated.
 // Might as well use a proper one then
 
 import { createLogger } from '../logging';
-import { vecScale, vecSubtract } from 'common/vector';
+import { vecCreate, vecAdd, vecSubtract } from 'common/vector';
 const logger = createLogger('PaperSheet');
+
+
+
+const MAX_PAPER_LENGTH = 5000; // Question, should we send this with ui_data?
+
 
 
 const sanatize_text = value => {
@@ -251,12 +256,34 @@ const PaperSheetView = (props, context) => {
     stamps,
     backgroundColor,
     readOnly,
+    ...rest
   } = props;
-  const stamp_list = stamps || [];
 
-    + setInputReadonly(value, readonly) + "</span>" };
-
-
+  const readonly = !isFalsy(readOnly);
+  const text_html = {
+    __html: '<span class="paper-text">'
+      + setInputReadonly(value, readOnly)
+      + '</span>',
+  };
+  return (
+    <Box
+      position="relative"
+      backgroundColor={backgroundColor}
+      width="100%"
+      height="100%" >
+      <Box
+        fillPositionedParent
+        width="100%"
+        height="100%"
+        dangerouslySetInnerHTML={text_html}
+        p="10px" />
+      {stamp_list.map((o, i) => (
+        <Stamp key={o[0] + i}
+          image={{ sprite: o[0], x: o[1], y: o[2], rotate: o[3] }} />
+      ))}
+    </Box>
+  );
+};
 
 
 
@@ -290,12 +317,12 @@ class PaperSheetStamper extends Component {
       reference = reference.offsetParent;
     }
 
-    const pos = [
-      position.x - offset.left,
-      position.y - offset.top,
-    ];
-    const centerOffset = vecScale([121, 51], 0.5);
-    const center = vecSubtract(pos, centerOffset);
+    const pos_x = position.x - offset.left;
+    const pos_y = position.y - offset.top;
+    const pos = vecCreate(pos_x, pos_y);
+
+    const center_offset = vecCreate((121/2), (51/2));
+    const center = vecSubtract(pos, center_offset);
     return center;
   }
 
@@ -355,7 +382,7 @@ class PaperSheetStamper extends Component {
         onMouseMove={this.handleMouseMove.bind(this)}
         onwheel={this.handleWheel.bind(this)} {...rest}>
         <PaperSheetView
-          readOnly
+          readOnly={1}
           value={value}
           stamps={stamp_list} />
         <Stamp
@@ -364,7 +391,6 @@ class PaperSheetStamper extends Component {
     );
   }
 }
-
 // ugh.  So have to turn this into a full
 // component too if I want to keep updates
 // low and keep the wierd flashing down
@@ -378,7 +404,6 @@ class PaperSheetEdit extends Component {
       combined_text: props.value || "",
     };
   }
-
   // This is the main rendering part, this creates the html from marked text
   // as well as the form fields
   createPreview(value, do_fields = false) {
@@ -590,6 +615,7 @@ export const PaperSheet = (props, context) => {
             stamps={stamp_list}
             readOnly />
         );
+
       case 1:
         return (
           <PaperSheetEdit
@@ -611,6 +637,7 @@ export const PaperSheet = (props, context) => {
     }
   };
   return (
+
     <Window
       theme="paper"
       width={400}
@@ -620,6 +647,7 @@ export const PaperSheet = (props, context) => {
         <Box
           fillPositionedParent
           backgroundColor={backgroundColor}>
+
           {decide_mode(edit_mode)}
         </Box>
       </Window.Content>
