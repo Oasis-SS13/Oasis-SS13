@@ -16,8 +16,6 @@ import { useBackend } from '../backend';
 import { Box, Flex, Tabs, TextArea } from '../components';
 import { Window } from '../layouts';
 
-import marked from 'marked';
-import DOMPurify from 'dompurify';
 import { classes, isFalsy } from "common/react";
 // There is a sanatize option in marked but they say its deprecated.
 // Might as well use a proper one then
