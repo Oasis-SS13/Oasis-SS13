@@ -544,8 +544,6 @@
 	config_entry_value = 18000
 	integer = FALSE
 	min_val = 0
-<<<<<<< HEAD
-=======
 
 /datum/config_entry/flag/respect_upstream_bans
 
@@ -554,4 +552,3 @@
 /datum/config_entry/number/ghost_role_cooldown
 	config_entry_value = 0
 	min_val = 0
->>>>>>> 7c4b2ab5bb... Upstream ban mirroring (#2471)
