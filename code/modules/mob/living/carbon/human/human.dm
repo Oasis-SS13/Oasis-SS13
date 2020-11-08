@@ -517,7 +517,7 @@
 											to_chat(usr, "<span class='notice'>Successfully added comment.</span>")
 											return
 							to_chat(usr, "<span class='warning'>Unable to locate a data core entry for this person.</span>")
-=======
+
 		if(!ishuman(usr))
 			return
 		var/mob/living/carbon/human/H = usr
@@ -718,7 +718,7 @@
 				investigate_log("New Crime: <strong>[t1]</strong> | Added to [R.fields["name"]] by [key_name(usr)]", INVESTIGATE_RECORDS)
 				to_chat(usr, "<span class='notice'>Successfully added a crime.</span>")
 				return
->>>>>>> 42c728b9ba... Simplifies crimes + hud clean up (#2837)
+
 
 			if(href_list["add_details"])
 				var/t1 = stripped_input(usr, "Please input crime details:", "Secure. records", "", null)
