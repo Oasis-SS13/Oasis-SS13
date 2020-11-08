@@ -280,7 +280,6 @@
 
 ///////HUDs///////
 	if(href_list["hud"])
-<<<<<<< HEAD
 		if(ishuman(usr))
 			var/mob/living/carbon/human/H = usr
 			var/perpname = get_face_name(get_id_name(""))
