@@ -55,25 +55,6 @@
 		new /datum/data/mining_equipment("Luxury Shelter Capsule",		/obj/item/survivalcapsule/luxury,									3000),
 		new /datum/data/mining_equipment("Mining Outpost Capsule",		/obj/item/survivalcapsule/encampment,								5000),
 		new /datum/data/mining_equipment("Luxury Bar Capsule",			/obj/item/survivalcapsule/luxuryelite,								10000),
-
-		new /datum/data/mining_equipment("Mining Encampment Capsule",	/obj/item/survivalcapsule/encampment,								5000),
-		new /datum/data/mining_equipment("Nanotrasen Minebot",			/mob/living/simple_animal/hostile/mining_drone,						800),
-		new /datum/data/mining_equipment("Minebot Melee Upgrade",		/obj/item/mine_bot_upgrade,											400),
-		new /datum/data/mining_equipment("Minebot Armor Upgrade",		/obj/item/mine_bot_upgrade/health,									400),
-		new /datum/data/mining_equipment("Minebot Cooldown Upgrade",	/obj/item/borg/upgrade/modkit/cooldown/minebot,						600),
-		new /datum/data/mining_equipment("Minebot AI Upgrade",			/obj/item/slimepotion/slime/sentience/mining,						1000),
-		new /datum/data/mining_equipment("KA Minebot Passthrough",		/obj/item/borg/upgrade/modkit/minebot_passthrough,					100),
-		new /datum/data/mining_equipment("KA White Tracer Rounds",		/obj/item/borg/upgrade/modkit/tracer,								100),
-		new /datum/data/mining_equipment("KA Adjustable Tracer Rounds",	/obj/item/borg/upgrade/modkit/tracer/adjustable,					150),
-		new /datum/data/mining_equipment("KA Super Chassis",			/obj/item/borg/upgrade/modkit/chassis_mod,							250),
-		new /datum/data/mining_equipment("KA Hyper Chassis",			/obj/item/borg/upgrade/modkit/chassis_mod/orange,					300),
-		new /datum/data/mining_equipment("KA Range Increase",			/obj/item/borg/upgrade/modkit/range,								1000),
-		new /datum/data/mining_equipment("KA Damage Increase",			/obj/item/borg/upgrade/modkit/damage,								1000),
-		new /datum/data/mining_equipment("KA Cooldown Decrease",		/obj/item/borg/upgrade/modkit/cooldown,								1000),
-		new /datum/data/mining_equipment("KA AoE Damage",				/obj/item/borg/upgrade/modkit/aoe/mobs,								2000),
-		new /datum/data/mining_equipment("Burn Healing Kit",			/obj/item/storage/firstaid/fire,									600),
-		new /datum/data/mining_equipment("Flight Potion Bottle ", 		/obj/item/reagent_containers/glass/bottle/potion/flight,			15000)
-
 		new /datum/data/mining_equipment("Lazarus Injector",			/obj/item/lazarus_injector,											1000),
 		new /datum/data/mining_equipment("1000 Space Cash",				/obj/item/stack/spacecash/c1000,									2000),
 		new /datum/data/mining_equipment("Pizza",						/obj/item/pizzabox/margherita,										200),
@@ -83,7 +64,6 @@
 		new /datum/data/mining_equipment("Soap",						/obj/item/soap/nanotrasen,											200),
 		new /datum/data/mining_equipment("Laser Pointer",				/obj/item/laser_pointer,											300),
 		new /datum/data/mining_equipment("Toy Alien",					/obj/item/clothing/mask/facehugger/toy,								300),
-
 		)
 
 /datum/data/mining_equipment
