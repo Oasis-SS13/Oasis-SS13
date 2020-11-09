@@ -55,7 +55,7 @@
 		new /datum/data/mining_equipment("Luxury Shelter Capsule",		/obj/item/survivalcapsule/luxury,									3000),
 		new /datum/data/mining_equipment("Mining Outpost Capsule",		/obj/item/survivalcapsule/encampment,								5000),
 		new /datum/data/mining_equipment("Luxury Bar Capsule",			/obj/item/survivalcapsule/luxuryelite,								10000),
-<<<<<<< HEAD
+
 		new /datum/data/mining_equipment("Mining Encampment Capsule",	/obj/item/survivalcapsule/encampment,								5000),
 		new /datum/data/mining_equipment("Nanotrasen Minebot",			/mob/living/simple_animal/hostile/mining_drone,						800),
 		new /datum/data/mining_equipment("Minebot Melee Upgrade",		/obj/item/mine_bot_upgrade,											400),
@@ -73,7 +73,7 @@
 		new /datum/data/mining_equipment("KA AoE Damage",				/obj/item/borg/upgrade/modkit/aoe/mobs,								2000),
 		new /datum/data/mining_equipment("Burn Healing Kit",			/obj/item/storage/firstaid/fire,									600),
 		new /datum/data/mining_equipment("Flight Potion Bottle ", 		/obj/item/reagent_containers/glass/bottle/potion/flight,			15000)
-=======
+
 		new /datum/data/mining_equipment("Lazarus Injector",			/obj/item/lazarus_injector,											1000),
 		new /datum/data/mining_equipment("1000 Space Cash",				/obj/item/stack/spacecash/c1000,									2000),
 		new /datum/data/mining_equipment("Pizza",						/obj/item/pizzabox/margherita,										200),
@@ -83,7 +83,7 @@
 		new /datum/data/mining_equipment("Soap",						/obj/item/soap/nanotrasen,											200),
 		new /datum/data/mining_equipment("Laser Pointer",				/obj/item/laser_pointer,											300),
 		new /datum/data/mining_equipment("Toy Alien",					/obj/item/clothing/mask/facehugger/toy,								300),
->>>>>>> eb1f932148... Updated mining vendor items - diet edition (#2784)
+
 		)
 
 /datum/data/mining_equipment
