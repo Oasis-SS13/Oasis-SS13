@@ -1218,7 +1218,7 @@
 
 
 
-/*
+
 /datum/map_template/random_room/sk_rdmSCP173 //SCP173 //Oasis Edit
 	name = "SCP-173 Containment"
 	room_id = "sk_rdm173_SCP173"
@@ -1226,8 +1226,8 @@
 	centerspawner = FALSE
 	template_height = 10
 	template_width = 10
-	weight = 1
-*/
+	weight = 2
+
 
 
 
@@ -1249,7 +1249,7 @@
 	centerspawner = FALSE
 	template_height = 3
 	template_width = 3
-	weight = 4
+	weight = 6
 
 
 
@@ -1261,7 +1261,7 @@
 	centerspawner = FALSE
 	template_height = 3
 	template_width = 3
-	weight = 1
+	weight = 2
 
 
 
