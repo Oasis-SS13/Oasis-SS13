@@ -1229,8 +1229,6 @@
 	weight = 2
 
 
-
-
 /datum/map_template/random_room/sk_rdmSCP012 //SCP012 //Oasis Edit
 	name = "SCP-012 Containment"
 	room_id = "sk_rdm012_SCP012"
