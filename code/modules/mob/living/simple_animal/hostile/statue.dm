@@ -125,13 +125,21 @@
 	// This loop will, at most, loop twice.
 	for(var/atom/check in check_list)
 		for(var/mob/living/M in viewers(getexpandedview(world.view, 1, 1), check) - src)
+<<<<<<< HEAD
 			if(M.client && !M.has_unlimited_silicon_privilege) // OASIS EDIT
+=======
+			if(M.client && CanAttack(M) && !M.has_unlimited_silicon_privilege)
+>>>>>>> 6fbf310803... Probably fixes the statue bug (#2911)
 				if(!M.eye_blind)
 					if(next_blinks[M] == null) // OASIS EDIT
 						next_blinks[M] = world.time+rand(15 SECONDS, 45 SECONDS) // OASIS EDIT
 					return M
 		for(var/obj/mecha/M in view(getexpandedview(world.view, 1, 1), check)) //assuming if you can see them they can see you
+<<<<<<< HEAD
 			if(M.occupant && M.occupant.client) // OASIS EDIT
+=======
+			if(M.occupant?.client)
+>>>>>>> 6fbf310803... Probably fixes the statue bug (#2911)
 				if(!M.occupant.eye_blind)
 					if(next_blinks[M.occupant] == null) // OASIS EDIT
 						next_blinks[M.occupant] = world.time+rand(15 SECONDS, 45 SECONDS) // OASIS EDIT

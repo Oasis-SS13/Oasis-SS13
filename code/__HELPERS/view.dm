@@ -15,8 +15,11 @@
 	var/list/output = getviewsize(view, extra_x, extra_y)
 	return "[output[1]]x[output[2]]"
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6fbf310803... Probably fixes the statue bug (#2911)
 /proc/in_view_range(mob/user, atom/A)
 	var/list/view_range = getviewsize(user.client.view)
 	var/turf/source = get_turf(user)
