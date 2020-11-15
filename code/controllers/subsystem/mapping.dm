@@ -16,6 +16,7 @@ SUBSYSTEM_DEF(mapping)
 	var/list/ruins_templates = list()
 	var/list/space_ruins_templates = list()
 	var/list/lava_ruins_templates = list()
+	var/list/sand_ruins_templates = list()	// Ruins for OasisStation
 
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
@@ -90,6 +91,15 @@ SUBSYSTEM_DEF(mapping)
 		seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors/unexplored, lava_ruins_templates)
 		for (var/lava_z in lava_ruins)
 			spawn_rivers(lava_z)
+
+	// Generate sand ruins
+	/*
+	loading_ruins = TRUE
+	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
+	if (sand_ruins.len)
+		seedRuins(sand_ruins, CONFIG_GET(number/sandland_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
+		for (var/sand_z in sand_ruins)
+			spawn_rivers(sand_z)*/
 
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)

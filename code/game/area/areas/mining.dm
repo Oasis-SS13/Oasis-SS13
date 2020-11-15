@@ -148,3 +148,30 @@
 
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
+
+/**********************Sandland Areas**************************/
+
+/area/sandland
+	icon_state = "sandclean"
+	has_gravity = STANDARD_GRAVITY
+	flags_1 = NONE
+
+/area/sandland/surface
+	name = "Sandland"
+	always_unpowered = TRUE
+	poweralm = FALSE
+	power_environ = FALSE
+	power_equip = FALSE
+	power_light = FALSE
+	requires_power = TRUE
+	ambient_effects = MINING
+
+/area/sandland/surface/outdoors
+	name = "Sandland Desert"
+	outdoors = TRUE
+
+/area/sandland/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "sandunexplored"
+
+/area/sandland/surface/outdoors/unexplored/danger //megafauna will also spawn here
+	icon_state = "sanddanger"
