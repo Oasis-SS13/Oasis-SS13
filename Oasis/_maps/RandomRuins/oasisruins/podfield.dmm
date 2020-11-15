@@ -1,0 +1,59 @@
+"a" = (/turf/open/space/basic,/area/ruin)
+"d" = (/mob/living/simple_animal/hostile/poison/giant_spider,/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+"f" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 5},/area/ruin)
+"h" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 6},/area/ruin)
+"k" = (/mob/living/simple_animal/hostile/poison/giant_spider/ice,/turf/open/space/basic,/area/ruin)
+"n" = (/turf/closed/wall/mineral/plastitanium/nosmooth,/area/ruin)
+"q" = (/obj/effect/temp_visual/blob,/turf/open/space/basic,/area/ruin)
+"v" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 1},/area/ruin)
+"y" = (/obj/effect/temp_visual/blob,/turf/closed/wall/mineral/plastitanium/nosmooth,/area/ruin)
+"z" = (/obj/structure/spider/stickyweb,/obj/structure/spider/stickyweb,/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+"A" = (/obj/effect/temp_visual/blob,/obj/effect/temp_visual/blob,/turf/open/space/basic,/area/ruin)
+"B" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 9},/area/ruin)
+"D" = (/obj/item/chair,/turf/open/space/basic,/area/ruin)
+"E" = (/obj/effect/decal/cleanable/cobweb,/turf/open/space/basic,/area/ruin)
+"G" = (/obj/structure/spider/stickyweb,/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+"J" = (/obj/effect/decal/remains/human,/turf/open/space/basic,/area/ruin)
+"L" = (/obj/structure/spider/stickyweb,/obj/effect/temp_visual/blob,/turf/open/space/basic,/area/ruin)
+"M" = (/obj/effect/temp_visual/blob,/obj/effect/temp_visual/blob,/turf/closed/wall/mineral/plastitanium/nosmooth,/area/ruin)
+"N" = (/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+"O" = (/obj/structure/spider/cocoon,/turf/open/space/basic,/area/ruin)
+"P" = (/obj/structure/spider/stickyweb,/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 9},/area/ruin)
+"R" = (/obj/structure/spider/stickyweb,/obj/structure/spider/stickyweb,/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 4},/area/ruin)
+"S" = (/obj/machinery/satellite/meteor_shield,/turf/open/space/basic,/area/ruin)
+"T" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 4},/area/ruin)
+"W" = (/mob/living/simple_animal/hostile/poison/giant_spider/hunter/viper,/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+"Z" = (/obj/effect/decal/remains/human,/obj/structure/spider/stickyweb,/turf/open/space/basic,/area/ruin)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaBafaaaaaaa
+aaBvfaaaaaaaaaaaaaaavnvaaaaaaa
+aaaZTaaaaaaaaDaaaJaavNvaaaaaaa
+aaaNRNNNNNaaaaaaaaNNvNvaaaaaaa
+aaaaNGGNaNWaaaaaaaNGNNaDaaaaaa
+aaaaaNNNaaNaaaSNaNNNNNaaaaaaaa
+aaaaaaaaaaaNaaaNNaNNNanaaaaaaa
+aaaaaaaaaaaaNNNNaaaaaaaaaaaaaa
+aaaaaaaaaaNNNaLPEfAaaaaaaaaaaa
+aaaaaanfNNNaNaqMqyqaaaaaaaaaaa
+aaaaaaaaaOaaNOqyAyaaaOaaaaaaaa
+aaaaavJaaaaaNqqnqqAaaaaaaaaaaa
+aaaaavNvaaanNqqaDaqqqaaaaaaaaa
+aaaaavaaaaGGGaNaaakaaaaaaaaaaa
+aaaaaaaNaNNdNaaaaaaaaaaaaaaaaa
+aaaaaNGNaaNNaaaaBaaaaaaaaaaaaa
+aaaaaNNNaaaaaaaBhaaaaaaaaaaaaa
+aaaaaNGNaaaaaaaaaaaaaanaaaaaaa
+aaaaaaBnhaaaaaNNNNaaaaaaaaaaaa
+aaaaaanNaNaaaaaNGzaaaaaaaaaaaa
+aaaaaanaaaaaaOaNaNaaaaaaaaaaaa
+aaaaaaaaaaaaaaaJaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
