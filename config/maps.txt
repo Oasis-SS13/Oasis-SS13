@@ -62,5 +62,5 @@ endmap
 map Caves
     minplayers 0
     maxplayers 80
-	votable
+	disabled
 endmap
