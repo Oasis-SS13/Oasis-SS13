@@ -573,16 +573,13 @@ obj/effect/sweatsplash/proc/splash()
 	mob_name = "a living tumor"
 	death = FALSE
 	roundstart = FALSE
-<<<<<<< HEAD
 	short_desc = "You are a living tumor. By all accounts, you should not exist."
 	flavour_text = {"
 	<b>You are a living teratoma, and your existence is misery. You feel the need to spread woe about the station- but not to kill.
 	"}
-=======
 	use_cooldown = TRUE
 	show_flavour = FALSE	//it's handled by antag datum
 
->>>>>>> 7c8134b866... Teratomas are actual antags now (#2782)
 
 /obj/effect/mob_spawn/teratomamonkey/Initialize()
 	. = ..()
