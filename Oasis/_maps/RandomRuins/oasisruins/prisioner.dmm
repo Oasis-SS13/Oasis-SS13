@@ -1,0 +1,34 @@
+"a" = (/turf/open/space/basic,/area/space)
+"b" = (/obj/structure/sign/poster/contraband/missing_gloves,/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 1},/area/ruin)
+"j" = (/obj/structure/grille/broken,/obj/structure/flora/rock,/turf/open/space/basic,/area/ruin)
+"k" = (/obj/effect/decal/cleanable/glass,/turf/open/space/basic,/area/ruin)
+"l" = (/obj/item/ammo_casing/shotgun/buckshot,/turf/open/floor/mineral/titanium,/area/ruin)
+"p" = (/obj/effect/mine/explosive,/obj/item/paper/bounty_printout,/turf/open/space/basic,/area/ruin)
+"q" = (/obj/effect/decal/remains/human,/obj/structure/chair/comfy/shuttle,/obj/item/restraints/handcuffs,/turf/open/floor/mineral/titanium,/area/ruin)
+"r" = (/obj/item/ammo_casing/a357,/obj/item/ammo_casing/a357,/turf/open/floor/mineral/titanium,/area/ruin)
+"s" = (/obj/item/ammo_casing/shotgun/buckshot,/obj/effect/mine/explosive,/obj/item/paper/bounty_printout,/turf/open/floor/mineral/titanium,/area/ruin)
+"B" = (/obj/item/ammo_casing/shotgun/buckshot,/obj/item/ammo_casing/a357,/obj/item/ammo_casing/a357,/turf/open/floor/mineral/titanium,/area/ruin)
+"D" = (/obj/structure/sign/warning/explosives,/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 1},/area/ruin)
+"E" = (/obj/item/ammo_casing/shotgun/buckshot,/obj/item/ammo_casing/shotgun/buckshot,/obj/item/ammo_casing/shotgun/buckshot,/obj/structure/closet/secure_closet/contraband,/obj/effect/spawner/lootdrop/armory_contraband,/turf/open/floor/mineral/titanium,/area/ruin)
+"G" = (/obj/item/ammo_casing/a357,/obj/effect/mine/explosive/traitor/bigboom,/obj/effect/mine/explosive,/obj/item/paper/bounty_printout,/turf/open/floor/mineral/titanium,/area/ruin)
+"I" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 1},/area/ruin)
+"J" = (/obj/effect/decal/remains/human,/obj/item/clothing/under/rank/centcom/commander,/obj/item/gun/energy/e_gun/mini,/obj/item/clothing/head/beret/corpsec,/turf/open/floor/mineral/titanium,/area/ruin)
+"N" = (/turf/open/space/basic,/area/ruin)
+"O" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 5},/area/ruin)
+"P" = (/turf/open/floor/mineral/titanium,/area/ruin)
+"S" = (/obj/effect/decal/remains/human,/obj/structure/chair/comfy/shuttle,/obj/item/restraints/handcuffs,/obj/item/ammo_casing/a357,/obj/item/deployablemine/explosive,/obj/effect/mine/explosive,/obj/item/paper/bounty_printout,/turf/open/floor/mineral/titanium,/area/ruin)
+"X" = (/obj/structure/window/plastitanium,/turf/open/space/basic,/area/ruin)
+"Z" = (/turf/closed/wall/mineral/plastitanium/nosmooth{dir = 9},/area/ruin)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaakaaaaap
+aaaZjXXOaa
+aaaIJJPIaa
+aaaIrGINpa
+apaISIPNaa
+aaabqBsPaa
+aaaIqlEIaa
+apaIDXIIaa
+aaaaaaaaaa
+"}

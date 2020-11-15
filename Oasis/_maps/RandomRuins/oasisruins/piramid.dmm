@@ -1,0 +1,64 @@
+"a" = (/turf/open/space/basic,/area/space)
+"c" = (/obj/item/gun/magic/wand,/turf/open/floor/mineral/silver,/area/ruin)
+"e" = (/obj/item/deployablemine/explosive{icon_state = "skub"},/turf/open/floor/mineral/gold,/area/ruin)
+"f" = (/obj/item/clothing/mask/mummy,/obj/item/upgradewand,/turf/open/floor/mineral/silver,/area/ruin)
+"h" = (/obj/item/deployablemine/explosive,/turf/open/floor/plasteel/rockvault/sandstone,/area/ruin)
+"j" = (/turf/open/floor/mineral/silver,/area/ruin)
+"m" = (/obj/structure/mineral_door/sandstone,/turf/open/space/basic,/area/ruin)
+"p" = (/turf/closed/indestructible/sandstone,/area/ruin)
+"r" = (/obj/machinery/atmospherics/miner/oxygen,/turf/open/floor/mineral/silver,/area/ruin)
+"s" = (/obj/item/deployablemine/explosive{icon_state = "skub"},/obj/structure/mineral_door/sandstone,/turf/open/floor/mineral/gold,/area/ruin)
+"t" = (/turf/open/space/basic,/area/ruin)
+"u" = (/obj/item/deployablemine/honk,/turf/open/indestructible/sound{icon_state = "bananium"; name = "bananium floor"; sound = 'sound/effects/clownstep1.ogg'; wet = 8},/area/ruin)
+"v" = (/obj/structure/mineral_door/paperframe,/turf/open/floor/plasteel/rockvault/sandstone,/area/ruin)
+"w" = (/obj/structure/falsewall/sandstone,/turf/open/floor/mineral/silver,/area/ruin)
+"y" = (/obj/item/stand_arrow{kill_chance = 0},/turf/open/floor/mineral/silver,/area/ruin)
+"z" = (/turf/open/indestructible/sound{icon_state = "bananium"; name = "bananium floor"; sound = 'sound/effects/clownstep1.ogg'; wet = 8},/area/ruin)
+"A" = (/obj/machinery/door/airlock/diamond,/turf/open/floor/plasteel/rockvault/sandstone,/area/ruin)
+"E" = (/obj/item/dice/d20{name = "dice of FaTe"},/turf/open/floor/mineral/gold,/area/ruin)
+"H" = (/obj/structure/cloth_pile,/turf/open/floor/mineral/silver,/area/ruin)
+"J" = (/obj/item/clothing/under/costume/mummy,/turf/open/floor/mineral/silver,/area/ruin)
+"K" = (/obj/item/clothing/mask/mummy,/obj/machinery/atmospherics/miner/toxins,/turf/open/floor/mineral/silver,/area/ruin)
+"M" = (/obj/structure/destructible/clockwork/trap/skewer,/turf/open/indestructible/sound{icon_state = "basaltsand4"},/area/ruin)
+"N" = (/obj/item/choice_beacon/music,/turf/open/floor/mineral/silver,/area/ruin)
+"O" = (/turf/open/chasm,/area/ruin)
+"Q" = (/obj/machinery/recycler/deathtrap{icon_state = "grinder-a0"},/turf/open/floor/plasteel/rockvault/sandstone,/area/ruin)
+"S" = (/obj/item/clothing/mask/mummy,/turf/open/floor/mineral/silver,/area/ruin)
+"T" = (/turf/open/indestructible/sound{icon_state = "basaltsand4"},/area/ruin)
+"U" = (/obj/machinery/atmospherics/miner/toxins,/turf/open/floor/mineral/silver,/area/ruin)
+"W" = (/turf/open/floor/plasteel/rockvault/sandstone,/area/ruin)
+"X" = (/obj/machinery/porta_turret/syndicate/shuttle,/turf/open/indestructible/sound{icon_state = "basaltsand4"},/area/ruin)
+"Z" = (/turf/open/floor/mineral/gold,/area/ruin)
+
+(1,1,1) = {"
+aaaaaaapppppaaaaaaaaaaaaaaaaaa
+aaaaaaappsppaaaaaaaaaaaaaaaaaa
+aaaaaaatpeptaaaaaaaaaaaaaaaaaa
+aaaaaaatpeptaaaaaaaaaaaaaaaaaa
+aaaaappppZppppppppppppaaaaaaaa
+aaaaapWWWWWWWWWWWWWWWpaaaaaaaa
+aaaaapWppppppWppppppWpaaaaaaaa
+apppppWpHjUjpWpSfKSpWpaaaaaaaa
+apjyjwZpHNjjjpjJJJJpWpaaaaaaaa
+apjjjpTpHjjjpOpjjjjpWpaaaaaaaa
+apjjjpTpjjcjpupjjjjpWpaaaaaaaa
+apppppTpjjrjpupjjrjpWpaaaaaaaa
+aaaaapTppppppzppppppWpaaaaaaaa
+aaaaapTppmhWWzWWWWWWWpaaaaaaaa
+aaaaapTppppppWppppWpppaaaaaaaa
+apppppTppppppWppppWpaaaaaaaaaa
+apTXTTTTTTXppWppppWppppppppppa
+apTTTTTTTTTppWppppWWWWQAZZZZpa
+apTTTTMTTTTppWppppppppppZZZEpa
+apTTTTTTTTTppWppppppppppZZZZpa
+apTXTTTTTTXppvpppppppppppppppa
+apTTTTTTTTTpaaaaaaaaaaaaaaaaaa
+apppppppppppaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

@@ -592,3 +592,42 @@
 
 /obj/effect/mob_spawn/human/pirate/gunner
 	rank = "Gunner"
+
+
+
+//SCP173 Spawner
+/obj/effect/mob_spawn/scp/scp_173
+	name = "Timelocked SCP-173"
+	desc = "It seems this creature is locked in space and time."
+	mob_name = "SCP-173"
+	mob_type = /mob/living/simple_animal/hostile/statue/scp_173
+	antagonist_type = /datum/antagonist/scp_173
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "timelocked_173"
+	death = FALSE
+	roundstart = FALSE
+	short_desc = "SCP-173 is a sculpture constructed of concrete and rebar with krylon-brand spray paint."
+	flavour_text = "Unable to move in line of sight, you must use the darkness and vents to get around, forcing people to blink, and killing indescriminately as you never want to be imprisoned again. Make sure to check your spells tab, and alt-click for ventcrawling"
+	objectives = "Kill them all"
+
+
+//Tuskan Raider
+/obj/effect/mob_spawn/human/tuskraider
+	name = "old cryogenics pod"
+	desc = "A humming cryo pod. You can barely recognise a raider underneath the built up ice. The machine is attempting to wake up its occupant."
+	mob_name = "Tuskan Raider"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
+	roundstart = FALSE
+	death = FALSE
+	random = TRUE
+	mob_species = /datum/species/human
+	short_desc = "You are a tusken raider working with your team, survive and help your friends survive."
+	flavour_text = "<span class='big bold'> You vaguely recall rushing into a cryogenics pod due to an oncoming radiation fueled sandstorm storm. \
+	The last thing you remember is the cryo pod telling you that you would only be asleep for eight hours. \
+	As you open your eyes, everything seems coated in sand and broken, a dark feeling swells in your gut as you climb out of your pod. \
+	Work as a team with your fellow survivors and do not abandon them."
+	uniform = /obj/item/clothing/under/costume/gladiator
+	shoes = /obj/item/clothing/shoes/plate
+	l_pocket = /obj/item/stack/medical/bruise_pack
+	assignedrole = "Tuskan Raider"
