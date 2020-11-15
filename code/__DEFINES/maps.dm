@@ -38,6 +38,7 @@ require only minor tweaks.
 #define ZTRAIT_SPACE_RUINS "Space Ruins"
 #define ZTRAIT_LAVA_RUINS "Lava Ruins"
 #define ZTRAIT_POCKETDIM "Pocket Dimension"
+#define ZTRAIT_SAND_RUINS "Sand Ruins"		// Used for OasisStation
 
 /// number - bombcap is multiplied by this before being applied to bombs
 #define ZTRAIT_BOMBCAP_MULTIPLIER "Bombcap Multiplier"
@@ -74,6 +75,10 @@ require only minor tweaks.
 #define DL_NAME "name"
 #define DL_TRAITS "traits"
 #define DECLARE_LEVEL(NAME, TRAITS) list(DL_NAME = NAME, DL_TRAITS = TRAITS)
+#define ZTRAITS_SANDSTATION list(\
+    ZTRAIT_MINING = TRUE, \
+    ZTRAIT_SAND_RUINS = TRUE, \
+    ZTRAIT_BASETURF = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface) // Used for OasisStation
 
 /// must correspond to _basemap.dm for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
@@ -97,3 +102,4 @@ require only minor tweaks.
 #define PLACE_SAME_Z "same"
 #define PLACE_SPACE_RUIN "space"
 #define PLACE_LAVA_RUIN "lavaland"
+#define PLACE_SAND_RUIN "sandstation"	// Used for OasisStation

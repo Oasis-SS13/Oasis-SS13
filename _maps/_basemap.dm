@@ -12,6 +12,7 @@
 		#include "map_files\BoxStation\BoxStation.dmm"
 		#include "map_files\Donutstation\Donutstation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
+		//#include "map_files\Caves\Caves.dmm" That's the mine of ScorchStation
 
 		#ifdef TRAVISBUILDING
 			#include "templates.dm"
