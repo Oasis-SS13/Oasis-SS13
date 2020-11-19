@@ -257,10 +257,10 @@ GITHUBURL https://github.com/Oasis-SS13/Oasis-SS13
 #ISSUE_LABEL Ingame Issue Report
 
 ## Donation URL
-DONATEURL https://ko-fi.com/dappersquid
+DONATEURL https://www.patreon.com/user?u=18827448
 
 ## Discord Invite
-DISCORDURL https://discord.gg/SSHsr5z
+DISCORDURL https://discord.gg/KTmQeDK
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
