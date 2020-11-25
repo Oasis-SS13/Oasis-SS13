@@ -1,5 +1,5 @@
 /obj/item/projectile/dagger
-    name = "trowing dagger"
+    name = "Arcane Dagger"
     desc = "A dagger enchanted to give it extreme durability and stiffness, along with edges sharp enough to slice anyone unfortunate enough to get hit by a charged one."
     icon_state = "dagger_1"
     damage_type = BRUTE
