@@ -127,7 +127,7 @@
 	active = FALSE
 
 /obj/effect/proc_holder/spell/aimed/spell_cards
-	name = "Trowing daggers"
+	name = "Arcane Daggers"
 	desc = "A magically sharpened bunch of daggers. Next illusion..."
 	school = "evocation"
 	charge_max = 90
