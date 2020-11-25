@@ -1216,10 +1216,6 @@
 	template_width = 3
 	weight = 2
 
-<<<<<<< HEAD
-
-
-
 /datum/map_template/random_room/sk_rdmSCP173 //SCP173 //Oasis Edit
 	name = "SCP-173 Containment"
 	room_id = "sk_rdm173_SCP173"
@@ -1264,7 +1260,7 @@
 
 
 
-=======
+
 /datum/map_template/random_room/sk_rdm141
 	name = "the place 6 sectors down"
 	room_id = "sk_rdm141_6sectorsdown"
@@ -1409,4 +1405,3 @@
 	template_width = 10
 	weight = 4
 	stock = 2
->>>>>>> b4fe3e7bbe... Adds 16 random maintenance rooms (#2842)
