@@ -127,22 +127,22 @@
 	active = FALSE
 
 /obj/effect/proc_holder/spell/aimed/spell_cards
-	name = "Spell Cards"
-	desc = "Magically sharpened rapid-fire homing cards. Send your foes to the shadow realm with their mystical power!"
+	name = "Trowing daggers"
+	desc = "A magically sharpened bunch of daggers. Next illusion..."
 	school = "evocation"
 	charge_max = 90
 	clothes_req = FALSE
-	invocation = "Sigi'lu M'Fan 'Tasia"
+	invocation = "lunar dial"
 	invocation_type = "shout"
 	range = 40
 	cooldown_min = 30
 	projectile_amount = 5
 	projectiles_per_fire = 7
-	projectile_type = /obj/item/projectile/spellcard
-	base_icon_state = "spellcard"
-	action_icon_state = "spellcard0"
+	projectile_type = /obj/item/projectile/dagger
+	base_icon_state = "mdagger"
+	action_icon_state = "mdagger0"
 	var/datum/weakref/current_target_weakref
-	var/projectile_turnrate = 10
+	var/projectile_turnrate = 20
 	var/projectile_pixel_homing_spread = 32
 	var/projectile_initial_spread_amount = 30
 	var/projectile_location_spread_amount = 12
