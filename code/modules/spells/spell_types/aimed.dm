@@ -132,7 +132,7 @@
 	school = "evocation"
 	charge_max = 90
 	clothes_req = FALSE
-	invocation = "lunar dial"
+	invocation = "LU'NAR D'IA'L"
 	invocation_type = "shout"
 	range = 40
 	cooldown_min = 30
