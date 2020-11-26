@@ -106,10 +106,12 @@
 	name = "Fireball"
 	spell_type = /obj/effect/proc_holder/spell/aimed/fireball
 
-/datum/spellbook_entry/spell_cards
-	name = "Spell Cards"
-	spell_type = /obj/effect/proc_holder/spell/aimed/spell_cards
-	cost = 1
+/datum/spellbook_entry/item/maid_shoes
+	name = "Maid shoes"
+	desc = "A pair of maid shoes, that give you incredible trowing skills"
+	item_path = /obj/item/clothing/shoes/maidshoes
+	category = "Offensive"
+	cost = 3
 
 /datum/spellbook_entry/rod_form
 	name = "Rod Form"
