@@ -34,7 +34,7 @@
 	equip_delay_other = 50
 	permeability_coefficient = 0.9
 	strip_delay = 5
-
+	
 /obj/item/clothing/shoes/sandal/marisa
 	desc = "A pair of magic black shoes."
 	name = "magic shoes"
@@ -194,12 +194,6 @@
 	name = "laceup shoes"
 	desc = "The height of fashion, and they're pre-polished!"
 	icon_state = "laceups"
-	equip_delay_other = 50
-
-/obj/item/clothing/shoes/maidshoes
-	name = "Maid shoes"
-	desc = "A pair of classical laceup shoes, you can feel strange energy emanating from them"
-	icon_state = "maidshoes"
 	equip_delay_other = 50
 
 /obj/item/clothing/shoes/roman

@@ -126,101 +126,23 @@
 	deactive_msg = "You extinguish your fireball... for now."
 	active = FALSE
 
-	/obj/effect/proc_holder/spell/aimed/ricodagger
-		name = "ricochetting dagger"
-		desc = "This spell casts a high speed ricocheting dagger."
-		school = "evocation"
-		charge_max = 80
-		clothes_req = FALSE
-		invocation = "luminous ricochet"
-		invocation_type = "shout"
-		range = 40000
-		cooldown_min = 30
-		projectile_type = /obj/item/projectile/bdagger
-		base_icon_state = "bdagger"
-		action_icon_state = "bdagger0"
-		sound = 'sound/weapons/pulse.ogg'
-		active_msg = "Strange art, Ligthspeed ricochet"
-		deactive_msg = "You cancel your spellcard"
-		active = FALSE
-
-	/obj/effect/proc_holder/spell/aimed/triple_daggers
-		name = "Trowing triple daggers"
-		desc = "A magically sharpened bunch of daggers. Next illusion..."
-		school = "evocation"
-		charge_max = 50
-		clothes_req = FALSE
-		invocation = "eternal meek"
-		invocation_type = "shout"
-		range = 40
-		cooldown_min = 50
-		projectile_amount = 3
-		projectiles_per_fire = 3
-		projectile_type = /obj/item/projectile/tdagger
-		base_icon_state = "tdagger"
-		action_icon_state = "tdagger0"
-		var/datum/weakref/current_target_weakref
-		var/projectile_turnrate = 0
-		var/projectile_pixel_homing_spread = 32
-		var/projectile_initial_spread_amount = 20
-		var/projectile_location_spread_amount = 5
-		var/datum/component/lockon_aiming/lockon_component
-		ranged_clickcd_override = TRUE
-
-/obj/effect/proc_holder/spell/aimed/triple_daggers/on_activation(mob/M)
-	QDEL_NULL(lockon_component)
-	lockon_component = M.AddComponent(/datum/component/lockon_aiming, 5, typecacheof(list(/mob/living)), 1, null, CALLBACK(src, .proc/on_lockon_component))
-
-/obj/effect/proc_holder/spell/aimed/triple_daggers/proc/on_lockon_component(list/locked_weakrefs)
-	if(!length(locked_weakrefs))
-		current_target_weakref = null
-		return
-	current_target_weakref = locked_weakrefs[1]
-	var/atom/A = current_target_weakref.resolve()
-	if(A)
-		var/mob/M = lockon_component.parent
-		M.face_atom(A)
-
-/obj/effect/proc_holder/spell/aimed/triple_daggers/on_deactivation(mob/M)
-	QDEL_NULL(lockon_component)
-
-/obj/effect/proc_holder/spell/aimed/triple_daggers/ready_projectile(obj/item/projectile/P, atom/target, mob/user, iteration)
-	if(current_target_weakref)
-		var/atom/A = current_target_weakref.resolve()
-		if(A && get_dist(A, user) < 7)
-			P.homing_turn_speed = projectile_turnrate
-			P.homing_inaccuracy_min = projectile_pixel_homing_spread
-			P.homing_inaccuracy_max = projectile_pixel_homing_spread
-			P.set_homing_target(current_target_weakref.resolve())
-	var/rand_spr = rand()
-	var/total_angle = projectile_initial_spread_amount * 2
-	var/adjusted_angle = total_angle - ((projectile_initial_spread_amount / projectiles_per_fire) * 0.5)
-	var/one_fire_angle = adjusted_angle / projectiles_per_fire
-	var/current_angle = iteration * one_fire_angle * rand_spr - (projectile_initial_spread_amount / 2)
-	P.pixel_x = rand(-projectile_location_spread_amount, projectile_location_spread_amount)
-	P.pixel_y = rand(-projectile_location_spread_amount, projectile_location_spread_amount)
-	P.preparePixelProjectile(target, user, null, current_angle)
-
-
-
-
 /obj/effect/proc_holder/spell/aimed/spell_cards
 	name = "Arcane Daggers"
 	desc = "A magically sharpened bunch of daggers. Next illusion..."
 	school = "evocation"
-	charge_max = 200
+	charge_max = 90
 	clothes_req = FALSE
 	invocation = "LU'NAR D'IA'L"
 	invocation_type = "shout"
 	range = 40
-	cooldown_min = 60
-	projectile_amount = 4
-	projectiles_per_fire = 12
+	cooldown_min = 30
+	projectile_amount = 5
+	projectiles_per_fire = 7
 	projectile_type = /obj/item/projectile/dagger
 	base_icon_state = "mdagger"
 	action_icon_state = "mdagger0"
 	var/datum/weakref/current_target_weakref
-	var/projectile_turnrate = 30
+	var/projectile_turnrate = 20
 	var/projectile_pixel_homing_spread = 32
 	var/projectile_initial_spread_amount = 30
 	var/projectile_location_spread_amount = 12

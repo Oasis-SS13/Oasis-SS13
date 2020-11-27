@@ -15,10 +15,6 @@
 #include "beestation.dme"
 
 // BEGIN_INCLUDE
-#include "code\modules\clothing\shoes\maidshoes.dm"
-#include "code\modules\projectiles\projectile\magic\bdagger.dm"
-#include "code\modules\projectiles\projectile\magic\tdagger.dm"
-#include "code\modules\projectiles\projectile\magic\trdagger.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
 #include "Oasis\code\game\objects\items\religion.dm"
