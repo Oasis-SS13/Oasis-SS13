@@ -6,6 +6,7 @@
     damage = 2
     ricochet_chance = 100
     ricochets_max = 2
+
 /obj/item/projectile/dagger/Initialize()
     . = ..()
     icon_state = "dagger_[rand(1, 3)]"
