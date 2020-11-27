@@ -12,4 +12,4 @@
     return TRUE
 obj/item/projectile/bdagger/on_ricochet(atom/A)
 	. = ..()
-	damage = damage + 5
+	damage += 5
