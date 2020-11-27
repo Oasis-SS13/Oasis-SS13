@@ -10,6 +10,7 @@
     
 /obj/item/projectile/bdagger/check_ricochet_flag(atom/A)
     return TRUE
+    
 obj/item/projectile/bdagger/on_ricochet(atom/A)
 	. = ..()
 	damage += 5
