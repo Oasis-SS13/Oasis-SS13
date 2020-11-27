@@ -7,9 +7,9 @@
 	speeds = 0.3
     ricochet_chance = 100
     ricochets_max = 20
+    
 /obj/item/projectile/bdagger/check_ricochet_flag(atom/A)
     return TRUE
 obj/item/projectile/bdagger/on_ricochet(atom/A)
 	. = ..()
 	damage = damage + 5
-
