@@ -597,11 +597,8 @@ obj/effect/sweatsplash/proc/splash()
 		qdel(src)
 	else
 		..()
-<<<<<<< HEAD
 
 /obj/effect/mob_spawn/teratomamonkey/create(ckey, name)
 	..()
 	var/datum/antagonist/teratoma/hugbox/D = new
 	usr.mind.add_antag_datum(D)
-=======
->>>>>>> ac5d0d3867... oh god (#3034)
