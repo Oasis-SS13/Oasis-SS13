@@ -576,7 +576,6 @@ obj/effect/sweatsplash/proc/splash()
 	use_cooldown = TRUE
 	show_flavour = FALSE	//it's handled by antag datum
 
-
 /obj/effect/mob_spawn/teratomamonkey/Initialize()
 	. = ..()
 	var/area/A = get_area(src)
