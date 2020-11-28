@@ -593,11 +593,11 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 
 /obj/structure/slime_crystal/rainbow/attacked_by(obj/item/I, mob/living/user)
 	. = ..()
-
 	if(!istype(I,/obj/item/slimecross/crystalline) || istype(I,/obj/item/slimecross/crystalline/rainbow))
 		return
 
 	var/obj/item/slimecross/crystalline/slimecross = I
+
 
 	if(inserted_cores[slimecross.type])
 		return
