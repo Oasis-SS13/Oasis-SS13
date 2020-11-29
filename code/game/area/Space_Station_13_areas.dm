@@ -1158,3 +1158,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/tcommsat/server
 	name = "Telecomms Server Room"
 	icon_state = "tcomsatcham"
+
+
+// ScorchBox
+
+/area/scorch/surface/outdoors
+	name = "Scorching Wastes"
+	icon_state = "scorchsand"
+	outdoors = TRUE
+	mood_bonus = -2
+	mood_message = "<span class='nicegreen'>=Its so hot and sandy out here!\n</span>"
