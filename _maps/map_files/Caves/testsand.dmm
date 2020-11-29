@@ -1,4 +1,4 @@
-"a" = (/turf/open/floor/plating/asteroid/sand,/area/space)
+"a" = (/turf/open/floor/plating/asteroid/cavesand,/area/space)
 "h" = (/turf/closed/wall,/area/space)
 "s" = (/mob/living/brain,/turf/open/floor/plating/asteroid,/area/space)
 "x" = (/turf/open/floor/plasteel/stairs/medium,/area/space)

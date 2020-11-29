@@ -93,7 +93,6 @@ SUBSYSTEM_DEF(mapping)
 			spawn_rivers(lava_z)
 
 	// Generate sand ruins
-
 	loading_ruins = TRUE
 	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
 	if (sand_ruins.len)
