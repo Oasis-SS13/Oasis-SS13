@@ -148,8 +148,3 @@
 
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
-
-
-/area/scorch/surface/outdoors
-	name = "Scorching Wastes"
-	outdoors = TRUE
