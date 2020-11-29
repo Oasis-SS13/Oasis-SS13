@@ -26,7 +26,7 @@
 		return
 
 	for(var/A in next_blinks)
-		if(!(A in viewers(getexpandedview(world.view, 1, 1), A) - src))
+		if(!(A in viewers(world.view + 1, A) - src))
 			next_blinks[A] = null
 			continue
 		if(world.time >= next_blinks[A])
@@ -50,7 +50,7 @@
 	else
 		if(istype(target, /obj/structure/table) || istype(target, /obj/structure/rack) || istype(target, /obj/machinery/light) || istype(target, /obj/machinery/light/small) || istype(target, /obj/machinery/vending) || istype(target, /obj/machinery/door) || istype(target, /obj/structure/window) || istype(target, /obj/machinery/computer) || istype(target, /obj/structure/closet) || istype(target, /obj/structure/girder) || istype(target, /obj/structure/grille) || istype(target, /obj/structure/barricade))
 			return ..()  //The above line checks for lights, tables, computers, vendimg machines, doors, racks and closets. if the target is any of these objects, Attack as normal doing obj_damage)
-		else if(ismob(target))
+		else if(istype(target,/mob))
 			if(isliving(target))
 				var/mob/living/H = target
 				if(target == src)
@@ -80,7 +80,7 @@
 	else
 		if(istype(target, /obj/structure/table) || istype(target, /obj/structure/rack) || istype(target, /obj/machinery/light) || istype(target, /obj/machinery/light/small) || istype(target, /obj/machinery/vending) || istype(target, /obj/machinery/door) || istype(target, /obj/structure/window) || istype(target, /obj/machinery/computer) || istype(target, /obj/structure/closet) || istype(target, /obj/structure/girder) || istype(target, /obj/structure/grille) || istype(target, /obj/structure/barricade))
 			return ..()  //The above line checks for lights, tables, computers, vendimg machines, doors, racks and closets. if the target is any of these objects, Attack as normal doing obj_damage
-		else if(ismob(target))
+		else if(istype(target,/mob))
 			if(isliving(target))
 				var/mob/living/H = target
 				if(target == src)

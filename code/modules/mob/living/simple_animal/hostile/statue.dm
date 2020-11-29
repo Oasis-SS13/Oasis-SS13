@@ -127,13 +127,13 @@
 		for(var/mob/living/M in viewers(getexpandedview(world.view, 1, 1), check) - src)
 			if(M.client && !M.has_unlimited_silicon_privilege) // OASIS EDIT
 				if(!M.eye_blind)
-					if(!next_blinks[M]) // OASIS EDIT
+					if(next_blinks[M] == null) // OASIS EDIT
 						next_blinks[M] = world.time+rand(15 SECONDS, 45 SECONDS) // OASIS EDIT
 					return M
 		for(var/obj/mecha/M in view(getexpandedview(world.view, 1, 1), check)) //assuming if you can see them they can see you
-			if(M.occupant?.client) // OASIS EDIT
+			if(M.occupant && M.occupant.client) // OASIS EDIT
 				if(!M.occupant.eye_blind)
-					if(!next_blinks[M]) // OASIS EDIT
+					if(next_blinks[M.occupant] == null) // OASIS EDIT
 						next_blinks[M.occupant] = world.time+rand(15 SECONDS, 45 SECONDS) // OASIS EDIT
 					return M.occupant
 	return null

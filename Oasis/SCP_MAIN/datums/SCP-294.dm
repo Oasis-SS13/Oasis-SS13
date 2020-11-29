@@ -1,7 +1,9 @@
+GLOBAL_LIST_EMPTY(scp294_reagents)
+
 /obj/machinery/scp294
 	name = "SCP-294"
 	icon = 'Oasis/SCP_MAIN/icons/scpobj/scp294.dmi'
-	desc = "SCP-294 - A standard coffee vending machine."
+	desc = "<b><span class='notice''><big>SCP-294</big></span></b> - A standard coffee vending machine."
 	icon_state = "coffee_294"
 	layer = 2.9
 	anchored = 1
@@ -17,14 +19,14 @@
 
 /obj/machinery/scp294/Initialize()
 	. = ..()
-/*
-	if(!GLOB.chemical_reagents_list.len)
+
+	if(!GLOB.scp294_reagents.len)
 		//Chemical Reagents - Initialises all /6 into a list indexed by reagent id
 		var/paths = subtypesof(/datum/reagent)
 		for(var/path in paths)
 			var/datum/reagent/D = new path
 			if(D.can_synth)
-				GLOB.chemical_reagents_list[D.name] = D*/
+				GLOB.scp294_reagents[D.name] = D
 
 /obj/machinery/scp294/attack_hand(mob/user)
 
@@ -52,12 +54,12 @@
 
 /obj/machinery/scp294/proc/find_reagent(input)
 	. = FALSE
-	if(GLOB.chemical_reagents_list[input])
-		var/datum/reagent/R = GLOB.chemical_reagents_list[input]
+	if(GLOB.scp294_reagents[input])
+		var/datum/reagent/R = GLOB.scp294_reagents[input]
 		if(R)
 			return R.type
 	else
-		for(var/X in GLOB.chemical_reagents_list)
-			var/datum/reagent/R = GLOB.chemical_reagents_list[X]
+		for(var/X in GLOB.scp294_reagents)
+			var/datum/reagent/R = GLOB.scp294_reagents[X]
 			if (ckey(input) == ckey(R.name))
 				return R.type
