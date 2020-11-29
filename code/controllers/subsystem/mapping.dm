@@ -93,13 +93,13 @@ SUBSYSTEM_DEF(mapping)
 			spawn_rivers(lava_z)
 
 	// Generate sand ruins
-	/*
+
 	loading_ruins = TRUE
 	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
 	if (sand_ruins.len)
-		seedRuins(sand_ruins, CONFIG_GET(number/sandland_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
+		seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
 		for (var/sand_z in sand_ruins)
-			spawn_rivers(sand_z)*/
+			spawn_rivers(sand_z)
 
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
@@ -170,6 +170,7 @@ SUBSYSTEM_DEF(mapping)
 	map_templates = SSmapping.map_templates
 	ruins_templates = SSmapping.ruins_templates
 	space_ruins_templates = SSmapping.space_ruins_templates
+	sand_ruins_templates = SSmapping.sand_ruins_templates
 	lava_ruins_templates = SSmapping.lava_ruins_templates
 	shuttle_templates = SSmapping.shuttle_templates
 	random_room_templates = SSmapping.random_room_templates
@@ -394,6 +395,8 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			lava_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
+		else if(istype(R, /datum/map_template/ruin/sand))
+			sand_ruins_templates[R.name] = R
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
 	var/list/unbuyable = generateMapList("[global.config.directory]/shuttles_unbuyable.txt")
