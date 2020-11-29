@@ -110,3 +110,38 @@
 	aesthetic = TRUE
 
 	probability = 10
+
+
+
+//sandstorms happen frequently on lavaland. They heavily obscure vision, and cause high fire damage to anyone caught outside.
+/datum/weather/ash_storm/sandstorm
+	name = "sandstorm"
+	desc = "An intense atmospheric storm lifts ash off of the planet's surface and billows it down across the area, dealing intense fire damage to the unprotected."
+
+	telegraph_message = "<span class='boldwarning'>An eerie moan rises on the wind. Clouds of sand coat the horizon. Seek shelter.</span>"
+	telegraph_duration = 300
+	telegraph_overlay = "light_ash" // Changed to light_sand from light_ash
+
+	weather_message = "<span class='userdanger'><i>Smoldering clouds of scorching sand billow down around you! Get inside!</i></span>"
+	weather_duration_lower = 600
+	weather_duration_upper = 1200
+	weather_overlay = "sand_storm" // Changed to sand_storm from sand_storm
+
+	end_message = "<span class='boldannounce'>The shrieking wind whips away the last of the sandstorm and falls to its usual murmur. It should be safe to go outside now.</span>"
+	end_duration = 300
+	end_overlay = "light_sand" // Changed to light_sand from light_ash
+
+	area_type = /area/scorch/surface/outdoors // Change to /area/scorch/surface/outdoors or similar
+	target_trait = ZTRAIT_STATION // The z-level trait to affect when run randomly or when not overridden.
+
+	immunity_type = "ash"  // ash or sand if we make sand immunity
+
+	probability = 90
+
+	barometer_predictable = TRUE
+
+/datum/weather/ash_storm/sandstorm/weather_act(mob/living/L)
+	if(is_ash_immune(L))
+		return
+	L.adjustFireLoss(2)
+	L.adjustBruteLoss(2)
