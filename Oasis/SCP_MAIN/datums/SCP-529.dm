@@ -1,9 +1,7 @@
-GLOBAL_LIST_EMPTY(scp529s)
-
 /mob/living/simple_animal/cat/friendly/SCP529
 	name = "Josie"
 	icon = 'Oasis/SCP_MAIN/icons/josie.dmi'
-	desc = "<b><span class='notice'><big>SCP-529</big></span></b> - A friendly tabby cat that seems to be missing half of her body."
+	desc = "SCP-529 - A friendly tabby cat that seems to be missing half of her body."
 	icon_state = "cat"
 	icon_living = "cat"
 	icon_dead = "cat_dead"
