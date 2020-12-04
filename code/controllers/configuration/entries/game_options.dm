@@ -453,3 +453,5 @@
 	config_entry_value = 250
 
 /datum/config_entry/flag/restricted_suicide
+
+/datum/config_entry/flag/dynamic_config_enabled

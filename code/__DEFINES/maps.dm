@@ -65,6 +65,7 @@ require only minor tweaks.
 /// default trait definitions, used by SSmapping
 #define ZTRAITS_CENTCOM list(ZTRAIT_CENTCOM = TRUE)
 #define ZTRAITS_STATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_STATION = TRUE)
+#define ZTRAITS_SCORCHSTATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SCORCHSTATION = TRUE) //Oasis
 #define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SPACE_RUINS = TRUE)
 #define ZTRAITS_LAVALAND list(\
     ZTRAIT_MINING = TRUE, \
@@ -87,6 +88,7 @@ require only minor tweaks.
 
 // Camera lock flags
 #define CAMERA_LOCK_STATION 1
+#define CAMERA_LOCK_SCORCHSTATION 1 //Oasis
 #define CAMERA_LOCK_MINING 2
 #define CAMERA_LOCK_CENTCOM 4
 #define CAMERA_LOCK_REEBE 8
