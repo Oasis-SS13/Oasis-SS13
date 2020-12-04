@@ -1,0 +1,4 @@
+author: Poly-The-Parrot
+delete-after: true
+changes:
+  - bugfix: fixes (hopefully) the broken looking crate animation
