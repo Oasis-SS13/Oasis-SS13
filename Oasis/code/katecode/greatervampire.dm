@@ -1,6 +1,6 @@
-/datum/species/greatvamp
-	name = "greatvamp"
-	id = "great vampire"
+/datum/species/greatervampire
+	name = "Greater Vampire"
+	id = "greatvamp"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,DRINKSBLOOD,)
 	inherent_traits = list(TRAIT_NOHUNGER,TRAIT_NOBREATH,TRAIT_LIGHT_STEP,TRAIT_FREERUNNING,MADE_UNCLONEABLE)
@@ -10,7 +10,7 @@
 	exotic_bloodtype = "U"
 	use_skintones = TRUE
 	mutant_heart = /obj/item/organ/heart/vampire
-	mutanttongue = /obj/item/organ/tongue/vampire
+	mutanttongue = /obj/item/organ/tongue/vampire/greater
 	limbs_id = "human"
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	burnmod = 2
@@ -19,25 +19,25 @@
 	toxmod = 0
 	clonemod = 0
 	staminamod = 0.5
-	var/info_text = "You are a <span class='danger'>Great vampire</span>. while you lack the cheap transmutation powers of young vampires, you pack enougth firepower to compensate."
-	var/obj/effect/proc_holder/spell/aimed/space_bems
-	var/obj/effect/proc_holder/spell/targeted/touch/frezze
+	var/info_text = "You are a <span class='danger'>Greater Vampire</span>. while you lack the cheap transmutation powers of young vampires, you pack enough firepower to compensate."
+	var/obj/effect/proc_holder/spell/aimed/space_beams
+	var/obj/effect/proc_holder/spell/targeted/touch/freeze
 	var/datum/martial_art/vampire
 
-/datum/species/greatvamp/on_species_gain(mob/living/carbon/human/C, datum/species/old_species)
+/datum/species/greatervampire/on_species_gain(mob/living/carbon/human/C, datum/species/old_species)
 	. = ..()
 	var/datum/martial_art/vampire/martial_art = new(null)
 		martial_art.teach(C)
 	to_chat(C, "[info_text]")
 	C.skin_tone = "albino"
 	C.update_body(0)
-	if(isnull(space_bems))
-		space_bems = new /obj/effect/proc_holder/spell/aimed/space_bems
-		C.AddSpell(space_bems)
-	if(isnull(frezze))
-		frezze = new /obj/effect/proc_holder/spell/targeted/touch/frezze
-		C.AddSpell(frezze)
-/datum/species/greatvamp/on_species_loss(mob/living/carbon/C)
+	if(isnull(space_beams))
+		space_beams = new /obj/effect/proc_holder/spell/aimed/space_beams
+		C.AddSpell(space_beams)
+	if(isnull(freeze))
+		freeze = new /obj/effect/proc_holder/spell/targeted/touch/freeze
+		C.AddSpell(freeze)
+/datum/species/greatervampire/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	to_chat(C, "<span class='spider'>You feel your souless body crumbling as the undead strength that kept you together dissapears</span>")
 	C.dust()
@@ -45,7 +45,7 @@
 
 
 
-/datum/species/greatvamp/spec_life(mob/living/carbon/human/C)
+/datum/species/greatervampire/spec_life(mob/living/carbon/human/C)
 	. = ..()
 	if(istype(C.loc, /obj/structure/closet/crate/coffin))
 		C.heal_overall_damage(8,8,0, BODYPART_ORGANIC)
@@ -67,15 +67,15 @@
 		C.adjust_fire_stacks(6)
 		C.IgniteMob()
 
-/datum/species/greatvamp/check_species_weakness(obj/item/weapon, mob/living/attacker)
+/datum/species/greatervampire/check_species_weakness(obj/item/weapon, mob/living/attacker)
 	if(istype(weapon, /obj/item/nullrod/whip))
 		return 1 //Whips deal 2x damage to vampires. Vampire killer.
 	return 0
 
-/obj/item/organ/tongue/vampire
-	name = "vampire tongue"
+/obj/item/organ/tongue/vampire/greater
+	name = "greater vampire tongue"
 	actions_types = list(/datum/action/item_action/organ_action/vampire)
-	color = "#1C1C1C"
+	color = "#252424"
 	drain_cooldown = 0
 
 #define VAMP_DRAIN_AMOUNT 50

@@ -31,7 +31,7 @@ obj/effect/projectile/tracer/vampire
 
 obj/effect/proc_holder/spell/aimed/space_bems
 	name = "Space beams"
-	desc = "You shoot gama radiation from your eyes"
+	desc = "You shoot gamma radiation from your eyes"
 	school = "evocation"
 	charge_max = 150
 	clothes_req = FALSE
@@ -46,31 +46,31 @@ obj/effect/proc_holder/spell/aimed/space_bems
 	action_icon_state = "spacebeam0"
 
 
-/obj/effect/proc_holder/spell/targeted/touch/frezze
+/obj/effect/proc_holder/spell/targeted/touch/freeze
 	name = "Frost body"
-	desc = "You cool your body enougth to frezze people alive"
-	hand_path = /obj/item/melee/touch_attack/frezze
+	desc = "You cool your body enough to freeze people alive"
+	hand_path = /obj/item/melee/touch_attack/freeze
 
 	school = "transmutation"
 	charge_max = 200
 	clothes_req = FALSE
 	cooldown_min = 200 //100 deciseconds reduction per rank
 
-	action_icon_state = "Frezze"
+	action_icon_state = "freeze"
 	sound = 'sound/magic/fleshtostone.ogg'
 
 
 
 
-/obj/item/melee/touch_attack/frezze
+/obj/item/melee/touch_attack/freeze
 	name = "\improper Frezzing temperature"
 	desc = "Cold..."
-	catchphrase = "Frezze pesant!!"
+	catchphrase = "freeze peasant!!"
 	on_use_sound = 'sound/magic/fleshtostone.ogg'
-	icon_state = "frezze"
-	item_state = "frezze"
+	icon_state = "freeze"
+	item_state = "freeze"
 
-/obj/item/melee/touch_attack/frezze/afterattack(atom/target, mob/living/carbon/user, proximity)
+/obj/item/melee/touch_attack/freeze/afterattack(atom/target, mob/living/carbon/user, proximity)
 	if(!proximity || target == user || !isliving(target) || !iscarbon(user)) //getting hard after touching yourself would also be bad
 		return
 	if(!(user.mobility_flags & MOBILITY_USE))
@@ -141,7 +141,7 @@ obj/effect/proc_holder/spell/aimed/space_bems
 /datum/martial_art/vampire/proc/the_world(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(!D.stat)
 		A.say("This is where the fun begins!")
-		log_combat(A, D, "Punched (Vampire)")
+		log_combat(A, D, "Punched (vampire)")
 		D.visible_message("<span class='warning'>Stopped Time!</span>", null, COMBAT_MESSAGE_RANGE)
 		playsound(get_turf(D), 'sound/weapons/theworld.ogg', 100, 1, -1)
 		new /obj/effect/timestop(get_turf(A), 2, 50, list(A))
@@ -226,15 +226,15 @@ obj/effect/proc_holder/spell/aimed/space_bems
 	return ..()
 /mob/living/carbon/human/proc/vampire_help()
 	set name = "sharpen your fangs"
-	set desc = "You sharpen your fangs and perpare for a figth"
+	set desc = "You sharpen your fangs and prepare for a fight"
 	set category = "Vampire Style"
 
 	to_chat(usr, "<b><i>You remember the Vampire Style</i></b>")
 
-	to_chat(usr, "<span class='notice'>Donut</span>: Disarm Harm . Donuts your oponent whit a heavy punch, takes 3 seconds to charge.")
+	to_chat(usr, "<span class='notice'>Donut</span>: Disarm Harm. Donuts your oponent whit a heavy punch, takes 3 seconds to charge.")
 	to_chat(usr, "<span class='notice'>The World </span>: Grab Harm Harm Disarm Grab Harm. A low damage timestop combo.")
 	to_chat(usr, "<span class='notice'>Barrage</span>:Harm Harm Harm. barrages the victim.")
-	to_chat(usr, "<span class='notice'>Eye Gauge</span>: Grab Harm Disarm.short confusion and blurred eyes .")
+	to_chat(usr, "<span class='notice'>Eye Gauge</span>: Grab Harm Disarm. short confusion and blurred eyes .")
 
 
 
