@@ -1,0 +1,4 @@
+author: Poly-The-Parrot
+delete-after: true
+changes:
+  - bugfix: fixed some memory leak and harddels in atmos pipenet code
