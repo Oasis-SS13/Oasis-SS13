@@ -1,0 +1,7 @@
+author: katebishop49
+delete-after: true
+changes:
+  - rscadd: New martial art
+  - rscadd: Another vampire race
+  - rscdel: Del some shitcode
+  - soundadd: added a New timestop sound
