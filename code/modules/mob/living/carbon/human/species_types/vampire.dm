@@ -39,12 +39,12 @@
 /datum/species/vampire/spec_life(mob/living/carbon/human/C)
 	. = ..()
 	if(istype(C.loc, /obj/structure/closet/crate/coffin))
-		C.heal_overall_damage(4,4,0, BODYPART_ORGANIC)
+		C.heal_overall_damage(8,8,8, BODYPART_ORGANIC)
 		C.adjustToxLoss(-4)
 		C.adjustOxyLoss(-4)
 		C.adjustCloneLoss(-4)
 		return
-	C.blood_volume -= 0.75
+	C.blood_volume -= 1.25
 	if(C.blood_volume <= BLOOD_VOLUME_SURVIVE)
 		to_chat(C, "<span class='danger'>You ran out of blood!</span>")
 		var/obj/shapeshift_holder/H = locate() in C

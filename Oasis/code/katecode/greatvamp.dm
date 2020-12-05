@@ -20,10 +20,9 @@
 	clonemod = 0
 	staminamod = 0.5
 	var/info_text = "You are a <span class='danger'>Great vampire</span>. while you lack the cheap transmutation powers of young vampires, you pack enougth firepower to compensate."
-	var/obj/effect/proc_holder/spell/aimed/space_bems
-	var/obj/effect/proc_holder/spell/targeted/touch/frezze
-	var/datum/martial_art/vampire
-
+	var/obj/effect/proc_holder/spell/aimed/space_bems,
+	var/obj/effect/proc_holder/spell/targeted/touch/frezze,
+	var/datum/martial_art/vampire,
 /datum/species/greatvamp/on_species_gain(mob/living/carbon/human/C, datum/species/old_species)
 	. = ..()
 	var/datum/martial_art/vampire/martial_art = new(null)
