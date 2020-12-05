@@ -1,5 +1,5 @@
 /turf/open/pool
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	var/filled = TRUE
 	name = "poolwater"
 	desc = "You're safer here than in the deep."
@@ -21,7 +21,7 @@
 	QDEL_NULL(watertop)
 	return ..()
 
-/turf/open/pool/proc/update_icon()
+/turf/open/pool/update_icon()
 	if(!filled)
 		name = "drained pool"
 		desc = "No diving!"
@@ -35,7 +35,7 @@
 
 /obj/effect/overlay/water
 	name = "water"
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	icon_state = "bottom"
 	density = FALSE
 	mouse_opacity = 0
@@ -212,7 +212,7 @@
 					if (H.wear_mask && H.wear_mask.flags_cover & MASKCOVERSMOUTH)
 						H.visible_message("<span class='danger'>[H] falls in the water!</span>",
 											"<span class='userdanger'>You fall in the water!</span>")
-						playsound(src, 'hippiestation/sound/effects/splash.ogg', 60, 1, 1)
+						playsound(src, 'Oasis/hippiestation/sound/effects/splash.ogg', 60, 1, 1)
 						H.Knockdown(20)
 						H.swimming = TRUE
 						return
@@ -222,7 +222,7 @@
 						H.emote("cough")
 						H.visible_message("<span class='danger'>[H] falls in and takes a drink!</span>",
 											"<span class='userdanger'>You fall in and swallow some water!</span>")
-						playsound(src, 'hippiestation/sound/effects/splash.ogg', 60, 1, 1)
+						playsound(src, 'Oasis/hippiestation/sound/effects/splash.ogg', 60, 1, 1)
 						H.Knockdown(60)
 						H.swimming = TRUE
 				else if(!istype(H.head, /obj/item/clothing/head/helmet))
@@ -238,10 +238,10 @@
 													"<span class='userdanger'>You fall in the drained pool, and crack your skull!</span>")
 						H.apply_damage(15, BRUTE, "head")
 						H.Knockdown(200) // This should hurt. And it does.
-						H.adjustBrainLoss(30) //herp
+						H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 30) //herp
 						H.swimming = TRUE
 						playsound(src, 'sound/effects/woodhit.ogg', 60, 1, 1)
-						playsound(src, 'hippiestation/sound/misc/crack.ogg', 100, 1)
+						playsound(src, 'Oasis/hippiestation/sound/misc/crack.ogg', 100, 1)
 				else
 					H.visible_message("<span class='danger'>[H] falls in the drained pool, but had an helmet!</span>",
 										"<span class='userdanger'>You fall in the drained pool, but you had an helmet!</span>")
@@ -251,12 +251,12 @@
 		else if(filled)
 			wash_mob(M)
 			M.adjustStaminaLoss(1)
-			playsound(src, pick('hippiestation/sound/effects/water_wade1.ogg','hippiestation/sound/effects/water_wade2.ogg','hippiestation/sound/effects/water_wade3.ogg','hippiestation/sound/effects/water_wade4.ogg'), 20, 1)
+			playsound(src, pick('Oasis/hippiestation/sound/effects/water_wade1.ogg','Oasis/hippiestation/sound/effects/water_wade2.ogg','Oasis/hippiestation/sound/effects/water_wade3.ogg','Oasis/hippiestation/sound/effects/water_wade4.ogg'), 20, 1)
 			return
 
 /obj/structure/pool
 	name = "pool"
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	anchored = TRUE
 	resistance_flags = UNACIDABLE|INDESTRUCTIBLE
 
@@ -301,7 +301,7 @@
 /obj/structure/pool/Lboard/proc/backswim(obj/O, mob/living/user) //Puts the sprite back to it's maiden condition after a jump.
 	if(jumping)
 		for(var/mob/living/jumpee in loc) //hackzors.
-			playsound(jumpee, 'hippiestation/sound/effects/splash.ogg', 60, 1, 1)
+			playsound(jumpee, 'Oasis/hippiestation/sound/effects/splash.ogg', 60, 1, 1)
 			jumpee.layer = 4
 			jumpee.pixel_x = 0
 			jumpee.pixel_y = 0
@@ -414,7 +414,7 @@
 		if(user.x == x && user.y == y)
 			return
 		else
-			playsound(src, 'hippiestation/sound/effects/watersplash.ogg', 8, 1, 1)
+			playsound(src, 'Oasis/hippiestation/sound/effects/watersplash.ogg', 8, 1, 1)
 			next_splash = world.time + 25
 			var/obj/effect/splash/S = new /obj/effect/splash(user.loc)
 			animate(S, alpha = 0,  time = 8)
@@ -434,6 +434,6 @@
 /obj/effect/splash
 	name = "splash"
 	desc = "Wataaa!."
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	icon_state = "splash"
 	layer = ABOVE_ALL_MOB_LAYER

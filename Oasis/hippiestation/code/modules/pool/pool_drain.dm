@@ -1,6 +1,6 @@
 /obj/machinery/drain
 	name = "drain"
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	icon_state = "drain"
 	desc = "This removes things that clog the pool."
 	anchored = TRUE
@@ -36,7 +36,7 @@
 	if(active)
 		if(status) //if filling up, get back to normal position
 			if(timer > 0)
-				playsound(src, 'hippiestation/sound/effects/fillingwatter.ogg', 100, 1)
+				playsound(src, 'Oasis/hippiestation/sound/effects/fillingwatter.ogg', 100, 1)
 				timer--
 				for(var/obj/whirlo in orange(1,src))
 					if(!whirlo.anchored )
@@ -60,8 +60,8 @@
 			return
 		if(!status) //if draining, change everything.
 			if(timer > 0)
-				playsound(src, 'hippiestation/sound/effects/pooldrain.ogg', 100, TRUE)
-				playsound(src, pick('hippiestation/sound/effects/water_wade1.ogg','hippiestation/sound/effects/water_wade2.ogg','hippiestation/sound/effects/water_wade3.ogg','hippiestation/sound/effects/water_wade4.ogg'), 60, TRUE)
+				playsound(src, 'Oasis/hippiestation/sound/effects/pooldrain.ogg', 100, TRUE)
+				playsound(src, pick('Oasis/hippiestation/sound/effects/water_wade1.ogg','Oasis/hippiestation/sound/effects/water_wade2.ogg','Oasis/hippiestation/sound/effects/water_wade3.ogg','Oasis/hippiestation/sound/effects/water_wade4.ogg'), 60, TRUE)
 				timer--
 				for(var/obj/whirlo in orange(2,src))
 					if(!whirlo.anchored )
@@ -78,11 +78,11 @@
 							whirlm.gib()
 						if(whirlm.stat != CONSCIOUS || whirlm.lying) // If
 							whirlm.adjustBruteLoss(5)
-							playsound(src, pick('hippiestation/sound/misc/crack.ogg','hippiestation/sound/misc/crunch.ogg'), 50, TRUE)
+							playsound(src, pick('Oasis/hippiestation/sound/misc/crack.ogg','Oasis/hippiestation/sound/misc/crunch.ogg'), 50, TRUE)
 							to_chat(whirlm, "<span class='danger'>You're caught in the drain!</span>")
 							continue
 						else
-							playsound(src, pick('hippiestation/sound/misc/crack.ogg','hippiestation/sound/misc/crunch.ogg'), 50, TRUE)
+							playsound(src, pick('Oasis/hippiestation/sound/misc/crack.ogg','Oasis/hippiestation/sound/misc/crunch.ogg'), 50, TRUE)
 							whirlm.apply_damage(4, BRUTE, pick("l_leg", "r_leg")) //drain should only target the legs
 							to_chat(whirlm, "<span class='danger'>Your legs are caught in the drain!</span>")
 							continue
@@ -101,7 +101,7 @@
 
 /obj/effect/whirlpool
 	name = "Whirlpool"
-	icon = 'hippiestation/icons/effects/96x96.dmi'
+	icon = 'Oasis/hippiestation/icons/effects/96x96.dmi'
 	icon_state = "whirlpool"
 	layer = 5
 	anchored = TRUE
@@ -117,14 +117,14 @@
 	layer = 5
 	anchored = TRUE
 	mouse_opacity = 0
-	icon = 'hippiestation/icons/effects/96x96.dmi'
+	icon = 'Oasis/hippiestation/icons/effects/96x96.dmi'
 	pixel_x = -32
 	pixel_y = -32
 	alpha = 120
 
 /obj/machinery/poolfilter
 	name = "Filter"
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	icon_state = "filter"
 	desc = "The part of the pool that swallows dangerous stuff and ID's"
 	anchored = TRUE
@@ -138,12 +138,12 @@
 		icon_state = "filter_b"
 		spawn(50)
 			if(prob(50))
-				new /mob/living/simple_animal/hostile/shark(loc)
+				new  /mob/living/simple_animal/hostile/carp(loc)
 			else
 				if(prob(50))
-					new /mob/living/simple_animal/hostile/shark/kawaii(loc)
+					new  /mob/living/simple_animal/hostile/carp/ranged/chaos(loc)
 				else
-					new /mob/living/simple_animal/hostile/shark/laser(loc)
+					new  /mob/living/simple_animal/hostile/carp/megacarp(loc)
 		if(GLOB.adminlog)
 			log_game("[key_name(user)] emagged the pool filter and probably spawned sharks")
 			message_admins("[key_name_admin(user)] emagged the pool filter and probably spawned sharks")

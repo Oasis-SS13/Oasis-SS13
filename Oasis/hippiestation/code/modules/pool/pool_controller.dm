@@ -10,7 +10,7 @@
 /obj/machinery/poolcontroller
 	name = "\improper Pool Controller"
 	desc = "A controller for the nearby pool."
-	icon = 'hippiestation/icons/turf/pool.dmi'
+	icon = 'Oasis/hippiestation/icons/turf/pool.dmi'
 	icon_state = "poolc_3"
 	density = TRUE
 	use_power = IDLE_POWER_USE
