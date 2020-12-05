@@ -17,6 +17,11 @@ map boxstation
 	votable
 endmap
 
+map endostation	
+	votable
+	default
+endmap
+
 map metastation
 	maxplayers 100
 	votable

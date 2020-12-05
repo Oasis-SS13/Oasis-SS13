@@ -527,7 +527,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Atmospherics Engine"
 	icon_state = "atmos_engine"
 
-/area/engine/engine_room //donut station specific
+/area/engine/engine_room //donut station/endo station specific
 	name = "Engine Room"
 	icon_state = "atmos_engine"
 
@@ -580,7 +580,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/solar/aft
 	name = "Aft Solar Array"
-	icon_state = "yellow"
+	icon_state = "panelsAFT"
 
 /area/solar/aux/port
 	name = "Port Bow Auxiliary Solar Array"
@@ -620,6 +620,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance/solars
 	name = "Solar Maintenance"
 	icon_state = "yellow"
+
+/area/maintenance/solars/aft
+	name = "Aft Solar Maintenance"
+	icon_state = "SolarcontrolAFT"
 
 /area/maintenance/solars/port
 	name = "Port Solar Maintenance"
@@ -844,6 +848,15 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/security/checkpoint/medical
 	name = "Security Post - Medbay"
 	icon_state = "checkpoint_med"
+
+/area/security/checkpoint/bridge_port
+	name = "Security Post - Bridge Port"
+	icon_state = "checkpoint_bridge_port"
+
+/area/security/checkpoint/bridge_star
+	name = "Security Post - Bridge Star"
+	icon_state = "checkpoint_bridge_star"
+
 
 /area/security/checkpoint/science
 	name = "Security Post - Science"
@@ -1158,3 +1171,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/tcommsat/server
 	name = "Telecomms Server Room"
 	icon_state = "tcomsatcham"
+
+
+// ScorchBox
+
+/area/scorch/surface/outdoors
+	name = "Scorching Wastes"
+	icon_state = "scorchsand"
+	outdoors = TRUE
+	mood_bonus = -2
+	mood_message = "<span class='nicegreen'>=Its so hot and sandy out here!\n</span>"

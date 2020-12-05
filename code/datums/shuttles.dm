@@ -11,6 +11,7 @@
 
 	var/credit_cost = INFINITY
 	var/can_be_bought = TRUE
+	var/illegal_shuttle = FALSE	//makes you able to buy the shuttle at a hacked/emagged comms console even if can_be_bought is FALSE
 
 	var/list/movement_force // If set, overrides default movement_force on shuttle
 
@@ -274,6 +275,12 @@
 	name = "Box Station Emergency Shuttle"
 	credit_cost = 2000
 	description = "The gold standard in emergency exfiltration, this tried and true design is equipped with everything the crew needs for a safe flight home."
+
+/datum/map_template/shuttle/emergency/endo
+	suffix = "endo"
+	name = "Endostation Emergency Shuttle"
+	credit_cost = 2000
+	description = "For when the station has met its Endo."
 
 /datum/map_template/shuttle/emergency/donut
 	suffix = "donut"
