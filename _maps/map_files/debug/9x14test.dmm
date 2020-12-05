@@ -1,0 +1,54 @@
+"a" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral,/obj/machinery/jukebox{pixel_x = 1; pixel_y = 4},/obj/machinery/light{bulb_colour = "#c13af2"; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"b" = (/obj/structure/table/reinforced,/obj/machinery/chem_dispenser/drinks{pixel_y = 9},/turf/open/floor/carpet/royalblack,/area/space)
+"c" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/item/twohanded/required/kirbyplants/photosynthetic,/obj/machinery/light{bulb_colour = "#c13af2"; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"d" = (/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral,/turf/open/floor/plasteel/dark,/area/space)
+"k" = (/obj/machinery/door/window{dir = 8; name = "Bar Door"; req_access_txt = "25;28"},/turf/open/floor/carpet/royalblack,/area/space)
+"l" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/chair/stool,/obj/machinery/light{bulb_colour = "#c13af2"; dir = 4; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"m" = (/obj/structure/table/reinforced,/obj/item/toy/cards/deck,/turf/open/floor/plasteel/dark,/area/space)
+"n" = (/obj/structure/table/reinforced,/obj/machinery/dish_drive{pixel_y = 7},/turf/open/floor/carpet/royalblack,/area/space)
+"p" = (/obj/structure/table/reinforced,/obj/machinery/chem_dispenser/drinks/beer{dir = 1; pixel_y = -2},/turf/open/floor/carpet/royalblack,/area/space)
+"r" = (/obj/machinery/power/apc/auto_name/south,/turf/open/floor/carpet/royalblack,/area/space)
+"s" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/machinery/airalarm{dir = 4; pixel_x = -22},/turf/open/floor/plasteel/dark,/area/space)
+"u" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/drinks/soda_cans/space_up,/turf/open/floor/plasteel/dark,/area/space)
+"v" = (/turf/open/floor/plasteel/dark,/area/space)
+"w" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/table/reinforced,/obj/item/reagent_containers/food/drinks/soda_cans/tonic,/turf/open/floor/plasteel/dark,/area/space)
+"y" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/snacks/sashimi,/turf/open/floor/plasteel/dark,/area/space)
+"B" = (/obj/machinery/vending/boozeomat,/turf/open/floor/carpet/royalblack,/area/space)
+"C" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"D" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/machinery/light{bulb_colour = "#c13af2"; dir = 8; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"E" = (/obj/machinery/firealarm{pixel_y = -32},/turf/open/floor/carpet/royalblack,/area/space)
+"F" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/item/twohanded/required/kirbyplants/photosynthetic,/obj/machinery/light{bulb_colour = "#c13af2"; dir = 1; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"G" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/chair/stool,/turf/open/floor/plasteel/dark,/area/space)
+"H" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"I" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/chair/stool,/turf/open/floor/plasteel/dark,/area/space)
+"J" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/table/reinforced,/obj/structure/sign/poster/official/high_class_martini{pixel_y = 31},/obj/item/reagent_containers/food/drinks/drinkingglass{pixel_x = -5; pixel_y = -3},/turf/open/floor/plasteel/dark,/area/space)
+"K" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/structure/table/reinforced,/obj/item/trash/syndi_cakes{pixel_y = 9},/obj/item/reagent_containers/food/drinks/syndicatebeer{pixel_x = 6; pixel_y = 5},/obj/item/clothing/mask/cigarette/syndicate{pixel_y = 2},/obj/machinery/light{bulb_colour = "#c13af2"; dir = 1; icon_state = "tube2"; name = "blacklight fixture"},/turf/open/floor/plasteel/dark,/area/space)
+"L" = (/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"M" = (/obj/structure/table/reinforced,/turf/open/floor/carpet/royalblack,/area/space)
+"N" = (/mob/living/simple_animal/pet/dog/corgi/puppy/slime{name = "Blorb"},/turf/open/floor/carpet/royalblack,/area/space)
+"O" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/condiment/saltshaker{pixel_x = -2; pixel_y = 2},/obj/item/reagent_containers/food/condiment/peppermill{pixel_x = 5; pixel_y = -2},/turf/open/floor/plasteel/dark,/area/space)
+"Q" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"R" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"T" = (/obj/structure/chair/stool/bar,/turf/open/floor/plasteel/dark,/area/space)
+"U" = (/obj/structure/chair/stool,/turf/open/floor/plasteel/dark,/area/space)
+"V" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/chair/stool,/obj/machinery/light_switch{pixel_x = 25},/turf/open/floor/plasteel/dark,/area/space)
+"W" = (/obj/structure/table/reinforced,/obj/item/storage/bag/tray,/turf/open/floor/carpet/royalblack,/area/space)
+"X" = (/turf/open/floor/carpet/royalblack,/area/space)
+"Z" = (/obj/structure/chair/stool/bar,/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral,/turf/open/floor/plasteel/dark,/area/space)
+
+(1,1,1) = {"
+FILJICCIK
+HUuQUvvvG
+HvvvvvvvR
+HvvvvvvvR
+HvUOQUvvR
+HvUymUvvV
+Hvvvvvvvw
+DvvTvTvvl
+HvWMnMMvR
+HTMXNXMTR
+HvMXpXMvR
+sTMXBXMTR
+HvMXbXMvR
+adkEXrMZc
+"}
