@@ -19,7 +19,6 @@
 #include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
-#include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
 #include "Oasis\code\game\objects\items\religion.dm"
 #include "Oasis\code\katecode\greatervampire.dm"
 #include "Oasis\code\katecode\katspells.dm"
