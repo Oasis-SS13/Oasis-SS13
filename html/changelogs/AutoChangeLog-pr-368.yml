@@ -1,0 +1,4 @@
+author: Poly-The-Parrot
+delete-after: true
+changes:
+  - rscdel: Removes unconciousness from mech brute attacks
