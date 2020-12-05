@@ -2904,18 +2904,8 @@
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
 "afx" = (
-/obj/structure/closet/athletic_mixed,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
+/obj/machinery/poolcontroller,
+/turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "afy" = (
 /obj/structure/closet/boxinggloves,
@@ -82470,6 +82460,10 @@
 	},
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+"frZ" = (
+/obj/structure/pool/Rboard,
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/recreation)
 "fsJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment{
@@ -83619,6 +83613,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/break_room)
+"jId" = (
+/obj/structure/pool/ladder,
+/turf/open/pool,
+/area/crew_quarters/fitness/recreation)
 "jKK" = (
 /obj/machinery/door/airlock/external{
 	req_access_txt = "13"
@@ -84597,6 +84595,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
+"nzn" = (
+/turf/open/pool,
+/area/crew_quarters/fitness/recreation)
 "nAG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -85088,6 +85089,14 @@
 "pwA" = (
 /turf/closed/wall,
 /area/maintenance/solars/starboard/aft)
+"pyY" = (
+/obj/machinery/door/airlock/public/glass{
+	locked = 1;
+	name = "Pool (Closed)"
+	},
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/plating,
+/area/crew_quarters/fitness/recreation)
 "pAS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -85337,6 +85346,10 @@
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
+"qht" = (
+/obj/structure/pool/Lboard,
+/turf/open/pool,
+/area/crew_quarters/fitness/recreation)
 "qjB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -86054,6 +86067,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
+"tBo" = (
+/obj/machinery/drain,
+/turf/open/pool,
+/area/crew_quarters/fitness/recreation)
 "tDM" = (
 /obj/machinery/door/airlock/engineering/glass/critical{
 	heat_proof = 1;
@@ -86882,6 +86899,12 @@
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
+"xbL" = (
+/obj/machinery/poolfilter{
+	pixel_y = 16
+	},
+/turf/open/pool,
+/area/crew_quarters/fitness/recreation)
 "xdW" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -121252,14 +121275,14 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+lMJ
+lMJ
+lMJ
+lMJ
+lMJ
+lMJ
+lMJ
+lMJ
 aaf
 aaa
 ovZ
@@ -121509,15 +121532,15 @@ aaa
 aaa
 aaa
 aaa
-aav
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
 aaf
+aaa
+aaa
+aaa
+aaa
+lMJ
+aaa
+aaa
+aav
 aaa
 wLz
 fLl
@@ -121766,16 +121789,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aaf
-aaf
-aaf
-aaf
-aaf
+acP
+acP
+acP
+acP
+acP
+acP
+acP
+acP
 wLz
 dLG
 vcK
@@ -122023,16 +122046,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aai
-aaa
-aaa
-aaf
-aaa
+acP
+etr
+etr
+etr
+etr
+etr
+etr
+etr
 wLz
 pAS
 gKd
@@ -122280,16 +122303,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aag
-aaa
-aaa
-aaf
-aaa
+acP
+etr
+xbL
+nzn
+jId
+nzn
+nzn
+etr
 kSY
 aft
 agt
@@ -122537,16 +122560,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aag
-aaa
-aaa
-aaf
-aaa
+acP
+etr
+nzn
+nzn
+nzn
+nzn
+nzn
+etr
 kSY
 afu
 agu
@@ -122794,16 +122817,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aag
-aaa
-aaa
-aaf
-aaa
+acP
+afx
+nzn
+nzn
+nzn
+nzn
+nzn
+etr
 kSY
 afv
 agu
@@ -123051,16 +123074,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aai
-aaa
-aaa
-aaf
-aaf
+acP
+etr
+nzn
+nzn
+tBo
+nzn
+nzn
+etr
 acP
 acP
 agv
@@ -123308,16 +123331,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aag
-aaa
-aaa
-aaf
-aaa
+lMJ
+lMJ
+acP
+etr
+nzn
+nzn
+nzn
+nzn
+nzn
+etr
 kSY
 afw
 agu
@@ -123565,18 +123588,18 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaa
-aag
-aaa
-aaa
-aaf
-aaa
-kSY
-afx
+acP
+etr
+nzn
+nzn
+nzn
+nzn
+nzn
+etr
+pyY
+afA
 agw
 ahj
 ahX
@@ -123822,16 +123845,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaf
-aai
-aaf
-aaf
-aaf
-aaa
+acP
+etr
+nzn
+nzn
+qht
+nzn
+nzn
+etr
 kSY
 afy
 agx
@@ -124079,16 +124102,16 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaf
-aaa
-aaa
-aaa
-aaf
-aaa
+acP
+etr
+etr
+etr
+frZ
+etr
+etr
+etr
 acP
 acP
 agy
@@ -124336,12 +124359,12 @@ aaa
 aaa
 aaa
 aaa
+lMJ
 aaa
-aaa
-aaa
-aaa
-aaf
-aaa
+acP
+acP
+acP
+acP
 acP
 acP
 kSY
@@ -124593,12 +124616,12 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lMJ
 aaa
 aaa
 aaa
 aaf
-aaf
+aav
 kSY
 adj
 adE
@@ -124850,10 +124873,10 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+lMJ
+lMJ
+lMJ
+lMJ
 aaf
 aaa
 acP
