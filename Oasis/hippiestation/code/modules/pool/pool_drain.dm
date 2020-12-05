@@ -132,7 +132,7 @@
 
 /obj/machinery/poolfilter/emag_act(user as mob)
 	if(!(obj_flags & EMAGGED))
-		to_chat(user, "<span class='warning'>You disable the [src]'s shark filter! Run!</span>")
+		to_chat(user, "<span class='warning'>You disable the [src]'s carp filter! Run!</span>")
 		obj_flags |= EMAGGED
 		do_sparks(5, TRUE, src)
 		icon_state = "filter_b"
@@ -145,8 +145,8 @@
 				else
 					new  /mob/living/simple_animal/hostile/carp/megacarp(loc)
 		if(GLOB.adminlog)
-			log_game("[key_name(user)] emagged the pool filter and probably spawned sharks")
-			message_admins("[key_name_admin(user)] emagged the pool filter and probably spawned sharks")
+			log_game("[key_name(user)] emagged the pool filter and probably spawned carps")
+			message_admins("[key_name_admin(user)] emagged the pool filter and probably spawned carps")
 
 
 /obj/machinery/poolfilter/attack_hand(mob/user)
