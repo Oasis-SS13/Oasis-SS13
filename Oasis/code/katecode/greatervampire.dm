@@ -27,7 +27,7 @@
 /datum/species/greatervampire/on_species_gain(mob/living/carbon/human/C, datum/species/old_species)
 	. = ..()
 	var/datum/martial_art/vampire/martial_art = new(null)
-		martial_art.teach(C)
+	martial_art.teach(C)
 	to_chat(C, "[info_text]")
 	C.skin_tone = "albino"
 	C.update_body(0)

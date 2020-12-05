@@ -29,7 +29,7 @@ obj/effect/projectile/tracer/vampire
 
 
 
-obj/effect/proc_holder/spell/aimed/space_bems
+obj/effect/proc_holder/spell/aimed/space_beams
 	name = "Space beams"
 	desc = "You shoot gamma radiation from your eyes"
 	school = "evocation"
@@ -168,7 +168,7 @@ obj/effect/proc_holder/spell/aimed/space_bems
 		var/obj/item/bodypart/chest = D.get_bodypart(BODY_ZONE_CHEST)
 		chest.dismember()
 		var/throwtarget = get_edge_target_turf(A, get_dir(A, get_step_away(D, A)))
-			D.throw_at(throwtarget, 30, 2, A)//So stuff gets tossed around at the same time.
+		D.throw_at(throwtarget, 30, 2, A)//So stuff gets tossed around at the same time.
 		if(atk_verb)
 			log_combat(A, D, "[atk_verb] (vampire)")
 		return TRUE
