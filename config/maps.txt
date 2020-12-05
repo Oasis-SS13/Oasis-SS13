@@ -17,8 +17,9 @@ map boxstation
 	votable
 endmap
 
-map endostation
+map endostation	
 	votable
+	default
 endmap
 
 map metastation
