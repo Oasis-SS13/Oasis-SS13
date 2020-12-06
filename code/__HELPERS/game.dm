@@ -641,3 +641,9 @@
 				continue
 
 			C.energy_fail(rand(duration_min,duration_max))
+		else if(C.cell && SSmapping.level_trait(C.z, ZTRAIT_STATION))
+			var/area/A = C.area
+			if(GLOB.typecache_powerfailure_safe_areas[A.type])
+				continue
+
+			C.energy_fail(rand(duration_min,duration_max))

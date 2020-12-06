@@ -18,7 +18,7 @@
 
 	area_type = /area/scorch/surface/outdoors // Change to /area/scorch/surface/outdoors or similar
 
-	target_trait = ZTRAITS_SANDSTATION // The z-level trait to affect when run randomly or when not overridden. //Oasis
+	target_trait = ZTRAIT_SAND_RUINS // The z-level trait to affect when run randomly or when not overridden. //Oasis
 
 	immunity_type = "ash"  // ash or sand if we make sand immunity
 
