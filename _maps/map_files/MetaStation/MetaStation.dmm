@@ -41215,9 +41215,6 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bzU" = (
-/obj/structure/chair/comfy/teal{
-	dir = 4
-	},
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
