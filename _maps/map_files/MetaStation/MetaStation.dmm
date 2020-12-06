@@ -41215,9 +41215,6 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bzU" = (
-/obj/structure/chair/comfy/teal{
-	dir = 4
-	},
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
@@ -124167,6 +124164,17 @@ aaa
 aaa
 lMJ
 aaa
+<<<<<<< HEAD
+acP
+oNJ
+ugW
+ugW
+frZ
+ugW
+ugW
+qDo
+=======
+>>>>>>> 7c9556e4c8e244e79c7c7b13da2ae50738d25eba
 acP
 oNJ
 ugW
