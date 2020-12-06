@@ -1,0 +1,5 @@
+author: park66665
+delete-after: true
+changes:
+  - rscdel: Useless empty map file called ruins.dmm
+  - bugfix: Fixed comms console and some other zlevel stuffs (probably)
