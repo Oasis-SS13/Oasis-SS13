@@ -16,7 +16,7 @@ SUBSYSTEM_DEF(mapping)
 	var/list/ruins_templates = list()
 	var/list/space_ruins_templates = list()
 	var/list/lava_ruins_templates = list()
-	var/list/sand_ruins_templates = list()	// Ruins for OasisStation
+	var/list/sand_ruins_templates = list()	// Ruins for ScorchStation
 
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
@@ -92,7 +92,7 @@ SUBSYSTEM_DEF(mapping)
 		for (var/lava_z in lava_ruins)
 			spawn_rivers(lava_z)
 
-	// Generate sand ruins
+	// Generate sand ruins for ScorchStation
 	loading_ruins = TRUE
 	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
 	if (sand_ruins.len)
@@ -169,7 +169,7 @@ SUBSYSTEM_DEF(mapping)
 	map_templates = SSmapping.map_templates
 	ruins_templates = SSmapping.ruins_templates
 	space_ruins_templates = SSmapping.space_ruins_templates
-	sand_ruins_templates = SSmapping.sand_ruins_templates
+	sand_ruins_templates = SSmapping.sand_ruins_templates // ScorchStation
 	lava_ruins_templates = SSmapping.lava_ruins_templates
 	shuttle_templates = SSmapping.shuttle_templates
 	random_room_templates = SSmapping.random_room_templates
@@ -376,6 +376,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	// Still supporting bans by filename
 	var/list/banned = generateMapList("[global.config.directory]/lavaruinblacklist.txt")
 	banned += generateMapList("[global.config.directory]/spaceruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/sandruinblacklist.txt")	//ScorchStation
 
 	for(var/item in sortList(subtypesof(/datum/map_template/ruin), /proc/cmp_ruincost_priority))
 		var/datum/map_template/ruin/ruin_type = item
@@ -394,7 +395,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			lava_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
-		else if(istype(R, /datum/map_template/ruin/sand))
+		if(istype(R, /datum/map_template/ruin/sand)) // ScorchStation
 			sand_ruins_templates[R.name] = R
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()

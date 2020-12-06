@@ -12,7 +12,7 @@
 		#include "map_files\BoxStation\BoxStation.dmm"
 		#include "map_files\Donutstation\Donutstation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
-		#include "map_files\Caves\Caves.dmm" //That's the mine of ScorchStation
+		#include "map_files\Caves\Caves.dmm" //That's the mines of ScorchStation
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

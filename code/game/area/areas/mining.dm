@@ -149,7 +149,7 @@
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
 
-/**********************Sandland Areas**************************/
+/**********************Sandland Areas**************************/ // ScorchStation
 
 /area/sandland
 	icon_state = "sandclean"
