@@ -371,7 +371,7 @@
 	integer = FALSE
 	min_val = 0
 
-/datum/config_entry/number/sand_budget
+/datum/config_entry/number/sand_budget // ScorchStation
 	config_entry_value = 50
 	integer = FALSE
 	min_val = 0

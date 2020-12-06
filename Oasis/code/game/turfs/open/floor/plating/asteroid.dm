@@ -1,4 +1,4 @@
-//Caves level sand (darker red sand)
+//Caves level sand (darker red sand) used in ScorchStation
 /turf/open/floor/plating/asteroid/cavesand
 	name = "Caves sand"
 	baseturfs = /turf/open/floor/plating/asteroid/cavesand

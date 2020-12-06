@@ -65,7 +65,7 @@ require only minor tweaks.
 /// default trait definitions, used by SSmapping
 #define ZTRAITS_CENTCOM list(ZTRAIT_CENTCOM = TRUE)
 #define ZTRAITS_STATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_STATION = TRUE)
-#define ZTRAITS_SCORCHSTATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SCORCHSTATION = TRUE) //Oasis
+//#define ZTRAITS_SCORCHSTATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SCORCHSTATION = TRUE) //Oasis
 #define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SPACE_RUINS = TRUE)
 #define ZTRAITS_LAVALAND list(\
     ZTRAIT_MINING = TRUE, \
@@ -78,8 +78,9 @@ require only minor tweaks.
 #define DECLARE_LEVEL(NAME, TRAITS) list(DL_NAME = NAME, DL_TRAITS = TRAITS)
 #define ZTRAITS_SANDSTATION list(\
     ZTRAIT_MINING = TRUE, \
+    ZTRAIT_LINKAGE = CROSSLINKED \
     ZTRAIT_SAND_RUINS = TRUE, \
-    ZTRAIT_BASETURF = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface) // Used for OasisStation
+    ZTRAIT_BASETURF = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface) // Used for ScorchStation
 
 /// must correspond to _basemap.dm for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
@@ -104,4 +105,4 @@ require only minor tweaks.
 #define PLACE_SAME_Z "same"
 #define PLACE_SPACE_RUIN "space"
 #define PLACE_LAVA_RUIN "lavaland"
-#define PLACE_SAND_RUIN "sandstation"	// Used for OasisStation
+#define PLACE_SAND_RUIN "sandstation"	// Used for ScorchStation
