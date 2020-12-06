@@ -288,13 +288,15 @@
 /obj/machinery/poolcontroller/proc/isDrainable(mob/user)
 	return (drainable || issilicon(user) || IsAdminGhost(user))
 
-/obj/machinery/poolcontroller/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
-												datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+/obj/machinery/poolcontroller/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, ui_key, "pool_controller", "[name]", 300, 450, master_ui, state)
+		ui = new(user, src, "Pool")
 		ui.set_autoupdate(TRUE)
 		ui.open()
+
+/obj/machinery/poolcontroller/ui_state(mob/user)
+	return GLOB.default_state
 
 /obj/machinery/poolcontroller/ui_data(mob/user)
 	. = list()
