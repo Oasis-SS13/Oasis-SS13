@@ -2905,7 +2905,7 @@
 /area/crew_quarters/fitness/recreation)
 "afx" = (
 /obj/machinery/poolcontroller,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/yellowsiding,
 /area/crew_quarters/fitness/recreation)
 "afy" = (
 /obj/structure/closet/boxinggloves,
@@ -80664,6 +80664,14 @@
 	},
 /turf/open/floor/plating,
 /area/chapel/main)
+"dkO" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 4
+	},
+/area/crew_quarters/fitness/recreation)
 "dkZ" = (
 /obj/structure/grille,
 /obj/structure/lattice,
@@ -82227,6 +82235,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"eoD" = (
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 4
+	},
+/area/crew_quarters/fitness/recreation)
 "eoK" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -82462,7 +82475,12 @@
 /area/space/nearstation)
 "frZ" = (
 /obj/structure/pool/Rboard,
-/turf/open/floor/plasteel,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 8
+	},
 /area/crew_quarters/fitness/recreation)
 "fsJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -82876,6 +82894,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"gFg" = (
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 4
+	},
+/area/crew_quarters/fitness/recreation)
 "gHh" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -82964,6 +82987,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/aft/secondary)
+"gSh" = (
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/recreation)
 "gUT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -83179,6 +83207,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
+"iiw" = (
+/turf/open/floor/plasteel/yellowsiding/corner,
+/area/crew_quarters/fitness/recreation)
 "ijC" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance/two,
@@ -83614,7 +83645,9 @@
 /turf/closed/wall/r_wall,
 /area/engine/break_room)
 "jId" = (
-/obj/structure/pool/ladder,
+/obj/structure/pool/ladder{
+	pixel_x = -3
+	},
 /turf/open/pool,
 /area/crew_quarters/fitness/recreation)
 "jKK" = (
@@ -83781,6 +83814,9 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"klP" = (
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/recreation)
 "koT" = (
 /obj/machinery/light_switch{
 	pixel_x = -25
@@ -84586,6 +84622,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
+"nya" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/recreation)
 "nyo" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -84961,6 +85003,11 @@
 	},
 /turf/open/floor/plasteel/dark/corner,
 /area/engine/storage_shared)
+"oNJ" = (
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 8
+	},
+/area/crew_quarters/fitness/recreation)
 "oOv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall,
@@ -85461,6 +85508,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/aisat)
+"qDo" = (
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 1
+	},
+/area/crew_quarters/fitness/recreation)
 "qEn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /obj/effect/turf_decal/tile/purple{
@@ -85642,6 +85694,12 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"rLw" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/recreation)
 "rPH" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -86197,6 +86255,11 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"ugW" = (
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 8
+	},
+/area/crew_quarters/fitness/recreation)
 "uhY" = (
 /obj/machinery/computer/warrant{
 	dir = 1
@@ -122049,13 +122112,13 @@ aaa
 lMJ
 aaa
 acP
-etr
-etr
-etr
-etr
-etr
-etr
-etr
+iiw
+eoD
+eoD
+dkO
+eoD
+eoD
+gFg
 wLz
 pAS
 gKd
@@ -122306,13 +122369,13 @@ aaa
 lMJ
 aaa
 acP
-etr
+klP
 xbL
 nzn
 jId
 nzn
 nzn
-etr
+gSh
 kSY
 aft
 agt
@@ -122563,13 +122626,13 @@ aaa
 lMJ
 aaa
 acP
-etr
+klP
 nzn
 nzn
 nzn
 nzn
 nzn
-etr
+gSh
 kSY
 afu
 agu
@@ -122826,7 +122889,7 @@ nzn
 nzn
 nzn
 nzn
-etr
+gSh
 kSY
 afv
 agu
@@ -123077,13 +123140,13 @@ aaa
 lMJ
 aaa
 acP
-etr
+nya
 nzn
 nzn
 tBo
 nzn
 nzn
-etr
+rLw
 acP
 acP
 agv
@@ -123334,13 +123397,13 @@ aaa
 lMJ
 lMJ
 acP
-etr
+klP
 nzn
 nzn
 nzn
 nzn
 nzn
-etr
+gSh
 kSY
 afw
 agu
@@ -123591,13 +123654,13 @@ aaa
 lMJ
 aaa
 acP
-etr
+klP
 nzn
 nzn
 nzn
 nzn
 nzn
-etr
+gSh
 pyY
 afA
 agw
@@ -123848,13 +123911,13 @@ aaa
 lMJ
 aaa
 acP
-etr
+klP
 nzn
 nzn
 qht
 nzn
 nzn
-etr
+gSh
 kSY
 afy
 agx
@@ -124105,13 +124168,13 @@ aaa
 lMJ
 aaa
 acP
-etr
-etr
-etr
+oNJ
+ugW
+ugW
 frZ
-etr
-etr
-etr
+ugW
+ugW
+qDo
 acP
 acP
 agy
