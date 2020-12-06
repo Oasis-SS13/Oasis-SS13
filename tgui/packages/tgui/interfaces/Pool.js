@@ -36,8 +36,8 @@ export const Pool = (props, context) => {
   return (
     <Window
       resizable
-      width={550}
-      height={700}>
+      width={450}
+      height={550}>
       <Window.Content>
         <Fragment>
           <Section title="Temperature">
