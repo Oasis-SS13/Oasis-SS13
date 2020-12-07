@@ -6662,12 +6662,6 @@
 /turf/open/floor/plating,
 /area/gateway)
 "bQF" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-4"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
@@ -6679,7 +6673,8 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/window/westleft{
-	dir = 2
+	dir = 1;
+	name = "Pool Door"
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
@@ -8234,10 +8229,6 @@
 	icon_state = "wood-broken5"
 	},
 /area/library)
-"cnm" = (
-/obj/effect/spawner/xmastree,
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "cnn" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /turf/open/floor/plasteel,
@@ -12591,11 +12582,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
-"dyY" = (
-/obj/structure/table/wood,
-/obj/item/soap/nanotrasen,
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "dyZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -13197,13 +13183,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hor)
-"dFZ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "dGg" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -15949,10 +15928,6 @@
 	},
 /area/crew_quarters/heads/cmo)
 "eur" = (
-/obj/structure/cable/yellow,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
@@ -15966,8 +15941,11 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/structure/grille,
-/obj/effect/spawner/structure/window,
+/obj/structure/pool/Rboard,
+/obj/machinery/door/window/westleft{
+	dir = 4;
+	name = "Diving Board Door"
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "euw" = (
@@ -17544,14 +17522,8 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "eQH" = (
-/obj/structure/table/wood,
-/obj/item/camera_film,
-/obj/item/camera_film{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/camera,
-/turf/open/floor/wood,
+/obj/structure/pool/Lboard,
+/turf/open/pool,
 /area/crew_quarters/bar)
 "eRe" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -40251,10 +40223,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
-"kYy" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "kYF" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -40975,6 +40943,26 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science/research)
+"liL" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/poolcontroller,
+/obj/structure/window{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/bar)
 "liP" = (
 /obj/structure/chair{
 	dir = 1
@@ -45902,12 +45890,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/science)
-"mBF" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "mBK" = (
 /obj/item/stack/cable_coil,
 /obj/structure/lattice/catwalk,
@@ -48027,6 +48009,22 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+"nht" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/window{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/bar)
 "nhz" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2o{
 	dir = 1
@@ -50630,15 +50628,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/medical/virology)
-"nKO" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "nLb" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -56552,9 +56541,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/obj/structure/table/wood,
-/obj/item/instrument/piano_synth,
-/turf/open/floor/wood,
+/turf/open/pool,
 /area/crew_quarters/bar)
 "pmH" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -64461,12 +64448,6 @@
 	},
 /turf/open/floor/engine/n2,
 /area/engine/atmos)
-"ryy" = (
-/obj/structure/piano{
-	icon_state = "piano"
-	},
-/turf/open/floor/wood,
-/area/crew_quarters/bar)
 "ryI" = (
 /turf/open/floor/mineral/titanium/white,
 /area/medical/medbay/central)
@@ -65758,6 +65739,10 @@
 	dir = 9
 	},
 /area/science/shuttledock)
+"rSh" = (
+/obj/machinery/poolcontroller,
+/turf/closed/wall,
+/area/hallway/secondary/service)
 "rSn" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/maintenance/two,
@@ -69657,6 +69642,12 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"sUJ" = (
+/obj/machinery/poolfilter{
+	pixel_y = 16
+	},
+/turf/open/pool,
+/area/crew_quarters/bar)
 "sUN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -71609,9 +71600,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/execution/transfer)
 "twr" = (
-/obj/structure/table/wood,
-/obj/item/instrument/banjo,
-/turf/open/floor/wood,
+/turf/open/pool,
 /area/crew_quarters/bar)
 "twv" = (
 /obj/structure/cable{
@@ -80771,10 +80760,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
 	},
-/turf/open/floor/wood,
+/obj/machinery/drain,
+/turf/open/pool,
 /area/crew_quarters/bar)
 "vXF" = (
 /obj/effect/turf_decal/stripes/line,
@@ -82838,6 +82828,13 @@
 "wAT" = (
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain/private)
+"wBH" = (
+/obj/structure/pool/ladder{
+	dir = 2;
+	pixel_y = 16
+	},
+/turf/open/pool,
+/area/crew_quarters/bar)
 "wBP" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -110388,7 +110385,7 @@ tfF
 tfF
 tfF
 tfF
-tfF
+rSh
 lwg
 tKP
 qlv
@@ -113476,11 +113473,11 @@ oVm
 vSw
 hfC
 avl
-gnp
-qOL
-kYy
-dFZ
-ryy
+nht
+sUJ
+twr
+pmv
+twr
 gnp
 avl
 avl
@@ -113734,10 +113731,10 @@ pfj
 hfC
 avl
 bQF
-qOL
-cnm
-nKO
-qOL
+wBH
+twr
+pmv
+twr
 gnp
 avl
 avl
@@ -113991,10 +113988,10 @@ sAv
 hfC
 avl
 bQF
-qOL
-qOL
+wBH
+twr
 vXC
-mBF
+twr
 mAl
 iGj
 iGj
@@ -114247,8 +114244,8 @@ vqm
 vSw
 hfC
 avl
-gnp
-dyY
+liL
+twr
 eQH
 pmv
 twr
