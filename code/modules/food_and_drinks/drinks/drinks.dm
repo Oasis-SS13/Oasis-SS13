@@ -498,7 +498,7 @@
 	return ..()
 /obj/item/reagent_containers/food/drinks/soda_cans/AltClick(mob/user)
 	if(spillable == TRUE)
-		to_chat(user, "\the [src] doesnt have enougth preasure.")
+		to_chat(user, "\the [src] doesnt have enough pressure.")
 		return
 	safety = !safety
 	to_chat(user, "The safety is [safety ? "on" : "off"].")
