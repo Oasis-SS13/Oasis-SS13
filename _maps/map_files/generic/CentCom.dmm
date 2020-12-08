@@ -6981,6 +6981,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/syndicate_mothership/control)
+"qM" = (
+/obj/machinery/power/emitter/ctf{
+	dir = 8
+	},
+/turf/open/floor/circuit,
+/area/ctf)
 "qN" = (
 /obj/structure/mopbucket,
 /obj/item/soap/syndie,
@@ -14627,7 +14633,7 @@
 /area/tdome/tdomeobserve)
 "Hz" = (
 /obj/structure/barricade/security/ctf,
-/turf/open/floor/circuit/telecomms,
+/turf/open/floor/circuit,
 /area/ctf)
 "HA" = (
 /obj/structure/sink{
@@ -17084,7 +17090,7 @@
 /obj/machinery/power/emitter/ctf{
 	dir = 4
 	},
-/turf/open/floor/circuit/telecomms,
+/turf/open/floor/circuit,
 /area/ctf)
 "Oj" = (
 /obj/machinery/door/firedoor,
@@ -18284,7 +18290,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/evac)
 "Wi" = (
-/turf/open/floor/circuit/telecomms,
+/turf/open/floor/circuit,
 /area/ctf)
 "Wj" = (
 /obj/machinery/light/small{
@@ -69060,13 +69066,13 @@ aa
 aa
 aa
 fZ
-Qd
+qM
 gl
 Xu
 Xu
 Xu
 gl
-Qd
+qM
 fZ
 Xu
 Xu
