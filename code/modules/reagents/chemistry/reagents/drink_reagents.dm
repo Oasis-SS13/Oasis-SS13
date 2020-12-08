@@ -839,3 +839,15 @@
 	glass_icon_state = "glass_yellow"
 	glass_name = "glass of bungo juice"
 	glass_desc = "Exotic! You feel like you are on vactation already."
+
+
+
+/datum/reagent/consumable/reaction_mob(mob/living/M, method=TOUCH, reac_volume)//Splashing people with water can help put them out!
+	if(!istype(M))
+		return
+	if(method == TOUCH)
+		M.adjust_fire_stacks(-(reac_volume / 10))
+		M.ExtinguishMob()
+	..()
+/datum/reagent/consumable/reaction_obj(obj/O, reac_volume)
+	O.extinguish()
