@@ -19,7 +19,7 @@ endmap
 
 map endostation	
 	votable
-	default
+
 endmap
 
 map metastation
@@ -58,3 +58,7 @@ map kilostation
 	votable
 	disabled
 endmap
+
+map ScorchBox
+	voteable
+	default
