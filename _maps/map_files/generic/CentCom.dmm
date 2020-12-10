@@ -10843,11 +10843,8 @@
 /area/wizard_station)
 "zp" = (
 /obj/structure/closet/crate{
-<<<<<<< HEAD
 	icon_state = "crateopen"
-=======
 	opened = 1
->>>>>>> 0a32f6f92e... Fixes a var in the maps (#3118)
 	},
 /obj/item/clothing/suit/wizrobe/red,
 /obj/item/clothing/head/wizard/red,
