@@ -10844,6 +10844,7 @@
 "zp" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
+	opened = 1
 	},
 /obj/item/clothing/suit/wizrobe/red,
 /obj/item/clothing/head/wizard/red,
