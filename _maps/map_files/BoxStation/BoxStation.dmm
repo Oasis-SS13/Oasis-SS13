@@ -51239,15 +51239,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
-<<<<<<< HEAD
-"jxq" = (
-/obj/machinery/camera/autoname{
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel,
-/area/science/circuit_lab)
-=======
 "jwd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -51258,7 +51249,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
->>>>>>> 352254feed... Fastmos mapping improvements (#3006)
 "jyC" = (
 /obj/machinery/light{
 	dir = 8
