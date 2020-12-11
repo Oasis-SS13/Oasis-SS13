@@ -83,13 +83,6 @@ GLOBAL_LIST(end_titles)
 	. = ..()
 	maptext = null
 
-<<<<<<< HEAD
-/proc/get_top_contrib()
-	var/list/contribs = get_contribs()
-	return contribs.len ? contribs[1] : "Poly The Parrot"
-
-=======
->>>>>>> 01f22101e1... ike hates fun (#3137)
 /proc/get_contribs()
 	var/list/contribs = list()
 
