@@ -62,3 +62,4 @@ endmap
 map ScorchBox
 	voteable
 	default
+endmap
