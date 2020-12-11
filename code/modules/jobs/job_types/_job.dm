@@ -184,6 +184,7 @@
 
 	H.dna.species.after_equip_job(src, H, visualsOnly)
 
+<<<<<<< HEAD
 	if(preference_source?.ckey == get_top_contrib())
 		var/obj/item/clothing/under/dress/skirt/coder/coderskirt = new()
 		if(H.wear_suit)
@@ -193,6 +194,8 @@
 		else
 			to_chat(H, "<span class='notice'>Roses are red, violets are blue; You are the top contributer, fem energy flows through you.</span>")
 
+=======
+>>>>>>> 01f22101e1... ike hates fun (#3137)
 	if(!visualsOnly && announce)
 		announce(H)
 
