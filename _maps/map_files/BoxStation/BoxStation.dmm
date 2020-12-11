@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"jxq" = (
+/obj/machinery/camera/autoname{
+    dir = 1
+},)
 "aaa" = (
 /turf/open/space/basic,
 /area/space)
