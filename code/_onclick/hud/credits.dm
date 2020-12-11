@@ -85,7 +85,7 @@ GLOBAL_LIST(end_titles)
 
 /proc/get_top_contrib()
 	var/list/contribs = get_contribs()
-	return contribs.len ? contribs[1] : "Beebot"
+	return contribs.len ? contribs[1] : "Poly The Parrot"
 
 /proc/get_contribs()
 	var/static/list/top_contributors
