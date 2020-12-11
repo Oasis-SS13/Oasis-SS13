@@ -46434,15 +46434,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
-<<<<<<< HEAD
-=======
 "duJ" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
->>>>>>> bc0f5899b4... Fixes pipes until the game stops yelling at me (#3125)
 "dvq" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -61926,8 +61923,6 @@
 	},
 /turf/closed/wall,
 /area/maintenance/port/aft)
-<<<<<<< HEAD
-=======
 "wzO" = (
 /obj/effect/spawner/room/threexthree,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -61935,7 +61930,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
->>>>>>> bc0f5899b4... Fixes pipes until the game stops yelling at me (#3125)
 "wAt" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -109373,15 +109367,9 @@ cNW
 cNW
 xrh
 cTI
-<<<<<<< HEAD
-cOe
-cOe
-cOe
-=======
 cNi
 tjq
 qWr
->>>>>>> bc0f5899b4... Fixes pipes until the game stops yelling at me (#3125)
 cOT
 aaa
 aaa
