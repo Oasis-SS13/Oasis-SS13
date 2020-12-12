@@ -46470,9 +46470,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "duJ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
