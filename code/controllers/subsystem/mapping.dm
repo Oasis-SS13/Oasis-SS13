@@ -17,6 +17,7 @@ SUBSYSTEM_DEF(mapping)
 	var/list/space_ruins_templates = list()
 	var/list/lava_ruins_templates = list()
 	var/list/sand_ruins_templates = list()	// Ruins for ScorchStation
+	var/list/sand_underground_ruins_templates = list()	// Ruins for ScorchStation Underground
 
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
@@ -100,6 +101,14 @@ SUBSYSTEM_DEF(mapping)
 		for (var/sand_z in sand_ruins)
 			spawn_rivers(sand_z)
 
+	// Generate underground ruins for ScorchStation
+	loading_ruins = TRUE
+	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
+	if (sand_ruins.len)
+		seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
+		for (var/sand_z in sand_ruins)
+			spawn_rivers(sand_z)
+
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
 	if (space_ruins.len)
@@ -170,6 +179,7 @@ SUBSYSTEM_DEF(mapping)
 	ruins_templates = SSmapping.ruins_templates
 	space_ruins_templates = SSmapping.space_ruins_templates
 	sand_ruins_templates = SSmapping.sand_ruins_templates // ScorchStation
+	sand_underground_ruins_templates = SSmapping.sand_underground_ruins_templates // ScorchStation Underground
 	lava_ruins_templates = SSmapping.lava_ruins_templates
 	shuttle_templates = SSmapping.shuttle_templates
 	random_room_templates = SSmapping.random_room_templates
@@ -260,6 +270,8 @@ SUBSYSTEM_DEF(mapping)
 	// load mining
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
+	else if (config.minetype == "lavaland")
+		LoadGroup(FailedZs, "Caves", "map_files/Caves", "Caves.dmm", default_traits = ZTRAITS_CAVES) // ScorchStation Underground aka Caves
 	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
@@ -395,8 +407,10 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			lava_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
-		if(istype(R, /datum/map_template/ruin/sand)) // ScorchStation
+		else if(istype(R, /datum/map_template/ruin/sand)) // ScorchStation
 			sand_ruins_templates[R.name] = R
+		else if(istype(R, /datum/map_template/ruin/sand/underground)) // ScorchStation Underground
+			sand_underground_ruins_templates[R.name] = R
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
 	var/list/unbuyable = generateMapList("[global.config.directory]/shuttles_unbuyable.txt")
