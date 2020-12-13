@@ -27,7 +27,7 @@
 		return
 	if(!M.client)
 		return
-	if(!iscarbon(M) && !isguardian(M))
+	if(!iscarbon(M))
 		to_chat("<span class='italics warning'>You can't stab [M], it won't work!</span>")
 		return
 	if(M.stat == DEAD)
@@ -56,55 +56,9 @@
 				in_use = FALSE
 			else
 				INVOKE_ASYNC(src, .proc/generate_stand, H)
-		else if(isguardian(M))
-			INVOKE_ASYNC(src, .proc/requiem, M)
-
 	if(!uses)
 		visible_message("<span class='warning'>[src] falls apart!</span>")
 		qdel(src)
-
-/obj/item/stand_arrow/proc/requiem(mob/living/simple_animal/hostile/guardian/G)
-	G.range = 255
-	G.transforming = TRUE
-	G.visible_message("<span class='holoparasite'>[G] begins to melt!</span>")
-	to_chat(G, "<span class='holoparasite'>This power... You can't handle it! RUN AWAY!</span>")
-	log_game("[key_name(G)] was stabbed by a stand arrow, it is now becoming requiem.")
-	var/i = 0
-	var/flicker = TRUE
-	while(i < 10)
-		i++
-		G.set_light(4, 10, rgb(rand(1, 127), rand(1, 127), rand(1, 127)))
-		var/a = flicker ? 127 : 255
-		flicker = !flicker
-		animate(G, alpha = a, time = 5 SECONDS)
-		sleep(5 SECONDS)
-	G.stats.Unapply(G)
-	G.requiem = TRUE
-	G.name = "[G.name] Requiem"
-	G.real_name = "[G.real_name] Requiem"
-	G.mind.name = "[G.mind.name] Requiem"
-	G.stats.damage = min(G.stats.damage + rand(1,3), 5)
-	G.stats.defense = min(G.stats.defense + rand(1,3), 5)
-	G.stats.speed = min(G.stats.speed + rand(1,3), 5)
-	G.stats.potential = min(G.stats.potential + rand(1,3), 5)
-	G.stats.range = min(G.stats.range + rand(1,3), 5)
-	for(var/T in subtypesof(/datum/guardian_ability/minor))
-		G.stats.TakeMinorAbility(T)
-	QDEL_NULL(G.stats.ability)
-	var/requiem_ability = pick(subtypesof(/datum/guardian_ability/major/special))
-	G.stats.ability = new requiem_ability
-	G.stats.Apply(G)
-	if(G.berserk)
-		G.stats.ability.Berserk()
-	else
-		var/datum/antagonist/guardian/S = G.mind.has_antag_datum(/datum/antagonist/guardian)
-		if(S)
-			S.name = "Requiem Guardian"
-	G.transforming = FALSE
-	G.Recall(TRUE)
-	G.visible_message("<span class='holoparasite'>\The [src] is absorbed into [G]!</span>")
-	qdel(src)
-
 
 /obj/item/stand_arrow/proc/generate_stand(mob/living/carbon/human/H)
 	var/points = 15

@@ -57,3 +57,33 @@
 
 // minor ability stub
 /datum/guardian_ability/minor
+
+//special procs
+/datum/guardian_ability/special
+	var/has_mode = FALSE
+	var/mode = FALSE
+	var/recall_mode = FALSE
+	var/mode_on_msg = ""
+	var/mode_off_msg = ""
+
+/datum/guardian_ability/special/proc/Attack(atom/target)
+
+/datum/guardian_ability/special/proc/RangedAttack(atom/target)
+
+/datum/guardian_ability/special/proc/AfterAttack(atom/target)
+
+/datum/guardian_ability/special/proc/Manifest()
+
+/datum/guardian_ability/special/proc/Recall()
+
+/datum/guardian_ability/special/proc/Mode()
+
+/datum/guardian_ability/special/proc/Health(amount)
+
+/datum/guardian_ability/special/proc/AltClickOn(atom/A)
+
+/datum/guardian_ability/special/proc/CtrlClickOn(atom/A)
+
+/datum/guardian_ability/special/proc/Berserk()
+
+/datum/guardian_ability/special/special
