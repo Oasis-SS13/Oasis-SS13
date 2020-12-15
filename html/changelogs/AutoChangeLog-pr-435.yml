@@ -1,0 +1,5 @@
+author: Poly-The-Parrot
+delete-after: true
+changes:
+  - bugfix: Fixed the stray bullet hallucination runtiming.
+  - tweak: Stray bullet hallucination is less frequent.
