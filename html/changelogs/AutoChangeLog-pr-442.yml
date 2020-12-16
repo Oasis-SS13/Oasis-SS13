@@ -1,5 +1,0 @@
-author: Poly-The-Parrot
-delete-after: true
-changes:
-  - rscadd: Aux base access.
-  - tweak: Curator no longer has construction access.
