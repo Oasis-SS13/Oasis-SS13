@@ -602,4 +602,4 @@ Since Ramadan is an entire month that lasts 29.5 days on average, the start and 
 	. = ..()
 	if(prob(10))
 		mass_purrbation()
-		log_game("Furday randomly mass-purbatted ever
+		log_game("Furday randomly mass-purbatted ever.")
