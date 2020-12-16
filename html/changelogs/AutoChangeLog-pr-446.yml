@@ -1,0 +1,4 @@
+author: Poly-The-Parrot
+delete-after: true
+changes:
+  - admin: increased emergency shuttle verbosity logging
