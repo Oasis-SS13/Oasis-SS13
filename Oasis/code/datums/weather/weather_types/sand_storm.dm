@@ -17,7 +17,8 @@
 	end_overlay = "light_sand" // Changed to light_sand from light_ash
 
 	area_type = /area/scorch/surface/outdoors // Change to /area/scorch/surface/outdoors or similar
-	target_trait = ZTRAIT_STATION // The z-level trait to affect when run randomly or when not overridden.
+
+	target_trait = ZTRAIT_SCORCHSTATION // The z-level trait to affect when run randomly or when not overridden. //Oasis
 
 	immunity_type = "ash"  // ash or sand if we make sand immunity
 
