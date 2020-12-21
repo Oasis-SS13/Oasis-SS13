@@ -3,8 +3,9 @@
 
 /world
 	mob = /mob/dead/new_player
-	turf = /turf/open/space/basic
 	area = /area/space
+	//turf = /turf/open/space/basic 	//Ask Kryyto if you want the space back
+	turf = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface
 	view = "17x15"
 	hub = "Exadv1.spacestation13"
 	hub_password = "kMZy3U5jJHSiBQjr"

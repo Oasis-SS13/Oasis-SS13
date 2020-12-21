@@ -64,17 +64,28 @@ SUBSYSTEM_DEF(mapping)
 	process_teleport_locs()			//Sets up the wizard teleport locations
 	preloadTemplates()
 #ifndef LOWMEMORYMODE
-	// Create space ruin levels
-	while (space_levels_so_far < config.space_ruin_levels)
-		++space_levels_so_far
-		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
-	// and one level with no ruins
-	for (var/i in 1 to config.space_empty_levels)
-		++space_levels_so_far
-		empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
-	// and the transit level
-	transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
-
+	if(config.map_name == "Caves") // ScorchStation
+		// Create sand ruin levels
+		while (space_levels_so_far < config.space_ruin_levels)
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
+		// and one sand level with no ruins
+		for (var/i in 1 to config.space_empty_levels)
+			++space_levels_so_far
+			empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
+		// and the sand transit level
+		transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+	else
+		// Create space ruin levels
+		while (space_levels_so_far < config.space_ruin_levels)
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
+		// and one level with no ruins
+		for (var/i in 1 to config.space_empty_levels)
+			++space_levels_so_far
+			empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
+		// and the transit level
+		transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
 	// Pick a random away mission.
 	if(CONFIG_GET(flag/roundstart_away))
 		createRandomZlevel()
@@ -103,11 +114,11 @@ SUBSYSTEM_DEF(mapping)
 
 	// Generate underground ruins for ScorchStation
 	loading_ruins = TRUE
-	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
-	if (sand_ruins.len)
-		seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
-		for (var/sand_z in sand_ruins)
-			spawn_rivers(sand_z)
+	var/list/unsand_ruins = levels_by_trait(ZTRAIT_UNDERGROUND_SAND_RUINS)
+	if (unsand_ruins.len)
+		seedRuins(unsand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
+		for (var/unsand_z in unsand_ruins)
+			spawn_rivers(unsand_z)
 
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
@@ -250,9 +261,14 @@ SUBSYSTEM_DEF(mapping)
 	InitializeDefaultZLevels()
 
 	// load the station
-	station_start = world.maxz + 1
-	INIT_ANNOUNCE("Loading [config.map_name]...")
-	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
+	if(config.map_name == "Caves")
+		station_start = world.maxz + 1
+		INIT_ANNOUNCE("Loading [config.map_name]...")
+		LoadGroup(FailedZs, "Station", config.map_path, config.map_file, default_traits = ZTRAITS_CAVES)
+	else
+		station_start = world.maxz + 1
+		INIT_ANNOUNCE("Loading [config.map_name]...")
+		LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
 
 	if(SSdbcore.Connect())
 		var/datum/DBQuery/query_round_map_name = SSdbcore.NewQuery({"
@@ -263,14 +279,19 @@ SUBSYSTEM_DEF(mapping)
 
 #ifndef LOWMEMORYMODE
 	// TODO: remove this when the DB is prepared for the z-levels getting reordered
-	while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels)
-		++space_levels_so_far
-		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
+	if(config.map_name == "Caves")
+		while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels) // ScorchStation
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_CAVES)
+	else
+		while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels)
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
 
 	// load mining
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
-	else if (config.minetype == "lavaland")
+	else if (config.map_name == "Caves")
 		LoadGroup(FailedZs, "Caves", "map_files/Caves", "Caves.dmm", default_traits = ZTRAITS_CAVES) // ScorchStation Underground aka Caves
 	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")

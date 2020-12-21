@@ -39,7 +39,7 @@ require only minor tweaks.
 #define ZTRAIT_LAVA_RUINS "Lava Ruins"
 #define ZTRAIT_POCKETDIM "Pocket Dimension"
 #define ZTRAIT_SAND_RUINS "Sand Ruins"		// Used for ScorchStation
-#define ZTRAIT_UNDERGROUND_SAND_RUINS "Sand Ruins"		// Used for ScorchStation
+#define ZTRAIT_UNDERGROUND_SAND_RUINS "Underground Sand Ruins"		// Used for ScorchStation
 
 /// number - bombcap is multiplied by this before being applied to bombs
 #define ZTRAIT_BOMBCAP_MULTIPLIER "Bombcap Multiplier"
@@ -79,7 +79,7 @@ require only minor tweaks.
 #define DECLARE_LEVEL(NAME, TRAITS) list(DL_NAME = NAME, DL_TRAITS = TRAITS)
 #define ZTRAITS_CAVES list(\
     ZTRAIT_MINING = TRUE, \
-    ZTRAIT_LINKAGE = CROSSLINKED \
+    ZTRAIT_LINKAGE = CROSSLINKED, \
     ZTRAIT_SAND_RUINS = TRUE, \
     ZTRAIT_BASETURF = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface) // Used for ScorchStation
 
