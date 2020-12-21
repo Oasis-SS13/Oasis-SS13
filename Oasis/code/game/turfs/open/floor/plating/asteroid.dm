@@ -27,7 +27,7 @@
 /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface
 	initial_gas_mix = DESERT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/cavesand
+	baseturfs = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface
 
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"
 #define SPAWN_BUBBLEGUM 6
