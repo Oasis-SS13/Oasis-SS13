@@ -75,6 +75,20 @@ SUBSYSTEM_DEF(mapping)
 			empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
 		// and the sand transit level
 		transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+		// Generate underground ruins for ScorchStation
+		loading_ruins = TRUE
+		var/list/unsand_ruins = levels_by_trait(ZTRAIT_UNDERGROUND_SAND_RUINS)
+		if (unsand_ruins.len)
+			seedRuins(unsand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
+			for (var/unsand_z in unsand_ruins)
+				spawn_rivers(unsand_z)
+		// Generate sand ruins for ScorchStation
+		loading_ruins = TRUE
+		var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
+		if (sand_ruins.len)
+			seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
+			for (var/sand_z in sand_ruins)
+				spawn_rivers(sand_z)
 	else
 		// Create space ruin levels
 		while (space_levels_so_far < config.space_ruin_levels)
@@ -86,6 +100,18 @@ SUBSYSTEM_DEF(mapping)
 			empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
 		// and the transit level
 		transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+		// Generate mining ruins
+		loading_ruins = TRUE
+		var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
+		if (lava_ruins.len)
+			seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors/unexplored, lava_ruins_templates)
+			for (var/lava_z in lava_ruins)
+				spawn_rivers(lava_z)
+		// Generate deep space ruins
+		var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
+		if (space_ruins.len)
+			seedRuins(space_ruins, CONFIG_GET(number/space_budget), /area/space, space_ruins_templates)
+
 	// Pick a random away mission.
 	if(CONFIG_GET(flag/roundstart_away))
 		createRandomZlevel()
@@ -95,36 +121,8 @@ SUBSYSTEM_DEF(mapping)
 		to_chat(world, "<span class='boldannounce'>Loading virtual reality...</span>")
 		load_new_z_level("_maps/RandomZLevels/VR/vrhub.dmm", "Virtual Reality Hub")
 		to_chat(world, "<span class='boldannounce'>Virtual reality loaded.</span>")
-
-	// Generate mining ruins
-	loading_ruins = TRUE
-	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
-	if (lava_ruins.len)
-		seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors/unexplored, lava_ruins_templates)
-		for (var/lava_z in lava_ruins)
-			spawn_rivers(lava_z)
-
-	// Generate sand ruins for ScorchStation
-	loading_ruins = TRUE
-	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
-	if (sand_ruins.len)
-		seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
-		for (var/sand_z in sand_ruins)
-			spawn_rivers(sand_z)
-
-	// Generate underground ruins for ScorchStation
-	loading_ruins = TRUE
-	var/list/unsand_ruins = levels_by_trait(ZTRAIT_UNDERGROUND_SAND_RUINS)
-	if (unsand_ruins.len)
-		seedRuins(unsand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
-		for (var/unsand_z in unsand_ruins)
-			spawn_rivers(unsand_z)
-
-	// Generate deep space ruins
-	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
-	if (space_ruins.len)
-		seedRuins(space_ruins, CONFIG_GET(number/space_budget), /area/space, space_ruins_templates)
 	loading_ruins = FALSE
+
 #endif
 	repopulate_sorted_areas()
 	// Set up Z-level transitions.
