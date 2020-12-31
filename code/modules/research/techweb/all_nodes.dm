@@ -702,7 +702,11 @@
 	display_name = "Advanced Weapon Development Technology"
 	description = "Our weapons are breaking the rules of reality by now."
 	prereq_ids = list("adv_engi", "weaponry")
+<<<<<<< HEAD
 	design_ids = list("pin_loyalty")
+=======
+	design_ids = list("pin_loyalty", "borg_transform_security")
+>>>>>>> 86946c9c2f... Bugfix for: #3106. Secborg modules boards are unlocked by research properly (#3272)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	export_price = 5000
 
