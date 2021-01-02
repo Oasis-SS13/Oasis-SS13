@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ~/.discordauth
+# source ~/.discordauth
 
 # ~/.discordauth contains:
 # CHANNELID=x
@@ -12,7 +12,7 @@ set -f # disable pathname expansion
 set -C # noclobber
 
 readonly BASE_BRANCH_NAME="upstream-merge-"
-readonly BASE_PULL_URL="https://api.github.com/repos/tgstation/tgstation/pulls"
+readonly BASE_PULL_URL="https://api.github.com/repos/BeeStation/BeeStation-Hornet/pulls"
 
 # Ensure the current directory is a git directory
 if [ ! -d .git ]; then
@@ -40,17 +40,17 @@ containsElement () {
 }
 
 # Make sure we have our upstream remote
-if ! git remote | grep tgstation > /dev/null; then
-   git remote add tgstation https://github.com/tgstation/tgstation.git
+if ! git remote | grep beestation > /dev/null; then
+   git remote add beestation https://github.com/BeeStation/BeeStation-Hornet.git
 fi
 
-curl -v \
--H "Authorization: Bot $TOKEN" \
--H "User-Agent: myBotThing (http://some.url, v0.1)" \
--H "Content-Type: application/json" \
--X POST \
--d "{\"content\":\"Mirroring [$1] from /tg/ to Hippie\"}" \
-https://discordapp.com/api/channels/$CHANNELID/messages
+#curl -v \
+#-H "Authorization: Bot $TOKEN" \
+#-H "User-Agent: myBotThing (http://some.url, v0.1)" \
+#-H "Content-Type: application/json" \
+#-X POST \
+#-d "{\"content\":\"Mirroring [$1] from /tg/ to Hippie\"}" \
+#https://discordapp.com/api/channels/$CHANNELID/messages
 
 # We need to make sure we are always on a clean master when creating the new branch.
 # So we forcefully reset, clean and then checkout the master branch
@@ -107,4 +107,5 @@ git -c core.editor=true commit --allow-empty -m "$2"
 
 # Push them onto the branch
 echo "Pushing changes"
-git push -u origin "$BASE_BRANCH_NAME$1"
+# It's okay to force push; this is a temp branch
+git push -f -u origin "$BASE_BRANCH_NAME$1"
