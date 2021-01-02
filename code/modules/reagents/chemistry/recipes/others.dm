@@ -611,9 +611,13 @@
 	required_temp = 374
 
 /datum/chemical_reaction/corgium/on_reaction(datum/reagents/holder, created_volume)
-	var/location = get_turf(holder.my_atom)
-	for(var/i = rand(1, created_volume), i <= created_volume, i++) // More lulz.
-		new /mob/living/simple_animal/pet/dog/corgi(location)
+	if(isliving(holder.my_atom) && !iscorgi(holder.my_atom))
+		var/mob/living/L = holder
+		L.reagents.add_reagent(/datum/reagent/corgium, created_volume)
+	else
+		var/location = get_turf(holder.my_atom)
+		for(var/i in rand(1, created_volume) to created_volume) // More lulz.
+			new /mob/living/simple_animal/pet/dog/corgi(location)
 	..()
 
 /datum/chemical_reaction/hair_dye
