@@ -318,14 +318,12 @@
 /obj/item/storage/pill_bottle
 	name = "pill bottle"
 	desc = "It's an airtight container for storing medication."
-	icon_state = "pill_canister"
+	icon_state = "pill_canister_0"
 	icon = 'icons/obj/chemical.dmi'
 	item_state = "contsolid"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	w_class = WEIGHT_CLASS_SMALL
-<<<<<<< HEAD
-=======
 	var/pill_variance = 100 //probability pill_bottle has a different icon state. Put at 0 for no variance
 	var/pill_type = "pill_canister_"
 
@@ -333,7 +331,6 @@
 	. = ..()
 	if(prob(pill_variance))
 		icon_state = "[pill_type][rand(0,6)]"
->>>>>>> d46de23f41... a (#3291)
 
 /obj/item/storage/pill_bottle/ComponentInitialize()
 	. = ..()
