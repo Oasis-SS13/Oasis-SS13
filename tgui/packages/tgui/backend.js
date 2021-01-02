@@ -189,12 +189,7 @@ export const backendMiddleware = store => {
 
     // Resume on incoming update
     if (type === 'backend/update' && suspended) {
-<<<<<<< HEAD
-=======
-      // Show the payload
-      logger.log('backend/update', payload);
-      // Signal renderer that we have resumed
->>>>>>> 60ef122696... [Port] tgui: Refactor Asset Delivery (#3220)
+      logger.log('update', payload);
       resumeRenderer();
       // Setup drag
       setupDrag();
