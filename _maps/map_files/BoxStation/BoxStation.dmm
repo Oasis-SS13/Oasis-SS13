@@ -1057,6 +1057,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname,
+/obj/item/reagent_containers/glass/tube/krytox{
+	pixel_x = -2;
+	pixel_y = -4
+	},
 /turf/open/floor/plasteel,
 /area/security/prison)
 "acD" = (
@@ -11980,7 +11984,7 @@
 	pixel_x = -28
 	},
 /obj/item/flashlight/lamp/bananalamp{
-	pixel_y = 3
+	pixel_y = 17
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -11995,6 +11999,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
 "aGE" = (
@@ -19963,6 +19968,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/chemical,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "bdq" = (
@@ -33540,6 +33546,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/cmo)
 "bRS" = (
@@ -51483,6 +51490,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/carpet/orange,
 /area/crew_quarters/dorms)
 "jRm" = (

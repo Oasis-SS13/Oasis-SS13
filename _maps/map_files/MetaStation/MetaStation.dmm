@@ -877,6 +877,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/item/toy/cards/deck,
 /obj/item/toy/cards/deck,
+/obj/item/reagent_containers/glass/tube/krytox{
+	pixel_y = 7
+	},
 /turf/open/floor/plasteel,
 /area/security/prison)
 "acb" = (
@@ -49442,6 +49445,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen/invisible,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/engine/cult,
 /area/library)
 "bRn" = (
@@ -60050,6 +60054,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/cmo)
 "cnD" = (
@@ -80244,6 +80249,7 @@
 	pixel_y = -32
 	},
 /obj/structure/closet/crate/wooden/toy,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dis" = (
