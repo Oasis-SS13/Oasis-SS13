@@ -20603,6 +20603,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
 "aOz" = (
@@ -20611,15 +20612,15 @@
 	pixel_x = 26
 	},
 /obj/item/storage/crayons,
-/obj/item/storage/crayons,
 /obj/item/flashlight/lamp/bananalamp{
-	pixel_y = 5
+	pixel_x = 5;
+	pixel_y = 11
 	},
+/obj/item/storage/crayons,
 /obj/item/radio/intercom{
 	pixel_y = 26
 	},
 /obj/item/toy/figure/clown,
-/obj/item/clipboard,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -21110,6 +21111,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "aPq" = (
@@ -77461,6 +77463,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/library)
 "czM" = (
@@ -109666,6 +109669,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "dJl" = (
@@ -120787,6 +120791,10 @@
 	},
 /turf/open/floor/plasteel/dark/corner,
 /area/engine/storage_shared)
+"fne" = (
+/obj/item/reagent_containers/glass/tube/krytox,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "fno" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -125294,6 +125302,11 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/port)
+"uCl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/secure_closet/freezer/cream_pie,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "uHG" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -155669,7 +155682,7 @@ alg
 aFJ
 alf
 aIH
-alg
+fne
 alf
 aMP
 aDw
@@ -158244,7 +158257,7 @@ alg
 aug
 aug
 aug
-arB
+uCl
 aTs
 aug
 arB

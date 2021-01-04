@@ -18613,6 +18613,49 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
+"Yy" = (
+/obj/structure/table/wood,
+/obj/item/twohanded/dualsaber,
+/obj/item/twohanded/dualsaber,
+/obj/item/melee/transforming/energy/blade,
+/obj/item/melee/transforming/energy/blade/hardlight,
+/obj/item/melee/transforming/energy/sword/bananium,
+/obj/item/melee/transforming/energy/sword/bee,
+/obj/item/melee/transforming/energy/sword/pirate,
+/obj/item/melee/transforming/energy/axe,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"Yz" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"YA" = (
+/obj/structure/table/reinforced,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/reagent_containers/glass/tube/krytox,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"YB" = (
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/item/storage/box/holy_grenades,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
 "YE" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
