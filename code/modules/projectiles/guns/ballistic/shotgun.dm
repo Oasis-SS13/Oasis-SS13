@@ -202,6 +202,11 @@
 	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))
 		sawoff(user)
 
+/obj/item/gun/ballistic/shotgun/doublebarrel/sawnoff
+	item_state = "gun"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual/lethal
+	sawn_off = TRUE
+
 // IMPROVISED SHOTGUN //
 
 /obj/item/gun/ballistic/shotgun/doublebarrel/improvised
