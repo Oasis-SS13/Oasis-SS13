@@ -2,7 +2,7 @@
 //CIVILIAN//
 
 /mob/living/simple_animal/hostile/retaliate/cowboy
-	name = "Angry civilian"
+	name = "Cowboy"
 	desc = "A civilian of a small place that was forgotten by god ages ago."
 	icon = 'icons/mob/simple_human.dmi'
 	icon_state = "cowboy"
@@ -68,7 +68,7 @@
 		return
 
 /mob/living/simple_animal/hostile/retaliate/cowboy/rifle
-	name = "Angry cowboy with a rifle"
+	name = "Cowboy with a rifle"
 	desc = "This one got a long gun."
 	icon_state = "cowboyrifle"
 	icon_living = "cowboyrifle"
@@ -337,6 +337,7 @@
 	..()
 
 /mob/living/simple_animal/hostile/western_bandit/grenade
+	desc = "They are holding something red in their hands"
 	minimum_distance = 6
 	retreat_distance = 6
 	var/grenade = new /obj/item/grenade/syndieminibomb/dynamite
