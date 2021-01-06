@@ -26,3 +26,9 @@
 	caliber = "40mm"
 	icon_state = "40mmHE"
 	projectile_type = /obj/item/projectile/bullet/a40mm
+
+/obj/item/ammo_casing/a44winchester
+	name = ".44 winchester bullet casing"
+	desc = "A .44 winchester bullet casing."
+	caliber = ".44win"
+	projectile_type = /obj/item/projectile/bullet/a44winchester

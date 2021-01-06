@@ -107,3 +107,48 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 		user.put_in_hands(gun)
 	else
 		user.dropItemToGround(src, TRUE)
+
+//Winchester//
+
+/obj/item/gun/ballistic/winchester
+	name = "Winchester rifle"
+	desc = "A really old lever action rifle that for some reason still can be found nowadays. Uses .44 winchester bullet."
+	icon_state = "winchester"
+	item_state = "winchester"
+	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bolt_wording = "rack"
+	cartridge_wording = "bullet"
+	semi_auto = FALSE
+	internal_magazine = TRUE
+	fire_sound = null
+	tac_reloads = FALSE
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_MEDIUM
+	force = 10
+	flags_1 =  CONDUCT_1
+	rack_sound_vary = FALSE
+	vary_fire_sound = FALSE
+	bolt_type = BOLT_TYPE_STANDARD
+	casing_ejector = FALSE
+	load_sound = 'sound/weapons/shotguninsert.ogg'
+	rack_sound = 'Oasis/sound/winchesterrack.ogg'
+	pb_knockback = 0
+	mag_type = /obj/item/ammo_box/magazine/internal/winchester
+	recoil = 0
+
+/obj/item/gun/ballistic/winchester/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>You will automatically rack it if another hand is free.</span>"
+
+/obj/item/gun/ballistic/winchester/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+	..()
+	var/list/possible_sounds = list('Oasis/sound/winchestershot.ogg', 'Oasis/sound/winchestershot2.ogg', 'Oasis/sound/winchestershot3.ogg')
+	var/choosen_sound = pick(possible_sounds)
+	playsound(get_turf(src), choosen_sound, 80, 0, 0)
+	if(user.get_inactive_held_item())
+		return
+	else
+		rack()
