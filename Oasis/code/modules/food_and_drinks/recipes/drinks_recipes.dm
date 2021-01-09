@@ -31,7 +31,7 @@
 	name = "Salty water"
 	id = /datum/reagent/consumable/salty_water
 	results = list(/datum/reagent/consumable/salty_water = 5)
-	required_reagents = list(/datum/reagent/water = 5, /datum/reagent/medicine/salglu_solution = 1)
+	required_reagents = list(/datum/reagent/consumable/sodiumchloride = 1, /datum/reagent/medicine/salglu_solution = 5)
 	mix_message = "Nothing special."
 
 /datum/chemical_reaction/death_afternoon
