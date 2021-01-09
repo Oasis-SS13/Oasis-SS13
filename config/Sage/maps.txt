@@ -28,6 +28,10 @@ map pubbystation
 	votable
 endmap
 
+map endostation
+	votable
+endmap
+
 map deltastation
 	minplayers 40
 	votable

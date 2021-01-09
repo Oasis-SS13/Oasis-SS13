@@ -2367,7 +2367,7 @@
 "agc" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -3314,7 +3314,7 @@
 /area/science/research)
 "ain" = (
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/item/stack/ore/silver,
 /obj/item/stack/ore/silver,
@@ -5902,6 +5902,7 @@
 	pixel_x = 1;
 	pixel_y = 9
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/cmo)
 "aoT" = (
@@ -29452,11 +29453,12 @@
 "bnu" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/bananalamp{
-	pixel_y = 3
+	pixel_y = 16
 	},
 /obj/structure/sign/poster/contraband/clown{
 	pixel_x = -32
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "bnw" = (
@@ -35723,7 +35725,7 @@
 "bzw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
@@ -42207,7 +42209,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
@@ -45445,7 +45447,7 @@
 /area/science/robotics/lab)
 "bSQ" = (
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
@@ -47285,7 +47287,7 @@
 /area/maintenance/fore)
 "bWV" = (
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -47603,7 +47605,7 @@
 "bXS" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -49030,6 +49032,7 @@
 /area/crew_quarters/fitness/locker_room)
 "cbm" = (
 /obj/structure/closet/secure_closet/personal,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/fitness/locker_room)
 "cbn" = (
@@ -53471,6 +53474,10 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"lWq" = (
+/obj/item/reagent_containers/glass/tube/krytox,
+/turf/open/floor/plasteel/freezer,
+/area/security/prison)
 "maC" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -53484,6 +53491,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/foyer)
+"mbI" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/tube/krytox,
+/turf/open/floor/plasteel/cafeteria,
+/area/crew_quarters/fitness/recreation)
 "mgs" = (
 /obj/structure/sign/warning/electricshock,
 /turf/closed/wall/r_wall,
@@ -88766,7 +88783,7 @@ aCt
 aGx
 bmx
 acf
-aut
+mbI
 axg
 aCs
 asP
@@ -109630,7 +109647,7 @@ aqL
 art
 aiN
 aDS
-arq
+lWq
 aEe
 aij
 aaa

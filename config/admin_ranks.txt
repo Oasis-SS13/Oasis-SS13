@@ -64,6 +64,11 @@ Include = @ STEALTH SOUND DEBUG
 Exclude =
 Edit =
 
+Name = Coder
+Include = DEBUG VAREDIT SERVER SPAWN POLL
+Exclude = AUTOADMIN
+Edit =
+
 Name = Game Master
 Include = EVERYTHING
 Exclude =
@@ -85,9 +90,9 @@ Exclude =
 Edit = EVERYTHING
 
 Name = Map Master
-Include = EVERYTHING
+Include =  ADMIN POLL FUN DEBUG VAREDIT SPAWN BUILD
 Exclude =
-Edit = EVERYTHING
+Edit = 
 
 Name = Headmin
 Include = EVERYTHING
@@ -108,11 +113,6 @@ Name = Relations Manager
 Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
-
-Name = Coder
-Include = DEBUG VAREDIT SERVER SPAWN POLL
-Exclude = AUTOADMIN
-Edit =
 
 Name = CouncilMember
 Include = EVERYTHING

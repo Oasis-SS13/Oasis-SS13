@@ -852,7 +852,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/effect/spawner/lootdrop/costume,
 /obj/effect/spawner/lootdrop/costume,
@@ -3797,7 +3797,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/item/flashlight/lantern,
 /obj/structure/sign/poster/official/bless_this_spess{
@@ -4120,7 +4120,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/effect/spawner/lootdrop/maintenance/two,
 /turf/open/floor/plating,
@@ -26270,13 +26270,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
-"aNe" = (
-/obj/machinery/atmospherics/pipe/simple/general/visible,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/maintenance/disposal/incinerator)
 "aNf" = (
 /obj/structure/reflector/single/anchored{
 	dir = 5;
@@ -28065,6 +28058,7 @@
 /obj/machinery/status_display/evac{
 	pixel_x = -32
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/cmo)
 "aPC" = (
@@ -45456,7 +45450,7 @@
 "bnh" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
@@ -48933,6 +48927,7 @@
 	pixel_y = -28
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/library)
 "brU" = (
@@ -51816,7 +51811,7 @@
 "bwf" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/item/stock_parts/capacitor,
 /obj/effect/turf_decal/stripes/corner{
@@ -68406,7 +68401,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
@@ -71410,7 +71405,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/general/visible,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/item/tank/internals/oxygen/red{
 	pixel_x = 4
@@ -82867,6 +82862,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
 "cpl" = (
@@ -90275,7 +90271,6 @@
 	},
 /area/maintenance/starboard/aft)
 "czV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
 	},
@@ -90767,9 +90762,6 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/public/glass/incinerator/atmos_interior,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 9
-	},
 /obj/machinery/embedded_controller/radio/airlock_controller/incinerator_atmos{
 	pixel_x = 38;
 	pixel_y = 6
@@ -91167,7 +91159,7 @@
 "cBr" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /obj/structure/grille/broken,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -91763,7 +91755,7 @@
 "cCx" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate{
-	opened = TRUE
+	opened = 1
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
@@ -128040,7 +128032,7 @@ cLd
 bPG
 byz
 aFU
-aNe
+aFO
 cyP
 bKO
 coj
