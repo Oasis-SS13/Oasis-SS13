@@ -1,0 +1,701 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/turf/open/floor/plating/asteroid/airless,
+/area/sandland/surface/outdoors/unexplored)
+"d" = (
+/turf/closed/wall/mineral/bananium,
+/area/sandland/surface/outdoors/unexplored)
+"e" = (
+/obj/machinery/door/airlock/bananium,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"f" = (
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"g" = (
+/obj/effect/mob_spawn/human/clown,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"h" = (
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"i" = (
+/obj/structure/closet/crate,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"j" = (
+/obj/structure/closet/crate{
+	opened = 1
+	},
+/obj/item/stack/ore/bananium,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"k" = (
+/obj/structure/closet/secure_closet{
+	name = "clown locker";
+	req_access_txt = "46"
+	},
+/obj/item/clothing/shoes/clown_shoes/banana_shoes,
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
+	},
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"l" = (
+/obj/structure/shuttle/engine/heater{
+	color = "#FFFF00";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	color = "#FFFF00";
+	dir = 8
+	},
+/turf/open/floor/plating/airless{
+	color = "#FFFF00"
+	},
+/area/sandland/surface/outdoors/unexplored)
+"m" = (
+/obj/structure/shuttle/engine/propulsion/left{
+	color = "#FFFF00";
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"n" = (
+/turf/closed/mineral/random,
+/area/sandland/surface/outdoors/unexplored)
+"o" = (
+/obj/item/shard{
+	icon_state = "small"
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"p" = (
+/obj/item/stack/ore/bananium,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"q" = (
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"r" = (
+/obj/effect/mob_spawn/human/clown{
+	name = "Clown Pilot"
+	},
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"s" = (
+/obj/item/paper/fluff/ruins/crashedclownship/true_nation,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"t" = (
+/obj/structure/grille{
+	color = "#FFFF00"
+	},
+/obj/structure/window/reinforced{
+	color = "#FFFF00"
+	},
+/obj/structure/window/reinforced{
+	color = "#FFFF00";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	color = "#FFFF00";
+	dir = 8
+	},
+/turf/open/floor/plating/airless{
+	color = "#FFFF00"
+	},
+/area/sandland/surface/outdoors/unexplored)
+"u" = (
+/obj/item/shard,
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"v" = (
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"w" = (
+/obj/item/storage/bag/ore,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"x" = (
+/obj/item/pickaxe,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"y" = (
+/obj/structure/closet/crate,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/obj/item/stack/ore/bananium,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"z" = (
+/obj/item/shovel,
+/turf/open/floor/mineral/bananium/airless,
+/area/sandland/surface/outdoors/unexplored)
+"B" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"P" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"Q" = (
+/mob/living/simple_animal/hostile/retaliate/poison/snake,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"Z" = (
+/turf/closed/mineral/random/high_chance,
+/area/sandland/surface/outdoors/unexplored)
+
+(1,1,1) = {"
+f
+n
+n
+f
+f
+f
+f
+f
+f
+f
+f
+f
+f
+f
+f
+f
+f
+"}
+(2,1,1) = {"
+n
+n
+n
+n
+n
+f
+f
+f
+f
+f
+f
+n
+n
+n
+f
+f
+f
+"}
+(3,1,1) = {"
+n
+n
+n
+n
+n
+n
+f
+n
+n
+n
+n
+n
+n
+f
+f
+f
+f
+"}
+(4,1,1) = {"
+f
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+f
+f
+f
+f
+f
+"}
+(5,1,1) = {"
+f
+f
+n
+n
+Z
+n
+n
+n
+Z
+n
+n
+n
+n
+n
+n
+n
+f
+"}
+(6,1,1) = {"
+f
+f
+n
+n
+Z
+Z
+Z
+Z
+n
+n
+n
+n
+n
+n
+n
+f
+f
+"}
+(7,1,1) = {"
+f
+n
+n
+n
+Z
+Z
+Z
+Z
+Z
+Z
+n
+n
+n
+n
+f
+f
+f
+"}
+(8,1,1) = {"
+c
+n
+n
+Z
+Z
+Z
+Z
+Z
+Z
+n
+n
+n
+n
+n
+f
+Q
+f
+"}
+(9,1,1) = {"
+c
+n
+n
+n
+n
+Z
+Z
+Z
+Z
+Z
+n
+n
+n
+f
+f
+f
+f
+"}
+(10,1,1) = {"
+c
+n
+n
+n
+n
+n
+Z
+Z
+Z
+Z
+n
+n
+f
+f
+f
+f
+f
+"}
+(11,1,1) = {"
+c
+f
+n
+n
+n
+n
+Z
+Z
+Z
+Z
+n
+n
+f
+f
+f
+f
+f
+"}
+(12,1,1) = {"
+f
+f
+f
+f
+n
+n
+Z
+Z
+Z
+Z
+Z
+n
+n
+n
+f
+f
+f
+"}
+(13,1,1) = {"
+f
+f
+f
+n
+n
+n
+n
+Z
+Z
+Z
+Z
+n
+n
+n
+n
+n
+f
+"}
+(14,1,1) = {"
+f
+n
+n
+n
+f
+n
+n
+n
+n
+Z
+Z
+Z
+n
+n
+B
+n
+f
+"}
+(15,1,1) = {"
+f
+n
+n
+n
+f
+f
+n
+n
+n
+n
+Z
+Z
+Z
+n
+n
+n
+f
+"}
+(16,1,1) = {"
+f
+n
+f
+f
+f
+d
+n
+n
+t
+d
+n
+Z
+Z
+n
+n
+n
+n
+"}
+(17,1,1) = {"
+f
+f
+Q
+f
+f
+d
+n
+n
+h
+d
+n
+n
+Z
+n
+f
+n
+n
+"}
+(18,1,1) = {"
+f
+f
+f
+f
+d
+d
+n
+q
+u
+d
+d
+n
+n
+n
+f
+f
+n
+"}
+(19,1,1) = {"
+f
+f
+f
+f
+d
+f
+o
+r
+h
+w
+d
+n
+n
+n
+f
+f
+f
+"}
+(20,1,1) = {"
+f
+f
+f
+f
+d
+g
+h
+h
+v
+x
+d
+n
+n
+n
+f
+f
+f
+"}
+(21,1,1) = {"
+f
+f
+f
+f
+e
+h
+h
+s
+h
+h
+e
+n
+n
+f
+f
+f
+f
+"}
+(22,1,1) = {"
+f
+f
+f
+f
+e
+h
+h
+p
+g
+h
+e
+n
+n
+f
+f
+f
+f
+"}
+(23,1,1) = {"
+f
+f
+f
+f
+d
+i
+h
+h
+h
+y
+d
+n
+f
+f
+f
+f
+f
+"}
+(24,1,1) = {"
+f
+f
+f
+f
+d
+i
+h
+p
+h
+y
+d
+n
+f
+Q
+f
+f
+f
+"}
+(25,1,1) = {"
+f
+P
+f
+f
+d
+j
+p
+h
+h
+i
+d
+n
+f
+f
+f
+f
+f
+"}
+(26,1,1) = {"
+f
+f
+f
+f
+d
+k
+h
+p
+p
+z
+d
+f
+f
+f
+f
+f
+f
+"}
+(27,1,1) = {"
+f
+f
+f
+f
+d
+l
+l
+l
+l
+l
+d
+f
+f
+f
+f
+f
+f
+"}
+(28,1,1) = {"
+f
+f
+f
+f
+f
+m
+m
+m
+m
+m
+f
+f
+f
+f
+f
+f
+f
+"}
