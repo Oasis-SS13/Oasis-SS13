@@ -376,6 +376,11 @@
 	integer = FALSE
 	min_val = 0
 
+/datum/config_entry/number/unsand_budget // Underground of ScorchStation
+	config_entry_value = 50
+	integer = FALSE
+	min_val = 0
+
 /datum/config_entry/number/space_budget
 	config_entry_value = 16
 	integer = FALSE

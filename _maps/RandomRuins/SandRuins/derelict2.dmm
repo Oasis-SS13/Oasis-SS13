@@ -1,0 +1,499 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"b" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"c" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"d" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"e" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"f" = (
+/turf/closed/wall,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"g" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"h" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"i" = (
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"j" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"k" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"l" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"m" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"n" = (
+/obj/structure/table,
+/obj/item/trash/plate{
+	pixel_x = 10
+	},
+/obj/item/trash/plate{
+	pixel_x = -10
+	},
+/obj/item/trash/candle{
+	pixel_y = 11
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"o" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"p" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"q" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"r" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"w" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"x" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"y" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/wine{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 2;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"D" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"H" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"I" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"L" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"M" = (
+/obj/structure/table,
+/obj/item/trash/can/food/beans{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"P" = (
+/obj/structure/fermenting_barrel,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+"W" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"Z" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/ruin/space/has_grav/powered/dinner_for_two)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+I
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+a
+x
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+a
+a
+f
+g
+Z
+g
+f
+a
+a
+a
+a
+x
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+a
+f
+P
+H
+i
+i
+q
+f
+a
+a
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+f
+h
+i
+i
+i
+w
+i
+y
+f
+a
+a
+a
+a
+"}
+(8,1,1) = {"
+b
+b
+b
+b
+g
+i
+H
+i
+m
+i
+i
+D
+g
+b
+b
+b
+b
+"}
+(9,1,1) = {"
+c
+e
+e
+e
+L
+i
+i
+i
+n
+i
+H
+i
+c
+e
+e
+e
+L
+"}
+(10,1,1) = {"
+d
+d
+d
+d
+g
+i
+i
+D
+o
+i
+i
+i
+g
+d
+d
+d
+d
+"}
+(11,1,1) = {"
+a
+a
+a
+a
+f
+M
+w
+i
+i
+H
+i
+r
+f
+a
+a
+a
+a
+"}
+(12,1,1) = {"
+a
+a
+a
+a
+a
+f
+j
+i
+i
+i
+i
+f
+a
+a
+a
+a
+a
+"}
+(13,1,1) = {"
+a
+a
+a
+a
+a
+a
+f
+g
+I
+g
+f
+a
+a
+a
+a
+a
+a
+"}
+(14,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(15,1,1) = {"
+W
+a
+a
+a
+a
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(16,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+l
+p
+a
+a
+a
+a
+a
+a
+a
+"}
+(17,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+k
+Z
+p
+a
+a
+a
+a
+a
+a
+a
+"}
