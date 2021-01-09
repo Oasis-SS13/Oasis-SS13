@@ -363,11 +363,11 @@
 		return update_queue_on_page()
 	if(href_list["process_queue"])
 		spawn(0)
-		/*if(processing_queue || being_built) Maybe fixed
-			return FALSE*/
-		processing_queue = 1
-		process_queue()
-		processing_queue = 0
+			if(processing_queue || being_built)
+				return
+			processing_queue = 1
+			process_queue()
+			processing_queue = 0
 	if(href_list["clear_temp"])
 		temp = null
 	if(href_list["screen"])
