@@ -61,10 +61,10 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 /mob/dead/observer/Initialize()
 	set_invisibility(GLOB.observer_default_invisibility)
 
-	verbs += list(
+	add_verb(list(
 		/mob/dead/observer/proc/dead_tele,
 		/mob/dead/observer/proc/open_spawners_menu,
-		/mob/dead/observer/proc/tray_view)
+		/mob/dead/observer/proc/tray_view))
 
 	if(icon_state in GLOB.ghost_forms_with_directions_list)
 		ghostimage_default = image(src.icon,src,src.icon_state + "_nodir")
@@ -125,10 +125,15 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	real_name = name
 
 	if(!fun_verbs)
+<<<<<<< HEAD
 		verbs -= /mob/dead/observer/verb/boo
 
 	if(!possess_verb) // OASIS EDIT
 		verbs -= /mob/dead/observer/verb/possess
+=======
+		remove_verb(/mob/dead/observer/verb/boo)
+		remove_verb(/mob/dead/observer/verb/possess)
+>>>>>>> c748337901... Tgui stat panel (#2771)
 
 	animate(src, pixel_y = 2, time = 10, loop = -1)
 
@@ -784,6 +789,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			ghostimage_simple.icon_state = icon_state
 		if("fun_verbs")
 			if(fun_verbs)
+<<<<<<< HEAD
 				verbs += /mob/dead/observer/verb/boo
 				// OASIS EDIT
 			else
@@ -795,6 +801,13 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			else
 // OASIS EDIT END
 				verbs -= /mob/dead/observer/verb/possess
+=======
+				add_verb(/mob/dead/observer/verb/boo)
+				add_verb(/mob/dead/observer/verb/possess)
+			else
+				remove_verb(/mob/dead/observer/verb/boo)
+				remove_verb(/mob/dead/observer/verb/possess)
+>>>>>>> c748337901... Tgui stat panel (#2771)
 
 /mob/dead/observer/reset_perspective(atom/A)
 	if(client)
