@@ -125,15 +125,9 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	real_name = name
 
 	if(!fun_verbs)
-<<<<<<< HEAD
-		verbs -= /mob/dead/observer/verb/boo
-
-	if(!possess_verb) // OASIS EDIT
-		verbs -= /mob/dead/observer/verb/possess
-=======
 		remove_verb(/mob/dead/observer/verb/boo)
+	if(!possess_verb)
 		remove_verb(/mob/dead/observer/verb/possess)
->>>>>>> c748337901... Tgui stat panel (#2771)
 
 	animate(src, pixel_y = 2, time = 10, loop = -1)
 
@@ -787,27 +781,17 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if("icon_state")
 			ghostimage_default.icon_state = icon_state
 			ghostimage_simple.icon_state = icon_state
-		if("fun_verbs")
-			if(fun_verbs)
-<<<<<<< HEAD
-				verbs += /mob/dead/observer/verb/boo
-				// OASIS EDIT
-			else
-				verbs -= /mob/dead/observer/verb/boo
-// OASIS EDIT BEGIN
-		if("possess_verb")
-			if(possess_verb)
-				verbs += /mob/dead/observer/verb/possess
-			else
-// OASIS EDIT END
-				verbs -= /mob/dead/observer/verb/possess
-=======
-				add_verb(/mob/dead/observer/verb/boo)
-				add_verb(/mob/dead/observer/verb/possess)
-			else
-				remove_verb(/mob/dead/observer/verb/boo)
-				remove_verb(/mob/dead/observer/verb/possess)
->>>>>>> c748337901... Tgui stat panel (#2771)
+		if("fun_verbs")//OASIS EDIT
+			if(fun_verbs)//OASIS EDIT
+				add_verb(/mob/dead/observer/verb/boo)//OASIS EDIT
+			else//OASIS EDIT
+				remove_verb(/mob/dead/observer/verb/boo)//OASIS EDIT
+
+		if("possess_verb") //OASIS EDIT
+			if(possess_verb)		//OASIS EDIT
+				add_verb(/mob/dead/observer/verb/possess)//OASIS EDIT
+			else //OASIS EDIT
+				remove_verb(/mob/dead/observer/verb/possess)//OASIS EDIT
 
 /mob/dead/observer/reset_perspective(atom/A)
 	if(client)
