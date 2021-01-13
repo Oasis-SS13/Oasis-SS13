@@ -50,8 +50,5 @@
 
 /datum/config_entry/string/medal_hub_password
 	protection = CONFIG_ENTRY_HIDDEN
-<<<<<<< HEAD
 
 /datum/config_entry/string/bot_ip // OASIS EDIT
-=======
->>>>>>> 39b77fa287... Adds a new restricted-use comms key for cross-community comms (#3347)
