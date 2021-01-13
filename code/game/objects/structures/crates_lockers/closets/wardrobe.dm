@@ -174,9 +174,6 @@
 	if(prob(30))
 		new /obj/item/clothing/suit/hooded/wintercoat(src)
 		new /obj/item/clothing/shoes/winterboots(src)
-<<<<<<< HEAD
-=======
 	if(prob(40))
 		new /obj/item/clothing/suit/toggle/softshell(src)
->>>>>>> 4f0f4f32c5... Removes the double prob(40) for the new softshell jacket (#3380)
 	return
