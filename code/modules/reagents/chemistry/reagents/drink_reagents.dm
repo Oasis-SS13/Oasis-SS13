@@ -840,8 +840,7 @@
 	taste_description = "succulent bungo"
 	glass_icon_state = "glass_yellow"
 	glass_name = "glass of bungo juice"
-<<<<<<< HEAD
-	glass_desc = "Exotic! You feel like you are on vactation already."
+	glass_desc = "Exotic! You feel like you are on vacation already."
 
 
 
@@ -854,6 +853,3 @@
 	..()
 /datum/reagent/consumable/reaction_obj(obj/O, reac_volume)
 	O.extinguish()
-=======
-	glass_desc = "Exotic! You feel like you are on vacation already."
->>>>>>> e4d4530567... Fix: Random Names and Grammar: Part2: Redux: The Honkening (#2940)
