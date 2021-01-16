@@ -35,7 +35,3 @@
 	if(tomatosseen >= frenzythreshold)
 		attack_same = TRUE
 	. = ..()
-<<<<<<< HEAD
-=======
-
->>>>>>> ac7f8c29ed... Optional improved / vibrant say formatting (#3165)
