@@ -152,11 +152,23 @@
 /**********************Sandland Areas**************************/ // ScorchStation
 
 /area/sandland
-	icon_state = "sandclean"
+	icon_state = "space"
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
+	requires_power = TRUE
+	always_unpowered = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	power_light = FALSE
+	power_equip = FALSE
+	power_environ = FALSE
+	valid_territory = FALSE
+	outdoors = TRUE
+	ambient_music = MINING
+	blob_allowed = FALSE //Eating up space doesn't count for victory as a blob.
+	ambient_buzz = null // Space is pretty quiet
 
 /area/sandland/surface
+	icon_state = "sandclean"
 	name = "Sandland"
 	always_unpowered = TRUE
 	poweralm = FALSE

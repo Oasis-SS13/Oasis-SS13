@@ -95,5 +95,4 @@
 /turf/open/floor/plating/asteroid/sand/sand_land_surface
 	initial_gas_mix = DESERT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/floor/plating/asteroid/sand
-
+	baseturfs = /turf/open/floor/plating/asteroid/cavesand/cavesand_land_surface
