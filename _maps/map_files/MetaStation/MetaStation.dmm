@@ -82683,12 +82683,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
-"fZG" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/door/firedoor/window,
-/turf/open/floor/plating,
-/area/science/shuttledock)
 "gbU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 8
@@ -83471,6 +83465,7 @@
 "jbz" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/science/shuttledock)
 "jdU" = (
@@ -84762,10 +84757,8 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
-/obj/structure/frame/computer{
-	desc = "Looks like the board never made it to this one.";
-	dir = 8;
-	name = "shuttle console frame"
+/obj/machinery/computer/shuttle/science{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
@@ -126328,7 +126321,7 @@ osW
 osW
 ctl
 nYJ
-fZG
+nYJ
 nYJ
 pCO
 xHp
@@ -126592,7 +126585,7 @@ wcC
 jbz
 jbz
 lZW
-xVS
+nYJ
 mjJ
 lMJ
 aaf
