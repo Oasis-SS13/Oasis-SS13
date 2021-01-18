@@ -615,13 +615,14 @@
 			if(tl <= SHUTTLE_RIPPLE_TIME)
 				create_ripples(destination, tl)
 
-	var/obj/docking_port/stationary/S0 = get_docked()
-	if(istype(S0, /obj/docking_port/stationary/transit) && timeLeft(1) <= PARALLAX_LOOP_TIME)
-		for(var/place in shuttle_areas)
-			var/area/shuttle/shuttle_area = place
-			if(shuttle_area.parallax_movedir)
-				parallax_slowdown()
+//	var/obj/docking_port/stationary/S0 = get_docked()
+//	if(istype(S0, /obj/docking_port/stationary/transit) && timeLeft(1) <= PARALLAX_LOOP_TIME)
+//		for(var/place in shuttle_areas)
+//			var/area/shuttle/shuttle_area = place
+//			if(shuttle_area.parallax_movedir)
+//				parallax_slowdown()
 
+/*
 /obj/docking_port/mobile/proc/parallax_slowdown()
 	for(var/place in shuttle_areas)
 		var/area/shuttle/shuttle_area = place
@@ -637,6 +638,7 @@
 			var/atom/movable/AM = thing2
 			if (length(AM.client_mobs_in_contents))
 				AM.update_parallax_contents()
+*/
 
 /obj/docking_port/mobile/proc/check_transit_zone()
 	if(assigned_transit)

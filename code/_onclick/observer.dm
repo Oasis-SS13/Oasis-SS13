@@ -1,6 +1,6 @@
 /mob/dead/observer/DblClickOn(atom/A, params)
 	if(check_click_intercept(params, A))
-		return	
+		return
 
 	if(can_reenter_corpse && mind && mind.current)
 		if(A == mind.current || (mind.current in A)) // double click your corpse or whatever holds it
@@ -14,7 +14,7 @@
 	// Otherwise jump
 	else if(A.loc)
 		forceMove(get_turf(A))
-		update_parallax_contents()
+//		update_parallax_contents()
 
 /mob/dead/observer/ClickOn(var/atom/A, var/params)
 	if(check_click_intercept(params,A))
