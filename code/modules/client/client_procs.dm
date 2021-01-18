@@ -539,9 +539,9 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	GLOB.clients -= src
 	GLOB.mentors -= src
 	QDEL_LIST_ASSOC_VAL(char_render_holders)
-	if(movingmob != null)
-		movingmob.client_mobs_in_contents -= mob
-		UNSETEMPTY(movingmob.client_mobs_in_contents)
+//	if(movingmob != null)
+//		movingmob.client_mobs_in_contents -= mob
+//		UNSETEMPTY(movingmob.client_mobs_in_contents)
 	Master.UpdateTickRate()
 	return ..()
 
