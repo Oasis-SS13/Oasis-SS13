@@ -477,8 +477,14 @@ ROUNDSTART_RACES ipc
 ## Races that are better than humans in some ways, but worse in others
 ROUNDSTART_RACES ethereal
 ROUNDSTART_RACES apid
+<<<<<<< HEAD
 ROUNDSTART_RACES jelly
 ROUNDSTART_RACES iron_golem
+=======
+ROUNDSTART_RACES oozeling
+#ROUNDSTART_RACES jelly
+#ROUNDSTART_RACES iron_golem
+>>>>>>> 0ab1e7ab16... Roundstart Slimepeople Race: Oozelings (#3322)
 #ROUNDSTART_RACES adamantine_golem
 #ROUNDSTART_RACES plasma_golem
 ROUNDSTART_RACES diamond_golem
