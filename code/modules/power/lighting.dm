@@ -352,7 +352,23 @@
 			icon_state = "[base_state]-burned"
 		if(LIGHT_BROKEN)
 			icon_state = "[base_state]-broken"
+<<<<<<< HEAD
 	return
+=======
+
+/obj/machinery/light/update_overlays()
+	. = ..()
+	if(on || emergency_mode)
+		if(!lighting_overlays)
+			lighting_overlays = list()
+		var/mutable_appearance/LO = lighting_overlays["[base_state]-[light_power]-[light_color]"]
+		if(!LO)
+			LO = mutable_appearance(overlayicon, base_state, ABOVE_LIGHTING_LAYER, ABOVE_LIGHTING_PLANE)
+			LO.color = light_color
+			LO.alpha = clamp(light_power*255, 30, 200)
+			lighting_overlays["[base_state]-[light_power]-[light_color]"] = LO
+		. += LO
+>>>>>>> 52bff87c3b... Aligns lighting overlays to lighting fixtures on direction changes. (#3488)
 
 // update the icon_state and luminosity of the light depending on its state
 /obj/machinery/light/proc/update(trigger = TRUE)
