@@ -68,12 +68,40 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		A.limited_stock = limited_stock
 		I.refundable = FALSE //THIS MAN USES ONE WEIRD TRICK TO GAIN FREE TC, CODERS HATES HIM!
 		A.refundable = FALSE
+<<<<<<< HEAD
 		if(A.cost >= 20) //Tough love for nuke ops
 			discount *= 0.5
 		A.category = category_name
 		A.cost = max(round(A.cost * discount),1)
 		A.name += " ([round(((initial(A.cost)-A.cost)/initial(A.cost))*100)]% off!)"
 		A.desc += " Normally costs [initial(A.cost)] TC. All sales final. [pick(disclaimer)]"
+=======
+		switch(rand(1, 5))
+			if(1 to 3)
+				//X% off!
+				var/discount = A.get_discount()
+				if(A.cost >= 20) //Tough love for nuke ops
+					discount *= 0.5
+				A.cost = max(round(A.cost * discount), 1)
+				A.name += " ([round(((initial(A.cost)-A.cost)/initial(A.cost))*100)]% off!)"
+				A.desc += " Normally costs [initial(A.cost)] TC. All sales final. [pick(disclaimer)]"
+			if(4)
+				//Buy 1 get 1 free!
+				A.name += " (Buy 1 get 1 free!)"
+				A.desc += " Obtain 2 for the price of 1. All sales final. [pick(disclaimer)]"
+				A.spawn_amount = 2
+			if(5)
+				//Get 2 items with their combined price reduced.
+				var/datum/uplink_item/second_I = pick_n_take(sale_items)
+				var/total_cost = second_I.cost + I.cost
+				var/discount = A.get_discount()
+				var/final_cost = max(round(total_cost * discount), 1)
+				//Setup the item
+				A.cost = final_cost
+				A.name += " + [second_I.name] (Discounted Bundle - [100-(round((final_cost / total_cost)*100))]% off!)"
+				A.desc += " Also contains [second_I.name]. Normally costs [total_cost] TC when bought together. All sales final. [pick(disclaimer)]"
+				A.bonus_items = list(second_I.item)
+>>>>>>> c9cfca2890... Fixes package discounts claiming to be 400% off when they are 75% off. (#3495)
 		A.discounted = TRUE
 		A.item = I.item
 
