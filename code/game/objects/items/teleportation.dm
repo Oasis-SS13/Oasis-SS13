@@ -6,6 +6,7 @@
  * Contains:
  *		Locator
  *		Hand-tele
+ *		Syndicate Teleporter
  */
 
 /*
@@ -234,8 +235,6 @@
 		else
 			itemUser.visible_message("<span class='suicide'>[user] looks even further depressed as they realize they do not have a head...and suddenly dies of shame!</span>")
 		return (BRUTELOSS)
-<<<<<<< HEAD
-=======
 		
 /*
  * Syndicate Teleporter
@@ -385,4 +384,3 @@
 /obj/item/teleporter/admin
 	charges = 999
 	max_charges = 999
->>>>>>> 08e53962d2... initial (#3479)
