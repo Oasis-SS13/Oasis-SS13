@@ -1243,6 +1243,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"Wo" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "Wy" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -1341,9 +1347,9 @@ Cl
 Cl
 Cl
 Cl
+AD
 Cl
-Cl
-Cl
+AD
 Cl
 Ao
 Ao
@@ -1971,7 +1977,7 @@ ne
 lD
 pm
 lD
-lD
+Wo
 wA
 mz
 ne

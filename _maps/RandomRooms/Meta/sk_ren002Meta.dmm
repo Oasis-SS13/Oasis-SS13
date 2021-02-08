@@ -1335,6 +1335,12 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"Nn" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/turf/open/space,
+/area/space/nearstation)
 "Nt" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -2092,7 +2098,7 @@ Cz
 VR
 Yk
 tZ
-IV
+Nn
 "}
 (11,1,1) = {"
 oz

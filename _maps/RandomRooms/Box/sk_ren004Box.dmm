@@ -1630,7 +1630,7 @@
 /area/space/nearstation)
 "Kx" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 5
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -1728,6 +1728,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
+/obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "Mw" = (
@@ -1739,7 +1740,7 @@
 /area/engine/supermatter)
 "MU" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
+	dir = 5
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -1994,9 +1995,8 @@
 /area/engine/engineering)
 "TW" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 4
+	dir = 10
 	},
-/obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "TX" = (
@@ -2870,7 +2870,7 @@ lw
 op
 UC
 TW
-op
+MU
 OG
 eN
 Jz
@@ -2898,7 +2898,7 @@ cU
 Pn
 op
 UC
-MU
+op
 Kx
 Pn
 Pn

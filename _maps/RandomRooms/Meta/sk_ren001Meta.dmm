@@ -488,6 +488,13 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"tI" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/obj/machinery/meter,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "tK" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -507,6 +514,12 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"ug" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 10
+	},
+/turf/closed/wall/r_wall,
+/area/maintenance/starboard/fore)
 "wi" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -872,6 +885,12 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"JE" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
 "Kv" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1213,6 +1232,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"XS" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/maintenance/starboard/fore)
 "XW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
@@ -1437,7 +1462,7 @@ Xv
 yV
 Xv
 Sv
-Wh
+JE
 "}
 (8,1,1) = {"
 Sv
@@ -1462,7 +1487,7 @@ Sp
 Sp
 wG
 Sv
-Wh
+tI
 "}
 (9,1,1) = {"
 Sv
@@ -1487,7 +1512,7 @@ lb
 pM
 KM
 Sv
-Sv
+XS
 "}
 (10,1,1) = {"
 Sv
@@ -1512,7 +1537,7 @@ lb
 lb
 cB
 Sv
-Sv
+ug
 "}
 (11,1,1) = {"
 Ao
