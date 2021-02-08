@@ -1,0 +1,52 @@
+// DM Environment file for OasisStation.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+// BEGIN_INTERNALS
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+#define DEBUG
+// END_PREFERENCES
+
+#include "beestation.dme"
+
+// BEGIN_INCLUDE
+#include "Oasis\code\controllers\subsystem\redbot.dm"
+#include "Oasis\code\datums\world_topic.dm"
+#include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
+#include "Oasis\code\game\objects\items\religion.dm"
+#include "Oasis\code\game\objects\structures\chairs.dm"
+#include "Oasis\code\katecode\greatervampire.dm"
+#include "Oasis\code\katecode\katspells.dm"
+#include "Oasis\code\modules\food_and_drinks\recipes\drinks_recipes.dm"
+#include "Oasis\code\modules\hydroponics\grown\mushrooms.dm"
+#include "Oasis\code\modules\integrated_electronics\subtypes\manipulation.dm"
+#include "Oasis\code\modules\integrated_electronics\subtypes\reagents.dm"
+#include "Oasis\code\modules\integrated_electronics\syndicate_electronics\syndicate.dm"
+#include "Oasis\code\modules\mob\oasis_emotes.dm"
+#include "Oasis\code\modules\mob\living\simple_animal\hostile\corpse.dm"
+#include "Oasis\code\modules\mob\living\simple_animal\hostile\desert_mobs.dm"
+#include "Oasis\code\modules\mob\living\simple_animal\hostile\mushroom.dm"
+//#include "Oasis\code\modules\mob\living\simple_animal\hostile\megafauna\spirit\bill.dm"
+#include "Oasis\code\modules\reagents\chemistry\reagent_containers\hypospray.dm"
+#include "Oasis\code\modules\reagents\chemistry\reagents\alcohol_reagents.dm"
+#include "Oasis\code\modules\reagents\chemistry\reagents\drink_reagents.dm"
+#include "Oasis\code\modules\reagents\chemistry\reagents\other_reagents.dm"
+#include "Oasis\code\modules\reagents\chemistry\recipes\others.dm"
+#include "Oasis\hippiestation\code\modules\pool\pool_controller.dm"
+#include "Oasis\hippiestation\code\modules\pool\pool_drain.dm"
+#include "Oasis\hippiestation\code\modules\pool\pool_main.dm"
+#include "Oasis\hippiestation\code\modules\pool\pool_wires.dm"
+#include "Oasis\SCP_MAIN\code\game\machinery\doors\airlock.dm"
+#include "Oasis\SCP_MAIN\code\game\machinery\doors\firelock.dm"
+#include "Oasis\SCP_MAIN\code\game\machinery\doors\poddoor.dm"
+#include "Oasis\SCP_MAIN\datums\SCP-012.dm"
+#include "Oasis\SCP_MAIN\datums\SCP-151.dm"
+#include "Oasis\SCP_MAIN\datums\SCP-173.dm"
+#include "Oasis\SCP_MAIN\datums\SCP-294.dm"
+#include "Oasis\SCP_MAIN\datums\SCP-529.dm"
+// END_INCLUDE

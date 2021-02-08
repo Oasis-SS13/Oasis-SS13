@@ -23,7 +23,7 @@ obj/item/gun/ballistic/rifle/update_icon()
 
 obj/item/gun/ballistic/rifle/rack(mob/user = null)
 	if (bolt_locked == FALSE)
-		to_chat(user, "<span class='notice'>You open the bolt of \the [src]</span>")
+		to_chat(user, "<span class='notice'>You open the bolt of \the [src].</span>")
 		playsound(src, rack_sound, rack_sound_volume, rack_sound_vary)
 		process_chamber(FALSE, FALSE, FALSE)
 		bolt_locked = TRUE
@@ -55,7 +55,7 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 	desc = "This piece of junk looks like something that could have been used 700 years ago. It feels slightly moist."
 	icon_state = "moistnugget"
 	item_state = "moistnugget"
-	slot_flags = 0 //no ITEM_SLOT_BACK sprite, alas
+	slot_flags = ITEM_SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	can_bayonet = TRUE
 	knife_x_offset = 27
@@ -74,6 +74,7 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 	pin = /obj/item/firing_pin/magic
 	icon_state = "arcane_barrage"
 	item_state = "arcane_barrage"
+	slot_flags = null
 	can_bayonet = FALSE
 	item_flags = NEEDS_PERMIT | DROPDEL | ABSTRACT | NOBLUDGEON
 	flags_1 = NONE
@@ -106,3 +107,48 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 		user.put_in_hands(gun)
 	else
 		user.dropItemToGround(src, TRUE)
+
+//Winchester//
+
+/obj/item/gun/ballistic/winchester
+	name = "Winchester rifle"
+	desc = "A really old lever action rifle that for some reason still can be found nowadays. Uses .44 winchester bullet."
+	icon_state = "winchester"
+	item_state = "winchester"
+	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bolt_wording = "rack"
+	cartridge_wording = "bullet"
+	semi_auto = FALSE
+	internal_magazine = TRUE
+	fire_sound = null
+	tac_reloads = FALSE
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_MEDIUM
+	force = 10
+	flags_1 =  CONDUCT_1
+	rack_sound_vary = FALSE
+	vary_fire_sound = FALSE
+	bolt_type = BOLT_TYPE_STANDARD
+	casing_ejector = FALSE
+	load_sound = 'sound/weapons/shotguninsert.ogg'
+	rack_sound = 'Oasis/sound/winchesterrack.ogg'
+	pb_knockback = 0
+	mag_type = /obj/item/ammo_box/magazine/internal/winchester
+	recoil = 0
+
+/obj/item/gun/ballistic/winchester/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>You will automatically rack it if another hand is free.</span>"
+
+/obj/item/gun/ballistic/winchester/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+	..()
+	var/list/possible_sounds = list('Oasis/sound/winchestershot.ogg', 'Oasis/sound/winchestershot2.ogg', 'Oasis/sound/winchestershot3.ogg')
+	var/choosen_sound = pick(possible_sounds)
+	playsound(get_turf(src), choosen_sound, 80, 0, 0)
+	if(user.get_inactive_held_item())
+		return
+	else
+		rack()

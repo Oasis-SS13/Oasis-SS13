@@ -42,9 +42,9 @@
 
 /obj/item/melee/touch_attack/mansus_fist
 	name = "Mansus Grasp"
-	desc = "A sinister looking aura that distorts the flow of reality around it. Causes knockdown, major stamina damage aswell as some Brute. It gains additional beneficial effects with certain knowledges you can research."
-	icon_state = "disintegrate"
-	item_state = "disintegrate"
+	desc = "A sinister looking aura that distorts the flow of reality around it. Mutes, causes knockdown, major stamina damage aswell as some Brute. It gains additional beneficial effects with certain knowledges you can research."
+	icon_state = "mansus_grasp"
+	item_state = "mansus_grasp"
 	catchphrase = "R'CH T'H TR'TH"
 
 /obj/item/melee/touch_attack/mansus_fist/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
@@ -66,6 +66,7 @@
 		use_charge = TRUE
 		var/mob/living/carbon/C = target
 		C.adjustBruteLoss(10)
+		C.silent = 3 SECONDS
 		C.AdjustKnockdown(5 SECONDS)
 		C.adjustStaminaLoss(80)
 	var/list/knowledge = cultie.get_all_knowledge()

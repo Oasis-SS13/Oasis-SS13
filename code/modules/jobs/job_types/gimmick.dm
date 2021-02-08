@@ -109,3 +109,23 @@
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(/obj/item/choice_beacon/pet/ems=1)
+
+/datum/job/gimmick/celebrity
+	title = "VIP"
+	flag = CELEBRITY
+	outfit = /datum/outfit/job/gimmick/celebrity
+	access = list(ACCESS_MAINT_TUNNELS) //Assistants with shitloads of money, what could go wrong?
+	minimal_access = list(ACCESS_MAINT_TUNNELS)
+	gimmick = TRUE
+	paycheck = PAYCHECK_VIP //our power is being fucking rich
+
+/datum/outfit/job/gimmick/celebrity
+	name = "VIP"
+	jobtype = /datum/job/gimmick/celebrity
+
+	belt = /obj/item/pda/celebrity
+	glasses = /obj/item/clothing/glasses/sunglasses/advanced
+	ears = /obj/item/radio/headset/heads //VIP can talk loud for no reason
+	uniform = /obj/item/clothing/under/suit/black_really
+	shoes = /obj/item/clothing/shoes/laceup

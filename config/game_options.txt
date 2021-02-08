@@ -35,9 +35,7 @@ EMOJIS
 ## These values get directly added to values and totals ingame.
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
-## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
 RUN_DELAY 1.2
-WALK_DELAY 3
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
 ## Entries completely override all subtypes. Later entries have precedence over earlier entries.
@@ -85,6 +83,9 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 ## GAME MODES ###
 
+#Set the Master (Default) Game Mode.
+MASTER_MODE secret
+
 ## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
 #NO_INTERCEPT_REPORT
 
@@ -94,6 +95,8 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 PROBABILITY TRAITOR 7
 PROBABILITY CULT 6
+PROBABILITY DYNAMIC 6
+PROBABILITY HERESY 7
 PROBABILITY NUCLEAR 6
 PROBABILITY TRAITORCHAN 5
 PROBABILITY CHANGELING 5
@@ -104,7 +107,8 @@ PROBABILITY TRAITORBRO 3
 PROBABILITY GANG 3
 PROBABILITY WIZARD 4
 PROBABILITY CLOWNOPS 2
-PROBABILITY MONKEY 1
+PROBABILITY CLOCKCULT 1
+PROBABILITY MONKEY 0
 PROBABILITY METEOR 0
 PROBABILITY EXTENDED 0
 PROBABILITY SECRET_EXTENDED 0
@@ -133,6 +137,12 @@ CONTINUOUS CHANGELING
 CONTINUOUS WIZARD
 #CONTINUOUS MONKEY
 CONTINUOUS HIVEMIND
+CONTINUOUS CLOCKCULT
+CONTINUOUS HERESY
+
+#Prevents the death of round-ending antagonist rulesets ending the round immediately.
+
+CONTINUOUS DYNAMIC
 
 ##Note: do not toggle continuous off for these modes, as they have no antagonists and would thus end immediately!
 
@@ -208,6 +218,8 @@ MAX_POP INCURSION -1
 #MIN_POP EXTENDED 0
 #MAX_POP EXTENDED -1
 
+MIN_POP CLOCKCULT 32
+MAX_POP CLOCKCULT -1
 
 
 ## The amount of time it takes for the emergency shuttle to be called, from round start.
@@ -219,6 +231,7 @@ SHUTTLE_REFUEL_DELAY 12000
 TRAITOR_SCALING_COEFF 6
 BROTHER_SCALING_COEFF 6
 CHANGELING_SCALING_COEFF 6
+ECULT_SCALING_COEFF 6
 
 ## Variables calculate how number of open security officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
@@ -279,6 +292,9 @@ DEFAULT_REP_VALUE 5
 
 ## Uncomment to allow players to see the set odds of different rounds in secret/random in the get server revision screen. This will NOT tell the current roundtype.
 #SHOW_GAME_TYPE_ODDS
+
+## Uncomment to enable dynamic ruleset config file.
+DYNAMIC_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
@@ -371,7 +387,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 1 for "custom", silicons will start with the custom laws defined in silicon_laws.txt. (If silicon_laws.txt is empty, the AI will spawn with asimov and Custom boards will auto-delete.)
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specifed in that file.
-DEFAULT_LAWS 0
+DEFAULT_LAWS 1 				##OASIS LAWS EDIT
 
 ## RANDOM LAWS ##
 ## ------------------------------------------------------------------------------------------
@@ -456,32 +472,43 @@ ROUNDSTART_RACES moth
 ROUNDSTART_RACES plasmaman
 ROUNDSTART_RACES felinid
 ROUNDSTART_RACES squid
-#ROUNDSTART_RACES shadow
+ROUNDSTART_RACES shadow
 ROUNDSTART_RACES ipc
 
 ## Races that are better than humans in some ways, but worse in others
 ROUNDSTART_RACES ethereal
 ROUNDSTART_RACES apid
+ROUNDSTART_RACES oozeling
 #ROUNDSTART_RACES jelly
 #ROUNDSTART_RACES iron_golem
 #ROUNDSTART_RACES adamantine_golem
 #ROUNDSTART_RACES plasma_golem
-#ROUNDSTART_RACES diamond_golem
-#ROUNDSTART_RACES gold_golem
-#ROUNDSTART_RACES silver_golem
+ROUNDSTART_RACES diamond_golem
+ROUNDSTART_RACES gold_golem
+ROUNDSTART_RACES silver_golem
 #ROUNDSTART_RACES uranium_golem
 #ROUNDSTART_RACES abductor
-#ROUNDSTART_RACES synth
+ROUNDSTART_RACES synth
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
-#ROUNDSTART_RACES slime
-#ROUNDSTART_RACES pod
+#ROUNDSTART_RACES slime   #
+#ROUNDSTART_RACES pod    #
 #ROUNDSTART_RACES military_synth
 #ROUNDSTART_RACES agent
 
 ##-------------------------------------------------------------------------------------------
+
+## Paywall Locked Races, races listed here will be locked behind the donor paywall
+
+#PAYWALL_RACES felinid
+#PAYWALL_RACES pod
+#PAYWALL_RACES slime
+#PAYWALL_RACES shadow
+
+##-------------------------------------------------------------------------------------------
+
 
 ## Uncomment to give players the choice of joining as a human with mutant bodyparts before they join the game
 JOIN_WITH_MUTANT_HUMANS

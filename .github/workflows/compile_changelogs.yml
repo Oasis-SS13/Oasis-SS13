@@ -2,12 +2,16 @@ name: Compile changelogs
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 jobs:
   CompileCL:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     if: github.repository == 'Oasis-SS13/Oasis-SS13'
+=======
+>>>>>>> 09d99108dd... Modernizes the github actions (#3428)
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -32,5 +36,5 @@ jobs:
       - name: Push
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} #Use this instead if you have unprotected branches
-          #github_token: ${{ secrets.CL_TOKEN }}
+          #github_token: ${{ secrets.GITHUB_TOKEN }} #Use this instead if you have unprotected branches
+          github_token: ${{ secrets.CL_TOKEN }}

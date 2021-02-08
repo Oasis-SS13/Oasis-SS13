@@ -56,7 +56,7 @@
 #define SPAN_PAPYRUS "papyrus"
 #define SPAN_REALLYBIG "reallybig"
 #define SPAN_COMMAND "command_headset"
-#define SPAN_CLOWN "clown"
+#define SPAN_CLOWN "clowntext"
 #define SPAN_SINGING "singing"
 
 //bitflag #defines for return value of the radio() proc.
@@ -85,6 +85,9 @@
 #define MAX_NAME_LEN			42
 #define MAX_BROADCAST_LEN		512
 #define MAX_CHARTER_LEN			80
+
+//Sets the max string size that can be put in for circuit cloning
+#define MAX_SIZE_CIRCUIT		15000
 
 // Is something in the IC chat filter? This is config dependent.
 #define CHAT_FILTER_CHECK(T) (CONFIG_GET(flag/ic_filter_enabled) && config.ic_filter_regex && findtext(T, config.ic_filter_regex))

@@ -16,7 +16,6 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC
 	species_language_holder = /datum/language_holder/synthetic
 
-
 /datum/species/synth/New()
 	initial_species_traits = species_traits.Copy()
 	initial_inherent_traits = inherent_traits.Copy()
@@ -64,6 +63,7 @@
 		mutant_bodyparts = S.mutant_bodyparts.Copy()
 		mutant_organs = S.mutant_organs.Copy()
 		default_features = S.default_features.Copy()
+		forced_features = S.forced_features.Copy()
 		nojumpsuit = S.nojumpsuit
 		no_equip = S.no_equip.Copy()
 		limbs_id = S.limbs_id
@@ -81,6 +81,7 @@
 		miss_sound = initial(miss_sound)
 		mutant_bodyparts = list()
 		default_features = list()
+		forced_features = list()
 		nojumpsuit = initial(nojumpsuit)
 		no_equip = list()
 		qdel(fake_species)

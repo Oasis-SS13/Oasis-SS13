@@ -26,7 +26,10 @@ export const ChemDispenser = (props, context) => {
     || data.beakerContents
     || [];
   return (
-    <Window resizable>
+    <Window
+      resizable
+      width={565}
+      height={620}>
       <Window.Content scrollable>
         <Section
           title="Status"
@@ -63,6 +66,12 @@ export const ChemDispenser = (props, context) => {
                   disabled={!data.isBeakerLoaded}
                   content="Record"
                   onClick={() => act('record_recipe')} />
+              )}
+              {!recording && (
+                <Button
+                  icon="plus"
+                  content="Import"
+                  onClick={() => act('import_recipe')} />
               )}
               {recording && (
                 <Button

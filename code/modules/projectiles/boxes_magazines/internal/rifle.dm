@@ -13,3 +13,9 @@
 /obj/item/ammo_box/magazine/internal/boltaction/enchanted/arcane_barrage
 	ammo_type = /obj/item/ammo_casing/magic/arcane_barrage
 
+/obj/item/ammo_box/magazine/internal/winchester
+	name = "winchester internal magazine"
+	caliber = ".44win"
+	ammo_type = /obj/item/ammo_casing/a44winchester
+	max_ammo = 14
+	multiload = 0

@@ -2,12 +2,17 @@ name: Make changelogs
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
   MakeCL:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     if: github.repository == 'Oasis-SS13/Oasis-SS13' && !contains(github.event.head_commit.message, '[ci skip]')
+=======
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+>>>>>>> 09d99108dd... Modernizes the github actions (#3428)
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -23,8 +28,8 @@ jobs:
           pip install ruamel.yaml PyGithub
       - name: Make CL
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} #Use this instead if you have unprotected branches
-          #GITHUB_TOKEN: ${{ secrets.CL_TOKEN }}
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} #Use this instead if you have unprotected branches
+          GITHUB_TOKEN: ${{ secrets.CL_TOKEN }}
           GIT_EMAIL: "56381746+ss13-beebot@users.noreply.github.com"
           GIT_NAME: "ss13-beebot"
         run: python tools/changelog/generate_cl.py

@@ -1,0 +1,19 @@
+"a" = (/turf/open/space/basic,/area/space)
+"j" = (/turf/closed/wall/mineral/bananium,/area/ruin)
+"s" = (/obj/item/gun/magic/staff/honk,/turf/closed/wall/mineral/bananium,/area/ruin)
+"A" = (/obj/structure/falsewall/abductor,/turf/open/space/basic,/area/ruin)
+"N" = (/obj/structure/destructible/clockwork/wall_gear/displaced,/obj/structure/falsewall/silver,/obj/structure/falsewall/diamond,/turf/open/space/basic,/area/ruin)
+"Q" = (/obj/effect/spawner/trap,/turf/open/space/basic,/area/ruin)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaAQaaaa
+aaaNAANaaa
+aaQAsjAAaa
+aaAAjjAQaa
+aaaNAANaaa
+aaaaQAaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+"}

@@ -158,6 +158,11 @@
 	color = "red" //Looks more culty this way
 	range = 10
 
+/obj/item/projectile/magic/spell/magic_missile/lesser/can_hit_target(atom/target, list/passthrough, direct_target = FALSE, ignore_loc = FALSE)
+	if (iscultist(target))
+		return FALSE
+	return ..()
+
 /obj/effect/proc_holder/spell/targeted/smoke/disable
 	name = "Paralysing Smoke"
 	desc = "This spell spawns a cloud of paralysing smoke."
@@ -260,7 +265,7 @@
 		revert_cast()
 		return
 
-	if(S.sentience_type != SENTIENCE_ORGANIC)
+	if(!istype(S) || S.sentience_type != SENTIENCE_ORGANIC)
 		to_chat(user, "<span class='warning'>[S] cannot be dominated!</span>")
 		revert_cast()
 		return
