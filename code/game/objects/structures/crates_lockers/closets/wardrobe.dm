@@ -41,8 +41,8 @@
 		new /obj/item/clothing/head/soft/black(src)
 	new /obj/item/clothing/mask/bandana/black(src)
 	new /obj/item/clothing/mask/bandana/black(src)
-	new /obj/item/clothing/head/sweatband
-	new /obj/item/clothing/head/sweatband
+	new /obj/item/clothing/head/sweatband(src)
+	new /obj/item/clothing/head/sweatband(src)
 	if(prob(40))
 		new /obj/item/clothing/mask/bandana/skull(src)
 	return
@@ -59,7 +59,7 @@
 		new /obj/item/clothing/shoes/sneakers/black(src)
 	new /obj/item/clothing/mask/bandana/green(src)
 	new /obj/item/clothing/mask/bandana/green(src)
-	new /obj/item/clothing/head/sweatband
+	new /obj/item/clothing/head/sweatband(src)
 	return
 
 
@@ -87,7 +87,7 @@
 		new /obj/item/clothing/shoes/sneakers/orange(src)
 	new /obj/item/clothing/mask/bandana/gold(src)
 	new /obj/item/clothing/mask/bandana/gold(src)
-	new /obj/item/clothing/head/sweatband
+	new /obj/item/clothing/head/sweatband(src)
 	return
 
 
@@ -113,7 +113,7 @@
 	new /obj/item/clothing/under/misc/pj/red(src)
 	new /obj/item/clothing/under/misc/pj/blue(src)
 	new /obj/item/clothing/under/misc/pj/blue(src)
-	new /obj/item/clothing/head/sweatband
+	new /obj/item/clothing/head/sweatband(src)
 	for(var/i in 1 to 4)
 		new /obj/item/clothing/shoes/sneakers/white(src)
 	return
@@ -135,7 +135,7 @@
 	if(prob(40))
 		new /obj/item/clothing/mask/bandana/black(src)
 		new /obj/item/clothing/mask/bandana/black(src)
-		new /obj/item/clothing/head/sweatband
+		new /obj/item/clothing/head/sweatband(src)
 	if(prob(40))
 		new /obj/item/clothing/under/misc/assistantformal(src)
 	if(prob(40))
@@ -177,7 +177,7 @@
 	new /obj/item/clothing/shoes/sneakers/black(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
 	new /obj/item/clothing/shoes/sneakers/white(src)
-	new /obj/item/clothing/head/sweatband
+	new /obj/item/clothing/head/sweatband(src)
 	if(prob(30))
 		new /obj/item/clothing/suit/hooded/wintercoat(src)
 		new /obj/item/clothing/shoes/winterboots(src)
