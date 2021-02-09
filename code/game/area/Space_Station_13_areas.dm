@@ -1180,4 +1180,4 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "scorchsand"
 	outdoors = TRUE
 	mood_bonus = -2
-	mood_message = "<span class='nicegreen'>=Its so hot and sandy out here!\n</span>"
+	mood_message = "<span class='nicegreen'>Its so hot and sandy out here!\n</span>"

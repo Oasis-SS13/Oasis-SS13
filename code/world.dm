@@ -5,7 +5,7 @@
 	mob = /mob/dead/new_player
 	area = /area/sandland
 	//turf = /turf/open/space/basic 	//Ask Kryyto if you want the space back
-	turf = /turf/open/sand_land/basic   // ScorchStation
+	turf = /turf/open/sand_land         ///basic   // ScorchStation
 	view = "17x15"
 	hub = "Exadv1.spacestation13"
 	hub_password = "kMZy3U5jJHSiBQjr"

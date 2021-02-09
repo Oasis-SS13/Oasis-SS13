@@ -163,20 +163,17 @@
 	power_environ = FALSE
 	valid_territory = FALSE
 	outdoors = TRUE
+	ambient_effects = MINING
 	ambient_music = MINING
 	blob_allowed = FALSE //Eating up space doesn't count for victory as a blob.
 	ambient_buzz = null // Space is pretty quiet
+	mood_bonus = -1
+	mood_message = "<span class='nicegreen'>Its so hot and sandy out here!\n</span>"
 
 /area/sandland/surface
 	icon_state = "sandclean"
 	name = "Sandland"
-	always_unpowered = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
-	power_equip = FALSE
-	power_light = FALSE
-	requires_power = TRUE
-	ambient_effects = MINING
 
 /area/sandland/surface/outdoors
 	name = "Sandland Desert"

@@ -240,10 +240,10 @@
 	icon_state = "asteroid0"
 	var/environment_type = "asteroid"
 	initial_gas_mix = DESERT_ATMOS
-	var/floor_variance = 50
+	var/floor_variance = 30
 	intact = 0
 	var/obj/item/stack/digResult = /obj/item/stack/sheet/mineral/sandstone
-
+	planetary_atmos = TRUE
 	FASTDMM_PROP(\
 		pipe_astar_cost = 4\
 	)
@@ -270,7 +270,7 @@
 /turf/open/sand_land/Initialize()
 	air = DESERT_ATMOS
 	update_air_ref()
-	vis_contents.Cut() //removes inherited overlays
+	vis_contets.Cut() //removes inherited overlays
 	visibilityChanged()
 
 	if(prob(floor_variance))
@@ -307,6 +307,8 @@
 	return
 
 /turf/open/sand_land/TakeTemperature(temp)
+	air.set_temperature(air.return_temperature() + temp)
+	air_update_turf()
 
 /turf/open/sand_land/RemoveLattice()
 	return
