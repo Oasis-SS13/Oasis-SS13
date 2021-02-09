@@ -1663,6 +1663,20 @@ datum/supply_pack/medical/bruisekits
 	crate_name = "xenobiology starter crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 
+
+//Engineering
+
+/datum/supply_pack/engine/fuel_rod
+	name = "Uranium Fuel Rod crate"
+	desc = "Two additional fuel rods for use in a reactor, requires CE access to open. Caution: Radioactive"
+	cost = 4000
+	access = ACCESS_CE
+	contains = list(/obj/item/twohanded/required/fuel_rod,
+					/obj/item/twohanded/required/fuel_rod)
+	crate_name = "Uranium-235 Fuel Rod crate"
+	crate_type = /obj/structure/closet/crate/secure/engineering
+	dangerous = TRUE
+
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Service //////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
