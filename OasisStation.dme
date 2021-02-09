@@ -49,4 +49,5 @@
 #include "Oasis\SCP_MAIN\datums\SCP-173.dm"
 #include "Oasis\SCP_MAIN\datums\SCP-294.dm"
 #include "Oasis\SCP_MAIN\datums\SCP-529.dm"
+#include "Oasis\code\modules\clothing\head\sweatband.dm"
 // END_INCLUDE
