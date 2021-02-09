@@ -367,9 +367,6 @@
 	. = ..()
 	new /obj/item/gun/ballistic/revolver/detective(src)
 	new /obj/item/ammo_box/c38(src)
-<<<<<<< HEAD
-	new /obj/item/ammo_box/c38(src)
-=======
 	new /obj/item/ammo_box/c38(src)
 
 //Poppy Pin
@@ -387,4 +384,3 @@
 	var/mob/living/L = user
 	if(L && L.mind)
 		SEND_SIGNAL(L, COMSIG_CLEAR_MOOD_EVENT, "poppy_pin")
->>>>>>> 97259bacd5... Makes it harder to meta heretics through poppies and kitchen knives (#3422)
