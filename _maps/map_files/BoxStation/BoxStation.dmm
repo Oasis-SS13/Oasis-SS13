@@ -55354,6 +55354,11 @@
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
+"qCe" = (
+/obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/cleanbot/medbay,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "qDU" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -96701,7 +96706,7 @@ bqV
 bEe
 bBL
 bwA
-xQL
+qCe
 cfZ
 clh
 ctp
