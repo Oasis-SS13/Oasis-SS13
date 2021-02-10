@@ -199,7 +199,7 @@
 	..()
 	if(isliving(A))
 		var/mob/living/M = A
-		if(!M.mob_has_gravity())
+		if(!M.has_gravity())
 			return
 		if(!M.swimming)
 			if(locate(/obj/structure/pool/ladder) in M.loc)
