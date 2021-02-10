@@ -217,10 +217,10 @@
 /datum/config_entry/string/issue_label
 
 /datum/config_entry/string/donateurl
-	config_entry_value = "https://www.patreon.com/user?u=10639001"
+	config_entry_value = "https://www.patreon.com/user?u=18827448"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://discord.gg/zUe34rs"
+	config_entry_value = "https://discord.gg/SSHsr5z"
 
 /datum/config_entry/string/roundstatsurl
 
