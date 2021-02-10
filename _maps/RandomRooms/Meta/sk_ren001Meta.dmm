@@ -516,7 +516,7 @@
 /area/engine/engineering)
 "ug" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
+	dir = 6
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -550,6 +550,12 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"xv" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 10
+	},
+/turf/closed/wall/r_wall,
+/area/maintenance/starboard/fore)
 "xB" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -1234,7 +1240,7 @@
 /area/engine/engineering)
 "XS" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 4
+	dir = 9
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -1511,7 +1517,7 @@ lM
 lb
 pM
 KM
-Sv
+ug
 XS
 "}
 (10,1,1) = {"
@@ -1536,8 +1542,8 @@ lM
 lb
 lb
 cB
+xv
 Sv
-ug
 "}
 (11,1,1) = {"
 Ao

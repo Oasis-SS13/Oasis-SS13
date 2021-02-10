@@ -46358,6 +46358,12 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/security/prison)
+"fBe" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/engineering)
 "fBs" = (
 /obj/structure/table/wood,
 /obj/item/hand_labeler{
@@ -93661,7 +93667,7 @@ ciZ
 ciZ
 ciZ
 ciZ
-ciZ
+fBe
 ciZ
 ciZ
 ciZ

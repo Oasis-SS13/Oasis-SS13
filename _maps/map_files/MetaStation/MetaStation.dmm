@@ -82923,6 +82923,10 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/port/fore)
+"nCU" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/turf/open/floor/plating,
+/area/engine/engineering)
 "nHj" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -129388,7 +129392,7 @@ aJu
 aJu
 aJu
 aJu
-aJu
+nCU
 dgA
 aaa
 aaa
