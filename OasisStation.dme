@@ -16,11 +16,7 @@
 
 // BEGIN_INCLUDE
 #include "code\__HELPERS\maths.dm"
-#include "code\__HELPERS\matrices.dm"
 #include "code\modules\cargo\exports\engineering.dm"
-#include "code\modules\integrated_electronics\passive\power.dm"
-#include "code\modules\integrated_electronics\subtypes\power.dm"
-#include "code\modules\power\power.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
 #include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
