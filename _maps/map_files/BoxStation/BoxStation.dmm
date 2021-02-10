@@ -46216,6 +46216,12 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"fmV" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/engineering)
 "fmY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -93661,7 +93667,7 @@ ciZ
 ciZ
 ciZ
 ciZ
-ciZ
+fmV
 ciZ
 ciZ
 ciZ

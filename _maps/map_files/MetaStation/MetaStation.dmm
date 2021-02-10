@@ -84370,6 +84370,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
 /area/security/prison)
+"twb" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/turf/open/floor/plating,
+/area/engine/engineering)
 "txx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -129388,7 +129392,7 @@ aJu
 aJu
 aJu
 aJu
-aJu
+twb
 dgA
 aaa
 aaa

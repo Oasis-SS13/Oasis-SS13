@@ -237,7 +237,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/engine/supermatter)
+/area/engine/engineering)
 "hf" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
@@ -1335,12 +1335,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"Nn" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/simple/orange/visible,
-/obj/machinery/atmospherics/pipe/simple/orange/visible,
-/turf/open/space,
-/area/space/nearstation)
 "Nt" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -2098,7 +2092,7 @@ Cz
 VR
 Yk
 tZ
-Nn
+IV
 "}
 (11,1,1) = {"
 oz
