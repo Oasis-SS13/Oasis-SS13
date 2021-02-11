@@ -28058,6 +28058,7 @@
 /obj/machinery/status_display/evac{
 	pixel_x = -32
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/cmo)
 "aPC" = (
@@ -35587,7 +35588,7 @@
 	dir = 4;
 	pixel_x = -26
 	},
-/obj/item/crowbar/power,
+/obj/item/powertool/jaws_of_life,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -43453,7 +43454,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/screwdriver/power,
+/obj/item/powertool/hand_drill,
 /turf/open/floor/plasteel/dark,
 /area/security/nuke_storage)
 "bku" = (
@@ -48926,6 +48927,7 @@
 	pixel_y = -28
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/library)
 "brU" = (
@@ -82860,6 +82862,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
 "cpl" = (

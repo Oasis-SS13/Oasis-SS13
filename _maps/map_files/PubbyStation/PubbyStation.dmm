@@ -2082,6 +2082,9 @@
 "afE" = (
 /obj/item/toy/cards/deck,
 /obj/structure/table,
+/obj/item/reagent_containers/glass/tube/krytox{
+	pixel_y = 7
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "afF" = (
@@ -18862,7 +18865,7 @@
 	},
 /area/crew_quarters/bar)
 "aQU" = (
-/obj/machinery/vending/coffee,
+/obj/machinery/food_cart/coffee,
 /obj/machinery/camera{
 	c_tag = "Bar Backroom";
 	dir = 2
@@ -22328,6 +22331,10 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/item/reagent_containers/glass/tube/krytox{
+	pixel_x = -4;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
@@ -35312,7 +35319,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "bBd" = (
-/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -35324,6 +35330,12 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
@@ -36029,7 +36041,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
 	name = "Chief Medical Office";
 	req_access_txt = "40";
@@ -36045,6 +36056,12 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
@@ -37295,6 +37312,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "bEE" = (
@@ -54714,10 +54732,8 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
-/obj/structure/frame/computer{
-	desc = "Looks like the board never made it to this one.";
-	dir = 8;
-	name = "shuttle console frame"
+/obj/machinery/computer/shuttle/science{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
@@ -56133,10 +56149,7 @@
 /area/engine/engineering)
 "gKz" = (
 /obj/structure/table/wood,
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-22";
-	pixel_y = 8
-	},
+/obj/item/reagent_containers/glass/tube/krytox,
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "gLF" = (
@@ -58170,6 +58183,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
+"kiZ" = (
+/obj/structure/table/wood/fancy,
+/obj/item/reagent_containers/glass/tube/krytox{
+	pixel_y = 3
+	},
+/turf/open/floor/carpet,
+/area/library)
 "kjK" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "MiniSat Maintenance";
@@ -58771,6 +58791,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"kZB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/item/twohanded/required/kirbyplants{
+	icon_state = "plant-22";
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/chapel/office)
 "lbC" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -79573,7 +79612,7 @@ pkM
 crv
 css
 csG
-cta
+kZB
 gKz
 bZY
 cfN
@@ -82692,7 +82731,7 @@ ckH
 cyZ
 ckH
 czl
-czr
+kiZ
 czr
 czI
 ckH

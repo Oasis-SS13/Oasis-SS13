@@ -372,6 +372,13 @@
 	attack_verb = list("bitten", "eaten", "fin slapped")
 	squeak_override = list('sound/weapons/bite.ogg'=1)
 
+/obj/item/toy/plush/qwerty
+	name = "\improper Qwerty plushie"
+	desc = "The grandfather of Beecode."
+	icon_state = "qwerty"
+	attack_verb = list("coded")
+	squeak_override = list('sound/magic/demon_attack1.ogg'=1)
+
 /obj/item/toy/plush/bubbleplush
 	name = "\improper Bubblegum plushie"
 	desc = "The friendly red demon that gives good miners gifts."

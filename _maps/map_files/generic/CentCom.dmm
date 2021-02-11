@@ -2479,6 +2479,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/item/folder/red,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "hh" = (
@@ -2503,9 +2504,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "hv" = (
-/obj/structure/chair/office{
-	dir = 1
-	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
@@ -2541,6 +2539,15 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/turf/open/floor/plasteel/dark,
+/area/ctf)
+"hS" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/item/paper_bin,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "hV" = (
@@ -4216,7 +4223,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/handcuffs,
 /obj/item/crowbar/red,
-/obj/item/crowbar/power,
+/obj/item/powertool/jaws_of_life,
 /obj/item/storage/belt/security/full,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -7369,7 +7376,7 @@
 	},
 /obj/item/stack/rods/fifty,
 /obj/item/stack/cable_coil/white,
-/obj/item/screwdriver/power,
+/obj/item/powertool/hand_drill,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/white{
 	icon_state = "0-2"
@@ -7405,7 +7412,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/handcuffs,
 /obj/item/crowbar/red,
-/obj/item/crowbar/power,
+/obj/item/powertool/jaws_of_life,
 /obj/item/storage/belt/security/full,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26
@@ -7655,7 +7662,7 @@
 "sa" = (
 /obj/structure/table/wood,
 /obj/item/lighter,
-/obj/item/wirecutters/power,
+/obj/item/powertool/jaws_of_life,
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
 "sb" = (
@@ -8243,6 +8250,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 8
 	},
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "th" = (
@@ -8951,7 +8959,7 @@
 "uP" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/packageWrap,
-/obj/item/crowbar/power,
+/obj/item/powertool/jaws_of_life,
 /obj/item/wrench,
 /obj/item/hand_labeler,
 /obj/effect/turf_decal/stripes/line{
@@ -10611,6 +10619,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
 	},
+/obj/item/reagent_containers/food/drinks/britcup,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "yU" = (
@@ -11371,9 +11380,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ctf)
 "AG" = (
-/obj/structure/chair/office{
-	dir = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
@@ -17385,7 +17391,6 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "Qi" = (
-/obj/structure/chair/office,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -17957,6 +17962,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
+"TA" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/item/folder/red{
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel/dark,
+/area/ctf)
 "TB" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /turf/open/floor/plasteel/cafeteria,
@@ -18074,7 +18091,6 @@
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
 "Up" = (
-/obj/structure/chair/office,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -18108,6 +18124,15 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
+"UL" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/item/clipboard,
+/turf/open/floor/plasteel/dark,
+/area/ctf)
 "UM" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -18142,7 +18167,6 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "UX" = (
-/obj/structure/chair/office,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
@@ -18589,6 +18613,49 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supplypod)
+"Yy" = (
+/obj/structure/table/wood,
+/obj/item/twohanded/dualsaber,
+/obj/item/twohanded/dualsaber,
+/obj/item/melee/transforming/energy/blade,
+/obj/item/melee/transforming/energy/blade/hardlight,
+/obj/item/melee/transforming/energy/sword/bananium,
+/obj/item/melee/transforming/energy/sword/bee,
+/obj/item/melee/transforming/energy/sword/pirate,
+/obj/item/melee/transforming/energy/axe,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"Yz" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"YA" = (
+/obj/structure/table/reinforced,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/chem_grenade/teargas/moustache,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/grenade/spawnergrenade/clown,
+/obj/item/reagent_containers/glass/tube/krytox,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
+"YB" = (
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/item/storage/box/holy_grenades,
+/turf/open/floor/plasteel/dark,
+/area/centcom)
 "YE" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -18625,9 +18692,6 @@
 /turf/open/floor/grass,
 /area/centcom/holding)
 "YO" = (
-/obj/structure/chair/office{
-	dir = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
@@ -74214,7 +74278,7 @@ Qn
 Bt
 gh
 Up
-hc
+hS
 hv
 gh
 Qq
@@ -74471,7 +74535,7 @@ Qn
 PB
 gh
 Up
-hc
+TA
 hv
 gh
 ge
@@ -74728,7 +74792,7 @@ Qn
 Tw
 gh
 Up
-hc
+UL
 hv
 gh
 ge
