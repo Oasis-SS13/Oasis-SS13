@@ -1,0 +1,11 @@
+{
+    "map_name": "ScorchStation",
+    "map_path": "map_files/OasisStation",
+    "map_file": "ScorchBox.dmm",
+    "shuttles": {
+	    "cargo": "cargo_box",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_box"
+    }
+}
