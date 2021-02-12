@@ -1436,7 +1436,7 @@
 /datum/map_template/random_room/sk_ren004
 	name = "Box Singularity and Tesla Engine"
 	room_id = "sk_ren004"
-	mappath = "_maps/RandomRooms/Box/sk_ren005Box.dmm"
+	mappath = "_maps/RandomRooms/Box/sk_ren004Box.dmm"
 	centerspawner = TRUE
 	template_height = 27
 	template_width = 23
