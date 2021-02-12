@@ -26,6 +26,7 @@
 
 # powerfulbacon
 
+<<<<<<< HEAD
 #/code/game/machinery/shuttle @powerfulbacon
 #/code/modules/shuttle @powerfulbacon
 
@@ -35,3 +36,7 @@
 #/code/controllers/subsystem/disease.dm @zeskorion
 #/code/datums/diseases @zeskorion
 #/code/modules/antagonists/disease @zeskorion
+=======
+/code/game/machinery/shuttle @powerfulbacon
+/code/modules/shuttle @powerfulbacon
+>>>>>>> 6df4131351... removes zesko from codeowners (#3613)
