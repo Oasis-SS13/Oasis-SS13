@@ -1425,18 +1425,27 @@
 	weight = 5
 
 /datum/map_template/random_room/sk_ren003
-	name = "Box Singularity and Tesla Engine"
+	name = ",RBMK Engine"
 	room_id = "sk_ren003"
-	mappath = "_maps/RandomRooms/Box/sk_ren003Box.dmm"
+	mappath = "_maps/RandomRooms/Meta/sk_ren003Meta.dmm"
+	centerspawner = TRUE
+	template_height = 23
+	template_width = 19
+	weight = 10
+
+/datum/map_template/random_room/sk_ren004
+	name = "Box Singularity and Tesla Engine"
+	room_id = "sk_ren004"
+	mappath = "_maps/RandomRooms/Box/sk_ren005Box.dmm"
 	centerspawner = TRUE
 	template_height = 27
 	template_width = 23
 	weight = 1
 
-/datum/map_template/random_room/sk_ren004
+/datum/map_template/random_room/sk_ren005
 	name = "Box Super Matter engine"
-	room_id = "sk_ren004"
-	mappath = "_maps/RandomRooms/Box/sk_ren004Box.dmm"
+	room_id = "sk_ren005"
+	mappath = "_maps/RandomRooms/Box/sk_ren005Box.dmm"
 	centerspawner = TRUE
 	template_height = 27
 	template_width = 23
