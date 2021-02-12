@@ -516,7 +516,7 @@
 /area/engine/engineering)
 "ug" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 6
+	dir = 10
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -754,12 +754,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/space/nearstation)
-"ER" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/starboard/fore)
 "ES" = (
 /obj/structure/particle_accelerator/particle_emitter/left{
 	dir = 4
@@ -1240,7 +1234,7 @@
 /area/engine/engineering)
 "XS" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 9
+	dir = 4
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -1517,7 +1511,7 @@ lM
 lb
 pM
 KM
-ug
+Sv
 XS
 "}
 (10,1,1) = {"
@@ -1542,8 +1536,8 @@ lM
 lb
 lb
 cB
-ER
 Sv
+ug
 "}
 (11,1,1) = {"
 Ao
