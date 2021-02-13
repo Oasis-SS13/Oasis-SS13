@@ -131,7 +131,12 @@ GLOBAL_LIST(valentine_mobs)
 		GLOB.valentine_mobs[sender] = target
 		if(GLOB.valentine_mobs[target] == sender)
 			//wow.
+<<<<<<< HEAD
 			forge_valentines_objective(sender, target)
+=======
+			forge_valentines_objective(user, picked_human)
+			forge_valentines_objective(picked_human, user)
+>>>>>>> 38233045e2... Update vday.dm (#3630)
 		//Off it goes!
 		//Create a new card to prevent exploiting
 		var/obj/item/valentine/new_card = new(get_turf(picked_human))
