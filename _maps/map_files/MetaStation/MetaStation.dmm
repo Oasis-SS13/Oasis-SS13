@@ -34872,7 +34872,7 @@
 "bpl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable/cyan{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -35031,7 +35031,7 @@
 	dir = 10
 	},
 /obj/structure/cable/cyan{
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/aisat)
@@ -35041,7 +35041,7 @@
 	icon_state = "2-4"
 	},
 /obj/structure/cable/yellow{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/aisat)
