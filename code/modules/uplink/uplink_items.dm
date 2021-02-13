@@ -2293,13 +2293,12 @@ datum/uplink_item/role_restricted/superior_honkrender
 			much to overload the reactor with these..."
 	item = /obj/item/twohanded/required/fuel_rod/material/telecrystal
 	cost = 7
-
-		restricted = TRUE
+	restricted = TRUE
 
 /datum/uplink_item/dangerous/vibroblade
 	name = "High Frequency Blade"
 	desc = "An electric katana that weakens the molecular bonds of whatever it touches. Perfect for slicing off the limbs of your coworkers. \
 	Avoid using a multitool on it."
-	item = /obj/item/storage/belt/hfblade
+	item = /obj/item/melee/hfblade
 	cost = 8
 	surplus = 15

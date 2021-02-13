@@ -1,6 +1,6 @@
 // Chaplains begone!
 /obj/item/nullrod/scythe/vibro
-	name = "high fronquency bladd"
+	name = "high fronquency blade"
 
 /obj/item/melee/hfblade
 	name = "high frequency blade"
