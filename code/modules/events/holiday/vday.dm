@@ -74,8 +74,30 @@
 		var/sender = stripped_input(user, "Who is sending this valentine?", "From:", null , 20)
 		if(!user.canUseTopic(src, BE_CLOSE))
 			return
+<<<<<<< HEAD
 		if(recipient && sender)
 			name = "valentine - To: [recipient] From: [sender]"
+=======
+		to_chat(user, "<span class='notice'>The card vanishes out of your hand! Lets hope they got it...</span>")
+		//List checking
+		GLOB.valentine_mobs[user] = picked_human
+		if(GLOB.valentine_mobs[picked_human] == user)
+			//wow.
+			forge_valentines_objective(user, picked_human)
+			forge_valentines_objective(picked_human, user)
+		//Off it goes!
+		//Create a new card to prevent exploiting
+		var/obj/item/valentine/new_card = new(get_turf(picked_human))
+		new_card.message = message
+		new_card.sender = user
+		new_card.target = picked_human
+		new_card.name = "valentines card from [new_card.sender]"
+		new_card.desc = "A Valentine's card! It is addressed to [new_card.target]."
+		new_card.used = TRUE
+		picked_human.equip_to_appropriate_slot(new_card)
+		to_chat(picked_human, "<span class='clown'>A magical card suddenly appears!</span>")
+		qdel(src)
+>>>>>>> 38233045e2... Update vday.dm (#3630)
 
 /obj/item/valentine/examine(mob/user)
 	. = ..()
