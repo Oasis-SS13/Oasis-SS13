@@ -35,9 +35,9 @@ EMOJIS
 ## These values get directly added to values and totals ingame.
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
-## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
-RUN_DELAY 1
-WALK_DELAY 3
+RUN_DELAY 1.25
+WALK_DELAY 2.5
+
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
 ## Entries completely override all subtypes. Later entries have precedence over earlier entries.
@@ -480,14 +480,9 @@ ROUNDSTART_RACES ipc
 ## Races that are better than humans in some ways, but worse in others
 ROUNDSTART_RACES ethereal
 ROUNDSTART_RACES apid
-<<<<<<< HEAD
-ROUNDSTART_RACES jelly
-ROUNDSTART_RACES iron_golem
-=======
 ROUNDSTART_RACES oozeling
 #ROUNDSTART_RACES jelly
 #ROUNDSTART_RACES iron_golem
->>>>>>> 0ab1e7ab16... Roundstart Slimepeople Race: Oozelings (#3322)
 #ROUNDSTART_RACES adamantine_golem
 #ROUNDSTART_RACES plasma_golem
 ROUNDSTART_RACES diamond_golem
@@ -626,9 +621,6 @@ MAX_CHICKENS 100
 MAX_SLIMES 100
 
 ## Uncomment to restrict suiciding. Adds an additional confirmation dialogue, additional logging, and prevents suicide within the first 15 minutes of the round.
-<<<<<<< HEAD
-#RESTRICTED_SUICIDE
-=======
 #RESTRICTED_SUICIDE
 
 
@@ -639,4 +631,3 @@ ROUNDSTART_BLUESPACE_MINERS 2
 
 ## Enable the bluespace miner research node?
 #BSMINER_RESEARCHABLE
->>>>>>> ba893f92d8... Bluespace Miner Config (#3421)
