@@ -74,11 +74,11 @@
 
 /obj/item/melee/hfblade/on_exit_storage()
 	..()
-	playsound(src, 'sound/items/unsheath.ogg', 25, 1)
+	playsound(src, 'sound/weapons/hfblade-music1.ogg', 25, 1)
 
 /obj/item/melee/hfblade/on_enter_storage()
 	..()
-	playsound(src, 'sound/items/sheath.ogg', 25, 1)
+	playsound(src, 'sound/weapons/hfblade-music2.ogg', 25, 1)
 
 
 /obj/item/melee/hfblade/attackby(obj/item/W, mob/living/user, params)
@@ -105,6 +105,16 @@
 	icon_state = "sheath"
 	item_state = "sheath"
 	w_class = WEIGHT_CLASS_BULKY
+
+/obj/item/storage/belt/hfblade/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 1
+	STR.rustle_sound = FALSE
+	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.can_hold = typecacheof(list(
+		/obj/item/melee/hfblade
+		))
 
 /obj/item/storage/belt/hfblade/examine(mob/user)
 	..()
