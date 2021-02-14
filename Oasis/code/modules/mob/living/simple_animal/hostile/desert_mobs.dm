@@ -221,14 +221,14 @@
 			retreat_distance = initial(retreat_distance)
 			minimum_distance = initial(minimum_distance)
 
-/mob/living/simple_animal/hostile/retaliate/sheriff/proc/summon_backup_nosound(distance, exact_faction_match)
+/*/mob/living/simple_animal/hostile/retaliate/sheriff/proc/summon_backup_nosound(distance, exact_faction_match)
 	do_alert_animation(src)
 	for(var/mob/living/simple_animal/hostile/M in oview(distance, targets_from))
 		if(faction_check_mob(M, TRUE))
 			if(M.AIStatus == AI_OFF)
 				return
 			else
-				M.Goto(src,M.move_to_delay,M.minimum_distance)
+				M.Goto(src,M.move_to_delay,M.minimum_distance)*/
 
 /mob/living/simple_animal/hostile/retaliate/sheriff/death(gibbed)
 	var/list/possible_sounds = list('sound/magic/curse.ogg', 'sound/voice/human/malescream_5.ogg', 'sound/voice/human/wilhelm_scream.ogg', 'sound/voice/lizard/deathsound.ogg')
