@@ -71,7 +71,6 @@
 		C.adjustBruteLoss(-15) //dismembering a limb deals 15 brute, this heals you instantly after that
 		user.changeNext_move(CLICK_CD_CLICK_ABILITY)
 		return ..()
-		. = ..()
 
 /obj/item/melee/hfblade/on_exit_storage()
 	..()
