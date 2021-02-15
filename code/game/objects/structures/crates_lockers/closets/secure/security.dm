@@ -68,7 +68,11 @@
 
 /obj/structure/closet/secure_closet/brig_phys
 	name = "\proper brig physician's locker"
+<<<<<<< HEAD
 	req_access = list(ACCESS_BRIG)
+=======
+	req_access = list(ACCESS_SEC_DOORS)
+>>>>>>> d811aed570... Brig Phys Locker Can Actually Be Opened Again (#3635)
 	icon_state = "brig_phys"
 
 /obj/structure/closet/secure_closet/brig_phys/PopulateContents()
