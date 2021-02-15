@@ -16,8 +16,11 @@
 
 // BEGIN_INCLUDE
 #include "code\__HELPERS\maths.dm"
+#include "code\game\objects\effects\spawners\roomspawner.dm"
 #include "code\game\objects\items\melee\hfblade.dm"
+#include "code\game\objects\structures\crates_lockers\closets\wardrobe.dm"
 #include "code\modules\cargo\exports\engineering.dm"
+#include "code\modules\mapping\random_rooms.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
 #include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
