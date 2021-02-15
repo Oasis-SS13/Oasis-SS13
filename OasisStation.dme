@@ -16,7 +16,10 @@
 
 // BEGIN_INCLUDE
 #include "code\__HELPERS\maths.dm"
+#include "code\game\objects\effects\spawners\roomspawner.dm"
+#include "code\game\objects\structures\crates_lockers\closets\wardrobe.dm"
 #include "code\modules\cargo\exports\engineering.dm"
+#include "code\modules\mapping\random_rooms.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
 #include "Oasis\code\datums\weather\weather_types\sand_storm.dm"
@@ -24,6 +27,7 @@
 #include "Oasis\code\game\objects\structures\chairs.dm"
 #include "Oasis\code\katecode\greatervampire.dm"
 #include "Oasis\code\katecode\katspells.dm"
+#include "Oasis\code\modules\clothing\head\sweatband.dm"
 #include "Oasis\code\modules\food_and_drinks\recipes\drinks_recipes.dm"
 #include "Oasis\code\modules\hydroponics\grown\mushrooms.dm"
 #include "Oasis\code\modules\integrated_electronics\subtypes\manipulation.dm"
@@ -55,5 +59,4 @@
 #include "Oasis\SCP_MAIN\datums\SCP-173.dm"
 #include "Oasis\SCP_MAIN\datums\SCP-294.dm"
 #include "Oasis\SCP_MAIN\datums\SCP-529.dm"
-#include "Oasis\code\modules\clothing\head\sweatband.dm"
 // END_INCLUDE
