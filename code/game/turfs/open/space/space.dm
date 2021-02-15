@@ -267,7 +267,7 @@
 	//This is used to optimize the map loader
 	return
 
-/turf/open/sand_land/Initialize()
+/turf/open/sand_land/Initialize()//a
 	air = DESERT_ATMOS
 	update_air_ref()
 	vis_contets.Cut() //removes inherited overlays
@@ -307,7 +307,7 @@
 	return
 
 /turf/open/sand_land/TakeTemperature(temp)
-	air.set_temperature(air.return_temperature() + temp)
+	air.set_temperature(air.return_temperature() + 433)
 	air_update_turf()
 
 /turf/open/sand_land/RemoveLattice()
