@@ -16,6 +16,7 @@
 
 // BEGIN_INCLUDE
 #include "code\__HELPERS\maths.dm"
+#include "code\game\objects\items\melee\hfblade.dm"
 #include "code\modules\cargo\exports\engineering.dm"
 #include "Oasis\code\controllers\subsystem\redbot.dm"
 #include "Oasis\code\datums\world_topic.dm"
