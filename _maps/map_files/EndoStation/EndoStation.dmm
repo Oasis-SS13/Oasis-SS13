@@ -6504,6 +6504,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
+"bOx" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/structure/table/wood,
+/obj/item/clothing/head/sweatband,
+/turf/open/floor/carpet/blue,
+/area/crew_quarters/dorms)
 "bOM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -44254,7 +44260,7 @@
 	dir = 2
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/dorms)
 "mgh" = (
 /obj/effect/turf_decal/tile/yellow,
@@ -109861,7 +109867,7 @@ nwO
 qhS
 dTB
 jEt
-nwO
+bOx
 jsf
 dTB
 jEt
