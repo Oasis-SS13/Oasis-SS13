@@ -74,11 +74,11 @@
 
 /obj/item/melee/hfblade/on_exit_storage()
 	..()
-	playsound(src, 'sound/weapons/hfblade-music1.ogg', 25, 1)
+	playsound(src, 'sound/weapons/hfblademusic1.ogg', 25, 1)
 
 /obj/item/melee/hfblade/on_enter_storage()
 	..()
-	playsound(src, 'sound/weapons/hfblade-music2.ogg', 25, 1)
+	playsound(src, 'sound/weapons/hfblademusic2.ogg', 25, 1)
 
 
 /obj/item/melee/hfblade/attackby(obj/item/W, mob/living/user, params)
