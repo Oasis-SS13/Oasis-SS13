@@ -1443,7 +1443,7 @@
 	weight = 1
 
 /datum/map_template/random_room/sk_ren005
-	name = "Box Super Matter Engine"
+	name = "Box Super Matter engine"
 	room_id = "sk_ren005"
 	mappath = "_maps/RandomRooms/Box/sk_ren005Box.dmm"
 	centerspawner = TRUE
@@ -1451,7 +1451,7 @@
 	template_width = 23
 	weight = 5
 
-/datum/map_template/random_room/sk_ren006
+	/datum/map_template/random_room/sk_ren006
 	name = "Endo Singularity and Tesla Engine"
 	room_id = "sk_ren006"
 	mappath = "_maps/RandomRooms/Endo/sk_ren006Endo.dmm"
