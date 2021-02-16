@@ -25,6 +25,11 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"aZ" = (
+/obj/structure/table,
+/obj/item/toy/figure/ce,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
 "be" = (
 /obj/machinery/light{
 	dir = 8
@@ -51,10 +56,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "dn" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/meter,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_core)
 "dr" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -84,12 +88,20 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room/external)
 "ef" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plasteel/dark,
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
-"ff" = (
-/obj/structure/closet/firecloset,
-/obj/effect/turf_decal/delivery,
+"eZ" = (
+/obj/machinery/button/door{
+	id = "au_nuclear_vent";
+	name = "RBMK Compartment Flush";
+	pixel_y = 24
+	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
 "fn" = (
@@ -158,23 +170,21 @@
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "hO" = (
-/obj/machinery/atmospherics/pipe/simple/general/visible{
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 4
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
-/turf/open/floor/engine,
-/area/engine/engineering/reactor_core)
+/turf/open/space/basic,
+/area/space/nearstation)
 "iM" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible,
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "iZ" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
+	dir = 6
 	},
+/obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
 "jz" = (
@@ -207,7 +217,7 @@
 /area/engine/engine_smes)
 "kt" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
+	dir = 10
 	},
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -252,12 +262,15 @@
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "lw" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
 	},
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/machinery/pool_filter{
+	pixel_y = 6
+	},
+/obj/item/twohanded/required/fuel_rod,
+/turf/open/indestructible/sound/pool/end,
+/area/engine/engineering/reactor_core)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -269,13 +282,13 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
 "md" = (
+/obj/item/twohanded/required/fuel_rod,
 /obj/effect/turf_decal/stripes/line{
-	dir = 9
+	dir = 1
 	},
-/obj/machinery/pool_filter{
+/obj/structure/pool_ladder{
 	pixel_y = 6
 	},
-/obj/item/twohanded/required/fuel_rod,
 /turf/open/indestructible/sound/pool/end,
 /area/engine/engineering/reactor_core)
 "mx" = (
@@ -300,6 +313,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
+"mR" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
 "mX" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -312,14 +329,6 @@
 /obj/item/radio/intercom{
 	dir = 4;
 	pixel_y = 29
-	},
-/turf/open/floor/plasteel/dark,
-/area/engine/engineering/reactor_control)
-"ob" = (
-/obj/machinery/button/door{
-	id = "au_nuclear_vent";
-	name = "RBMK Compartment Flush";
-	pixel_y = 24
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
@@ -356,10 +365,7 @@
 "pm" = (
 /obj/item/twohanded/required/fuel_rod,
 /obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/structure/pool_ladder{
-	pixel_y = 6
+	dir = 5
 	},
 /turf/open/indestructible/sound/pool/end,
 /area/engine/engineering/reactor_core)
@@ -370,14 +376,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
-"qw" = (
-/obj/item/twohanded/required/fuel_rod,
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
+"qr" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 10
 	},
-/turf/open/indestructible/sound/pool/end,
+/turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
-"qF" = (
+"qw" = (
 /obj/machinery/light{
 	dir = 4
 	},
@@ -389,6 +394,13 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
+"qF" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space/nearstation)
 "qW" = (
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_core)
@@ -406,12 +418,15 @@
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "sb" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
+/obj/machinery/button/door{
+	id = "atmos1storage";
+	name = "Atmospherics Secure Storage Control";
+	pixel_x = -8;
+	pixel_y = 24;
+	req_access_txt = "11"
 	},
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/engine,
+/area/engine/engineering/reactor_core)
 "sg" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
@@ -459,6 +474,13 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
+"uC" = (
+/obj/structure/chair/office/light{
+	dir = 1;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
 "uR" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -623,6 +645,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
+"zb" = (
+/turf/closed/wall/r_wall,
+/area/space)
 "zz" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -669,13 +694,6 @@
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/engine/engine_smes)
-"BC" = (
-/obj/structure/chair/office/light{
-	dir = 1;
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/dark,
-/area/engine/engineering/reactor_control)
 "BE" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
@@ -710,10 +728,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/engine_room/external)
-"Cl" = (
-/obj/structure/lattice/catwalk,
-/turf/closed/wall/r_wall,
-/area/engine/engineering/reactor_control)
 "Cm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
@@ -735,10 +749,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
-"Dm" = (
-/obj/structure/table,
-/turf/open/floor/plasteel/dark,
-/area/engine/engineering/reactor_control)
 "Ds" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/camera/autoname{
@@ -815,15 +825,6 @@
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/engine/engineering/reactor_core)
-"Hh" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/engine/engineering/reactor_core)
-"Hn" = (
-/turf/closed/wall/r_wall,
-/area/space)
 "Hy" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -844,6 +845,10 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
+"IC" = (
+/obj/structure/lattice/catwalk,
+/turf/closed/wall/r_wall,
+/area/engine/engineering/reactor_control)
 "IF" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 5
@@ -868,11 +873,6 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room/external)
 "IM" = (
-/turf/open/floor/plasteel/dark,
-/area/engine/engineering/reactor_control)
-"Je" = (
-/obj/structure/table,
-/obj/item/toy/figure/ce,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
 "Jx" = (
@@ -932,6 +932,13 @@
 "Mx" = (
 /obj/structure/sign/warning/radiation{
 	pixel_y = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
+"MI" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
@@ -1007,6 +1014,11 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
+"PM" = (
+/obj/structure/closet/firecloset,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
 "PP" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -1045,13 +1057,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
-"QN" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/engine/engineering/reactor_control)
 "QU" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -1403,7 +1408,7 @@ hr
 hr
 BF
 BF
-dn
+BF
 BF
 BF
 BF
@@ -1431,7 +1436,7 @@ Qt
 Qt
 Qt
 Qt
-Cl
+IC
 BF
 "}
 (6,1,1) = {"
@@ -1455,7 +1460,7 @@ ZA
 Qt
 jB
 vw
-ff
+PM
 Qt
 BF
 "}
@@ -1478,7 +1483,7 @@ YV
 YV
 Py
 Qt
-ob
+eZ
 IM
 mX
 Qt
@@ -1490,7 +1495,7 @@ hr
 BF
 ZA
 be
-ef
+dn
 kA
 YV
 YV
@@ -1567,7 +1572,7 @@ ZA
 ZA
 ZA
 ZA
-YV
+sb
 Ip
 YV
 XX
@@ -1581,7 +1586,7 @@ xL
 yb
 IM
 OC
-Je
+aZ
 ra
 "}
 (12,1,1) = {"
@@ -1604,7 +1609,7 @@ YV
 YV
 xL
 ot
-BC
+uC
 OC
 IM
 IM
@@ -1630,7 +1635,7 @@ YV
 xL
 Km
 ym
-QN
+MI
 ta
 IM
 "}
@@ -1654,7 +1659,7 @@ IF
 YV
 Qt
 nn
-BC
+uC
 OC
 IM
 IM
@@ -1681,7 +1686,7 @@ Qt
 Mx
 IM
 OC
-Dm
+mR
 ra
 "}
 (16,1,1) = {"
@@ -1716,7 +1721,7 @@ BF
 ZA
 YV
 QU
-md
+lw
 sO
 Ee
 KH
@@ -1725,7 +1730,7 @@ YV
 YV
 wL
 zz
-Hh
+qr
 WU
 yd
 Wi
@@ -1741,7 +1746,7 @@ BF
 ZA
 YV
 Ip
-pm
+md
 sP
 oX
 KH
@@ -1766,7 +1771,7 @@ BF
 ac
 YV
 Ac
-qw
+pm
 tn
 oO
 KH
@@ -1790,8 +1795,8 @@ hr
 BF
 ac
 bk
-hO
-qF
+ef
+qw
 uk
 hA
 Uc
@@ -1826,7 +1831,7 @@ Ca
 Uj
 YJ
 fr
-Hn
+zb
 BF
 hr
 hr
@@ -1990,7 +1995,7 @@ hr
 hr
 hr
 hr
-iZ
+hO
 LA
 VP
 LA
@@ -2040,7 +2045,7 @@ hr
 hr
 hr
 hr
-kt
+iZ
 XF
 VK
 XF
@@ -2065,7 +2070,7 @@ hr
 hr
 hr
 hr
-lw
+kt
 XF
 AW
 XF
@@ -2091,7 +2096,7 @@ hr
 RS
 RS
 RS
-sb
+qF
 VK
 XF
 VK
@@ -2117,7 +2122,7 @@ hr
 ca
 RS
 RS
-lw
+kt
 BL
 sg
 BL

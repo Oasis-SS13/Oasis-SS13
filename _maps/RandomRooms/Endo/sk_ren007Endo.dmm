@@ -388,13 +388,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engine_room)
-"jn" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 2
-	},
-/obj/structure/statue/gold/ce,
-/turf/open/floor/engine,
-/area/engine/engine_room)
 "jz" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2467,7 +2460,7 @@ eZ
 Lm
 qJ
 jm
-jn
+jm
 SE
 Bo
 oJ
