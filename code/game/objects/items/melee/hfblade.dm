@@ -30,9 +30,9 @@
 	AddComponent(/datum/component/butchering, 30, 95, 5)
 	set_light(brightness)
 	START_PROCESSING(SSobj, src)
-//	/obj/item/melee/hfblade/Destroy()
+/*	/obj/item/melee/hfblade/Destroy()
 	STOP_PROCESSING(SSobj, src)
-	return ..()
+	return ..()*/
 
 /obj/item/melee/hfblade/hit_reaction(mob/living/carbon/human/owner, mob/living/carbon/human/attacker, datum/martial_art/attacker_style, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(attack_type == PROJECTILE_ATTACK)
@@ -73,15 +73,16 @@
 		return ..()
 
 /obj/item/melee/hfblade/on_exit_storage()
-    ..()
-    if(!brazil) playsound(src, 'sound/weapons/hfblademusic1.ogg', 25, 1)
-    else playsound(src, 'sound/items/unsheath.ogg', 25,1)
-    sleep(3)
+	if(brazil)
+		playsound(src, 'sound/weapons/hfblademusic1.ogg', 25, 1)
+	else
+		playsound(src, 'sound/items/unsheath.ogg', 25,1)
+
 /obj/item/melee/hfblade/on_enter_storage()
-    ..()
-    if(!brazil)playsound(src, 'sound/weapons/hfblademusic2.ogg', 25, 1)
-    else playsound(src, 'sound/items/sheath.ogg', 25,1)
-    sleep(2)
+	if(brazil)
+		playsound(src, 'sound/weapons/hfblademusic2.ogg', 25, 1)
+	else
+		playsound(src, 'sound/items/sheath.ogg', 25,1)
 
 /obj/item/melee/hfblade/attackby(obj/item/W, mob/living/user, params)
 	if(istype(W, /obj/item/multitool))
