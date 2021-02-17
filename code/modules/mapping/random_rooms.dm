@@ -1451,12 +1451,12 @@
 	template_width = 23
 	weight = 5
 
-	/datum/map_template/random_room/sk_ren006
+/datum/map_template/random_room/sk_ren006
 	name = "Endo Singularity and Tesla Engine"
 	room_id = "sk_ren006"
 	mappath = "_maps/RandomRooms/Endo/sk_ren006Endo.dmm"
 	centerspawner = TRUE
-	template_height = 23
+	template_height = 27
 	template_width = 33
 	weight = 1
 
@@ -1466,7 +1466,7 @@
 	mappath = "_maps/RandomRooms/Endo/sk_ren007Endo.dmm"
 	centerspawner = TRUE
 	template_height = 27
-	template_width = 23
+	template_width = 33
 	weight = 5
 
 /datum/map_template/random_room/sk_ren008
@@ -1474,6 +1474,6 @@
 	room_id = "sk_ren008"
 	mappath = "_maps/RandomRooms/Endo/sk_ren008Endo.dmm"
 	centerspawner = TRUE
-	template_height = 23
+	template_height = 27
 	template_width = 33
 	weight = 10
