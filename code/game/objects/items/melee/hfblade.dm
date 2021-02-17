@@ -72,17 +72,28 @@
 		user.changeNext_move(CLICK_CD_CLICK_ABILITY)
 		return ..()
 
-/obj/item/melee/hfblade/on_exit_storage()
-	if(brazil)
-		playsound(src, 'sound/weapons/hfblademusic1.ogg', 25, 1)
-	else
-		playsound(src, 'sound/items/unsheath.ogg', 25,1)
 
+
+var/cooldown = 40 // 4 seconds
+
+var/last_used_exit = 0
+/obj/item/melee/hfblade/on_exit_storage()
+    if((last_used_exit + cooldown) < world.time)
+        if(brazil)
+            playsound(src, 'sound/weapons/hfblademusic1.ogg', 25, 1)
+        else
+            playsound(src, 'sound/items/unsheath.ogg', 25,1)
+        last_used_exit = world.time
+
+var/last_used_enter = 0
 /obj/item/melee/hfblade/on_enter_storage()
-	if(brazil)
-		playsound(src, 'sound/weapons/hfblademusic2.ogg', 25, 1)
-	else
-		playsound(src, 'sound/items/sheath.ogg', 25,1)
+    if((last_used_enter + cooldown) < world.time)
+        if(brazil)
+            playsound(src, 'sound/weapons/hfblademusic2.ogg', 25, 1)
+        else
+            playsound(src, 'sound/items/sheath.ogg', 25,1)
+        last_used_enter = world.time
+
 
 /obj/item/melee/hfblade/attackby(obj/item/W, mob/living/user, params)
 	if(istype(W, /obj/item/multitool))
