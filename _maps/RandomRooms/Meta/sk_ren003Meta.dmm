@@ -33,10 +33,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -25
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -357,6 +353,7 @@
 /area/engine/engineering/reactor_core)
 "iq" = (
 /obj/effect/turf_decal/stripes/line,
+/obj/item/twohanded/required/fuel_rod,
 /turf/open/indestructible/sound/pool,
 /area/engine/engineering/reactor_core)
 "iu" = (
@@ -383,7 +380,6 @@
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "iW" = (
-/obj/item/twohanded/required/fuel_rod,
 /turf/open/indestructible/sound/pool,
 /area/engine/engineering/reactor_core)
 "jf" = (
@@ -634,6 +630,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/item/analyzer,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
 "qD" = (
@@ -680,10 +677,6 @@
 /area/engine/engineering/reactor_control)
 "rw" = (
 /obj/effect/turf_decal/delivery,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -25
-	},
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -1017,12 +1010,12 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -25
-	},
 /obj/machinery/camera/autoname{
 	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -24
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
@@ -1319,6 +1312,11 @@
 /obj/structure/closet/firecloset,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -26;
+	pixel_y = 28
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
@@ -1884,6 +1882,14 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
+"ZR" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering/reactor_control)
 
 (1,1,1) = {"
 Cq
@@ -1950,7 +1956,7 @@ tf
 Sa
 lU
 LF
-tf
+ZR
 Ux
 tT
 LF
