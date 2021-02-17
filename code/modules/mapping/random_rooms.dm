@@ -1456,7 +1456,7 @@
 	room_id = "sk_ren006"
 	mappath = "_maps/RandomRooms/Endo/sk_ren006Endo.dmm"
 	centerspawner = TRUE
-	template_height = 27
+	template_height = 25
 	template_width = 33
 	weight = 1
 
@@ -1465,7 +1465,7 @@
 	room_id = "sk_ren007"
 	mappath = "_maps/RandomRooms/Endo/sk_ren007Endo.dmm"
 	centerspawner = TRUE
-	template_height = 27
+	template_height = 25
 	template_width = 33
 	weight = 5
 
@@ -1474,6 +1474,6 @@
 	room_id = "sk_ren008"
 	mappath = "_maps/RandomRooms/Endo/sk_ren008Endo.dmm"
 	centerspawner = TRUE
-	template_height = 27
+	template_height = 25
 	template_width = 33
 	weight = 10
