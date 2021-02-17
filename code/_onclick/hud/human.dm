@@ -84,15 +84,25 @@
 	..()
 	owner.overlay_fullscreen("see_through_darkness", /atom/movable/screen/fullscreen/see_through_darkness)
 
+	var/widescreen_layout = FALSE
+	if(owner.client?.prefs?.widescreenpref)
+		widescreen_layout = TRUE
+
+
+
 	var/atom/movable/screen/using
 	var/atom/movable/screen/inventory/inv_box
 
 	using = new/atom/movable/screen/language_menu
 	using.icon = ui_style
+	if(!widescreen_layout)
+		using.screen_loc = UI_BOXLANG
 	static_inventory += using
 
 	using = new /atom/movable/screen/area_creator
 	using.icon = ui_style
+	if(!widescreen_layout)
+		using.screen_loc = UI_BOXAREA
 	static_inventory += using
 
 	action_intent = new /atom/movable/screen/act_intent/segmented

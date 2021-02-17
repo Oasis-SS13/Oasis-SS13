@@ -8,10 +8,6 @@ on:
 jobs:
   CompileCL:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-    if: github.repository == 'Oasis-SS13/Oasis-SS13'
-=======
->>>>>>> 09d99108dd... Modernizes the github actions (#3428)
     steps:
       - name: Checkout
         uses: actions/checkout@v1

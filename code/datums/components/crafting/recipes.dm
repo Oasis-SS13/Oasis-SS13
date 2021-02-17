@@ -916,7 +916,7 @@
 	name = "Shank"
 	reqs = list(/obj/item/shard = 1,
 					/obj/item/stack/cable_coil = 10) // 1 glass shard + 10 cable; needs a wirecutter to snip the cable.
-	result = /obj/item/melee/shank
+	result = /obj/item/kitchen/knife/shank
 	tools = list(TOOL_WIRECUTTER)
 	time = 20
 	category = CAT_WEAPONRY
@@ -932,8 +932,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	tools = list(TOOL_WIRECUTTER)
-<<<<<<< HEAD
-=======
 
 /datum/crafting_recipe/poppy_pin
 	name = "Poppy Pin"
@@ -948,6 +946,5 @@
 	result = /obj/item/reagent_containers/food/snacks/grown/poppy
 	time = 5
 	reqs = list(/obj/item/clothing/accessory/poppy_pin = 1)
-	
 	category = CAT_MISC
->>>>>>> 928770aac5... Poppy pin removal fix (#3562)
+
