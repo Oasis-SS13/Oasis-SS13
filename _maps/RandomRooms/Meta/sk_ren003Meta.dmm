@@ -341,7 +341,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/space/nearstation)
+/area/engine/engineering/reactor_core)
 "id" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard)
