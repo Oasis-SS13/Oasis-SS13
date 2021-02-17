@@ -168,9 +168,14 @@
 	refresh_working()
 	if(working)
 		var/penalty = max((get_env_temp() - temp_tolerance_high), 0) * temp_penalty_coefficient
-		return list(TECHWEB_POINT_TYPE_GENERIC = max(base_mining_income - penalty, 0))
-	else
+		var/result = max(base_mining_income - penalty, 0)
+		result = mine_hooks(result)
+		return list(TECHWEB_POINT_TYPE_GENERIC = result)	else
 		return list(TECHWEB_POINT_TYPE_GENERIC = 0)
+/obj/machinery/rnd/server/proc/mine_hooks(points)
+	// Anything related to intercepting a server's production goes here. Note that order probably matters!
+	points = infiltrator_miner_intercept(points)
+	return points
 
 /obj/machinery/computer/rdservercontrol
 	name = "R&D Server Controller"

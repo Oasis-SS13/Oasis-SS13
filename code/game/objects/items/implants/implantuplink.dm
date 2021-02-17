@@ -19,5 +19,8 @@
 	name = "implanter (precharged uplink)"
 	imp_type = /obj/item/implant/uplink/precharged
 
+/obj/item/implant/uplink/infiltrator
+	starting_tc = 30
+
 /obj/item/implant/uplink/precharged
 	starting_tc = 10

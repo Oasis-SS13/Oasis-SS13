@@ -242,7 +242,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndicate/contract_kit
 	cost = 20
 	player_minimum = 15
-	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/incursion)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/incursion, /datum/game_mode/infiltration)
 
 /datum/uplink_item/bundles_TC/bundle_A
 	name = "Syndi-kit Tactical"
@@ -251,7 +251,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			you will receive. May contain discontinued and/or exotic items."
 	item = /obj/item/storage/box/syndicate/bundle_A
 	cost = 20
-	exclude_modes = list(/datum/game_mode/nuclear)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/infiltration)
 
 /datum/uplink_item/bundles_TC/bundle_B
 	name = "Syndi-kit Special"
@@ -259,7 +259,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			In Syndi-kit Special, you will receive items used by famous syndicate agents of the past. Collectively worth more than 20 telecrystals, the syndicate loves a good throwback."
 	item = /obj/item/storage/box/syndicate/bundle_B
 	cost = 20
-	exclude_modes = list(/datum/game_mode/nuclear)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/infiltration))
 
 /datum/uplink_item/bundles_TC/surplus
 	name = "Syndicate Surplus Crate"
@@ -268,7 +268,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/structure/closet/crate
 	cost = 20
 	player_minimum = 20
-	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration))
 	var/starting_crate_value = 50
 	var/check_include_modes = TRUE
 
@@ -545,7 +545,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/twohanded/dualsaber
 	player_minimum = 25
 	cost = 16 // OASIS EDIT
-	exclude_modes = list(/datum/game_mode/nuclear/clown_ops)
+	exclude_modes = list(/datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration))
 
 /datum/uplink_item/dangerous/doublesword/get_discount()
 	return pick(4;0.8,2;0.65,1;0.5)
@@ -556,7 +556,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			pocketed when inactive. Activating it produces a loud, distinctive noise."
 	item = /obj/item/melee/transforming/energy/sword/saber
 	cost = 8
-	exclude_modes = list(/datum/game_mode/nuclear/clown_ops)
+	exclude_modes = list(/datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration))
 
 /datum/uplink_item/dangerous/shield
 	name = "Energy Shield"
@@ -590,7 +590,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 18
 	surplus = 10
 	surplus_nullcrates = 0
-	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration))
 	player_minimum = 25
 	restricted = TRUE
 
@@ -713,7 +713,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "CQC Manual"
 	desc = "A manual that teaches a single user tactical Close-Quarters Combat before self-destructing."
 	item = /obj/item/book/granter/martial/cqc
-	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
+	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration)
 	cost = 12
 	surplus = 0
 
@@ -755,7 +755,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	player_minimum = 20
 	surplus = 10
 	surplus_nullcrates = 0
-	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/incursion)
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/incursion, /datum/game_mode/infiltration)
 
 /datum/uplink_item/stealthy_weapons/radbow
 	name = "Gamma-Bow"
@@ -767,7 +767,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/gun/energy/kinetic_accelerator/crossbow/radbow
 	cost = 8
 	surplus = 50
-	exclude_modes = list() // no reason not to have 5 guys turn the station into the chernobyl exclusion zone.
+	exclude_modes = list(/datum/game_mode/infiltration) // no reason not to have 5 guys turn the station into the chernobyl exclusion zone.
 
 /datum/uplink_item/stealthy_weapons/crossbow
 	name = "Miniature Energy Crossbow"
@@ -807,6 +807,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndie_kit/romerol
 	cost = 25
 	cant_discount = TRUE
+	exclude_modes = list(/datum/game_mode/infiltration)
+
 
 /datum/uplink_item/stealthy_weapons/sleepy_pen
 	name = "Sleepy Pen"
@@ -1087,6 +1089,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/backpack/duffelbag/syndie/c4
 	cost = 8 //20% discount!
 	cant_discount = TRUE
+	exclude_modes = list(/datum/game_mode/infiltration)
+
 
 /datum/uplink_item/explosives/x4bag
 	name = "Bag of X-4 explosives"
@@ -1096,6 +1100,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/backpack/duffelbag/syndie/x4
 	cost = 4 //
 	cant_discount = TRUE
+	exclude_modes = list(/datum/game_mode/infiltration)
 
 /datum/uplink_item/explosives/clown_bomb_clownops
 	name = "Clown Bomb"
@@ -1117,6 +1122,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/cartridge/virus/syndicate
 	cost = 6
 	restricted = TRUE
+	exclude_modes = list(/datum/game_mode/infiltration) //stealthhhh!
+
 
 /datum/uplink_item/explosives/emp
 	name = "EMP Grenades and Implanter Kit"
@@ -1188,6 +1195,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			The bomb core can be pried out and manually detonated with other explosives."
 	item = /obj/item/sbeacondrop/bomb
 	cost = 12
+	exclude_modes = list(/datum/game_mode/infiltration)
+
 
 /datum/uplink_item/explosives/syndicate_detonator
 	name = "Syndicate Detonator"
@@ -1205,7 +1214,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			in addition to dealing high amounts of damage to nearby personnel."
 	item = /obj/item/grenade/syndieminibomb
 	cost = 5
-	exclude_modes = list(/datum/game_mode/nuclear/clown_ops)
+	exclude_modes = list(/datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration)
+
+
 
 /datum/uplink_item/explosives/tearstache
 	name = "Teachstache Grenade"
@@ -1671,6 +1682,8 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 	item = /obj/item/powersink
 	cost = 10
 	player_minimum = 35
+	exclude_modes = list(/datum/game_mode/infiltration)
+
 
 /datum/uplink_item/device_tools/stimpack
 	name = "Stimpack"
@@ -2227,11 +2240,59 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/autosurgeon/syndicate/laser_arm
 	restricted_roles = list("Roboticist", "Research Director")
 
+//Infiltrator stuff
+/datum/uplink_item/infiltration
+	category = "Infiltration Gear"
+	include_modes = list(/datum/game_mode/infiltration)
+	surplus = 0
+
+/datum/uplink_item/infiltration/pinpointer_upgrade
+	name = "Pinpointer Upgrade"
+	desc = "An infiltration pinpointer upgrade that allows pinpointers to track objective targets."
+	item = /obj/item/infiltrator_pinpointer_upgrade
+	cost = 8
+
+/datum/uplink_item/infiltration/extra_stealthsuit
+	name = "Extra Chameleon Hardsuit"
+	desc = "An infiltration hardsuit, capable of changing its appearance instantly."
+	item = /obj/item/clothing/suit/space/hardsuit/infiltration
+	cost = 10
+
+// Events
+/datum/uplink_item/services
+	category = "Services"
+	include_modes = list(/datum/game_mode/infiltration, /datum/game_mode/nuclear)
+	surplus = 0
+
+/datum/uplink_item/services/manifest_spoof
+	name = "Crew Manifest Spoof"
+	desc = "A button capable of adding a single person to the crew manifest."
+	item = /obj/item/service/manifest
+	cost = 10 //Maybe this is too cheap??
+
+/datum/uplink_item/services/fake_ion
+	name = "Fake Ion Storm"
+	desc = "Fakes an ion storm announcement. A good distraction, especially if the AI is weird anyway."
+	item = /obj/item/service/ion
+	cost = 7
+
+/datum/uplink_item/services/fake_meteor
+	name = "Fake Meteor Announcement"
+	desc = "Fakes an meteor announcement. A good way to get any C4 on the station exterior, or really any small explosion, brushed off as a meteor hit."
+	item = /obj/item/service/meteor
+	cost = 7
+
+/datum/uplink_item/services/fake_rod
+	name = "Fake Immovable Rod"
+	desc = "Fakes an immovable rod announcement. Good for a short-lasting distraction."
+	item = /obj/item/service/rodgod
+	cost = 6 //less likely to be believed
 
 // Pointless
 /datum/uplink_item/badass
 	category = "(Pointless) Badassery"
 	surplus = 0
+	exclude_modes = list(/datum/game_mode/infiltration)
 /datum/uplink_item/badass/costumes/obvious_chameleon
 	name = "Broken Chameleon Kit"
 	desc = "A set of items that contain chameleon technology allowing you to disguise as pretty much anything on the station, and more! \
