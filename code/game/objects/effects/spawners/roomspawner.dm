@@ -80,3 +80,7 @@
 	room_width = 19
 	room_height = 23
 
+/obj/effect/spawner/room/endo
+	name = "Endo engine spawner"
+	room_width = 33
+	room_height = 23
