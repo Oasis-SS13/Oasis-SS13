@@ -135,7 +135,7 @@
 		power_drained += drained
 		if(drained < drain_rate)
 		on_drain(drained)
-					break
+		break
 
 	if(power_drained > max_power * 0.98)
 		if (!admins_warned)

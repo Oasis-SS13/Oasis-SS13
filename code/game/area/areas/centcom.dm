@@ -137,6 +137,7 @@
 /area/syndicate_mothership/elite_squad
 	name = "Syndicate Elite Squad"
 	icon_state = "syndie-elite"
+
 /area/infiltrator_base
 	name = "Syndicate Infiltrator Base"
 	icon = 'icons/turf/areas.dmi'

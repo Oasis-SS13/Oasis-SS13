@@ -170,7 +170,8 @@
 		var/penalty = max((get_env_temp() - temp_tolerance_high), 0) * temp_penalty_coefficient
 		var/result = max(base_mining_income - penalty, 0)
 		result = mine_hooks(result)
-		return list(TECHWEB_POINT_TYPE_GENERIC = result)	else
+		return list(TECHWEB_POINT_TYPE_GENERIC = result)
+	else
 		return list(TECHWEB_POINT_TYPE_GENERIC = 0)
 /obj/machinery/rnd/server/proc/mine_hooks(points)
 	// Anything related to intercepting a server's production goes here. Note that order probably matters!
