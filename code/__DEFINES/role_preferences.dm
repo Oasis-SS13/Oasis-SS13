@@ -73,9 +73,9 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_GANG = /datum/game_mode/gang,
 	ROLE_HOLOPARASITE,
 	ROLE_HERETIC = /datum/game_mode/heretics,
-	ROLE_TERATOMA
-	ROLE_INFILTRATOR = /datum/game_mode/infiltration,
-))
+	ROLE_TERATOMA,
+	ROLE_INFILTRATOR = /datum/game_mode/infiltration
+	))
 
 //Job defines for what happens when you fail to qualify for any job during job selection
 #define BEOVERFLOW 	1
