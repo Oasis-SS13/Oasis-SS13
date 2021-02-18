@@ -546,6 +546,15 @@
 	gender = FEMALE
 	squeak_override = list('sound/voice/moth/scream_moth.ogg'=1)
 
+/obj/item/toy/plush/georgefloyd
+	name = "George Floyd"
+	desc = "PLEAS I CAMT BREATHE."
+	icon_state = "george_floyd"
+	item_state = "george_floyd"
+	attack_verb = list("took breath away from")
+	gender = MALE
+	squeak_override = list('sound/voice/moth/scream_moth.ogg'=1)
+
 /obj/item/toy/plush/moth
 	name = "moth plushie"
 	desc = "An adorable mothperson plushy. It's a huggable bug!"
