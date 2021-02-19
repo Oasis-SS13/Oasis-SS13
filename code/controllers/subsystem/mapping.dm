@@ -16,6 +16,8 @@ SUBSYSTEM_DEF(mapping)
 	var/list/ruins_templates = list()
 	var/list/space_ruins_templates = list()
 	var/list/lava_ruins_templates = list()
+	var/list/sand_ruins_templates = list()	// Ruins for ScorchStation
+	var/list/sand_underground_ruins_templates = list()	// Ruins for ScorchStation Underground
 
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
@@ -62,16 +64,53 @@ SUBSYSTEM_DEF(mapping)
 	process_teleport_locs()			//Sets up the wizard teleport locations
 	preloadTemplates()
 #ifndef LOWMEMORYMODE
-	// Create space ruin levels
+	//if(config.map_name == "Caves") // ScorchStation
+	// Create sand ruin levels
 	while (space_levels_so_far < config.space_ruin_levels)
 		++space_levels_so_far
-		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
-	// and one level with no ruins
+		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SCORCHSTATION)
+	// and one sand level with no ruins
 	for (var/i in 1 to config.space_empty_levels)
 		++space_levels_so_far
 		empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
-	// and the transit level
+	// and the sand transit level
 	transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+	// Generate underground ruins for ScorchStation
+	loading_ruins = TRUE
+	var/list/unsand_ruins = levels_by_trait(ZTRAIT_UNDERGROUND_SAND_RUINS)
+	if (unsand_ruins.len)
+		seedRuins(unsand_ruins, CONFIG_GET(number/unsand_budget), /area/sandland/surface/outdoors/unexplored, sand_underground_ruins_templates)
+		for (var/unsand_z in unsand_ruins)
+			spawn_rivers(unsand_z)
+	// Generate sand ruins for ScorchStation
+	loading_ruins = TRUE
+	var/list/sand_ruins = levels_by_trait(ZTRAIT_SAND_RUINS)
+	if (sand_ruins.len)
+		seedRuins(sand_ruins, CONFIG_GET(number/sand_budget), /area/sandland/surface/outdoors/unexplored, sand_ruins_templates)
+		for (var/sand_z in sand_ruins)
+			spawn_rivers(sand_z)
+	/*else
+		// Create space ruin levels
+		while (space_levels_so_far < config.space_ruin_levels)
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
+		// and one level with no ruins
+		for (var/i in 1 to config.space_empty_levels)
+			++space_levels_so_far
+			empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = CROSSLINKED))
+		// and the transit level
+		transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+		// Generate mining ruins
+		loading_ruins = TRUE
+		var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
+		if (lava_ruins.len)
+			seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors/unexplored, lava_ruins_templates)
+			for (var/lava_z in lava_ruins)
+				spawn_rivers(lava_z)
+		// Generate deep space ruins
+		var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
+		if (space_ruins.len)
+			seedRuins(space_ruins, CONFIG_GET(number/space_budget), /area/space, space_ruins_templates)*/
 
 	// Pick a random away mission.
 	if(CONFIG_GET(flag/roundstart_away))
@@ -82,20 +121,8 @@ SUBSYSTEM_DEF(mapping)
 		to_chat(world, "<span class='boldannounce'>Loading virtual reality...</span>")
 		load_new_z_level("_maps/RandomZLevels/VR/vrhub.dmm", "Virtual Reality Hub")
 		to_chat(world, "<span class='boldannounce'>Virtual reality loaded.</span>")
-
-	// Generate mining ruins
-	loading_ruins = TRUE
-	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
-	if (lava_ruins.len)
-		seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors/unexplored, lava_ruins_templates)
-		for (var/lava_z in lava_ruins)
-			spawn_rivers(lava_z)
-
-	// Generate deep space ruins
-	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
-	if (space_ruins.len)
-		seedRuins(space_ruins, CONFIG_GET(number/space_budget), /area/space, space_ruins_templates)
 	loading_ruins = FALSE
+
 #endif
 	repopulate_sorted_areas()
 	// Set up Z-level transitions.
@@ -160,6 +187,8 @@ SUBSYSTEM_DEF(mapping)
 	map_templates = SSmapping.map_templates
 	ruins_templates = SSmapping.ruins_templates
 	space_ruins_templates = SSmapping.space_ruins_templates
+	sand_ruins_templates = SSmapping.sand_ruins_templates // ScorchStation
+	sand_underground_ruins_templates = SSmapping.sand_underground_ruins_templates // ScorchStation Underground
 	lava_ruins_templates = SSmapping.lava_ruins_templates
 	shuttle_templates = SSmapping.shuttle_templates
 	random_room_templates = SSmapping.random_room_templates
@@ -230,9 +259,14 @@ SUBSYSTEM_DEF(mapping)
 	InitializeDefaultZLevels()
 
 	// load the station
-	station_start = world.maxz + 1
-	INIT_ANNOUNCE("Loading [config.map_name]...")
-	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
+	if(config.map_name == "Caves")
+		station_start = world.maxz + 1
+		INIT_ANNOUNCE("Loading [config.map_name]...")
+		LoadGroup(FailedZs, "Station", config.map_path, config.map_file, default_traits = ZTRAITS_CAVES)
+	else
+		station_start = world.maxz + 1
+		INIT_ANNOUNCE("Loading [config.map_name]...")
+		LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
 
 	if(SSdbcore.Connect())
 		var/datum/DBQuery/query_round_map_name = SSdbcore.NewQuery({"
@@ -243,13 +277,20 @@ SUBSYSTEM_DEF(mapping)
 
 #ifndef LOWMEMORYMODE
 	// TODO: remove this when the DB is prepared for the z-levels getting reordered
-	while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels)
-		++space_levels_so_far
-		add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
+	if(config.map_name == "Caves")
+		while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels) // ScorchStation
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_CAVES)
+	else
+		while (world.maxz < (5 - 1) && space_levels_so_far < config.space_ruin_levels)
+			++space_levels_so_far
+			add_new_zlevel("Empty Area [space_levels_so_far]", ZTRAITS_SPACE)
 
 	// load mining
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
+	else if (config.map_name == "Caves")
+		LoadGroup(FailedZs, "Caves", "map_files/Caves", "Caves.dmm", default_traits = ZTRAITS_CAVES) // ScorchStation Underground aka Caves
 	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
@@ -366,6 +407,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	// Still supporting bans by filename
 	var/list/banned = generateMapList("[global.config.directory]/lavaruinblacklist.txt")
 	banned += generateMapList("[global.config.directory]/spaceruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/sandruinblacklist.txt")	//ScorchStation
 
 	for(var/item in sortList(subtypesof(/datum/map_template/ruin), /proc/cmp_ruincost_priority))
 		var/datum/map_template/ruin/ruin_type = item
@@ -384,6 +426,10 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 			lava_ruins_templates[R.name] = R
 		else if(istype(R, /datum/map_template/ruin/space))
 			space_ruins_templates[R.name] = R
+		else if(istype(R, /datum/map_template/ruin/sand)) // ScorchStation
+			sand_ruins_templates[R.name] = R
+		else if(istype(R, /datum/map_template/ruin/sand/underground)) // ScorchStation Underground
+			sand_underground_ruins_templates[R.name] = R
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
 	var/list/unbuyable = generateMapList("[global.config.directory]/shuttles_unbuyable.txt")

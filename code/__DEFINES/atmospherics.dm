@@ -163,6 +163,7 @@
 #define FROZEN_ATMOS				"o2=22;n2=82;TEMP=180" //-93.15°C snow and ice turfs
 #define KITCHEN_COLDROOM_ATMOS		"o2=25;n2=96;TEMP=253.15" //-20°C kitchen coldroom; higher amount of mol to reach about 101.3 kpA
 #define BURNMIX_ATMOS				"o2=100;plasma=200;TEMP=370" //used in the holodeck burn test program
+#define DESERT_ATMOS 				"o2=71;n2=26;co2=3;TEMP=433" //DesertStation Air Mix
 
 //ATMOSPHERICS DEPARTMENT GAS TANK TURFS
 #define ATMOS_TANK_N2O				"n2o=6000;TEMP=293.15"
@@ -177,6 +178,7 @@
 
 //ATMOS MIX IDS
 #define LAVALAND_DEFAULT_ATMOS		"LAVALAND_ATMOS"
+#define DESERT_DEFAULT_ATMOS		"DESERT_ATMOS" //Scorchstation
 
 //ATMOSIA GAS MONITOR TAGS
 #define ATMOS_GAS_MONITOR_INPUT_O2 "o2_in"

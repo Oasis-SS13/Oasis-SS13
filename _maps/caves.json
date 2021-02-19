@@ -1,0 +1,32 @@
+{
+    "map_name": "Caves",
+    "map_path": "map_files/Caves",
+	"map_file": "Caves.dmm",
+	"traits":[
+		{
+		   "Up":1,
+		   "Mining":true,
+		   "Station":false,
+		   "Linkage":null,
+		   "Gravity":true,
+		   "Ice Ruins Underground":true,
+		   "Baseturf":"/turf/open/floor/plating/asteroid/cavesand"
+		},
+		{
+		   "Down":-1,
+		   "Up":1,
+		   "Mining":true,
+		   "Station":false,
+		   "Linkage":null,
+		   "Gravity":true,
+		   "Ice Ruins Underground":true,
+		   "Baseturf":"/turf/open/floor/plating/asteroid/sand"
+		}
+	 ],
+	 "shuttles": {
+	    "emergency": "emergency_kilo",
+	    "ferry": "ferry_kilo",
+	    "cargo": "cargo_kilo",
+	    "whiteship": "whiteship_meta"
+    }
+}

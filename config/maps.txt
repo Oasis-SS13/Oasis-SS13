@@ -58,3 +58,9 @@ map kilostation
 	votable
 	disabled
 endmap
+
+map Caves
+    minplayers 0
+    maxplayers 80
+	enabled
+endmap

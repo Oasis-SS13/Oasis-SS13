@@ -569,8 +569,17 @@ BOMBCAP 24
 ## of ruins.
 LAVALAND_BUDGET 60
 
+## Sand Ruin Budged
+sand_Budget 50
+
+## Underground Sand Ruin Budged
+unsand_Budget 50
+
 ## Space Ruin Budged
 Space_Budget 8
+
+## Sand Ruin Budget
+Sand_Land 50
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate

@@ -231,3 +231,245 @@
 	destination_x = dest_x
 	destination_y = dest_y
 	destination_z = dest_z
+
+// World turf
+/turf/open/sand_land // SorchStation
+	name = "\proper sand"
+	baseturfs = /turf/open/sand_land
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "asteroid0"
+	var/environment_type = "asteroid"
+	initial_gas_mix = DESERT_ATMOS
+	var/floor_variance = 30
+	intact = 0
+	var/obj/item/stack/digResult = /obj/item/stack/sheet/mineral/sandstone
+	planetary_atmos = TRUE
+	FASTDMM_PROP(\
+		pipe_astar_cost = 4\
+	)
+
+	temperature = 433
+	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
+	heat_capacity = 10000
+
+	var/destination_z
+	var/destination_x
+	var/destination_y
+	plane = PLANE_SPACE
+	layer = SPACE_LAYER
+	light_power = 0.15
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	bullet_bounce_sound = null // TO DO
+
+	vis_flags = VIS_INHERIT_ID	//when this be added to vis_contents of something it be associated with something on clicking, important for visualisation of turf in openspace and interraction with openspace that show you turf.
+
+/turf/open/sand_land/basic/New()	//Do not convert to Initialize
+	//This is used to optimize the map loader
+	return
+
+/turf/open/sand_land/Initialize()//a
+	air = DESERT_ATMOS
+	update_air_ref()
+	vis_contets.Cut() //removes inherited overlays
+	visibilityChanged()
+
+	if(prob(floor_variance))
+		icon_state = "[environment_type][rand(0,20)]"
+
+	if(flags_1 & INITIALIZED_1)
+		stack_trace("Warning: [src]([type]) initialized multiple times!")
+	flags_1 |= INITIALIZED_1
+
+	var/area/A = loc
+	if(!IS_DYNAMIC_LIGHTING(src) && IS_DYNAMIC_LIGHTING(A))
+		add_overlay(/obj/effect/fullbright)
+
+	if(requires_activation)
+		SSair.add_to_active(src)
+
+	if (light_power && light_range)
+		update_light()
+
+	if (opacity)
+		has_opaque_atom = TRUE
+
+	ComponentInitialize()
+
+	return INITIALIZE_HINT_NORMAL
+
+//ATTACK GHOST IGNORING PARENT RETURN VALUE
+/turf/open/sand_land/attack_ghost(mob/dead/observer/user)
+	if(destination_z)
+		var/turf/T = locate(destination_x, destination_y, destination_z)
+		user.forceMove(T)
+
+/turf/open/sand_land/Initalize_Atmos(times_fired)
+	return
+
+/turf/open/sand_land/TakeTemperature(temp)
+	air.set_temperature(air.return_temperature() + 433)
+	air_update_turf()
+
+/turf/open/sand_land/RemoveLattice()
+	return
+
+/turf/open/sand_land/AfterChange()
+	..()
+	atmos_overlay_types = null
+
+/turf/open/sand_land/Assimilate_Air()
+	return
+
+/turf/open/sand_land/proc/update_starlight()
+	if(CONFIG_GET(flag/starlight))
+		for(var/t in RANGE_TURFS(1,src)) //RANGE_TURFS is in code\__HELPERS\game.dm
+			if(isspaceturf(t))
+				//let's NOT update this that much pls
+				continue
+			set_light(2)
+			return
+		set_light(0)
+
+/turf/open/sand_land/attack_paw(mob/user)
+	return attack_hand(user)
+
+/turf/open/sand_land/proc/CanBuildHere()
+	return TRUE
+
+/turf/open/sand_land/handle_slip()
+	return
+
+/turf/open/sand_land/attackby(obj/item/C, mob/user, params)
+	..()
+	if(!CanBuildHere())
+		return
+	if(istype(C, /obj/item/stack/rods))
+		var/obj/item/stack/rods/R = C
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		var/obj/structure/lattice/catwalk/W = locate(/obj/structure/lattice/catwalk, src)
+		if(W)
+			to_chat(user, "<span class='warning'>There is already a catwalk here!</span>")
+			return
+		if(L)
+			if(R.use(1))
+				to_chat(user, "<span class='notice'>You construct a catwalk.</span>")
+				playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
+				new/obj/structure/lattice/catwalk(src)
+			else
+				to_chat(user, "<span class='warning'>You need two rods to build a catwalk!</span>")
+			return
+		if(R.use(1))
+			to_chat(user, "<span class='notice'>You construct a lattice.</span>")
+			playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
+			ReplaceWithLattice()
+		else
+			to_chat(user, "<span class='warning'>You need one rod to build a lattice.</span>")
+		return
+	if(istype(C, /obj/item/stack/tile/plasteel))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			var/obj/item/stack/tile/plasteel/S = C
+			if(S.use(1))
+				qdel(L)
+				playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
+				to_chat(user, "<span class='notice'>You build a floor.</span>")
+				PlaceOnTop(/turf/open/floor/plating, flags = CHANGETURF_INHERIT_AIR)
+			else
+				to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
+		else
+			to_chat(user, "<span class='warning'>The plating is going to need some support! Place iron rods first.</span>")
+
+/turf/open/sand_land/Entered(atom/movable/A)
+	..()
+	if ((!(A) || src != A.loc))
+		return
+
+	if(destination_z && destination_x && destination_y && !(A.pulledby || !A.can_be_z_moved))
+		var/tx = destination_x
+		var/ty = destination_y
+		var/turf/DT = locate(tx, ty, destination_z)
+		var/itercount = 0
+		while(DT.density || istype(DT.loc,/area/shuttle)) // Extend towards the center of the map, trying to look for a better place to arrive
+			if (itercount++ >= 100)
+				log_game("SPACE Z-TRANSIT ERROR: Could not find a safe place to land [A] within 100 iterations.")
+				break
+			if (tx < 128)
+				tx++
+			else
+				tx--
+			if (ty < 128)
+				ty++
+			else
+				ty--
+			DT = locate(tx, ty, destination_z)
+
+		var/atom/movable/AM = A.pulling
+		A.forceMove(DT)
+		if(AM)
+			var/turf/T = get_step(A.loc,turn(A.dir, 180))
+			AM.can_be_z_moved = FALSE
+			AM.forceMove(T)
+			A.start_pulling(AM)
+			AM.can_be_z_moved = TRUE
+
+		//now we're on the new z_level, proceed the space drifting
+		stoplag()//Let a diagonal move finish, if necessary
+		A.newtonian_move(A.inertia_dir)
+		A.inertia_moving = TRUE
+
+
+/turf/open/sand_land/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
+	return
+
+/turf/open/sand_land/singularity_act()
+	return
+
+/turf/open/sand_land/can_have_cabling()
+	if(locate(/obj/structure/lattice/catwalk, src))
+		return 1
+	return 0
+
+/turf/open/sand_land/is_transition_turf()
+	if(destination_x || destination_y || destination_z)
+		return 1
+
+
+/turf/open/sand_land/acid_act(acidpwr, acid_volume)
+	return 0
+
+/*/turf/open/sand_land/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+	underlay_appearance.icon = 'icons/turf/space.dmi'
+	underlay_appearance.icon_state = SPACE_ICON_STATE
+	underlay_appearance.plane = PLANE_SPACE
+	return TRUE*/ 																			// Probably no need for underlay icons
+
+
+/turf/open/sand_land/rcd_vals(mob/user, obj/item/construction/rcd/the_rcd)
+	if(!CanBuildHere())
+		return FALSE
+
+	switch(the_rcd.mode)
+		if(RCD_FLOORWALL)
+			var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+			if(L)
+				return list("mode" = RCD_FLOORWALL, "delay" = 0, "cost" = 1)
+			else
+				return list("mode" = RCD_FLOORWALL, "delay" = 0, "cost" = 3)
+	return FALSE
+
+/turf/open/sand_land/rcd_act(mob/user, obj/item/construction/rcd/the_rcd, passed_mode)
+	switch(passed_mode)
+		if(RCD_FLOORWALL)
+			to_chat(user, "<span class='notice'>You build a floor.</span>")
+			PlaceOnTop(/turf/open/floor/plating, flags = CHANGETURF_INHERIT_AIR)
+			return TRUE
+	return FALSE
+
+/turf/open/sand_land/ReplaceWithLattice()
+	var/dest_x = destination_x
+	var/dest_y = destination_y
+	var/dest_z = destination_z
+	..()
+	destination_x = dest_x
+	destination_y = dest_y
+	destination_z = dest_z

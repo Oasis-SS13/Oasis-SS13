@@ -148,3 +148,39 @@
 
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
+
+/**********************Sandland Areas**************************/ // ScorchStation
+
+/area/sandland
+	icon_state = "space"
+	has_gravity = STANDARD_GRAVITY
+	flags_1 = NONE
+	requires_power = TRUE
+	always_unpowered = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	power_light = FALSE
+	power_equip = FALSE
+	power_environ = FALSE
+	valid_territory = FALSE
+	outdoors = TRUE
+	ambient_effects = MINING
+	ambient_music = MINING
+	blob_allowed = FALSE //Eating up space doesn't count for victory as a blob.
+	ambient_buzz = null // Space is pretty quiet
+	mood_bonus = -1
+	mood_message = "<span class='nicegreen'>Its so hot and sandy out here!\n</span>"
+
+/area/sandland/surface
+	icon_state = "sandclean"
+	name = "Sandland"
+	poweralm = FALSE
+
+/area/sandland/surface/outdoors
+	name = "Sandland Desert"
+	outdoors = TRUE
+
+/area/sandland/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "sandunexplored"
+
+/area/sandland/surface/outdoors/unexplored/danger //megafauna will also spawn here
+	icon_state = "sanddanger"

@@ -1,0 +1,615 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aD" = (
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"aU" = (
+/obj/machinery/iv_drip,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"ek" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"eH" = (
+/obj/structure/table/glass,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"fp" = (
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"fU" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"gL" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"hA" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"jk" = (
+/obj/structure/table/glass,
+/obj/machinery/light,
+/obj/structure/bedsheetbin,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"lc" = (
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"ls" = (
+/obj/machinery/door/airlock/research/glass,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"nF" = (
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg1"
+	},
+/area/space/nearstation)
+"qL" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"qN" = (
+/obj/structure/sign/directions/science{
+	dir = 8
+	},
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"qU" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"sf" = (
+/obj/structure/sign/departments/science,
+/turf/closed/wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"ss" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"sG" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/bookcase/random/fiction,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"tm" = (
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+"uG" = (
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"uI" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"vq" = (
+/obj/item/book/random,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"xh" = (
+/obj/structure/table,
+/obj/item/pen,
+/obj/item/paper/fluff/ruins/exp_cloning/log,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"xw" = (
+/obj/machinery/defibrillator_mount/loaded,
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"zl" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"As" = (
+/obj/machinery/clonepod/experimental,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Av" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"BE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Dw" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Ex" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"EI" = (
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg2"
+	},
+/area/space/nearstation)
+"Gs" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"GK" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating";
+	name = "broken plating"
+	},
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/space/nearstation)
+"HJ" = (
+/obj/machinery/computer/prototype_cloning,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/paper/fluff/ruins/exp_cloning/manual,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Kv" = (
+/obj/structure/table/glass,
+/obj/item/storage/firstaid/regular,
+/obj/item/healthanalyzer{
+	desc = "A prototype hand-held body scanner able to distinguish vital signs of the subject.";
+	name = "prototype health analyzer"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"KK" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/sandland/surface/outdoors/unexplored)
+"La" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Lo" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"LL" = (
+/obj/machinery/door/airlock/research/glass,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"MG" = (
+/obj/machinery/dna_scannernew,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"ML" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"MX" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Nj" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating";
+	name = "broken plating"
+	},
+/obj/structure/grille/broken,
+/obj/item/shard,
+/turf/open/floor/plating/asteroid/sand/sand_land_surface,
+/area/space/nearstation)
+"NH" = (
+/obj/machinery/vending/snack/teal,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Ro" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Ru" = (
+/turf/closed/wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"RC" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Sn" = (
+/turf/closed/wall/r_wall/rust,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Up" = (
+/obj/machinery/door/airlock/research/glass,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"UJ" = (
+/turf/closed/wall/r_wall/rust,
+/area/space/nearstation)
+"Xd" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Yx" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/syringes,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Zj" = (
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+
+(1,1,1) = {"
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+"}
+(2,1,1) = {"
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+"}
+(3,1,1) = {"
+uG
+uG
+La
+La
+La
+La
+La
+uG
+uG
+"}
+(4,1,1) = {"
+uG
+uG
+La
+Lo
+Dw
+vq
+La
+uG
+uG
+"}
+(5,1,1) = {"
+uG
+uG
+La
+aU
+Zj
+Zj
+La
+uG
+uG
+"}
+(6,1,1) = {"
+uG
+uG
+Sn
+qU
+Zj
+sG
+Sn
+uG
+uG
+"}
+(7,1,1) = {"
+uG
+uG
+Sn
+Xd
+ls
+Sn
+Sn
+uG
+uG
+"}
+(8,1,1) = {"
+uG
+uG
+uG
+Xd
+ML
+Xd
+uG
+uG
+uG
+"}
+(9,1,1) = {"
+uG
+KK
+Sn
+Sn
+Up
+Xd
+Xd
+uG
+uG
+"}
+(10,1,1) = {"
+uG
+Xd
+Xd
+Av
+zl
+zl
+La
+uG
+uG
+"}
+(11,1,1) = {"
+uG
+La
+ek
+Ro
+lc
+lc
+La
+uG
+uG
+"}
+(12,1,1) = {"
+uG
+La
+xh
+gL
+lc
+lc
+Sn
+uG
+uG
+"}
+(13,1,1) = {"
+uG
+Sn
+MG
+hA
+lc
+jk
+Xd
+uG
+uG
+"}
+(14,1,1) = {"
+uG
+Xd
+HJ
+Gs
+lc
+eH
+La
+uG
+uG
+"}
+(15,1,1) = {"
+uG
+Xd
+As
+fU
+lc
+Kv
+La
+uG
+uG
+"}
+(16,1,1) = {"
+uG
+xw
+fp
+lc
+lc
+Yx
+Sn
+uG
+uG
+"}
+(17,1,1) = {"
+uG
+Sn
+qL
+uI
+Ex
+Ro
+Sn
+uG
+uG
+"}
+(18,1,1) = {"
+uG
+Sn
+RC
+sf
+LL
+Ru
+Xd
+uG
+uG
+"}
+(19,1,1) = {"
+uG
+MX
+NH
+aD
+BE
+tm
+UJ
+uG
+uG
+"}
+(20,1,1) = {"
+uG
+MX
+BE
+BE
+tm
+EI
+GK
+uG
+uG
+"}
+(21,1,1) = {"
+uG
+Sn
+qN
+tm
+nF
+GK
+uG
+uG
+uG
+"}
+(22,1,1) = {"
+uG
+uG
+Xd
+MX
+Nj
+ss
+uG
+uG
+uG
+"}
+(23,1,1) = {"
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+uG
+"}
