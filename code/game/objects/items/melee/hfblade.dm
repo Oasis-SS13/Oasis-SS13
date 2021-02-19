@@ -73,9 +73,7 @@
 		return ..()
 
 
-
 var/cooldown = 40 // 4 seconds
-
 var/last_used = 0
 /obj/item/melee/hfblade/on_exit_storage()
 	if((last_used + cooldown) < world.time)
