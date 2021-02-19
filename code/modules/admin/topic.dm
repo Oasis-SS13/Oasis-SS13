@@ -108,6 +108,14 @@
 				else
 					message_admins("[key_name_admin(usr)] tried to create a nuke team. Unfortunately, there were not enough candidates available.")
 					log_admin("[key_name(usr)] failed to create a nuke team.")
+			if("infiltrator")
+				message_admins("[key_name(usr)] is creating an infiltration team...")
+				if(src.makeInfiltratorTeam())
+					message_admins("[key_name(usr)] created an infiltration team.")
+					log_admin("[key_name(usr)] created an infiltration team.")
+				else
+					message_admins("[key_name_admin(usr)] tried to create an infiltration team. Unfortunately, there were not enough candidates available.")
+					log_admin("[key_name(usr)] failed to create an infiltration team.")
 			if("ninja")
 				message_admins("[key_name(usr)] spawned a ninja.")
 				log_admin("[key_name(usr)] spawned a ninja.")
@@ -1613,9 +1621,9 @@
 
 		if(pod)
 			new /obj/effect/DPtarget(target, pod)
-		
+
 		var/turf/T = get_turf(usr.loc) // get admin's LOC as a turf
-		
+
 		if (number == 1)
 			log_admin("[key_name(usr)] created a [english_list(paths)] at [AREACOORD(T)]")
 			for(var/path in paths)
