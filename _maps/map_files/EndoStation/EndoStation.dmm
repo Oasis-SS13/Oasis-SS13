@@ -4550,7 +4550,7 @@
 /area/maintenance/department/engine)
 "bpm" = (
 /obj/structure/table/wood,
-/obj/item/toy/plush/slimeplushie,
+/obj/item/clothing/head/pharaoh,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "bpC" = (
@@ -12326,7 +12326,7 @@
 	pixel_y = -22
 	},
 /obj/structure/table/wood,
-/obj/item/toy/plush/lizardplushie,
+/obj/item/clothing/head/hardhat/pumpkinhead,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dzI" = (
@@ -35492,7 +35492,15 @@
 /area/medical/cryo)
 "kbf" = (
 /obj/structure/table/wood,
-/obj/item/toy/plush/beeplushie,
+/obj/item/lipstick/random,
+/obj/item/lipstick/random{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/lipstick/random{
+	pixel_x = -3;
+	pixel_y = -3
+	},
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "kbr" = (
@@ -43278,6 +43286,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/gateway)
+"mhw" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "mhC" = (
 /obj/machinery/stasis,
 /obj/effect/turf_decal/tile/blue{
@@ -47019,13 +47035,12 @@
 /turf/closed/wall/r_wall,
 /area/teleporter)
 "niJ" = (
-/obj/structure/table/wood,
-/obj/item/clothing/head/pharaoh,
 /obj/machinery/camera{
 	c_tag = "Theatre Backstage";
 	dir = 6;
 	name = "service camera"
 	},
+/obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "niL" = (
@@ -53166,18 +53181,11 @@
 "oHl" = (
 /obj/structure/table/wood,
 /obj/item/storage/briefcase,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
 /obj/item/radio/intercom{
 	pixel_x = 26
+	},
+/obj/item/clothing/under/suit/sl{
+	name = "referee suit"
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/dorms)
@@ -63147,7 +63155,7 @@
 /area/maintenance/solars/port/aft)
 "rCL" = (
 /obj/structure/table/wood,
-/obj/item/toy/plush/moth,
+/obj/item/clothing/head/lobsterhat,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "rDb" = (
@@ -72984,20 +72992,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "urb" = (
-/obj/structure/table/wood,
-/obj/item/clothing/under/suit/sl{
-	name = "referee suit"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
+/obj/machinery/vending/citadelplush,
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/dorms)
 "urg" = (
@@ -84189,16 +84184,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/medical/medbay/central)
 "xsV" = (
-/obj/structure/table/wood,
-/obj/item/lipstick/random,
-/obj/item/lipstick/random{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/lipstick/random{
-	pixel_x = -3;
-	pixel_y = -3
-	},
+/obj/machinery/vending/citadelplush,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "xtk" = (
@@ -140174,7 +140160,7 @@ kVX
 hWj
 qHv
 yaZ
-lnG
+mhw
 ovg
 wvK
 cEh

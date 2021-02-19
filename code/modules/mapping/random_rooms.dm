@@ -1431,7 +1431,7 @@
 	centerspawner = TRUE
 	template_height = 23
 	template_width = 19
-	weight = 10
+	weight = 3
 
 /datum/map_template/random_room/sk_ren004
 	name = "Box Singularity and Tesla Engine"
@@ -1476,4 +1476,4 @@
 	centerspawner = TRUE
 	template_height = 25
 	template_width = 33
-	weight = 10
+	weight = 3
