@@ -7,9 +7,7 @@
 	name = "Engineering External Access";
 	req_access_txt = "10;13"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
+/obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "aR" = (
@@ -79,7 +77,7 @@
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 9
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -105,9 +103,6 @@
 /obj/item/flashlight{
 	pixel_x = 1;
 	pixel_y = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -296,7 +291,6 @@
 	dir = 8
 	},
 /obj/structure/closet/emcloset/anchored,
-/obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 24
 	},
@@ -314,7 +308,10 @@
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = 32
 	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume{
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
 /turf/open/floor/plating,
@@ -429,10 +426,10 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "jp" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 4
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "kn" = (
@@ -497,9 +494,10 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "mj" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/turf/closed/wall,
-/area/engine/engineering)
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/turf/open/space/basic,
+/area/space/nearstation)
 "mC" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/meter,
@@ -771,7 +769,10 @@
 	name = "Engineering External Access";
 	req_access_txt = "10;13"
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "tW" = (
@@ -1010,17 +1011,17 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "zZ" = (
+/obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
-/obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
 "Ai" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
-	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "Aq" = (
@@ -1084,9 +1085,9 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "Ba" = (
-/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
+	dir = 9
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -1180,12 +1181,6 @@
 	dir = 6
 	},
 /turf/open/floor/engine,
-/area/engine/engineering)
-"DH" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "DN" = (
 /obj/effect/turf_decal/delivery,
@@ -1301,8 +1296,10 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "Fj" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 5
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "FL" = (
@@ -1502,13 +1499,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
-"JQ" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
-/area/space/nearstation)
 "Kb" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1952,7 +1942,9 @@
 /area/engine/engineering)
 "Vb" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 9
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "VA" = (
@@ -1961,13 +1953,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
-"VB" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 9
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "VF" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -2135,13 +2120,13 @@ tu
 Pn
 XW
 Fj
-Vb
+XW
 Fj
-Vb
+XW
 Fj
-Vb
-Fj
-Ba
+ui
+ly
+ly
 ly
 ly
 nH
@@ -2159,18 +2144,18 @@ QY
 tt
 fL
 cG
-mj
+tu
 gF
-DH
+Pn
 tW
 jp
-Vb
-Fj
-Vb
-Ai
-XW
-Ai
 tW
+zZ
+Vb
+jp
+ui
+ly
+ly
 cU
 cU
 nH
@@ -2195,11 +2180,11 @@ tW
 zZ
 Vb
 Ai
+mj
+Ba
 ui
-zZ
-VB
-JQ
-tW
+ly
+ly
 ly
 ly
 nH
@@ -2227,8 +2212,8 @@ tK
 xm
 xm
 Pn
-zZ
-VB
+ly
+ly
 cU
 cU
 NH
