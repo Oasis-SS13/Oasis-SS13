@@ -1,0 +1,5 @@
+author: Demidisco
+delete-after: true
+changes:
+  - tweak: Reproductive extracts take as many monkey cubes from bio bags as they need
+      before spewing out extracts
