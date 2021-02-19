@@ -55321,7 +55321,7 @@
 "frN" = (
 /obj/machinery/air_sensor/atmos/sm_core,
 /obj/machinery/power/supermatter_crystal/engine,
-/turf/open/floor/engine/airless,
+/turf/open/floor/engine,
 /area/engine/supermatter)
 "fsA" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
@@ -57994,9 +57994,6 @@
 /obj/effect/spawner/xmastree,
 /turf/open/floor/carpet,
 /area/library)
-"jOe" = (
-/turf/open/floor/engine/airless,
-/area/engine/supermatter)
 "jOB" = (
 /turf/open/floor/plating,
 /area/storage/emergency/starboard)
@@ -58427,7 +58424,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/open/floor/engine/airless,
+/turf/open/floor/engine,
 /area/engine/supermatter)
 "kAa" = (
 /obj/structure/chair{
@@ -59571,7 +59568,7 @@
 /area/maintenance/department/crew_quarters/dorms)
 "mIr" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/engine/airless,
+/turf/open/floor/engine,
 /area/engine/supermatter)
 "mKc" = (
 /obj/structure/bookcase/random/nonfiction,
@@ -61592,7 +61589,7 @@
 	dir = 8;
 	icon_state = "vent_map_on-2"
 	},
-/turf/open/floor/engine/airless,
+/turf/open/floor/engine,
 /area/engine/supermatter)
 "qbZ" = (
 /obj/structure/rack,
@@ -97358,7 +97355,7 @@ uAt
 wdK
 mIr
 frN
-jOe
+cnW
 mZR
 abI
 aht
