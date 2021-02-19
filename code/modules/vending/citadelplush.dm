@@ -15,7 +15,7 @@
 				   /obj/item/toy/plush/moth = 5)
 	contraband = list(/obj/item/toy/plush/nukeplushie = 5,
 				   /obj/item/toy/plush/narplush = 5,
-				   /obj/item/toy/plush/plushvar = 5,)
+				   /obj/item/toy/plush/plushvar = 5)
 	premium = list(/obj/item/toy/plush/qwerty = 5)
 	refill_canister = /obj/item/vending_refill/cigarette
 	default_price = 10
