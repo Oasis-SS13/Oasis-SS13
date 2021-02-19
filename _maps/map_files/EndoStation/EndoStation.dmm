@@ -68882,7 +68882,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/autoname,
-/obj/item/toy/plush/georgefloyd,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "tgx" = (
