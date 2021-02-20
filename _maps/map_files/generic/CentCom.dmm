@@ -17558,21 +17558,8 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
-<<<<<<< HEAD
-"Rl" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 1;
-	height = 4;
-	id = "pod6_away";
-	name = "recovery ship";
-	width = 3
-	},
-/turf/open/space,
-=======
 "Rk" = (
 /turf/closed/indestructible/cordon,
->>>>>>> 63f05923da... Brute force is still a solution. (#3619)
 /area/space)
 "Rm" = (
 /obj/structure/chair/wood/wings{
@@ -22555,11 +22542,7 @@ aa
 aa
 aa
 aa
-<<<<<<< HEAD
-ab
-=======
 Rk
->>>>>>> 63f05923da... Brute force is still a solution. (#3619)
 fX
 fX
 fX
@@ -22575,12 +22558,8 @@ fX
 fX
 fX
 fX
-<<<<<<< HEAD
-ab
-=======
 Rk
 aa
->>>>>>> 63f05923da... Brute force is still a solution. (#3619)
 aa
 aa
 aa
@@ -22820,25 +22799,6 @@ aa
 aa
 aa
 aa
-<<<<<<< HEAD
-ab
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-Yy
-ab
-=======
 Rk
 Rk
 Rk
@@ -22873,7 +22833,6 @@ aa
 aa
 aa
 aa
->>>>>>> 63f05923da... Brute force is still a solution. (#3619)
 aa
 aa
 aa
