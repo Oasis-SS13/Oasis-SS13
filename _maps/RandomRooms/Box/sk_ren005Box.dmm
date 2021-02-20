@@ -1,15 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aj" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
-/turf/open/space/basic,
-/area/space/nearstation)
 "aP" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -18,9 +7,7 @@
 	name = "Engineering External Access";
 	req_access_txt = "10;13"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 9
-	},
+/obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "aR" = (
@@ -90,7 +77,7 @@
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 9
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -116,9 +103,6 @@
 /obj/item/flashlight{
 	pixel_x = 1;
 	pixel_y = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -307,7 +291,6 @@
 	dir = 8
 	},
 /obj/structure/closet/emcloset/anchored,
-/obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 24
 	},
@@ -325,7 +308,10 @@
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = 32
 	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume{
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
 /turf/open/floor/plating,
@@ -442,13 +428,13 @@
 "jp" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 6
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 6
+	dir = 4
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -497,6 +483,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"ly" = (
+/turf/open/space/basic,
+/area/space/nearstation)
 "lV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -511,9 +500,18 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "mj" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/turf/closed/wall,
-/area/engine/engineering)
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
+	dir = 9
+	},
+/turf/open/space/basic,
+/area/space/nearstation)
 "mC" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/meter,
@@ -571,16 +569,6 @@
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/engine/engineering)
-"nF" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/layer_manifold/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
 /area/engine/engineering)
 "nH" = (
 /obj/structure/lattice,
@@ -653,8 +641,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold/visible{
-	dir = 4
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
@@ -762,10 +750,10 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer3{
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer1{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer1{
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction/layer3{
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
@@ -790,7 +778,10 @@
 	name = "Engineering External Access";
 	req_access_txt = "10;13"
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "tW" = (
@@ -799,7 +790,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
 	dir = 4
@@ -863,19 +854,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
-"vj" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "vw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -893,19 +871,6 @@
 /area/engine/engineering)
 "vN" = (
 /turf/closed/wall/r_wall,
-/area/space/nearstation)
-"vZ" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 10
-	},
-/turf/open/space/basic,
 /area/space/nearstation)
 "wi" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -1047,17 +1012,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
-"zA" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 1
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "zQ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1072,28 +1026,28 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "zZ" = (
-/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 9
+	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 9
+	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 9
+	dir = 10
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "Ai" = (
-/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
+	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 5
+	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 5
+	dir = 6
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -1157,6 +1111,13 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /turf/open/floor/engine,
 /area/engine/engineering)
+"Ba" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
+/turf/open/space/basic,
+/area/space/nearstation)
 "Bs" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -1214,17 +1175,6 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space/nearstation)
-"CP" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
-/turf/open/space/basic,
-/area/space/nearstation)
 "CQ" = (
 /obj/item/crowbar/large,
 /obj/structure/rack,
@@ -1260,11 +1210,12 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "DH" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/turf/closed/wall/r_wall,
-/area/engine/engineering)
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
+/turf/open/space/basic,
+/area/space/nearstation)
 "DN" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
@@ -1359,14 +1310,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 4;
-	name = "Cooling Loop to Gas"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 4;
+	name = "Cooling Loop to Gas"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering)
 "Fi" = (
@@ -1380,11 +1331,15 @@
 /area/engine/engineering)
 "Fj" = (
 /obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
+	dir = 5
+	},
 /turf/open/space/basic,
 /area/space/nearstation)
 "FL" = (
@@ -1557,15 +1512,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"Jl" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3,
-/turf/open/space/basic,
-/area/space/nearstation)
 "Jm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -1576,6 +1522,7 @@
 /obj/machinery/atmospherics/pipe/manifold/orange/visible{
 	dir = 4
 	},
+/obj/machinery/meter,
 /turf/open/floor/engine,
 /area/engine/engineering)
 "Jt" = (
@@ -1615,19 +1562,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"Ke" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 5
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "Kx" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -1771,14 +1705,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Gas to Cooling Loop"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 8;
+	name = "Gas to Cooling Loop"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering)
 "NE" = (
@@ -2061,19 +1995,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"Vb" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 1
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "VA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
@@ -2083,13 +2004,13 @@
 "VB" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
+	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer1{
-	dir = 10
+	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer3{
-	dir = 10
+	dir = 5
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -2266,15 +2187,15 @@ tu
 Pn
 XW
 Fj
-Jl
-Jl
-CP
-aj
-aj
-Ke
-ui
-NH
-NH
+XW
+Fj
+XW
+DH
+VB
+ly
+ly
+ly
+ly
 nH
 vN
 nH
@@ -2290,18 +2211,18 @@ QY
 tt
 fL
 cG
-mj
+tu
 gF
-DH
+Pn
 tW
 jp
-Vb
-Vb
-Ke
-XW
+tW
+zZ
+mj
 Ai
-vj
-ui
+mj
+ly
+ly
 cU
 cU
 nH
@@ -2323,16 +2244,16 @@ tV
 hl
 aP
 tW
-vZ
-zA
-Ai
-vZ
 zZ
-VB
+mj
+Ai
+Ba
 JQ
 ui
-NH
-NH
+ly
+ly
+ly
+ly
 nH
 nH
 nH
@@ -2358,8 +2279,8 @@ tK
 xm
 xm
 Pn
-ui
-ui
+ly
+ly
 cU
 cU
 NH
@@ -2383,7 +2304,7 @@ fE
 pC
 AA
 db
-nF
+pC
 IV
 iv
 Pn
