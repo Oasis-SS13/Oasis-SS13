@@ -16896,6 +16896,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/ctf)
+"MY" = (
+/turf/open/floor/black,
+/area/start)
 "Nd" = (
 /turf/closed/indestructible{
 	icon = 'icons/turf/walls/wood_wall.dmi';
@@ -18356,9 +18359,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/centcom/supplypod)
-"WP" = (
-/turf/open/floor/black,
-/area/start)
 "WQ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/centcom{
@@ -22775,21 +22775,21 @@ aa
 aa
 Rk
 fX
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
 fX
 Rk
 aa
@@ -23032,21 +23032,21 @@ aa
 aa
 Rk
 fX
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
-WP
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
+MY
 fX
 Rk
 aa
