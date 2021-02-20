@@ -483,9 +483,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
-"ly" = (
-/turf/open/space/basic,
-/area/space/nearstation)
 "lV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -641,8 +638,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 8
+/obj/machinery/atmospherics/pipe/layer_manifold/visible{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
@@ -2192,10 +2189,10 @@ Fj
 XW
 DH
 VB
-ly
-ly
-ly
-ly
+ui
+ui
+ui
+ui
 nH
 vN
 nH
@@ -2221,8 +2218,8 @@ zZ
 mj
 Ai
 mj
-ly
-ly
+ui
+ui
 cU
 cU
 nH
@@ -2250,10 +2247,10 @@ Ai
 Ba
 JQ
 ui
-ly
-ly
-ly
-ly
+ui
+ui
+ui
+ui
 nH
 nH
 nH
@@ -2279,8 +2276,8 @@ tK
 xm
 xm
 Pn
-ly
-ly
+ui
+ui
 cU
 cU
 NH
