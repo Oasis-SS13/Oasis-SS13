@@ -154,6 +154,8 @@
 	. = air.heat_capacity()
 
 /turf/open/proc/GetTemperature()
+	if(!air)
+    	return 0
 	. = air.return_temperature()
 
 /turf/open/proc/TakeTemperature(temp)
