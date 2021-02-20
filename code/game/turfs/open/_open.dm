@@ -154,8 +154,8 @@
 	. = air.heat_capacity()
 
 /turf/open/proc/GetTemperature()
-	if(!air)
-		return 0
+	if(!air) // Temp fix for random-engine on-load null.temp runtime issue
+		return 0 // Temp fix for random-engine on-load null.temp runtime issue
 	. = air.return_temperature()
 
 /turf/open/proc/TakeTemperature(temp)
