@@ -214,23 +214,11 @@
 
 	if(air1.total_moles())
 		if(mob_occupant.bodytemperature < T0C) // Sleepytime. Why? More cryo magic.
-<<<<<<< HEAD
-			mob_occupant.Sleeping((mob_occupant.bodytemperature * sleep_factor) * 2000)
-			mob_occupant.Unconscious((mob_occupant.bodytemperature * unconscious_factor) * 2000)
-		if(beaker)
-			if(reagent_transfer == 0) // Magically transfer reagents. Because cryo magic.
-				beaker.reagents.trans_to(occupant, 1, efficiency * 0.25) // Transfer reagents.
-				beaker.reagents.reaction(occupant, VAPOR)
-				air1.adjust_moles(/datum/gas/oxygen, -max(0,air1.get_moles(/datum/gas/oxygen) - 2 / efficiency)) //Let's use gas for this
-			if(++reagent_transfer >= 10 * efficiency) // Throttle reagent transfer (higher efficiency will transfer the same amount but consume less from the beaker).
-				reagent_transfer = 0
-=======
 			mob_occupant.Sleeping((mob_occupant.bodytemperature * sleep_factor) * 1000 * delta_time)//delta_time is roughly ~2 seconds
 			mob_occupant.Unconscious((mob_occupant.bodytemperature * unconscious_factor) * 1000 * delta_time)
 		if(beaker)//How much to transfer. As efficiency is increased, less reagent from the beaker is used and more is magically transferred to occupant
 			beaker.reagents.trans_to(occupant, (CRYO_TX_QTY / (efficiency * CRYO_MULTIPLY_FACTOR)) * delta_time, efficiency * CRYO_MULTIPLY_FACTOR, method = VAPOR) // Transfer reagents.
 		use_power(1000 * efficiency)
->>>>>>> 649045250f... [PORT] Cryotube reagent fix, tweaks and Extinguishes mob on fire (#3596)
 
 	return 1
 
