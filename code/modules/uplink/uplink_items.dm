@@ -2165,6 +2165,15 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/storage/box/syndie_kit/mimery
 	restricted_roles = list("Mime")
 	surplus = 0
+/datum/uplink_item/role_restricted/cqm
+	name = "Blank Scroll"
+	desc = "This scroll was recovered from a temple without sound. \
+			It teaches you how to silence and confuse your foes, \
+			don't buy this unless you are a mime or plan to give it to one as only they can read and understand the invisible writings and illustrations."
+	item = /obj/item/book/granter/martial/cqm
+	cost = 9
+	surplus = 0
+	restricted_roles = list("Mime")
 
 /datum/uplink_item/role_restricted/pressure_mod
 	name = "Kinetic Accelerator Pressure Mod"
@@ -2306,3 +2315,11 @@ datum/uplink_item/role_restricted/superior_honkrender
 			much to overload the reactor with these..."
 	item = /obj/item/twohanded/required/fuel_rod/material/telecrystal
 	cost = 7
+
+/datum/uplink_item/dangerous/vibroblade
+    name = "High Frequency Blade"
+    desc = "An electric katana that weakens the molecular bonds of whatever it touches. Perfect for slicing off the limbs of your coworkers. \
+    Avoid using a multitool on it."
+    item = /obj/item/storage/belt/hfblade
+    cost = 18
+    surplus = 15

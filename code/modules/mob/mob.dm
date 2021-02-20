@@ -37,8 +37,6 @@
 		qdel(cc)
 	client_colours = null
 	ghostize()
-<<<<<<< HEAD
-=======
 	QDEL_LIST(mob_spell_list)
 	for(var/datum/action/A as() in actions)
 		if(istype(A.target, /obj/effect/proc_holder))
@@ -46,7 +44,6 @@
 		else
 			qdel(A) // Other actions can be safely deleted
 	actions.Cut()
->>>>>>> c6bf22b100...  Miscellaneous fixes (2021-02-13)  (#3624)
 	return ..()
 
 /**
