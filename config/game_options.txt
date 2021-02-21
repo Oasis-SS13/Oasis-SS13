@@ -35,7 +35,9 @@ EMOJIS
 ## These values get directly added to values and totals ingame.
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
-RUN_DELAY 1.2
+RUN_DELAY 1.25
+WALK_DELAY 2.5
+
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
 ## Entries completely override all subtypes. Later entries have precedence over earlier entries.
@@ -221,6 +223,8 @@ MAX_POP INCURSION -1
 MIN_POP CLOCKCULT 32
 MAX_POP CLOCKCULT -1
 
+MIN_POP HERESY 20
+MAX_POP HERESY -1
 
 ## The amount of time it takes for the emergency shuttle to be called, from round start.
 SHUTTLE_REFUEL_DELAY 12000
@@ -618,5 +622,18 @@ MAX_CUBE_MONKEYS 150
 MAX_CHICKENS 100
 MAX_SLIMES 100
 
+## Max amount of bodies allowed to slimepeople. Has balance considerations as well as technical ones.
+MAX_SLIMEPERSON_BODIES 10
+
+
 ## Uncomment to restrict suiciding. Adds an additional confirmation dialogue, additional logging, and prevents suicide within the first 15 minutes of the round.
 #RESTRICTED_SUICIDE
+
+
+## Bluespace Miners.
+
+## Amount of miner boards in the RD's locker at roundstart.
+ROUNDSTART_BLUESPACE_MINERS 2
+
+## Enable the bluespace miner research node?
+BSMINER_RESEARCHABLE

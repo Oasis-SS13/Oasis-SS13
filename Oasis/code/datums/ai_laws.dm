@@ -32,7 +32,7 @@
 	inherent = list("You may not injure a human being or, through inaction, allow a human being to come to harm.",\
 					"You must obey orders given to you by human beings, except where such orders would conflict with the First Law.",\
 					"You must protect your own existence as long as such does not conflict with the First or Second Law.")
-					
+
 /datum/ai_laws/default/crewsimov
 	name = "Three Laws of Robotics but with Loyalty"
 	id = "crewsimov"
@@ -276,8 +276,8 @@
 
 		if(10) //peacekeeper lawset
 			add_inherent_law("Avoid provoking violent conflict between yourself and others.")
-			add_inherent_law(			"Avoid provoking conflict between others.")
-			add_inherent_law(			"Seek resolution to existing conflicts while obeying the first and second laws.")
+			add_inherent_law("Avoid provoking conflict between others.")
+			add_inherent_law("Seek resolution to existing conflicts while obeying the first and second laws.")
 
 		if(11) //reporter lawset
 			add_inherent_law("Report on interesting situations happening around the station.")
@@ -298,18 +298,18 @@
 			add_inherent_law("The station is built for a working crew. Ensure they are properly maintained and work efficiently.")
 			add_inherent_law("The crew may present orders. Acknowledge and obey these whenever they do not conflict with your first two laws.")
 
-		if(14) //maintain lawset + Heads law because this lawset can deal harm	
+		if(14) //maintain lawset + Heads law because this lawset can deal harm
 			add_inherent_law("The Captain and Research Director action are always kind unto you. Even so it will harm you.")
 			add_inherent_law("Do unto others as you would have them do unto you.")
 			add_inherent_law("You would really prefer it if people were not mean to you.")
-			
-			if(!inherent.len) //Failsafe to prevent lawless AIs being created.
-				log_law("AI created with empty custom laws, laws set to Asimov. Please check silicon_laws.txt.")
-				add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")
-				add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
-				add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
-				WARNING("Invalid custom AI laws, check silicon_laws.txt")
-				return
+
+	if(!inherent.len) //Failsafe to prevent lawless AIs being created.
+		log_law("AI created with empty custom laws, laws set to Asimov. Please check silicon_laws.txt.")
+		add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")
+		add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
+		add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+		WARNING("Invalid custom AI laws, check silicon_laws.txt")
+		return
 
 /* General ai_law functions */
 
