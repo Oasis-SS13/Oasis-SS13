@@ -237,7 +237,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/engine/engineering)
+/area/engine/supermatter)
 "hf" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
@@ -908,7 +908,7 @@
 "BP" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/engine_waste,
 /turf/open/floor/plating/airless,
-/area/space/nearstation)
+/area/engine/engineering)
 "BX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
@@ -1335,6 +1335,12 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"Nn" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/turf/open/space,
+/area/space/nearstation)
 "Nt" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -2092,7 +2098,7 @@ Cz
 VR
 Yk
 tZ
-IV
+Nn
 "}
 (11,1,1) = {"
 oz

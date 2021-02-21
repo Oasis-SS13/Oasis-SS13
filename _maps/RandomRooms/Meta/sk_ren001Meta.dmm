@@ -3,6 +3,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "aP" = (
@@ -67,6 +68,7 @@
 /area/space/nearstation)
 "dH" = (
 /obj/structure/cable,
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "dP" = (
@@ -137,6 +139,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "iL" = (
@@ -339,6 +342,9 @@
 	icon_state = "0-2"
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/power/emitter{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "pX" = (
@@ -469,6 +475,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/machinery/power/emitter,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "tg" = (
@@ -516,7 +523,7 @@
 /area/engine/engineering)
 "ug" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 6
+	dir = 10
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -550,6 +557,13 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"wU" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/tesla_coil,
+/turf/open/floor/plating,
+/area/space/nearstation)
 "xB" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -754,12 +768,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/space/nearstation)
-"ER" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/starboard/fore)
 "ES" = (
 /obj/structure/particle_accelerator/particle_emitter/left{
 	dir = 4
@@ -1240,7 +1248,7 @@
 /area/engine/engineering)
 "XS" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 9
+	dir = 4
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/starboard/fore)
@@ -1517,7 +1525,7 @@ lM
 lb
 pM
 KM
-ug
+Sv
 XS
 "}
 (10,1,1) = {"
@@ -1542,8 +1550,8 @@ lM
 lb
 lb
 cB
-ER
 Sv
+ug
 "}
 (11,1,1) = {"
 Ao
@@ -1732,7 +1740,7 @@ Wk
 Wk
 aN
 Wk
-aN
+wU
 Wk
 aN
 Wk
