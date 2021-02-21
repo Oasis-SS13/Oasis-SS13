@@ -908,7 +908,7 @@
 "BP" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/engine_waste,
 /turf/open/floor/plating/airless,
-/area/space/nearstation)
+/area/engine/engineering)
 "BX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10

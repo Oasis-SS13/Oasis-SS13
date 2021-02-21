@@ -364,6 +364,7 @@
 	minimumplaytime = text2num(minimumplaytime) || 0
 	edit_ready = dbload
 	GLOB.polls += src
+	SEND_SOUND(GLOB.player_list, sound('sound/misc/announce.ogg'))
 
 /datum/poll_question/Destroy()
 	GLOB.polls -= src

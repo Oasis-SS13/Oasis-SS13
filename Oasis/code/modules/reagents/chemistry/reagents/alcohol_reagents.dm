@@ -126,7 +126,7 @@
 	glass_name = "Electro Blaster"
 	glass_desc = "A true drink? For a true engineer, I'm sure."
 
-/datum/reagent/consumable/ethanol/mine_dread/on_mob_add(mob/living/carbon/M)
+/datum/reagent/consumable/ethanol/electro_blaster/on_mob_add(mob/living/carbon/M)
 	if(!HAS_TRAIT(M, TRAIT_ALCOHOL_TOLERANCE))
 		new /datum/hallucination/shock(M, TRUE)
 	..()
