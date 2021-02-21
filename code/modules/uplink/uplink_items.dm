@@ -1467,6 +1467,7 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 			hud.set_frequency(nukie.nuke_team.team_frequency)
 		if(beacon)
 			beacon.set_frequency(nukie.nuke_team.team_frequency)
+	return suit
 
 /datum/uplink_item/suits/hardsuit/elite
 	name = "Elite Syndicate Hardsuit"
@@ -2164,6 +2165,15 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/storage/box/syndie_kit/mimery
 	restricted_roles = list("Mime")
 	surplus = 0
+/datum/uplink_item/role_restricted/cqm
+	name = "Blank Scroll"
+	desc = "This scroll was recovered from a temple without sound. \
+			It teaches you how to silence and confuse your foes, \
+			don't buy this unless you are a mime or plan to give it to one as only they can read and understand the invisible writings and illustrations."
+	item = /obj/item/book/granter/martial/cqm
+	cost = 9
+	surplus = 0
+	restricted_roles = list("Mime")
 
 /datum/uplink_item/role_restricted/pressure_mod
 	name = "Kinetic Accelerator Pressure Mod"
