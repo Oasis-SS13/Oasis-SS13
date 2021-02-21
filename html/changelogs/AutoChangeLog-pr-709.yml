@@ -1,4 +1,0 @@
-author: Moccha-Bee
-delete-after: true
-changes:
-  - bugfix: meta's SM engine using the wrong area for the alarm.
