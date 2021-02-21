@@ -45817,17 +45817,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/science/shuttledock)
-<<<<<<< HEAD
-"eKE" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/science/circuit_lab)
-=======
 "eKo" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -45840,7 +45829,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
->>>>>>> cd060cfc1d... adds air alarm to morgue on Box Station (#3682)
 "eKL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
