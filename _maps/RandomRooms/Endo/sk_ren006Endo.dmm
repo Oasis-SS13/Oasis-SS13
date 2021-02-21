@@ -1,10 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ap" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
 /obj/structure/cable{
 	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/engine/engine_room)
@@ -48,11 +48,11 @@
 /turf/closed/wall/r_wall,
 /area/engine/engine_room)
 "bZ" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/engine/engine_room)
@@ -161,6 +161,10 @@
 "hC" = (
 /turf/closed/wall/r_wall,
 /area/space)
+"if" = (
+/obj/machinery/field/generator,
+/turf/open/floor/plasteel/dark,
+/area/engine/engine_room)
 "it" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -201,11 +205,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
-"kI" = (
-/obj/structure/table/reinforced,
-/obj/item/wrench,
-/turf/open/floor/plasteel/dark,
-/area/engine/engine_room)
 "kK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -222,8 +221,10 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room)
 "kN" = (
-/obj/machinery/field/generator,
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating/airless,
 /area/engine/engine_room)
 "kT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -279,6 +280,9 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/space/basic,
 /area/engine/engine_room)
@@ -598,6 +602,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engine_room)
+"wL" = (
+/obj/effect/spawner/lootdrop/tesla_and_singuloth_spawner,
+/turf/open/floor/plasteel/dark,
+/area/engine/engine_room)
 "wO" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -610,7 +618,8 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room)
 "xa" = (
-/obj/effect/spawner/lootdrop/tesla_and_singuloth_spawner,
+/obj/structure/table/reinforced,
+/obj/item/wrench,
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room)
 "xj" = (
@@ -626,8 +635,14 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engine_room)
+"xP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plating/airless,
+/area/engine/engine_room)
 "yi" = (
-/obj/structure/table/reinforced,
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room)
 "yv" = (
@@ -889,11 +904,28 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engine_room)
+"Gm" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/space/basic,
+/area/engine/engine_room)
 "GB" = (
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating/airless,
+/area/engine/engine_room)
+"GV" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/space/basic,
 /area/engine/engine_room)
 "GZ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -1342,6 +1374,13 @@
 "Yo" = (
 /turf/open/floor/plasteel,
 /area/engine/engine_room)
+"Zb" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/space/basic,
+/area/engine/engine_room)
 "Zh" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "engpa";
@@ -1487,7 +1526,7 @@ TQ
 TQ
 TQ
 TQ
-TQ
+lh
 PU
 PU
 PU
@@ -1505,16 +1544,16 @@ bH
 "}
 (6,1,1) = {"
 bH
-bH
+kN
 cM
-UE
-UE
 pY
 UE
 pY
 UE
 pY
 UE
+pY
+kZ
 mZ
 nf
 cs
@@ -1534,15 +1573,15 @@ Vo
 bH
 ap
 cQ
-PU
-PU
-ZA
+Zb
 PU
 ZA
 PU
 ZA
 PU
+ZA
 PU
+Zb
 PU
 qK
 Zh
@@ -1858,15 +1897,15 @@ bH
 bH
 bZ
 eD
-PU
-PU
-ZA
+GV
 PU
 ZA
 PU
 ZA
 PU
+ZA
 PU
+GV
 PU
 qK
 Zh
@@ -1883,9 +1922,9 @@ bH
 "}
 (20,1,1) = {"
 bH
-bH
+xP
 fP
-UE
+Vl
 UE
 Vl
 UE
@@ -1893,7 +1932,7 @@ Vl
 UE
 Vl
 kZ
-mZ
+Gm
 nf
 wO
 bH
@@ -2055,7 +2094,7 @@ bH
 cr
 kL
 kL
-kL
+wL
 kL
 xa
 bH
@@ -2079,11 +2118,11 @@ hC
 hk
 pq
 bH
-kI
-kN
-kN
-kN
-kN
+yi
+kL
+kL
+kL
+kL
 yi
 bH
 JZ
@@ -2106,12 +2145,12 @@ hC
 hk
 pq
 bH
-bH
-bH
-bH
-bH
-bH
-bH
+yi
+kL
+kL
+kL
+kL
+yi
 bH
 JZ
 JZ
@@ -2132,14 +2171,14 @@ hk
 hC
 hk
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+bH
+yi
+if
+if
+if
+if
+yi
+bH
 pq
 pq
 pq
@@ -2159,14 +2198,14 @@ hk
 hC
 hk
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+bH
+bH
+bH
+bH
+bH
+bH
+bH
+bH
 pq
 pq
 pq
