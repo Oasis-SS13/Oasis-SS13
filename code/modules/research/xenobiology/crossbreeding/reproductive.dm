@@ -19,14 +19,17 @@ Reproductive extracts:
 		to_chat(user, "<span class='warning'>[src] is still digesting!</span>")
 		return
 	if(istype(O, /obj/item/storage/bag/bio))
-		var/list/inserted = list()
-		SEND_SIGNAL(O, COMSIG_TRY_STORAGE_TAKE_TYPE, /obj/item/reagent_containers/food/snacks/monkeycube, src, 1, null, null, user, inserted)
-		if(inserted.len)
-			var/obj/item/reagent_containers/food/snacks/monkeycube/M = inserted[1]
-			if(istype(M))
-				eat_cube(M, user)
-		else
+		var cube_eaten = FALSE
+		for(var/obj/item/reagent_containers/food/snacks/monkeycube/S in O.contents)
+			if(istype(S))
+				cube_eaten = TRUE
+				eat_cube(S, user)
+				if (cubes_eaten >= 3)
+					break
+		if (cube_eaten == FALSE)
 			to_chat(user, "<span class='warning'>There are no monkey cubes in the bio bag!</span>")
+		//SEND_SIGNAL(O, COMSIG_TRY_STORAGE_TAKE_TYPE, /obj/item/reagent_containers/food/snacks/monkeycube, src, 1, null, null, user, inserted)
+
 	if(istype(O,/obj/item/reagent_containers/food/snacks/monkeycube))
 		eat_cube(O, user)
 	if(cubes_eaten >= 3)
