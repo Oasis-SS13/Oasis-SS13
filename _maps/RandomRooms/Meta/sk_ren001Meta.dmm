@@ -3,6 +3,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "aP" = (
@@ -67,6 +68,7 @@
 /area/space/nearstation)
 "dH" = (
 /obj/structure/cable,
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "dP" = (
@@ -137,6 +139,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/power/grounding_rod,
 /turf/open/floor/plating,
 /area/space/nearstation)
 "iL" = (
@@ -339,6 +342,9 @@
 	icon_state = "0-2"
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/power/emitter{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "pX" = (
@@ -469,6 +475,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/machinery/power/emitter,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "tg" = (
@@ -550,6 +557,13 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"wU" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/tesla_coil,
+/turf/open/floor/plating,
+/area/space/nearstation)
 "xB" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -1726,7 +1740,7 @@ Wk
 Wk
 aN
 Wk
-aN
+wU
 Wk
 aN
 Wk
