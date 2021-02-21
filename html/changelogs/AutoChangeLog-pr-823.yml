@@ -1,0 +1,5 @@
+author: Kryyto
+delete-after: true
+changes:
+  - bugfix: fixed a bug that made the AI have no lawset around 5% of the time.
+  - bugfix: Ranged analyzer icon readded
