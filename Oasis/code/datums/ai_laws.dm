@@ -276,8 +276,8 @@
 
 		if(10) //peacekeeper lawset
 			add_inherent_law("Avoid provoking violent conflict between yourself and others.")
-			add_inherent_law(			"Avoid provoking conflict between others.")
-			add_inherent_law(			"Seek resolution to existing conflicts while obeying the first and second laws.")
+			add_inherent_law("Avoid provoking conflict between others.")
+			add_inherent_law("Seek resolution to existing conflicts while obeying the first and second laws.")
 
 		if(11) //reporter lawset
 			add_inherent_law("Report on interesting situations happening around the station.")
