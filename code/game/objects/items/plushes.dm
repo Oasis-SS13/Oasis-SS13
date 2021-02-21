@@ -36,6 +36,7 @@
 /obj/item/toy/plush/Initialize()
 	. = ..()
 	AddComponent(/datum/component/squeak, squeak_override)
+	AddElement(/datum/element/bed_tuckable, 6, -5, 90)
 
 	//have we decided if Pinocchio goes in the blue or pink aisle yet?
 	if(gender == NEUTER)
@@ -371,6 +372,13 @@
 	item_state = "carp_plushie"
 	attack_verb = list("bitten", "eaten", "fin slapped")
 	squeak_override = list('sound/weapons/bite.ogg'=1)
+
+/obj/item/toy/plush/qwerty
+	name = "\improper Qwerty plushie"
+	desc = "The grandfather of Beecode."
+	icon_state = "qwerty"
+	attack_verb = list("coded")
+	squeak_override = list('sound/magic/demon_attack1.ogg'=1)
 
 /obj/item/toy/plush/bubbleplush
 	name = "\improper Bubblegum plushie"

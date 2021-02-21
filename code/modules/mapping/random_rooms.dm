@@ -1405,3 +1405,75 @@
 	template_width = 10
 	weight = 4
 	stock = 2
+
+/datum/map_template/random_room/sk_ren001
+	name = "Meta Singularity and Tesla engine"
+	room_id = "sk_ren001"
+	mappath = "_maps/RandomRooms/Meta/sk_ren001Meta.dmm"
+	centerspawner = TRUE
+	template_height = 23
+	template_width = 19
+	weight = 1
+
+/datum/map_template/random_room/sk_ren002
+	name = ",Meta Super Matter engine"
+	room_id = "sk_ren002"
+	mappath = "_maps/RandomRooms/Meta/sk_ren002Meta.dmm"
+	centerspawner = TRUE
+	template_height = 23
+	template_width = 19
+	weight = 5
+
+/datum/map_template/random_room/sk_ren003
+	name = ",RBMK Engine"
+	room_id = "sk_ren003"
+	mappath = "_maps/RandomRooms/Meta/sk_ren003Meta.dmm"
+	centerspawner = TRUE
+	template_height = 23
+	template_width = 19
+	weight = 3
+
+/datum/map_template/random_room/sk_ren004
+	name = "Box Singularity and Tesla Engine"
+	room_id = "sk_ren004"
+	mappath = "_maps/RandomRooms/Box/sk_ren004Box.dmm"
+	centerspawner = TRUE
+	template_height = 27
+	template_width = 23
+	weight = 1
+
+/datum/map_template/random_room/sk_ren005
+	name = "Box Super Matter engine"
+	room_id = "sk_ren005"
+	mappath = "_maps/RandomRooms/Box/sk_ren005Box.dmm"
+	centerspawner = TRUE
+	template_height = 27
+	template_width = 23
+	weight = 5
+
+/datum/map_template/random_room/sk_ren006
+	name = "Endo Singularity and Tesla Engine"
+	room_id = "sk_ren006"
+	mappath = "_maps/RandomRooms/Endo/sk_ren006Endo.dmm"
+	centerspawner = TRUE
+	template_height = 25
+	template_width = 33
+	weight = 1
+
+/datum/map_template/random_room/sk_ren007
+	name = "Endo Super Matter Engine"
+	room_id = "sk_ren007"
+	mappath = "_maps/RandomRooms/Endo/sk_ren007Endo.dmm"
+	centerspawner = TRUE
+	template_height = 25
+	template_width = 33
+	weight = 5
+
+/datum/map_template/random_room/sk_ren008
+	name = "Endo RMBK Engine"
+	room_id = "sk_ren008"
+	mappath = "_maps/RandomRooms/Endo/sk_ren008Endo.dmm"
+	centerspawner = TRUE
+	template_height = 25
+	template_width = 33
+	weight = 3
