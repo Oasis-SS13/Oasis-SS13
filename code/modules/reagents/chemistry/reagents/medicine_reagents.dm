@@ -415,6 +415,8 @@
 	description = "Has a 100% chance of instantly healing brute and burn damage. One unit of the chemical will heal one point of damage. Touch application only."
 	reagent_state = LIQUID
 	color = "#FFEBEB"
+	metabolization_rate = 2 * REAGENTS_METABOLISM
+	overdose_threshold = 125
 
 /datum/reagent/medicine/synthflesh/reaction_mob(mob/living/M, method=TOUCH, reac_volume,show_message = 1)
 	if(iscarbon(M))
@@ -432,6 +434,16 @@
 				M.visible_message("<span class='nicegreen'>You successfully replace most of the burnt off flesh of [M].")
 	..()
 
+/datum/reagent/medicine/synthflesh/on_mob_life(mob/living/carbon/M)
+	M.adjustFireLoss(-0.5*REM, 0)
+	M.adjustBruteLoss(-0.5*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/synthflesh/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REM, 0)
+	..()
+	. = 1
 
 /datum/reagent/medicine/charcoal
 	name = "Charcoal"
