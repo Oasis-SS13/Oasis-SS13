@@ -69,7 +69,6 @@
 		ui_action_click()
 
 /obj/item/organ/regenerative_core/proc/applyto(atom/target, mob/user)
-	. = ..()
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(inert)
