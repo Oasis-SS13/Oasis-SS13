@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - bugfix: Dead midwife spiders no longer can communicate
