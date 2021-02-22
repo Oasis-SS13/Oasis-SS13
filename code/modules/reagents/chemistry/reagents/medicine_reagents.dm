@@ -17,6 +17,8 @@
 	name = "Leporazine"
 	description = "Leporazine will effectively regulate a patient's body temperature, ensuring it never leaves safe levels."
 	color = "#C8A5DC" // rgb: 200, 165, 220
+	overdose = 50
+	metabolize rate = 0.5
 
 /datum/reagent/medicine/leporazine/on_mob_life(mob/living/carbon/M)
 	if(M.bodytemperature > BODYTEMP_NORMAL)
@@ -24,6 +26,15 @@
 	else if(M.bodytemperature < (BODYTEMP_NORMAL + 1))
 		M.adjust_bodytemperature(40 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
 	..()
+
+/datum/reagent/medicine/leporazine/overdose_process(mob/living/M)
+	if(prob(50))
+		M.adjust_bodytemperature(200, 0)
+	else
+		M.adjust_bodytemperature(-200, 0)
+	..()
+	. = 1
+
 
 /datum/reagent/medicine/adminordrazine //An OP chemical for admins
 	name = "Adminordrazine"
@@ -230,6 +241,8 @@
 	description = "If used in patch-based applications, immediately restores burn wounds as well as restoring more over time. If ingested through other means, deals minor toxin damage."
 	reagent_state = LIQUID
 	color = "#C8A5DC"
+	metabolization_rate = 2.5 * REAGENTS_METABOLISM
+	overdose_threshold = 100
 
 /datum/reagent/medicine/silver_sulfadiazine/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -1386,7 +1399,7 @@
 	name = "Corazone"
 	description = "A medication used to treat pain, fever, and inflammation, along with heart attacks."
 	color = "#F5F5F5"
-	overdose_threshold = 20
+	overdose_threshold = 50
 	self_consuming = TRUE
 
 /datum/reagent/medicine/corazone/on_mob_metabolize(mob/living/M)
@@ -1397,6 +1410,11 @@
 /datum/reagent/medicine/corazone/on_mob_end_metabolize(mob/living/M)
 	REMOVE_TRAIT(M, TRAIT_STABLEHEART, type)
 	REMOVE_TRAIT(M, TRAIT_STABLELIVER, type)
+	..()
+
+/datum/reagent/medicine/corazone/overdose_process(mob/living/M)
+	M.reagents.add_reagent(/datum/reagent/toxin/histamine, 1)
+	M.reagents.remove_reagent(/datum/reagent/medicine/corazone, 1)
 	..()
 
 /datum/reagent/medicine/muscle_stimulant
