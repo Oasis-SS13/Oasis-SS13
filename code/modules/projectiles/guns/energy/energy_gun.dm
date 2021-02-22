@@ -108,8 +108,7 @@
 	charge_delay = 5
 	pin = null
 	can_charge = FALSE
-	internal_cell = TRUE
-	ammo_x_offset = 2
+	ammo_x_offset = 1
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
 	selfcharge = 1
 	var/reactor_overloaded
