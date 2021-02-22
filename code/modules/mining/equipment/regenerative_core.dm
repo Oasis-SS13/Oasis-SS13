@@ -69,7 +69,6 @@
 		ui_action_click()
 
 /obj/item/organ/regenerative_core/proc/applyto(atom/target, mob/user)
-	. = ..()
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(inert)
@@ -80,19 +79,11 @@
 				to_chat(user, "<span class='notice'>[src] are useless on the dead.</span>")
 				return
 			if(H != user)
-				to_chat(user, "<span class='notice'>You begin to rub the regenerative core on [H]...</span>")
-				to_chat(H, "<span class='userdanger'>[user] begins to smear the regenerative core all over you...</span>")
-				if(do_mob(user, H, 30))
-					H.visible_message("[user] forces [H] to apply [src]... [H.p_they()] quickly regenerates all injuries!")
-					SSblackbox.record_feedback("nested tally", "hivelord_core", 1, list("[type]", "used", "other"))
-				else
-					return
+				H.visible_message("<span class='notice'>[user] forces [H] to apply [src]... Black tendrils entangle and reinforce [H.p_them()]!</span>")
+				SSblackbox.record_feedback("nested tally", "hivelord_core", 1, list("[type]", "used", "other"))
 			else
-				to_chat(user, "<span class='notice'>You start to smear [src] on yourself. It feels and smells disgusting, but you feel amazingly refreshed in mere moments.</span>")
+				to_chat(user, "<span class='notice'>You start to smear [src] on yourself. Disgusting tendrils hold you together and allow you to keep moving, but for how long?</span>")
 				SSblackbox.record_feedback("nested tally", "hivelord_core", 1, list("[type]", "used", "self"))
-			if(HAS_TRAIT(H, TRAIT_NECROPOLIS_INFECTED))
-				H.ForceContractDisease(new /datum/disease/transformation/legion())
-				to_chat(H, "<span class='userdanger'>You feel the necropolis strengthen its grip on your heart and soul... You're powerless to resist for much longer...</span>")
 			H.apply_status_effect(STATUS_EFFECT_REGENERATIVE_CORE)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "core", /datum/mood_event/healsbadman) //Now THIS is a miner buff (fixed - nerf)
 			qdel(src)
