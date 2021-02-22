@@ -13,7 +13,8 @@
 
 /obj/item/gun/ballistic/automatic/proto
 	name = "\improper Nanotrasen Saber SMG"
-	desc = "A prototype three-round burst 9mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors."
+	desc = "A prototype full auto 9mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors and a folding stock."
+	icon = 'waspstation/icons/obj/guns/projectile.dmi'
 	icon_state = "saber"
 	mag_type = /obj/item/ammo_box/magazine/smgm9mm
 	pin = null
@@ -84,6 +85,7 @@
 /obj/item/gun/ballistic/automatic/wt550
 	name = "security auto rifle"
 	desc = "An outdated personal defence weapon. Uses 4.6x30mm rounds and is designated the WT-550 Automatic Rifle."
+	icon = 'waspstation/icons/obj/guns/projectile.dmi'
 	icon_state = "wt550"
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/wt550m9
