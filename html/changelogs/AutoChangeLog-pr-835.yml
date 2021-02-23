@@ -1,0 +1,4 @@
+author: Froststahr
+delete-after: true
+changes:
+  - config: Disables "Extended"(Secret Extended is still enabled)
