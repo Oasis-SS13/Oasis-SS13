@@ -744,6 +744,43 @@
 	group = "Engineering"
 	crate_type = /obj/structure/closet/crate/engineering
 
+/datum/supply_pack/engine/bananium_fuel_rod
+	name = "Bananium Fuel Rod crate"
+	desc = "Two fuel rods designed to utilize and multiply bananium in a reactor, requires CE access to open. Caution: Radioactive"
+	cost = 4000
+	access = ACCESS_CE // Nag your local CE
+	contains = list(/obj/item/twohanded/required/fuel_rod/material/bananium,
+					/obj/item/twohanded/required/fuel_rod/material/bananium)
+	crate_name = "Bluespace Crystal Fuel Rod crate"
+	crate_type = /obj/structure/closet/crate/secure/engineering
+	dangerous = TRUE
+	contraband = TRUE
+
+/datum/supply_pack/engine/fuel_rod
+	name = "Uranium Fuel Rod crate"
+	desc = "Two additional fuel rods for use in a reactor, requires CE access to open. Caution: Radioactive"
+	cost = 3000
+	access = ACCESS_CE
+	contains = list(/obj/item/twohanded/required/fuel_rod,
+					/obj/item/twohanded/required/fuel_rod)
+	crate_name = "Uranium-235 Fuel Rod crate"
+	crate_type = /obj/structure/closet/crate/secure/engineering
+	dangerous = TRUE
+
+/datum/supply_pack/engine/reactor
+	name = "RMBK Nuclear Reactor Kit" // (not) a toy
+	desc = "Contains a reactor beacon and 3 reactor consoles. Uranium rods not included."
+	cost = 12000
+	access = ACCESS_CE
+	contains = list(/obj/item/survivalcapsule/reactor,
+					/obj/machinery/computer/reactor/control_rods/cargo,
+					/obj/machinery/computer/reactor/stats/cargo,
+					/obj/machinery/computer/reactor/fuel_rods/cargo)
+	crate_name = "Build Your Own Reactor Kit"
+	crate_type = /obj/structure/closet/crate/secure/engineering
+	dangerous = TRUE
+
+
 /datum/supply_pack/engineering/shieldgen
 	name = "Anti-breach Shield Projector Crate"
 	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
@@ -1663,6 +1700,7 @@ datum/supply_pack/medical/bruisekits
 	crate_name = "xenobiology starter crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 
+
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Service //////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
@@ -2526,15 +2564,14 @@ datum/supply_pack/medical/bruisekits
 	crate_name = "toy crate"
 	crate_type = /obj/structure/closet/crate/wooden
 
-/datum/supply_pack/costumes_toys/randomised/toys/generate()
-	. = ..()
+/datum/supply_pack/costumes_toys/randomised/toys/fill(obj/structure/closet/crate/C)
 	var/the_toy
 	for(var/i in 1 to num_contained)
 		if(prob(50))
 			the_toy = pickweight(GLOB.arcade_prize_pool)
 		else
 			the_toy = pick(subtypesof(/obj/item/toy/plush))
-		new the_toy(.)
+		new the_toy(C)
 
 /datum/supply_pack/costumes_toys/wizard
 	name = "Wizard Costume Crate"
@@ -2741,6 +2778,7 @@ datum/supply_pack/medical/bruisekits
 					/obj/item/reagent_containers/food/drinks/bottle/holywater,
 					/obj/item/storage/book/bible/booze,
 					/obj/item/storage/book/bible/booze,
+					/obj/item/clothing/neck/crucifix/rosary,
 					/obj/item/clothing/suit/hooded/chaplain_hoodie,
 					/obj/item/clothing/suit/hooded/chaplain_hoodie)
 	crate_name = "religious supplies crate"

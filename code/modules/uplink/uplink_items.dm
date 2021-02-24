@@ -1447,14 +1447,27 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 
 /datum/uplink_item/suits/hardsuit
 	name = "Syndicate Hardsuit"
-	desc = "The feared suit of a Syndicate nuclear agent. Features slightly better armoring and a built in jetpack \
-			that runs off standard atmospheric tanks. Toggling the suit in and out of \
+	desc = "The feared suit of a Syndicate nuclear agent. Features slightly better armoring, a built in jetpack \
+			that runs off standard atmospheric tanks and an advanced team location system. Toggling the suit in and out of \
 			combat mode will allow you all the mobility of a loose fitting uniform without sacrificing armoring. \
 			Additionally the suit is collapsible, making it small enough to fit within a backpack. \
 			Nanotrasen crew who spot these suits are known to panic."
 	item = /obj/item/clothing/suit/space/hardsuit/syndi
 	cost = 7
 	exclude_modes = list(/datum/game_mode/nuclear) //you can't buy it in nuke, because the elite hardsuit costs the same while being better
+
+/datum/uplink_item/suits/hardsuit/spawn_item(spawn_path, mob/user, datum/component/uplink/U)
+	var/obj/item/clothing/suit/space/hardsuit/suit = ..()
+	var/datum/component/tracking_beacon/beacon = suit.GetComponent(/datum/component/tracking_beacon)
+	var/datum/component/team_monitor/hud = suit.helmet.GetComponent(/datum/component/team_monitor)
+
+	var/datum/antagonist/nukeop/nukie = is_nuclear_operative(user)
+	if(nukie?.nuke_team?.team_frequency)
+		if(hud)
+			hud.set_frequency(nukie.nuke_team.team_frequency)
+		if(beacon)
+			beacon.set_frequency(nukie.nuke_team.team_frequency)
+	return suit
 
 /datum/uplink_item/suits/hardsuit/elite
 	name = "Elite Syndicate Hardsuit"
@@ -2152,6 +2165,15 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/storage/box/syndie_kit/mimery
 	restricted_roles = list("Mime")
 	surplus = 0
+/datum/uplink_item/role_restricted/cqm
+	name = "Blank Scroll"
+	desc = "This scroll was recovered from a temple without sound. \
+			It teaches you how to silence and confuse your foes, \
+			don't buy this unless you are a mime or plan to give it to one as only they can read and understand the invisible writings and illustrations."
+	item = /obj/item/book/granter/martial/cqm
+	cost = 9
+	surplus = 0
+	restricted_roles = list("Mime")
 
 /datum/uplink_item/role_restricted/pressure_mod
 	name = "Kinetic Accelerator Pressure Mod"
@@ -2284,3 +2306,20 @@ datum/uplink_item/role_restricted/superior_honkrender
 	item = /obj/item/storage/fancy/cigarettes/cigpack_syndicate
 	cost = 2
 	illegal_tech = FALSE
+
+/datum/uplink_item/device_tools/tc_rod
+	name = "Telecrystal Fuel Rod"
+	desc = "This special fuel rod has eight material slots that can be inserted with telecrystals, \
+			once the rod has been fully depleted, you will be able to harvest the extra telecrystals. \
+			Please note: This Rod fissiles much faster than it's nanotrasen counterpart, it doesn't take \
+			much to overload the reactor with these..."
+	item = /obj/item/twohanded/required/fuel_rod/material/telecrystal
+	cost = 7
+
+/datum/uplink_item/dangerous/vibroblade
+    name = "High Frequency Blade"
+    desc = "An electric katana that weakens the molecular bonds of whatever it touches. Perfect for slicing off the limbs of your coworkers. \
+    Avoid using a multitool on it."
+    item = /obj/item/storage/belt/hfblade
+    cost = 18
+    surplus = 15
