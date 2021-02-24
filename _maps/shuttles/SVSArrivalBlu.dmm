@@ -1,0 +1,28 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"c" = (/obj/effect/spawner/structure/window/plastitanium,/turf/open/floor/plating,/area/shuttle/arrival)
+"d" = (/obj/structure/table,/obj/machinery/light,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"f" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"j" = (/obj/structure/table,/obj/machinery/light{dir = 1},/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"l" = (/obj/structure/closet{name = "uniform wardrobe"},/obj/item/clothing/under/color/darkblue,/obj/item/clothing/under/color/darkblue,/obj/item/clothing/under/color/darkblue,/obj/item/clothing/under/color/darkblue,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"m" = (/turf/closed/wall/mineral/plastitanium,/area/shuttle/arrival)
+"p" = (/obj/structure/shuttle/engine/propulsion{dir = 4},/turf/open/floor/plating,/area/shuttle/arrival)
+"s" = (/obj/structure/chair/comfy/shuttle{dir = 8},/obj/machinery/light/small{dir = 4},/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"v" = (/obj/machinery/door/airlock/survival_pod/glass,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"w" = (/obj/structure/shuttle/engine/heater{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/shuttle/arrival)
+"B" = (/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"D" = (/obj/structure/chair/comfy/shuttle{dir = 1},/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"E" = (/obj/machinery/door/airlock/survival_pod,/turf/open/floor/plating,/area/shuttle/arrival)
+"J" = (/obj/structure/table,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"M" = (/obj/structure/closet/emcloset,/obj/machinery/light{dir = 1},/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"P" = (/obj/structure/closet/emcloset,/obj/machinery/light,/turf/open/floor/mineral/plastitanium,/area/shuttle/arrival)
+"X" = (/turf/open/floor/noslip/darkblue{name = "shuttle floor"},/area/shuttle/arrival)
+
+(1,1,1) = {"
+aaamEmmccccmEmm
+mmmmXjfffffMXwp
+cBsmXXXXXXXXXwp
+cBBvXlJlllJJXwp
+cBsmXXXXXXXXXwp
+mmmmXdDDDDDPXwp
+aaamEmmccccmEmm
+"}
