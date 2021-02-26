@@ -175,6 +175,7 @@
 	contains = list(/obj/item/storage/box/metalfoam)
 	crate_name = "metal foam grenade crate"
 
+<<<<<<< HEAD
 /datum/supply_pack/emergency/syndicate
 	name = "NULL_ENTRY"
 	desc = "(#@&^$THIS PACKAGE CONTAINS 30TC WORTH OF SOME RANDOM SYNDICATE GEAR WE HAD LYING AROUND THE WAREHOUSE. GIVE EM HELL, OPERATIVE, BUT DON'T GET GREEDY- ORDER TOO MANY AND WE'LL BE SENDING OUR DEADLIEST ENFORCERS TO INVESTIGATE@&!*() "
@@ -212,6 +213,8 @@
 		message_admins("a NULL_ENTRY crate has shipped, increasing the weight of the Lone Operative event to [loneop.weight]")
 		log_game("a NULL_ENTRY crate has shipped, increasing the weight of the Lone Operative event to [loneop.weight]")
 
+=======
+>>>>>>> 9502939587... Removes nullcrates (#3696)
 /datum/supply_pack/emergency/plasma_spacesuit
 	name = "Plasmaman Space Envirosuits"
 	desc = "Contains two space-worthy envirosuits for Plasmamen. Order now and we'll throw in two free helmets! Requires EVA access to open."
@@ -279,7 +282,7 @@
 
 /datum/supply_pack/emergency/specialops
 	name = "Special Ops Supplies"
-	desc = "(*!&@#TOO CHEAP FOR THAT NULL_ENTRY, HUH OPERATIVE? WELL, THIS LITTLE ORDER CAN STILL HELP YOU OUT IN A PINCH. CONTAINS A BOX OF FIVE EMP GRENADES, THREE SMOKEBOMBS, AN INCENDIARY GRENADE, AND A \"SLEEPY PEN\" FULL OF NICE TOXINS!#@*$"
+	desc = "(*!&@#SAD ABOUT THAT NULL_ENTRY, HUH OPERATIVE? WELL, THIS LITTLE ORDER CAN STILL HELP YOU OUT IN A PINCH. CONTAINS A BOX OF FIVE EMP GRENADES, THREE SMOKEBOMBS, AN INCENDIARY GRENADE, AND A \"SLEEPY PEN\" FULL OF NICE TOXINS!#@*$"
 	hidden = TRUE
 	cost = 2000
 	contains = list(/obj/item/storage/box/emps,
