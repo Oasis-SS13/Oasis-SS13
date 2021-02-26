@@ -34,7 +34,7 @@
 	name = "Blue Vault"
 	icon_state = "nuke_storage"
 
-/area/svs/blue/security/vault/ore 
+/area/svs/blue/security/vault/ore
 	name = "Blue ORM"
 
 /area/svs/blue/security/vault/server
@@ -49,7 +49,7 @@
 	lighting_colour_bulb = "#ffdbb4"
 	lighting_brightness_tube = 8
 
-/area/svs/blue/bridge/admiral 
+/area/svs/blue/bridge/admiral
 	name = "Blue Admiral's Quarters"
 
 /area/svs/blue/science
