@@ -4,7 +4,9 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Head of Security",
 	"Chief Engineer",
 	"Research Director",
-	"Chief Medical Officer"))
+	"Chief Medical Officer",
+	"Red Team Admiral", // svs
+	"Blue Team Admiral")) // ditto
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
@@ -54,7 +56,9 @@ GLOBAL_LIST_INIT(security_positions, list(
 	"Detective",
 	"Security Officer",
 	"Brig Physician",
-	"Deputy"))
+	"Deputy",
+	"Red Team Member", // svs
+	"Blue Team Member")) // ditto
 
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(

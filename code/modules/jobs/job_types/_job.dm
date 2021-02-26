@@ -20,7 +20,7 @@
 	var/department_flag = NONE //Deprecated
 	var/auto_deadmin_role_flags = NONE
 
-	//Players will be allowed to spawn in as jobs that are set to "Station"
+	//Players will be allowed to spawn in as jobs that are set to "Station" by default, changes by map config
 	var/faction = "None"
 
 	//How many players can be this job
