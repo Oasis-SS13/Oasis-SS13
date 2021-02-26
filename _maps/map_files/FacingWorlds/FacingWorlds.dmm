@@ -422,6 +422,15 @@
 	dir = 4;
 	pixel_x = -23
 	},
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 2;
+	height = 5;
+	id = "laborcamp_home";
+	name = "fore bay 1";
+	roundstart_template = /datum/map_template/shuttle/labour/box;
+	width = 9
+	},
 /turf/open/floor/plasteel,
 /area/svs/blue/cargo)
 "bu" = (
@@ -2040,7 +2049,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/space)
+/area/svs/blue/engine/engine_room)
 "eT" = (
 /obj/effect/turf_decal/bot_white/right,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -3977,9 +3986,16 @@
 /turf/open/floor/plasteel,
 /area/svs/blue/security/vault)
 "jd" = (
-/obj/machinery/manned_turret,
-/turf/open/floor/plasteel/dark,
-/area/svs/blue/security/vault)
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 10;
+	id = "mining_home";
+	name = "Red Mining Bay";
+	roundstart_template = /datum/map_template/shuttle/mining/large;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "je" = (
 /obj/effect/turf_decal/stripes/white/line{
 	color = "#4e73ad";
@@ -4829,9 +4845,16 @@
 	},
 /area/svs/blue/nexus)
 "kM" = (
-/obj/machinery/manned_turret,
-/turf/open/floor/plasteel/dark,
-/area/svs/red/security/armory)
+/obj/docking_port/stationary{
+	dwidth = 2;
+	height = 5;
+	id = "laborcamp_home";
+	name = "Blue Mining Bay";
+	roundstart_template = /datum/map_template/shuttle/labour/box;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "kN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -11293,7 +11316,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/svs/red/engine/engine_room)
 "za" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -11472,7 +11495,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/svs/red/engine/engine_room)
 "zz" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 6
@@ -13359,6 +13382,10 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/svs/blue/engine/atmos)
+"PA" = (
+/obj/effect/spawner/room/middle,
+/turf/open/space/basic,
+/area/space)
 "PC" = (
 /obj/machinery/light{
 	dir = 1
@@ -13487,7 +13514,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/space)
+/area/svs/blue/engine/engine_room)
 "Tv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -27900,7 +27927,7 @@ iF
 ji
 jH
 kt
-kM
+li
 lh
 hJ
 ha
@@ -33902,7 +33929,7 @@ zi
 zi
 zi
 zi
-zi
+jd
 aK
 aY
 aY
@@ -138840,7 +138867,7 @@ zi
 zi
 zi
 zi
-zi
+PA
 zi
 zi
 zi
@@ -241730,7 +241757,7 @@ zi
 zi
 zi
 zi
-zi
+kM
 zi
 zi
 aj
@@ -250282,7 +250309,7 @@ gJ
 hz
 em
 iA
-jd
+eQ
 jB
 kn
 kJ
