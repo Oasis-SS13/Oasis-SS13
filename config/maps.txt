@@ -14,12 +14,12 @@ endmap
 
 map boxstation
 	maxplayers 60
+	default
 	votable
 endmap
 
 map endostation	
 	votable
-	default
 endmap
 
 map metastation
@@ -57,4 +57,9 @@ map kilostation
     maxplayers 80
 	votable
 	disabled
+endmap
+
+map facingworlds
+#	minplayers 10
+	votable 
 endmap

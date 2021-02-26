@@ -40,7 +40,8 @@ SUBSYSTEM_DEF(job)
 		overflow_role = new_overflow_role
 		JobDebug("Overflow role set to : [new_overflow_role]")
 
-/datum/controller/subsystem/job/proc/SetupOccupations(faction = "Station")
+// SSmapping.config should be initialized by the time this proc is called, or so I hope
+/datum/controller/subsystem/job/proc/SetupOccupations(faction = SSmapping.config.default_job_faction) // "Station" on most maps.
 	occupations = list()
 	var/list/all_jobs = subtypesof(/datum/job)
 	if(!all_jobs.len)
@@ -111,6 +112,8 @@ SUBSYSTEM_DEF(job)
 	JobDebug("Running FOC, Job: [job], Level: [level], Flag: [flag]")
 	var/list/candidates = list()
 	for(var/mob/dead/new_player/player in unassigned)
+		if(!job)
+			return 0
 		if(is_banned_from(player.ckey, job.title) || QDELETED(player))
 			JobDebug("FOC isbanned failed, Player: [player]")
 			continue
@@ -279,13 +282,14 @@ SUBSYSTEM_DEF(job)
 	//People who wants to be the overflow role, sure, go on.
 	JobDebug("DO, Running Overflow Check 1")
 	var/datum/job/overflow = GetJob(SSjob.overflow_role)
-	var/list/overflow_candidates = FindOccupationCandidates(overflow, 3)
-	JobDebug("AC1, Candidates: [overflow_candidates.len]")
-	for(var/mob/dead/new_player/player in overflow_candidates)
-		JobDebug("AC1 pass, Player: [player]")
-		AssignRole(player, SSjob.overflow_role)
-		overflow_candidates -= player
-	JobDebug("DO, AC1 end")
+	if(overflow)
+		var/list/overflow_candidates = FindOccupationCandidates(overflow, 3)
+		JobDebug("AC1, Candidates: [overflow_candidates.len]")
+		for(var/mob/dead/new_player/player in overflow_candidates)
+			JobDebug("AC1 pass, Player: [player]")
+			AssignRole(player, SSjob.overflow_role)
+			overflow_candidates -= player
+		JobDebug("DO, AC1 end")
 
 	//Select one head
 	JobDebug("DO, Running Head Check")
@@ -496,7 +500,7 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/setup_officer_positions()
 	var/datum/job/J = SSjob.GetJob("Security Officer")
 	if(!J)
-		CRASH("setup_officer_positions(): Security officer job is missing")
+		return 0
 
 	var/ssc = CONFIG_GET(number/security_scaling_coeff)
 	if(ssc > 0)
