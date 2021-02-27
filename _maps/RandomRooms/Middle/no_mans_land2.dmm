@@ -145,6 +145,22 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/awaymission/spacebattle/cruiser)
+"bP" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "ca" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -205,6 +221,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"cU" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "dq" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -284,6 +305,15 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"fd" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "fv" = (
 /obj/item/clothing/suit/hazardvest{
 	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
@@ -714,6 +744,20 @@
 /obj/item/grenade/plastic/c4,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/syndicate1)
+"lM" = (
+/obj/machinery/dna_scannernew,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "lO" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -776,6 +820,15 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"mM" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 1;
+	icon_state = "plating";
+	name = "broken plating"
+	},
+/obj/structure/lattice,
+/turf/template_noop,
+/area/space/nearstation)
 "mP" = (
 /turf/open/floor/plating/airless,
 /area/space)
@@ -793,6 +846,11 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
+"nh" = (
+/obj/structure/table/glass,
+/obj/item/book/random,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "nj" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -877,6 +935,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
+"ow" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "pile"
+	},
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered)
 "oB" = (
 /obj/structure/shuttle/engine/propulsion/left{
 	dir = 1
@@ -901,6 +966,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
+"oN" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "oW" = (
 /obj/structure/lattice,
 /obj/structure/fluff/broken_flooring{
@@ -909,6 +983,18 @@
 	},
 /turf/template_noop,
 /area/space/nearstation)
+"pk" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "pr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
@@ -1061,6 +1147,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "tl" = (
 /obj/effect/decal/remains/human,
+/obj/item/implanter/freedom,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered/no_grav)
 "to" = (
@@ -1111,6 +1198,9 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"uC" = (
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "uE" = (
 /obj/effect/turf_decal/bot_white,
 /obj/structure/closet/emcloset,
@@ -1173,6 +1263,9 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"wQ" = (
+/turf/closed/wall/r_wall/rust,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "xj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -1437,6 +1530,12 @@
 /obj/structure/table_frame,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate1)
+"BL" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "BV" = (
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/plasteel/dark,
@@ -1463,6 +1562,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
+"Ca" = (
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "Ce" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -1506,8 +1608,22 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/syndicate1)
 "Da" = (
-/turf/closed/mineral,
-/area/template_noop)
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Dd" = (
+/obj/machinery/clonepod/experimental,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "Dy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -1649,6 +1765,33 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
+"GX" = (
+/obj/machinery/computer/prototype_cloning,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/paper/fluff/ruins/exp_cloning/manual,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Hk" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "plating";
+	name = "broken plating"
+	},
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "Hm" = (
 /turf/open/floor/plasteel/white/side{
 	dir = 8
@@ -1695,6 +1838,22 @@
 "If" = (
 /turf/open/floor/plasteel/white/corner,
 /area/awaymission/spacebattle/cruiser)
+"Ip" = (
+/obj/structure/table,
+/obj/item/pen,
+/obj/item/paper/fluff/ruins/exp_cloning/log,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "It" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -1894,6 +2053,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"LO" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/syringes,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "LR" = (
 /obj/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
@@ -1923,6 +2087,13 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"Mf" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 1
+	},
+/obj/structure/lattice,
+/turf/template_noop,
+/area/space/nearstation)
 "Mg" = (
 /obj/structure/girder,
 /turf/open/floor/plating,
@@ -2101,6 +2272,18 @@
 /obj/item/storage/box/medipens,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/syndicate1)
+"Pa" = (
+/turf/open/floor/plasteel/airless,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Pc" = (
+/obj/structure/table/glass,
+/obj/item/storage/firstaid/regular,
+/obj/item/healthanalyzer{
+	desc = "A prototype hand-held body scanner able to distinguish vital signs of the subject.";
+	name = "prototype health analyzer"
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "Pf" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -2178,6 +2361,36 @@
 "Qd" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/awaymission/spacebattle/syndicate1)
+"Qi" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"Qw" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "Qx" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -2232,6 +2445,13 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"RM" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 1
+	},
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "RN" = (
 /obj/machinery/light{
 	dir = 1
@@ -2282,6 +2502,13 @@
 	},
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/awaymission/spacebattle/cruiser)
+"SL" = (
+/obj/structure/fluff/broken_flooring{
+	dir = 4;
+	icon_state = "pile"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "SQ" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -2380,12 +2607,37 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"UF" = (
+/obj/structure/table/glass,
+/obj/machinery/light,
+/obj/structure/bedsheetbin,
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "UG" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/syndicate1)
 "UW" = (
 /turf/open/floor/plasteel/white/side,
 /area/awaymission/spacebattle/cruiser)
+"UY" = (
+/obj/effect/decal/cleanable/vomit/old,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
+"VE" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/powered/ancient_shuttle)
 "VP" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -2488,6 +2740,10 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/syndicate1)
+"Xv" = (
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "XD" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -7430,7 +7686,7 @@ Rh
 Rh
 Rh
 yI
-yI
+Xc
 Rh
 Rh
 Rh
@@ -8721,9 +8977,9 @@ Rh
 yI
 Xc
 Xc
-bv
-bv
-bv
+Xc
+Xc
+Xc
 bv
 bv
 bv
@@ -8925,9 +9181,9 @@ Xc
 Xc
 bv
 bv
-bv
 Xc
-bv
+Xc
+Xc
 bv
 bv
 bv
@@ -9094,8 +9350,8 @@ bv
 bv
 Xc
 bv
-bv
-bv
+Xc
+Xc
 bv
 Xc
 Xc
@@ -9128,10 +9384,10 @@ Xc
 bv
 bv
 bv
+Xc
 bv
-bv
-bv
-bv
+Xc
+Xc
 bv
 yI
 yI
@@ -9329,11 +9585,11 @@ bv
 bv
 bv
 bv
+Xc
 bv
 bv
 bv
-bv
-bv
+Xc
 bv
 yI
 Rh
@@ -9703,9 +9959,9 @@ Xc
 Xc
 Xc
 Xc
-bv
-bv
-bv
+Xc
+Xc
+Xc
 Xc
 bv
 yI
@@ -9907,8 +10163,8 @@ bv
 bv
 bv
 bv
-bv
-bv
+Xc
+Xc
 bv
 yI
 yI
@@ -12757,7 +13013,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+rM
 Rh
 Rh
 Rh
@@ -13152,14 +13408,14 @@ Rh
 Rh
 Rh
 Rh
+Fq
+Fq
+Fq
+Fq
+Fq
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+Fq
 Rh
 Rh
 Rh
@@ -13352,18 +13608,18 @@ Rh
 Rh
 Rh
 Rh
+mM
+Da
+Da
+Da
+wQ
+wQ
+wQ
+wQ
+wQ
+Da
+wQ
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-gJ
-gJ
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -13553,21 +13809,21 @@ Rh
 Rh
 Rh
 Rh
+Fq
+Da
+Da
+Pa
+Pa
+Pa
+Pa
+Pa
+Pa
+Pa
+Da
+Da
+Fq
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -13754,24 +14010,24 @@ Rh
 Rh
 Rh
 Rh
+Fq
+Da
+Da
+SL
+Pa
+Pa
+Pa
+Pa
+Pa
+Pa
+Pa
+Pa
+Da
+Fq
 Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -13957,23 +14213,23 @@ Rh
 Rh
 Rh
 Rh
+wQ
+wQ
+cU
+uC
+wQ
+wQ
+Pa
+Da
+Mf
+Pa
+Pa
+wQ
+Fq
 Rh
 Rh
 Rh
 Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -14159,23 +14415,23 @@ Rh
 Rh
 Rh
 Rh
+VE
+Qw
+BL
+Ca
+Ca
+wQ
+Pa
+Pa
+Da
+Pa
+Pa
+wQ
+Fq
 Rh
 Rh
 Rh
 Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -14348,7 +14604,7 @@ KW
 KW
 KW
 kV
-kV
+KW
 kV
 kV
 kV
@@ -14361,23 +14617,23 @@ Rh
 Rh
 Rh
 Rh
+wQ
+Ip
+pk
+Ca
+Ca
+Pa
+Pa
+Pa
+Pa
+Pa
+wQ
+wQ
+Fq
 Rh
 Rh
 Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
+Rh
 Rh
 Rh
 Rh
@@ -14549,7 +14805,7 @@ KW
 KW
 KW
 KW
-kV
+KW
 kV
 kV
 kV
@@ -14563,23 +14819,23 @@ Rh
 Rh
 Rh
 Rh
+wQ
+lM
+fd
+Ca
+UF
+wQ
+Pa
+Pa
+Pa
+KW
+KW
+KW
 Rh
 Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
-kV
-KW
-KW
-KW
-gJ
-gJ
-gJ
-gJ
-gJ
+Rh
+Rh
+Rh
 Rh
 Rh
 Rh
@@ -14750,7 +15006,7 @@ kV
 KW
 KW
 KW
-kV
+KW
 kV
 kV
 tt
@@ -14765,22 +15021,20 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-gJ
+VE
+GX
+bP
+Ca
+nh
+wQ
+Da
+RM
 kV
 KW
 KW
 KW
 KW
 kV
-gJ
-gJ
 Rh
 Rh
 Rh
@@ -14829,8 +15083,10 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
+yI
+yI
+yI
+bv
 yI
 yI
 bv
@@ -14950,9 +15206,9 @@ Rh
 Rh
 kV
 kV
+KW
+KW
 kV
-kV
-kV
 tt
 tt
 tt
@@ -14967,14 +15223,14 @@ Rh
 Rh
 Rh
 Rh
-Rh
-gJ
-gJ
-gJ
-gJ
-gJ
-tt
-tt
+VE
+Dd
+fd
+Ca
+Pc
+wQ
+Da
+Xv
 tt
 kV
 KW
@@ -15027,12 +15283,12 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+bv
+bv
+bv
+bv
 yI
 yI
 bv
@@ -15151,8 +15407,8 @@ Rh
 Rh
 kV
 kV
-kV
-kV
+KW
+KW
 kV
 KW
 tt
@@ -15169,15 +15425,15 @@ Rh
 Rh
 Rh
 Rh
-Rh
-gJ
-gJ
-gJ
+VE
+UY
+fd
+Ca
+LO
+Da
+Hk
 tt
 tt
-tt
-tt
-tt
 kV
 kV
 kV
@@ -15229,12 +15485,12 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+bv
+bv
+bv
+bv
+bv
+bv
 yI
 yI
 bv
@@ -15352,7 +15608,7 @@ Rh
 Rh
 Rh
 kV
-kV
+KW
 kV
 kV
 kV
@@ -15371,22 +15627,22 @@ Rh
 Rh
 Rh
 Rh
-Rh
-gJ
-gJ
-gJ
-tt
-tt
-tt
-tt
-tt
-kV
-kV
-kV
-kV
-kV
-kV
+wQ
+Qi
+oN
+Ca
 Da
+Hk
+tt
+tt
+tt
+kV
+kV
+kV
+kV
+kV
+kV
+kV
 Rh
 Rh
 Rh
@@ -15431,12 +15687,12 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
 yI
 yI
 bv
@@ -15573,14 +15829,14 @@ Rh
 Rh
 Rh
 Rh
-Rh
-gJ
+wQ
+wQ
 kV
 kV
+Hk
 tt
+ow
 tt
-tt
-tt
 kV
 kV
 kV
@@ -15631,14 +15887,14 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+bv
+bv
+bv
+bv
+Xc
+bv
+bv
+bv
 bv
 yI
 bv
@@ -15653,7 +15909,7 @@ bv
 bv
 Xc
 Xc
-bv
+Xc
 Xc
 Xc
 Rh
@@ -15775,7 +16031,7 @@ Rh
 Rh
 Rh
 Rh
-gJ
+Rh
 kV
 tt
 tt
@@ -15832,15 +16088,15 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+bv
+bv
+bv
+bv
+bv
+bv
+Xc
+bv
+bv
 bv
 yI
 yI
@@ -15853,9 +16109,9 @@ yI
 yI
 bv
 bv
+Xc
 bv
-bv
-bv
+Xc
 Xc
 Xc
 Rh
@@ -15977,7 +16233,7 @@ Rh
 Rh
 Rh
 Rh
-gJ
+Rh
 tt
 tt
 tt
@@ -16033,16 +16289,16 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+bv
+bv
+bv
+bv
+bv
+bv
+Xc
+bv
+bv
+bv
 bv
 yI
 yI
@@ -16056,8 +16312,8 @@ yI
 bv
 bv
 bv
-bv
-bv
+Xc
+Xc
 bv
 bv
 Rh
@@ -16237,15 +16493,15 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+Xc
+Xc
+bv
+bv
+bv
 yI
 yI
 yI
@@ -16257,9 +16513,9 @@ yI
 yI
 bv
 bv
-bv
-bv
-bv
+Xc
+Xc
+Xc
 bv
 bv
 Rh
@@ -16434,22 +16690,22 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+yI
+yI
+yI
+bv
+bv
+bv
+Xc
+Xc
+Xc
+bv
+bv
+bv
+yI
+yI
 yI
 yI
 yI
@@ -16635,23 +16891,23 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
+yI
+yI
+bv
+yI
+yI
+yI
+bv
 bv
 Xc
 yI
@@ -16660,7 +16916,7 @@ yI
 yI
 yI
 bv
-bv
+yI
 bv
 bv
 bv
@@ -16725,8 +16981,8 @@ Rh
 yI
 yI
 yI
-bv
-bv
+Xc
+Xc
 bv
 bv
 yI
@@ -16837,32 +17093,32 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
 yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
+yI
+Xc
+yI
+yI
+yI
+yI
+yI
+bv
+bv
+bv
+bv
 yI
 yI
 yI
 yI
 Xc
-Xc
+yI
 bv
 Rh
 Rh
@@ -16927,7 +17183,7 @@ yI
 yI
 yI
 yI
-bv
+Xc
 bv
 bv
 bv
@@ -17039,31 +17295,31 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
+yI
+yI
+yI
+yI
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -17128,8 +17384,8 @@ Rh
 yI
 yI
 yI
-bv
-bv
+Xc
+Xc
 bv
 bv
 bv
@@ -17241,31 +17497,31 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+Xc
+Xc
+Xc
+yI
+yI
+yI
+yI
+bv
+bv
+bv
+bv
+Xc
+Xc
+Xc
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -17444,30 +17700,30 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+Xc
+bv
+Xc
+yI
+yI
+yI
+bv
+bv
+Xc
+Xc
+Xc
+Xc
+Xc
+bv
+bv
+yI
+yI
 Rh
 Rh
 Rh
@@ -17646,29 +17902,29 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+bv
+bv
+bv
+bv
+Xc
+Xc
+bv
+yI
+yI
+yI
+bv
+bv
+bv
+Xc
+Xc
+Xc
+bv
+bv
+bv
+yI
+yI
 Rh
 Rh
 Rh
@@ -17849,26 +18105,26 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+Xc
+Xc
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+Xc
+Xc
+bv
+bv
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -18051,25 +18307,25 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+Xc
+Xc
+Xc
+Xc
+bv
+bv
+bv
+bv
+bv
+Xc
+Xc
+bv
+bv
+bv
+yI
+yI
 Rh
 Rh
 Rh
@@ -18212,7 +18468,7 @@ kV
 kV
 KW
 KW
-kV
+KW
 KW
 KW
 Rh
@@ -18253,23 +18509,23 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+Xc
+Xc
+bv
+Xc
+Xc
+bv
+bv
+bv
+bv
+bv
+Xc
+bv
+yI
+yI
 Rh
 Rh
 Rh
@@ -18413,8 +18669,8 @@ tt
 kV
 kV
 kV
-kV
-kV
+KW
+KW
 KW
 KW
 Rh
@@ -18455,21 +18711,21 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
+yI
 Rh
 Rh
 Rh
@@ -18614,11 +18870,11 @@ tt
 tt
 kV
 kV
+KW
+KW
 kV
 kV
 kV
-kV
-kV
 Rh
 Rh
 Rh
@@ -18657,19 +18913,19 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -18816,7 +19072,7 @@ tt
 tt
 kV
 kV
-kV
+KW
 kV
 kV
 kV
@@ -18860,17 +19116,17 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -19017,7 +19273,7 @@ tt
 tt
 tt
 kV
-kV
+KW
 kV
 kV
 kV
@@ -19063,15 +19319,15 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+bv
+bv
+bv
+bv
+bv
+bv
+bv
+yI
 Rh
 Rh
 Rh
@@ -19267,12 +19523,12 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
-Rh
-Rh
-Rh
+yI
+yI
+yI
+yI
+yI
+yI
 Rh
 Rh
 Rh
@@ -20536,7 +20792,7 @@ yI
 bv
 bv
 bv
-bv
+Xc
 bv
 bv
 yI
@@ -20737,8 +20993,8 @@ yI
 yI
 bv
 bv
-bv
-bv
+Xc
+Xc
 Xc
 Xc
 Xc
@@ -21144,7 +21400,7 @@ Xc
 Xc
 Xc
 Xc
-bv
+Xc
 bv
 bv
 yI
