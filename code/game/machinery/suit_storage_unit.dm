@@ -51,11 +51,28 @@
 	var/breakout_time = 300
 	/// How fast it charges cells in a suit
 	var/charge_rate = 500
+	/// For the overlay, is it red or blue ?
+	var/isred = FALSE
+	var/isblue = FALSE
 
 /obj/machinery/suit_storage_unit/standard_unit
 	suit_type = /obj/item/clothing/suit/space/eva
 	helmet_type = /obj/item/clothing/head/helmet/space/eva
 	mask_type = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/team_red
+	suit_type = /obj/item/clothing/suit/space/syndicate
+	helmet_type = /obj/item/clothing/head/helmet/space/syndicate
+	mask_type = /obj/item/clothing/mask/breath
+	icon_state = "close_red"
+	isred = TRUE
+
+/obj/machinery/suit_storage_unit/team_blue
+	suit_type = /obj/item/clothing/suit/space/syndicate/blue
+	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/blue
+	mask_type = /obj/item/clothing/mask/breath
+	icon_state = "close_blue"
+	isblue = TRUE
 
 /obj/machinery/suit_storage_unit/captain
 	suit_type = /obj/item/clothing/suit/space/hardsuit/swat/captain
@@ -164,13 +181,22 @@
 			add_overlay("super")
 		else if(occupant)
 			add_overlay("uvhuman")
+		else if(isred == TRUE)
+			add_overlay("uv_red")		// red or blue overlay (for SvS team)
+		if(isblue == TRUE)
+			add_overlay("uv_blue")
 		else
 			add_overlay("uv")
 	else if(state_open)
 		if(stat & BROKEN)
 			add_overlay("broken")
 		else
-			add_overlay("open")
+			if(isred == TRUE)			// red or blue overlay (for SvS team)
+				add_overlay("open_red")
+			if(isblue == TRUE)
+				add_overlay("open_blue")
+			else
+				add_overlay("open")
 			if(suit)
 				add_overlay("suit")
 			if(helmet)
