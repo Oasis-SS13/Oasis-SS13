@@ -176,3 +176,13 @@
 	name = "Hydroponics Division"
 	desc = "A sign labelling the hydroponics division of the station. Don't mind the redeyes and giggles."
 	icon_state = "minskyhydro"
+
+/obj/structure/sign/departments/minsky/command/nt
+	name = "NanoStrasen"
+	desc = "A sign labelling NanoStrasen. It's called NanoTrasen, not NanoStrasen, damn it!"
+	icon_state = "minskynt"
+
+/obj/structure/sign/departments/minsky/command/head
+	name = "Command Division"
+	desc = "A sign labelling the command division of the station. We are the.. king here!"
+	icon_state = "minskyhead"
