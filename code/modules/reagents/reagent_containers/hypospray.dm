@@ -25,13 +25,6 @@
 	if(!iscarbon(M))
 		return
 
-/obj/item/reagent_containers/hypospray/proc/inject(mob/living/M, mob/user)
-	if(!reagents.total_volume)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
-		return FALSE
-	if(!iscarbon(M))
-		return FALSE
-
 	//Always log attemped injects for admins
 	var/list/injected = list()
 	for(var/datum/reagent/R in reagents.reagent_list)
@@ -155,16 +148,23 @@
 	user.visible_message("<span class='suicide'>[user] begins to choke on \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return OXYLOSS//ironic. he could save others from oxyloss, but not himself.
 
-/obj/item/reagent_containers/hypospray/inject(mob/living/M, mob/user)
-	. = ..()
-	if(.)
+/obj/item/reagent_containers/hypospray/medipen/attack(mob/M, mob/user)
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		return
+	..()
+	if(!iscyborg(user))
 		reagents.maximum_volume = 0 //Makes them useless afterwards
 		reagents.flags = NONE
-		update_icon()
+	update_icon()
+	addtimer(CALLBACK(src, .proc/cyborg_recharge, user), 80)
 
-obj/item/reagent_containers/hypospray/medipen/attack_self(mob/user)
-	if(user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
-		inject(user, user)
+/obj/item/reagent_containers/hypospray/medipen/proc/cyborg_recharge(mob/living/silicon/robot/user)
+	if(!reagents.total_volume && iscyborg(user))
+		var/mob/living/silicon/robot/R = user
+		if(R.cell.use(100))
+			reagents.add_reagent_list(list_reagents)
+			update_icon()
 
 /obj/item/reagent_containers/hypospray/medipen/update_icon()
 	if(reagents.total_volume > 0)
