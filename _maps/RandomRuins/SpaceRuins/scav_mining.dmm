@@ -9,7 +9,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "d" = (
-/obj/item/mining_scanner,
+/obj/item/t_scanner/adv_mining_scanner,
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "e" = (
