@@ -1,4 +1,0 @@
-author: PolyTheParrot-PR
-delete-after: true
-changes:
-  - tweak: firelocks now actually stay open for a bit when forced.
