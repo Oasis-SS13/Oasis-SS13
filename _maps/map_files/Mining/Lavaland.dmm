@@ -5186,7 +5186,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/vault{
+/obj/machinery/door/airlock/security/glass{
 	name = "Labor Camp Monitoring";
 	req_access_txt = "2"
 	},
@@ -13930,7 +13930,7 @@ de
 aG
 aG
 aG
-aj
+ab
 rB
 rU
 HP
@@ -14187,7 +14187,7 @@ aG
 aG
 aG
 aG
-aj
+ab
 rB
 rB
 rB
