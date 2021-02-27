@@ -13390,6 +13390,12 @@
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
 /turf/open/floor/mineral/plastitanium,
 /area/svs/red/security/vault/server)
+"HT" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/svs/blue/security/vault/ore)
 "HV" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -14119,6 +14125,12 @@
 "Ur" = (
 /turf/closed/wall/r_wall,
 /area/svs/blue/engine/engineering)
+"Uy" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/svs/blue/security/vault/ore)
 "UO" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
@@ -255538,7 +255550,7 @@ zi
 zi
 zi
 NW
-nj
+HT
 NW
 aQ
 aC
@@ -256542,7 +256554,7 @@ zi
 zi
 zi
 NW
-jl
+Uy
 NW
 ap
 aQ
