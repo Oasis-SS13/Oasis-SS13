@@ -1,7 +1,0 @@
-author: Kryyto
-delete-after: true
-changes:
-  - rscadd: Added new sprites for the SvS gamemode
-  - tweak: tweaked the SvS map to make the station more one color sided (either red
-      or blue)
-  - bugfix: fixed some atmos pipes on SvS map.
