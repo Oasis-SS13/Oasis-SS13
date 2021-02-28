@@ -24,6 +24,8 @@
 	var/rules_of_nature = TRUE // Turn this off to break the rules, and watch the horrors of no proximity flags unfold.
 	var/brazil = FALSE
 	var/brightness = 5
+	var/cooldown = 40 // 4 seconds
+	var/last_used = 0
 
 /obj/item/melee/hfblade/Initialize()
 	. = ..()
@@ -72,9 +74,6 @@
 		user.changeNext_move(CLICK_CD_CLICK_ABILITY)
 		return ..()
 
-
-var/cooldown = 40 // 4 seconds
-var/last_used = 0
 /obj/item/melee/hfblade/on_exit_storage()
 	if((last_used + cooldown) < world.time)
 		if(brazil)
