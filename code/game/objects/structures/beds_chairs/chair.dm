@@ -220,6 +220,14 @@
 	buildstackamount = 1
 	item_chair = /obj/item/chair/stool
 
+/obj/structure/chair/stool/blue
+	name = "stool"
+	desc = "Apply butt."
+	icon_state = "stool_blue"
+	can_buckle = 0
+	buildstackamount = 1
+	item_chair = /obj/item/chair/stool/blue
+
 /obj/structure/chair/stool/narsie_act()
 	return
 
@@ -241,6 +249,12 @@
 	desc = "It has some unsavory stains on it..."
 	icon_state = "bar"
 	item_chair = /obj/item/chair/stool/bar
+
+/obj/structure/chair/stool/blue/bar
+	name = "bar stool"
+	desc = "It has some unsavory stains on it..."
+	icon_state = "bar_blue"
+	item_chair = /obj/item/chair/stool/blue/bar
 
 /obj/item/chair
 	name = "chair"
@@ -322,11 +336,24 @@
 	origin_type = /obj/structure/chair/stool
 	break_chance = 0 //It's too sturdy.
 
+/obj/item/chair/stool/blue
+	name = "stool"
+	icon_state = "stool_toppled_blue"
+	item_state = "stool_blue"
+	origin_type = /obj/structure/chair/stool/blue
+	break_chance = 0 //It's too sturdy.
+
 /obj/item/chair/stool/bar
 	name = "bar stool"
 	icon_state = "bar_toppled"
 	item_state = "stool_bar"
 	origin_type = /obj/structure/chair/stool/bar
+
+/obj/item/chair/stool/blue/bar
+	name = "bar stool"
+	icon_state = "bar_toppled_blue"
+	item_state = "stool_bar_blue"
+	origin_type = /obj/structure/chair/stool/blue/bar
 
 /obj/item/chair/stool/narsie_act()
 	return //sturdy enough to ignore a god
