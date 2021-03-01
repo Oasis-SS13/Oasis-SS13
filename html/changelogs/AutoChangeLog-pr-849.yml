@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - balance: Abductors can no longer teleport into the AI satellite.
