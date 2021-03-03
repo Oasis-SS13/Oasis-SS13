@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - bugfix: You can no longer cremate Indestructible items.
