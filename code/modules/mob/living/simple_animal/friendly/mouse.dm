@@ -72,10 +72,10 @@
 	GLOB.poi_list |= src
 
 /mob/living/simple_animal/mouse/get_spawner_desc()
-	return "Do your business with the cheese and squeaking." //a mild reference to the hitchhiker's guide to the galaxy
+	return "You are a maintenance mouse!"
 
 /mob/living/simple_animal/mouse/get_spawner_flavour_text()
-	return "You are a maintenance mouse. Cooperate with your fellow mice to go on a holy crusade for some cheese or just get toasted by gnawing the first cable you find."
+	return "Do your business with the cheese and squeaking. Cooperate with your fellow mice to go on a holy crusade or just get toasted by gnawing the first cable you find."
 
 /mob/living/simple_animal/mouse/attack_ghost(mob/user)
 	. = ..()
