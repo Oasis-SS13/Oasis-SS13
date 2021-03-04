@@ -48,7 +48,7 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE //make mice see in the dark
 	if(MOUSE_GHOST_ROLE_ENABLED && is_maintenance_mouse())
 		add_to_spawner_menu()
-	RegisterSignal(src, COMSIG_MOB_SAY, .proc/handle_speech) //make mice unable to be communicate
+	RegisterSignal(src, COMSIG_MOB_SAY, .proc/handle_speech) //make mice unable to communicate
 
 /mob/living/simple_animal/mouse/sentience_act()
 	. = ..()
