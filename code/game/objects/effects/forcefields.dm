@@ -8,10 +8,15 @@
 	CanAtmosPass = ATMOS_PASS_DENSITY
 	var/timeleft = 300 //Set to 0 for permanent forcefields (ugh)
 
-/obj/effect/forcefield/Initialize(mapload, ntiemelef)
+/obj/effect/forcefield/Initialize(mapload, ntimeleft)
 	. = ..()
+<<<<<<< HEAD
 	if(ntiemelef)
 		timeleft = ntiemelef
+=======
+	if(isnum_safe(ntimeleft))
+		timeleft = ntimeleft
+>>>>>>> 1e70d866d5... Cleans Creation Arguments of Forcefields (#3794)
 	if(timeleft)
 		QDEL_IN(src, timeleft)
 
