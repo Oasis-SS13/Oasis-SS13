@@ -37,10 +37,27 @@
 	cost = 1200
 
 /datum/gear/accessory/armband_red
+<<<<<<< HEAD
 	display_name = "armband"
 	path = /obj/item/clothing/accessory/armband
 	cost = 1000
 
+=======
+	display_name = "armband, red"
+	path = /obj/item/clothing/accessory/armband
+	cost = 1000
+
+/datum/gear/accessory/armband_blu
+	display_name = "armband, blue"
+	path = /obj/item/clothing/accessory/armband/blue
+	cost = 1000
+
+/datum/gear/accessory/armband_grn
+	display_name = "armband, green"
+	path = /obj/item/clothing/accessory/armband/green
+	cost = 1000
+
+>>>>>>> 7b2b4209e9... initial d (#3796)
 //ties
 /datum/gear/accessory/tie
 	subtype_path = /datum/gear/accessory/tie
@@ -129,7 +146,7 @@
 	path = /obj/item/clothing/glasses/heat
 
 /datum/gear/accessory/glasses/orange
-	display_name = "sunglasses"
+	display_name = "orange sunglasses"
 	path = /obj/item/clothing/glasses/orange
 
 /datum/gear/accessory/glasses/red
