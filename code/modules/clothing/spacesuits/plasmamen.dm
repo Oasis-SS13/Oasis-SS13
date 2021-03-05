@@ -303,6 +303,8 @@
 	desc = "An envirohelmet designed for the chief engineer. It reeks of poly and plasma."
 	icon_state = "ce_envirohelm"
 	item_state = "ce_envirohelm"
+	armor = list("melee" = 40, "bullet" = 5, "laser" = 10, "energy" = 15, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 90)
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
 /obj/item/clothing/head/helmet/space/plasmaman/cmo
 	name = "chief medical officers envirohelmet"
