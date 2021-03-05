@@ -1,4 +1,0 @@
-author: PolyTheParrot-PR
-delete-after: true
-changes:
-  - bugfix: fixed progress bar not showing up when removing transmutation rune
