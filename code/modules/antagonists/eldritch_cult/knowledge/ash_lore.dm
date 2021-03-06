@@ -66,6 +66,7 @@
 		var/mob/living/living_target = target
 		living_target.apply_status_effect(/datum/status_effect/eldritch/ash,5)
 
+<<<<<<< HEAD
 /datum/eldritch_knowledge/curse/blindness
 	name = "Curse of blindness"
 	gain_text = "Blind man walks through the world, unnoticed by the masses."
@@ -74,6 +75,16 @@
 	required_atoms = list(/obj/item/screwdriver,/obj/item/organ/eyes)
 	next_knowledge = list(/datum/eldritch_knowledge/curse/corrosion,/datum/eldritch_knowledge/ash_blade_upgrade,/datum/eldritch_knowledge/curse/paralysis)
 	timer = 2 MINUTES
+=======
+/datum/eldritch_knowledge/mad_mask
+	name = "Mask of Madness"
+	gain_text = "He walks the world, unnoticed by the masses."
+	desc = "Allows you to transmute any mask, with a candle and a pair of eyes, to create a mask of madness, It causes passive stamina damage to everyone around the wearer and hallucinations, can be forced on a non believer to make him unable to take it off..."
+	result_atoms = list(/obj/item/clothing/mask/void_mask)
+	required_atoms = list(/obj/item/organ/eyes,/obj/item/screwdriver,/obj/effect/decal/cleanable/blood)
+	next_knowledge = list(/datum/eldritch_knowledge/curse/corrosion,/datum/eldritch_knowledge/ash_blade_upgrade,/datum/eldritch_knowledge/curse/paralysis)
+	cost = 1
+>>>>>>> 85b3c7e45c... Fixes Mask of Madness not having cost (#3804)
 	route = PATH_ASH
 
 /datum/eldritch_knowledge/curse/blindness/curse(mob/living/chosen_mob)
