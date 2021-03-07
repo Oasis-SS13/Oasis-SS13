@@ -1431,7 +1431,7 @@
 	centerspawner = TRUE
 	template_height = 23
 	template_width = 19
-	weight = 10
+	weight = 3
 
 /datum/map_template/random_room/sk_ren004
 	name = "Box Singularity and Tesla Engine"
@@ -1476,4 +1476,22 @@
 	centerspawner = TRUE
 	template_height = 25
 	template_width = 33
-	weight = 10
+	weight = 3
+
+/datum/map_template/random_room/sk_nml001
+	name = "No mans land 1"
+	room_id = "sk_nml001"
+	mappath = "_maps/RandomRooms/Middle/no_mans_land1.dmm"
+	centerspawner = TRUE
+	template_height = 200
+	template_width = 100
+	weight = 5
+
+/datum/map_template/random_room/sk_nml002
+	name = "No mans land 2"
+	room_id = "sk_nml002"
+	mappath = "_maps/RandomRooms/Middle/no_mans_land2.dmm"
+	centerspawner = TRUE
+	template_height = 200
+	template_width = 100
+	weight = 5

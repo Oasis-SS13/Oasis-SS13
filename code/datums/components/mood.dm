@@ -24,6 +24,7 @@
 	RegisterSignal(parent, COMSIG_ENTER_AREA, .proc/check_area_mood)
 
 	RegisterSignal(parent, COMSIG_MOB_HUD_CREATED, .proc/modify_hud)
+	RegisterSignal(parent, COMSIG_HUMAN_VOID_MASK_ACT, .proc/direct_sanity_drain)
 	var/mob/living/owner = parent
 	if(owner.hud_used)
 		modify_hud()
@@ -278,6 +279,11 @@
 	qdel(event)
 	update_mood()
 
+/datum/component/mood/proc/get_event(category)
+	if(!istext(category))
+		category = REF(category)
+	return mood_events[category]
+
 /datum/component/mood/proc/remove_temp_moods(var/admin) //Removes all temp moods
 	for(var/i in mood_events)
 		var/datum/mood_event/moodlet = mood_events[i]
@@ -370,9 +376,15 @@
 
 /datum/component/mood/proc/check_area_mood(datum/source, var/area/A)
 	if(A.mood_bonus)
+		if(get_event("area"))	//walking between areas that give mood bonus should first clear the bonus from the previous one
+			clear_event(null, "area")
 		add_event(null, "area", /datum/mood_event/area, list(A.mood_bonus, A.mood_message))
 	else
 		clear_event(null, "area")
 
 #undef MINOR_INSANITY_PEN
 #undef MAJOR_INSANITY_PEN
+
+///Causes direct drain of someone's sanity, call it with a numerical value corresponding how badly you want to hurt their sanity
+/datum/component/mood/proc/direct_sanity_drain(datum/source, amount)
+	setSanity(sanity + amount)

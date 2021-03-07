@@ -112,10 +112,12 @@ PROBABILITY CLOWNOPS 2
 PROBABILITY CLOCKCULT 1
 PROBABILITY MONKEY 0
 PROBABILITY METEOR 0
-PROBABILITY EXTENDED 0
 PROBABILITY SECRET_EXTENDED 0
 PROBABILITY DEVIL 1
 PROBABILITY DEVIL_AGENTS 1
+
+## Creates issues when NO_INTERCEPT_REPORT is enabled
+PROBABILITY EXTENDED 0 
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
@@ -177,7 +179,7 @@ MIDROUND_ANTAG WIZARD
 #MIN_POP TRAITOR 0
 #MAX_POP TRAITOR -1
 
-#MIN_POP TRAITORBRO 0
+#MIN_POP TRAITORBRO 15
 #MAX_POP TRAITORBRO -1
 
 #MIN_POP TRAITORCHAN 15
@@ -186,7 +188,7 @@ MIDROUND_ANTAG WIZARD
 #MIN_POP DOUBLE_AGENTS 25
 #MAX_POP DOUBLE_AGENTS -1
 
-#MIN_POP NUCLEAR 0
+#MIN_POP NUCLEAR 16
 #MAX_POP NUCLEAR -1
 
 #MIN_POP REVOLUTION 20
@@ -244,8 +246,8 @@ SECURITY_SCALING_COEFF 10
 
 ## The number of objectives traitors get.
 ## Not including escaping/hijacking.
-TRAITOR_OBJECTIVES_AMOUNT 3
-BROTHER_OBJECTIVES_AMOUNT 3
+TRAITOR_OBJECTIVES_AMOUNT 2
+BROTHER_OBJECTIVES_AMOUNT 2
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
@@ -622,5 +624,18 @@ MAX_CUBE_MONKEYS 150
 MAX_CHICKENS 100
 MAX_SLIMES 100
 
+## Max amount of bodies allowed to slimepeople. Has balance considerations as well as technical ones.
+MAX_SLIMEPERSON_BODIES 10
+
+
 ## Uncomment to restrict suiciding. Adds an additional confirmation dialogue, additional logging, and prevents suicide within the first 15 minutes of the round.
 #RESTRICTED_SUICIDE
+
+
+## Bluespace Miners.
+
+## Amount of miner boards in the RD's locker at roundstart.
+ROUNDSTART_BLUESPACE_MINERS 2
+
+## Enable the bluespace miner research node?
+BSMINER_RESEARCHABLE

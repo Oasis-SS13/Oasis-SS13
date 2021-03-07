@@ -83,4 +83,9 @@
 /obj/effect/spawner/room/endo
 	name = "Endo engine spawner"
 	room_width = 33
-	room_height = 23
+	room_height = 25
+
+/obj/effect/spawner/room/middle
+	name = "Middle Random Engines"
+	room_width = 100
+	room_height = 200

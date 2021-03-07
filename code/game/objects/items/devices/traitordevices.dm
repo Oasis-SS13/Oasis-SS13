@@ -243,9 +243,9 @@ effective or pretty fucking useless.
 	if(on)
 		var/lumcount = T.get_lumcount()
 		if(lumcount > 0.3)
-			charge = max(0,charge - 25)//Quick decrease in light
+			charge = max(0,charge - 30)//Quick decrease in light
 		else
-			charge = min(max_charge,charge + 50) //Charge in the dark
+			charge = min(max_charge,charge + 30) //Charge in the dark
 		animate(user,alpha = CLAMP(255 - charge,0,255),time = 10)
 
 /obj/item/shadowcloak/magician
