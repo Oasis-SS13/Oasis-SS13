@@ -117639,9 +117639,8 @@
 /turf/open/floor/plasteel/grimy,
 /area/chapel/main)
 "ebi" = (
-/obj/structure/table/wood/fancy,
-/obj/item/storage/book/bible,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/altar_of_gods,
 /turf/open/floor/plasteel/grimy,
 /area/chapel/main)
 "ebj" = (
@@ -121369,6 +121368,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"hOt" = (
+/obj/structure/table/wood/fancy,
+/obj/item/storage/book/bible,
+/turf/open/floor/plasteel/grimy,
+/area/chapel/main)
 "hVp" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -161016,7 +161020,7 @@ dYz
 dZk
 dZR
 eaz
-ebh
+hOt
 dVc
 ecA
 dTA
