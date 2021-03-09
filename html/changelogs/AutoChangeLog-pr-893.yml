@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - bugfix: damage overlays no longer disappear once you deal to much damage
