@@ -7029,6 +7029,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/rubber_ring,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "aro" = (
@@ -7240,6 +7243,9 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname,
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/rubber_ring,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "asr" = (
@@ -7254,6 +7260,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/pool_noodle,
+/obj/item/twohanded/required/pool/rubber_ring,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "ass" = (
@@ -7408,6 +7417,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
 	},
+/obj/effect/turf_decal/pool/corner,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "asY" = (
@@ -7527,11 +7537,11 @@
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
 "att" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 1
+	dir = 8
+	},
+/obj/effect/turf_decal/pool{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
@@ -7622,12 +7632,8 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "atW" = (
@@ -7767,53 +7773,11 @@
 /turf/open/floor/wood,
 /area/crew_quarters/dorms)
 "aur" = (
-/obj/machinery/door/window/eastright{
-	base_state = "left";
-	dir = 8;
-	icon_state = "left";
-	name = "Fitness Ring"
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
-"aus" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/crew_quarters/fitness)
-"aut" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
+/obj/machinery/pool_filter,
+/turf/open/indestructible/sound/pool/end,
 /area/crew_quarters/fitness)
 "auv" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
-/turf/open/floor/plasteel/dark,
+/turf/open/indestructible/sound/pool/end,
 /area/crew_quarters/fitness)
 "auw" = (
 /obj/structure/bed,
@@ -8096,37 +8060,6 @@
 "avx" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
-/area/crew_quarters/fitness)
-"avy" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
-"avz" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
-"avA" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness)
 "avB" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -8414,6 +8347,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/holopad,
+/obj/effect/turf_decal/pool{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "awB" = (
@@ -8733,16 +8669,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
-"axS" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
 "axT" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -8750,12 +8676,10 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+/obj/effect/turf_decal/pool{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
-/area/crew_quarters/fitness)
-"axU" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
-/turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness)
 "axV" = (
 /obj/structure/cable/yellow{
@@ -8770,21 +8694,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
-"axW" = (
-/obj/machinery/door/window/eastright{
-	base_state = "left";
-	icon_state = "left";
-	name = "Fitness Ring"
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
 "axY" = (
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
@@ -9158,7 +9067,12 @@
 /area/crew_quarters/dorms)
 "azf" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/effect/turf_decal/pool/corner{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "azh" = (
@@ -9208,6 +9122,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+/obj/effect/turf_decal/pool{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "azl" = (
@@ -9220,17 +9137,24 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/effect/turf_decal/pool/corner{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "azm" = (
-/obj/structure/chair/stool{
-	pixel_y = 8
+/obj/structure/chair/stool,
+/obj/effect/turf_decal/pool{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "azn" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
+/obj/effect/turf_decal/pool{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "azo" = (
@@ -9239,6 +9163,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
+	},
+/obj/effect/turf_decal/pool{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
@@ -18097,21 +18024,8 @@
 	},
 /area/hallway/secondary/exit)
 "aXF" = (
-/obj/effect/landmark/event_spawn,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 10
-	},
-/turf/open/floor/plasteel/dark,
+/obj/item/twohanded/required/pool/rubber_ring,
+/turf/open/indestructible/sound/pool,
 /area/crew_quarters/fitness)
 "aXG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -45542,13 +45456,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/nanite)
-"erv" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
 "esj" = (
 /obj/structure/table,
 /obj/item/cartridge/medical{
@@ -48644,6 +48551,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
+"imO" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/effect/turf_decal/pool/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness)
 "ins" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
@@ -48673,8 +48589,9 @@
 /area/maintenance/aft)
 "ioM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 9
+	dir = 5
 	},
+/obj/effect/turf_decal/pool,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "iqg" = (
@@ -49951,15 +49868,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
-"kfJ" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
 "kgJ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -51460,6 +51368,9 @@
 "lKa" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/pool{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
@@ -53654,9 +53565,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "owD" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 6
-	},
+/obj/effect/turf_decal/pool,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "oxm" = (
@@ -53938,6 +53847,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
+"oOI" = (
+/obj/item/twohanded/required/pool/pool_noodle,
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness)
 "oOO" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -55618,20 +55531,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "qOk" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/indestructible/sound/pool,
 /area/crew_quarters/fitness)
 "qPr" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -57127,13 +57027,8 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
 "sNT" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/structure/pool_ladder,
+/turf/open/indestructible/sound/pool/end,
 /area/crew_quarters/fitness)
 "sOs" = (
 /obj/machinery/door/airlock/maintenance,
@@ -58359,6 +58254,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/nanite)
+"uAR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/effect/turf_decal/pool{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness)
 "uCq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
@@ -58389,13 +58291,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
-"uCG" = (
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness)
 "uCO" = (
 /obj/machinery/light,
 /obj/machinery/nanite_program_hub,
@@ -96266,7 +96161,7 @@ apu
 arj
 asb
 asV
-aus
+lKa
 lKa
 awA
 axT
@@ -96522,11 +96417,11 @@ anc
 aoI
 arj
 arn
-whX
+owD
 aur
-avy
-kfJ
-axS
+qOk
+qOk
+qOk
 azk
 aAk
 arj
@@ -96779,11 +96674,11 @@ itZ
 weE
 arj
 asr
-whX
-aut
-avz
+owD
+auv
+qOk
 aXF
-axU
+qOk
 azn
 aAn
 arj
@@ -97039,8 +96934,8 @@ asq
 owD
 sNT
 qOk
-avz
-uCG
+qOk
+qOk
 azm
 aAm
 arj
@@ -97295,9 +97190,9 @@ fXQ
 pQd
 ioM
 auv
-avA
-erv
-axW
+qOk
+qOk
+qOk
 azo
 aAp
 aBC
@@ -97550,10 +97445,10 @@ vsN
 eEq
 auB
 ass
-whX
-whX
-whX
-whX
+imO
+uAR
+uAR
+uAR
 att
 azf
 aAo
@@ -97809,7 +97704,7 @@ arj
 kds
 whX
 whX
-whX
+oOI
 whX
 tEU
 ayb
