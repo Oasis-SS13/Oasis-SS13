@@ -11,6 +11,9 @@
 /obj/structure/sign/map/right
 	icon_state = "map-right"
 
+/obj/structure/sign/map/svs
+	icon_state = "map-svs"
+
 /obj/structure/sign/directions/science
 	name = "science department"
 	desc = "A direction sign, pointing out which way the Science department is."

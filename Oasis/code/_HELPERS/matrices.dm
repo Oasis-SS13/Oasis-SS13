@@ -1,4 +1,4 @@
-/atom/proc/shake_animation(var/intensity = 8) //Makes the object visibly shake
+/*/atom/proc/shake_animation(var/intensity = 8) //Makes the object visibly shake
 	var/initial_transform = new/matrix(transform)
 	var/init_px = pixel_x
 	var/shake_dir = pick(-1, 1)
@@ -8,7 +8,7 @@
 	animate(src, transform=turn(transform, rotation*shake_dir), pixel_x=init_px + offset*shake_dir, time=1)
 	animate(transform=initial_transform, pixel_x=init_px, time=time, easing=ELASTIC_EASING)
 
-/*
+
 	This proc makes the input taper off above cap. But there's no absolute cutoff.
 	Chunks of the input value above cap, are reduced more and more with each successive one and added to the output
 	A higher input value always makes a higher output value. but the rate of growth slows

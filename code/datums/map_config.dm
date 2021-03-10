@@ -31,6 +31,11 @@
 		"whiteship" = "whiteship_box",
 		"emergency" = "emergency_box")
 
+	// Oasis edit; this is the faction the jobs that players
+	// can play will be picked from. Lets you do things like, idk, Station Vs Station
+	// config from JSON
+	var/default_job_faction = "Station"
+
 /proc/load_map_config(filename = "data/next_map.json", default_to_box, delete_after, error_if_missing = TRUE)
 	var/datum/map_config/config = new
 	if (default_to_box)
@@ -125,6 +130,9 @@
 
 	if ("minetype" in json)
 		minetype = json["minetype"]
+
+	if ("default_job_faction" in json)
+		default_job_faction = json["default_job_faction"]
 
 	allow_custom_shuttles = json["allow_custom_shuttles"] != FALSE
 

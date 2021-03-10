@@ -708,11 +708,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/mine/living_quarters)
-"cZ" = (
-/obj/structure/table,
-/obj/item/reagent_containers/glass/tube/krytox,
-/turf/open/floor/carpet,
-/area/mine/living_quarters)
 "de" = (
 /obj/structure/closet/crate,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -5058,11 +5053,6 @@
 	},
 /turf/open/floor/plating,
 /area/mine/production)
-"JF" = (
-/obj/structure/table,
-/obj/item/reagent_containers/glass/tube/krytox,
-/turf/open/floor/plasteel/white,
-/area/mine/laborcamp)
 "JG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
@@ -5196,7 +5186,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/vault{
+/obj/machinery/door/airlock/security/glass{
 	name = "Labor Camp Monitoring";
 	req_access_txt = "2"
 	},
@@ -12130,7 +12120,7 @@ an
 an
 ao
 aP
-JF
+aP
 ba
 bw
 bw
@@ -13940,7 +13930,7 @@ de
 aG
 aG
 aG
-aj
+ab
 rB
 rU
 HP
@@ -14197,7 +14187,7 @@ aG
 aG
 aG
 aG
-aj
+ab
 rB
 rB
 rB
@@ -15503,7 +15493,7 @@ Dd
 dl
 cM
 Dd
-cZ
+dl
 cM
 aj
 aj
