@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - rscadd: Camera implant which inserts a camera into you. Admin only at the moment.
