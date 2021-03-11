@@ -177,7 +177,11 @@
 	H.Sleeping(160)
 	H.uncuff()
 	if(console && console.pad && console.pad.teleport_target)
+<<<<<<< HEAD
 		H.forceMove(console.pad.teleport_target)
+=======
+		do_teleport(H, console.pad.teleport_target, channel = TELEPORT_CHANNEL_FREE, no_effects = TRUE, teleport_mode = TELEPORT_MODE_ABDUCTORS)
+>>>>>>> ab5bbc1872... Fixes teleporting weiredness (#3815)
 		return
 	//Area not chosen / It's not safe area - teleport to arrivals
 	SSjob.SendToLateJoin(H, FALSE)
