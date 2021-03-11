@@ -1,0 +1,5 @@
+author: Demidisco
+delete-after: true
+changes:
+  - tweak: You can now screwdriver conveyor switches to toggle them from one-way to
+      two-way or vice-versa
