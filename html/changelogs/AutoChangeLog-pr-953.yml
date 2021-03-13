@@ -1,0 +1,4 @@
+author: Kryyto
+delete-after: true
+changes:
+  - bugfix: syndi_tele sprite fix
