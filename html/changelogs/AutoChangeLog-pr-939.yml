@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - bugfix: Warp cubes and fulton kits no longer delete their user.
