@@ -1,4 +1,0 @@
-author: PolyTheParrot-PR
-delete-after: true
-changes:
-  - bugfix: SSgarbage entry now shows up in the TGUI stat panel's MC tab.
