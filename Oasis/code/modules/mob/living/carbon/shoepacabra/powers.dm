@@ -235,7 +235,6 @@ mostly copied from the proc_holder/spell
 		return TRUE
 	else
 		return ..()
-	return TRUE
 
 /obj/effect/proc_holder/shoepacabra/leap
 	name = "Toggle leap"
