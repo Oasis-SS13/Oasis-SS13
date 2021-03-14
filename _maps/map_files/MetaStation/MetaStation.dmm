@@ -39887,8 +39887,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
-/obj/structure/table/wood,
-/obj/item/clothing/glasses/monocle,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "byM" = (
@@ -44780,8 +44778,8 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/theatre)
 "bIC" = (
-/obj/structure/table/wood,
 /obj/machinery/light/small,
+/obj/structure/table/wood,
 /obj/item/clothing/glasses/regular/hipster{
 	name = "Hipster Glasses"
 	},
@@ -78405,6 +78403,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/item/soap/nanotrasen,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dhZ" = (
@@ -78428,10 +78427,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/item/instrument/guitar,
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/item/clothing/glasses/monocle,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dic" = (
@@ -78458,14 +78457,13 @@
 /turf/open/floor/wood,
 /area/vacant_room/office)
 "dif" = (
-/obj/item/soap/nanotrasen,
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/table/wood,
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/machinery/vending/classicbeats,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dig" = (
@@ -78494,14 +78492,13 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/theatre)
 "dij" = (
-/obj/item/instrument/violin,
-/obj/structure/table/wood,
 /obj/item/radio/intercom{
 	pixel_x = 29
 	},
 /obj/structure/sign/poster/random{
 	pixel_y = -32
 	},
+/obj/machinery/vending/citadelplush,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dik" = (
