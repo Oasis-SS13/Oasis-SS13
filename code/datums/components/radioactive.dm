@@ -39,13 +39,14 @@
 	return ..()
 
 /datum/component/radioactive/process()
-	if(strength >= RAD_WAVE_MINIMUM)
-		radiation_pulse(parent, strength, RAD_DISTANCE_COEFFICIENT * RAD_DISTANCE_COEFFICIENT_COMPONENT_MULTIPLIER, FALSE, can_contaminate)
+	if(!prob(50))
+		return
+	radiation_pulse(parent, strength, RAD_DISTANCE_COEFFICIENT*2, FALSE, can_contaminate)
 	if(!hl3_release_date)
 		return
 	strength -= strength / hl3_release_date
 
-	if(strength < RAD_COMPONENT_MINIMUM)
+	if(strength < RAD_WAVE_MINIMUM)
 		qdel(src)
 
 /datum/component/radioactive/proc/glow_loop(atom/movable/master)
@@ -61,9 +62,9 @@
 		return
 	if(C)
 		var/datum/component/radioactive/other = C
-		strength += other.strength
+		strength = max(strength, other.strength)
 	else
-		strength += arguments[1]
+		strength = max(strength, arguments[1])
 
 /datum/component/radioactive/proc/rad_examine(datum/source, mob/user, atom/thing)
 	var/atom/master = parent
