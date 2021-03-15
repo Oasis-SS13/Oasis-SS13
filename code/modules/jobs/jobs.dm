@@ -21,7 +21,8 @@ GLOBAL_LIST_INIT(medical_positions, list(
 	"Geneticist",
 	"Virologist",
 	"Paramedic",
-	"Chemist"))
+	"Chemist",
+	"Brig Physician"))
 
 
 GLOBAL_LIST_INIT(science_positions, list(
@@ -55,10 +56,14 @@ GLOBAL_LIST_INIT(security_positions, list(
 	"Warden",
 	"Detective",
 	"Security Officer",
+<<<<<<< HEAD
 	"Brig Physician",
 	"Deputy",
 	"Red Team Member", // svs
 	"Blue Team Member")) // ditto
+=======
+	"Deputy"))
+>>>>>>> c67acfb7eb... changes (#3741)
 
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(
