@@ -18,7 +18,8 @@
         "captain": "capitano",
         "cheese": [
             "parmesano",
-            "gorgonzola"
+            "gorgonzola",
+			"formaggio"
         ],
         "cook": "cook-a",
         "could": "could-a",
@@ -70,7 +71,25 @@
 		"tasty": "gustoso",
 		"excellent": "ottimo",
 		"clown": "buffone",
-		"fuck you": "vaffanculo"
+		"fuck you": "vaffanculo",
+		"AI": "intelligenza artificiale",
+		"borg": "automaton",
+		"rogue": "mascalzone",
+		"malf": "malfunzionamento",
+		"cult": "culto",
+		"chaplain": "cappellano",
+		"chap": "cappellano",
+		"mime": "mimo",
+		"assistant": "assistente",
+		"troll": "trollato",
+		"trolled": "trollato",
+		"rat": "ratto",
+		"mouse": "topo",
+		"monkey": "scimmia",
+		"recipe": "recetta",
+		"burger": "am-burger",
+		"grill": "griglia",
+		"electricity": "elettricità"
 		}
 
 
