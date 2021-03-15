@@ -22,7 +22,7 @@
 	var/bloodthirst = HIS_GRACE_SATIATED
 	var/prev_bloodthirst = HIS_GRACE_SATIATED
 	var/force_bonus = 0
-	var/ascended = FALSE
+	var/ascended = TRUE
 	var/victims_needed = 25
 	var/ascend_bonus = 15
 
