@@ -1034,3 +1034,9 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 			take_damage(75, BRUTE, "bomb", 0)
 		if(3)
 			take_damage(20, BRUTE, "bomb", 0)
+
+/obj/item/attack_shoepacabra(mob/living/carbon/shoepacabra/user)
+	var/datum/component/slippery = GetComponent(/datum/component/slippery)
+	if(istype(slippery) || istype(src, /obj/item/clothing/shoes))
+		attack_paw(user)
+		return
