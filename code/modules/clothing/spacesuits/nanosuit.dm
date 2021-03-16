@@ -6,7 +6,6 @@
 #define NANO_JUMP_USE 30
 #define NANO_CHARGE_DELAY 20
 #define NANO_EMP_CHARGE_DELAY 45
-
 #define POWER_PUNCH "QQQ"
 #define HEAD_EXPLOSION "SSSS"
 #define MARTIALART_NANOSUIT "nanosuit strength"
