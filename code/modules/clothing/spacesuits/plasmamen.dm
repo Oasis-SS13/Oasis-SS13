@@ -338,7 +338,7 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light, /datum/action/item_action/toggle_welding_screen/plasmaman, /datum/action/item_action/toggle_research_scanner)
 
 //Rd bomb scanner
-/obj/item/clothing/head/helmet/space/hardsuit/rd/Initialize()
+/obj/item/clothing/head/helmet/space/plasmaman/rd/Initialize()
 	. = ..()
 	bomb_radar = new /obj/machinery/doppler_array/integrated(src)
 
