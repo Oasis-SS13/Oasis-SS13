@@ -76,6 +76,92 @@
 	user.visible_message("<span class='suicide'>[user] is gambling with death! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (OXYLOSS)
 
+/obj/item/dice/greed_die
+	name = "Greed Die"
+	desc = "The name may be more apt than one thinks. (Don't roll the die if you fear death, really.)"
+	icon_state = "greed"
+	sides = 6
+	var/die_variance = 1/6 //probability floor has a different icon state
+	var/die_type = "greed-"
+	var/i
+	var/special
+	var/isgolem = FALSE
+	var/is_ore = 0
+
+/obj/item/dice/greed_die/attack_self(mob/living/carbon/M)
+	result = roll(1, 6)
+	update_icon()
+
+	if(prob(1) && isgolem == FALSE)
+		to_chat(M, "<span class='userdanger'>Gotcha!</span>")
+		M.set_species(/datum/species/golem/capitalist)
+		isgolem = TRUE
+	else
+		if(result == 1)
+			var/turf/T = get_step(get_step(M, NORTH), NORTH)
+			T.Beam(M, icon_state="lightning[rand(1,12)]", time = 5)
+			M.adjustFireLoss(45)
+			new /datum/hallucination/shock(M, TRUE)
+			to_chat(M, "<span class='userdanger'>The die rolled a 1! Poor you...</span>")
+
+		if(result == 2)
+			to_chat(M, "<span class='userdanger'>The die rolled a 2! No luck.. huh ?</span>")
+			//M.Stun(20, 1, 1)
+			for(i=1; i<8; i++)
+				new /obj/effect/temp_visual/target(get_turf(M))
+				sleep(8-i*0.9)
+			to_chat(M, "<span class='warning'>You slipped on the ground!</span>")
+			M.emote("scream")
+			M.Paralyze(10)
+			new /obj/effect/temp_visual/target(get_turf(M))
+			sleep(2)
+			new /obj/effect/temp_visual/target(get_turf(M))
+			sleep(2)
+			new /obj/effect/temp_visual/target(get_turf(M))
+
+		if(result == 3)
+			to_chat(M, "<span class='userdanger'>The die rolled a 3! Try again, I'm sure you will gain something...</span>")
+			for(i=0; i<9; i = i+1)
+				new /datum/hallucination/oh_yeah(M, TRUE)
+				M.adjustBruteLoss(5)
+				sleep(10-i*1.1)
+
+		if(result == 4)
+			var/turf/T = get_turf(M)
+			to_chat(M, "<span class='userdanger'>The die rolled a 4! Here is some iron.</span>")
+			new /obj/item/stack/sheet/iron/twenty(T)
+
+		if(result == 5)
+			var/turf/T = get_turf(M)
+			is_ore = rand(1,3)
+			if(is_ore == 1)
+				new /obj/item/stack/sheet/mineral/gold/ten(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 5! Here is some gold, lucky!</span>")
+			if(is_ore == 2)
+				new /obj/item/stack/sheet/mineral/silver/ten(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 5! Here is some silver?</span>")
+			if(is_ore == 3)
+				new /obj/item/stack/sheet/mineral/copper/ten(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 5! Here is some copper!</span>")
+
+		if(result == 6)
+			var/turf/T = get_turf(M)
+			is_ore = rand(1,4)
+			if(is_ore == 1)
+				new /obj/item/stack/sheet/mineral/diamond/five(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 6! Here is some diamonds !</span>")
+			if(is_ore == 2)
+				new /obj/item/stack/sheet/mineral/bananium/five(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 6! Here is some bananium, you wont stop 'til you get the real big prize ?!</span>")
+			if(is_ore == 3)
+				new /obj/item/stack/sheet/mineral/plasma/five(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 6! Here is some plasma, I know you like it.</span>")
+			if(is_ore == 4)
+				new /obj/item/stack/sheet/mineral/uranium/five(T)
+				to_chat(M, "<span class='userdanger'>The die rolled a 6! Here is some uranium, be aware of its radiations</span>")
+
+	sleep(20)
+
 /obj/item/dice/d1
 	name = "d1"
 	desc = "A die with only one side. Deterministic!"
