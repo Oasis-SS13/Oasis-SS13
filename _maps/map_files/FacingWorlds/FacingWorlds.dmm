@@ -143,6 +143,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/landmark/start/svs/blue/miner,
 /turf/open/floor/mineral/titanium/blue{
 	color = "#49638c"
 	},
@@ -326,6 +327,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/effect/landmark/start/svs/blue/miner,
 /turf/open/floor/mineral/titanium/blue{
 	color = "#49638c"
 	},
@@ -13996,6 +13998,12 @@
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall,
 /area/svs/blue/security/vault/server)
+"Hu" = (
+/obj/effect/landmark/start/svs/blue/miner,
+/turf/open/floor/mineral/titanium/blue{
+	color = "#49638c"
+	},
+/area/svs/blue/security/vault/ore)
 "HD" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/dark,
@@ -14063,6 +14071,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/svs/blue/cargo)
+"Ik" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/effect/landmark/start/svs/red/miner,
+/turf/open/floor/mineral/plastitanium/red,
+/area/svs/red/security/vault/ore)
 "Io" = (
 /obj/machinery/light,
 /obj/machinery/suit_storage_unit/team_blue,
@@ -15042,6 +15057,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/svs/red/engine/engine_room)
+"SN" = (
+/obj/effect/landmark/start/svs/red/miner,
+/turf/open/floor/mineral/plastitanium/red,
+/area/svs/red/security/vault/ore)
 "SP" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -24881,7 +24900,7 @@ bx
 aT
 bx
 ah
-ar
+SN
 ar
 aV
 bk
@@ -25385,7 +25404,7 @@ nV
 ah
 ar
 aF
-aV
+Ik
 bk
 aa
 aI
@@ -25885,7 +25904,7 @@ bx
 bw
 bx
 ag
-ar
+SN
 ar
 aV
 bk
@@ -41981,7 +42000,6 @@ kV
 zi
 zi
 zi
-aj
 zi
 zi
 zi
@@ -41989,7 +42007,8 @@ zi
 zi
 zi
 zi
-aj
+zi
+zi
 zi
 zi
 zi
@@ -257307,7 +257326,7 @@ mE
 ao
 aE
 aQ
-aR
+Hu
 aR
 RH
 aQ
