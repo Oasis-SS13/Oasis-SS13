@@ -37079,6 +37079,9 @@
 	dir = 2
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "kvE" = (
@@ -51154,6 +51157,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -67792,7 +67798,7 @@
 	},
 /obj/structure/plasticflaps/opaque,
 /obj/effect/turf_decal/bot,
-/turf/open/space/basic,
+/turf/open/floor/plating,
 /area/medical/chemistry)
 "sTA" = (
 /obj/machinery/suit_storage_unit/standard_unit,
