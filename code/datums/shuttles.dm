@@ -636,7 +636,11 @@
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
 
-
+/datum/map_template/shuttle/shipstation
+	port_id = "station"
+	can_be_bought = FALSE
+	suffix = "ship"
+	name = "NTSS 'Companionship'"
 
  // Turbolifts
 /datum/map_template/shuttle/turbolift/debug/primary
