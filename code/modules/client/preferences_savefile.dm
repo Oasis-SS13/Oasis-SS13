@@ -161,55 +161,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		return FALSE
 
 	//general preferences
-<<<<<<< HEAD
-	READ_FILE(S["asaycolor"], asaycolor)
-	S["ooccolor"]			>> ooccolor
-	S["lastchangelog"]		>> lastchangelog
-	S["UI_style"]			>> UI_style
-	S["overhead_chat"]		>> overhead_chat
-	S["outline_color"]		>> outline_color
-	S["outline_enabled"]	>> outline_enabled
-	S["hotkeys"]			>> hotkeys
-	S["tgui_fancy"]			>> tgui_fancy
-	S["tgui_lock"]			>> tgui_lock
-	S["buttons_locked"]		>> buttons_locked
-	S["windowflash"]		>> windowflashing
-	S["be_special"] 		>> be_special
-
-	S["crew_objectives"]	>> crew_objectives
-
-
-	S["default_slot"]		>> default_slot
-	S["chat_toggles"]		>> chat_toggles
-	S["toggles"]			>> toggles
-	S["ghost_form"]			>> ghost_form
-	S["ghost_orbit"]		>> ghost_orbit
-	S["ghost_accs"]			>> ghost_accs
-	S["ghost_others"]		>> ghost_others
-	S["preferred_map"]		>> preferred_map
-	S["ignoring"]			>> ignoring
-	S["ghost_hud"]			>> ghost_hud
-	S["inquisitive_ghost"]	>> inquisitive_ghost
-	S["uses_glasses_colour"]>> uses_glasses_colour
-	S["clientfps"]			>> clientfps
-	S["parallax"]			>> parallax
-	S["ambientocclusion"]	>> ambientocclusion
-	S["auto_fit_viewport"]	>> auto_fit_viewport
-	S["widescreenpref"]	    >> widescreenpref
-	S["pixel_size"]	    	>> pixel_size
-	S["scaling_method"]	    >> scaling_method
-	S["menuoptions"]		>> menuoptions
-	S["enable_tips"]		>> enable_tips
-	S["tip_delay"]			>> tip_delay
-	S["pda_style"]			>> pda_style
-	S["pda_color"]			>> pda_color
-	S["show_credits"] >> show_credits
-
-	S["key_bindings"]		>> key_bindings
-
-	S["purchased_gear"]					>> purchased_gear
-	S["equipped_gear"]					>> equipped_gear
-=======
 	READ_FILE(S["asaycolor"], asaycolor)
 	READ_FILE(S["ooccolor"], ooccolor)
 	READ_FILE(S["lastchangelog"], lastchangelog)
@@ -259,7 +210,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	READ_FILE(S["purchased_gear"], purchased_gear)
 	READ_FILE(S["equipped_gear"], equipped_gear)
->>>>>>> c01421cdd4... Ports tgs runechat in replacement to our current overhead chat (#3758)
 
 	//try to fix any outdated data if necessary
 	if(needs_update >= 0)
@@ -282,14 +232,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	toggles			= sanitize_integer(toggles, FALSE, 65535, initial(toggles))
 	clientfps		= sanitize_integer(clientfps, FALSE, 1000, FALSE)
 	parallax		= sanitize_integer(parallax, PARALLAX_INSANE, PARALLAX_DISABLE, null)
-<<<<<<< HEAD
-	ambientocclusion	= sanitize_integer(ambientocclusion, 0, 1, initial(ambientocclusion))
-	auto_fit_viewport	= sanitize_integer(auto_fit_viewport, 0, 1, initial(auto_fit_viewport))
-	widescreenpref  = sanitize_integer(widescreenpref, 0, 1, initial(widescreenpref))
-=======
 	ambientocclusion	= sanitize_integer(ambientocclusion, FALSE, TRUE, initial(ambientocclusion))
 	auto_fit_viewport	= sanitize_integer(auto_fit_viewport, FALSE, TRUE, initial(auto_fit_viewport))
->>>>>>> c01421cdd4... Ports tgs runechat in replacement to our current overhead chat (#3758)
 	pixel_size		= sanitize_integer(pixel_size, PIXEL_SCALING_AUTO, PIXEL_SCALING_3X, initial(pixel_size))
 	scaling_method  = sanitize_text(scaling_method, initial(scaling_method))
 	ghost_form		= sanitize_inlist(ghost_form, GLOB.ghost_forms, initial(ghost_form))
@@ -358,7 +302,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["parallax"], parallax)
 	WRITE_FILE(S["ambientocclusion"], ambientocclusion)
 	WRITE_FILE(S["auto_fit_viewport"], auto_fit_viewport)
-	WRITE_FILE(S["widescreenpref"], widescreenpref)
 	WRITE_FILE(S["pixel_size"], pixel_size)
 	WRITE_FILE(S["scaling_method"], scaling_method)
 	WRITE_FILE(S["menuoptions"], menuoptions)
