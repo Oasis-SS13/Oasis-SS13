@@ -1369,6 +1369,30 @@
 		if(density && !open(2)) //The airlock is still closed, but something prevented it opening. (Another player noticed and bolted/welded the airlock in time!)
 			to_chat(user, "<span class='warning'>Despite your efforts, [src] managed to resist your attempts to open it!</span>")
 
+/obj/machinery/door/airlock/attack_shoepacabra(mob/living/carbon/shoepacabra/user)
+	if(user.clawed)
+		return ..()
+	add_fingerprint(user)
+	if(isElectrified())
+		shock(user, 100)
+		return
+	if(!density)
+		return
+	if(locked || welded)
+		to_chat(user, "<span class='warning'>[src] refuses to budge!</span>")
+		return
+	user.visible_message("<span class='warning'>[user] begins scratching at [src], trying to make it open.</span>",\
+						"<span class='noticealien'>You begin scratching at [src], trying your best to force it open with your claws...</span>",\
+						"<span class='warning'>You hear scratching metal...</span>")
+	var/time_to_open = 50
+	if(hasPower())
+		time_to_open = 150.
+		playsound(src, 'sound/machines/airlock_alien_prying.ogg', 100, 1)
+
+	if(do_after(user, time_to_open, TRUE, src))
+		if(density && !open(2))
+			to_chat(user, "<span class='warning'>Despite your efforts, [src] managed to resist your attempts to open it!</span>")
+
 /obj/machinery/door/airlock/hostile_lockdown(mob/origin)
 	// Must be powered and have working AI wire.
 	if(canAIControl(src) && !stat)

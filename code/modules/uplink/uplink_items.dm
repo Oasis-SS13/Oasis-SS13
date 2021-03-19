@@ -2321,5 +2321,6 @@ datum/uplink_item/role_restricted/superior_honkrender
     desc = "An electric katana that weakens the molecular bonds of whatever it touches. Perfect for slicing off the limbs of your coworkers. \
     Avoid using a multitool on it."
     item = /obj/item/storage/belt/hfblade
+    player_minimum = 20
     cost = 18
     surplus = 15

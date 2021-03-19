@@ -1406,6 +1406,15 @@
 	weight = 4
 	stock = 2
 
+/datum/map_template/random_room/sk_rdm157
+	name = "mexican foor restaurant"
+	room_id = "sk_rdm157_abandoned_taco_stand"
+	mappath = "_maps/RandomRooms/3x3/sk_rdm157_abandoned_taco_stand.dmm"
+	centerspawner = FALSE
+	template_height = 3
+	template_width = 3
+	weight = 4  // Let's make it pretty common at the beginning so newcomers will try Oasis' exclusive content more probably
+
 /datum/map_template/random_room/sk_ren001
 	name = "Meta Singularity and Tesla engine"
 	room_id = "sk_ren001"

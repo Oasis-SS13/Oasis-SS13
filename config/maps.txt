@@ -60,5 +60,5 @@ map kilostation
 endmap
 
 map facingworlds
-#	minplayers 40
+    minplayers 40
 endmap

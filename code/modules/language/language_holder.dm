@@ -394,6 +394,12 @@ Key procs
 								/datum/language/rlyehian = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 							/datum/language/rlyehian = list(LANGUAGE_ATOM))
+							
+/datum/language_holder/shoepacabrish
+	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
+								/datum/language/shoepacabrish = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
+							/datum/language/shoepacabrish = list(LANGUAGE_ATOM))
 
 /datum/language_holder/empty
 	understood_languages = list()
