@@ -48,3 +48,12 @@
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/a50AE
 
+// 9x18mm (Makarov)
+
+/obj/item/ammo_casing/m9x18mm
+	name = "9x18mm bullet casing"
+	desc = "A  bullet casing."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/m9x18mm
+
+

@@ -127,6 +127,9 @@ GLOBAL_LIST_INIT(diamond_recipes, list ( \
 /obj/item/stack/sheet/mineral/diamond/twenty
 	amount = 20
 
+/obj/item/stack/sheet/mineral/diamond/ten
+	amount = 10
+
 /obj/item/stack/sheet/mineral/diamond/five
 	amount = 5
 
@@ -161,6 +164,9 @@ GLOBAL_LIST_INIT(uranium_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/uranium/twenty
 	amount = 20
+
+/obj/item/stack/sheet/mineral/uranium/ten
+	amount = 10
 
 /obj/item/stack/sheet/mineral/uranium/five
 	amount = 5
@@ -214,6 +220,9 @@ GLOBAL_LIST_INIT(plasma_recipes, list ( \
 /obj/item/stack/sheet/mineral/plasma/twenty
 	amount = 20
 
+/obj/item/stack/sheet/mineral/plasma/ten
+	amount = 10
+
 /obj/item/stack/sheet/mineral/plasma/five
 	amount = 5
 
@@ -251,6 +260,9 @@ GLOBAL_LIST_INIT(gold_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/gold/twenty
 	amount = 20
+
+/obj/item/stack/sheet/mineral/gold/ten
+	amount = 10
 
 /obj/item/stack/sheet/mineral/gold/five
 	amount = 5
@@ -290,6 +302,9 @@ GLOBAL_LIST_INIT(silver_recipes, list ( \
 /obj/item/stack/sheet/mineral/silver/twenty
 	amount = 20
 
+/obj/item/stack/sheet/mineral/silver/ten
+	amount = 10
+
 /obj/item/stack/sheet/mineral/silver/five
 	amount = 5
 
@@ -323,6 +338,9 @@ GLOBAL_LIST_INIT(copper_recipes, list ( \
 /obj/item/stack/sheet/mineral/copper/twenty
 	amount = 20
 
+/obj/item/stack/sheet/mineral/copper/ten
+	amount = 10
+
 /obj/item/stack/sheet/mineral/copper/five
 	amount = 5
 
@@ -349,6 +367,18 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 /obj/item/stack/sheet/mineral/bananium/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.bananium_recipes
 	. = ..()
+
+/obj/item/stack/sheet/mineral/bananium/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/bananium/twenty
+	amount = 20
+
+/obj/item/stack/sheet/mineral/bananium/ten
+	amount = 10
+
+/obj/item/stack/sheet/mineral/bananium/five
+	amount = 5
 
 /*
  * Titanium
@@ -382,6 +412,9 @@ GLOBAL_LIST_INIT(titanium_recipes, list ( \
 /obj/item/stack/sheet/mineral/titanium/twenty
 	amount = 20
 
+/obj/item/stack/sheet/mineral/titanium/ten
+	amount = 10
+
 /obj/item/stack/sheet/mineral/titanium/five
 	amount = 5
 
@@ -412,6 +445,17 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list ( \
 	recipes = GLOB.plastitanium_recipes
 	. = ..()
 
+/obj/item/stack/sheet/mineral/plastitanium/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/plastitanium/twenty
+	amount = 20
+
+/obj/item/stack/sheet/mineral/plastitanium/ten
+	amount = 10
+
+/obj/item/stack/sheet/mineral/plastitanium/five
+	amount = 5
 
 /*
  * Snow
@@ -436,6 +480,18 @@ GLOBAL_LIST_INIT(snow_recipes, list ( \
 /obj/item/stack/sheet/mineral/snow/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.snow_recipes
 	. = ..()
+
+/obj/item/stack/sheet/mineral/snow/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/snow/twenty
+	amount = 20
+
+/obj/item/stack/sheet/mineral/snow/ten
+	amount = 10
+
+/obj/item/stack/sheet/mineral/snow/five
+	amount = 5
 
 /****************************** Others ****************************/
 

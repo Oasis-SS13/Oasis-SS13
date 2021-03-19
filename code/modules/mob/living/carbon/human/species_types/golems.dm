@@ -1098,7 +1098,7 @@
 	action_icon = 'icons/obj/toy.dmi'
 	action_icon_state = "snowball"
 
-/datum/species/golem/capitalist
+/datum/species/golem/capitalist //Used in Greed Dice
 	name = "Capitalist Golem"
 	id = "capitalist_golem"
 	prefix = "Capitalist"
@@ -1111,6 +1111,7 @@
 	info_text = "As a <span class='danger'>Capitalist Golem</span>, your fist spreads the powerful industrializing light of capitalism."
 	changesource_flags = MIRROR_BADMIN
 	random_eligible = FALSE
+	nojumpsuit = FALSE
 
 	var/last_cash = 0
 	var/cash_cooldown = 100
@@ -1120,8 +1121,8 @@
 	C.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/advanced (), SLOT_GLASSES)
 	C.revive(full_heal = TRUE)
 
-	SEND_SOUND(C, sound('sound/misc/capitialism.ogg'))
-	C.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock ())
+	//SEND_SOUND(C, sound('sound/misc/capitialism.ogg'))
+	C.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/createmoney ())
 	RegisterSignal(C, COMSIG_MOB_SAY, .proc/handle_speech)
 
 /datum/species/golem/capitalist/on_species_loss(mob/living/carbon/C)

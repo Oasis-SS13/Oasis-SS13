@@ -250,8 +250,8 @@
 //Updates an organ's brute/burn states for use by update_damage_overlays()
 //Returns 1 if we need to update overlays. 0 otherwise.
 /obj/item/bodypart/proc/update_bodypart_damage_state()
-	var/tbrute	= round( (brute_dam/max_damage)*3, 1 )
-	var/tburn	= round( (burn_dam/max_damage)*3, 1 )
+	var/tbrute = round((min(brute_dam, max_damage) / max_damage) * 3, 1)
+	var/tburn = round((min(burn_dam, max_damage) / max_damage) * 3, 1)
 	if((tbrute != brutestate) || (tburn != burnstate))
 		brutestate = tbrute
 		burnstate = tburn
@@ -487,6 +487,17 @@
 	max_damage = 5000
 	animal_origin = DEVIL_BODYPART
 
+/obj/item/bodypart/chest/shoepacabra_lesser
+	dismemberable = 0
+	max_stamina_damage = 100
+	animal_origin = SHOEPACABRA_BODYPART
+
+/obj/item/bodypart/chest/shoepacabra_greater
+	dismemberable = 0
+	max_damage = 500
+	max_stamina_damage = 250
+	animal_origin = SHOEPACABRA_BODYPART
+
 /obj/item/bodypart/chest/larva
 	icon = 'icons/mob/animal_parts.dmi'
 	icon_state = "larva_chest"
@@ -564,6 +575,19 @@
 	max_damage = 5000
 	animal_origin = DEVIL_BODYPART
 
+/obj/item/bodypart/l_arm/shoepacabra_lesser
+	dismemberable = 0
+	max_stamina_damage = 100
+	px_y = 2
+	animal_origin = SHOEPACABRA_BODYPART
+
+/obj/item/bodypart/l_arm/shoepacabra_greater
+	dismemberable = 0
+	max_damage = 500
+	max_stamina_damage = 250
+	px_y = 10
+	animal_origin = SHOEPACABRA_BODYPART
+
 /obj/item/bodypart/r_arm
 	name = "right arm"
 	desc = "Over 87% of humans are right handed. That figure is much lower \
@@ -632,6 +656,17 @@
 	max_damage = 5000
 	animal_origin = DEVIL_BODYPART
 
+/obj/item/bodypart/r_arm/shoepacabra_lesser
+	dismemberable = 0
+	max_stamina_damage = 100
+	animal_origin = SHOEPACABRA_BODYPART
+
+/obj/item/bodypart/r_arm/shoepacabra_greater
+	dismemberable = 0
+	max_damage = 500
+	max_stamina_damage = 250
+	animal_origin = SHOEPACABRA_BODYPART
+
 /obj/item/bodypart/l_leg
 	name = "left leg"
 	desc = "Some athletes prefer to tie their left shoelaces first for good \
@@ -691,6 +726,17 @@
 	dismemberable = 0
 	max_damage = 5000
 	animal_origin = DEVIL_BODYPART
+
+/obj/item/bodypart/l_leg/shoepacabra_lesser
+	dismemberable = 0
+	max_stamina_damage = 100
+	animal_origin = SHOEPACABRA_BODYPART
+
+/obj/item/bodypart/l_leg/shoepacabra_greater
+	dismemberable = 0
+	max_damage = 500
+	max_stamina_damage = 250
+	animal_origin = SHOEPACABRA_BODYPART
 
 /obj/item/bodypart/r_leg
 	name = "right leg"
@@ -753,3 +799,14 @@
 	dismemberable = 0
 	max_damage = 5000
 	animal_origin = DEVIL_BODYPART
+
+/obj/item/bodypart/r_leg/shoepacabra_lesser
+	dismemberable = 0
+	max_stamina_damage = 100
+	animal_origin = SHOEPACABRA_BODYPART
+
+/obj/item/bodypart/r_leg/shoepacabra_greater
+	dismemberable = 0
+	max_damage = 500
+	max_stamina_damage = 250
+	animal_origin = SHOEPACABRA_BODYPART
