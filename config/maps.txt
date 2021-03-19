@@ -60,8 +60,6 @@ map kilostation
 endmap
 
 map facingworlds
-#	minplayers 40
-endmap
 
 map shipstation
 	maxplayers 20

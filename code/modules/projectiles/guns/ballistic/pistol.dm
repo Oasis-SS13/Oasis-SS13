@@ -36,6 +36,18 @@
 /obj/item/gun/ballistic/automatic/pistol/m1911/no_mag
 	spawnwithmagazine = FALSE
 
+/obj/item/gun/ballistic/automatic/pistol/makarov
+	name = "\improper Makarov"
+	desc = "A classic Soviet pistol with a small magazine capacity."
+	icon_state = "makarov"
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/m9x18mm
+	can_suppress = FALSE
+
+/obj/item/gun/ballistic/automatic/pistol/makarov/no_mag
+	spawnwithmagazine = FALSE
+
+
 /obj/item/gun/ballistic/automatic/pistol/deagle
 	name = "\improper Desert Eagle"
 	desc = "A robust .50 AE handgun."

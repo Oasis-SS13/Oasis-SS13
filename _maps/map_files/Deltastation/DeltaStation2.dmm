@@ -26913,7 +26913,7 @@
 "aXK" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Sanitarium";
-	req_access_txt = "63"
+	req_one_access_txt = "1;34"
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 1
@@ -28205,7 +28205,7 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -29876,7 +29876,7 @@
 "bcL" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -29903,7 +29903,7 @@
 "bcN" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/stripes/line{
@@ -32471,7 +32471,7 @@
 "bha" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -32507,7 +32507,7 @@
 "bhc" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/stripes/line{
@@ -50100,7 +50100,7 @@
 	},
 /obj/machinery/door/airlock/security{
 	name = "Evidence Storage";
-	req_access_txt = "63"
+	req_one_access_txt = "1;4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -121322,7 +121322,7 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
