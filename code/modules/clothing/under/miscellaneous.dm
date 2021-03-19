@@ -148,4 +148,8 @@
 	item_state = "durathread"
 	item_color = "durathread"
 	can_adjust = FALSE
+<<<<<<< HEAD
 	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5)
+=======
+	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5, "stamina" = 30)
+>>>>>>> bb6dafc1d6... Revert "Special beeshop cosmetics for donators! (#3368)" (#3920)
