@@ -162,7 +162,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//general preferences
 <<<<<<< HEAD
-	S["asaycolor"]			>> asaycolor
+	READ_FILE(S["asaycolor"], asaycolor)
 	S["ooccolor"]			>> ooccolor
 	S["lastchangelog"]		>> lastchangelog
 	S["UI_style"]			>> UI_style
