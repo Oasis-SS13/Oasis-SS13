@@ -222,7 +222,8 @@
 /area/shuttle/caravan/freighter3
 	name = "Tiny Freighter"
 
-
-/area/shuttle/shipstation
+/datum/map_template/shuttle/shipstation
+	port_id = "station"
+	can_be_bought = FALSE
+	suffix = "ship"
 	name = "NTSS 'Companionship'"
-	requires_power = TRUE
