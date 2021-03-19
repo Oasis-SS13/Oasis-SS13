@@ -53,7 +53,7 @@ RLD
 	. += "\A [src]. It currently holds [matter]/[max_matter] matter-units."
 	if(upgrade & RCD_UPGRADE_SILO_LINK)
 		. += "\A [src]. Remote storage link state: [silo_link ? "[silo_mats.on_hold() ? "ON HOLD" : "ON"]" : "OFF"]."
-		if(silo_link && !silo_mats.on_hold() && silo_mats.mat_container)
+		if(silo_link && !silo_mats.on_hold())
 			. += "\A [src]. Remote connection have iron in equivalent to [silo_mats.mat_container.get_material_amount(/datum/material/iron)/500] rcd units." // 1 matter for 1 floortile, as 4 tiles are produced from 1 iron
 
 /obj/item/construction/Destroy()
@@ -133,18 +133,17 @@ RLD
 		update_icon()
 		return TRUE
 	else
-		var/list/matlist = list(getmaterialref(/datum/material/iron) = 500)
 		if(silo_mats.on_hold())
 			if(user)
 				to_chat(user, "Mineral access is on hold, please contact the quartermaster.")
 			return FALSE
-		if(!silo_mats.mat_container?.has_materials(matlist, amount))
+		if(!silo_mats.mat_container.has_materials(list(/datum/material/iron = 500), amount))
 			if(user)
 				to_chat(user, no_ammo_message)
 			return FALSE
 
-		silo_mats.mat_container.use_materials(matlist, amount)
-		silo_mats.silo_log(src, "consume", -amount, "build", matlist)
+		silo_mats.mat_container.use_materials(list(/datum/material/iron = 500), amount)
+		silo_mats.silo_log(src, "consume", -amount, "build", list(/datum/material/iron = 500))
 		return TRUE
 
 /obj/item/construction/proc/checkResource(amount, mob/user)
@@ -155,7 +154,7 @@ RLD
 			if(user)
 				to_chat(user, "Mineral access is on hold, please contact the quartermaster.")
 			return FALSE
-		. = silo_mats.mat_container?.has_materials(list(getmaterialref(/datum/material/iron) = 500), amount)
+		. = silo_mats.mat_container.has_materials(list(/datum/material/iron = 500), amount)
 	if(!. && user)
 		to_chat(user, no_ammo_message)
 		if(has_ammobar)
@@ -163,7 +162,7 @@ RLD
 	return .
 
 /obj/item/construction/proc/range_check(atom/A, mob/user)
-	if(!(user in viewers(7, get_turf(A))))
+	if(!(A in view(7, get_turf(user))))
 		to_chat(user, "<span class='warning'>The \'Out of Range\' light on [src] blinks red.</span>")
 		return FALSE
 	else
