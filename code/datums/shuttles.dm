@@ -636,6 +636,8 @@
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
 
+
+
  // Turbolifts
 /datum/map_template/shuttle/turbolift/debug/primary
 	prefix = "_maps/shuttles/turbolifts/"
