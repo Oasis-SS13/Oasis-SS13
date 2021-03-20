@@ -2033,6 +2033,17 @@
 	if(method==PATCH || method==INGEST || method==INJECT || (method == VAPOR && prob(min(reac_volume,100)*(1 - touch_protection))))
 		L.ForceContractDisease(new /datum/disease/transformation/gondola(), FALSE, TRUE)
 
+/datum/reagent/delirium
+	name = "Delirium"
+	description = "A highly mutative liquid of unklown origin."
+	color = "#ff9900" //RGB: 154, 103, 80
+	taste_description = "inner chaos"
+	can_synth = FALSE
+
+/datum/reagent/delirium/reaction_mob(mob/living/L, method=TOUCH, reac_volume, show_message = 1, touch_protection = 0)
+	if(method==PATCH || method==INGEST || method==INJECT || (method == VAPOR && prob(min(reac_volume,100)*(1 - touch_protection))))
+		L.ForceContractDisease(new /datum/disease/transformation/clowndola(), FALSE, TRUE)
+
 /datum/reagent/liquidadamantine
 	name = "Liquid Adamantine"
 	description = "A legengary lifegiving metal liquified."
