@@ -12,9 +12,13 @@ Format:
 	disabled (disables the map)
 endmap
 
+map ScorchBox
+	maxplayers 100
+	default
+	votable
+
 map boxstation
 	maxplayers 60
-	default
 	votable
 endmap
 
