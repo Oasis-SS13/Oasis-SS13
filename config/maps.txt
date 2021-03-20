@@ -61,7 +61,7 @@ endmap
 
 map facingworlds
 
-map shipstation
+#map shipstation
 	maxplayers 20
 	votable
 endmap
