@@ -93,23 +93,6 @@
 					TRUE,
 					GLOB.footstep[T.footstep][3] + e)
 
-<<<<<<< HEAD
-			if((!H.shoes && !feetCover)) //are we NOT wearing shoes
-				if(H.dna.species.special_step_sounds)
-					playsound(T, pick(H.dna.species.special_step_sounds), 50, TRUE)
-				else
-					playsound(T, pick(GLOB.barefootstep[T.barefootstep][1]),
-						GLOB.barefootstep[T.barefootstep][2] * v,
-						TRUE,
-						GLOB.barefootstep[T.barefootstep][3] + e)
-
-
-
-	//For SCP-173  OASIS EDIT
-	if(is173(LM))
-		playsound(T, pick('Oasis/SCP_MAIN/sound/scp/spook/173Run1.mp3','Oasis/SCP_MAIN/sound/scp/spook/173Run2.mp3', 'Oasis/SCP_MAIN/sound/scp/spook/173Run3.mp3'), 25 * v)
-		return
-=======
 			//Sound of wearing shoes always plays, special movement sound
 			// IE (server motors wont play bare footed.)
 			if(H.dna.species.special_step_sounds)
@@ -120,4 +103,9 @@
 					GLOB.barefootstep[T.barefootstep][2] * v,
 					TRUE,
 					GLOB.barefootstep[T.barefootstep][3] + e)
->>>>>>> 8a8703b5ea... step sounds (#3487)
+
+
+	//For SCP-173  OASIS EDIT
+	if(is173(LM))
+		playsound(T, pick('Oasis/SCP_MAIN/sound/scp/spook/173Run1.mp3','Oasis/SCP_MAIN/sound/scp/spook/173Run2.mp3', 'Oasis/SCP_MAIN/sound/scp/spook/173Run3.mp3'), 25 * v)
+		return
