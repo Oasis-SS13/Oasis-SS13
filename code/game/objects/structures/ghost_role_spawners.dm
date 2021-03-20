@@ -642,3 +642,17 @@
 	shoes = /obj/item/clothing/shoes/plate
 	l_pocket = /obj/item/stack/medical/bruise_pack
 	assignedrole = "Tuskan Raider"
+
+//Abandoned taco stand: Spawns in maints randomly. Ghosts become shoepacabras.
+/obj/effect/mob_spawn/shoepacabra
+	name = "abandoned taco stand"
+	desc = "A taco stand, used to bring people the joy of Mexican food a long while ago."
+	icon = 'Oasis/icons/obj/mob_spawner.dmi'
+	icon_state = "abandoned_taco_stand"
+	mob_type = /mob/living/carbon/shoepacabra/shoepacabra_lesser
+	mob_name = "a shoepacabra"
+	death = FALSE
+	anchored = FALSE
+	roundstart = FALSE
+	short_desc = "You are a shoepacabra, a monstrosity feeding on others shoes."
+	flavour_text = "Finally, you awake from your slumber. Unbearable hunger tears you from inside as you crawl out of your den. You need to find some shoes."

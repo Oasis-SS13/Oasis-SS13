@@ -11,6 +11,12 @@
 /obj/structure/sign/map/right
 	icon_state = "map-right"
 
+/obj/structure/sign/map/left/coalition
+	icon_state = "map-left-coa"
+
+/obj/structure/sign/map/right/coalition
+	icon_state = "map-right-coa"
+
 /obj/structure/sign/map/svs
 	icon_state = "map-svs"
 

@@ -34,3 +34,10 @@
 	name = "10mm incendiary bullet"
 	damage = 15
 	fire_stacks = 2
+
+
+//9x18mm Makarov
+/obj/item/projectile/bullet/m9x18mm
+	name = "9x18mm"
+	damage = 45
+	armour_penetration = 5

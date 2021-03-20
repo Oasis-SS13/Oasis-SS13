@@ -279,6 +279,9 @@ GLOBAL_LIST_EMPTY(crematoriums)
 
 		for(var/obj/O in conts) //conts defined above, ignores crematorium and tray
 			CHECK_TICK
+			if(O.resistance_flags & INDESTRUCTIBLE)
+				O.forceMove(src) // in case an item in container should be spared
+				continue
 			log_game("[key_name(user)] has cremated [O.name] ([O.type]) at [AREACOORD(src)].")
 			if(user)
 				user.log_message("cremated [O.name] ([O.type]) at [AREACOORD(src)]", LOG_ATTACK) //Logged in their attack log for consistency with mobs, see above

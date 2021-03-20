@@ -541,6 +541,12 @@
 	race = /datum/species/human/felinid
 	taste_description = "something nyat good"
 
+/datum/reagent/mutationtoxin/golem/capitalist
+	name = "Capitalist Golem Mutation Toxin"
+	color = "#5EFF3B" //RGB: 94, 255, 59
+	race = /datum/species/golem/capitalist
+	taste_description = "money"
+
 /datum/reagent/mutationtoxin/lizard
 	name = "Lizard Mutation Toxin"
 	description = "A lizarding toxin."

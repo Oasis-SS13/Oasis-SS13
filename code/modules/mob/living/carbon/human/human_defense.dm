@@ -248,6 +248,39 @@
 				apply_damage(damage, BRUTE, affecting, run_armor_check(affecting, "melee"))
 		return 1
 
+/mob/living/carbon/human/attack_shoepacabra(mob/living/carbon/shoepacabra/S)
+	if(check_shields(S, 0, "[S.name]", UNARMED_ATTACK))
+		visible_message("<span class='danger'>[S] attempts to touch [src]!</span>", \
+			"<span class='danger'>[S] attempts to touch you!</span>")
+		return 0
+	var/dam_zone = pick(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_L_HAND, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+	var/obj/item/bodypart/affecting = get_bodypart(ran_zone(dam_zone))
+	if(!affecting)
+		affecting = get_bodypart(BODY_ZONE_CHEST)
+	if(S.a_intent == INTENT_HELP)
+		..()
+		return 0
+
+	if (!(mobility_flags & MOBILITY_STAND) && (S.zone_selected == BODY_ZONE_L_LEG || S.zone_selected == BODY_ZONE_R_LEG))
+		if (S.steal_shoes(src, S.a_intent == INTENT_HARM))
+			return 1
+
+	if(S.a_intent == INTENT_DISARM)
+		if (!S.can_tackle)
+			dna.species.disarm(S, src)
+			return 1
+		else
+			playsound(loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
+			Knockdown(20)
+			log_combat(S, src, "tackled")
+			var/armor_block = run_armor_check(affecting, "melee","","",10)
+			apply_damage(30, STAMINA, affecting, armor_block)
+			visible_message("<span class='danger'>[S] tackles [src] down!</span>", \
+					"<span class='userdanger'>[S] tackles you down!</span>")
+			return 1
+
+	..()
+
 /mob/living/carbon/human/attack_alien(mob/living/carbon/alien/humanoid/M)
 	if(check_shields(M, 20, "the M.name", UNARMED_ATTACK))
 		visible_message("<span class='danger'>[M] attempts to touch [src]!</span>", \
