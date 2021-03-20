@@ -250,13 +250,9 @@
 			M.adjustToxLoss(0.5*reac_volume)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
-<<<<<<< HEAD
 		else if(M.reagents.has_reagent(/datum/reagent/medicine/silver_sulfadiazine, 40) && M.getFireLoss())
 			to_chat(M, "<span class='danger'>Silver sulfadiazine foams as it fails to heal your burns!</span>")
-		else if(M.getFireLoss())
-=======
 		else if(M.getFireLoss() && method == PATCH)
->>>>>>> f9155ba093... Fixes Styptic Powder and Silver Sulfadiazine (#3902)
 			M.adjustFireLoss(-reac_volume)
 			if(show_message)
 				to_chat(M, "<span class='danger'>You feel your burns healing! It stings like hell!</span>")
