@@ -352,7 +352,7 @@
 	stage3	= list("<span class='danger'>A cruel sense of chaos overcomes you.</span>", "<span class='danger'>You can't feel your arms!</span>", "<span class='danger'>You let go of the urge to hurt clowns.</span>")
 	stage4	= list("<span class='danger'>You can't feel your arms. It does not bother you anymore.</span>", "<span class='danger'>You start to have the same mindset as a clown.</span>")
 	stage5	= list("<span class='danger'>You have become a Clowndola.</span>")
-	new_form = /mob/living/simple_animal/pet/clowndola
+	new_form = /mob/living/simple_animal/hostile/retaliate/clowndola
 
 /datum/disease/transformation/clowndola/stage_act()
 	..()

@@ -71,23 +71,3 @@
 	gold_core_spawnable = NO_SPAWN
 	unique_pet = TRUE
 
-/mob/living/simple_animal/pet/clowndola
-	name = "Clowndola"
-	real_name = "Clowndola"
-	desc = "Clowndola is the noisy walker. Having no hands he embodies the Taoist principle of honk (HonkMother) while his smiling facial expression shows his utter and complete acceptance of the world as it is. Its hide is extremely valuable."
-	response_help = "pets"
-	response_disarm = "bops"
-	response_harm = "kicks"
-	icon_state = "clowndola"
-	icon_living = "clowndola"
-	icon = 'icons/mob/gondola.dmi'
-	a_intent = INTENT_HARM
-	loot = list(/obj/effect/decal/cleanable/blood/gibs, /obj/item/stack/sheet/animalhide/gondola = 1, /obj/item/reagent_containers/food/snacks/meat/slab/clowndola = 1)
-	//Gondolas aren't affected by cold.
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
-	maxbodytemp = 1500
-	maxHealth = 200
-	health = 200
-	del_on_death = FALSE
-	attack_sound = 'sound/items/airhorn2.ogg'
