@@ -148,4 +148,23 @@
 	item_state = "durathread"
 	item_color = "durathread"
 	can_adjust = FALSE
+<<<<<<< HEAD
 	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5)
+=======
+	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5, "stamina" = 30)
+
+/////////////////
+//DONATOR ITEMS//
+/////////////////
+
+/obj/item/clothing/under/gangster
+	name = "gangstar suit"
+	desc = "Those who carry on the will of those who passed must keep moving forward."
+	icon_state = "gangster"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/gangster/purple
+	desc = "I have a dream."
+	icon_state = "gangster_p"
+	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5, "stamina" = 30)
+>>>>>>> 15cbe5b6b3... Donator items 2 electric boogaloo  (#3923)
