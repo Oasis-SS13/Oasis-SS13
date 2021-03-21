@@ -12,17 +12,18 @@ Format:
 	disabled (disables the map)
 endmap
 
-map ScorchBox
+map scorchstation
 	maxplayers 100
 	default
 	votable
+endmap
 
 map boxstation
 	maxplayers 60
 	votable
 endmap
 
-map endostation	
+map endostation
 	votable
 endmap
 

@@ -12,19 +12,13 @@ Format:
 	disabled (disables the map)
 endmap
 
+map scorchstation
+	maxplayers 100
+	default
+	votable
+
 map boxstation
 	maxplayers 60
-	votable
-endmap
-
-map metastation
-	minplayers 15
-	maxplayers 100
-	votable
-endmap
-
-map pubbystation
-	maxplayers 50
 	votable
 endmap
 
@@ -32,13 +26,24 @@ map endostation
 	votable
 endmap
 
+map metastation
+	maxplayers 100
+	votable
+endmap
+
+map pubbystation
+	minplayers 50
+	maxplayers 100
+	votable
+endmap
+
 map deltastation
-	minplayers 40
+	minplayers 50
 	votable
 endmap
 
 map donutstation
-	minplayers 60
+	minplayers 80
 	maxplayers 120
 	disabled
 endmap
@@ -52,6 +57,15 @@ map multiz_debug
 endmap
 
 map kilostation
-	maxplayers 60
+    minplayers 30
+    maxplayers 80
+	votable
 	disabled
+endmap
+
+map facingworlds
+
+map shipstation
+	maxplayers 20
+	votable
 endmap

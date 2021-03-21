@@ -38,7 +38,7 @@ require only minor tweaks.
 #define ZTRAIT_SPACE_RUINS "Space Ruins"
 #define ZTRAIT_LAVA_RUINS "Lava Ruins"
 #define ZTRAIT_POCKETDIM "Pocket Dimension"
-#define ZTRAIT_SCORCHSTATION "ScorchBox" //Oasis
+#define ZTRAIT_SCORCHSTATION "Scorchstation" //Oasis
 
 /// number - bombcap is multiplied by this before being applied to bombs
 #define ZTRAIT_BOMBCAP_MULTIPLIER "Bombcap Multiplier"
