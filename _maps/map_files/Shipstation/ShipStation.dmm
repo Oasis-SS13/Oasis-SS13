@@ -5375,6 +5375,10 @@
 	},
 /turf/open/space,
 /area/solar/starboard/aft)
+"QD" = (
+/obj/item/price_tagger,
+/turf/open/floor/plating,
+/area/vacant_room/commissary)
 "QS" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
@@ -28212,7 +28216,7 @@ bd
 EL
 Fe
 Ka
-XD
+QD
 XD
 XD
 XD
