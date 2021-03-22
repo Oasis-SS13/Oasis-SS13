@@ -1,8 +1,0 @@
-author: Kryyto
-delete-after: true
-changes:
-  - rscadd: Added Clowndola + Clonwdola disease + clowndola food + delirium reagent
-      (transforms you into clowndola).
-  - balance: Rebalanced spongy mushroom (0 -> 1 damage).
-  - bugfix: Fixed spongy mushroom now always retaliate.
-  - config: 'changed OasisStation.dme being fucked by #864'
