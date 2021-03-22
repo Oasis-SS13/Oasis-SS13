@@ -27,8 +27,12 @@
 	var/body_color //brown, gray and white, leave blank for random
 	gold_core_spawnable = FRIENDLY_SPAWN
 	var/chew_probability = 1
+<<<<<<< HEAD
 	var/time_to_chew = 5
 	mobsay_color = "#82AF84"
+=======
+	chat_color = "#82AF84"
+>>>>>>> c01421cdd4... Ports tgs runechat in replacement to our current overhead chat (#3758)
 	var/list/ratdisease = list()
 	can_be_held = TRUE
 	held_state = "mouse_gray"
