@@ -16,7 +16,7 @@
 	maxbodytemp = 1500
 	maxHealth = 100
 	health = 100
-	attack_sound = list('sound/items/airhorn2.ogg','sound/items/airhorn.ogg', 'sound/items/carhorn.ogg', 'sound/items/bikehorn.ogg')
+	attack_sound = list('sound/items/airhorn2.ogg', 'sound/items/airhorn.ogg', 'sound/items/carhorn.ogg', 'sound/items/bikehorn.ogg')
 	speak_chance = 20
 	turns_per_move = 1
 	maxHealth = 80
