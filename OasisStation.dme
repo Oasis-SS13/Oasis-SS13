@@ -16,6 +16,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\map_files\ShipStation\ShipStation.dmm"
+#include "code\modules\shuttle\shipstation.dm"
 #include "code\modules\vending\citadelplush.dm"
 #include "code\__DEFINES\shoepacabras.dm"
 #include "code\modules\language\shoepacabrish.dm"
