@@ -82,6 +82,36 @@ Contains:
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
+/obj/item/clothing/suit/space/officer/svsred
+	name = "Red Admiral jacket"
+	desc = "An armored, space-proof jacket used in special operations."
+	icon_state = "specops"
+	item_state = "specops"
+	blood_overlay_type = "coat"
+	slowdown = 0
+	flags_inv = 0
+	w_class = WEIGHT_CLASS_NORMAL
+	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 20, "energy" = 35, "bomb" = 30, "bio" = 10, "rad" = 0, "fire" = 45, "acid" = 45)
+	strip_delay = 130
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/suit/space/officer/svsblue
+	name = "Blue Admiral jacket"
+	desc = "An armored, space-proof jacket used in special operations."
+	icon_state = "specopsblue"
+	item_state = "specopsblue"
+	blood_overlay_type = "coat"
+	slowdown = 0
+	flags_inv = 0
+	w_class = WEIGHT_CLASS_NORMAL
+	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 20, "energy" = 35, "bomb" = 30, "bio" = 10, "rad" = 0, "fire" = 45, "acid" = 45)
+	strip_delay = 130
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
 	//NASA Voidsuit
 /obj/item/clothing/head/helmet/space/nasavoid
 	name = "NASA Void Helmet"
