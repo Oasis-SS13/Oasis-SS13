@@ -14,7 +14,7 @@
 	response_harm = "kicks"
 	faction = list("gondola")
 	turns_per_move = 10
-	icon = 'icons/mob/gondolas.dmi'
+	icon = 'icons/mob/gondola.dmi'
 	icon_state = "gondola"
 	icon_living = "gondola"
 	loot = list(/obj/effect/decal/cleanable/blood/gibs, /obj/item/stack/sheet/animalhide/gondola = 1, /obj/item/reagent_containers/food/snacks/meat/slab/gondola = 1)
@@ -70,3 +70,4 @@
 	gender = MALE
 	gold_core_spawnable = NO_SPAWN
 	unique_pet = TRUE
+
