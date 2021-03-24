@@ -240,8 +240,6 @@
 			user.visible_message("You untie [oldName] back into a [newBand.name]", "[user] unties [oldName] back into a [newBand.name]")
 		else
 			to_chat(user, "<span class='warning'>You must be holding [src] in order to untie it!")
-<<<<<<< HEAD
-=======
 
 /////////////////
 //DONATOR ITEMS//
@@ -256,4 +254,3 @@
 	name = "conductive scarf"
 	desc = "Made out of 30,000 scarabs. Use with caution."
 	icon_state = "conductive"
->>>>>>> 951d3af420... things (#3943)
