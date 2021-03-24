@@ -231,8 +231,6 @@
 	desc = "A spacious backpack with lots of pockets, worn by Engineers of an Emergency Response Team."
 	icon_state = "ert_engineering"
 
-<<<<<<< HEAD
-=======
 /////////////////
 //DONATOR ITEMS//
 /////////////////
@@ -267,7 +265,6 @@
 	icon_state = "runtimepack"
 	item_state = "runtimepack"
 
->>>>>>> 951d3af420... things (#3943)
 /*
  * Satchel Types
  */
