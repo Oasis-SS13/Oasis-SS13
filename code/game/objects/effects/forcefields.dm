@@ -10,13 +10,8 @@
 
 /obj/effect/forcefield/Initialize(mapload, ntimeleft)
 	. = ..()
-<<<<<<< HEAD
-	if(ntiemelef)
-		timeleft = ntiemelef
-=======
 	if(isnum_safe(ntimeleft))
 		timeleft = ntimeleft
->>>>>>> 1e70d866d5... Cleans Creation Arguments of Forcefields (#3794)
 	if(timeleft)
 		QDEL_IN(src, timeleft)
 

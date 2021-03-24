@@ -13,6 +13,7 @@
 		#include "map_files\Donutstation\Donutstation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\EndoStation\EndoStation.dmm"
+		#include "map_files\ShipStation\ShipStation.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"
