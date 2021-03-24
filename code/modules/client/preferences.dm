@@ -1994,8 +1994,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 		else
 			custom_names[name_id] = sanitized_name
-<<<<<<< HEAD
-=======
 
 /// Handles adding and removing donator items from clients
 /datum/preferences/proc/handle_donator_items()
@@ -2016,4 +2014,3 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			equipped_gear -= RG.id
 			purchased_gear -= RG.id
 		save_preferences()
->>>>>>> 951d3af420... things (#3943)
