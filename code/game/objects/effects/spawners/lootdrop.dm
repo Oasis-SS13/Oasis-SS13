@@ -239,6 +239,7 @@
 		/obj/effect/decal/remains/xeno = 49,
 		/obj/effect/spawner/xeno_egg_delivery = 1)
 
+<<<<<<< HEAD
 
 /obj/effect/spawner/lootdrop/tesla_and_singuloth_spawner
 	name = "Tesla or Singularity spawner"
@@ -246,6 +247,12 @@
 		/obj/machinery/the_singularitygen/tesla = 80,
 		/obj/machinery/the_singularitygen = 20)
 
+=======
+/obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner/Initialize()
+	if(prob(40) && SSevents.holidays && SSevents.holidays[APRIL_FOOLS])
+		loot = list(/obj/effect/spawner/xeno_egg_delivery_troll = 1)
+	. = ..()
+>>>>>>> 078b0cdd2a... fixes #3949 (#3956)
 
 /obj/effect/spawner/lootdrop/sanitarium
 	name = "patient spawner"
