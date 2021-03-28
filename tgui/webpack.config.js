@@ -35,6 +35,7 @@ module.exports = (env = {}, argv) => {
       'tgui-panel': [
         './packages/tgui-polyfill',
         './packages/tgui-panel',
+
       ],
     },
     output: {
