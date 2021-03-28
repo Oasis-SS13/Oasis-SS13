@@ -11,16 +11,6 @@
 	stock_max = 6
 	availability_prob = 80
 
-/datum/blackmarket_item/misc/shoulder_holster
-	name = "Shoulder holster"
-	desc = "Yeehaw, hardboiled friends! This holster is the first step in your dream of becoming a detective and being allowed to shoot real guns!"
-	item = /obj/item/storage/belt/holster
-
-	price_min = 400
-	price_max = 800
-	stock_max = 8
-	availability_prob = 60
-
 /datum/blackmarket_item/misc/holywater
 	name = "Flask of holy water"
 	desc = "Father Lootius' own brand of ready-made holy water."

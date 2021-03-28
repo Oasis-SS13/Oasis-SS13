@@ -24,15 +24,6 @@
 	stock_max = 60
 	availability_prob = 40
 
-/datum/blackmarket_item/weapon/bone_spear
-	name = "Bone Spear"
-	desc = "Authentic tribal spear, made from real bones! A steal at any price, especially if you're a caveman."
-	item = /obj/item/twohanded/spear/bonespear
-
-	price_min = 200
-	price_max = 300
-	stock_max = 3
-	availability_prob = 60
 
 /datum/blackmarket_item/weapon/emp_grenade
 	name = "EMP Grenade"

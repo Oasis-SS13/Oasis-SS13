@@ -28,6 +28,7 @@
 #include "Oasis\code\modules\cargo\blackmarket\blackmarket_items\misc.dm"
 #include "Oasis\code\modules\cargo\blackmarket\blackmarket_items\tools.dm"
 #include "Oasis\code\modules\cargo\blackmarket\blackmarket_items\weapons.dm"
+#include "Oasis\code\controllers\subsystem\blackmarket.dm"
 #include "code\modules\language\shoepacabrish.dm"
 #include "code\modules\cargo\exports\engineering.dm"
 #include "code\game\objects\items\melee\hfblade.dm"
