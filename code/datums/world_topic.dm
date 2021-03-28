@@ -106,7 +106,7 @@
 		return
 	minor_announce(input["message"], "Incoming message from [input["message_sender"]]")
 	for(var/obj/machinery/computer/communications/CM in GLOB.machines)
-		CM.overrideCooldown()
+ 		CM.override_cooldown()
 
 /datum/world_topic/news_report
 	keyword = "News_Report"
