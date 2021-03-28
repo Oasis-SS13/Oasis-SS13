@@ -96,7 +96,6 @@ Class Procs:
 	anchored = TRUE
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND | INTERACT_ATOM_UI_INTERACT
 
-	var/machine_stat = NONE
 	var/stat = 0
 	var/use_power = IDLE_POWER_USE
 		//0 = dont run the auto
