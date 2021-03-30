@@ -2,3 +2,10 @@ environment = "OasisStation.dme"
 
 [langserver]
 dreamchecker = true
+<<<<<<< HEAD
+=======
+
+[code_standards]
+disallow_relative_type_definitions = true
+disallow_relative_proc_definitions = true
+>>>>>>> 818ed7583c... "Relative Pathing" cleanup (#3997)
