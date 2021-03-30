@@ -1407,7 +1407,6 @@
 	stock = 2
 
 /datum/map_template/random_room/sk_rdm157
-<<<<<<< HEAD
 	name = "mexican foor restaurant"
 	room_id = "sk_rdm157_abandoned_taco_stand"
 	mappath = "_maps/RandomRooms/3x3/sk_rdm157_abandoned_taco_stand.dmm"
@@ -1505,11 +1504,12 @@
 	template_height = 200
 	template_width = 100
 	weight = 5
-=======
+
+/datum/map_template/random_room/sk_nml003
 	name = "Space Chess"
 	room_id = "sk_rdm157_chess"
 	mappath = "_maps/RandomRooms/10x10/sk_rdm157_chess.dmm"
 	centerspawner = FALSE
 	template_height = 10
 	template_width = 10
->>>>>>> 7f474a230a... Adds Chess Crates and a Maints Chess Room (#3763)
+
