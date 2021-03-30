@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - admin: Adds sec cell logs to player logs
