@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - tweak: sleeping carp no longer deflects harmless projectiles.
