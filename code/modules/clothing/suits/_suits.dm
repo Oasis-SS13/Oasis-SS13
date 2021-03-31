@@ -1,3 +1,5 @@
+#define FOOTSTEP_COOLDOWN 3	//3 deci-seconds
+
 /obj/item/clothing/suit
 	icon = 'icons/obj/clothing/suits.dmi'
 	name = "suit"
@@ -8,6 +10,9 @@
 	var/blood_overlay_type = "suit"
 	var/togglename = null
 	var/suittoggled = FALSE
+	var/move_sound = null
+	var/footstep = 0
+	var/mob/listeningTo
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo
 
 
@@ -31,8 +36,6 @@
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_wear_suit()
-<<<<<<< HEAD
-=======
 
 /obj/item/clothing/suit/proc/on_mob_move()
 	var/mob/living/carbon/human/H = loc
@@ -74,4 +77,4 @@
 	. = ..()
 
 #undef FOOTSTEP_COOLDOWN
->>>>>>> 19759a1f99... Non-bitflag slot defines removal (#3300)
+

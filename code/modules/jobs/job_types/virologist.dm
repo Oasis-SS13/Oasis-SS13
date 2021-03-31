@@ -38,7 +38,4 @@
 	backpack = /obj/item/storage/backpack/virology
 	satchel = /obj/item/storage/backpack/satchel/vir
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
-<<<<<<< HEAD
-=======
 	pda_slot = ITEM_SLOT_RPOCKET
->>>>>>> 19759a1f99... Non-bitflag slot defines removal (#3300)

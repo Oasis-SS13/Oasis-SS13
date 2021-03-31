@@ -3,6 +3,7 @@
  * @copyright 2020 Aleksej Komarov
  * @license MIT
  */
+import { BlackmarketUplink } from './interfaces/BlackmarketUplink';
 
 import { selectBackend } from './backend';
 import { selectDebug } from './debug/selectors';
@@ -32,6 +33,7 @@ const SuspendedWindow = () => {
     </Window>
   );
 };
+
 
 export const getRoutedComponent = store => {
   const state = store.getState();
