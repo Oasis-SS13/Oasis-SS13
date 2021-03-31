@@ -37,12 +37,6 @@
 	cost = 1200
 
 /datum/gear/accessory/armband_red
-<<<<<<< HEAD
-	display_name = "armband"
-	path = /obj/item/clothing/accessory/armband
-	cost = 1000
-
-=======
 	display_name = "armband, red"
 	path = /obj/item/clothing/accessory/armband
 	cost = 1000
@@ -57,7 +51,6 @@
 	path = /obj/item/clothing/accessory/armband/green
 	cost = 1000
 
->>>>>>> 7b2b4209e9... initial d (#3796)
 //ties
 /datum/gear/accessory/tie
 	subtype_path = /datum/gear/accessory/tie
