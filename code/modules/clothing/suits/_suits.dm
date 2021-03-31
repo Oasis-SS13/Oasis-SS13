@@ -1,4 +1,4 @@
-#define FOOTSTEP_COOLDOWN 3 //3 deci-seconds
+#define FOOTSTEP_COOLDOWN 3	//3 deci-seconds
 
 /obj/item/clothing/suit
 	icon = 'icons/obj/clothing/suits.dmi'
