@@ -957,7 +957,7 @@
 /turf/open/floor/plasteel,
 /area/svs/blue/cargo)
 "cE" = (
-/obj/machinery/vending/cola/red,
+/obj/machinery/vending/burger/red,
 /turf/open/floor/plasteel,
 /area/svs/red/break_room)
 "cF" = (
@@ -1116,7 +1116,7 @@
 /turf/open/floor/plasteel,
 /area/svs/blue/science/lab)
 "cV" = (
-/obj/machinery/vending/cola/blue,
+/obj/machinery/vending/burger,
 /turf/open/floor/plasteel,
 /area/svs/blue/break_room)
 "cW" = (
