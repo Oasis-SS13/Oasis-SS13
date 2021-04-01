@@ -9,7 +9,6 @@
 	var/form = "lesser"  // The postfix used generally for icon state determination
 	var/clawed = FALSE  // Determines if the creature is using xeno-like claws
 	var/can_tackle = FALSE  // Determines if the creature is capable of tackling the opponent instead of pushing it
-	var/can_aggrograb = FALSE  // Determines if the creature is capable of aggressively grabbing the opponent <TODO> NOT IMPLEMENTED YET
 	var/bloodthirsty = FALSE  // Determines if the creature should maim people when stealing shoes with harm intent
 
 	article = "el"
@@ -101,6 +100,13 @@
 /mob/living/carbon/shoepacabra/can_hold_items()
 	return TRUE
 
+/* Is consumable footwear
+Check if shoepacabra can consume the footwear.
+Accepts:
+	F, the footwear
+Returns:
+	TRUE if the footwear can be consumed, FALSE otherwise
+*/
 /proc/is_consumable_footwear(obj/item/clothing/shoes/F)
 	if (F.resistance_flags & (ACID_PROOF | INDESTRUCTIBLE))  // Make sure our little rascal doesn't ruin some antag's day
 		return FALSE
@@ -110,6 +116,9 @@
 		return FALSE
 	return TRUE
 
+/mob/living/carbon/shoepacabra/canBeHandcuffed()
+	return FALSE
+
 /* Consume footwear
 Creature makes an attempt to consume the given footwear.
 Accepts:
@@ -117,7 +126,8 @@ Accepts:
 */
 /mob/living/carbon/shoepacabra/proc/consume_footwear(obj/item/clothing/shoes/F, instantly = FALSE)
 	if (!is_consumable_footwear(F))
-		to_chat(src, "<span class='notice'>As you take a bite you notice that [F] is way too robust for you to consume!</span>")
+		to_chat(src, "<span class='warning'>As you take a bite you notice that [F] is way too robust for you to consume!</span>")
+		return
 
 	instantly = instantly || (shoes_consumption_delay <= 0)
 	if (!instantly)  // meh double check

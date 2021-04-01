@@ -55,7 +55,7 @@
 		M = C
 		M.retaliate(user)
 
-	if(!C.handcuffed)
+	if(!C.handcuffed && C.canBeHandcuffed())
 		if(C.get_num_arms(FALSE) >= 2 || C.get_arm_ignore())
 			C.visible_message("<span class='danger'>[user] is trying to put [src.name] on [C]!</span>", \
 								"<span class='userdanger'>[user] is trying to put [src.name] on you!</span>")
