@@ -224,19 +224,8 @@
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-/datum/design/mech_missile_rack
-	name = "Exosuit Weapon (SRM-8 Missile Rack)"
-	desc = "Allows for the construction of an SRM-8 Missile Rack."
-	id = "mech_missile_rack"
-	build_type = PROTOLATHE
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
-	materials = list(/datum/material/iron=22000,/datum/material/gold=6000,/datum/material/silver=8000)
-	construction_time = 100
-	category = list("Weapons")
-	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
-
 /datum/design/clusterbang_launcher
-	name = "Exosuit Module (SOB-3 Clusterbang Launcher)"
+	name = "Exosuit Weapon (SOB-3 Clusterbang Launcher)"
 	desc = "A weapon that violates the Geneva Convention at 3 rounds per minute"
 	id = "clusterbang_launcher"
 	build_type = PROTOLATHE
@@ -337,7 +326,7 @@
 	category = list("Exosuit Equipment")
 
 /datum/design/mech_diamond_drill
-	name = "Exosuit Module (Diamond Mining Drill)"
+	name = "Exosuit Mining (Diamond Mining Drill)"
 	desc = "An upgraded version of the standard drill."
 	id = "mech_diamond_drill"
 	build_type = MECHFAB
@@ -357,7 +346,7 @@
 	category = list("Exosuit Equipment")
 
 /datum/design/mech_plasma_cutter
-	name = "Exosuit Module Design (217-D Heavy Plasma Cutter)"
+	name = "Exosuit Mining (217-D Heavy Plasma Cutter)"
 	desc = "A device that shoots resonant plasma bursts at extreme velocity. The blasts are capable of crushing rock and demolishing solid obstacles."
 	id = "mech_plasma_cutter"
 	build_type = MECHFAB
@@ -378,7 +367,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
 /datum/design/mech_sleeper
-	name = "Exosuit Medical Equipment (Mounted Sleeper)"
+	name = "Exosuit Medical (Mounted Sleeper)"
 	desc = "Equipment for medical exosuits. A mounted sleeper that stabilizes patients and can inject reagents in the exosuit's reserves."
 	id = "mech_sleeper"
 	build_type = MECHFAB
@@ -388,7 +377,7 @@
 	category = list("Exosuit Equipment")
 
 /datum/design/mech_syringe_gun
-	name = "Exosuit Medical Equipment (Syringe Gun)"
+	name = "Exosuit Medical (Syringe Gun)"
 	desc = "Equipment for medical exosuits. A chem synthesizer with syringe gun. Reagents inside are held in stasis, so no reactions will occur."
 	id = "mech_syringe_gun"
 	build_type = MECHFAB
@@ -398,7 +387,7 @@
 	category = list("Exosuit Equipment")
 
 /datum/design/mech_medical_beamgun
-	name = "Exosuit Medical Equipment (Medical Beamgun)"
+	name = "Exosuit Medical (Medical Beamgun)"
 	desc = "Equipment for medical exosuits. A mounted medical nanite projector which will treat patients with a focused beam."
 	id = "mech_medi_beam"
 	build_type = MECHFAB

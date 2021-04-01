@@ -2178,7 +2178,7 @@
 "aep" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Sanitarium";
-	req_access_txt = "2"
+	req_one_access_txt = "1;34"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -3626,7 +3626,7 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/turf_decal/stripes/line,
@@ -3647,7 +3647,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/turf_decal/stripes/line,
@@ -5053,7 +5053,7 @@
 "ajn" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable/yellow{
@@ -5084,7 +5084,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/airlock/security/glass{
 	name = "Prison Wing";
-	req_access_txt = "1"
+	req_one_access_txt = "1;34"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -35595,13 +35595,10 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bqB" = (
-/obj/item/paper_bin{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/pen,
 /obj/structure/window/reinforced,
-/obj/structure/table/wood,
+/obj/machinery/computer/secure_data{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
 "bqC" = (
@@ -38579,9 +38576,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/break_room)
 "bwm" = (
-/obj/machinery/computer/secure_data{
-	dir = 1
-	},
+/obj/structure/filingcabinet/chestdrawer/wheeled,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
 "bwn" = (
@@ -38627,12 +38622,15 @@
 "bwp" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
-	pixel_x = -2;
+	pixel_x = 5;
 	pixel_y = 4
 	},
 /obj/item/stamp/hop{
-	pixel_x = -4;
-	pixel_y = 4
+	pixel_x = -6
+	},
+/obj/item/pen{
+	pixel_x = 5;
+	pixel_y = 6
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
@@ -39889,8 +39887,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
-/obj/structure/table/wood,
-/obj/item/clothing/glasses/monocle,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "byM" = (
@@ -44782,8 +44778,8 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/theatre)
 "bIC" = (
-/obj/structure/table/wood,
 /obj/machinery/light/small,
+/obj/structure/table/wood,
 /obj/item/clothing/glasses/regular/hipster{
 	name = "Hipster Glasses"
 	},
@@ -47205,29 +47201,15 @@
 	pixel_x = -27
 	},
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
-/area/crew_quarters/kitchen)
-"bNE" = (
-/obj/structure/sink/kitchen{
-	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
-	name = "old sink";
-	pixel_y = 28
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 6
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bNF" = (
 /obj/machinery/gibber,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 4
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bNG" = (
 /obj/structure/kitchenspike,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bNI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -47849,7 +47831,7 @@
 /area/crew_quarters/kitchen)
 "bOX" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bOY" = (
 /obj/structure/sign/warning/vacuum/external{
@@ -47868,14 +47850,13 @@
 	name = "CondiMaster Neo";
 	pixel_x = -4
 	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bPa" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bPb" = (
 /obj/structure/table/wood,
@@ -48625,11 +48606,11 @@
 /area/crew_quarters/kitchen)
 "bQI" = (
 /obj/machinery/vending/wardrobe/chef_wardrobe,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bQJ" = (
 /obj/effect/landmark/xeno_spawn,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bQN" = (
 /obj/machinery/airalarm{
@@ -49207,7 +49188,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bRY" = (
 /obj/structure/disposalpipe/segment{
@@ -49224,10 +49205,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 5
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bRZ" = (
 /obj/structure/disposalpipe/segment{
@@ -49240,10 +49218,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	dir = 8
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bSa" = (
 /obj/structure/disposalpipe/segment{
@@ -49252,8 +49227,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/dark/visible,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bSd" = (
 /obj/machinery/portable_atmospherics/canister,
@@ -49683,10 +49657,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/dark/visible{
-	dir = 8
-	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bSY" = (
 /obj/structure/disposalpipe/segment,
@@ -49696,10 +49667,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
 	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bSZ" = (
 /obj/machinery/door/airlock/maintenance{
@@ -50340,10 +50311,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on/coldroom{
-	dir = 1
-	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bUq" = (
 /obj/structure/disposalpipe/segment{
@@ -50355,7 +50323,7 @@
 	req_access_txt = "28"
 	},
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bUr" = (
 /obj/machinery/navbeacon{
@@ -52792,7 +52760,7 @@
 "bZx" = (
 /obj/machinery/icecream_vat,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "bZy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -56173,10 +56141,8 @@
 	pixel_x = 28
 	},
 /obj/structure/reagent_dispensers/cooking_oil,
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 9
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "cgG" = (
 /obj/structure/closet/emcloset/anchored,
@@ -76634,10 +76600,6 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/ai_monitored/storage/eva)
-"dbn" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
-/area/crew_quarters/kitchen)
 "dbo" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -78441,6 +78403,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/item/soap/nanotrasen,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dhZ" = (
@@ -78464,10 +78427,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/item/instrument/guitar,
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/item/clothing/glasses/monocle,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dic" = (
@@ -78494,14 +78457,13 @@
 /turf/open/floor/wood,
 /area/vacant_room/office)
 "dif" = (
-/obj/item/soap/nanotrasen,
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/table/wood,
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
+/obj/machinery/vending/classicbeats,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dig" = (
@@ -78530,14 +78492,13 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/theatre)
 "dij" = (
-/obj/item/instrument/violin,
-/obj/structure/table/wood,
 /obj/item/radio/intercom{
 	pixel_x = 29
 	},
 /obj/structure/sign/poster/random{
 	pixel_y = -32
 	},
+/obj/machinery/vending/citadelplush,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "dik" = (
@@ -80811,10 +80772,7 @@
 	name = "old sink";
 	pixel_y = 28
 	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	dir = 10
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "fBA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -83926,10 +83884,7 @@
 /turf/open/floor/plating,
 /area/science/shuttledock)
 "rFZ" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	dir = 1
-	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "rHt" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -121444,9 +121399,9 @@ bHe
 dCU
 bKm
 bKe
-bNE
-dbn
-dbn
+fwt
+rFZ
+rFZ
 bRY
 bST
 bUo

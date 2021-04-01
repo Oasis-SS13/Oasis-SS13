@@ -31,7 +31,7 @@
 /obj/item/reagent_containers/food/snacks/grown/mushroom/spongy_mushroom/attack_self(mob/user)
 	if(isspaceturf(user.loc))
 		return
-	var/mob/living/simple_animal/hostile/spongy_mushroom/M = new /mob/living/simple_animal/hostile/spongy_mushroom(user.loc)
+	var/mob/living/simple_animal/hostile/retaliate/spongy_mushroom/M = new /mob/living/simple_animal/hostile/retaliate/spongy_mushroom(user.loc)
 	M.maxHealth += round(seed.endurance / 4)
 	M.melee_damage += round(seed.potency / 20)
 	M.move_to_delay -= round(seed.production / 50)

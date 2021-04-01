@@ -61,6 +61,9 @@
 
 #define INVERSE(x) ( 1/(x) )
 
+/// Used for calculating the radioactive strength falloff
+#define INVERSE_SQUARE(initial_strength,cur_distance,initial_distance) ( (initial_strength)*((initial_distance)**2/(cur_distance)**2) )
+
 #define ISABOUTEQUAL(a, b, deviation) (deviation ? abs((a) - (b)) <= deviation : abs((a) - (b)) <= 0.1)
 
 #define ISEVEN(x) (x % 2 == 0)
@@ -103,7 +106,11 @@
 
 #define TORADIANS(degrees) ((degrees) * 0.0174532925)
 
-/// Will filter out extra rotations and negative rotations E.g: 540 becomes 180. -180 becomes 180.
+/// Gets shift x that would be required the bitflag (1<<x)
+#define TOBITSHIFT(bit) ( log(2, bit) )
+
+// Will filter out extra rotations and negative rotations
+// E.g: 540 becomes 180. -180 becomes 180.
 #define SIMPLIFY_DEGREES(degrees) (MODULUS((degrees), 360))
 
 #define GET_ANGLE_OF_INCIDENCE(face, input) (MODULUS((face) - (input), 360))

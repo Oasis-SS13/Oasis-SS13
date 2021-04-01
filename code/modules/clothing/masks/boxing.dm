@@ -44,6 +44,19 @@
 			message += " OLE!"
 	speech_args[SPEECH_MESSAGE] = message
 
+/obj/item/clothing/mask/luchador/equipped(mob/user, slot)
+	if(!ishuman(user))
+		return
+	if(slot == ITEM_SLOT_MASK)
+		user.grant_language(/datum/language/shoepacabrish/, TRUE, FALSE, LANGUAGE_HAT)
+
+/obj/item/clothing/mask/luchador/dropped(mob/user)
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	if(H.get_item_by_slot(ITEM_SLOT_MASK) == src)
+		user.remove_language(/datum/language/shoepacabrish/, TRUE, FALSE, LANGUAGE_HAT)
+
 /obj/item/clothing/mask/luchador/tecnicos
 	name = "Tecnicos Mask"
 	desc = "Worn by robust fighters who uphold justice and fight honorably."

@@ -219,7 +219,7 @@
 	var/mob/living/carbon/human/active_owner
 
 /obj/item/clothing/neck/necklace/memento_mori/item_action_slot_check(slot)
-	return slot == SLOT_NECK
+	return slot == ITEM_SLOT_NECK
 
 /obj/item/clothing/neck/necklace/memento_mori/dropped(mob/user)
 	..()
@@ -387,7 +387,7 @@
 		user.forceMove(get_turf(link_holder))
 		qdel(link_holder)
 		return
-	link_holder.forceMove(get_turf(linked))
+	do_teleport(link_holder, get_turf(linked), no_effects = TRUE, channel = TELEPORT_CHANNEL_MAGIC)
 	sleep(2.5)
 	if(QDELETED(user))
 		qdel(link_holder)
@@ -1358,7 +1358,7 @@
 	sleep(2)
 	if(!M)
 		return
-	M.forceMove(turf_to_teleport_to)
+	do_teleport(M, turf_to_teleport_to, no_effects = TRUE, channel = TELEPORT_CHANNEL_MAGIC)
 	sleep(1)
 	if(!M)
 		return

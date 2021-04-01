@@ -236,7 +236,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 
 /obj/machinery/conveyor_switch
 	name = "conveyor switch"
-	desc = "A conveyor control switch."
+	desc = "A conveyor control switch. Use a screwdriver to switch between one-way and two-way."
 	icon = 'icons/obj/recycling.dmi'
 	icon_state = "switch-off"
 	speed_process = TRUE
@@ -333,6 +333,13 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		transfer_fingerprints_to(C)
 		to_chat(user, "<span class='notice'>You detach the conveyor switch.</span>")
 		qdel(src)
+	if (I.tool_behaviour == TOOL_SCREWDRIVER)
+		if (oneway == TRUE)
+			oneway = FALSE
+			to_chat(user, "<span class='notice'>The conveyor switch now operates in two-way</span>")
+		else
+			oneway= TRUE
+			to_chat(user, "<span class='notice'>The conveyor switch now operates in one-way</span>")
 
 /obj/machinery/conveyor_switch/oneway
 	icon_state = "conveyor_switch_oneway"
@@ -346,7 +353,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 
 /obj/item/conveyor_switch_construct
 	name = "conveyor switch assembly"
-	desc = "A conveyor control switch assembly."
+	desc = "A conveyor control switch assembly. Use a screwdriver to switch between one-way and two-way."
 	icon = 'icons/obj/recycling.dmi'
 	icon_state = "switch-off"
 	w_class = WEIGHT_CLASS_BULKY

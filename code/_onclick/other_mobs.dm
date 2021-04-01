@@ -259,3 +259,19 @@
 */
 /mob/dead/new_player/ClickOn()
 	return
+
+
+
+/*
+	Shoepacabras
+*/
+/mob/living/carbon/shoepacabra/UnarmedAttack(atom/A)
+	A.attack_shoepacabra(src)
+
+/atom/proc/attack_shoepacabra(mob/user)
+	var/mob/living/carbon/shoepacabra/S = user
+	if (istype(S) && S.clawed)
+		attack_alien(user)
+		return
+	attack_paw(user)
+	return
