@@ -33,7 +33,8 @@
 	new /obj/item/extinguisher/advanced(src)
 	new /obj/item/storage/photo_album/CE(src)
 	new /obj/item/card/id/departmental_budget/eng(src)
-	
+	new /obj/item/clothing/gloves/color/black/ce(src)
+
 /obj/structure/closet/secure_closet/engineering_electrical
 	name = "electrical supplies locker"
 	req_access = list(ACCESS_ENGINE_EQUIP)

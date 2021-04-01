@@ -35,11 +35,8 @@
 					this["important_info"] = MS.important_info
 				else
 					var/atom/movable/O = spawner_obj
-					if(isslime(O))
-						this["short_desc"] = O.get_spawner_desc()
-						this["flavor_text"] = O.get_spawner_flavour_text()
-					else
-						this["desc"] = O.desc
+					this["short_desc"] = O.get_spawner_desc()
+					this["flavor_text"] = O.get_spawner_flavour_text()
 
 		this["amount_left"] = LAZYLEN(GLOB.mob_spawners[spawner])
 		data["spawners"] += list(this)

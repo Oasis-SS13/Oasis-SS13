@@ -57,3 +57,17 @@
 	caliber = ".50"
 	max_ammo = 7
 	multiple_sprites = 1
+
+/obj/item/ammo_box/magazine/m9x18mm
+	name = "handgun magazine (9x18mm makarov)"
+	icon_state = "45-8"
+	ammo_type = /obj/item/ammo_casing/m9x18mm
+	caliber = "9x18mm"
+	max_ammo = 8
+
+/obj/item/ammo_box/magazine/m9x18mm/update_icon()
+	..()
+	if (ammo_count() > 1)
+		icon_state = "makarov-full"
+	else
+		icon_state = "makarov-0"
