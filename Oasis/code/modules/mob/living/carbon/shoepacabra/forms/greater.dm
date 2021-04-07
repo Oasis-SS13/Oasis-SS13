@@ -6,7 +6,6 @@
 
 	clawed = TRUE
 	can_tackle = TRUE
-	can_aggrograb = TRUE
 
 	shoes_healing_amount = 15
 
