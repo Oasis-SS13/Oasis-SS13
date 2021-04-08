@@ -1,7 +1,7 @@
 {
     "map_name": "FacingWorlds",
     "map_path": "map_files/FacingWorlds",
-    "map_file": "FacingWorlds.dmm",
+    "map_file": "FacingWorlds2.dmm",
 	"default_job_faction": "SVS",
 	"space_ruin_levels": 0,
 	"space_empty_levels": 0
