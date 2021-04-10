@@ -5,6 +5,7 @@
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
 		#include "map_files\Mining\Lavaland.dmm"
+		#include "map_files\Mining\Lavaland-SvS.dmm"
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\Deltastation\DeltaStation2.dmm"
 		#include "map_files\MetaStation\MetaStation.dmm"
@@ -13,6 +14,7 @@
 		#include "map_files\Donutstation\Donutstation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\EndoStation\EndoStation.dmm"
+		#include "map_files\FacingWorlds\FacingWorlds.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

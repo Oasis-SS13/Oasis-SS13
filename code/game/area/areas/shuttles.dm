@@ -138,6 +138,16 @@
 	blob_allowed = FALSE
 	requires_power = TRUE
 
+/area/shuttle/svs/red		// SvS
+	name = "Red Mining Shuttle"
+	blob_allowed = FALSE
+	requires_power = TRUE
+
+/area/shuttle/svs/blue		// SvS
+	name = "Blue Mining Shuttle"
+	blob_allowed = FALSE
+	requires_power = TRUE
+
 /area/shuttle/science
 	name = "Science Shuttle"
 	blob_allowed = FALSE

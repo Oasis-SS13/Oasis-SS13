@@ -1,0 +1,633 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/effect/spawner/structure/window/hollow/survival_pod/directional{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"c" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/emergency,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"d" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/computer/shuttle/svsblue,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"e" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/mask/gas,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/item/tank/internals/emergency_oxygen,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"f" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/item/storage/firstaid/regular,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"g" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"h" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"i" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"j" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/item/stack/ore/iron{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/stack/ore/iron{
+	pixel_x = -2;
+	pixel_y = -8
+	},
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"k" = (
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
+/area/shuttle/science/largeblue)
+"l" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/item/folder/yellow,
+/obj/item/pen,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"m" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/corner,
+/obj/machinery/light/small,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"n" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"o" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/corner{
+	dir = 8
+	},
+/obj/machinery/light/small,
+/obj/item/radio/intercom{
+	pixel_y = -29
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"p" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stock_parts/cell/high,
+/obj/item/screwdriver{
+	pixel_y = 18
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"q" = (
+/obj/machinery/status_display/evac,
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
+/area/shuttle/science/largeblue)
+"r" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/door/airlock/survival_pod/glass{
+	req_one_access_txt = "402"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"s" = (
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 3
+	},
+/obj/item/tank/internals/emergency_oxygen{
+	pixel_x = 3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/clothing/head/hardhat/orange{
+	name = "protective hat";
+	pixel_y = 9
+	},
+/obj/item/clothing/head/hardhat/orange{
+	name = "protective hat";
+	pixel_y = 9
+	},
+/obj/item/clothing/head/hardhat/orange{
+	name = "protective hat";
+	pixel_y = 9
+	},
+/obj/item/clothing/head/hardhat/orange{
+	name = "protective hat";
+	pixel_y = 9
+	},
+/obj/item/clothing/head/hardhat/orange{
+	name = "protective hat";
+	pixel_y = 9
+	},
+/obj/structure/closet/crate/internals,
+/obj/item/pickaxe/emergency,
+/obj/item/pickaxe/emergency,
+/obj/effect/turf_decal/box/white/corners{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"t" = (
+/obj/effect/turf_decal/box/white/corners{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"u" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"v" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/box/white/corners{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"w" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/box/white/corners{
+	dir = 4
+	},
+/obj/structure/ore_box,
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"x" = (
+/obj/effect/turf_decal/box/white/corners{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"y" = (
+/obj/machinery/light/small,
+/obj/effect/turf_decal/box/white/corners,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"z" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/science/largeblue)
+"A" = (
+/obj/machinery/light/small,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/box/white/corners{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"B" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/box/white/corners,
+/turf/open/floor/pod/dark,
+/area/shuttle/science/largeblue)
+"C" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/crowbar/red,
+/obj/item/wrench,
+/obj/item/flashlight,
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"D" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external{
+	name = "Mining Shuttle External Airlock";
+	req_one_access_txt = "402"
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"E" = (
+/obj/machinery/power/apc/highcap{
+	dir = 4;
+	locked = 0;
+	name = "Mining Shuttle APC";
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"F" = (
+/turf/closed/wall/mineral/titanium/survival,
+/area/shuttle/science/largeblue)
+"G" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/science/largeblue)
+"H" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"I" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/open/floor/plating/airless,
+/area/shuttle/science/largeblue)
+"J" = (
+/obj/machinery/door/airlock/external{
+	name = "Mining Shuttle External Airlock";
+	req_one_access_txt = "402"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/docking_port/mobile{
+	dir = 1;
+	dwidth = 3;
+	height = 10;
+	id = "mining";
+	name = "mining shuttle";
+	port_direction = 2;
+	width = 7
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"N" = (
+/obj/effect/spawner/structure/window/hollow/survival_pod/directional{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"Q" = (
+/obj/effect/spawner/structure/window/hollow/survival_pod/directional{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"U" = (
+/obj/effect/spawner/structure/window/hollow/survival_pod/directional{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+"Y" = (
+/obj/effect/spawner/structure/window/hollow/survival_pod/directional{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/science/largeblue)
+
+(1,1,1) = {"
+a
+U
+U
+k
+k
+k
+U
+k
+F
+a
+"}
+(2,1,1) = {"
+b
+Y
+f
+l
+k
+s
+x
+C
+G
+I
+"}
+(3,1,1) = {"
+Y
+c
+g
+m
+q
+t
+y
+k
+k
+k
+"}
+(4,1,1) = {"
+Y
+d
+h
+n
+r
+u
+z
+D
+H
+J
+"}
+(5,1,1) = {"
+Y
+e
+i
+o
+k
+v
+A
+k
+k
+k
+"}
+(6,1,1) = {"
+Q
+Y
+j
+p
+k
+w
+B
+E
+G
+I
+"}
+(7,1,1) = {"
+a
+Q
+N
+k
+k
+k
+N
+k
+F
+a
+"}

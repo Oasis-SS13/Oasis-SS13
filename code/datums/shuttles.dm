@@ -546,6 +546,18 @@
 	suffix = "large"
 	name = "mining shuttle (Large)"
 
+/datum/map_template/shuttle/svs/red			// SvS
+	suffix = "red"
+	name = "red mining shuttle"
+	can_be_bought = FALSE
+	port_id = "svs"
+
+/datum/map_template/shuttle/svs/blue		// SvS
+	suffix = "blue"
+	name = "blue mining shuttle"
+	can_be_bought = FALSE
+	port_id = "svs"
+
 /datum/map_template/shuttle/science
 	port_id = "science"
 	suffix = "outpost"

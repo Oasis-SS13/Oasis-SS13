@@ -28,6 +28,10 @@
 	icon_state = "crowbar_red"
 	force = 8
 
+/obj/item/crowbar/blue
+	icon_state = "crowbar_blue"
+	force = 8
+
 /obj/item/crowbar/brass
 	name = "brass crowbar"
 	desc = "A brass crowbar. It feels faintly warm to the touch."

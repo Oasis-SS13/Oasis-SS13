@@ -1,5 +1,7 @@
-#define ACCESS_SVS_RED 			401
-#define ACCESS_SVS_BLUE			402
+#define ACCESS_SVS_RED 			401	// odd = Red
+#define ACCESS_SVS_BLUE			402 // !odd = Blue
+#define ACCESS_SVS_RADMIRAL 	403
+#define ACCESS_SVS_BADMIRAL		404
 #define SVS_RED_TEAM_ADMIRAL	(1<<13)
 #define SVS_RED_TEAM_MEMBER 	(1<<14)
 #define SVS_BLUE_TEAM_ADMIRAL	(1<<15)
@@ -58,10 +60,10 @@
 	selection_color = "#3532ff"
 	chat_color = "#500bc0"
 
+	access = list(ACCESS_SVS_BADMIRAL, ACCESS_SVS_BLUE)
+
 	outfit = /datum/outfit/job/svs/blue/admiral
 
-/datum/job/svsblue/admiral/get_access()
-	return (get_all_accesses() | ACCESS_SVS_BLUE)
 
 ///// RED TEAM /////
 
@@ -117,5 +119,4 @@
 
 	outfit = /datum/outfit/job/svs/red/admiral
 
-/datum/job/svsred/admiral/get_access()
-	return (get_all_accesses() | ACCESS_SVS_RED)
+	access = list(ACCESS_SVS_RADMIRAL, ACCESS_SVS_RED)
