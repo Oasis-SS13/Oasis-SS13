@@ -43,6 +43,9 @@
 	if(.) //damage was dealt
 		new /obj/effect/temp_visual/impact_effect/ion(loc)
 
+/obj/structure/emergency_shield/red
+	icon_state = "shield-red"
+
 /obj/structure/emergency_shield/sanguine
 	name = "sanguine barrier"
 	desc = "A potent shield summoned by cultists to defend their rites."
@@ -79,6 +82,7 @@
 	var/list/deployed_shields
 	var/locked = FALSE
 	var/shield_range = 4
+	var/is_red = 0
 
 /obj/machinery/shieldgen/Initialize(mapload)
 	. = ..()
@@ -95,11 +99,16 @@
 	active = TRUE
 	update_icon()
 	move_resist = INFINITY
-
-	for(var/turf/open/space/target_tile in RANGE_TURFS(shield_range, src))
-		if(!(locate(/obj/structure/emergency_shield) in target_tile))
-			if(!(stat & BROKEN) || prob(33))
-				deployed_shields += new /obj/structure/emergency_shield(target_tile)
+	if(is_red == 0)
+		for(var/turf/open/space/target_tile in RANGE_TURFS(shield_range, src))
+			if(!(locate(/obj/structure/emergency_shield) in target_tile))
+				if(!(stat & BROKEN) || prob(33))
+					deployed_shields += new /obj/structure/emergency_shield(target_tile)
+	if(is_red == 1)
+		for(var/turf/open/space/target_tile in RANGE_TURFS(shield_range, src))
+			if(!(locate(/obj/structure/emergency_shield/red) in target_tile))
+				if(!(stat & BROKEN) || prob(33))
+					deployed_shields += new /obj/structure/emergency_shield/red(target_tile)
 
 /obj/machinery/shieldgen/proc/shields_down()
 	active = FALSE
@@ -211,6 +220,9 @@
 		icon_state = (stat & BROKEN) ? "shieldonbr":"shieldon"
 	else
 		icon_state = (stat & BROKEN) ? "shieldoffbr":"shieldoff"
+
+/obj/machinery/shieldgen/red
+	is_red = 1
 
 #define ACTIVE_SETUPFIELDS 1
 #define ACTIVE_HASFIELDS 2

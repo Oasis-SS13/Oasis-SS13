@@ -225,6 +225,10 @@
 /obj/item/ammo_box/magazine/m10mm,
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
+"cQ" = (
+/obj/structure/ore_box,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered)
 "cU" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -251,7 +255,7 @@
 /obj/machinery/sleeper/syndie{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "dF" = (
 /turf/open/floor/plating,
@@ -298,10 +302,12 @@
 /obj/item/gps{
 	name = "Point Of Interest"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "dZ" = (
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "eh" = (
 /obj/item/pickaxe/diamond,
@@ -402,7 +408,7 @@
 /area/ruin/space/djstation)
 "eG" = (
 /obj/structure/bed/roller,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "eP" = (
 /obj/structure/table/reinforced,
@@ -410,10 +416,16 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "eW" = (
 /turf/open/floor/plating,
+/area/awaymission/spacebattle/syndicate1)
+"eY" = (
+/obj/structure/fluff/broken_flooring{
+	icon_state = "pile"
+	},
+/turf/open/floor/plating/asteroid/airless,
 /area/awaymission/spacebattle/syndicate1)
 "fd" = (
 /obj/effect/turf_decal/tile/blue{
@@ -437,17 +449,17 @@
 /area/ruin/space/djstation)
 "fv" = (
 /obj/machinery/computer/mech_bay_power_console,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "fG" = (
 /obj/mecha/combat/gygax,
-/turf/open/floor/mech_bay_recharge_floor,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "fL" = (
 /obj/machinery/mech_bay_recharge_port{
 	dir = 8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "fS" = (
 /obj/structure/window/reinforced{
@@ -462,7 +474,7 @@
 /area/awaymission/spacebattle/cruiser)
 "fU" = (
 /obj/machinery/recharge_station,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "gk" = (
 /obj/effect/turf_decal/stripes/line{
@@ -494,11 +506,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/effect/mob_spawn/human/nanotrasensoldier,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
 "hf" = (
 /obj/structure/closet/syndicate/personal,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "hn" = (
 /obj/structure/table/reinforced,
@@ -511,7 +524,7 @@
 	pixel_y = 4
 	},
 /obj/item/grenade/plastic/c4,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "hC" = (
 /obj/structure/shuttle/engine/propulsion,
@@ -526,7 +539,7 @@
 /obj/item/grenade/plastic/c4,
 /obj/item/grenade/plastic/c4,
 /obj/item/grenade/plastic/c4,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "hO" = (
 /obj/structure/window/reinforced,
@@ -549,7 +562,7 @@
 /area/ruin/space/djstation)
 "hW" = (
 /obj/structure/closet/crate/freezer/blood,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "hX" = (
 /obj/structure/table/reinforced,
@@ -558,7 +571,7 @@
 	pixel_y = 3
 	},
 /obj/item/storage/box/medipens,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "ib" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -577,17 +590,17 @@
 "ic" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/ballistic/automatic/laser,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "io" = (
 /obj/structure/table/reinforced,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "ip" = (
 /obj/structure/table/reinforced,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/spacebattle/syndicate1)
 "ir" = (
 /obj/effect/turf_decal/bot_white,
@@ -729,7 +742,8 @@
 /obj/structure/rack,
 /obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/white/side{
-	dir = 10
+	dir = 10;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "jR" = (
@@ -1085,6 +1099,10 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/cafeteria,
 /area/ruin/space/djstation)
+"ou" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/awaymission/spacebattle/syndicate1)
 "ow" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -1309,6 +1327,10 @@
 /obj/item/grenade/syndieminibomb,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/turretedoutpost)
+"qY" = (
+/obj/item/pickaxe,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered)
 "ra" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -1405,6 +1427,10 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"rY" = (
+/obj/effect/mob_spawn/human/corpse/syndicatesoldier,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/turretedoutpost)
 "sb" = (
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
@@ -1415,8 +1441,8 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "sm" = (
 /obj/structure/lattice,
-/turf/template_noop,
-/area/template_noop)
+/turf/open/floor/plating/asteroid/airless,
+/area/awaymission/spacebattle/syndicate1)
 "sn" = (
 /obj/machinery/door/airlock/external{
 	name = "Emegency Shuttle External Airlock"
@@ -1491,6 +1517,14 @@
 /obj/item/implanter/freedom,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered/no_grav)
+"tn" = (
+/obj/structure/lattice,
+/obj/structure/fluff/broken_flooring{
+	dir = 8;
+	icon_state = "pile"
+	},
+/turf/template_noop,
+/area/space/nearstation)
 "to" = (
 /obj/structure/rack,
 /obj/item/crowbar/red,
@@ -1660,7 +1694,7 @@
 "wg" = (
 /obj/structure/grille,
 /turf/open/floor/plating/airless,
-/area/template_noop)
+/area/space/nearstation)
 "wh" = (
 /obj/effect/turf_decal/bot_white,
 /obj/structure/closet/firecloset,
@@ -1675,6 +1709,9 @@
 /obj/structure/lattice,
 /turf/template_noop,
 /area/ruin/unpowered)
+"wk" = (
+/turf/open/floor/plating/asteroid/airless,
+/area/awaymission/spacebattle/syndicate1)
 "wo" = (
 /obj/machinery/light/broken{
 	dir = 8
@@ -1726,6 +1763,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/turretedoutpost)
+"xz" = (
+/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg2"
+	},
+/area/awaymission/spacebattle/cruiser)
 "xB" = (
 /obj/structure/window/reinforced,
 /obj/structure/rack,
@@ -2089,7 +2132,8 @@
 	},
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/white/side{
-	dir = 6
+	dir = 6;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "BV" = (
@@ -2245,6 +2289,10 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/djstation)
+"Ds" = (
+/obj/machinery/iv_drip,
+/turf/open/floor/mineral/plastitanium/red,
+/area/awaymission/spacebattle/syndicate1)
 "Dy" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/airless,
@@ -2280,7 +2328,7 @@
 /area/space/nearstation)
 "DS" = (
 /obj/effect/turf_decal/raven/nine,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "DW" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2339,6 +2387,9 @@
 	},
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
+"Ff" = (
+/turf/closed/mineral/random/high_chance,
+/area/awaymission/spacebattle/syndicate1)
 "Fk" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -2407,7 +2458,7 @@
 	},
 /obj/effect/turf_decal/bot_white,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Gk" = (
 /obj/machinery/light,
@@ -2447,7 +2498,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Gy" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2505,15 +2556,15 @@
 /area/space/nearstation)
 "Hm" = (
 /obj/effect/turf_decal/raven/five,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Hs" = (
 /obj/effect/turf_decal/raven/six,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Hw" = (
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "HK" = (
 /obj/structure/window/reinforced,
@@ -2601,7 +2652,7 @@
 /obj/item/restraints/handcuffs,
 /obj/item/reagent_containers/food/snacks/chocolatebar,
 /obj/item/assembly/flash,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "IV" = (
 /obj/effect/turf_decal/bot,
@@ -2611,7 +2662,7 @@
 /area/awaymission/spacebattle/cruiser)
 "Jd" = (
 /obj/effect/turf_decal/raven/one,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Jg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2627,11 +2678,11 @@
 	req_access_txt = "19"
 	},
 /obj/effect/turf_decal/raven/two,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Jq" = (
 /obj/effect/turf_decal/raven/three,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "Js" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2673,7 +2724,9 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
 "Kg" = (
-/turf/open/floor/plasteel/white/side,
+/turf/open/floor/plasteel/white/side{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Kk" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2706,7 +2759,7 @@
 /obj/item/clothing/head/hardhat/red,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/extinguisher,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/dark/airless,
 /area/awaymission/spacebattle/cruiser)
 "KT" = (
 /obj/effect/turf_decal/bot,
@@ -2775,7 +2828,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Lt" = (
 /obj/effect/turf_decal/bot_white,
@@ -2798,7 +2853,9 @@
 /obj/machinery/status_display/evac{
 	pixel_y = 32
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "LF" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2822,7 +2879,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "LO" = (
 /obj/structure/table/glass,
@@ -2843,7 +2902,8 @@
 "LX" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/plasteel/white/side{
-	dir = 9
+	dir = 9;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Mb" = (
@@ -2872,7 +2932,8 @@
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
 /turf/open/floor/plasteel/white/side{
-	dir = 1
+	dir = 1;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Mf" = (
@@ -2899,7 +2960,8 @@
 /obj/item/surgicaldrill,
 /obj/item/cautery,
 /turf/open/floor/plasteel/white/side{
-	dir = 5
+	dir = 5;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Mt" = (
@@ -3028,6 +3090,10 @@
 	},
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
+"Oh" = (
+/obj/structure/ore_box,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "Ok" = (
 /obj/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
@@ -3063,6 +3129,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ruin/space/djstation)
 "Oz" = (
@@ -3079,7 +3146,9 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "OP" = (
 /obj/structure/closet/syndicate/personal,
@@ -3101,7 +3170,9 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Pa" = (
 /turf/open/floor/plasteel/airless,
@@ -3237,7 +3308,8 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white/side{
-	dir = 9
+	dir = 9;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "PW" = (
@@ -3245,7 +3317,8 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/white/corner{
-	dir = 1
+	dir = 1;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Qc" = (
@@ -3315,7 +3388,7 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "Qx" = (
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/airless,
 /area/awaymission/spacebattle/cruiser)
 "QE" = (
 /obj/structure/fluff/broken_flooring{
@@ -3432,7 +3505,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/awaymission/spacebattle/cruiser)
 "RU" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -3585,7 +3658,8 @@
 /area/awaymission/spacebattle/cruiser)
 "Ty" = (
 /turf/open/floor/plasteel/white/side{
-	dir = 8
+	dir = 8;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "TA" = (
@@ -3595,7 +3669,8 @@
 	},
 /obj/machinery/stasis,
 /turf/open/floor/plasteel/white/side{
-	dir = 4
+	dir = 4;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "TD" = (
@@ -3614,6 +3689,7 @@
 	dir = 1
 	},
 /obj/machinery/holopad,
+/obj/effect/mob_spawn/human/nanotrasensoldier,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/spacebattle/cruiser)
 "TI" = (
@@ -3711,7 +3787,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "UR" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -3734,7 +3812,9 @@
 /area/awaymission/spacebattle/cruiser)
 "UW" = (
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "UY" = (
 /obj/effect/decal/cleanable/vomit/old,
@@ -3781,7 +3861,9 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "VQ" = (
 /obj/structure/window/reinforced{
@@ -3818,7 +3900,8 @@
 /obj/machinery/iv_drip,
 /obj/structure/bed/roller,
 /turf/open/floor/plasteel/white/side{
-	dir = 10
+	dir = 10;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Wl" = (
@@ -3830,7 +3913,8 @@
 /area/awaymission/spacebattle/cruiser)
 "Wm" = (
 /turf/open/floor/plasteel/white/corner{
-	dir = 8
+	dir = 8;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "Wn" = (
@@ -3847,7 +3931,9 @@
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
 "Wp" = (
-/turf/open/floor/plasteel/white/corner,
+/turf/open/floor/plasteel/white/corner{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Wu" = (
 /obj/structure/window/reinforced,
@@ -3865,9 +3951,14 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
+"Ww" = (
+/obj/structure/girder,
+/turf/open/floor/plating/airless,
+/area/awaymission/spacebattle/cruiser)
 "WC" = (
 /turf/open/floor/plasteel/white/side{
-	dir = 6
+	dir = 6;
+	initial_gas_mix = "TEMP=2.7"
 	},
 /area/awaymission/spacebattle/cruiser)
 "WF" = (
@@ -3890,6 +3981,10 @@
 /mob/living/simple_animal/hostile/retaliate/ghost,
 /turf/open/floor/plasteel/airless/cafeteria,
 /area/ruin/unpowered)
+"WH" = (
+/obj/item/pickaxe,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "WL" = (
 /obj/machinery/vending/snack,
 /obj/machinery/light/small{
@@ -4029,7 +4124,9 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "XZ" = (
 /obj/effect/spawner/lootdrop/crate_spawner,
@@ -4037,7 +4134,9 @@
 /area/ruin/space/djstation)
 "Yg" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Yp" = (
 /obj/effect/turf_decal/stripes/line{
@@ -4046,7 +4145,9 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/open/floor/mineral/plastitanium/red/brig,
+/turf/open/floor/mineral/plastitanium/red/brig{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/awaymission/spacebattle/cruiser)
 "Yq" = (
 /turf/closed/wall/mineral/plastitanium,
@@ -4832,10 +4933,10 @@ bJ
 aL
 aL
 du
-bK
-bK
-bK
-bK
+be
+be
+be
+be
 du
 aL
 aL
@@ -5033,16 +5134,16 @@ bK
 bK
 be
 aL
+be
 bK
 bK
 bK
 bK
-bK
-bK
+be
 aL
 it
 iI
-iI
+it
 be
 be
 jH
@@ -5456,8 +5557,8 @@ be
 md
 mx
 aL
-aL
-aL
+be
+be
 aH
 eW
 Rh
@@ -5644,7 +5745,7 @@ bK
 bK
 bK
 bK
-hG
+Ds
 aL
 iF
 bK
@@ -5658,10 +5759,10 @@ be
 be
 mb
 aL
-aL
-aL
+Ff
+be
 sm
-Rh
+ou
 Rh
 Rh
 Rh
@@ -5859,11 +5960,11 @@ be
 be
 ju
 aL
-Rh
-Rh
-Rh
-Rh
-Rh
+Ff
+Ff
+Ff
+Ff
+wk
 Rh
 Rh
 Rh
@@ -6061,11 +6162,11 @@ be
 be
 eW
 aL
-Rh
-Rh
-Rh
-Rh
-Rh
+Ff
+Ff
+Ff
+Ff
+wk
 Rh
 Rh
 Rh
@@ -6263,11 +6364,11 @@ bK
 bK
 bK
 bJ
-Rh
-Rh
-Rh
-Rh
-Rh
+Ff
+Ff
+Ff
+Ff
+wk
 Rh
 Rh
 Rh
@@ -6465,10 +6566,10 @@ bK
 ju
 eW
 mE
-Rh
-Rh
-Rh
-Rh
+Ff
+Ff
+Ff
+wk
 Rh
 Rh
 Rh
@@ -6666,11 +6767,11 @@ aL
 eW
 eW
 jB
-mP
-Rh
-Rh
-Rh
-Rh
+eY
+Ff
+Ff
+wk
+wk
 Rh
 Rh
 Rh
@@ -6869,7 +6970,9 @@ Fq
 Fq
 Fq
 Fq
-Fq
+sm
+wk
+wk
 Rh
 Rh
 Rh
@@ -6896,9 +6999,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
-Rh
+yI
 bv
 bv
 bv
@@ -7100,15 +7201,15 @@ Rh
 Rh
 Rh
 Rh
-Rh
-bv
+yI
+yI
 bv
 bv
 bv
 Xc
 Xc
 Xc
-Rh
+bv
 Rh
 Rh
 Rh
@@ -7302,7 +7403,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 yI
 yI
 yI
@@ -7473,8 +7574,8 @@ Fq
 ky
 Fq
 Fq
+tn
 Fq
-Fq
 Rh
 Rh
 Rh
@@ -7504,7 +7605,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 yI
 yI
 yI
@@ -7659,12 +7760,12 @@ bK
 bK
 be
 aL
+be
 bK
 bK
 bK
 bK
-bK
-bK
+be
 aL
 it
 be
@@ -7712,12 +7813,12 @@ bv
 bv
 yI
 yI
-yI
+Oh
 Xc
 bv
 bv
 bv
-Rh
+bv
 Rh
 Rh
 Rh
@@ -7914,12 +8015,12 @@ bv
 bv
 yI
 yI
-yI
+WH
 bv
 Xc
 bv
 bv
-Rh
+bv
 Rh
 Rh
 Rh
@@ -8121,7 +8222,7 @@ Xc
 Xc
 bv
 bv
-Rh
+bv
 Rh
 Rh
 Rh
@@ -8359,11 +8460,12 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 yI
 Xc
 Xc
 Xc
+yI
 Rh
 Rh
 Rh
@@ -8380,14 +8482,13 @@ Rh
 Rh
 Rh
 Rh
+Fq
+Fq
 Rh
-sm
-sm
-Rh
-sm
+Fq
 Rh
 Rh
-sm
+Fq
 Rh
 Rh
 Rh
@@ -8561,7 +8662,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 Xc
 Xc
 Xc
@@ -9318,7 +9419,7 @@ Rh
 Rh
 Rh
 Rh
-bv
+Rh
 bv
 bv
 bv
@@ -9775,7 +9876,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 Xc
 Xc
 yI
@@ -14113,7 +14214,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 yI
 yI
@@ -14315,7 +14416,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 Xc
 Xc
@@ -14517,7 +14618,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 Xc
 Xc
@@ -14641,7 +14742,7 @@ bv
 Xc
 Xc
 Xc
-Rh
+bv
 Rh
 Rh
 Rh
@@ -14718,8 +14819,8 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
+yI
+yI
 bv
 bv
 bv
@@ -14746,7 +14847,7 @@ kB
 kF
 kN
 kP
-kP
+rY
 kF
 kF
 kF
@@ -14843,7 +14944,7 @@ yI
 bv
 bv
 bv
-Rh
+bv
 Rh
 Rh
 Rh
@@ -14920,8 +15021,8 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
+yI
+yI
 bv
 bv
 bv
@@ -15045,7 +15146,7 @@ yI
 yI
 yI
 bv
-Rh
+bv
 Rh
 Rh
 Rh
@@ -15122,8 +15223,8 @@ Rh
 Rh
 Rh
 yI
-Rh
-Rh
+yI
+yI
 Xc
 bv
 bv
@@ -15325,7 +15426,7 @@ Rh
 Rh
 yI
 yI
-Rh
+yI
 Xc
 Xc
 Xc
@@ -15445,7 +15546,7 @@ Rh
 Rh
 Rh
 Rh
-yI
+Rh
 yI
 yI
 bv
@@ -15526,8 +15627,8 @@ Rh
 Rh
 Rh
 Rh
-Rh
-Rh
+yI
+yI
 Xc
 Xc
 Xc
@@ -15729,7 +15830,7 @@ Rh
 yI
 Rh
 Rh
-Rh
+yI
 bv
 bv
 bv
@@ -15931,7 +16032,7 @@ yI
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 bv
 bv
@@ -16133,7 +16234,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 Xc
 bv
@@ -16335,7 +16436,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 yI
 yI
 bv
@@ -17395,9 +17496,9 @@ yI
 yI
 yI
 bv
-bv
 Xc
-bv
+Xc
+Xc
 Xc
 Xc
 Xc
@@ -17597,8 +17698,8 @@ bv
 yI
 yI
 bv
-bv
-bv
+Xc
+Xc
 Xc
 Xc
 bv
@@ -17842,7 +17943,7 @@ KT
 rk
 rk
 Ua
-KV
+Yq
 Rh
 Rh
 Rh
@@ -17926,7 +18027,7 @@ Rh
 Rh
 tt
 tt
-tt
+cQ
 kV
 KW
 KW
@@ -18000,7 +18101,7 @@ yI
 yI
 yI
 yI
-bv
+yI
 bv
 bv
 bv
@@ -18202,7 +18303,7 @@ yI
 yI
 yI
 yI
-bv
+yI
 yI
 bv
 bv
@@ -18398,13 +18499,13 @@ yI
 yI
 bv
 bv
-bv
-bv
-yI
-yI
-yI
-yI
 Xc
+Xc
+WH
+Oh
+yI
+yI
+yI
 yI
 bv
 Rh
@@ -18425,7 +18526,7 @@ Rh
 Rh
 Rh
 Rh
-IA
+Ww
 Lp
 dH
 dZ
@@ -18531,7 +18632,7 @@ kV
 Rh
 kV
 tt
-tt
+qY
 KW
 KW
 kV
@@ -18600,10 +18701,10 @@ yI
 bv
 bv
 bv
-bv
-bv
-bv
-bv
+Xc
+Xc
+Xc
+Xc
 bv
 bv
 yI
@@ -18629,7 +18730,7 @@ Fq
 rk
 rk
 LB
-Oz
+xz
 dZ
 dZ
 Yg
@@ -18801,8 +18902,8 @@ yI
 yI
 bv
 bv
-bv
-bv
+Xc
+Xc
 Xc
 Xc
 Xc
@@ -18832,7 +18933,7 @@ Gf
 rk
 LM
 OI
-Eh
+jI
 UW
 Yp
 Ua
@@ -19434,7 +19535,7 @@ Rh
 Rh
 Rh
 Fq
-Eh
+jI
 Jd
 LR
 Pf
@@ -19485,8 +19586,8 @@ bv
 bv
 Xc
 Xc
-yI
-yI
+bv
+bv
 yI
 yI
 yI
@@ -19687,7 +19788,7 @@ Xc
 bv
 Xc
 Xc
-yI
+bv
 yI
 yI
 yI
@@ -19889,7 +19990,7 @@ Xc
 Xc
 bv
 bv
-yI
+bv
 yI
 yI
 yI
@@ -20039,7 +20140,7 @@ Rh
 Rh
 Rh
 Fq
-Eh
+jI
 Hw
 KK
 rk
@@ -20650,7 +20751,7 @@ Fq
 rk
 Me
 Qx
-Eh
+jI
 Qx
 Kg
 Li
@@ -20695,8 +20796,8 @@ Rh
 Rh
 Rh
 yI
-yI
-yI
+bv
+bv
 yI
 Rh
 Rh
@@ -20851,8 +20952,8 @@ Rh
 Rh
 IA
 Mg
-Eh
-Qx
+jI
+jI
 Wp
 BO
 Ua
@@ -20897,7 +20998,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+bv
 yI
 Rh
 Rh
@@ -21052,7 +21153,7 @@ Rh
 Rh
 Rh
 KV
-Eh
+jI
 QE
 TA
 WC
@@ -21256,7 +21357,7 @@ Rh
 Rh
 Rh
 Rh
-IA
+Ww
 ki
 rk
 rk
@@ -21460,7 +21561,7 @@ Rh
 Rh
 KV
 oC
-IA
+Ww
 rk
 IV
 Us
@@ -21478,15 +21579,15 @@ IV
 rk
 rk
 Ua
-KV
+Yq
 Rh
 Rh
 Rh
 Rh
 Rh
 bv
-yI
-yI
+Xc
+Xc
 yI
 yI
 yI
@@ -21663,7 +21764,7 @@ Rh
 Rh
 Rh
 Rh
-IA
+Ww
 rk
 Ry
 rN
@@ -21685,7 +21786,7 @@ Rh
 Rh
 Rh
 Rh
-Rh
+yI
 bv
 Xc
 Xc
