@@ -3618,7 +3618,7 @@
 "Vl" = (
 /obj/item/pickaxe,
 /turf/open/floor/plating/asteroid/airless,
-/area/ruin/unpowered/no_grav
+/area/ruin/unpowered/no_grav)
 "Vm" = (
 /obj/item/stack/tile/plasteel,
 /turf/open/floor/plasteel,
