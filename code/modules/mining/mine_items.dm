@@ -97,6 +97,20 @@
 	possible_destinations = "science_station;science_outpost"
 	no_destination_swap = 1
 
+// SvS
+
+/obj/machinery/computer/shuttle/svs/red
+	circuit = /obj/item/circuitboard/computer/red_mining_shuttle
+	name = "red mining shuttle console"
+	shuttleId = "red"
+	possible_destinations = "red_home;red_away"
+
+/obj/machinery/computer/shuttle/svs/blue
+	circuit = /obj/item/circuitboard/computer/blue_mining_shuttle
+	name = "blue mining shuttle console"
+	shuttleId = "blue"
+	possible_destinations = "blue_home;blue_away"
+
 /**********************Mining car (Crate like thing, not the rail car)**************************/
 
 /obj/structure/closet/crate/miningcar

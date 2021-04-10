@@ -34,7 +34,9 @@ GLOBAL_LIST_INIT(supply_positions, list(
 	"Head of Personnel",
 	"Quartermaster",
 	"Cargo Technician",
-	"Shaft Miner"))
+	"Shaft Miner",
+	"Blue Team Miner",
+	"Red Team Miner"))
 
 
 GLOBAL_LIST_INIT(civilian_positions, list(
@@ -57,8 +59,8 @@ GLOBAL_LIST_INIT(security_positions, list(
 	"Security Officer",
 	"Brig Physician",
 	"Deputy",
-	"Red Team Member", // svs
-	"Blue Team Member")) // ditto
+	"Red Team Member", // svsS
+	"Blue Team Member"))
 
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(

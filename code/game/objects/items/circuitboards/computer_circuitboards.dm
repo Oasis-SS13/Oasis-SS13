@@ -524,6 +524,16 @@
 	icon_state = "supply"
 	build_path = /obj/machinery/computer/shuttle/mining
 
+/obj/item/circuitboard/computer/blue_mining_shuttle
+	name = "blue mining shuttle console (Computer Board)"
+	icon_state = "supply"
+	build_path = /obj/machinery/computer/shuttle/svs/blue
+
+/obj/item/circuitboard/computer/red_mining_shuttle
+	name = "red mining shuttle console (Computer Board)"
+	icon_state = "supply"
+	build_path = /obj/machinery/computer/shuttle/svs/red
+
 /obj/item/circuitboard/computer/science_shuttle
 	name = "science shuttle console (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/science

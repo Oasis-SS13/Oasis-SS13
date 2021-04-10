@@ -17,7 +17,7 @@ GLOBAL_VAR_INIT(svs_team_blue_credits, 5000)
 	name = "cargo teleporter"
 	desc = "State-of-the-art teleporter machine, designed to teleport various crates between pre-set locations. Due to safety concerns, is unable to teleport organic matter."
 	var/team = ""
-	
+
 
 // sorry no cargo for now;
 // tight deadline. maybe in the future
@@ -32,6 +32,7 @@ GLOBAL_VAR_INIT(svs_team_blue_credits, 5000)
 
 /obj/machinery/svs/nexus/Destroy()
 	to_chat(world, "<span class='command_headset>The [src] has been destroyed!</span>")
+	TGS_NOTIFY_ADMINS("command_headset>The [src] has been destroyed!")
 	return ..()
 
 /obj/machinery/svs/nexus/red

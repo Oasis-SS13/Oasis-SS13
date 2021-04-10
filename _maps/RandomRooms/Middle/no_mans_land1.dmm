@@ -560,6 +560,10 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
+"fN" = (
+/obj/effect/decal/cleanable/xenoblood/xgibs/up,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "fR" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
@@ -713,6 +717,10 @@
 "hx" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/unpowered/no_grav)
+"hC" = (
+/mob/living/simple_animal/hostile/retaliate/poison/snake,
+/turf/open/floor/plasteel/airless/cafeteria,
+/area/ruin/unpowered)
 "hH" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -919,6 +927,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/listeningstation)
+"jN" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "jQ" = (
 /obj/machinery/computer/camera_advanced{
 	dir = 4
@@ -1018,6 +1030,10 @@
 	dir = 10
 	},
 /area/ruin/space/has_grav/listeningstation)
+"lr" = (
+/obj/structure/fireaxecabinet,
+/turf/closed/wall,
+/area/ruin/unpowered)
 "lt" = (
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg1"
@@ -1277,6 +1293,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/listeningstation)
+"oN" = (
+/obj/item/clothing/suit/xenos,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "oT" = (
 /obj/machinery/door/airlock,
 /turf/open/floor/plasteel,
@@ -1295,6 +1315,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/powered)
+"pd" = (
+/obj/structure/lattice,
+/obj/structure/firelock_frame/window,
+/turf/open/space/basic,
+/area/space/nearstation)
 "ph" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -1545,6 +1570,10 @@
 /obj/machinery/suit_storage_unit/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/listeningstation)
+"rO" = (
+/obj/effect/decal/cleanable/xenoblood/xgibs/limb,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "rQ" = (
 /obj/machinery/power/solar_control,
 /obj/structure/cable/yellow,
@@ -1724,6 +1753,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/powered)
+"tL" = (
+/obj/machinery/syndicatebomb/empty,
+/turf/open/floor/plasteel/airless,
+/area/ruin/unpowered)
 "tM" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -1948,6 +1981,10 @@
 "wF" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/powered)
+"wH" = (
+/obj/item/pickaxe/mini,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "wS" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -2107,6 +2144,9 @@
 	icon_state = "damaged3"
 	},
 /area/ruin/powered)
+"yP" = (
+/turf/open/space/basic,
+/area/ruin/unpowered/no_grav)
 "yT" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2702,6 +2742,11 @@
 /obj/item/clothing/accessory/holster,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/listeningstation)
+"Ik" = (
+/obj/structure/table,
+/obj/item/toy/plush/snakeplushie,
+/turf/open/floor/plasteel/airless/cafeteria,
+/area/ruin/unpowered)
 "Ir" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 4;
@@ -2723,6 +2768,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/powered)
+"IC" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "IM" = (
 /turf/closed/wall,
 /area/ruin/unpowered)
@@ -2966,6 +3015,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/ruin/powered)
+"MV" = (
+/obj/item/clothing/head/drfreezehat,
+/turf/open/floor/plasteel/airless,
+/area/ruin/unpowered)
 "MZ" = (
 /obj/item/stack/sheet/mineral/plastitanium,
 /turf/open/floor/plating/asteroid/airless,
@@ -3551,6 +3604,9 @@
 /obj/item/clothing/shoes/sneakers/black,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/powered)
+"Vl" = (
+/turf/open/floor/plating/asteroid/airless,
+/area/space)
 "Vm" = (
 /obj/item/stack/tile/plasteel,
 /turf/open/floor/plasteel,
@@ -3747,6 +3803,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
+"XS" = (
+/obj/item/clothing/head/bomb_hood,
+/obj/item/clothing/suit/bomb_suit,
+/turf/open/floor/plating/asteroid/airless,
+/area/ruin/unpowered/no_grav)
 "XT" = (
 /obj/structure/lattice,
 /obj/structure/fluff/broken_flooring{
@@ -8178,7 +8239,7 @@ oE
 IM
 je
 jd
-Xd
+Ik
 Xd
 nc
 gm
@@ -8583,7 +8644,7 @@ IM
 ld
 jd
 jd
-jd
+hC
 Cs
 rx
 gm
@@ -9012,7 +9073,7 @@ QV
 QV
 QV
 QV
-Mz
+XS
 Mz
 Mz
 Mz
@@ -9383,7 +9444,7 @@ Ng
 DN
 IM
 IM
-IM
+lr
 pL
 pL
 pL
@@ -9587,7 +9648,7 @@ gm
 Dw
 IM
 pL
-pL
+MV
 pL
 og
 Ch
@@ -9799,7 +9860,7 @@ gm
 wX
 eV
 Gl
-Rh
+pd
 jD
 Ng
 Ng
@@ -10395,7 +10456,7 @@ Rh
 gm
 IM
 pL
-pL
+tL
 pL
 IM
 gm
@@ -13447,7 +13508,7 @@ QV
 QV
 QV
 Mz
-Mz
+oN
 Mz
 QV
 QV
@@ -15063,7 +15124,7 @@ Mz
 Mz
 Mz
 Mz
-Mz
+fN
 Mz
 QV
 QV
@@ -15659,7 +15720,7 @@ QV
 Mz
 Mz
 Mz
-Mz
+IC
 QV
 QV
 QV
@@ -16473,7 +16534,7 @@ QV
 Mz
 QV
 Mz
-Mz
+rO
 QV
 Mz
 Mz
@@ -19884,7 +19945,7 @@ QV
 QV
 QV
 Mz
-Mz
+jN
 QV
 QV
 QV
@@ -20078,7 +20139,7 @@ Ng
 Ng
 "}
 (81,1,1) = {"
-QV
+Mz
 QV
 QV
 QV
@@ -20281,15 +20342,15 @@ Ng
 "}
 (82,1,1) = {"
 Mz
-QV
+Mz
 QV
 QV
 QV
 QV
 Mz
+wH
 Mz
-QV
-QV
+Mz
 QV
 QV
 QV
@@ -20482,17 +20543,17 @@ Ng
 Ng
 "}
 (83,1,1) = {"
+yP
+Mz
 Mz
 QV
 QV
 QV
-QV
-QV
 Mz
 QV
 QV
-QV
-QV
+Mz
+Mz
 QV
 QV
 QV
@@ -20684,18 +20745,18 @@ Ng
 Ng
 "}
 (84,1,1) = {"
-Mz
-QV
-QV
-QV
+yP
 Mz
 Mz
 Mz
 Mz
 QV
+Mz
+Mz
 QV
 QV
 QV
+Mz
 QV
 QV
 QV
@@ -20886,10 +20947,10 @@ Ng
 Ng
 "}
 (85,1,1) = {"
+yP
+yP
 Mz
 Mz
-QV
-QV
 Mz
 Mz
 Mz
@@ -21089,12 +21150,12 @@ Ng
 "}
 (86,1,1) = {"
 Ng
+yP
+yP
+yP
 Mz
-Mz
-Mz
-Mz
-Ng
-Ng
+Vl
+Vl
 Mz
 QV
 QV
@@ -21296,7 +21357,7 @@ Ng
 Ng
 Ng
 Ng
-Ng
+Vl
 Mz
 Mz
 QV

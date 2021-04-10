@@ -9,6 +9,10 @@
 	desc = "A keyring with a small steel key, and a rubber stun baton accessory."
 	icon_state = "keysec"
 
+/obj/item/key/security/blue
+	desc = "A keyring with a small steel key, and a rubber stun baton accessory."
+	icon_state = "keysecblue"
+
 /obj/item/key/janitor
 	desc = "A keyring with a small steel key, and a pink fob reading \"Pussy Wagon\"."
 	icon_state = "keyjanitor"
