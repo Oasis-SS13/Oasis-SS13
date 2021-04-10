@@ -2,7 +2,7 @@
 
 /datum/gear/accessory
 	subtype_path = /datum/gear/accessory
-	slot = SLOT_NECK
+	slot = ITEM_SLOT_NECK
 	sort_category = "Accessories"
 
 /datum/gear/accessory/scarf
@@ -37,8 +37,18 @@
 	cost = 1200
 
 /datum/gear/accessory/armband_red
-	display_name = "armband"
+	display_name = "armband, red"
 	path = /obj/item/clothing/accessory/armband
+	cost = 1000
+
+/datum/gear/accessory/armband_blu
+	display_name = "armband, blue"
+	path = /obj/item/clothing/accessory/armband/blue
+	cost = 1000
+
+/datum/gear/accessory/armband_grn
+	display_name = "armband, green"
+	path = /obj/item/clothing/accessory/armband/green
 	cost = 1000
 
 //ties
@@ -88,19 +98,19 @@
 
 /datum/gear/accessory/eyepatch
 	display_name = "eyepatch"
-	slot = SLOT_GLASSES
+	slot = ITEM_SLOT_EYES
 	path = /obj/item/clothing/glasses/eyepatch
 	cost = 1200
 
 /datum/gear/accessory/monocle
 	display_name = "monocle"
-	slot = SLOT_GLASSES
+	slot = ITEM_SLOT_EYES
 	path = /obj/item/clothing/glasses/monocle
 	cost = 1200
 
 /datum/gear/accessory/glasses
 	display_name = "prescription glasses"
-	slot = SLOT_GLASSES
+	slot = ITEM_SLOT_EYES
 	path = /obj/item/clothing/glasses/regular
 	cost = 3000
 
@@ -129,7 +139,7 @@
 	path = /obj/item/clothing/glasses/heat
 
 /datum/gear/accessory/glasses/orange
-	display_name = "sunglasses"
+	display_name = "orange sunglasses"
 	path = /obj/item/clothing/glasses/orange
 
 /datum/gear/accessory/glasses/red

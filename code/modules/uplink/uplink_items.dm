@@ -322,10 +322,10 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		to_chat(user, "<span class='warning'>You feel an overwhelming sense of pride and accomplishment.</span>")
 		var/obj/item/clothing/mask/joy/funny_mask = new(get_turf(user))
 		ADD_TRAIT(funny_mask, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-		var/obj/item/I = user.get_item_by_slot(SLOT_WEAR_MASK)
+		var/obj/item/I = user.get_item_by_slot(ITEM_SLOT_MASK)
 		if(I)
 			user.dropItemToGround(I, TRUE)
-		user.equip_to_slot_if_possible(funny_mask, SLOT_WEAR_MASK)
+		user.equip_to_slot_if_possible(funny_mask, ITEM_SLOT_MASK)
 	else if(index == 20)
 		starting_crate_value = 200
 		print_command_report("Congratulations to [user] for being the [rand(4, 9)]th lucky winner of the syndicate lottery! \
@@ -1955,7 +1955,7 @@ datum/uplink_item/stealthy_tools/taeclowndo_shoes
 			of humanoids. It has two settings: intensity, which controls the power of the radiation, \
 			and wavelength, which controls the delay before the effect kicks in."
 	item = /obj/item/healthanalyzer/rad_laser
-	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Roboticist", "Paramedic")
+	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Roboticist", "Paramedic", "Brig Physician")
 	cost = 3
 
 /datum/uplink_item/role_restricted/syndicate_mmi
@@ -2189,7 +2189,7 @@ datum/uplink_item/role_restricted/superior_honkrender
 	desc = "An implant that grants you a deadly energy saw inside your arm. Comes with a syndicate autosurgeon for immediate self-application."
 	cost = 8
 	item = /obj/item/autosurgeon/syndicate/esaw_arm
-	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Paramedic")
+	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Paramedic", "Brig Physician")
 
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"

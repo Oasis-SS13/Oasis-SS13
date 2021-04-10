@@ -13626,7 +13626,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aKD" = (
 /obj/structure/disposalpipe/segment,
@@ -13755,7 +13755,7 @@
 /obj/machinery/power/apc/auto_name/north{
 	pixel_y = 24
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aKV" = (
 /obj/machinery/door/window/southleft{
@@ -14209,7 +14209,7 @@
 /obj/machinery/chem_master/condimaster{
 	name = "CondiMaster Neo"
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aMm" = (
 /obj/machinery/firealarm{
@@ -14329,7 +14329,7 @@
 /area/crew_quarters/bar)
 "aMD" = (
 /obj/machinery/icecream_vat,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aME" = (
 /obj/structure/disposalpipe/segment{
@@ -14344,7 +14344,7 @@
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "aMF" = (
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aMG" = (
 /obj/structure/closet/crate/hydroponics,
@@ -14712,14 +14712,14 @@
 /mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aNM" = (
 /obj/structure/kitchenspike,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aNN" = (
 /obj/machinery/door/airlock/public/glass{
@@ -14746,7 +14746,7 @@
 	pixel_x = 24
 	},
 /obj/machinery/vending/wardrobe/chef_wardrobe,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aNP" = (
 /obj/structure/disposalpipe/segment,
@@ -15019,7 +15019,7 @@
 /area/crew_quarters/theatre)
 "aOI" = (
 /obj/structure/kitchenspike,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aOJ" = (
 /obj/structure/window/reinforced,
@@ -15047,7 +15047,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aON" = (
 /obj/structure/disposalpipe/segment,
@@ -15055,7 +15055,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aOO" = (
 /obj/machinery/door/airlock{
@@ -15094,7 +15094,7 @@
 /area/library)
 "aOT" = (
 /obj/machinery/gibber,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aOU" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -15545,7 +15545,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "aQm" = (
 /obj/effect/turf_decal/tile/green{
@@ -29085,10 +29085,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bDW" = (
@@ -42339,7 +42339,7 @@
 "cwu" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
-/area/crew_quarters/heads/cmo)
+/area/maintenance/aft)
 "cwv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
@@ -42376,10 +42376,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/cafeteria,
-/area/crew_quarters/heads/cmo)
-"cwB" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plating,
 /area/crew_quarters/heads/cmo)
 "cwD" = (
 /obj/structure/chair/office{
@@ -42819,7 +42815,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/crew_quarters/heads/cmo)
+/area/maintenance/aft)
 "cAS" = (
 /obj/structure/table,
 /obj/item/folder/white,
@@ -42889,9 +42885,6 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/cmo)
-"cAX" = (
-/turf/open/floor/plating,
-/area/crew_quarters/heads/cmo)
 "cAY" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
@@ -42937,7 +42930,7 @@
 "cBd" = (
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating,
-/area/crew_quarters/heads/cmo)
+/area/maintenance/aft)
 "cBe" = (
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
@@ -45693,10 +45686,6 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
-"eyO" = (
-/obj/structure/closet/emcloset,
-/turf/open/floor/plating,
-/area/crew_quarters/heads/cmo)
 "ezj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
@@ -47690,7 +47679,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "gRK" = (
 /obj/machinery/door/airlock/command/glass{
@@ -49073,7 +49062,7 @@
 "iNn" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /obj/machinery/camera/autoname,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "iQs" = (
 /obj/structure/cable/yellow{
@@ -56026,7 +56015,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "ryW" = (
 /obj/structure/cable/yellow{
@@ -57784,7 +57773,7 @@
 /area/tcommsat/computer)
 "tMl" = (
 /obj/effect/turf_decal/loading_area,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
 "tMn" = (
 /obj/structure/cable/yellow{
@@ -103508,11 +103497,11 @@ bon
 bon
 bOt
 cwu
-cwB
+cki
 cAR
-cAX
+bAw
 cBd
-eyO
+clf
 bWj
 fLK
 bNd
