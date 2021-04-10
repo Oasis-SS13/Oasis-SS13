@@ -234,7 +234,7 @@
 		if (initial(rodtype.chaplain_spawnable))
 			display_names[initial(rodtype.name)] = rodtype
 
-	var/choice = input(M,"What theme would you like for your holy weapon?","Holy Weapon Theme") as null|anything in sortList(display_names, /proc/cmp_typepaths_asc)
+	var/choice = tgui_input_list(M,"What theme would you like for your holy weapon?","Holy Weapon Theme", sortList(display_names, /proc/cmp_typepaths_asc))
 	if(QDELETED(src) || !choice || M.stat || !in_range(M, src) || M.incapacitated() || reskinned)
 		return
 
@@ -473,6 +473,9 @@
 
 /obj/item/nullrod/scythe/talking/attack_self(mob/living/user)
 	if(possessed)
+		return
+	if(!(GLOB.ghost_role_flags & GHOSTROLE_STATION_SENTIENCE))
+		to_chat(user, "<span class='notice'>Anomalous otherworldly energies block you from awakening the blade!</span>")
 		return
 
 	to_chat(user, "You attempt to wake the spirit of the blade...")
