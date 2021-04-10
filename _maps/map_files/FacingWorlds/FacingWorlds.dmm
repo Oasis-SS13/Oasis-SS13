@@ -2578,6 +2578,7 @@
 /area/svs/blue/engine/engine_room)
 "iS" = (
 /mob/living/simple_animal/pet/penguin/emperor/shamebrero{
+	color = "#fe9eb8";
 	name = "Rubis"
 	},
 /turf/open/floor/wood,
@@ -5834,8 +5835,8 @@
 /turf/open/floor/plasteel,
 /area/svs/red/engine/engine_room)
 "tk" = (
-/obj/machinery/field/generator,
 /obj/effect/turf_decal/bot,
+/obj/machinery/shieldgen/red,
 /turf/open/floor/plasteel/dark,
 /area/svs/red/engine/storage)
 "tl" = (
@@ -9005,7 +9006,9 @@
 /turf/open/floor/plasteel,
 /area/svs/blue/hallway)
 "Dj" = (
-/obj/machinery/door/window/brigdoor,
+/obj/machinery/door/window/brigdoor{
+	req_one_access_txt = "404"
+	},
 /turf/open/floor/wood,
 /area/svs/blue/bridge/admiral)
 "Dl" = (
@@ -9184,7 +9187,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/window/brigdoor,
+/obj/machinery/door/window/brigdoor{
+	req_one_access_txt = "403"
+	},
 /turf/open/floor/wood,
 /area/svs/red/bridge/admiral)
 "DU" = (
@@ -14096,11 +14101,11 @@
 /turf/open/floor/carpet/red,
 /area/svs/red/bridge/admiral)
 "Ui" = (
-/obj/machinery/field/generator,
 /obj/effect/turf_decal/bot,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/shieldgen/red,
 /turf/open/floor/plasteel/dark,
 /area/svs/red/engine/storage)
 "Ul" = (
@@ -15033,6 +15038,7 @@
 /area/svs/red/engine/engine_room)
 "Xf" = (
 /mob/living/simple_animal/pet/penguin/baby{
+	color = "#9ea1fe";
 	name = "Indigo"
 	},
 /turf/open/floor/wood,
