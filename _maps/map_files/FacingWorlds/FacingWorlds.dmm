@@ -12662,7 +12662,7 @@
 	dir = 1
 	},
 /obj/structure/cable/yellow{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
