@@ -1105,6 +1105,9 @@
 	pixel_x = -5;
 	pixel_y = 30
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/mine/production)
 "qz" = (
@@ -1230,6 +1233,9 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/base)
@@ -1808,9 +1814,14 @@
 /turf/closed/wall,
 /area/mine/production)
 "Bk" = (
-/obj/machinery/power/smes,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/power/smes{
+	charge = 5e+006
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/base)
@@ -1847,6 +1858,9 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
 /area/mine/production)
@@ -1956,6 +1970,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -5;
 	pixel_y = 30
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/base)
@@ -2956,9 +2973,14 @@
 /turf/closed/wall,
 /area/mine/production)
 "TR" = (
-/obj/machinery/power/smes,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/machinery/power/smes{
+	charge = 5e+006
 	},
 /turf/open/floor/plating,
 /area/mine/production)
