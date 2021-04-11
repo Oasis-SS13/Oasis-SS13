@@ -84,7 +84,7 @@ Contains:
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/suit/space/officer/svsred
+/obj/item/clothing/suit/space/officer/svs/red
 	name = "Red Admiral jacket"
 	desc = "An armored, space-proof jacket used in special operations."
 	icon_state = "specops"
@@ -99,7 +99,7 @@ Contains:
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/suit/space/officer/svsblue
+/obj/item/clothing/suit/space/officer/svs/blue
 	name = "Blue Admiral jacket"
 	desc = "An armored, space-proof jacket used in special operations."
 	icon_state = "specopsblue"
