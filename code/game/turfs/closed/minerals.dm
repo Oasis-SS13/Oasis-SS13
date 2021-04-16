@@ -186,6 +186,14 @@
 		/turf/closed/mineral/silver = 6, /turf/closed/mineral/copper = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40,
 		/turf/closed/mineral/gibtonite = 2, /turf/closed/mineral/bscrystal = 1)
 
+//extremely low chance of rare ores, meant mostly for populating stations with large amounts of asteroid
+/turf/closed/mineral/random/stationside
+	icon_state = "rock_nochance"
+	mineralChance = 4
+	mineralSpawnChanceList = list(
+		/obj/item/stack/ore/uranium = 1, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 3, /obj/item/stack/ore/titanium = 5,
+		/obj/item/stack/ore/silver = 4, /obj/item/stack/ore/plasma = 3, /obj/item/stack/ore/iron = 50)
+
 
 /turf/closed/mineral/random/volcanic
 	environment_type = "basalt"
@@ -486,6 +494,23 @@
 			mineralAmt = 0
 			stage = GIBTONITE_DETONATE
 			explosion(bombturf,1,3,5, adminlog = notify_admins)
+
+//yoo RED ROCK RED ROCK
+
+/turf/closed/mineral/asteroid
+	name = "iron rock"
+	icon = 'icons/turf/mining.dmi'
+	icon_state = "redrock"
+	smooth_icon = 'icons/turf/walls/red_wall.dmi'
+	base_icon_state = "red_wall"
+
+/turf/closed/mineral/random/stationside/asteroid
+	name = "iron rock"
+	icon = 'icons/turf/mining.dmi'
+	smooth_icon = 'icons/turf/walls/red_wall.dmi'
+	base_icon_state = "red_wall"
+
+
 
 /turf/closed/mineral/gibtonite/proc/defuse()
 	if(stage == GIBTONITE_ACTIVE)

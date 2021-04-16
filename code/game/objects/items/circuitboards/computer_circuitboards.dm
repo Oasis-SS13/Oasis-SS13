@@ -325,6 +325,10 @@
 	icon_state = "medical"
 	build_path = /obj/machinery/computer/operating
 
+/obj/item/circuitboard/computer/tram_controls
+	name = "Tram Controls (Computer Board)"
+	build_path = /obj/machinery/computer/tram_controls
+
 /obj/item/circuitboard/computer/pandemic
 	name = "PanD.E.M.I.C. 2200 (Computer Board)"
 	icon_state = "medical"

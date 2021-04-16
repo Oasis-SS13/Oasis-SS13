@@ -18,7 +18,7 @@ map boxstation
 	votable
 endmap
 
-map endostation	
+map endostation
 	votable
 endmap
 
@@ -42,6 +42,11 @@ map donutstation
 	minplayers 80
 	maxplayers 120
 	disabled
+endmap
+
+map tramstation
+	minplayers 35
+	votable
 endmap
 
 map runtimestation

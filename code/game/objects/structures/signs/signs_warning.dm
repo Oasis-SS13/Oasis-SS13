@@ -85,3 +85,10 @@
 	name = "\improper HIGH EXPLOSIVES"
 	desc = "A warning sign which reads 'HIGH EXPLOSIVES'."
 	icon_state = "explosives2"
+
+/obj/structure/sign/warning/radshelter
+	name = "\improper RADSTORM SHELTER sign"
+	sign_change_name = "Location - Radstorm Shelter"
+	desc = "A warning sign which reads 'RADSTORM SHELTER'."
+	icon_state = "radshelter"
+	is_editable = TRUE

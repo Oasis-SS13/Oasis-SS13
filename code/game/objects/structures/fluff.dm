@@ -167,3 +167,24 @@
 	desc = "A crudely-made sign with the words 'fok of' written in some sort of red paint."
 	icon = 'icons/obj/fluff.dmi'
 	icon_state = "fokof"
+
+
+/obj/structure/fluff/tram_rail
+	name = "tram railing"
+	desc = "Great for trams, not so great for skating."
+	icon = 'icons/obj/tram_railing.dmi'
+	icon_state = "rail"
+	layer = MID_TURF_LAYER
+	plane = FLOOR_PLANE
+	deconstructible = TRUE
+
+/obj/structure/fluff/tram_rail/floor
+	icon_state = "rail_floor"
+
+
+/obj/structure/fluff/tram_rail/end
+	icon_state = "railend"
+
+/obj/structure/fluff/tram_rail/anchor
+	name = "tram railing anchor"
+	icon_state = "anchor"

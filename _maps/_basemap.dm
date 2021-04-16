@@ -16,6 +16,7 @@
 		#include "map_files\EndoStation\EndoStation.dmm"
 		#include "map_files\FacingWorlds\FacingWorlds.dmm"
 		#include "map_files\ShipStation\ShipStation.dmm"
+		#include "map_files\tramstation\tramstation.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"
