@@ -1,3 +1,18 @@
+/obj/item/stack/sheet/cloth
+	name = "cloth"
+	desc = "Is it cotton? Linen? Denim? Burlap? Canvas? You can't tell."
+	singular_name = "cloth roll"
+	icon_state = "sheet-cloth"
+	inhand_icon_state = "sheet-cloth"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/sheet/cloth
+	drop_sound = 'sound/items/handling/cloth_drop.ogg'
+	pickup_sound =  'sound/items/handling/cloth_pickup.ogg'
+	grind_results = list(/datum/reagent/cellulose = 20)
+
+
 /obj/structure/toilet
 	name = "toilet"
 	desc = "The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean."
@@ -424,6 +439,8 @@
 		return
 	playsound(loc, 'sound/effects/curtain.ogg', 50, 1)
 	toggle()
+
+
 
 /obj/structure/curtain/deconstruct(disassembled = TRUE)
 	new /obj/item/stack/sheet/cotton/cloth (loc, 2)

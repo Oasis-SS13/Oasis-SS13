@@ -15,6 +15,7 @@
 #include "beestation.dme"
 
 // BEGIN_INCLUDE
+
 #include "code\datums\elements\connect_loc.dm"
 #include "code\game\machinery\computer\tram_controls.dm"
 #include "code\controllers\subsystem\processing\tramprocess.dm"
@@ -34,6 +35,12 @@
 #include "code\modules\cargo\blackmarket\blackmarket_items\misc.dm"
 #include "code\modules\cargo\blackmarket\blackmarket_items\tools.dm"
 #include "code\modules\cargo\blackmarket\blackmarket_items\weapons.dm"
+#include "code\__DEFINES\icon_smoothing.dm"
+#include "code\__DEFINES\dcs\flags.dm"
+#include "code\__DEFINES\dcs\helpers.dm"
+#include "code\__DEFINES\dcs\signals.dm"
+// MAINLY TG PORT ABOVE THANKS TG :-)
+
 #include "code\controllers\subsystem\blackmarket.dm"
 #include "code\modules\language\shoepacabrish.dm"
 #include "code\modules\cargo\exports\engineering.dm"

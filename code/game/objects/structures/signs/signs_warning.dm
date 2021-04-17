@@ -1,3 +1,28 @@
+/obj/structure/sign
+	icon = 'icons/obj/decals.dmi'
+	anchored = TRUE
+	opacity = FALSE
+	density = FALSE
+	layer = SIGN_LAYER
+	custom_materials = list(/datum/material/plastic = 2000)
+	max_integrity = 100
+	armor = list(MELEE = 50, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
+	///Determines if a sign is unwrenchable.
+	var/buildable_sign = TRUE
+	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
+	resistance_flags = FLAMMABLE
+	///This determines if you can select this sign type when using a pen on a sign backing. False by default, set to true per sign type to override.
+	var/is_editable = FALSE
+	///sign_change_name is used to make nice looking, alphebetized and categorized names when you use a pen on any sign item or structure which is_editable.
+	var/sign_change_name
+
+/obj/structure/sign/blank //This subtype is necessary for now because some other things (posters, picture frames, paintings) inheret from the parent type.
+	icon_state = "backing"
+	name = "sign backing"
+	desc = "A plastic sign backing, use a pen to change the decal. It can be detached from the wall with a wrench."
+	is_editable = TRUE
+	sign_change_name = "Blank Sign"
+
 /obj/structure/sign/warning
 	name = "\improper WARNING"
 	desc = "A warning sign."
