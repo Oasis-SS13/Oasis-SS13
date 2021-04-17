@@ -15,6 +15,7 @@
 #include "beestation.dme"
 
 // BEGIN_INCLUDE
+#include "code\datums\elements\connect_loc.dm"
 #include "code\game\machinery\computer\tram_controls.dm"
 #include "code\controllers\subsystem\processing\tramprocess.dm"
 #include "code\modules\assembly\doorcontrol.dm"

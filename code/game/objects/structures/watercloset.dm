@@ -376,7 +376,8 @@
 	opacity = 0
 	density = FALSE
 	var/open = TRUE
-
+	/// if it can be seen through when closed
+	var/opaque_closed = FALSE
 /obj/structure/curtain/proc/toggle()
 	open = !open
 	update_icon()
