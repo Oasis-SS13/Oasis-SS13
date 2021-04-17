@@ -62,7 +62,7 @@ const MovingTramDimmer = () => {
           />
         </Stack.Item>
         <Stack.Item mt={5} fontSize="14px" color="green">
-          The tram is travelling to {current_location[0].name}!
+          The tram is travelling to {current_loc[0].name}!
         </Stack.Item>
       </Stack>
     </Dimmer>
@@ -77,7 +77,7 @@ export const TramControl = (props, context) => {
     destinations,
   } = data;
 
-  const current_location = (destinations ? destinations.filter(
+  const current_loc = (destinations ? destinations.filter(
     dest => dest.here === 1) : null);
   const [
     transitIndex,
@@ -96,7 +96,7 @@ export const TramControl = (props, context) => {
             />
           </Stack.Item>
           <Stack.Item mt={5} fontSize="14px" color="green">
-            The tram is travelling to {current_location[0].name}!
+            The tram is travelling to {current_loc[0].name}!
           </Stack.Item>
         </Stack>
       </Dimmer>
@@ -105,9 +105,9 @@ export const TramControl = (props, context) => {
   const Destination = props => {
     const { dest } = props;
     const getDestColor = dest => {
-      const here = dest.name === current_location[0].name;
+      const here = dest.name === current_loc[0].name;
       const selected = transitIndex === destinations.indexOf(dest);
-      return !current_location ? "bad" : here ? "blue" : selected ? "green" : "transparent";
+      return !current_loc ? "bad" : here ? "blue" : selected ? "green" : "transparent";
     };
     return (
       <Stack vertical>
@@ -185,7 +185,7 @@ export const TramControl = (props, context) => {
               <Stack.Item fontSize="16px" mt={1} mb={9} textAlign="center" grow>
                 <Button
                   disabled={
-                    current_location[0].name === destinations[transitIndex].name
+                    current_loc[0].name === destinations[transitIndex].name
                   }
                   content="Send Tram"
                   onClick={() => act('send', {
