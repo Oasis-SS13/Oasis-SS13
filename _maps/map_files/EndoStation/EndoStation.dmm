@@ -2228,6 +2228,9 @@
 	name = "Nanite Lab";
 	req_access_txt = "47"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "aHG" = (
@@ -2378,6 +2381,13 @@
 "aJu" = (
 /turf/closed/wall,
 /area/maintenance/disposal)
+"aJH" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/science/nanite)
 "aJU" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -10401,6 +10411,9 @@
 /obj/effect/turf_decal/tile/purple,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "cXo" = (
@@ -15329,6 +15342,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/gravity_generator)
+"etc" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/science/lab)
 "etm" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -24312,6 +24329,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "gOl" = (
@@ -25096,6 +25119,7 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/science/lab)
 "hbF" = (
@@ -26658,6 +26682,12 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+/obj/machinery/button/door{
+	id = "evashutter";
+	name = "E.V.A. Storage Shutter Control";
+	pixel_y = 24;
+	req_access_txt = "19"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "hxX" = (
@@ -27275,6 +27305,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel,
 /area/science/lab)
@@ -28132,6 +28165,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/science/lab)
 "hUX" = (
@@ -29952,7 +29988,7 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 5
 	},
 /turf/open/floor/plasteel,
 /area/science/lab)
@@ -29984,6 +30020,16 @@
 /obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"itH" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "Nanite";
+	name = "Nanite Access"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/nanite)
 "itK" = (
 /obj/machinery/light{
 	dir = 8;
@@ -40018,6 +40064,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel,
 /area/science/lab)
 "lkn" = (
@@ -41860,22 +41909,24 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "lNv" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "evashutter";
-	name = "E.V.A. Storage Shutter"
+/obj/machinery/suit_storage_unit/standard_unit,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
 	},
 /obj/machinery/button/door{
 	id = "evashutter";
 	name = "E.V.A. Storage Shutter Control";
-	pixel_x = 30;
+	pixel_y = -24;
 	req_access_txt = "19"
 	},
-/obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ai_monitored/storage/eva)
 "lNz" = (
 /obj/structure/closet,
@@ -42087,8 +42138,8 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
@@ -44078,9 +44129,6 @@
 /area/science/mixing)
 "mty" = (
 /obj/effect/turf_decal/tile/purple,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -44091,6 +44139,9 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/structure/disposalpipe/junction{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -49687,6 +49738,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "nNj" = (
@@ -51062,6 +51116,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "ofF" = (
@@ -51365,6 +51422,12 @@
 	icon_state = "0-2"
 	},
 /obj/item/twohanded/required/kirbyplants/random,
+/obj/machinery/power/apc{
+	areastring = "/area/science/nanite";
+	dir = 1;
+	name = "Nanites APC";
+	pixel_y = 24
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "oiH" = (
@@ -51422,7 +51485,9 @@
 /area/science/research)
 "ojj" = (
 /obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating,
 /area/science/nanite)
 "ojq" = (
@@ -54494,6 +54559,24 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+"pbS" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "pbU" = (
 /obj/effect/landmark/start/medical_doctor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -57555,6 +57638,16 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
+"pVB" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "pVI" = (
 /obj/machinery/ai_slipper{
 	uses = 10
@@ -60689,6 +60782,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "qPh" = (
@@ -62402,12 +62498,12 @@
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/heads/captain/private)
 "rqx" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "briggate";
-	name = "security blast door"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "briggate";
+	name = "security shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -70424,6 +70520,9 @@
 "tES" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel,
 /area/science/lab)
 "tFc" = (
@@ -70495,6 +70594,12 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
+"tGa" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/nanite)
 "tGx" = (
 /turf/open/floor/plating,
 /area/maintenance/solars/aft)
@@ -75138,6 +75243,9 @@
 /obj/effect/turf_decal/tile/purple,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "uWo" = (
@@ -78391,6 +78499,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/science/lab)
 "vSw" = (
@@ -79418,6 +79527,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/medical/virology)
+"wiS" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/nanite)
 "wjc" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -84357,11 +84478,13 @@
 /turf/open/floor/plating,
 /area/security/processing)
 "xvN" = (
-/obj/structure/cable/yellow,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Nanite";
 	name = "Nanite Shutters"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/science/nanite)
@@ -86266,6 +86389,12 @@
 	dir = 8
 	},
 /area/chapel/main)
+"xUK" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/nanite)
 "xUM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -118024,7 +118153,7 @@ fgp
 dzo
 dzo
 cGT
-lNv
+ibX
 hyS
 pIz
 hyS
@@ -118280,7 +118409,7 @@ eSF
 uqa
 tBz
 qrD
-mnM
+lNv
 oyd
 hxU
 pIz
@@ -126522,7 +126651,7 @@ uGX
 mty
 hbt
 vSv
-xGV
+etc
 itf
 xGV
 xGV
@@ -127550,7 +127679,7 @@ lCk
 qlx
 cbD
 uSC
-mzQ
+wiS
 cVk
 xMn
 vNM
@@ -127807,7 +127936,7 @@ jHp
 imh
 cbD
 wrq
-mzQ
+wiS
 cVk
 xMn
 qUs
@@ -128064,7 +128193,7 @@ lCk
 qlx
 cbD
 nyO
-mzQ
+wiS
 xhC
 xMn
 qUs
@@ -129088,10 +129217,10 @@ tfJ
 tfJ
 gQR
 tVU
-lCk
-qlx
-isG
-rHl
+pbS
+pVB
+itH
+tGa
 qOX
 efr
 pEq
@@ -129349,13 +129478,13 @@ lCk
 qlx
 cbD
 rHl
-rHl
+xUK
 cbD
 eao
 rfp
 xMn
 xMn
-ojj
+aJH
 wQg
 jTC
 nJi
