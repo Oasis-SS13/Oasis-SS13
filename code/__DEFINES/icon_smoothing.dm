@@ -12,14 +12,14 @@
 /// Smooths with objects, and will thus need to scan turfs for contents.
 #define SMOOTH_OBJ (1<<5)
 
-DEFINE_BITFIELD(smoothing_flags, list(
+DEFINE_BITFIELD(smoothing_flags, list[
 	"SMOOTH_CORNERS" = SMOOTH_CORNERS,
 	"SMOOTH_BITMASK" = SMOOTH_BITMASK,
 	"SMOOTH_DIAGONAL_CORNERS" = SMOOTH_DIAGONAL_CORNERS,
 	"SMOOTH_BORDER" = SMOOTH_BORDER,
 	"SMOOTH_QUEUED" = SMOOTH_QUEUED,
 	"SMOOTH_OBJ" = SMOOTH_OBJ,
-))
+]);
 
 
 /*smoothing macros*/
