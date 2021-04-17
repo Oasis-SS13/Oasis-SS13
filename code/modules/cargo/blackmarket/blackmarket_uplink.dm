@@ -4,6 +4,8 @@
 	icon_state = "uplink"
 
 	// UI variables.
+	var/ui_x = 720
+	var/ui_y = 480
 	var/viewing_category
 	var/viewing_market
 	var/selected_item
@@ -19,7 +21,7 @@
 	if(accessible_markets.len)
 		viewing_market = accessible_markets[1]
 		var/list/categories = SSblackmarket.markets[viewing_market].categories
-		if(categories?.len)
+		if(categories && categories.len)
 			viewing_category = categories[1]
 
 /obj/item/blackmarket_uplink/attackby(obj/item/I, mob/user, params)
@@ -53,10 +55,10 @@
 	user.put_in_hands(holochip)
 	to_chat(user, "<span class='notice'>You withdraw [amount_to_remove] credits into a holochip.</span>")
 
-/obj/item/blackmarket_uplink/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
+/obj/item/blackmarket_uplink/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
+	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
-		ui = new(user, src, "BlackMarketUplink", name)
+		ui = new(user, src, ui_key, "blackmarket_uplink", name, ui_x, ui_y, master_ui, state)
 		ui.open()
 
 /obj/item/blackmarket_uplink/ui_data(mob/user)
@@ -98,8 +100,7 @@
 	return data
 
 /obj/item/blackmarket_uplink/ui_act(action, params)
-	. = ..()
-	if(.)
+	if(..())
 		return
 	switch(action)
 		if("set_category")
@@ -121,7 +122,7 @@
 			viewing_market = market
 
 			var/list/categories = SSblackmarket.markets[viewing_market].categories
-			if(categories?.len)
+			if(categories && categories.len)
 				viewing_category = categories[1]
 			else
 				viewing_category = null
@@ -153,7 +154,7 @@
 	name = "Black Market Uplink"
 	result = /obj/item/blackmarket_uplink
 	time = 30
-	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_MULTITOOL)
+	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_MULTITOOL)
 	reqs = list(
 		/obj/item/stock_parts/subspace/amplifier = 1,
 		/obj/item/stack/cable_coil = 15,
@@ -161,8 +162,3 @@
 		/obj/item/analyzer = 1
 	)
 	category = CAT_MISC
-
-/datum/crafting_recipe/blackmarket_uplink/New()
-	..()
-	blacklist |= typesof(/obj/item/radio/headset) // because we got shit like /obj/item/radio/off ... WHY!?!
-	blacklist |= typesof(/obj/item/radio/intercom)
