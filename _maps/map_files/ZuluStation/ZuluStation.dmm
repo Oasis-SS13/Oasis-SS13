@@ -13208,8 +13208,7 @@
 	areastring = "/area/science/storage";
 	dir = 1;
 	name = "Toxins Storage APC";
-	pixel_x = -25;
-	pixel_y = 0
+	pixel_x = -25
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -20780,14 +20779,12 @@
 /obj/machinery/button/ignition{
 	id = "executionburn";
 	name = "Justice Ignition Switch";
-	pixel_x = 0;
-	pixel_y = 0
+	pixel_x = 0
 	},
 /obj/machinery/button/door{
 	id = "executionfireblast";
 	name = "Justice Area Lockdown";
 	pixel_x = 0;
-	pixel_y = 0;
 	req_access_txt = "2"
 	},
 /obj/machinery/button/door{
@@ -20796,14 +20793,12 @@
 	layer = 4;
 	name = "Justice Vent Control";
 	pixel_x = 0;
-	pixel_y = 0;
 	req_access_txt = "3"
 	},
 /obj/machinery/button/flasher{
 	id = "justiceflash";
 	name = "Justice Flash Control";
 	pixel_x = 0;
-	pixel_y = 0;
 	req_access_txt = "1"
 	},
 /turf/open/floor/plasteel/dark,
@@ -34326,8 +34321,7 @@
 	areastring = "/area/security/execution/education";
 	dir = 2;
 	name = "Education Chamber APC";
-	pixel_x = 26;
-	pixel_y = 0
+	pixel_x = 26
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -60517,7 +60511,6 @@
 	dir = 1;
 	name = "Theatre APC";
 	pixel_x = 25;
-	pixel_y = 0;
 	pixel_z = 0
 	},
 /obj/structure/cable/yellow{
