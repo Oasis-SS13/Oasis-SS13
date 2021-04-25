@@ -13714,7 +13714,6 @@
 	areastring = "/area/science/mixing";
 	dir = 4;
 	name = "Toxins Lab APC";
-	pixel_x = 0;
 	pixel_y = 26
 	},
 /obj/structure/cable/yellow{
@@ -17730,7 +17729,6 @@
 	areastring = "/area/science/robotics/mechbay";
 	dir = 4;
 	name = "Mech Bay APC";
-	pixel_x = 0;
 	pixel_y = 25
 	},
 /obj/structure/cable/yellow{
@@ -20778,13 +20776,11 @@
 /obj/structure/table,
 /obj/machinery/button/ignition{
 	id = "executionburn";
-	name = "Justice Ignition Switch";
-	pixel_x = 0
+	name = "Justice Ignition Switch"
 	},
 /obj/machinery/button/door{
 	id = "executionfireblast";
 	name = "Justice Area Lockdown";
-	pixel_x = 0;
 	req_access_txt = "2"
 	},
 /obj/machinery/button/door{
@@ -20792,13 +20788,11 @@
 	id = "SecJusticeChamber";
 	layer = 4;
 	name = "Justice Vent Control";
-	pixel_x = 0;
 	req_access_txt = "3"
 	},
 /obj/machinery/button/flasher{
 	id = "justiceflash";
 	name = "Justice Flash Control";
-	pixel_x = 0;
 	req_access_txt = "1"
 	},
 /turf/open/floor/plasteel/dark,
@@ -24679,7 +24673,6 @@
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "CE Office APC";
-	pixel_x = 0;
 	pixel_y = 28
 	},
 /obj/structure/cable/yellow{
@@ -57180,7 +57173,6 @@
 	areastring = "/area/security/main";
 	dir = 4;
 	name = "Security Office APC";
-	pixel_x = 0;
 	pixel_y = 26
 	},
 /obj/effect/turf_decal/tile/red{
