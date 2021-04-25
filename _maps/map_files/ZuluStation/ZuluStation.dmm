@@ -18680,7 +18680,7 @@
 /area/crew_quarters/heads/captain)
 "aMH" = (
 /obj/structure/sign/plaques{
-	desc = "This plaque commemorates Dr Octagon, one of the designers of the Coalition;
+	desc = "This plaque commemorates Dr Octagon, one of the designers of the Coalition"
 	name = "Crusader's Pleasure Palace Plaque"
 	},
 /turf/closed/wall,
