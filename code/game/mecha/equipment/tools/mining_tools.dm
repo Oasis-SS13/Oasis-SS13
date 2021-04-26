@@ -163,10 +163,14 @@
 	START_PROCESSING(SSfastprocess, src)
 
 /obj/item/mecha_parts/mecha_equipment/mining_scanner/can_attach(obj/mecha/M as obj)
+<<<<<<< HEAD
 	if(..())
 		if(istype(M, /obj/mecha/working))
 			return TRUE
 	return FALSE
+=======
+	return (..() && istype(M, /obj/mecha/working))
+>>>>>>> b352ff068c (Ports Exosuit Fabricator's TGUI (#3760))
 
 /obj/item/mecha_parts/mecha_equipment/mining_scanner/process()
 	if(!loc)

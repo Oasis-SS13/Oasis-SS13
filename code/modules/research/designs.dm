@@ -41,6 +41,10 @@ other types of metals and chemistry for reagents).
 	var/icon_cache
 	/// Optional string that interfaces can use as part of search filters. See- item/borg/upgrade/ai and the Exosuit Fabs.
 	var/search_metadata
+<<<<<<< HEAD
+=======
+
+>>>>>>> b352ff068c (Ports Exosuit Fabricator's TGUI (#3760))
 /datum/design/error_design
 	name = "ERROR"
 	desc = "This usually means something in the database has corrupted. If this doesn't go away automatically, inform Central Comamnd so their techs can fix this ASAP(tm)"
