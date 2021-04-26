@@ -50,6 +50,7 @@
 #define SPAN_PAPYRUS "papyrus"
 #define SPAN_REALLYBIG "reallybig"
 #define SPAN_COMMAND "command_headset"
+#define SPAN_MEGAPHONE "megaphone"
 #define SPAN_CLOWN "clowntext"
 #define SPAN_SINGING "singing"
 
@@ -63,6 +64,9 @@
 
 /// How close intercoms can be for radio code use
 #define MODE_RANGE_INTERCOM 1
+
+// Is the message actually a radio message
+#define MODE_RADIO_MESSAGE "actuallyradiomessage"
 
 // A link given to ghost alice to follow bob
 #define FOLLOW_LINK(alice, bob) "<a href=?src=[REF(alice)];follow=[REF(bob)]>(F)</a>"
@@ -91,3 +95,10 @@
 #define INVOCATION_SHOUT "shout"
 #define INVOCATION_EMOTE "emote"
 #define INVOCATION_WHISPER "whisper"
+<<<<<<< HEAD
+=======
+
+//Used in visible_message_flags, audible_message_flags and runechat_flags
+#define EMOTE_MESSAGE (1<<0)
+#define RADIO_MESSAGE (1<<1)
+>>>>>>> ef10b95fe8 (Overhead chat formatting update (#3805))

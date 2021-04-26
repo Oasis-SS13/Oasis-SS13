@@ -902,7 +902,16 @@
 	else
 		jobpart = "Unknown"
 
+<<<<<<< HEAD
 	var/rendered = "<i><span class='game say'>[start]<span class='name'>[hrefpart][namepart] ([jobpart])</a> </span><span class='message'>[raw_message]</span></span></i>"
+=======
+	var/rendered = "<i><span class='game say'>[start]<span class='name'>[hrefpart][namepart] ([jobpart])</a> </span><span class='message'>[treated_message]</span></span></i>"
+
+	var/flags = message_mods.Find(MODE_RADIO_MESSAGE) ? RADIO_MESSAGE : NONE
+
+	if (client?.prefs.chat_on_map && (client.prefs.see_chat_non_mob || ismob(speaker)))
+		create_chat_message(speaker, message_language, raw_message, spans, runechat_flags = flags)
+>>>>>>> ef10b95fe8 (Overhead chat formatting update (#3805))
 
 	show_message(rendered, 2)
 

@@ -189,6 +189,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		spans |= SPAN_ITALICS
 	if(radio_return & REDUCE_RANGE)
 		message_range = 1
+<<<<<<< HEAD
+=======
+		message_mods[MODE_RADIO_MESSAGE] = MODE_RADIO_MESSAGE
+>>>>>>> ef10b95fe8 (Overhead chat formatting update (#3805))
 	if(radio_return & NOPASS)
 		return 1
 
@@ -224,6 +228,15 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		deaf_message = "<span class='notice'>You can't hear yourself!</span>"
 		deaf_type = 2 // Since you should be able to hear yourself without looking
 
+<<<<<<< HEAD
+=======
+	var/flags = message_mods.Find(MODE_RADIO_MESSAGE) ? RADIO_MESSAGE : NONE
+
+	// Create map text prior to modifying message for goonchat
+	if(client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)) && can_hear())
+		create_chat_message(speaker, message_language, raw_message, spans, runechat_flags = flags)
+
+>>>>>>> ef10b95fe8 (Overhead chat formatting update (#3805))
 	// Recompose message for AI hrefs, language incomprehension.
 	message = compose_message(speaker, message_language, raw_message, radio_freq, spans, message_mode)
 	message = hear_intercept(message, speaker, message_language, raw_message, radio_freq, spans, message_mode)

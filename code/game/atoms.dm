@@ -78,6 +78,13 @@
 	///Bitfield for how the atom handles materials.
 	var/material_flags = NONE
 
+<<<<<<< HEAD
+=======
+	/// Last name used to calculate a color for the chatmessage overlays
+	var/chat_color_name
+	/// Last color calculated for the the chatmessage overlays
+	var/chat_color
+>>>>>>> ef10b95fe8 (Overhead chat formatting update (#3805))
 
 /**
   * Called when an atom is created in byond (built in engine proc)
