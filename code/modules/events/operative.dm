@@ -3,6 +3,11 @@
 	typepath = /datum/round_event/ghost_role/operative
 	weight = 0 //Admin only
 	max_occurrences = 1
+<<<<<<< HEAD
+=======
+	dynamic_should_hijack = TRUE
+	cannot_spawn_after_shuttlecall = TRUE
+>>>>>>> e9bf78d000 (Prevents Midrounds From Spawning After Shuttlecall (#4134))
 
 /datum/round_event/ghost_role/operative
 	minimum_required = 1

@@ -28,6 +28,13 @@
 	var/triggering	//admin cancellation
 	var/auto_add = TRUE				//Auto add to the event pool, if not you have to do it yourself!
 
+<<<<<<< HEAD
+=======
+	
+	var/dynamic_should_hijack = FALSE	// Whether or not dynamic should hijack this event	
+	var/cannot_spawn_after_shuttlecall = FALSE	// Prevents the event from spawning after the shuttle was called
+
+>>>>>>> e9bf78d000 (Prevents Midrounds From Spawning After Shuttlecall (#4134))
 /datum/round_event_control/New()
 	if(config && !wizardevent) // Magic is unaffected by configs
 		earliest_start = CEILING(earliest_start * CONFIG_GET(number/events_min_time_mul), 1)
@@ -52,6 +59,8 @@
 	if(gamemode_whitelist.len && !(gamemode in gamemode_whitelist))
 		return FALSE
 	if(holidayID && (!SSevents.holidays || !SSevents.holidays[holidayID]))
+		return FALSE
+	if(cannot_spawn_after_shuttlecall && !EMERGENCY_IDLE_OR_RECALLED)
 		return FALSE
 	if(ispath(typepath, /datum/round_event/ghost_role) && GHOSTROLE_MIDROUND_EVENT)
 		return FALSE
