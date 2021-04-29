@@ -4477,6 +4477,10 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "alg" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "alh" = (
@@ -33914,6 +33918,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"dMV" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "63"
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/central)
 "dNy" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -42929,6 +42949,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
+"iyJ" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "iyY" = (
 /obj/structure/showcase/cyborg/old{
 	dir = 1
@@ -58990,6 +59017,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"rmA" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "rmY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
@@ -71590,6 +71629,19 @@
 /obj/machinery/smartfridge/organ,
 /turf/open/floor/plating,
 /area/medical/morgue)
+"yiX" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "63"
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/central)
 "yje" = (
 /obj/machinery/shieldgen,
 /obj/effect/decal/cleanable/dirt,
@@ -109085,7 +109137,7 @@ vrj
 akd
 jmu
 akd
-akd
+iyJ
 akd
 akd
 akd
@@ -109860,7 +109912,7 @@ lRy
 lRy
 lRy
 lRy
-lRy
+rmA
 cMc
 sEn
 dbe
@@ -110664,7 +110716,7 @@ axQ
 axQ
 axQ
 axQ
-xiG
+dMV
 lug
 art
 art
@@ -111950,7 +112002,7 @@ aLr
 aKU
 azu
 cFs
-alj
+vmw
 alj
 alj
 alj
@@ -113236,7 +113288,7 @@ aKU
 azu
 cFs
 alj
-alj
+vmw
 alj
 alj
 alj
@@ -113748,7 +113800,7 @@ axQ
 axQ
 axQ
 axQ
-cFs
+yiX
 alp
 alp
 alp
