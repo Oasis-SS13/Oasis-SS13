@@ -1,3 +1,18 @@
+/obj/item/stack/sheet/cloth
+	name = "cloth"
+	desc = "Is it cotton? Linen? Denim? Burlap? Canvas? You can't tell."
+	singular_name = "cloth roll"
+	icon_state = "sheet-cloth"
+	inhand_icon_state = "sheet-cloth"
+	resistance_flags = FLAMMABLE
+	force = 0
+	throwforce = 0
+	merge_type = /obj/item/stack/sheet/cloth
+	drop_sound = 'sound/items/handling/cloth_drop.ogg'
+	pickup_sound =  'sound/items/handling/cloth_pickup.ogg'
+	grind_results = list(/datum/reagent/cellulose = 20)
+
+
 /obj/structure/toilet
 	name = "toilet"
 	desc = "The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean."
@@ -376,7 +391,8 @@
 	opacity = 0
 	density = FALSE
 	var/open = TRUE
-
+	/// if it can be seen through when closed
+	var/opaque_closed = FALSE
 /obj/structure/curtain/proc/toggle()
 	open = !open
 	update_icon()
@@ -424,6 +440,8 @@
 	playsound(loc, 'sound/effects/curtain.ogg', 50, 1)
 	toggle()
 
+
+
 /obj/structure/curtain/deconstruct(disassembled = TRUE)
 	new /obj/item/stack/sheet/cotton/cloth (loc, 2)
 	new /obj/item/stack/sheet/plastic (loc, 2)
@@ -445,3 +463,48 @@
 	icon_state = "bounty-open"
 	color = null
 	alpha = 255
+/obj/structure/curtain/cloth
+	color = null
+	alpha = 255
+	opaque_closed = TRUE
+
+/obj/structure/curtain/cloth/deconstruct(disassembled = TRUE)
+	new /obj/item/stack/sheet/cloth (loc, 4)
+	new /obj/item/stack/rods (loc, 1)
+	qdel(src)
+
+/obj/structure/curtain/cloth/fancy
+	icon_type = "cur_fancy"
+	icon_state = "cur_fancy-open"
+
+/obj/structure/curtain/cloth/fancy/mechanical
+	var/id = null
+
+/obj/structure/curtain/cloth/fancy/mechanical/Destroy()
+	GLOB.curtains -= src
+	return ..()
+
+/obj/structure/curtain/cloth/fancy/mechanical/Initialize()
+	. = ..()
+	GLOB.curtains += src
+
+/obj/structure/curtain/cloth/fancy/mechanical/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
+	id = "[port.id]_[id]"
+
+/obj/structure/curtain/cloth/fancy/mechanical/proc/open()
+	icon_state = "[icon_type]-open"
+	layer = SIGN_LAYER
+	density = FALSE
+	open = TRUE
+	set_opacity(FALSE)
+
+/obj/structure/curtain/cloth/fancy/mechanical/proc/close()
+	icon_state = "[icon_type]-closed"
+	layer = WALL_OBJ_LAYER
+	density = TRUE
+	open = FALSE
+	if(opaque_closed)
+		set_opacity(TRUE)
+
+/obj/structure/curtain/cloth/fancy/mechanical/attack_hand(mob/user, list/modifiers)
+		return
