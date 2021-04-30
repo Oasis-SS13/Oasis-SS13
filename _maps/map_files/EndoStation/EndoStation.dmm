@@ -767,6 +767,7 @@
 /turf/open/floor/plasteel/dark/corner{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/engine/atmos)
 "akU" = (
 /obj/effect/turf_decal/tile/red{
@@ -787,6 +788,22 @@
 	},
 /obj/effect/turf_decal/tile/green{
 	dir = 8
+=======
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/meter,
+/turf/open/floor/engine,
+/area/engine/engine_room)
+"aiA" = (
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/obj/machinery/light,
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"aiC" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
@@ -1935,7 +1952,30 @@
 	dir = 10
 	},
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "2-8"
+=======
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/bridge)
+"ayw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/engine_room)
+"ayG" = (
+/obj/machinery/door/airlock/external{
+	name = "Construction Zone"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
@@ -2121,7 +2161,20 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/turf/open/floor/plating/airless,
+/area/science/test_area)
+"aBk" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"aBn" = (
+/obj/machinery/vending/cola/random,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
@@ -2188,7 +2241,26 @@
 	dir = 4;
 	pixel_x = -24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/bot,
+=======
+/turf/open/floor/engine,
+/area/engine/engine_room)
+"aCb" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/medical/genetics)
 "aHk" = (
@@ -3209,6 +3281,7 @@
 	},
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/hor)
 "aVK" = (
 /obj/machinery/camera{
@@ -3218,6 +3291,14 @@
 	network = list("ss13","xeno","rd")
 	},
 /turf/open/floor/plasteel,
+=======
+/area/crew_quarters/bar)
+"aKS" = (
+/obj/machinery/atmospherics/pipe/manifold/general/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/science/xenobiology)
 "aVV" = (
 /obj/structure/cable/yellow{
@@ -4095,6 +4176,13 @@
 	dir = 1;
 	id = "QMLoad"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/computer/cargo/request,
+/obj/machinery/light{
+	dir = 1
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bjR" = (
@@ -4612,10 +4700,41 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/hor)
 "bqd" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
+=======
+/area/medical/medbay/central)
+"bal" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/chapel/main/monastery)
+"baA" = (
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"baC" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"baG" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -6168,9 +6287,29 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/robotics/mechbay)
 "bMY" = (
 /obj/effect/turf_decal/stripes/line,
+=======
+/area/crew_quarters/fitness/recreation)
+"bxs" = (
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/monkey_recycler,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"bxB" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
@@ -7909,6 +8048,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/quartermaster/qm)
 "cma" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -7922,6 +8062,21 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/gravity_generator)
 "cmk" = (
+=======
+/area/hallway/primary/fore)
+"bTU" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output,
+/turf/open/floor/engine/o2,
+/area/engine/atmos)
+"bTX" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #6";
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/purple,
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/delivery,
@@ -8884,6 +9039,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/engine/gravity_generator)
 "cyF" = (
 /obj/machinery/light_switch{
@@ -8904,6 +9060,18 @@
 /obj/machinery/power/tracker,
 /obj/structure/cable{
 	icon_state = "0-4"
+=======
+/area/maintenance/starboard/fore)
+"ciW" = (
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/item/storage/toolbox/electrical,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plating,
+/area/maintenance/solars/starboard/aft)
+"cjj" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
 /area/solar/port/aft)
@@ -9538,6 +9706,7 @@
 /obj/item/folder/blue{
 	pixel_y = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/folder/blue{
 	pixel_y = 2
 	},
@@ -9562,6 +9731,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"cqn" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -10420,11 +10596,18 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = 3;
 	pixel_y = 3
 	},
+=======
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+"cFx" = (
+/obj/effect/turf_decal/tile/red,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -10512,6 +10695,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/teleporter)
 "cZW" = (
 /obj/effect/turf_decal/stripes/line{
@@ -10524,6 +10708,17 @@
 /area/ai_monitored/storage/satellite)
 "cZY" = (
 /obj/machinery/light/small{
+=======
+/area/quartermaster/storage)
+"cHh" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"cHk" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/advanced_airlock_controller{
@@ -10568,6 +10763,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "daD" = (
@@ -10575,6 +10771,35 @@
 /obj/structure/sign/logo{
 	icon_state = "nanotrasen_sign4";
 	pixel_y = 32
+=======
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/maintenance/department/science/central)
+"cHO" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"cHW" = (
+/obj/machinery/vending/wardrobe/bar_wardrobe,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"cIh" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/structure/table,
+/obj/item/stack/sheet/plasteel{
+	amount = 10
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -10856,8 +11081,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/disposalpipe/segment,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
+=======
+/turf/open/floor/plating,
+/area/maintenance/port)
+"cKs" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /area/maintenance/port/aft)
 "dff" = (
@@ -10905,6 +11142,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/storage/tcom)
 "dfL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
@@ -10916,6 +11154,28 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+=======
+/area/engine/gravity_generator)
+"cKL" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"cKR" = (
+/turf/open/floor/carpet/green,
+/area/crew_quarters/bar)
+"cLa" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
@@ -12962,6 +13222,7 @@
 	pixel_x = 4;
 	req_access_txt = "16"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/circuit/red,
 /area/ai_monitored/turret_protected/ai)
 "dIZ" = (
@@ -13003,6 +13264,31 @@
 "dJR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"dqy" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall3";
+	location = "hall2"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"dqz" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -13277,12 +13563,30 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/warden)
 "dNK" = (
 /turf/closed/wall/r_wall,
 /area/science/server)
 "dNO" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
+=======
+/area/maintenance/department/science)
+"dtI" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "detective_shutters";
+	name = "detective's office shutters"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/security/detectives_office)
+"dtM" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/meter,
@@ -13382,8 +13686,30 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+=======
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall1";
+	location = "hall33"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"dvY" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/starboard/secondary)
+"dvZ" = (
+/obj/effect/landmark/start/quartermaster,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/qm)
+"dwd" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -13823,6 +14149,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/department/engine)
 "dVU" = (
 /obj/structure/lattice/catwalk,
@@ -13833,6 +14160,27 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "dWa" = (
+=======
+/area/hydroponics)
+"dCO" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio8";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"dCW" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain/private)
@@ -14615,6 +14963,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating,
@@ -14623,6 +14972,13 @@
 /obj/structure/closet/secure_closet/medical1,
 /obj/effect/turf_decal/bot{
 	dir = 1
+=======
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"dPY" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 9
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel{
 	dir = 1
@@ -14660,6 +15016,21 @@
 	name = "Cargo Warehouse";
 	pixel_y = 24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/landmark/start/head_of_personnel,
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+"dRh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/window,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"dRi" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
@@ -14903,6 +15274,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/customs/auxiliary)
 "emE" = (
 /obj/effect/landmark/start/chemist,
@@ -14955,11 +15327,17 @@
 /area/science/storage)
 "enP" = (
 /obj/effect/turf_decal/tile/brown{
+=======
+/area/maintenance/starboard/central)
+"dUa" = (
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/closet/secure_closet/quartermaster,
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
@@ -14971,6 +15349,8 @@
 	dir = 4
 	},
 /obj/structure/bed/roller,
+=======
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "eok" = (
@@ -15095,6 +15475,7 @@
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/bridge)
 "epz" = (
 /obj/machinery/navbeacon{
@@ -15105,6 +15486,18 @@
 	},
 /obj/machinery/door/window/southleft{
 	dir = 4
+=======
+/area/ai_monitored/storage/eva)
+"dVh" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -15694,8 +16087,25 @@
 /obj/machinery/computer/security/mining{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/newscaster{
 	pixel_y = -32
+=======
+/turf/open/floor/plasteel,
+/area/medical/morgue)
+"edw" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Xenobiology Chamber Maintenance";
+	req_one_access_txt = "55"
+	},
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"edG" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Air to Ports"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -15963,11 +16373,20 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/aft)
+"eiq" = (
+/obj/machinery/camera/autoname,
+/obj/machinery/light{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -17048,6 +17467,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/cryopods)
 "eRU" = (
@@ -17071,6 +17491,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/chem_master,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "eSe" = (
@@ -17337,6 +17764,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "eYf" = (
@@ -17344,6 +17772,15 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+=======
+/obj/machinery/camera/autoname{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/miningdock)
+"eAJ" = (
+/obj/effect/turf_decal/tile/green{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -18005,17 +18442,35 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "fgg" = (
 /turf/closed/wall/r_wall,
 /area/science/misc_lab)
 "fgn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+"eJP" = (
+/obj/structure/table/glass,
+/obj/machinery/reagentgrinder,
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"eJW" = (
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -18234,6 +18689,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/engine/atmos)
 "fiH" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -18257,6 +18713,18 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
+=======
+/area/science/lab)
+"eQo" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/space/basic,
+/area/science/misc_lab/range)
+"eQs" = (
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -18451,6 +18919,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/prison)
 "flG" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -18467,6 +18936,36 @@
 /obj/structure/sink{
 	dir = 8;
 	pixel_x = -12
+=======
+/area/quartermaster/storage)
+"eTf" = (
+/turf/closed/wall/r_wall,
+/area/engine/atmospherics_engine)
+"eTg" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #3";
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"eTm" = (
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"eTp" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -18928,6 +19427,7 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "ftM" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -18945,6 +19445,22 @@
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+"fbY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio2";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"fcp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 6
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -19080,7 +19596,26 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red,
+=======
+/turf/open/floor/wood,
+/area/library)
+"ffX" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"fgq" = (
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/AIsatextAP)
+"fgs" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/coffee,
 /obj/item/reagent_containers/food/drinks/britcup{
@@ -19157,6 +19692,7 @@
 /obj/item/stack/sheet/mineral/plasma{
 	pixel_y = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/stack/sheet/mineral/plasma{
 	pixel_y = 4
 	},
@@ -19180,6 +19716,14 @@
 /obj/structure/rack,
 /obj/machinery/airalarm{
 	pixel_y = 23
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/security/brig)
+"fiF" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/gun/energy/ionrifle,
 /obj/item/gun/energy/temperature/security,
@@ -19187,12 +19731,18 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+=======
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
@@ -20377,6 +20927,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/research)
 "fNv" = (
 /obj/structure/table/glass,
@@ -20386,6 +20937,22 @@
 /obj/item/assembly/timer{
 	pixel_x = 3;
 	pixel_y = 3
+=======
+/area/medical/medbay/aft)
+"fDN" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"fEe" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/assembly/timer{
 	pixel_x = 3;
@@ -21184,6 +21751,7 @@
 	id = "geneticslab";
 	name = "Genetics Lab Shutters"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/medical/genetics)
@@ -21201,6 +21769,16 @@
 /obj/item/seeds/grass,
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
+=======
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"fOE" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #5";
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -21956,6 +22534,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -21970,6 +22549,18 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/security{
+	name = "Detective's Office";
+	req_access_txt = "4"
+	},
+/turf/open/floor/wood,
+/area/security/detectives_office)
+"gah" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/delivery,
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 26
@@ -22105,8 +22696,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
+=======
+/turf/open/floor/plating,
+/area/maintenance/solars/port/aft)
+"gdm" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 2;
+	external_pressure_bound = 140;
+	name = "killroom vent";
+	pressure_checks = 0
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -22180,12 +22782,27 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/virology)
 "gmD" = (
 /obj/machinery/computer/med_data/laptop,
 /obj/structure/table/glass,
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/area/ai_monitored/turret_protected/aisat/foyer)
+"geY" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/science/xenobiology)
+"geZ" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -22267,7 +22884,34 @@
 /area/crew_quarters/heads/chief)
 "gnp" = (
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "0-4"
+=======
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"ggg" = (
+/obj/effect/spawner/room/tenxfive,
+/turf/open/floor/plating,
+/area/maintenance/starboard/central)
+"ggh" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"ggk" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/wood,
+/area/maintenance/port)
+"ggl" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -22507,6 +23151,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "grf" = (
@@ -22515,6 +23160,17 @@
 /obj/machinery/door/window/northleft{
 	name = "Robotics Delivery";
 	req_access_txt = "29"
+=======
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/security/detectives_office)
+"gjY" = (
+/obj/machinery/camera/autoname{
+	dir = 4;
+	network = list("aisat")
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -22894,9 +23550,53 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/hop)
 "guY" = (
 /obj/machinery/light/small{
+=======
+/area/library)
+"grD" = (
+/obj/machinery/atmospherics/pipe/simple/dark/hidden{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/engine/engine_smes)
+"grM" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"grT" = (
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/obj/structure/cable/white{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/item/radio/intercom{
+	pixel_x = 29;
+	pixel_y = -2
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/turf/open/floor/plating,
+/area/maintenance/solars/port/aft)
+"gsk" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/engine/co2,
@@ -23588,7 +24288,26 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+=======
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"gzi" = (
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -23910,6 +24629,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/engine/atmos)
 "gJf" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -23927,6 +24647,22 @@
 "gJp" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/area/storage/tools)
+"gDF" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 5
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/science/xenobiology)
+"gDJ" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -24047,9 +24783,26 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock{
 	name = "Hydroponics Backroom";
 	req_access_txt = "35"
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"gET" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"gEV" = (
+/obj/structure/chair,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
@@ -24360,9 +25113,26 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
 "gOS" = (
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"gIZ" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/drone,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"gJe" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -25005,6 +25775,7 @@
 	name = "Mix to Ports"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/engine/atmos)
 "hav" = (
 /obj/structure/lattice/catwalk,
@@ -25016,6 +25787,21 @@
 	frequency = 1481;
 	name = "Confessional Intercom";
 	pixel_x = 25
+=======
+/area/ai_monitored/turret_protected/aisat/foyer)
+"gQB" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio6";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"gQI" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/chair,
 /turf/open/floor/plasteel/dark,
@@ -26815,6 +27601,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/teleporter)
 "hAv" = (
@@ -26834,6 +27621,23 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+=======
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"hnO" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #1";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio1";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"hnT" = (
+/obj/structure/window/reinforced/spawner{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -27157,12 +27961,36 @@
 	},
 /obj/item/pen,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/prison)
 "hEm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/area/hallway/primary/central)
+"hsl" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #1";
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"hsm" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/door/airlock{
@@ -27742,6 +28570,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/secondary/exit/departure_lounge)
 "hPc" = (
 /obj/structure/cable/yellow{
@@ -27752,6 +28581,21 @@
 "hPg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9
+=======
+/area/hallway/primary/fore)
+"hEh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"hEH" = (
+/obj/effect/landmark/start/scientist,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
@@ -28184,9 +29028,35 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"hLr" = (
+/obj/structure/table/glass,
+/obj/item/wrench,
+/obj/item/screwdriver,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/item/storage/box/monkeycubes,
+/obj/item/storage/box/monkeycubes,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"hLv" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
@@ -28808,6 +29678,7 @@
 /obj/machinery/newscaster{
 	pixel_x = -32
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/wood,
 /area/library)
 "ieK" = (
@@ -28828,6 +29699,23 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+=======
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
+"hST" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio2";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"hSX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "telelab";
+	name = "test chamber blast door"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
@@ -29157,6 +30045,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "geneticsdesk";
@@ -29166,6 +30055,30 @@
 /area/medical/genetics)
 "ijC" = (
 /obj/machinery/light/small{
+=======
+/obj/item/paper_bin,
+/turf/open/floor/plating,
+/area/science/robotics/lab)
+"hXj" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/medical/storage)
+"hXu" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #3";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio3";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"hXv" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -29973,6 +30886,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/main)
 "its" = (
 /obj/structure/cable/yellow{
@@ -29988,6 +30902,19 @@
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
+=======
+/area/maintenance/fore)
+"ihR" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/button/door{
+	id = "armourydoors";
+	name = "Xenobiology Containment Cell Lockdown";
+	pixel_x = -28;
+	pixel_y = 28;
+	req_access_txt = "19"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
@@ -29995,6 +30922,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/camera{
 	c_tag = "Xenobiology - Cell 5";
 	dir = 8;
@@ -30002,6 +30930,9 @@
 	network = list("ss13","xeno","rd")
 	},
 /turf/open/floor/engine,
+=======
+/turf/open/floor/plating,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/science/xenobiology)
 "iud" = (
 /obj/structure/disposalpipe/segment,
@@ -30252,6 +31183,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
 	},
@@ -30271,6 +31203,40 @@
 /obj/item/shard,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
+=======
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/office)
+"ikO" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"ikZ" = (
+/obj/machinery/rnd/production/protolathe/department/service,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/sign/departments/restroom{
+	pixel_x = -32
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /area/maintenance/port/fore)
 "iyi" = (
@@ -30652,7 +31618,33 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "iET" = (
+=======
+"ipo" = (
+/obj/structure/rack,
+/obj/item/clothing/under/rank/cargo/tech,
+/turf/open/floor/plasteel/white,
+/area/quartermaster/storage)
+"ipA" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #2";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio2";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"ipB" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/disposalpipe/segment{
@@ -30803,6 +31795,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
@@ -30818,6 +31811,21 @@
 /obj/item/clothing/glasses/science,
 /obj/item/clothing/glasses/science,
 /obj/effect/turf_decal/bot,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+"iqX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio1";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"iqZ" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/item/radio/intercom{
 	pixel_x = -28
 	},
@@ -32383,6 +33391,7 @@
 	id = "ENGLoad"
 	},
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/department/engine)
 "jdk" = (
 /turf/closed/wall/r_wall,
@@ -32396,6 +33405,22 @@
 /obj/machinery/light/small,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
+=======
+/area/maintenance/port)
+"iOL" = (
+/turf/closed/wall,
+/area/crew_quarters/fitness/recreation)
+"iOZ" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio7";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -32409,6 +33434,7 @@
 	dir = 8;
 	name = "Air to External Air Ports"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -32437,6 +33463,14 @@
 /area/crew_quarters/kitchen)
 "jeN" = (
 /obj/machinery/computer/scan_consolenew{
+=======
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"iPc" = (
+/obj/structure/chair/comfy/black,
+/obj/effect/turf_decal/tile/green{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/light,
@@ -32962,12 +33996,25 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio8";
 	name = "containment blast door"
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/engine,
+=======
+/obj/item/twohanded/required/kirbyplants/random,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/fitness/recreation)
+"iVZ" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/machinery/door/airlock/research/glass{
+	name = "Xenobiology Kill Room";
+	req_access_txt = "47"
+	},
+/turf/open/floor/plating,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/science/xenobiology)
 "jmS" = (
 /obj/item/toy/plush/beeplushie,
@@ -32983,6 +34030,7 @@
 	icon_state = "L12"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/central)
 "jnd" = (
 /obj/structure/disposalpipe/segment,
@@ -32997,6 +34045,20 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+=======
+/area/science/storage)
+"iWQ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio7";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"iXk" = (
+/obj/machinery/holopad,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/morgue)
 "jnw" = (
@@ -33108,11 +34170,18 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "joD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5
+=======
+/area/crew_quarters/heads/hor)
+"iZG" = (
+/obj/machinery/atmospherics/pipe/manifold/general/hidden{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
@@ -33782,6 +34851,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/solar/aft)
@@ -33791,6 +34861,17 @@
 	},
 /obj/machinery/computer/security{
 	dir = 8
+=======
+/turf/open/floor/plasteel,
+/area/teleporter)
+"jhA" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -34359,8 +35440,38 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
+=======
+/turf/open/floor/grass,
+/area/hallway/primary/fore)
+"jtk" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -34908,6 +36019,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/light{
 	dir = 8
@@ -34919,6 +36031,19 @@
 /area/crew_quarters/dorms)
 "jTd" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"jBS" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"jBX" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -34983,10 +36108,41 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/science/research)
 "jUl" = (
 /obj/item/radio/intercom{
 	pixel_y = -29
+=======
+/area/hallway/primary/central)
+"jDD" = (
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = -4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/machinery/button/door{
+	id = "detective_shutters";
+	name = "detective's office shutters control";
+	pixel_x = -26;
+	pixel_y = 6;
+	req_access_txt = "4"
+	},
+/turf/open/floor/wood,
+/area/security/detectives_office)
+"jDF" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/circuit/telecomms/server,
+/area/tcommsat/server)
+"jDQ" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/computer/security{
 	dir = 1
@@ -35197,6 +36353,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -35233,6 +36390,20 @@
 /area/hallway/secondary/entry)
 "jYj" = (
 /obj/effect/turf_decal/bot/left,
+=======
+/turf/open/floor/plating,
+/area/maintenance/starboard/central)
+"jFy" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/engine/gravity_generator)
 "jYp" = (
@@ -39969,6 +41140,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
 "ljS" = (
@@ -39978,6 +41150,17 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+=======
+/turf/open/floor/plasteel,
+/area/security/main)
+"kOS" = (
+/obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner,
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"kPc" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/window,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -40019,12 +41202,52 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/lab)
 "lkn" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "lkp" = (
+=======
+/area/hallway/primary/fore)
+"kQj" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "kitchen"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = -25
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/kitchen)
+"kQq" = (
+/obj/structure/lattice,
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space/nearstation)
+"kQu" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/camera/autoname,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"kRf" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
@@ -40045,6 +41268,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
@@ -40052,6 +41276,20 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
+=======
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit)
+"kRs" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/structure/closet/crate,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
+"kRv" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -41076,7 +42314,21 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/aft)
+"ldG" = (
+/obj/machinery/shieldwallgen/xenobiologyaccess,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"ldL" = (
+/obj/effect/turf_decal/tile/green{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -41223,11 +42475,40 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/science/storage)
+"lfw" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio2";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"lfx" = (
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -41612,6 +42893,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/security/prison)
 "lJv" = (
@@ -41625,6 +42907,26 @@
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+=======
+/turf/open/floor/plating,
+/area/security/brig)
+"lkO" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio1";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
@@ -42916,6 +44218,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "mcv" = (
@@ -42942,6 +44245,27 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+=======
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/chapel/monastery)
+"lAg" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"lAu" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible{
+	dir = 9
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -43179,6 +44503,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
@@ -43196,6 +44521,12 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
+=======
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"lEq" = (
+/obj/machinery/shower{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/window/reinforced,
@@ -43892,6 +45223,7 @@
 	},
 /obj/item/blood_filter,
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/surgery)
 "mqU" = (
 /obj/structure/table/glass,
@@ -43899,6 +45231,25 @@
 	pixel_y = 26
 	},
 /obj/machinery/computer/security/telescreen/entertainment{
+=======
+/area/crew_quarters/toilet)
+"lQz" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #6";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio8";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"lQC" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/obj/structure/sign/poster/random{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -44327,9 +45678,32 @@
 	name = "Satellite Access";
 	req_one_access_txt = "32;19"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 1;
 	icon_state = "airlock_unres_helper"
+=======
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/warehouse)
+"lWn" = (
+/turf/closed/wall/r_wall,
+/area/science/explab)
+"lWo" = (
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/item/wrench,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"lWB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -44433,6 +45807,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -44441,6 +45816,24 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
+=======
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
+"lYy" = (
+/obj/machinery/processor/slime,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/science/xenobiology)
 "myk" = (
 /obj/machinery/button/crematorium{
@@ -46326,9 +47719,32 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
+=======
+/turf/open/floor/plasteel,
+/area/science/shuttle)
+"mAR" = (
+/obj/structure/disposalpipe/trunk,
+/obj/structure/disposaloutlet{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"mBd" = (
+/obj/effect/spawner/room/fivexthree,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"mBL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall4";
+	location = "hall3"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /turf/open/floor/plasteel/white,
@@ -49285,6 +50701,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "nJb" = (
@@ -50590,6 +52009,7 @@
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/closet/secure_closet/engineering_chief,
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/chief)
 "oaI" = (
 /obj/effect/turf_decal/stripes/line{
@@ -50617,6 +52037,18 @@
 	department = "Security";
 	departmentType = 5;
 	pixel_y = -30
+=======
+/area/crew_quarters/fitness/recreation)
+"nJA" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"nJU" = (
+/obj/machinery/light{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -51047,6 +52479,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/reagent_containers/food/snacks/bearsteak{
 	pixel_x = 5
 	},
@@ -51062,6 +52495,23 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+=======
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"nMA" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "ofF" = (
@@ -53158,6 +54608,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/mineral/titanium/white,
 /area/space)
@@ -53169,6 +54620,17 @@
 /obj/machinery/door/airlock/engineering{
 	name = "Starboard Bow Solar Access";
 	req_access_txt = "10"
+=======
+/obj/item/twohanded/required/kirbyplants/random,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"oAz" = (
+/obj/structure/table/reinforced,
+/obj/item/book/manual/chef_recipes,
+/obj/item/kitchen/rollingpin,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -53813,7 +55275,32 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple{
+=======
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"oGn" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"oGq" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
@@ -54851,6 +56338,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
 	},
@@ -54882,6 +56370,19 @@
 /obj/item/wrench,
 /obj/machinery/light{
 	dir = 4
+=======
+/obj/structure/chair/wood,
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"oUS" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #4";
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -55094,6 +56595,33 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/engine,
+/area/science/explab)
+"paS" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/item/radio/intercom{
+	pixel_x = -28;
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"paW" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/medical/medbay/lobby)
+"pbj" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/effect/turf_decal/stripes/line,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -55811,10 +57339,19 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/virology)
 "pvB" = (
 /obj/structure/chair{
 	pixel_y = -2
+=======
+/area/maintenance/port/central)
+"pkr" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #2";
+	req_access_txt = "55"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -55826,12 +57363,24 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "pwf" = (
 /obj/structure/chair{
 	dir = 1
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"pku" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -55892,8 +57441,25 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/starboard)
 "pwU" = (
+=======
+/area/hallway/primary/fore)
+"pmj" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #4";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio6";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"pmk" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -55928,9 +57494,19 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/machinery/camera/autoname,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/courtroom)
 "pxE" = (
 /obj/machinery/computer/operating{
+=======
+/area/crew_quarters/heads/cmo)
+"pmm" = (
+/mob/living/simple_animal/slime,
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"pmx" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -56514,11 +58090,38 @@
 	name = "Holding Area";
 	req_access_txt = "2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
+=======
+/turf/open/space/basic,
+/area/space/nearstation)
+"pwI" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"pwQ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -56614,7 +58217,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/turf/open/floor/plasteel/dark,
+/area/chapel/main/monastery)
+"pzb" = (
+/obj/structure/flora/ausbushes/pointybush,
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+"pzm" = (
+/obj/structure/window/reinforced/spawner{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -56764,15 +58383,35 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"pBS" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
+=======
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"pBZ" = (
+/obj/effect/spawner/structure/window,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "pJQ" = (
@@ -57564,8 +59203,35 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/medbay/aft)
+"pPU" = (
+/obj/machinery/door/window/northleft{
+	dir = 8;
+	name = "Heavy Containment Access";
+	reinf = 0;
+	req_access_txt = "55"
+	},
+/obj/machinery/door/window/northleft{
+	dir = 4;
+	name = "Heavy Containment Access";
+	reinf = 0;
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "Blast Doors"
+	},
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
@@ -58043,6 +59709,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/hor)
 "qaM" = (
 /obj/structure/chair/comfy/beige{
@@ -58054,6 +59721,29 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
+=======
+/area/hallway/secondary/exit/departure_lounge)
+"pVo" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio6";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"pVH" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -25
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/radio/intercom{
 	pixel_x = 26
@@ -58256,6 +59946,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/chapel/main)
 "qdL" = (
 /obj/structure/grille,
@@ -58265,6 +59956,23 @@
 /obj/effect/turf_decal/bot_white/right,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
+=======
+/area/ai_monitored/turret_protected/aisat_interior)
+"pYO" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/general/hidden,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"pYY" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -59104,10 +60812,26 @@
 	req_access_txt = "5; 33"
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/chemistry)
 "qpr" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
+=======
+/area/security/brig)
+"qng" = (
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"qnk" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
@@ -59134,9 +60858,15 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/customs)
 "qpG" = (
 /obj/structure/cable/yellow{
+=======
+/area/science/research)
+"qoj" = (
+/obj/structure/cable{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -59781,10 +61511,21 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+=======
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"qAo" = (
+/obj/item/bedsheet/brown,
+/obj/structure/bed,
+/obj/item/toy/plush/carpplushie,
+/obj/structure/sign/poster/official/twelve_gauge{
+	pixel_y = 32
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/door/firedoor/border_only{
@@ -60089,6 +61830,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "qFr" = (
@@ -60098,6 +61840,39 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+=======
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"qFo" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/turf/open/space/basic,
+/area/space/nearstation)
+"qFN" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"qFP" = (
+/obj/structure/table/wood,
+/obj/item/pinpointer/nuke,
+/obj/item/disk/nuclear,
+/obj/machinery/recharger,
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Captain's Desk";
+	departmentType = 5;
+	name = "Captain RC";
+	pixel_x = 32
+	},
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/heads/captain/private)
+"qGn" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/stairs/medium{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -60127,6 +61902,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/mixing)
 "qFW" = (
 /obj/effect/turf_decal/stripes/line,
@@ -60135,6 +61911,11 @@
 "qGo" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/area/ai_monitored/turret_protected/ai)
+"qGN" = (
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -60146,10 +61927,20 @@
 	name = "Cloning Lab APC";
 	pixel_x = 24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"qHh" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -60171,10 +61962,30 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/virology)
 "qGE" = (
 /obj/structure/closet/crate{
 	icon_state = "crate"
+=======
+/area/maintenance/starboard/secondary)
+"qHB" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"qHN" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/spawner/lootdrop/maintenance/two,
 /obj/effect/turf_decal/bot,
@@ -60365,6 +62176,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/engine/engineering)
 "qKj" = (
@@ -60391,6 +62203,30 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "qKJ" = (
+=======
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"qMc" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "xenobio3";
+	name = "Containment Blast Doors";
+	pixel_y = 4;
+	req_access_txt = "55"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"qMf" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -60464,10 +62300,14 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/table/glass,
 /obj/item/clothing/gloves/color/latex,
 /obj/item/healthanalyzer,
 /obj/item/clothing/glasses/hud/health,
+=======
+/obj/effect/mapping_helpers/airlock/locked,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "qLT" = (
@@ -62257,10 +64097,38 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/quartermaster/office)
 "roT" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1
+=======
+/area/science/shuttle)
+"rsv" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/machinery/requests_console{
+	department = "Xenobiology";
+	departmentType = 2;
+	pixel_x = -32
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"rsN" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 1
@@ -62852,6 +64720,7 @@
 	dir = 8;
 	name = "Distro to Waste"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
@@ -62866,6 +64735,19 @@
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
+=======
+/obj/machinery/camera/autoname,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel,
+/area/hydroponics)
+"rEC" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/apothecary)
@@ -63025,11 +64907,36 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/engine,
+/area/engine/engine_room)
+"rGg" = (
+/obj/machinery/hydroponics/soil,
+/obj/item/seeds/watermelon,
+/turf/open/floor/grass,
+/area/hydroponics/garden)
+"rGk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio7";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"rGw" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -63217,6 +65124,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -63246,6 +65154,28 @@
 "rEF" = (
 /obj/machinery/computer/rdconsole/core{
 	dir = 1
+=======
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"rKz" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/item/radio/intercom{
+	pixel_y = 24
+	},
+/obj/machinery/camera/autoname,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"rKM" = (
+/obj/structure/closet/crate/hydroponics,
+/obj/structure/grille/broken,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
+"rKN" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -63793,10 +65723,40 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/aft)
 "rMN" = (
 /obj/effect/turf_decal/bot{
 	dir = 1
+=======
+/area/science/lab)
+"rQG" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"rQM" = (
+/obj/structure/closet/emcloset/anchored,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/fore)
+"rQV" = (
+/obj/structure/chair/comfy/beige,
+/turf/open/floor/wood,
+/area/hallway/primary/fore)
+"rQX" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/plasteel,
@@ -64062,8 +66022,42 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"rUS" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"rUV" = (
+/obj/machinery/camera/autoname,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -64095,6 +66089,7 @@
 	name = "Cargo Bay APC";
 	pixel_x = 24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow,
 /obj/machinery/light{
 	dir = 4
@@ -64105,6 +66100,21 @@
 	pixel_y = 10
 	},
 /obj/effect/turf_decal/stripes/line{
+=======
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/chapel,
+/area/chapel/main/monastery)
+"rVS" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio8";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"rVU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -64696,6 +66706,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Four";
 	shuttledocked = 1
@@ -64707,6 +66718,22 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
+=======
+/turf/open/floor/plating,
+/area/security/brig)
+"sbl" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"sbq" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -65675,6 +67702,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/cafeteria,
 /area/quartermaster/miningdock)
 "sqM" = (
@@ -65683,6 +67711,19 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+=======
+/turf/open/floor/plasteel,
+/area/engine/engine_room)
+"srf" = (
+/obj/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"srs" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -66005,7 +68046,27 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"svX" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio";
+	name = "Blast Doors"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"swh" = (
+/obj/structure/chair/comfy/black{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -66857,9 +68918,23 @@
 /obj/item/assembly/signaler{
 	pixel_y = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/assembly/signaler{
 	pixel_x = -8;
 	pixel_y = 5
+=======
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/chapel/monastery)
+"sLO" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"sLS" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/assembly/signaler{
 	pixel_x = 6;
@@ -66937,6 +69012,7 @@
 	icon_state = "L13"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/secondary/exit/departure_lounge)
 "sIX" = (
 /obj/effect/turf_decal/tile/blue,
@@ -66954,6 +69030,33 @@
 /obj/machinery/status_display/evac{
 	pixel_x = -32;
 	pixel_y = 32
+=======
+/area/ai_monitored/turret_protected/aisat/foyer)
+"sNf" = (
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/starboard/secondary)
+"sNp" = (
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Containment Pen #5";
+	req_access_txt = "55"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio7";
+	name = "containment blast door"
+	},
+/turf/open/floor/engine,
+/area/science/xenobiology)
+"sNz" = (
+/obj/machinery/rnd/experimentor,
+/turf/open/floor/engine,
+/area/science/explab)
+"sOo" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
@@ -67083,11 +69186,31 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /obj/item/pen,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
+=======
+/turf/open/floor/carpet/blue,
+/area/security/brig)
+"sRh" = (
+/obj/structure/table/reinforced,
+/obj/item/defibrillator/loaded,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/security/brig)
+"sRj" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/science/xenobiology)
+"sRq" = (
+/obj/machinery/camera/autoname{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple{
@@ -67500,6 +69623,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/storage/tech)
 "sPU" = (
 /obj/effect/turf_decal/tile/red,
@@ -67520,6 +69644,28 @@
 "sQj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9
+=======
+/area/ai_monitored/turret_protected/AIsatextAP)
+"sWb" = (
+/obj/machinery/light,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"sWJ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/toxin_input{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
@@ -68008,7 +70154,7 @@
 	dir = 8
 	},
 /obj/structure/cable/yellow{
-	icon_state = "4-8"
+	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -68534,10 +70680,34 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/quartermaster/storage)
 "tdl" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola,
+=======
+/area/security/courtroom)
+"tmY" = (
+/obj/machinery/camera/autoname,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/circuit/telecomms,
+/area/science/xenobiology)
+"tne" = (
+/obj/structure/table/optable,
+/turf/open/floor/plasteel/white,
+/area/security/brig)
+"tnH" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
+"tnJ" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -68592,6 +70762,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/secondary/service)
 "tdI" = (
 /obj/effect/turf_decal/bot,
@@ -68618,6 +70789,29 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
+=======
+/area/engine/atmos)
+"tpA" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"tpK" = (
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness/recreation)
+"tpR" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
@@ -68910,6 +71104,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/dorms)
@@ -68928,6 +71123,26 @@
 /obj/item/radio/off,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
+=======
+/turf/open/floor/wood,
+/area/security/detectives_office)
+"txJ" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/structure/sign/poster/official/no_erp{
+	pixel_x = -33
+	},
+/turf/open/floor/plating/asteroid,
+/area/maintenance/port)
+"txM" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -69278,8 +71493,18 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/arrivals_external{
 	name = "Arrivals Airlock"
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"tCJ" = (
+/obj/structure/reagent_dispensers/watertank,
+/obj/item/extinguisher,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
@@ -69287,6 +71512,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -69294,6 +71520,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+=======
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"tCR" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
@@ -69622,8 +71853,40 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
+=======
+/turf/open/floor/plasteel,
+/area/security/warden)
+"tHY" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/item/storage/box/beakers{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/storage/box/syringes,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"tHZ" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -70397,6 +72660,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/vending/wallmed{
 	pixel_x = -32
 	},
@@ -70410,6 +72674,18 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Cargo Maintenance";
 	req_access_txt = "31"
+=======
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"tSv" = (
+/obj/structure/flora/ausbushes/grassybush,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+"tSz" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -70912,6 +73188,7 @@
 	c_tag = "Atmospherics Tank - Mix";
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/engine/vacuum,
 /area/engine/atmos)
 "tNe" = (
@@ -70943,6 +73220,28 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/engine/engine_room)
+"tZZ" = (
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/warehouse)
+"uah" = (
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"uai" = (
+/obj/machinery/requests_console{
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -71270,12 +73569,28 @@
 /obj/structure/chair{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/security/processing)
 "tTo" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+=======
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/rag,
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
+"udV" = (
+/obj/machinery/shieldwallgen/xenobiologyaccess,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"udY" = (
+/obj/effect/turf_decal/stripes/line,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -72442,6 +74757,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/virology)
 "ukc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -72452,6 +74768,28 @@
 /area/crew_quarters/heads/captain/private)
 "ukj" = (
 /obj/machinery/computer/prisoner/management{
+=======
+/area/hallway/secondary/service)
+"uuA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	dir = 2;
+	external_pressure_bound = 120;
+	name = "server vent"
+	},
+/turf/open/floor/circuit/telecomms,
+/area/science/xenobiology)
+"uuT" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
@@ -73241,8 +75579,25 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
+=======
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"uHE" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio8";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"uHI" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -73597,10 +75952,20 @@
 /obj/item/stack/sheet/mineral/copper,
 /obj/item/stack/sheet/mineral/copper,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/fore)
 "uza" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/yellow{
+=======
+/area/maintenance/starboard/central)
+"uKT" = (
+/turf/closed/wall/r_wall,
+/area/security/prison)
+"uLc" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -73609,6 +75974,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/status_display/ai{
 	pixel_y = 32
 	},
@@ -73625,6 +75991,16 @@
 /obj/machinery/libraryscanner,
 /obj/machinery/light{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"uLg" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = -8;
+	pixel_y = 10
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/radio/intercom{
 	pixel_x = -28
@@ -74175,9 +76551,24 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
+=======
+/turf/open/floor/plasteel/dark,
+/area/chapel/office)
+"uUX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio6";
+	name = "containment blast door"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"uVg" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -78719,6 +81110,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/misc_lab/range)
 "vWQ" = (
@@ -78729,6 +81121,24 @@
 /area/crew_quarters/heads/hor)
 "vWU" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+=======
+/turf/open/floor/plating,
+/area/maintenance/port)
+"vZz" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "xenobio1";
+	name = "containment blast door"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"vZO" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/door/airlock/security/glass{
@@ -79558,12 +81968,23 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "wlv" = (
 /obj/machinery/flasher{
 	id = "cell4";
 	pixel_x = 28
+=======
+/obj/machinery/camera/autoname,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"woC" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/eastleft{
+	dir = 1;
+	req_access_txt = "1"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -79993,6 +82414,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "wqD" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -80006,6 +82428,25 @@
 /turf/open/floor/plasteel/cult,
 /area/library)
 "wqH" = (
+=======
+"wuB" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"wuJ" = (
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -80419,6 +82860,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "wwY" = (
@@ -80431,6 +82873,17 @@
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
 	name = "Supply Dock Loading Door"
+=======
+/obj/machinery/camera{
+	c_tag = "Captain's Quarters";
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/heads/captain/private)
+"wAx" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -81473,7 +83926,30 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	dir = 8
+=======
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/science/shuttle)
+"wNR" = (
+/obj/machinery/requests_console{
+	department = "Detective's Office";
+	departmentType = 4;
+	pixel_y = -32
+	},
+/obj/machinery/camera/autoname{
+	dir = 1;
+	network = list("aisat")
+	},
+/turf/open/floor/wood,
+/area/security/detectives_office)
+"wNW" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 1
@@ -82598,8 +85074,20 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
+=======
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel/white,
+/area/science/explab)
+"xhM" = (
+/obj/structure/marker_beacon,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -83338,6 +85826,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/escape)
 "xgS" = (
 /obj/structure/cable/yellow{
@@ -83347,12 +85836,35 @@
 	icon_state = "2-4"
 	},
 /obj/structure/disposalpipe/segment{
+=======
+/area/quartermaster/storage)
+"xuH" = (
+/obj/structure/window/reinforced{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
+=======
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/science/xenobiology)
+"xuI" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/window,
+/turf/open/floor/plating,
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/science/research)
 "xht" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -83861,6 +86373,22 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+"xBB" = (
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/bz,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+"xBN" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
@@ -85172,7 +87700,11 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
+=======
+/obj/machinery/camera/autoname{
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -86650,6 +89182,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/fore)
 "yak" = (
 /obj/structure/table,
@@ -86687,6 +89220,15 @@
 /obj/machinery/conveyor{
 	dir = 10;
 	id = "garbage"
+=======
+/area/engine/atmos)
+"ymf" = (
+/turf/open/floor/plasteel/white,
+/area/maintenance/department/science/central)
+"ymm" = (
+/obj/structure/sign/departments/minsky/engineering/telecommmunications{
+	pixel_y = 32
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/radio/intercom{
 	pixel_x = 29
@@ -104034,6 +106576,7 @@ tfJ
 tfJ
 "}
 (65,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -105831,6 +108374,1805 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+myM
+sFR
+vLc
+dJn
+aWt
+aWt
+aWt
+aWt
+aWt
+xJE
+aWt
+aWt
+aWt
+aWt
+dJn
+yes
+cTe
+nrH
+wYk
+nGs
+sCG
+myM
+dQy
+dQy
+hDZ
+axH
+ugr
+jpd
+wKs
+ktH
+stg
+tMu
+ufj
+tsS
+nyl
+xKm
+fUU
+pYh
+ikr
+fbu
+fUU
+cYf
+ftg
+ler
+nRv
+gRP
+pqp
+rkb
+ecq
+rvq
+aLq
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+daS
+daS
+daS
+daS
+daS
+aMT
+kwL
+aMT
+daS
+daS
+daS
+daS
+daS
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+anT
+oxd
+oxd
+bLB
+bLB
+oxd
+oxd
+aWN
+aWN
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+uZm
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(66,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+aMT
+myM
+sFR
+nMi
+aXG
+qxX
+qxX
+qxX
+qxX
+qxX
+pxN
+iEc
+iEc
+iEc
+trP
+iTT
+ksW
+riG
+aNF
+mtL
+fFS
+sCG
+aPf
+aXj
+aXj
+aLq
+aYe
+akM
+aoY
+byI
+vft
+aLq
+aaa
+aaa
+aaa
+gkI
+aaa
+aaa
+aCJ
+aCJ
+aCJ
+aaa
+aaa
+amI
+amI
+syp
+amI
+amI
+aLq
+aLq
+aLq
+aLq
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+huQ
+huQ
+huQ
+anT
+anT
+anT
+anT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+jZm
+gln
+gln
+gln
+gln
+oPJ
+kwL
+nCp
+tJf
+tJf
+tJf
+tJf
+tHG
+aMT
+aMT
+aMT
+aMT
+oxd
+oxd
+bLB
+bLB
+bLB
+oxd
+oxd
+kzG
+cTE
+cTE
+dZG
+oxd
+aWN
+oLF
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hJt
+fma
+hJt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(67,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kgN
+anT
+aPf
+sEV
+gDn
+tWl
+cZK
+gDn
+dQc
+kEy
+gDn
+gDn
+tWl
+gDn
+bMw
+gmk
+syv
+ocB
+hKr
+acA
+rjQ
+jtQ
+dFb
+aPf
+aMT
+aMT
+aLq
+aPm
+aCq
+kWs
+auo
+aWW
+aBc
+aaa
+tFT
+aRz
+vwK
+aaa
+wop
+aXT
+acP
+atO
+dsT
+hGx
+amI
+oGN
+nHf
+edJ
+amI
+sFX
+jqu
+vlf
+kxH
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aWj
+aWj
+aWj
+aWj
+aWj
+aMT
+kwL
+aMT
+aWj
+aWj
+aWj
+aWj
+aWj
+aMT
+aMT
+aMT
+aMT
+oxd
+tKK
+wiM
+wiM
+wiM
+pjC
+oxd
+cTE
+aAB
+aAB
+bnp
+oxd
+sQL
+oxd
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aUa
+kJm
+xun
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(68,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+sFR
+gmk
+syv
+heC
+ufT
+acA
+acA
+aPf
+aPf
+aPf
+aMT
+aMT
+aLq
+aLq
+aLq
+gpP
+auo
+aWW
+aBc
+aaa
+adh
+aRz
+vwK
+ayT
+aAE
+fZJ
+rYb
+bfK
+aVS
+tkq
+amI
+pvv
+gXg
+edJ
+amI
+rUV
+hnM
+dwW
+laV
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+huQ
+huQ
+huQ
+anT
+huQ
+huQ
+huQ
+huQ
+huQ
+aMT
+anT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+kwL
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+oxd
+eFU
+uUH
+bLh
+uUH
+uUH
+oxd
+qry
+bNL
+eYb
+cTE
+kFz
+wrU
+oxd
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+jbr
+uWJ
+fma
+uWJ
+hJt
+hJt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(69,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+eNy
+eNy
+eNy
+eNy
+eNy
+aMT
+aPf
+vUN
+gmk
+syv
+mTf
+ciG
+kbK
+rSH
+aPf
+wiT
+qYg
+gJZ
+pvJ
+pvJ
+srL
+aLw
+oxD
+auo
+aWW
+aHj
+aaa
+aZL
+aRz
+rhX
+hka
+akF
+bEA
+drb
+mVL
+jge
+uom
+aTg
+xwN
+dmC
+bCT
+amI
+lrJ
+wnS
+aat
+laV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+anT
+aMT
+aMT
+huQ
+aMT
+huQ
+anT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+kwL
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+bLB
+uUH
+gKz
+sgS
+ssM
+rLd
+oxd
+fPK
+cTE
+cTE
+mGA
+mEe
+npz
+oxd
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+jbr
+vXT
+eMX
+bLI
+fMG
+hJt
+hJt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(70,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+kiV
+anT
+eNy
+rBk
+rBk
+qEQ
+jJT
+brJ
+hfs
+xel
+gmk
+syv
+iGU
+aWt
+cCw
+wVz
+aPf
+rGw
+feZ
+uIa
+aMT
+aMT
+aLq
+epz
+wlT
+auo
+lMI
+dzt
+aaa
+aRz
+aRz
+qLv
+aaa
+uOJ
+qQX
+cuf
+iSB
+sFi
+bqt
+amI
+maj
+ufq
+hic
+amI
+fdh
+gMA
+xDK
+laV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+wpg
+wpg
+wpg
+wpg
+wpg
+wpg
+wpg
+wpg
+aMT
+huQ
+anT
+huQ
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+qVl
+qVl
+qVl
+qVl
+qVl
+qVl
+qVl
+qVl
+qVl
+qVl
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aKm
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+oxd
+rcG
+rco
+uzw
+etp
+wbz
+oxd
+fjR
+cTE
+nqJ
+oxd
+oxd
+oxd
+oxd
+hJt
+hJt
+hJt
+jbr
+hJt
+hJt
+hJt
+jbr
+hJt
+hJt
+jbr
+uXR
+pKE
+aJt
+ejh
+tfC
+hJt
+anT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(71,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+kiV
+aMT
+eNy
+hYg
+uAf
+mnA
+mFU
+anT
+myM
+fpQ
+ykf
+syv
+iGU
+aWt
+cCw
+kBk
+aPf
+bKn
+kgo
+rGw
+wiT
+qFo
+srL
+aNW
+pfS
+aSC
+tgX
+aLq
+aaa
+aaa
+aaa
+fuG
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+amI
+rDn
+oab
+wbB
+amI
+lQL
+lhv
+rJF
+kxH
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+wpg
+pag
+pag
+nJA
+srf
+pag
+pag
+wpg
+anT
+huQ
+aMT
+huQ
+anT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+qVl
+eLd
+evW
+uLg
+ndE
+evW
+mxF
+ndE
+bLm
+qVl
+anT
+anT
+anT
+anT
+anT
+anT
+xrt
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+aMT
+oxd
+oxd
+oxd
+oyM
+vHi
+kkM
+pdv
+jxu
+ogv
+xsS
+oQx
+oxd
+oxd
+dIy
+fWD
+ydS
+dwf
+khs
+eBT
+nZZ
+upy
+oMl
+upy
+ubA
+upy
+xqa
+vIx
+nST
+dPq
+vEV
+eMX
+mes
+hJt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (72,1,1) = {"
 tfJ
@@ -105891,6 +110233,7 @@ kLz
 kGR
 tfJ
 krC
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 sZz
@@ -111608,6 +115951,5770 @@ gip
 mXI
 pfj
 hfC
+=======
+wgE
+xFs
+xmT
+ylG
+pOd
+iGU
+aWt
+cCw
+ydu
+aPf
+rGw
+nin
+rGw
+nin
+aMT
+aLq
+aLq
+aLq
+azd
+gLf
+aLq
+grD
+wNZ
+wNZ
+kbd
+aaa
+rvb
+eIR
+szS
+lpo
+wYS
+aEz
+amI
+aMd
+pii
+aMd
+amI
+kxH
+qeA
+kxH
+kxH
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+wpg
+pag
+kOS
+pag
+pag
+pag
+pag
+wpg
+aMT
+huQ
+aMT
+anT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+qVl
+bLm
+evW
+mZO
+ndE
+evW
+mZO
+ndE
+bLm
+qVl
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+xrt
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+anT
+anT
+oxd
+tDF
+qYW
+uUH
+biI
+eNP
+bDc
+tCr
+oxd
+bQa
+eIe
+oxd
+eWI
+gIM
+jlb
+lvB
+hnc
+etG
+idr
+hyG
+trQ
+dTL
+tco
+qEq
+trQ
+var
+sLM
+iGD
+wsP
+isR
+eMX
+mes
+hJt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(73,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+kiV
+aMT
+kiV
+anT
+eNy
+eNy
+eNy
+eNy
+eNy
+aMT
+aPf
+jdc
+tPI
+bPk
+iGU
+aWt
+fmc
+rSH
+aPf
+bKn
+kgo
+rGw
+enh
+qYg
+pwG
+aLq
+emE
+auo
+vFB
+aLq
+ibW
+aaa
+qBj
+aEU
+aaa
+pbA
+wAe
+rbR
+swJ
+bGy
+fbL
+dZs
+suZ
+ked
+aDr
+amI
+djB
+ewx
+pzz
+kxH
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aHG
+wpg
+pag
+pag
+qFN
+pag
+pag
+pag
+wpg
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+vhc
+bmt
+bLm
+bLm
+tUL
+bLm
+bLm
+bLm
+bLm
+vhc
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+xrt
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+oxd
+com
+oxd
+oxd
+oxd
+oxd
+oxd
+oxd
+oxd
+nzD
+rcN
+oxd
+jbr
+uJf
+snb
+jbr
+hJt
+hJt
+hJt
+jbr
+hJt
+hJt
+hJt
+jbr
+hJt
+hJt
+jbr
+lgO
+hgD
+nBf
+mLw
+reR
+hJt
+anT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(74,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+anT
+anT
+kiV
+aMT
+anT
+aMT
+eNy
+iVW
+iVW
+lqS
+jJT
+brJ
+hfs
+jMB
+tPI
+bPk
+gnG
+iXN
+erH
+rSH
+aPf
+rGw
+nin
+rGw
+feZ
+dfW
+xVw
+xyv
+fbQ
+dhR
+gvS
+aLq
+ibW
+aaa
+aaa
+aaa
+aaa
+hsa
+dYA
+ylC
+ylC
+iES
+ohP
+dZs
+xSR
+kff
+vDG
+amI
+lCB
+klF
+jUh
+kxH
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+wpg
+pag
+pag
+qng
+pag
+pag
+pag
+wpg
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+qVl
+ggk
+bLm
+emu
+bLm
+bLm
+bLm
+feP
+fQu
+tII
+vhc
+anT
+anT
+anT
+anT
+anT
+anT
+xrt
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+aMT
+mkF
+wSr
+wGM
+aQU
+kHY
+hYS
+njs
+jMO
+hYS
+pCz
+pyW
+oKV
+qqp
+avw
+ncI
+jbr
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+jbr
+tNy
+pXo
+nXs
+jbr
+hJt
+hJt
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(75,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+eNy
+qNs
+ayM
+nRU
+mFU
+anT
+myM
+pWX
+tPI
+bPk
+ouN
+sBn
+mVS
+cbG
+aPf
+bKn
+kgo
+rGw
+enh
+qYg
+pwG
+xyv
+tVf
+kXj
+aGi
+qaT
+ibW
+aaa
+wkz
+cIu
+eyN
+hsa
+xKz
+dHA
+pYg
+iZH
+nmi
+nmi
+ymm
+dHr
+otQ
+iBF
+mnb
+xUf
+ivx
+kxH
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+wpg
+wpg
+wpg
+pPU
+svX
+wpg
+wpg
+wpg
+wpg
+wpg
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+jYg
+bLm
+nEX
+lUi
+bLm
+bLm
+plC
+irJ
+hgo
+vhc
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+xrt
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+mkF
+mkF
+mkF
+bal
+bal
+eJm
+lyi
+ocn
+wrt
+eHj
+aua
+tDw
+jbr
+cNV
+jjQ
+jbr
+jbr
+hJt
+hJt
+aMT
+aMT
+aMT
+kiV
+anT
+qBt
+aMT
+jbr
+vBM
+ome
+qBZ
+jbr
+upl
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(76,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+kiV
+anT
+anT
+kiV
+aMT
+anT
+aMT
+eNy
+iVW
+iVW
+wWh
+krC
+wgE
+xFs
+fcG
+xha
+ikv
+edG
+ouN
+umz
+sLX
+aPf
+oui
+xVw
+oui
+dfW
+dfW
+xVw
+xyv
+tVf
+xdj
+vFB
+aLq
+ibW
+aaa
+aDE
+kyq
+kyq
+ceh
+gOn
+dIY
+ewK
+raK
+vuv
+nmi
+tJs
+cnE
+pYZ
+bmM
+kfT
+qvG
+nvh
+kxH
+aMT
+aMT
+aMT
+lcE
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+wpg
+ldG
+ihR
+dVh
+udV
+wpg
+xBB
+lWo
+xLn
+anT
+anT
+anT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+qVl
+vhc
+vhc
+bpY
+vhc
+vhc
+vhc
+iHe
+vhc
+vhc
+vhc
+vhc
+qVl
+qVl
+qVl
+vhc
+aMT
+aMT
+xrt
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+bcc
+kse
+ifp
+bQp
+xDy
+bQp
+bQp
+knY
+kAd
+jcS
+mkF
+rcC
+xUR
+jbr
+iMF
+grq
+hJt
+anT
+anT
+anT
+rKo
+aMT
+aMT
+aMT
+jbr
+jbr
+pXo
+hJt
+jbr
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(77,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+kiV
+aMT
+kiV
+anT
+eNy
+eNy
+eNy
+eNy
+eNy
+aMT
+aPf
+kpI
+tPI
+dHJ
+xHX
+ouN
+tcE
+aaQ
+aPf
+aPf
+aPf
+aPf
+iPq
+iPq
+aPf
+aLq
+dwI
+jAH
+vFB
+aLq
+ibW
+aaa
+dZs
+jDF
+hwe
+shl
+uou
+dIY
+uRt
+rmc
+oGi
+jQk
+uFk
+lqo
+bBc
+qgv
+qCM
+hsM
+nfI
+kxH
+aMT
+aMT
+aMT
+ixJ
+rqc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+xLn
+grM
+cKL
+lAg
+pYO
+edw
+aKS
+cHh
+xLn
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+qVl
+iOB
+iOB
+iOB
+pFI
+vhc
+iOB
+iOB
+iOB
+sAH
+iOB
+iOB
+iOB
+rxQ
+uig
+rxQ
+vhc
+aMT
+pep
+kih
+jfk
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+mkF
+nBP
+jVo
+lGg
+gHY
+tFk
+fqH
+kco
+mPJ
+rSu
+wDE
+mkF
+cNM
+hrl
+jbr
+aQg
+dAF
+hJt
+aMT
+anT
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+wLz
+aMT
+aMT
+anT
+anT
+anT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(78,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+anT
+kiV
+aMT
+eNy
+ndm
+ndm
+iZW
+bSH
+jlV
+jWp
+xtU
+gFG
+tVy
+aWt
+tCE
+bFQ
+wFt
+aNF
+evJ
+tpf
+kRy
+uib
+hFA
+uyn
+aLq
+hQN
+dgC
+ayw
+aLq
+xzO
+hlq
+dZs
+oWN
+tTC
+shl
+mRQ
+dIY
+kyg
+jnk
+hOq
+vKq
+rdI
+bED
+bBc
+amI
+roy
+won
+uGd
+kxH
+aMT
+aMT
+aMT
+ixJ
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+wpg
+wpg
+wpg
+wpg
+wpg
+pBS
+uLc
+pwI
+wuB
+wpg
+wpg
+wpg
+wpg
+wpg
+aMT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+vhc
+iOB
+iOB
+jbA
+iOB
+vhc
+iOB
+hfl
+bLm
+vhc
+aMT
+pep
+vjC
+fzO
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+eHE
+jVo
+pxc
+mgp
+bjT
+nUp
+pxc
+mgp
+oej
+lRD
+mkF
+luE
+hrl
+pMb
+sBg
+ihJ
+jbr
+aMT
+anT
+anT
+kiV
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(79,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+kiV
+aMT
+eNy
+iSE
+ndm
+wxJ
+mFU
+anT
+myM
+dxb
+tPI
+xvv
+aWt
+gIp
+bRD
+aaQ
+wGl
+kNC
+vGP
+mNs
+ewN
+rPB
+oUl
+aLq
+slW
+jAH
+vFB
+aLq
+ibW
+aaa
+dZs
+pbP
+waJ
+shl
+amF
+dIY
+fFx
+fNA
+nKq
+jQk
+cof
+kff
+bBc
+amI
+oDo
+hzv
+nCG
+kxH
+aMT
+miv
+aMT
+ixJ
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+wpg
+pag
+pag
+pag
+hEh
+qMc
+uah
+qMa
+ikO
+uHE
+aBk
+aBk
+ffX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+iOB
+iOB
+hwy
+bTd
+ido
+nCX
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+pep
+pep
+pep
+juK
+kvw
+pep
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+hNX
+jVo
+kco
+hNt
+aGV
+fqH
+kco
+hNt
+oej
+oyu
+mkF
+eBZ
+hrl
+jbr
+vTE
+xVk
+jbr
+aMT
+anT
+aMT
+kdc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(80,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+anT
+eNy
+ndm
+ndm
+izb
+bSH
+jlV
+jWp
+xtU
+kja
+dWW
+dwj
+gbC
+bRD
+aaQ
+aNF
+kNC
+oxI
+bla
+bla
+bla
+hpA
+vWr
+dLw
+jAH
+vFB
+aLq
+ibW
+aaa
+cRh
+rvb
+rvb
+gpM
+gOn
+dIY
+nYd
+cPw
+awT
+nmi
+tJs
+lqo
+cHO
+amI
+kxH
+ogH
+kxH
+kxH
+ixJ
+rsn
+ixJ
+ixJ
+ixJ
+ixJ
+aMT
+aMT
+aMT
+vbP
+aMT
+aMT
+aMT
+wpg
+eiq
+pag
+pag
+hXu
+eTg
+xNP
+qMa
+bTX
+lQz
+pag
+pmm
+aiA
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+anT
+anT
+anT
+anT
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+nDO
+iOB
+wLr
+sAH
+tEc
+gRD
+uFb
+uFb
+uFb
+uFb
+hFB
+fly
+noq
+hYz
+gde
+tfA
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+mkF
+mkF
+anP
+pxc
+mgp
+bjT
+iKg
+pxc
+mgp
+oej
+mkF
+mkF
+fVO
+hrl
+jbr
+jbr
+jbr
+jbr
+aMT
+anT
+anT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(81,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+eNy
+eNy
+eNy
+eNy
+eNy
+aMT
+aPf
+xAy
+gxU
+ieb
+brS
+sPg
+aYn
+tkt
+sZD
+kNC
+aWt
+ahO
+hPI
+hPI
+iod
+aLq
+dLw
+nTV
+aGi
+qaT
+ibW
+aaa
+kmb
+oIe
+nxG
+shl
+ceT
+wFQ
+rgV
+sYf
+nmi
+nmi
+gub
+kff
+bBc
+amI
+vqn
+eee
+tAo
+qyS
+bjh
+bJI
+teu
+bkb
+vNi
+ixJ
+anT
+anT
+jjx
+vCt
+jjx
+aMT
+aMT
+wpg
+mAR
+sLO
+sLO
+baC
+jhA
+xNP
+qMa
+dCO
+rVS
+pag
+pag
+pag
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+vhc
+vhc
+vhc
+vhc
+uEB
+wbU
+vhc
+vhc
+vhc
+vhc
+pep
+rZa
+grT
+dUV
+rFH
+tfA
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+mkF
+igl
+kco
+hNt
+aGV
+fqH
+kco
+hNt
+rae
+mkF
+ccQ
+gsN
+blA
+jbr
+cID
+bHn
+hJt
+aMT
+anT
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(82,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kqr
+bmR
+bmR
+bmR
+pfc
+qNr
+kPX
+vrb
+lmd
+kOj
+pvr
+aGC
+aNF
+kNC
+aWt
+kZm
+pTk
+rfS
+rfS
+aCz
+mPX
+jAH
+gvS
+aLq
+ibW
+aaa
+aaa
+aaa
+aaa
+gMs
+mbJ
+dpw
+dpw
+ovu
+mlv
+dZs
+oOZ
+kff
+wTq
+amI
+rRl
+nCS
+fbe
+vPb
+bwy
+bwy
+fYD
+dnA
+bhQ
+ixJ
+aMT
+aMT
+xbI
+bKa
+pKj
+aMT
+aMT
+wpg
+mxX
+mxX
+mxX
+mxX
+mxX
+rKz
+sWb
+mxX
+mxX
+mxX
+mxX
+mxX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qVl
+qVl
+vhc
+vhc
+vhc
+vhc
+lwx
+vhc
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iQt
+iOB
+iOB
+iOB
+aXD
+pep
+pep
+pep
+sPp
+pep
+pep
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+mkF
+qZS
+pxc
+mgp
+ppX
+tET
+fam
+xGu
+oxC
+qHP
+usw
+lAe
+sqa
+sKW
+qgA
+dil
+hJt
+anT
+anT
+anT
+rKo
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(83,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hrK
+eNy
+eNy
+eNy
+aPf
+aPf
+hNv
+rXP
+fFS
+aaz
+jtH
+aaQ
+wGl
+vlX
+aWt
+eYF
+avp
+oxS
+kGD
+aCz
+iEF
+xxH
+vFB
+aLq
+xdX
+wNZ
+wNZ
+dkb
+aaa
+tMm
+iRm
+rbR
+ovt
+obH
+fbL
+dZs
+gGc
+mfn
+lKW
+amI
+xWv
+iRQ
+dIC
+dIC
+mAL
+mSz
+hkr
+jMv
+uxX
+ixJ
+hxh
+jjx
+ePp
+vCt
+ePp
+jjx
+hxh
+wpg
+pag
+pag
+pag
+hST
+lfw
+xNP
+qMa
+xuH
+iWQ
+aBk
+aBk
+ffX
+wpg
+aMT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+qVl
+dNQ
+iOB
+iOB
+vhc
+iOB
+iQt
+iNq
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iQt
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iOB
+iQt
+pFI
+vhc
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+mkF
+lev
+kco
+hNt
+aGV
+eGe
+kco
+hNt
+hWa
+mkF
+hnu
+jmd
+iUL
+jbr
+lqA
+pxF
+hJt
+aMT
+aMT
+aMT
+kiV
+anT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(84,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+hrK
+eNy
+qOk
+qOk
+gYQ
+ktL
+mQa
+cAH
+ycu
+aOz
+sXH
+aaQ
+wGl
+kNC
+vTH
+wDU
+aPf
+aPf
+aPf
+aLq
+ojH
+uXc
+dvr
+ojH
+aaa
+aaa
+aaa
+ibW
+aaa
+lUq
+ipm
+nuQ
+oPk
+uZf
+aEz
+dZs
+tJs
+kff
+bBc
+amI
+pmx
+dlg
+tVj
+wIw
+mbt
+mFa
+iFy
+naH
+pWG
+pWG
+pWG
+bwy
+tBz
+cIv
+oZr
+pWG
+lCK
+wpg
+eiq
+pmm
+pag
+ipA
+pkr
+xNP
+qMa
+fOE
+sNp
+pag
+pmm
+aiA
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+iOB
+iOB
+rtp
+vhc
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iQt
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+jVo
+pxc
+mgp
+sfr
+riv
+sFB
+rVB
+fnj
+mkF
+jbr
+jbr
+jbr
+jbr
+uFi
+uFi
+uFi
+uFi
+uFi
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(85,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hrK
+eNy
+oIN
+qOk
+qOk
+mFU
+ouW
+aWt
+dUp
+aaz
+fxM
+aaQ
+wGl
+kNC
+aWt
+hOf
+aPf
+aMT
+aPf
+aWA
+aFH
+uar
+qvw
+aNF
+pXj
+iUK
+aPf
+rzx
+aPf
+cGk
+cGk
+cGk
+cGk
+cGk
+amI
+amI
+egt
+mHs
+prR
+amI
+pmx
+xzI
+ixJ
+ixJ
+gsq
+ixJ
+gug
+kyn
+cbd
+cbd
+cbd
+cbd
+aqy
+cbd
+yhU
+tHj
+lCK
+wpg
+mAR
+sLO
+sLO
+fbY
+cKs
+xNP
+qMa
+iOZ
+rGk
+pag
+pag
+pag
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+qVl
+iOB
+iOB
+iOB
+iHe
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+aTr
+bTd
+oMQ
+iOB
+iOB
+vhc
+vlv
+nCX
+iQt
+iOB
+qVl
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+lEF
+giT
+giT
+kEZ
+uAB
+seA
+giT
+jwM
+mkF
+aLz
+eeB
+imB
+sZn
+oSQ
+kgT
+iiJ
+wby
+uFi
+uFi
+uFi
+uFi
+mOG
+mOG
+anT
+anT
+kiV
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(86,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+hrK
+eNy
+qOk
+qOk
+hwW
+osb
+gNt
+iyX
+xwH
+sMX
+gLT
+eCQ
+aNF
+kNC
+aWt
+bXU
+aPf
+bVr
+xEN
+ayp
+aDG
+eaR
+gKJ
+vxc
+vtC
+nZB
+vKV
+lYn
+pkZ
+aTN
+ivM
+lNH
+atw
+aTN
+tMo
+amI
+amI
+qpC
+amI
+amI
+pmx
+vnx
+ixJ
+nfX
+kxy
+ixJ
+ofu
+bcI
+bcI
+bcI
+fDf
+tVj
+vNK
+wIw
+oDx
+hqF
+lCK
+wpg
+mxX
+mxX
+mxX
+mxX
+mxX
+rQG
+qMa
+mxX
+mxX
+mxX
+mxX
+mxX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+qVl
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+ibO
+nvP
+iOB
+vhc
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+mkF
+mkF
+mkF
+vEs
+fKH
+mkF
+mkF
+mkF
+mkF
+jEF
+qNy
+lDT
+sZn
+fgs
+rYf
+rjl
+yhL
+uFi
+iER
+wuM
+cny
+cFi
+mOG
+aMT
+aMT
+kiV
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(87,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hrK
+eNy
+eNy
+eNy
+aPf
+aPf
+hxf
+pnS
+rmN
+aaz
+fxM
+tfy
+aNF
+aQJ
+nmd
+nkT
+aPf
+myM
+aPf
+wrV
+aik
+wey
+vSv
+aNF
+vuM
+ccY
+gGL
+bfy
+hTr
+aTN
+maw
+arJ
+arJ
+fHN
+ybf
+rPX
+his
+vsK
+bBc
+amI
+bgF
+gFb
+bBq
+lfY
+hvp
+ixJ
+jjx
+jjx
+jjx
+jjx
+ixJ
+ixJ
+ixJ
+ixJ
+hcE
+hqF
+lCK
+wpg
+pag
+pag
+pag
+iqX
+lkO
+xNP
+qMa
+oGn
+gQB
+aBk
+aBk
+ffX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+iOB
+vhc
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+rdA
+qEg
+jea
+uFi
+twx
+wMh
+ffr
+aHZ
+qNy
+lDT
+sZn
+gdW
+rjl
+rjl
+fwl
+mqJ
+pjk
+aHZ
+uhl
+ugI
+mOG
+aMT
+aMT
+rKo
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(88,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+btt
+utq
+aMT
+aMT
+fcp
+csS
+ete
+dbq
+xrc
+mJL
+soS
+abT
+aNF
+aNF
+aNF
+aNF
+aPf
+eKn
+nlP
+mMt
+aIi
+wey
+jSk
+aNF
+aNF
+nGr
+iZc
+jBu
+fOL
+aAh
+hYy
+bzS
+atF
+aTN
+fod
+qrp
+itv
+hHS
+rgC
+amI
+dos
+xzI
+ixJ
+opr
+opr
+anT
+opr
+opr
+opr
+opr
+anT
+igj
+opr
+ixJ
+nGv
+hqF
+lCK
+wpg
+eiq
+pag
+pag
+hnO
+hsl
+xNP
+qMa
+oUS
+pmj
+pag
+pag
+aiA
+wpg
+aMT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+vhc
+vhc
+vhc
+vhc
+fPh
+vhc
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+vhc
+avl
+vhc
+vhc
+vhc
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+erm
+qtN
+leQ
+nzi
+otI
+nKk
+aHZ
+aHZ
+qNy
+lDT
+sZn
+gKR
+rjl
+hfS
+mNT
+uFi
+gQY
+tWO
+swh
+ugI
+mOG
+aMT
+aMT
+wBx
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(89,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+eTf
+oYp
+eTf
+eTf
+fdV
+eTf
+uIE
+xHX
+mdS
+aoM
+uCx
+biz
+gdv
+oTE
+nkY
+fBK
+bwq
+qDh
+woE
+woE
+ssB
+jwq
+luS
+kVa
+aNF
+aNF
+ktQ
+jBu
+hgO
+aAh
+mJa
+vwc
+aIF
+aAh
+dEa
+wXZ
+ngu
+tTN
+fKw
+amI
+dos
+xzI
+ixJ
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+ixJ
+wYU
+hqF
+bXX
+wpg
+mAR
+sLO
+sLO
+vZz
+cKs
+xNP
+tpA
+pVo
+uUX
+pag
+pag
+pag
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+iQt
+otM
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+pFI
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+erm
+tnZ
+hBw
+eLC
+gRX
+ehX
+ehX
+yhO
+ehX
+sOo
+aCP
+sKX
+tmX
+aMH
+vci
+uFi
+qcn
+thV
+hBR
+ugI
+mOG
+aMT
+aMT
+wBx
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(90,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+gyt
+pmV
+api
+ndg
+kfp
+tid
+khJ
+vPT
+kqo
+gdK
+bqm
+sOH
+eUO
+cTZ
+cTZ
+cTZ
+xgq
+eAf
+uSz
+qNr
+qNr
+iZO
+aJk
+xei
+nOV
+aNF
+utm
+jqw
+mJJ
+anO
+aTN
+qDH
+wum
+akj
+aTN
+sGr
+shn
+kSV
+hYd
+bBc
+amI
+bHi
+xzI
+jjx
+opr
+opr
+qUL
+opr
+opr
+opr
+vVF
+anT
+opr
+opr
+jjx
+hcE
+hqF
+lCK
+wpg
+mxX
+mxX
+mxX
+mxX
+mxX
+rUS
+jtk
+mxX
+mxX
+mxX
+mxX
+mxX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+aTr
+nCX
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+erm
+tnZ
+jea
+uFi
+vDE
+kIj
+bXO
+aHZ
+qNy
+lDT
+sZn
+gKR
+rjl
+mor
+jLH
+uFi
+mtF
+lwz
+aHZ
+ugI
+mOG
+aMT
+aMT
+kiV
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(91,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+agE
+eTf
+dXn
+rrg
+pTo
+ddN
+sFH
+dMb
+wQk
+bsg
+nlB
+jlF
+oTx
+lJd
+lJd
+lJd
+dAJ
+sHu
+cMT
+iZm
+pEC
+nwE
+nBF
+vzm
+viW
+isM
+xxL
+njx
+qvf
+nmm
+ltq
+dUs
+qbP
+qbP
+fuM
+aJw
+cpb
+sbz
+rRf
+xHd
+qpJ
+sCD
+xzI
+jjx
+opr
+opr
+anT
+opr
+opr
+opr
+opr
+anT
+opr
+opr
+jjx
+hcE
+did
+ocR
+wpg
+sRj
+sRj
+sRj
+mxX
+lYy
+dUa
+fiF
+hLr
+bxs
+rsv
+paS
+tHY
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+vhc
+qVl
+qVl
+qVl
+vhc
+vhc
+vhc
+iOB
+vhc
+iOB
+iOB
+hwy
+nvP
+iOB
+vhc
+iOB
+iOB
+iOB
+neR
+acp
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+anT
+aMT
+rdA
+lrK
+kFD
+uFi
+uFi
+uFi
+uFi
+jEF
+qNy
+lDT
+sZn
+uGP
+rjl
+rjl
+yhL
+uFi
+wCt
+gRE
+ezu
+lzf
+mOG
+aMT
+aMT
+kiV
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(92,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+agE
+eTf
+sLb
+dqJ
+dmR
+eTf
+eRe
+haL
+kKp
+jab
+wPn
+bnG
+bnG
+rwb
+bnG
+hDV
+oJr
+ncj
+wlW
+mtj
+hyS
+aJH
+hro
+ufN
+kNf
+sJS
+sJS
+dSK
+dSK
+dSK
+sJS
+aTN
+aAh
+aAh
+aTN
+npM
+eJL
+bGR
+dRi
+czq
+oyq
+klf
+hJg
+jjx
+opr
+opr
+anT
+opr
+hDy
+opr
+opr
+pnr
+opr
+opr
+jjx
+hcE
+hqF
+lCK
+wpg
+uuA
+geY
+gDF
+uMY
+tCJ
+wAx
+tdJ
+qGN
+qGN
+jFy
+gzh
+eJP
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+vdu
+iOB
+iOB
+iOB
+iOB
+iOB
+mqn
+iOB
+vhc
+vhc
+vhc
+avl
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+mUL
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+vhc
+cPx
+cPx
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+erm
+vFP
+jea
+erm
+aMT
+anT
+mOG
+aHZ
+qNy
+lDT
+sZn
+alH
+tug
+rjl
+qeH
+uFi
+uFi
+uFi
+uFi
+mOG
+mOG
+anT
+anT
+kiV
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(93,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+agE
+ebm
+cnI
+tme
+wul
+pjj
+mTz
+fJM
+agN
+lDO
+aBf
+rgM
+erX
+slB
+lbd
+gbJ
+hrv
+aPf
+aPf
+myM
+wzY
+aPf
+cWH
+cWH
+lPX
+sJS
+oRB
+hNj
+rLP
+poz
+sJS
+nym
+rpX
+vZf
+iyi
+aHf
+dKN
+nud
+sts
+umh
+qrg
+nKT
+xzI
+ixJ
+anT
+anT
+anT
+anT
+anT
+lzo
+anT
+anT
+anT
+anT
+ixJ
+hcE
+hqF
+lCK
+wpg
+tmY
+sRj
+iZG
+iVZ
+cBZ
+qHB
+kRv
+uah
+uah
+tCR
+nMA
+txM
+dRh
+eQo
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+iOB
+vhc
+vhc
+vhc
+vhc
+vhc
+ono
+lUW
+lUW
+aLx
+lUW
+qBW
+lUW
+lUW
+sSW
+vhc
+iOB
+iOB
+qqh
+iOB
+otM
+vhc
+iOB
+iOB
+dEL
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+iOB
+mYG
+cPx
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+erm
+tnZ
+jea
+erm
+aMT
+anT
+mOG
+sbP
+qMO
+tXb
+sZn
+dZj
+atG
+aet
+uVg
+uFi
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(94,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+agE
+eTf
+eTf
+oCW
+eTf
+eTf
+tNm
+xZU
+agL
+xgR
+oBX
+vYj
+aPf
+aPf
+aPf
+aPf
+aPf
+aPf
+aMT
+anT
+mcH
+aMT
+cWH
+sDv
+peZ
+qvb
+ycc
+lEz
+bPe
+vxj
+fvS
+dhe
+vqA
+vJu
+fMw
+jBe
+aWp
+jCo
+pSy
+yaB
+amI
+uAQ
+mmb
+ixJ
+opr
+lvQ
+anT
+opr
+opr
+opr
+opr
+anT
+opr
+opr
+ixJ
+kHd
+hqF
+lCK
+wpg
+gdm
+geY
+dPY
+uMY
+mMr
+vIT
+faS
+iCY
+cFN
+oQU
+rEC
+ewO
+wpg
+eKA
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+vhc
+chC
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+chC
+vhc
+iOB
+iOB
+xTP
+tWZ
+tWZ
+uxa
+tWZ
+qrH
+iOB
+vhc
+vhc
+vhc
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 avl
 bQF
 wBH
@@ -111744,6 +121851,7 @@ tfJ
 tfJ
 "}
 (95,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -112513,6 +122621,777 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+agE
+aXj
+eTf
+hfp
+eTf
+eTf
+eTf
+vUT
+bIz
+xxw
+lFK
+hsK
+aPf
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+anT
+mcH
+aMT
+cWH
+tya
+ntF
+cWH
+cWm
+iXO
+cWm
+cWH
+cWH
+cWH
+amI
+uRU
+amI
+amI
+amI
+vyX
+amI
+amI
+amI
+fBh
+xzI
+ixJ
+ixJ
+ixJ
+ixJ
+jjx
+jjx
+jjx
+jjx
+ixJ
+ixJ
+ixJ
+ixJ
+hcE
+hqF
+lCK
+wpg
+sRj
+sRj
+sRj
+mxX
+iTq
+bNj
+tTy
+kVf
+ekh
+fJp
+sZh
+fDN
+wpg
+eKA
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+iOB
+iHe
+iOB
+iOB
+ono
+dBn
+vZq
+vhc
+iOB
+iOB
+iOB
+iOB
+otM
+vhc
+chC
+vhc
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+qqh
+iOB
+vhc
+iOB
+iOB
+iQt
+iOB
+iOB
+vhc
+vhc
+vhc
+vhc
+vhc
+anT
+anT
+anT
+anT
+anT
+aMT
+rdA
+tnZ
+jea
+rdA
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(96,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+agE
+nRw
+eTf
+bCW
+eTf
+aMT
+aPf
+aPf
+myM
+sRK
+gWV
+aPf
+aPf
+aMT
+anT
+anT
+anT
+anT
+dJG
+dJG
+evX
+dJG
+cWH
+hXO
+mvn
+vSB
+pGL
+hAq
+rou
+hqr
+vOc
+qrn
+ouT
+nbu
+lRl
+abv
+oaS
+iQJ
+kLt
+amI
+jJc
+wte
+gGN
+rYU
+rYU
+rYU
+rYU
+knC
+knC
+knC
+knC
+rYU
+dVk
+qQw
+rYU
+bMr
+hqF
+lCK
+wpg
+mxX
+mxX
+mxX
+mxX
+wpg
+wpg
+wpg
+wpg
+wpg
+fJp
+sZh
+joH
+wpg
+eKA
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+iOB
+vhc
+iOB
+iOB
+chC
+vhc
+iOB
+iHe
+iOB
+iOB
+iOB
+iOB
+iOB
+iHe
+chC
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+vhc
+mUL
+vhc
+vhc
+iOB
+iOB
+iQt
+iOB
+rtp
+vhc
+iOB
+iOB
+iNq
+vhc
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+erm
+tnZ
+jea
+erm
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(97,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aBa
+tXf
+tXf
+tXf
+tXf
+tXf
+tXf
+gBZ
+poB
+xMW
+hqK
+qBt
+anT
+aMT
+anT
+aMT
+aMT
+dJG
+dJG
+jcG
+wLX
+gMF
+orw
+cWH
+mvn
+hlV
+iGg
+hzG
+hlK
+bUj
+eAs
+lNQ
+abn
+cWM
+spd
+sep
+aSw
+tFR
+xrd
+amI
+ant
+awg
+wNQ
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+oCO
+pDf
+uPx
+nKN
+ydM
+wpg
+eTm
+eTm
+gIZ
+jBS
+wpg
+kXP
+aFX
+oSv
+wpg
+fJp
+sZh
+wCc
+wpg
+eKA
+aMT
+gUe
+gLg
+sxc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+iOB
+vhc
+iOB
+iOB
+chC
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+uri
+lUW
+lUW
+lUW
+lUW
+cKi
+lUW
+wxN
+bTd
+gOV
+aPJ
+sYm
+iOB
+iOB
+iQt
+iOB
+iOB
+vhc
+iOB
+iOB
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+erm
+tnZ
+jea
+erm
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (98,1,1) = {"
 tfJ
@@ -112772,6 +123651,7 @@ tfJ
 tfJ
 "}
 (99,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -113027,6 +123907,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+gzj
+anT
+krF
+euR
+euR
+ptZ
+bxE
+bxE
+bxE
+hmn
+gif
+odK
+bvI
+iRC
+tTV
+cWH
+cWH
+cWH
+euS
+cWH
+cWH
+cWH
+cWH
+cWH
+rKN
+ihQ
+gPd
+amI
+aMd
+uoX
+aMd
+amI
+nIH
+aEQ
+nIH
+nIH
+ihY
+klB
+ihY
+lZp
+ihY
+ihY
+ihY
+ayd
+ayd
+ihY
+pWD
+fHf
+fFV
+nxx
+wpg
+dcu
+rOi
+dcu
+dWi
+wpg
+eRF
+rwI
+jFu
+wpg
+mdw
+gSm
+oAg
+wpg
+wks
+hSt
+bBt
+eUl
+lAQ
+tol
+lyV
+loa
+soD
+vun
+iOB
+iOB
+iOB
+jzP
+iOB
+iOB
+chC
+iOB
+iOB
+baA
+iOB
+vAt
+uAE
+vAt
+uAE
+vAt
+kxM
+auR
+toz
+cWX
+auR
+iOB
+uci
+aaH
+tWZ
+acp
+iOB
+iOL
+iOL
+iOL
+iOL
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+rdA
+bnO
+eQA
+rdA
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (100,1,1) = {"
 tfJ
@@ -113286,6 +124423,7 @@ tfJ
 tfJ
 "}
 (101,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -113541,6 +124679,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+gzj
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+dJG
+hSz
+jWb
+aoU
+xRh
+vnA
+hTp
+kvV
+fXj
+sSq
+kCv
+uEa
+uEa
+uEa
+uEa
+jKZ
+uEa
+pmf
+hpa
+adb
+dAa
+aCb
+pQL
+pQL
+dvS
+dqy
+mDG
+hGa
+kOc
+kNN
+seY
+kNN
+ihY
+dcn
+sHL
+dVf
+ihY
+dZp
+jhq
+pWk
+vkT
+wpg
+dcu
+dcu
+qqS
+dcu
+mLY
+sbl
+xqf
+xne
+cEm
+piC
+lJG
+kso
+cEm
+rJG
+bUg
+lao
+ocq
+orN
+tol
+pCB
+bGE
+dRO
+vun
+iOB
+iOB
+iOB
+vhc
+vhc
+vhc
+vql
+vhc
+vhc
+vhc
+iQt
+vAt
+saG
+vAt
+saG
+vAt
+saG
+auR
+aUn
+xdS
+dJR
+sjq
+pRM
+jtX
+iOL
+tDT
+bLK
+rXb
+mon
+mon
+rXb
+bLK
+pTe
+iOL
+vhc
+avl
+vhc
+vhc
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+erm
+tnZ
+jea
+erm
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (102,1,1) = {"
 tfJ
@@ -118169,6 +129564,7 @@ tfJ
 tfJ
 "}
 (120,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -118424,6 +129820,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+sgO
+uyk
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+cuS
+fRG
+pqa
+clj
+oSE
+oSE
+rMi
+oSE
+oSE
+faf
+bTe
+wRJ
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+kiV
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+anT
+anT
+qBt
+qBt
+aRL
+aRL
+aRL
+aRL
+aRL
+aMT
+azB
+csV
+aUs
+aUs
+aUs
+mSV
+azB
+aMT
+scI
+aVf
+qDx
+vlr
+bxI
+pvq
+wPm
+xQa
+mgs
+bxI
+sbY
+dTM
+sAX
+pga
+qxP
+dKM
+hzh
+pga
+uML
+iVU
+oWf
+wrA
+son
+pII
+xZn
+pga
+btF
+blN
+ggh
+hNB
+jpk
+jDg
+jpk
+jpk
+jpk
+gFq
+oRc
+iPU
+cLA
+dvB
+jpk
+uIZ
+hdz
+wQB
+lXO
+psB
+rvK
+jPR
+sLm
+qWg
+xCB
+xCB
+wtH
+cEu
+iQt
+auR
+wpl
+bsa
+bsa
+bsa
+bsa
+gkV
+xSg
+xSg
+sSO
+pUU
+bpw
+xSg
+acU
+amM
+wqJ
+coK
+xls
+rXb
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+rXb
+tdo
+ttb
+lGm
+iOL
+blK
+tCG
+ljP
+qEV
+cnK
+ueW
+nFc
+xkH
+qPo
+gIk
+qfW
+tsw
+rBv
+jNh
+diA
+hCM
+ngK
+fZt
+hLF
+qoV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (121,1,1) = {"
 tfJ
@@ -118683,6 +130336,7 @@ tfJ
 tfJ
 "}
 (122,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -118884,6 +130538,121 @@ rvo
 xlv
 dzW
 nvx
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+sgO
+uyk
+tCl
+clj
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+uwe
+aMT
+anT
+aMT
+aMT
+aMT
+kHQ
+gik
+kHQ
+kHQ
+sgO
+bTe
+ezA
+kHQ
+kHQ
+kHQ
+kHQ
+gik
+kHQ
+kHQ
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+jvW
+anT
+anT
+anT
+anT
+pSB
+bxE
+upX
+aTA
+tzl
+rdU
+bJM
+aMT
+azB
+aRB
+aUs
+hal
+aUs
+aRB
+azB
+aMT
+scI
+mKY
+geF
+wYA
+aVf
+enp
+vlr
+vlr
+fBQ
+mma
+xmq
+tqL
+ueA
+pkM
+qwc
+orb
+vsj
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 pul
 tmh
 nnw
@@ -122795,6 +134564,7 @@ tfJ
 tfJ
 "}
 (138,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -123050,6 +134820,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+faf
+lCz
+nzP
+ezA
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+gjY
+aMT
+anT
+aMT
+aMT
+aMT
+oSE
+rMi
+oSE
+oSE
+faf
+bTe
+clj
+oSE
+oSE
+oSE
+oSE
+oSE
+oSE
+oSE
+aMT
+aMT
+aMT
+aMT
+mlQ
+uQS
+xPI
+ldh
+dBL
+mTa
+nJr
+wTy
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aUr
+aMT
+aMT
+anT
+aMT
+agn
+bGL
+ltH
+luo
+lXw
+iHM
+nkt
+qOU
+xtT
+kkg
+cCd
+fiI
+bSy
+tly
+wuJ
+xUk
+uGg
+khz
+oBl
+xVD
+xvC
+aRa
+uGg
+qJy
+shJ
+kVl
+kOs
+nDK
+wza
+hpa
+moG
+uKx
+qkn
+qkn
+kam
+tzJ
+qkn
+cRp
+oot
+vqh
+jFd
+cHk
+mUF
+uqK
+jIm
+euf
+uaJ
+cOo
+gmX
+nyG
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+lrx
+uQJ
+ehY
+xVh
+xVx
+jkL
+oDa
+jEE
+boA
+xyL
+rGQ
+dno
+dKW
+seK
+fPo
+wIG
+ugx
+xre
+cyL
+tMU
+hhg
+cVY
+lrD
+ufY
+aYT
+vVE
+qDW
+xpj
+izd
+svy
+anR
+oUF
+ftk
+ska
+sKx
+fQa
+jWy
+fhO
+nwJ
+lbu
+wSv
+fhO
+qCK
+xXa
+xXa
+uNz
+lmv
+wSU
+eed
+ewj
+ecs
+ewj
+uQC
+xXa
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (139,1,1) = {"
 tfJ
@@ -128192,6 +140219,7 @@ tfJ
 tfJ
 "}
 (159,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -128447,6 +140475,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+qBt
+aMT
+uKT
+wpc
+iSS
+lpl
+aNp
+oRD
+lpl
+gTp
+uKT
+uKT
+uKT
+uKT
+uKT
+duF
+sUj
+wUT
+oRA
+wHP
+eZJ
+bmq
+kOy
+hVU
+xna
+aYs
+keb
+oRA
+thj
+tSX
+klr
+dps
+woj
+moF
+wrP
+aJn
+rdy
+cBT
+pRP
+moF
+duF
+ivK
+cfP
+ubx
+dtI
+fZQ
+nXe
+nXe
+mbE
+mbE
+mbE
+mbE
+mbE
+mbE
+lSD
+vXf
+tOz
+aBD
+nvV
+bWm
+qCT
+aBD
+aPS
+flg
+aBD
+lOm
+aLV
+wSu
+nzj
+jJM
+dxZ
+uBD
+iKi
+quB
+jUP
+gOi
+gDJ
+mmY
+bRh
+ndt
+deq
+tGq
+xfp
+ndt
+pgd
+ndt
+ndt
+kfy
+kfy
+kfy
+kfy
+obB
+kfy
+kfy
+kfy
+kfy
+pWJ
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+pLJ
+eWN
+pLJ
+sag
+nPb
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+oDN
+kfy
+kfy
+kfy
+kfy
+kfy
+fSL
+pIn
+juD
+dZQ
+xZi
+hVZ
+fSL
+aMT
+aMT
+aMT
+iep
+aMT
+aMT
+aMT
+iep
+aMT
+aMT
+aMT
+iep
+aMT
+aMT
+anT
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> ae1749c792 (Corg Station changes and fixes (#4195)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (160,1,1) = {"
 tfJ
