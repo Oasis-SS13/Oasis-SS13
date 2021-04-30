@@ -2293,6 +2293,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -2303,6 +2304,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"aCQ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -7770,6 +7780,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/central)
 "ciZ" = (
 /obj/effect/turf_decal/bot_white,
@@ -7778,6 +7789,23 @@
 "cji" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/transit_tube/crossing,
+=======
+/area/maintenance/starboard/secondary)
+"bSH" = (
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/turf/closed/wall/r_wall,
+/area/engine/atmos)
+"bSP" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"bTc" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/carpet/purple,
+/area/crew_quarters/theatre)
+"bTd" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -9163,8 +9191,31 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/research)
 "cEh" = (
+=======
+/area/medical/virology)
+"coF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"coJ" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
+"coK" = (
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/recreation)
+"coT" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -13880,9 +13931,35 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/vending/boozeomat,
 /obj/item/radio/intercom{
 	pixel_x = -25
+=======
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+"dNi" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"dNp" = (
+/obj/structure/chair/office/light,
+/obj/effect/landmark/start/chief_medical_officer,
+/turf/open/floor/carpet/cyan,
+/area/crew_quarters/heads/cmo)
+"dNq" = (
+/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/dorms)
+"dNu" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
@@ -14826,7 +14903,27 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/turf/open/floor/plasteel/dark,
+/area/security/execution/education)
+"ecc" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"ecf" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
+"ecp" = (
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -15227,10 +15324,18 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Port Bow Maintenance Hatch";
 	req_access_txt = "12"
 	},
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"ehY" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "esf" = (
@@ -16471,12 +16576,32 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
 /obj/machinery/door/airlock/public/glass{
 	name = "Diner"
 	},
+=======
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space/nearstation)
+"exV" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"eya" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"eyc" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -17588,9 +17713,22 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Incinerator Access";
 	req_access_txt = "24"
+=======
+/obj/machinery/door/airlock/public/glass{
+	name = "Courtroom"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"eLM" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
@@ -20069,6 +20207,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/hidden{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/command/glass{
 	name = "Server Access";
 	req_access_txt = "30"
@@ -20078,6 +20217,16 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"fwn" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -20403,6 +20552,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/apothecary)
 "fNx" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
@@ -20415,6 +20565,22 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+=======
+/area/science/lab)
+"fAh" = (
+/obj/structure/chair,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"fAu" = (
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -25368,7 +25534,19 @@
 	dir = 8
 	},
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "4-8"
+=======
+	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"gSm" = (
+/obj/machinery/power/apc/auto_name/east{
+	pixel_x = 24
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -27948,9 +28126,21 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/aft)
+"hBR" = (
+/obj/structure/table/wood,
+/obj/item/clothing/glasses/sunglasses/advanced,
+/obj/item/clothing/glasses/sunglasses/advanced{
+	pixel_x = 1;
+	pixel_y = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/apothecary)
@@ -31987,7 +32177,37 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
+=======
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/fitness/recreation)
+"iBp" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/item/flashlight/glowstick/cyan,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/science)
+"iBz" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"iBF" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/engine/storage)
+"iBK" = (
+/obj/effect/turf_decal/tile/brown,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -41249,10 +41469,26 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/main)
 "lEo" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
+=======
+/area/hallway/secondary/service)
+"lbF" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"lbJ" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -41684,6 +41920,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 28
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
 "lKF" = (
@@ -41721,10 +41958,16 @@
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/structure/disposalpipe/segment{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/storage/eva)
@@ -42071,10 +42314,26 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "lQk" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+=======
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"liw" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"lix" = (
+/obj/structure/chair/sofa/left{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel/grimy,
@@ -43032,7 +43291,17 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	dir = 4
+=======
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"lwE" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -44366,8 +44635,36 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+=======
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"lSK" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"lSP" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/mapping_helpers/dead_body_placer{
+	bodycount = 1
+	},
+/turf/open/floor/plasteel,
+/area/medical/morgue)
+"lTh" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/obj/machinery/computer/atmos_control/tank/nitrous_tank{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/mixing)
@@ -44738,7 +45035,24 @@
 	dir = 1;
 	pixel_y = -24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple{
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/lobby)
+"mbj" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"mbl" = (
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple,
@@ -45826,6 +46140,14 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"mqL" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -45869,10 +46191,30 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/medical/medbay/central)
 "mSn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/area/medical/chemistry)
+"msv" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"msC" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/item/twohanded/required/kirbyplants/random,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"msJ" = (
+/obj/structure/chair/office/light{
+	dir = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/vacant_room/commissary)
@@ -46078,6 +46420,7 @@
 	name = "Security Maintenance";
 	req_access_txt = "1"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "mVx" = (
@@ -46087,11 +46430,30 @@
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "mVE" = (
+=======
+/turf/open/floor/plasteel,
+/area/hallway/secondary/service)
+"mxr" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	dir = 8
+=======
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"mxu" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -49639,6 +50001,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/dorms)
@@ -49647,6 +50010,15 @@
 /obj/item/storage/box/rubbershot{
 	pixel_x = -3;
 	pixel_y = 3
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"nzj" = (
+/obj/machinery/chem_heater,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/storage/box/rubbershot{
 	pixel_x = -3;
@@ -50590,8 +50962,42 @@
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/closet/secure_closet/engineering_chief,
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/chief)
 "oaI" = (
+=======
+/area/medical/virology)
+"nKk" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"nKq" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/machinery/light_switch{
+	pixel_x = 24;
+	pixel_y = -25
+	},
+/obj/machinery/button/door{
+	desc = "A remote control switch.";
+	id = "comms";
+	name = "Communications Shutters";
+	normaldoorcontrol = 0;
+	pixel_x = 26;
+	pixel_y = -38
+	},
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"nKK" = (
+/obj/effect/turf_decal/stripes/line,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -52872,6 +53278,7 @@
 /obj/machinery/ai_slipper{
 	uses = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/box,
 /obj/machinery/flasher{
 	id = "AI";
@@ -52891,6 +53298,17 @@
 "oCN" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"otM" = (
+/obj/effect/spawner/room/threexfive,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"otQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
@@ -53124,6 +53542,18 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"oxN" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/security/courtroom)
+"oxP" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
@@ -55733,11 +56163,22 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/medical/virology)
 "ptS" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 10
+=======
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"pjn" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -60983,8 +61424,25 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=8";
 	dir = 1;
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	freq = 1400;
 	location = "Engineering Shuttle"
+=======
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"qMI" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"qMO" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/plasticflaps/opaque,
 /obj/effect/turf_decal/bot,
@@ -67563,7 +68021,17 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/effect/turf_decal/tile/red,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"sLb" = (
+/obj/machinery/atmospherics/components/binary/pump{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -67722,6 +68190,7 @@
 /obj/structure/closet/crate/freezer{
 	name = "organ storage"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/organ/tail/cat,
 /obj/item/organ/tail/cat,
 /obj/item/organ/ears/cat,
@@ -67729,6 +68198,10 @@
 /obj/item/organ/heart,
 /obj/effect/spawner/lootdrop/organ_spawner,
 /obj/effect/spawner/lootdrop/organ_spawner,
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/fore)
 "sSv" = (
@@ -68004,8 +68477,26 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/department/science)
+"sSj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"sSn" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -69028,8 +69519,39 @@
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/brig)
 "tiN" = (
+=======
+/area/maintenance/port)
+"thV" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/stamp/law,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"tid" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 9
+	},
+/turf/closed/wall/r_wall,
+/area/engine/atmospherics_engine)
+"tij" = (
+/turf/closed/wall/r_wall,
+/area/crew_quarters/heads/cmo)
+"tir" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
@@ -69339,11 +69861,27 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 2
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+=======
+/turf/closed/wall/r_wall,
+/area/bridge)
+"tmX" = (
+/obj/machinery/holopad,
+/obj/structure/disposalpipe/segment,
+/obj/item/beacon,
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"tmY" = (
+/obj/machinery/camera/autoname,
+/obj/machinery/light{
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -69501,6 +70039,7 @@
 	pixel_y = 25;
 	req_access_txt = "2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/button/flasher{
 	id = "PCell 3";
 	pixel_x = 6;
@@ -69527,6 +70066,15 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "trI" = (
+=======
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/ai_upload)
+"tpZ" = (
+/obj/effect/spawner/room/tenxfive,
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"tqh" = (
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
 	},
@@ -69764,6 +70312,20 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/janitor)
+"tsP" = (
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "tvr" = (
@@ -71851,8 +72413,24 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/status_display/evac{
 	pixel_y = 32
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"tWZ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"tXb" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/medical/apothecary)
@@ -72614,8 +73192,19 @@
 	departmentType = 2;
 	pixel_x = -30
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light{
 	dir = 8
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"uhm" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/camera/autoname{
 	dir = 4
@@ -75147,11 +75736,26 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "uWy" = (
 /obj/structure/chair/office{
 	dir = 1
+=======
+/obj/effect/turf_decal/caution/stand_clear,
+/turf/open/floor/plasteel/dark,
+/area/engine/atmos)
+"uSJ" = (
+/obj/structure/chair,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"uSM" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/wood,
 /area/lawoffice)
@@ -76362,8 +76966,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+=======
+/turf/open/floor/plasteel,
+/area/science/shuttle)
+"vnz" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"vnA" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -76790,11 +77408,34 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/science/storage)
 "vtO" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"vux" = (
+/turf/closed/wall/r_wall,
+/area/maintenance/port/central)
+"vuG" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/courtroom)
+"vuJ" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/camera/autoname{
+	dir = 1
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -79437,11 +80078,38 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/quartermaster/miningdock)
 "wjd" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/status_display/evac{
 	pixel_x = 32
+=======
+/area/quartermaster/office)
+"wgE" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space/nearstation)
+"whk" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/aft)
+"whv" = (
+/obj/structure/rack{
+	pixel_x = -2
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -86535,6 +87203,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms)
 "xYd" = (
@@ -86559,6 +87228,17 @@
 /turf/open/floor/plasteel,
 /area/science/storage)
 "xYo" = (
+=======
+/obj/structure/disposalpipe/segment,
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"yhU" = (
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -109431,6 +110111,7 @@ tfJ
 tfJ
 "}
 (86,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -110971,6 +111652,1548 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+hrK
+eNy
+qOk
+qOk
+hwW
+osb
+gNt
+iyX
+xwH
+sMX
+gLT
+eCQ
+aNF
+kNC
+aWt
+bXU
+aPf
+bVr
+xEN
+ayp
+aDG
+eaR
+gKJ
+vxc
+vtC
+nZB
+vKV
+lYn
+pkZ
+aTN
+ivM
+lNH
+atw
+aTN
+tMo
+amI
+amI
+qpC
+amI
+amI
+pmx
+vnx
+ixJ
+nfX
+kxy
+ixJ
+ofu
+bcI
+bcI
+bcI
+fDf
+tVj
+vNK
+wIw
+oDx
+hqF
+lCK
+wpg
+mxX
+mxX
+mxX
+mxX
+mxX
+rQG
+qMa
+mxX
+mxX
+mxX
+mxX
+mxX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+qVl
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+ibO
+nvP
+iOB
+vhc
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+mkF
+mkF
+mkF
+mkF
+vEs
+fKH
+mkF
+mkF
+mkF
+mkF
+jEF
+qNy
+lDT
+sZn
+fgs
+rYf
+coF
+yhL
+uFi
+iER
+wuM
+cny
+cFi
+mOG
+aMT
+aMT
+kiV
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(87,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hrK
+eNy
+eNy
+eNy
+aPf
+aPf
+hxf
+pnS
+rmN
+aaz
+fxM
+tfy
+aNF
+aQJ
+nmd
+nkT
+aPf
+myM
+aPf
+wrV
+aik
+wey
+vSv
+aNF
+vuM
+ccY
+gGL
+bfy
+hTr
+aTN
+maw
+arJ
+arJ
+fHN
+ybf
+rPX
+his
+vsK
+bBc
+amI
+bgF
+gFb
+bBq
+lfY
+hvp
+ixJ
+jjx
+jjx
+jjx
+jjx
+ixJ
+ixJ
+ixJ
+ixJ
+hcE
+hqF
+lCK
+wpg
+pag
+pag
+pag
+iqX
+lkO
+xNP
+qMa
+oGn
+gQB
+aBk
+aBk
+ffX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+iOB
+vhc
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+rdA
+qEg
+jea
+uFi
+twx
+wMh
+ffr
+msv
+qNy
+lDT
+sZn
+gdW
+liw
+vuG
+fwl
+mqJ
+pjk
+qMI
+uhl
+ugI
+mOG
+aMT
+aMT
+rKo
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(88,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+btt
+utq
+aMT
+aMT
+fcp
+csS
+ete
+dbq
+xrc
+mJL
+soS
+abT
+aNF
+aNF
+aNF
+aNF
+aPf
+eKn
+nlP
+mMt
+aIi
+wey
+jSk
+aNF
+aNF
+nGr
+iZc
+jBu
+fOL
+aAh
+hYy
+bzS
+atF
+aTN
+fod
+qrp
+itv
+hHS
+rgC
+amI
+dos
+xzI
+ixJ
+opr
+opr
+anT
+opr
+opr
+opr
+opr
+anT
+igj
+opr
+ixJ
+nGv
+hqF
+lCK
+wpg
+eiq
+pag
+pag
+hnO
+hsl
+xNP
+qMa
+oUS
+pmj
+pag
+pag
+aiA
+wpg
+aMT
+aMT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+vhc
+vhc
+vhc
+vhc
+fPh
+vhc
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+vhc
+avl
+vhc
+vhc
+vhc
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+erm
+qtN
+leQ
+nzi
+otI
+nKk
+bSP
+iBz
+uSJ
+fAh
+oxN
+ecc
+lbF
+hfS
+mNT
+uFi
+gQY
+tWO
+swh
+ugI
+mOG
+aMT
+aMT
+wBx
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(89,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+eTf
+oYp
+eTf
+eTf
+fdV
+eTf
+uIE
+xHX
+mdS
+aoM
+uCx
+biz
+gdv
+oTE
+nkY
+fBK
+bwq
+qDh
+woE
+woE
+ssB
+jwq
+luS
+kVa
+aNF
+aNF
+ktQ
+jBu
+hgO
+aAh
+mJa
+vwc
+aIF
+aAh
+dEa
+wXZ
+ngu
+tTN
+fKw
+amI
+dos
+xzI
+ixJ
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+ixJ
+wYU
+hqF
+bXX
+wpg
+mAR
+sLO
+sLO
+vZz
+cKs
+xNP
+tpA
+pVo
+uUX
+pag
+pag
+pag
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+iQt
+otM
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+iOB
+pFI
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+erm
+whk
+hBw
+eLC
+gRX
+ehX
+ehX
+yhO
+ehX
+sOo
+aCP
+sKX
+tmX
+aMH
+vci
+uFi
+qcn
+thV
+hBR
+ugI
+mOG
+aMT
+aMT
+wBx
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(90,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+gyt
+pmV
+api
+ndg
+kfp
+tid
+khJ
+vPT
+kqo
+gdK
+bqm
+sOH
+eUO
+cTZ
+cTZ
+cTZ
+xgq
+eAf
+uSz
+qNr
+qNr
+iZO
+aJk
+xei
+nOV
+aNF
+utm
+jqw
+mJJ
+anO
+aTN
+qDH
+wum
+akj
+aTN
+sGr
+shn
+kSV
+hYd
+bBc
+amI
+bHi
+xzI
+jjx
+opr
+opr
+qUL
+opr
+opr
+opr
+vVF
+anT
+opr
+opr
+jjx
+hcE
+hqF
+lCK
+wpg
+mxX
+mxX
+mxX
+mxX
+mxX
+rUS
+jtk
+mxX
+mxX
+mxX
+mxX
+mxX
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+vhc
+iOB
+vhc
+iOB
+iOB
+iOB
+iQt
+iOB
+vhc
+iOB
+iOB
+iOB
+iOB
+qqh
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+aTr
+nCX
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+erm
+tnZ
+jea
+uFi
+vDE
+kIj
+bXO
+lSK
+qNy
+lDT
+sZn
+gKR
+sSj
+mor
+jLH
+uFi
+mtF
+lwz
+dNi
+ugI
+mOG
+aMT
+aMT
+kiV
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(91,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+agE
+eTf
+dXn
+rrg
+pTo
+ddN
+sFH
+dMb
+wQk
+bsg
+nlB
+jlF
+oTx
+lJd
+lJd
+lJd
+dAJ
+sHu
+cMT
+iZm
+pEC
+nwE
+nBF
+vzm
+viW
+isM
+xxL
+njx
+qvf
+nmm
+ltq
+dUs
+qbP
+qbP
+fuM
+aJw
+cpb
+sbz
+rRf
+xHd
+qpJ
+sCD
+xzI
+jjx
+opr
+opr
+anT
+opr
+opr
+opr
+opr
+anT
+opr
+opr
+jjx
+hcE
+did
+ocR
+wpg
+sRj
+sRj
+sRj
+mxX
+lYy
+dUa
+fiF
+hLr
+bxs
+rsv
+paS
+tHY
+wpg
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+vhc
+vhc
+qVl
+qVl
+qVl
+vhc
+vhc
+vhc
+iOB
+vhc
+iOB
+iOB
+hwy
+nvP
+iOB
+vhc
+iOB
+iOB
+iOB
+neR
+acp
+iOB
+iOB
+iOB
+iOB
+iOB
+vhc
+iOB
+iOB
+iQt
+iOB
+vhc
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+anT
+aMT
+rdA
+lrK
+kFD
+uFi
+uFi
+uFi
+uFi
+jEF
+qNy
+lDT
+sZn
+uGP
+vnz
+rjl
+yhL
+uFi
+wCt
+gRE
+ezu
+lzf
+mOG
+aMT
+aMT
+kiV
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (92,1,1) = {"
 tfJ
@@ -131533,6 +133756,7 @@ tfJ
 tfJ
 "}
 (172,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -132302,6 +134526,777 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+naL
+naL
+naL
+uXi
+naL
+tcm
+jKw
+fvw
+naL
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+jdN
+ivK
+nzt
+ivK
+ivK
+ivK
+osX
+ivK
+jdN
+jLV
+klL
+jLV
+aWM
+hSr
+mbE
+mbE
+dpu
+dpu
+tzS
+dSJ
+dXz
+oqr
+aWM
+aWM
+qPh
+aWM
+aWM
+dXz
+dXz
+aWM
+aWM
+wWb
+isT
+koi
+rvY
+tss
+hfx
+oSf
+ssf
+rvY
+vhq
+sAZ
+pIY
+scf
+pML
+ruq
+biY
+gfP
+xNf
+iwf
+wsK
+vmg
+vmg
+fdE
+vmg
+vBf
+oAE
+dew
+uKd
+mxL
+eGm
+dsx
+vBf
+jaq
+xDD
+irr
+cxQ
+irr
+qvy
+oaL
+mql
+kfy
+anT
+anT
+anT
+kfy
+kfy
+lOJ
+lOJ
+noK
+nne
+noK
+lOJ
+kfy
+kfy
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(173,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+anT
+aMT
+aMT
+naL
+vzi
+coJ
+uxT
+mqu
+lVp
+ejJ
+gar
+naL
+naL
+naL
+aMT
+aMT
+anT
+aMT
+jdN
+jdN
+jdN
+mxr
+jdN
+jdN
+jdN
+osX
+ivK
+jdN
+oal
+cBi
+cBi
+wmD
+tlS
+ggl
+rWF
+vrI
+oIj
+vrI
+oIj
+ggl
+kap
+aWM
+wAI
+bkt
+ykd
+aWM
+tlS
+ggl
+odm
+aWM
+aWM
+xRL
+aWM
+rvY
+rvY
+ioB
+rvY
+rot
+rvY
+gWN
+iIy
+jbB
+jQZ
+spc
+ddV
+biY
+tgi
+xNf
+iwf
+hOJ
+oaL
+syK
+xgV
+xAn
+vBf
+vBf
+hDu
+hDu
+vBf
+vBf
+vBf
+vBf
+oaL
+jhT
+tYC
+rKr
+ejK
+oaL
+oaL
+klU
+kfy
+kHQ
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aiR
+ozr
+gOp
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(174,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+anT
+naL
+hSI
+fMJ
+tOG
+hzM
+opW
+ebs
+sjf
+udS
+bgs
+naL
+aMT
+aMT
+anT
+aMT
+jdN
+ivK
+ivK
+nzt
+ivK
+tpZ
+jdN
+osX
+ivK
+jdN
+kxr
+cBi
+cBi
+aWM
+gcd
+aZy
+tEq
+aZy
+tEq
+aZy
+tEq
+aZy
+rWJ
+phr
+vAo
+cAC
+igW
+phr
+vAo
+mlp
+dCX
+aWM
+xBm
+bcz
+mfI
+mfI
+iDo
+jFw
+mfI
+pCv
+wSu
+pQB
+wIv
+tru
+qHN
+wxa
+vzU
+jcK
+hMC
+oEv
+gHB
+hPX
+ekb
+rle
+lrf
+hke
+aSS
+lQI
+qUq
+qUq
+qUq
+qUq
+wrX
+qUq
+vsG
+rLm
+qUq
+blG
+qUq
+hqM
+oaL
+sSH
+tXu
+vIc
+wRJ
+aMT
+aMT
+aMT
+aMT
+aMT
+lOJ
+nne
+lOJ
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (175,1,1) = {"
 tfJ
@@ -134360,6 +137355,7 @@ tfJ
 tfJ
 "}
 (183,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -134487,6 +137483,112 @@ wfR
 wfR
 vLU
 sTS
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+jdN
+erD
+ivK
+uHo
+jdN
+ivK
+mqG
+ivK
+ucS
+jdN
+ivK
+ivK
+nkH
+jdN
+erD
+ivK
+jdN
+ivK
+ivK
+nzt
+ivK
+ivK
+jdN
+nLO
+jdN
+rjm
+jjp
+ddR
+nFO
+uxb
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 xEu
 xmL
 vDn
@@ -134617,6 +137719,7 @@ tfJ
 tfJ
 "}
 (184,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -135129,6 +138232,520 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+jdN
+jdN
+jdN
+mqG
+jdN
+ivK
+rns
+lTv
+lTv
+oDn
+lTv
+lTv
+lTv
+pyy
+lTv
+tsP
+jdN
+jdN
+jdN
+mxr
+jdN
+jdN
+jdN
+wVG
+uXv
+wWs
+eis
+oCX
+hRa
+aWM
+rLn
+jzk
+gUM
+vlh
+oxs
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+oxs
+aBw
+tAc
+eeK
+gyY
+aWM
+aMT
+cSs
+xBm
+xBm
+cSs
+xBm
+xBm
+xBm
+xBm
+ggg
+cSs
+bHA
+cUF
+iog
+fZb
+xBm
+tij
+jKm
+mln
+csM
+gWu
+pJE
+mln
+xaL
+bdv
+tij
+aMT
+cSs
+jjI
+cSs
+cSs
+cSs
+nBH
+cSs
+cSs
+cSs
+cSs
+xBm
+nyS
+tUq
+iEk
+fYv
+anT
+kBD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(185,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+jdN
+wCx
+jdN
+ivK
+plU
+ivK
+ivK
+jdN
+ivK
+ivK
+ivK
+jdN
+erD
+exV
+lTv
+lTv
+lTv
+mbj
+ivK
+erD
+jdN
+xMw
+bUP
+qMX
+aDC
+txx
+enl
+aWM
+fFB
+wXl
+dKv
+kKq
+abq
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+alK
+abq
+auV
+aCI
+aAH
+aMZ
+aWM
+aMT
+cSs
+xBm
+xBm
+cSs
+xBm
+xBm
+xBm
+xBm
+xBm
+cSs
+jjI
+cSs
+xBm
+xBm
+xBm
+tij
+tij
+uJU
+uJU
+tij
+tij
+uJU
+uJU
+tij
+tij
+aMT
+cSs
+dTU
+cSs
+xBm
+xBm
+xBm
+xBm
+ggg
+cSs
+mwa
+xBm
+fAN
+iEk
+iEk
+fYv
+anT
+anT
+qsF
+anT
+anT
+anT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 7fc669e7fb (initial (#4198)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (186,1,1) = {"
 tfJ
