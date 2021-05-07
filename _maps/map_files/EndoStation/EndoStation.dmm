@@ -895,6 +895,36 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/plasteel,
+/area/construction/mining/aux_base)
+"akb" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"akj" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/table/glass,
+/obj/item/folder,
+/obj/item/pen/fountain,
+/obj/machinery/light_switch{
+	pixel_x = 1;
+	pixel_y = -25
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage_shared)
+"aku" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -1803,6 +1833,27 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"axE" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/mixing)
 "aBj" = (
@@ -1810,6 +1861,27 @@
 /area/quartermaster/qm)
 "aBl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"axH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/engine/engine_room)
+"axI" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+	},
+/area/crew_quarters/heads/hor)
+"ayc" = (
+/obj/structure/disposalpipe/segment{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -2470,8 +2542,17 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"aDJ" = (
+/obj/machinery/power/smes{
+	charge = 5e+006
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
@@ -2491,11 +2572,25 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
+=======
+/turf/open/floor/plating,
+/area/engine/engine_room)
+"aEa" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
@@ -2615,12 +2710,27 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/effect/turf_decal/bot,
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 4;
 	name = "Cargo Junction";
 	sortType = 2
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"aEQ" = (
+/obj/machinery/door/airlock/engineering{
+	name = "Shuttle Lab";
+	req_one_access_txt = "32;19;23"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -2838,12 +2948,18 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "aQu" = (
 /obj/effect/turf_decal/bot,
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "aQx" = (
@@ -4290,9 +4406,24 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"aWq" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/crew_quarters/heads/hor)
+"aWs" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -4320,6 +4451,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/medical/virology)
 "bmb" = (
@@ -4328,6 +4460,13 @@
 	c_tag = "Engineering - Engine Airlock";
 	dir = 8;
 	network = list("ss13","Engineering","Engine")
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room/external)
@@ -5072,9 +5211,27 @@
 /turf/open/floor/plasteel{
 	initial_gas_mix = "plasma=100;TEMP=293.15"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/vacant_room)
 "bwI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"bkU" = (
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"bla" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -5216,6 +5373,7 @@
 /obj/structure/disposalpipe/junction{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "byZ" = (
@@ -5225,6 +5383,18 @@
 	},
 /area/science/shuttledock)
 "bzh" = (
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/engine/storage)
+"bmO" = (
+/obj/item/stack/cable_coil/yellow,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"bmR" = (
+/obj/machinery/atmospherics/pipe/simple/dark/hidden,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -5887,10 +6057,22 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
 "bIZ" = (
 /obj/effect/turf_decal/loading_area{
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"bvY" = (
+/obj/machinery/door/firedoor/border_only{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/engine,
@@ -6189,8 +6371,44 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/medical)
 "bNe" = (
+=======
+/area/engine/engineering)
+"bBi" = (
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"bBo" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/window,
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
+"bBq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/wall/r_wall,
+/area/science/shuttle)
+"bBt" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/science/misc_lab/range)
+"bBw" = (
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green,
+/turf/open/floor/carpet,
+/area/hallway/primary/fore)
+"bBx" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -6279,8 +6497,32 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
+=======
+/obj/machinery/requests_console{
+	department = "Chapel";
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/chapel/office)
+"bDd" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/security/checkpoint/medical)
+"bDf" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/customs)
+"bDg" = (
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple{
@@ -6391,8 +6633,17 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/holopad,
+/obj/machinery/atmospherics/pipe/manifold/supply/visible/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "bPY" = (
@@ -7429,8 +7680,16 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/light_switch{
 	pixel_x = -26;
@@ -7502,6 +7761,15 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"bPf" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -7620,7 +7888,20 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+=======
+/turf/open/floor/plasteel/grimy,
+/area/chapel/office)
+"bQe" = (
+/obj/machinery/door/airlock/research/glass/incinerator/toxmix_interior,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/engine,
+/area/science/mixing)
+"bQp" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -8111,7 +8392,19 @@
 /obj/machinery/gateway{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/bot_white/right,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"caX" = (
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel/white,
+/area/medical/sleeper)
+"cbd" = (
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -8377,7 +8670,25 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"ceK" = (
+/obj/structure/table/reinforced,
+/obj/item/clipboard,
+/obj/item/stack/packageWrap,
+/obj/item/stack/packageWrap,
+/obj/item/hand_labeler,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -8924,6 +9235,7 @@
 	buildstackamount = 0;
 	color = "#c45c57"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/landmark/start/detective,
 /turf/open/floor/carpet/red,
 /area/security/detectives_office)
@@ -8943,6 +9255,10 @@
 	},
 /turf/open/floor/plasteel{
 	initial_gas_mix = "plasma=100;TEMP=293.15"
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /area/vacant_room)
 "czJ" = (
@@ -8951,7 +9267,16 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer3{
+	dir = 1
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "czN" = (
@@ -9175,6 +9500,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "cEn" = (
@@ -9208,6 +9534,11 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
+=======
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
@@ -9503,7 +9834,13 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/dirt,
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/science)
 "cHG" = (
@@ -9769,8 +10106,45 @@
 /area/crew_quarters/heads/chief)
 "cLN" = (
 /obj/structure/table/reinforced,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/computer/security/telescreen/toxins{
 	dir = 1
+=======
+/obj/effect/gibspawner/xeno/bodypartless,
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/aft)
+"cxf" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"cxq" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"cxu" = (
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/science)
@@ -10071,11 +10445,18 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/gateway)
 "cRv" = (
 /obj/structure/window/reinforced{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -10086,6 +10467,9 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 5
 	},
 /turf/open/floor/plasteel/white,
 /area/security/brig)
@@ -10226,7 +10610,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"cGT" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -10235,7 +10635,31 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment{
+=======
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit)
+"cGX" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"cHg" = (
+/obj/effect/landmark/start/cargo_technician,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -10948,6 +11372,12 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "dgu" = (
@@ -11047,8 +11477,30 @@
 /obj/machinery/computer/secure_data{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/camera/autoname{
 	dir = 1
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/plasteel/white,
+/area/science/misc_lab/range)
+"cQK" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"cQS" = (
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/theatre)
+"cRb" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/sign/poster/official/report_crimes{
 	pixel_y = -32
@@ -11639,8 +12091,21 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/noslip/white,
+/area/medical/virology)
+"dbi" = (
+/obj/structure/grille,
+/turf/closed/wall,
+/area/space/nearstation)
+"dbq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -11795,6 +12260,14 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"dea" = (
+/obj/effect/turf_decal/tile/yellow,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
@@ -11970,6 +12443,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/department/medical)
 "dvx" = (
 /turf/open/floor/plasteel,
@@ -11977,6 +12451,32 @@
 "dvF" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
+=======
+/area/hallway/primary/fore)
+"dfW" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/turf/open/space/basic,
+/area/space/nearstation)
+"dgd" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"dgf" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder{
@@ -12112,10 +12612,19 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+"dhp" = (
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -14802,6 +15311,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
@@ -14824,6 +15334,18 @@
 "elv" = (
 /obj/machinery/computer/cargo/request,
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+"dVX" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -15679,7 +16201,17 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ejh" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -15831,6 +16363,25 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+	},
+/area/science/research)
+"ekt" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "eAW" = (
@@ -16674,6 +17225,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "eMr" = (
@@ -16737,6 +17294,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
 	},
@@ -16744,6 +17302,22 @@
 /area/engine/gravity_generator)
 "eOc" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+=======
+/obj/machinery/camera/autoname,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"exk" = (
+/turf/open/floor/carpet/orange,
+/area/quartermaster/qm)
+"exD" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/incinerator_toxmix{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/science/mixing/chamber)
+"exR" = (
+/obj/structure/disposaloutlet{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -17984,7 +18558,33 @@
 /area/science/storage)
 "ffV" = (
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "0-8"
+=======
+	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/bridge)
+"ePy" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ePA" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "misclab";
@@ -18088,9 +18688,32 @@
 /obj/item/clothing/head/hardhat/orange{
 	name = "protective hat"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/bot{
+=======
+/turf/open/floor/plasteel/dark,
+/area/engine/atmospherics_engine)
+"eRt" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+"eRD" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/secure/briefcase,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/light_switch{
@@ -18692,6 +19315,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "fpG" = (
@@ -18708,6 +19332,17 @@
 "fpO" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"fbL" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/item/radio/intercom{
+	pixel_y = -28
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
@@ -19032,8 +19667,18 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"fjR" = (
+/obj/machinery/light_switch{
+	pixel_y = 28
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
@@ -19776,6 +20421,19 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/security{
+	name = "Security Post - Engineering";
+	req_access_txt = "63"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"fvX" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -19805,7 +20463,20 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/dirt,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+"fwt" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/open/floor/plating,
+/area/security/brig)
+"fwN" = (
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -20032,9 +20703,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "fJf" = (
+=======
+/obj/effect/turf_decal/tile/red,
+/obj/effect/landmark/start/depsec/science,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/science)
+"fzO" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -20373,7 +21055,26 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"fHf" = (
+/turf/closed/wall/r_wall,
+/area/teleporter)
+"fHj" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
@@ -20453,8 +21154,17 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"fIt" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -20587,6 +21297,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -20597,6 +21308,18 @@
 	icon_state = "right";
 	name = "Deliveries";
 	req_access_txt = "50"
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"fJM" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 4;
+	name = "Air to Distro";
+	target_pressure = 500
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -20819,6 +21542,21 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+"fMA" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -20901,6 +21639,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/morgue)
 "fTV" = (
@@ -20912,6 +21651,16 @@
 /obj/machinery/advanced_airlock_controller{
 	dir = 1;
 	pixel_y = -24
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"fNE" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Fore Primary Hallway"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -20984,6 +21733,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
@@ -20998,6 +21748,9 @@
 "fWA" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/turf_decal/bot,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "fWC" = (
@@ -21791,10 +22544,42 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/crew_quarters/heads/hor)
 "ggN" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+=======
+/area/medical/chemistry)
+"gaC" = (
+/obj/machinery/washing_machine,
+/turf/open/floor/carpet,
+/area/security/prison)
+"gaO" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/crew_quarters/fitness/recreation)
+"gbi" = (
+/obj/effect/turf_decal/tile/green,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"gbC" = (
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"gbJ" = (
+/obj/machinery/power/apc/auto_name/east{
+	pixel_x = 24
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -23012,7 +23797,17 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"gur" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -24509,6 +25304,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -24519,6 +25315,11 @@
 	pixel_y = -20
 	},
 /obj/machinery/light,
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
 "gQK" = (
@@ -24657,7 +25458,17 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"gMB" = (
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -24818,8 +25629,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
+=======
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"gOn" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/window,
@@ -25045,12 +25868,18 @@
 /turf/open/floor/plating/airless{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/space/nearstation)
 "hbl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "rdoffice";
 	name = "Research Director's Shutters"
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -26331,9 +27160,33 @@
 	dir = 2
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "htz" = (
+=======
+/turf/open/floor/plating,
+/area/maintenance/port)
+"hmy" = (
+/turf/closed/wall,
+/area/security/brig)
+"hmB" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"hmG" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
 	},
@@ -26445,6 +27298,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
@@ -26453,6 +27307,17 @@
 /obj/item/crowbar/red,
 /obj/item/radio{
 	pixel_y = 5
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"hnO" = (
+/obj/machinery/door/window/northleft{
+	name = "Containment Pen #1";
+	req_access_txt = "55"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/light_switch{
 	pixel_x = 24
@@ -27120,8 +27985,16 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light{
 	dir = 1
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
@@ -27347,6 +28220,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
 "hGT" = (
@@ -27519,10 +28395,32 @@
 	},
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/starboard)
 "hLe" = (
 /obj/machinery/dna_scannernew,
 /obj/effect/turf_decal/stripes/end{
+=======
+/area/maintenance/fore)
+"hCt" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"hCH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/airalarm{
@@ -28099,11 +28997,28 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "hUy" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Surgery Observation"
+=======
+/obj/effect/turf_decal/tile/yellow,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/chemistry)
+"hNh" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -28274,6 +29189,18 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"hOJ" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -29313,12 +30240,43 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/newscaster{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
+=======
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/science)
+"hZO" = (
+/obj/structure/table,
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "RD's Desk";
+	departmentType = 7;
+	pixel_x = -32
+	},
+/obj/item/nanite_remote,
+/obj/item/nanite_scanner,
+/obj/item/paicard,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -29386,7 +30344,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer3{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ibW" = (
+/obj/machinery/atmospherics/pipe/simple/dark/hidden{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -31809,9 +32780,29 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"iHM" = (
+/obj/structure/closet/secure_closet/captains,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/heads/captain/private)
+"iIf" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/table/reinforced,
 /obj/item/taperecorder,
@@ -32149,7 +33140,29 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"iMa" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"iMn" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -32241,8 +33254,33 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/warden)
 "jbu" = (
+=======
+/area/hallway/secondary/exit)
+"iNq" = (
+/obj/effect/spawner/room/fivexthree,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"iNB" = (
+/obj/machinery/vending/snack/random,
+/obj/machinery/light,
+/turf/open/floor/grass,
+/area/hallway/primary/fore)
+"iNV" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"iOb" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -33414,12 +34452,22 @@
 "jtX" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/quartermaster/miningdock)
 "jua" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only{
+=======
+/area/security/prison)
+"jbA" = (
+/obj/item/flashlight/glowstick/red,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"jbB" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -33503,7 +34551,21 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"jcS" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/tile/red{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -33860,11 +34922,28 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+"jiV" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/filingcabinet/chestdrawer,
@@ -34123,7 +35202,20 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"jnD" = (
+/obj/structure/window/reinforced/spawner{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -34267,12 +35359,23 @@
 /obj/machinery/light{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/bombcloset/white,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"jqw" = (
+/obj/effect/turf_decal/stripes/corner{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -34651,7 +35754,16 @@
 /obj/item/radio/intercom{
 	pixel_y = -29
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "jOw" = (
@@ -34885,7 +35997,12 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/closet/secure_closet/engineering_personal,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "jSt" = (
@@ -34943,6 +36060,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
@@ -34953,6 +36071,18 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/purple,
+=======
+/obj/structure/disposalpipe/sorting/mail/flip{
+	dir = 4;
+	sortType = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"jDe" = (
+/obj/structure/disposalpipe/segment,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "jTR" = (
@@ -35416,8 +36546,20 @@
 /obj/machinery/light_switch{
 	pixel_x = -26
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
+=======
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"jHZ" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/white,
 /obj/effect/turf_decal/bot,
@@ -35936,6 +37078,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/transfer)
 "khW" = (
@@ -36137,11 +37285,21 @@
 /obj/structure/sign/warning/vacuum{
 	pixel_x = -32
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/security/brig)
+"jQZ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -36199,8 +37357,13 @@
 /obj/machinery/vending/wallmed{
 	pixel_x = -28
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/table,
 /obj/item/defibrillator/loaded,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/medical)
 "kkm" = (
@@ -36666,9 +37829,19 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/virology{
 	name = "Virology Access";
 	req_access_txt = "39"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/construction/mining/aux_base)
+"jXu" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 2
@@ -36978,10 +38151,19 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/foyer)
 "kut" = (
 /obj/structure/table/reinforced,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/construction/mining/aux_base)
+"kaW" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -37174,8 +38356,21 @@
 	dir = 4;
 	pixel_x = -30
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"kdL" = (
+/obj/machinery/porta_turret/ai{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -37306,8 +38501,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible/layer3{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "kyO" = (
@@ -37895,6 +39102,12 @@
 	codes_txt = "patrol;next_patrol=Pool";
 	location = "SBP"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "kGq" = (
@@ -38079,7 +39292,20 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"koA" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel/cafeteria{
@@ -39196,6 +40422,22 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/turf_decal/tile/green,
+/obj/item/radio/intercom{
+	pixel_y = -28
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"kFR" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -39446,8 +40688,22 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/green{
 	dir = 8
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/server)
+"kGW" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
@@ -39929,11 +41185,27 @@
 /obj/structure/window{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "liP" = (
 /obj/structure/chair{
 	dir = 1
+=======
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"kOs" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
@@ -40019,12 +41291,55 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/lab)
 "lkn" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "lkp" = (
+=======
+/area/hallway/primary/fore)
+"kQj" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "kitchen"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = -25
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/kitchen)
+"kQq" = (
+/obj/structure/lattice,
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space/nearstation)
+"kQu" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/camera/autoname,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"kRf" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
@@ -40296,6 +41611,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/quartermaster/miningdock)
@@ -40311,6 +41627,15 @@
 "lqT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/science/server)
+"kTn" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -41189,6 +42514,15 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
 "lDX" = (
@@ -41273,7 +42607,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+	},
+/area/science/research)
+"lfc" = (
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -41384,7 +42730,33 @@
 	dir = 4
 	},
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "1-8"
+=======
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"lhA" = (
+/obj/machinery/door/airlock{
+	name = "Unisex Washroom"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/aisat/atmos)
@@ -43182,6 +44554,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/table/glass,
 /obj/item/hand_labeler,
 /obj/item/stack/packageWrap,
@@ -43194,6 +44567,15 @@
 "mgp" = (
 /obj/structure/transit_tube/curved{
 	dir = 8
+=======
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/noslip/white,
+/area/medical/virology)
+"lEz" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -43215,6 +44597,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "mgV" = (
@@ -43223,6 +44606,14 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line{
+=======
+/obj/effect/landmark/start/depsec/engineering,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"lEF" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -43457,9 +44848,19 @@
 	dir = 4;
 	id = "packageSort2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/quartermaster/sorting)
 "mkz" = (
+=======
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+"lGV" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -43540,7 +44941,29 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/cafeteria,
+=======
+/turf/open/floor/plasteel,
+/area/crew_quarters/heads/cmo)
+"lIN" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"lIO" = (
+/turf/open/floor/plasteel/white,
+/area/science/mixing)
+"lJd" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /area/engine/atmos)
 "mlz" = (
 /turf/open/floor/plasteel/white,
@@ -43564,8 +44987,25 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 2
+=======
+/obj/machinery/power/apc/auto_name/west{
+	pixel_x = -24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/server)
+"lJO" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -43945,6 +45385,21 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/plasteel/dark,
+/area/gateway)
+"lQW" = (
+/obj/effect/landmark/xeno_spawn,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"lQY" = (
+/obj/machinery/computer/pandemic,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -44454,6 +45909,24 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/science)
 "mym" = (
@@ -44940,7 +46413,20 @@
 	name = "Satellite Antechamber";
 	req_one_access_txt = "32;19"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/customs)
+"meJ" = (
+/obj/structure/curtain,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -45307,6 +46793,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/ai_monitored/storage/eva)
 "mKy" = (
 /obj/machinery/airalarm{
@@ -45335,6 +46822,26 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+=======
+/area/hallway/primary/aft)
+"mjr" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"mjs" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -45636,6 +47143,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/storage)
+"mnh" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
@@ -46370,8 +47886,27 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
+=======
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+"mBW" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/science)
+"mCm" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -24
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/white,
@@ -46953,9 +48488,34 @@
 /area/hallway/secondary/entry)
 "nib" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/turf/open/floor/plasteel,
+/area/ai_monitored/storage/eva)
+"mMr" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"mMs" = (
+/obj/machinery/gravity_generator/main/station,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"mMt" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
@@ -47464,8 +49024,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 10
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"mUx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -47530,6 +49102,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -47537,6 +49110,17 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/securearea{
 	pixel_x = -32
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"mVf" = (
+/obj/structure/closet/secure_closet/brig{
+	id = "Cell 3";
+	name = "Cell 3 Locker"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/security/warden)
@@ -48565,8 +50149,17 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"nkt" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -48584,6 +50177,12 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard)
@@ -49585,6 +51184,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "nMt" = (
@@ -50679,6 +52279,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
@@ -50691,10 +52292,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
 "obx" = (
@@ -50706,6 +52312,20 @@
 	dir = 8;
 	name = "Air to Distro";
 	target_pressure = 500
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"nLO" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Mining Maintenance";
+	req_access_txt = "48"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/airalarm{
 	pixel_y = 24
@@ -51223,8 +52843,32 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"nSZ" = (
+/obj/structure/table,
+/obj/item/circular_saw{
+	pixel_y = 3
+	},
+/obj/item/scalpel{
+	pixel_y = 14
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white/side,
+/area/medical/surgery)
+"nTj" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -52576,6 +54220,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
@@ -52595,6 +54240,20 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/chemistry)
+"oiK" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/science/mixing/chamber)
+"oiM" = (
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"oiU" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
@@ -53974,6 +55633,15 @@
 	name = "Security Office APC";
 	pixel_y = -24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/security/main)
 "oUT" = (
@@ -54034,6 +55702,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
@@ -54043,6 +55712,15 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
 "oVH" = (
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
 "oVP" = (
@@ -54512,6 +56190,18 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/science)
+"oKx" = (
+/turf/open/floor/carpet/red,
+/area/security/detectives_office)
+"oKz" = (
+/obj/structure/chair/office{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -54675,10 +56365,68 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/storage)
 "peD" = (
 /obj/structure/table/wood,
 /obj/item/storage/crayons,
+=======
+/area/hallway/primary/central)
+"oMs" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/maintenance/fore)
+"oMP" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"oMQ" = (
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"oNc" = (
+/obj/structure/table/glass,
+/obj/item/folder/white{
+	pixel_y = 4
+	},
+/obj/item/pen/red,
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"oNe" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/recreation)
+"oNk" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/wood,
 /area/library)
 "peS" = (
@@ -55244,6 +56992,12 @@
 /obj/machinery/door/airlock/external{
 	name = "External Solar Access";
 	req_access_txt = "10; 13"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/solars/starboard/fore)
@@ -55848,11 +57602,22 @@
 	roundstart_template = /datum/map_template/shuttle/arrival/box;
 	width = 7
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/space/basic,
 /area/space)
 "pwm" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -55906,6 +57671,7 @@
 /obj/machinery/status_display/evac{
 	pixel_y = -32
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms)
@@ -55931,6 +57697,20 @@
 /area/security/courtroom)
 "pxE" = (
 /obj/machinery/computer/operating{
+=======
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/theatre)
+"peJ" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/closed/wall/r_wall,
+/area/crew_quarters/heads/hor)
+"peQ" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -57455,8 +59235,25 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light{
 	dir = 8
+=======
+/obj/item/radio/intercom{
+	pixel_x = -28;
+	pixel_y = -2
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"pBS" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
@@ -58188,9 +59985,19 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"pKS" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "qdm" = (
@@ -58282,6 +60089,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/escape)
@@ -58299,6 +60107,10 @@
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+=======
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -58554,7 +60366,24 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/security/brig)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "qiB" = (
+=======
+"pQn" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"pQo" = (
+/obj/effect/landmark/start/roboticist,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -58757,6 +60586,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -58771,6 +60601,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+=======
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "qlG" = (
@@ -58863,7 +60695,23 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red{
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Research Director's Office";
+	req_access_txt = "30"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/science/server)
+"pUU" = (
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
@@ -59150,6 +60998,7 @@
 	name = "Virology Exterior Airlock";
 	req_access_txt = "39"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/doorButtons/access_button{
 	dir = 1;
 	idDoor = "virology_airlock_exterior";
@@ -59158,6 +61007,27 @@
 	pixel_x = -24;
 	pixel_y = -2;
 	req_access_txt = "39"
+=======
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
+"pYb" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"pYd" = (
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/starboard/central)
+"pYg" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "comms"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -59209,6 +61079,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "qqh" = (
@@ -59506,6 +61378,12 @@
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -60452,9 +62330,21 @@
 /obj/item/stack/sheet/mineral/copper{
 	amount = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/maintenance/port)
 "qLS" = (
+=======
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"qsJ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/crew_quarters/heads/hor)
+"qtN" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -60532,6 +62422,8 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
 "qNd" = (
@@ -60704,8 +62596,22 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/engine/storage)
+"qvT" = (
+/obj/structure/chair/comfy/black{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -60977,6 +62883,9 @@
 /obj/machinery/status_display/supply{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "qUj" = (
@@ -61239,8 +63148,18 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red{
 	dir = 8
+=======
+/obj/machinery/holopad,
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"qHP" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Chapel Dock Access"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
@@ -62262,7 +64181,18 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/hor)
+"qXC" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -62531,6 +64461,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "rsg" = (
@@ -62631,8 +64575,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 4
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
@@ -63076,6 +65026,7 @@
 	name = "Captain's Bedroom";
 	req_access_txt = "20"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain/private)
 "rBV" = (
@@ -63083,6 +65034,11 @@
 /obj/item/stack/ore/glass,
 /obj/item/stack/ore/iron,
 /obj/effect/turf_decal/bot,
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "rCr" = (
@@ -63250,10 +65206,15 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/science/lab)
 "rEM" = (
 /obj/effect/turf_decal/tile/green{
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -63709,11 +65670,26 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/port/aft)
 "rMA" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "Secure Gate";
 	name = "brig shutters"
+=======
+/area/maintenance/fore)
+"rxQ" = (
+/obj/structure/chair/stool/bar,
+/turf/open/floor/wood,
+/area/maintenance/port)
+"ryk" = (
+/obj/machinery/light_switch{
+	pixel_y = -25
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -63768,8 +65744,21 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"ryR" = (
+/obj/structure/dresser,
+/obj/item/flashlight/lamp{
+	pixel_x = -1;
+	pixel_y = 14
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -63830,9 +65819,27 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/starboard)
 "rNl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/area/hallway/secondary/exit)
+"rCs" = (
+/obj/structure/disposalpipe/junction/flip{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"rCy" = (
+/obj/effect/turf_decal/stripes/line{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -64171,10 +66178,35 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/maintenance/two,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/port)
 "rSt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
+=======
+/area/maintenance/department/crew_quarters/dorms)
+"rIO" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"rJj" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin{
+	pixel_x = -1;
+	pixel_y = 2
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
@@ -64220,6 +66252,7 @@
 	id = "misclab";
 	name = "test chamber blast door"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "rTy" = (
@@ -64228,6 +66261,16 @@
 	dir = 4;
 	name = "Port Quarter Solar Maintenance";
 	pixel_x = 24
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"rJG" = (
+/obj/machinery/advanced_airlock_controller{
+	pixel_y = 24
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -64751,6 +66794,7 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer3{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat/atmos)
 "sbO" = (
@@ -64758,6 +66802,13 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/yellow{
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"rRt" = (
+/obj/structure/railing/corner,
+/turf/open/floor/plasteel/stairs/left{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/vending/engivend,
@@ -66571,6 +68622,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "sDE" = (
@@ -66608,6 +68662,7 @@
 /obj/item/borg/upgrade/rename,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/robotics/lab)
 "sEF" = (
 /obj/effect/decal/cleanable/dirt,
@@ -66618,6 +68673,23 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/area/engine/atmos)
+"spc" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"spd" = (
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -67022,7 +69094,21 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"sum" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/mixing)
+"sut" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -68725,7 +70811,18 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"sSL" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -69439,12 +71536,24 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "tpV" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
+=======
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"tfu" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -69523,12 +71632,24 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
 /area/bridge)
 "trI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
+=======
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/chemistry)
+"tgr" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 6
@@ -70122,10 +72243,19 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold,
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"trM" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/atmos)
 "tBo" = (
@@ -70301,6 +72431,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
@@ -70614,7 +72748,16 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"tAF" = (
+/obj/effect/turf_decal/tile/green{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue,
@@ -71615,6 +73758,7 @@
 	dir = 8;
 	pixel_x = 28
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/vacant_room/commissary)
 "tXT" = (
@@ -71627,6 +73771,17 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"tKc" = (
+/obj/machinery/camera/autoname{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -73196,7 +75351,17 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"ueA" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
@@ -74237,7 +76402,11 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/decal/cleanable/dirt,
+=======
+/obj/machinery/atmospherics/components/unary/tank/air,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "uJS" = (
@@ -74944,12 +77113,20 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/table,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/dorms)
 "uTG" = (
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/tile/blue,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"uBk" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -75579,10 +77756,18 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/mixing)
 "vbf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
+=======
+/area/security/checkpoint/supply)
+"uHo" = (
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -75922,9 +78107,28 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port)
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 "vhQ" = (
 /obj/item/radio/intercom{
 	pixel_x = 26
+=======
+"uLl" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"uLw" = (
+/obj/structure/window/reinforced/spawner,
+/turf/open/space/basic,
+/area/space)
+"uLJ" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
@@ -76295,10 +78499,17 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "voe" = (
 /obj/effect/turf_decal/tile/red,
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"uUE" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -76918,7 +79129,33 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+=======
+/turf/open/floor/carpet/blue,
+/area/security/brig)
+"vgF" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"vhc" = (
+/turf/closed/wall,
+/area/maintenance/port)
+"vhl" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
@@ -76934,8 +79171,29 @@
 	name = "Port Quarter Solar Access";
 	req_access_txt = "10"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/medical/virology)
+"vhK" = (
+/obj/structure/table/wood,
+/obj/item/storage/firstaid,
+/obj/item/storage/belt/medical,
+/obj/machinery/light,
+/turf/open/floor/carpet/cyan,
+/area/crew_quarters/heads/cmo)
+"vib" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/northright{
+	dir = 4;
+	name = "medical supplies";
+	req_access_txt = "5"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -77075,7 +79333,18 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"vlh" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel/checker,
@@ -77169,7 +79438,15 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
+=======
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "vyB" = (
@@ -77356,6 +79633,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "vCs" = (
@@ -77365,6 +79643,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/chemistry)
+"vnr" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -77716,11 +79999,22 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "vIN" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+"vqE" = (
+/obj/machinery/airalarm/directional/south,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -78136,8 +80430,20 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"vxc" = (
+/obj/machinery/door/airlock/atmos{
+	name = "Incinerator";
+	req_access_txt = "24"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/door/airlock/external{
 	name = "External Solar Access";
@@ -78166,12 +80472,25 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/space/basic,
 /area/space/nearstation)
 "vOY" = (
 /obj/machinery/door/airlock/medical{
 	name = "Patient Room"
+=======
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"vxl" = (
+/obj/structure/marker_beacon,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -78595,8 +80914,15 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
+=======
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"vAo" = (
+/obj/effect/turf_decal/tile/brown{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -78683,6 +81009,14 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "vWt" = (
@@ -78787,8 +81121,23 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"vDl" = (
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /area/maintenance/port/aft)
 "vXR" = (
@@ -79503,7 +81852,22 @@
 /area/hallway/secondary/service)
 "wkc" = (
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "4-8"
+=======
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+"vJF" = (
+/turf/closed/wall,
+/area/medical/sleeper)
+"vJJ" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
@@ -79625,8 +81989,27 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/tcommsat/computer)
+"vKB" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/storage/toolbox/emergency{
+	pixel_x = 2;
+	pixel_y = -3
+	},
+/obj/item/wirecutters{
+	pixel_y = 2
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -79793,7 +82176,19 @@
 /obj/effect/turf_decal/bot{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel{
+=======
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"vMo" = (
+/obj/effect/turf_decal/tile/green{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /area/gateway)
@@ -79930,7 +82325,28 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "0-4"
+=======
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/event_spawn,
+/obj/effect/turf_decal/caution/red{
+	dir = 8;
+	pixel_x = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"vNY" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/tcommsat/computer)
@@ -81418,6 +83834,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/grimy,
 /area/hallway/secondary/entry)
 "wKb" = (
@@ -81432,6 +83849,21 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"wlM" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood{
+	pixel_x = -3;
+	pixel_y = -3
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
@@ -81578,6 +84010,15 @@
 	name = "Secure Tech Storage";
 	req_access_txt = "19;23"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"wod" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -82109,6 +84550,7 @@
 	dir = 8;
 	pixel_x = 30
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -82129,6 +84571,28 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
+=======
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"wuW" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"wvu" = (
+/obj/machinery/door/airlock/mining{
+	name = "Quartermaster's Office";
+	req_access_txt = "41"
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -82234,6 +84698,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
 "wTg" = (
@@ -82248,6 +84713,13 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "wTw" = (
+=======
+/obj/effect/landmark/event_spawn,
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/qm)
+"wxa" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -82258,12 +84730,22 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow,
 /obj/machinery/power/apc{
 	areastring = "/area/medical/cryo";
 	dir = 8;
 	name = "Cyro APC";
 	pixel_x = -24
+=======
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel,
+/area/medical/chemistry)
+"wxc" = (
+/obj/item/beacon,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
@@ -82285,6 +84767,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light{
 	dir = 1
 	},
@@ -82294,6 +84777,32 @@
 	name = "Plumbing APC";
 	pixel_y = 24
 	},
+=======
+/turf/open/floor/plasteel/white,
+/area/security/brig)
+"wxw" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/obj/structure/closet/emcloset/anchored,
+/turf/open/floor/plating,
+/area/maintenance/solars/port/fore)
+"wxC" = (
+/obj/machinery/atmospherics/components/binary/pump/on,
+/obj/machinery/airlock_sensor/incinerator_toxmix{
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/science/mixing/chamber)
+"wxJ" = (
+/obj/machinery/air_sensor/atmos/air_tank,
+/turf/open/floor/engine/air,
+/area/engine/atmos)
+"wxN" = (
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
@@ -82334,8 +84843,42 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment{
 	dir = 6
+=======
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"wyy" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/carbon_input{
+	dir = 4
+	},
+/turf/open/floor/engine/co2,
+/area/engine/atmos)
+"wyE" = (
+/obj/structure/rack,
+/obj/item/shield/riot,
+/obj/item/shield/riot{
+	pixel_x = 2;
+	pixel_y = 1
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -84610,9 +87153,17 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria{
+	dir = 5
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -85430,9 +87981,28 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/port)
 "xJX" = (
 /obj/effect/turf_decal/tile/red{
+=======
+/area/maintenance/fore)
+"xra" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"xrc" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /turf/open/floor/plasteel/white/corner{
@@ -85836,8 +88406,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"xxw" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/visible,
+/obj/effect/turf_decal/stripes/corner{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/airalarm{
@@ -86064,8 +88645,26 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/lobby)
+"xzi" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/medical/virology)
+"xzr" = (
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"xzs" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/space/basic,
@@ -86185,6 +88784,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Port Docking Bay 2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "xTT" = (
@@ -86192,6 +88792,12 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -86318,6 +88924,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
@@ -86339,6 +88946,14 @@
 	icon_state = "2-4"
 	},
 /obj/structure/closet/wardrobe/virology_white,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "xWb" = (
@@ -87386,9 +90001,29 @@
 	pixel_x = 4;
 	pixel_y = -4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/toy/figure/chemist{
 	pixel_x = 4;
 	pixel_y = -4
+=======
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/turf/open/floor/plasteel,
+/area/maintenance/starboard/central)
+"xSL" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"xSN" = (
+/obj/machinery/door/airlock{
+	name = "Unisex Showers"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/apothecary)
@@ -87423,6 +90058,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -87432,12 +90068,73 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+"xUf" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/storage)
+"xUg" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/beakers{
+	pixel_x = 1;
+	pixel_y = 4
+	},
+/obj/item/storage/box/beakers{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"xUk" = (
+/turf/open/floor/plating,
+/area/maintenance/department/bridge)
+"xUn" = (
+/obj/item/ammo_casing/c9mm{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"xUq" = (
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall7";
+	location = "hall6"
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
@@ -87583,7 +90280,1018 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/robotics/mechbay)
+=======
+/area/crew_quarters/heads/cmo)
+"xXj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/turf/closed/wall/r_wall,
+/area/crew_quarters/heads/chief)
+"xXn" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/structure/sign/poster/random{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"xXD" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/starboard/central)
+"xXH" = (
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/warehouse)
+"xXY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+"xYg" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"xYw" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/disposal)
+"xYC" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/window,
+/turf/open/floor/plating,
+/area/maintenance/department/bridge)
+"xYE" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/turf/open/floor/engine/vacuum,
+/area/science/mixing/chamber)
+"xYH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"xYJ" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"xYK" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/holopad{
+	pixel_y = 16
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/security/main)
+"xYY" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/recreation)
+"xYZ" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "AI Chamber";
+	departmentType = 7
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai)
+"xZa" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"xZi" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall,
+/area/maintenance/solars/starboard/aft)
+"xZn" = (
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/plasteel/white/corner{
+	dir = 4
+	},
+/area/science/research)
+"xZp" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+"xZC" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/sign/warning/docking{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"xZS" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L5"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"xZU" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/visible{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"xZV" = (
+/obj/machinery/door/firedoor/window,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/engine/engine_room)
+"yak" = (
+/turf/closed/wall/r_wall,
+/area/maintenance/department/science/central)
+"yaB" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/requests_console{
+	department = "Engineering";
+	departmentType = 3;
+	pixel_x = 32
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"ybf" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"ybt" = (
+/obj/effect/turf_decal/stripes/box,
+/obj/machinery/suit_storage_unit/open,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"ybC" = (
+/obj/machinery/atmospherics/components/binary/valve{
+	dir = 1;
+	name = "manual inlet valve"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/white,
+/area/science/mixing)
+"ybF" = (
+/obj/machinery/advanced_airlock_controller/directional/east,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/starboard/secondary)
+"ybP" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+"ybQ" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"ybV" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"ybY" = (
+/obj/structure/sign/directions/evac{
+	dir = 1
+	},
+/turf/closed/wall,
+/area/hallway/primary/aft)
+"ycc" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/machinery/computer/security,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"ycf" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/science/lab)
+"yco" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/turf/closed/wall,
+/area/medical/chemistry)
+"yct" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"ycu" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"ycv" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"ycy" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/crew_quarters/heads/cmo)
+"ycE" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/starboard/central)
+"ycJ" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/structure/window/reinforced/spawner{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"ycN" = (
+/obj/structure/disposalpipe/junction{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/service)
+"ydu" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/heater{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/atmos)
+"ydH" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/manifold4w/general/visible,
+/turf/open/floor/plasteel,
+/area/medical/cryo)
+"ydI" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/turf/open/floor/plasteel,
+/area/hallway/primary/fore)
+"ydK" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/wood,
+/area/crew_quarters/bar)
+"ydM" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/science/shuttle)
+"ydS" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/chapel/monastery)
+"yer" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/ai_slipper{
+	uses = 10
+	},
+/obj/machinery/power/terminal,
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"yes" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"yew" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"yeF" = (
+/obj/machinery/computer/bounty{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	desc = "A remote control switch.";
+	id = "qmoffice";
+	name = "Quartermaster's Office Control";
+	normaldoorcontrol = 0;
+	pixel_x = 29;
+	pixel_y = 28
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/qm)
+"yeH" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 8;
+	sortTypes = list(9,10,11,23)
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/aft)
+"yeI" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/library)
+"yeK" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plating,
+/area/maintenance/port)
+"yeN" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+"yeT" = (
+/obj/structure/table/reinforced,
+/obj/item/book/granter/crafting_recipe/cooking_sweets_101,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_x = 1;
+	pixel_y = -25
+	},
+/turf/open/floor/plasteel/white,
+/area/security/prison)
+"yfm" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/flasher/portable,
+/obj/item/wrench,
+/turf/open/floor/plasteel,
+/area/security/warden)
+"yfs" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"yfw" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/quartermaster/office)
+"yfC" = (
+/turf/open/floor/circuit/green,
+/area/hallway/secondary/entry)
+"yfX" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/brig)
+"ygd" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"ygk" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/landmark/start/botanist,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/obj/item/radio/intercom{
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel,
+/area/hydroponics)
+"ygp" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"ygz" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit)
+"ygL" = (
+/obj/effect/spawner/lootdrop/glowstick/lit,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/fore)
+"ygS" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"yhL" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"yhO" = (
+/obj/machinery/holopad,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"yhU" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/science/shuttle)
+"yif" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"yiI" = (
+/obj/structure/table/reinforced,
+/obj/item/pipe_painter,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"yiS" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
+"yje" = (
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel,
+/area/security/brig)
+"yjq" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/machinery/holopad{
+	pixel_y = 16
+	},
+/turf/open/floor/plasteel/white,
+/area/science/lab)
+"yjt" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
+	},
+/obj/machinery/airalarm/mixingchamber{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/camera/autoname{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/science/mixing/chamber)
+"yju" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/chair/office,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/landmark/start/depsec/medical,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"ykb" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/dorms)
+"ykd" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/clothing/under/rank/cargo/tech{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/clothing/gloves/fingerless{
+	pixel_x = 1
+	},
+/obj/machinery/power/apc/auto_name/west{
+	pixel_x = -24
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"ykf" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Port Bypass"
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"yki" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/bridge)
+"ykr" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/crew_quarters/dorms)
+"ykK" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"ykP" = (
+/obj/machinery/porta_turret/ai{
+	dir = 4;
+	installation = /obj/item/gun/energy/e_gun
+	},
+/obj/effect/turf_decal/stripes/red/box,
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/aisat_interior)
+"ykT" = (
+/obj/item/radio/intercom{
+	pixel_x = 29;
+	pixel_y = -2
+	},
+/obj/machinery/vending/autodrobe,
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/theatre)
+"yly" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/science/storage)
+"ylA" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Long-Term Cell 1";
+	req_access_txt = "2"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/prison)
+"ylC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
+"ylG" = (
+/obj/machinery/atmospherics/pipe/manifold/yellow/visible{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"ymf" = (
+/turf/open/floor/plasteel/white,
+/area/maintenance/department/science/central)
+"ymm" = (
+/obj/structure/sign/departments/minsky/engineering/telecommmunications{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 
 (1,1,1) = {"
 tfJ
@@ -114936,6 +118644,7 @@ wLs
 nDK
 gsp
 yak
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 vWf
 hDX
 qfL
@@ -115083,6 +118792,141 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+lOs
+tLF
+wsI
+uyb
+lwE
+hOm
+dRJ
+hzu
+jpk
+pga
+bFD
+bFD
+bFD
+maS
+oiK
+cah
+cah
+cah
+cah
+cah
+dyC
+xAp
+iLJ
+lao
+iOB
+iOB
+iOB
+vhc
+chC
+vhc
+vhc
+vhc
+vhc
+vhc
+vAt
+tYE
+vAt
+lQt
+vAt
+fTf
+gfC
+auR
+lWW
+uIh
+auR
+lni
+fTU
+hHR
+iOL
+rig
+uAc
+rXb
+mon
+cfA
+rXb
+pTe
+pTe
+iOL
+dzx
+rdA
+arz
+sxn
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+rdA
+bOf
+bOf
+bOf
+anT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (108,1,1) = {"
 tfJ
@@ -115342,6 +119186,7 @@ tfJ
 tfJ
 "}
 (109,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -115597,6 +119442,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+tRV
+aMT
+aMT
+aMT
+tRV
+aMT
+aMT
+aMT
+tRV
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+qBt
+qBt
+vHd
+hvo
+vHd
+agQ
+dSp
+fNQ
+piq
+iwo
+lRR
+iEo
+cmv
+tDQ
+ofy
+mma
+myf
+mma
+oxJ
+mma
+egu
+mma
+mma
+mma
+mma
+ssK
+ajI
+sKa
+dCu
+mma
+gFZ
+tqL
+dFj
+mHr
+hKd
+wta
+xhQ
+uDz
+feC
+czr
+mHr
+kIy
+lWn
+ejA
+lqs
+ejA
+lWn
+lWn
+lWn
+lWn
+lWn
+lWn
+ycv
+gAn
+jpk
+pga
+brb
+hzw
+eMp
+tIb
+exD
+bQe
+lIO
+sum
+aDm
+cah
+ewC
+sRO
+hOe
+und
+bbx
+bbx
+bbx
+kLm
+tVi
+aPH
+ery
+ery
+hmG
+iOB
+vAt
+paJ
+vAt
+rkq
+vAt
+iKs
+vAt
+auR
+auR
+auR
+auR
+fMn
+fTU
+hHR
+iOL
+xiK
+xsd
+kqH
+mon
+qKk
+hjs
+rXJ
+iOL
+pUZ
+iQt
+rdA
+urq
+shs
+rdA
+dip
+hDr
+kcK
+glo
+bTc
+bjS
+bOf
+bdw
+pIk
+hAT
+pIk
+rnt
+bOf
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (110,1,1) = {"
 tfJ
@@ -115856,6 +119958,7 @@ tfJ
 tfJ
 "}
 (111,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -116111,6 +120214,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+dun
+uDs
+oIq
+aMT
+dun
+uDs
+oIq
+aMT
+dun
+uDs
+oIq
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+cvP
+cvP
+cvP
+cvP
+cvP
+cvP
+cvP
+cvP
+qno
+tVc
+agr
+mma
+sRB
+gll
+rxq
+ybt
+oxJ
+mma
+maf
+nde
+nde
+nde
+jpY
+nde
+ohm
+rTo
+nHQ
+mma
+xpm
+kQh
+mDG
+mHr
+iCm
+lGb
+oYB
+ivq
+ivq
+iPv
+mHr
+kIy
+iJI
+ejA
+sNz
+ejA
+hSX
+uNv
+xxW
+mOp
+rlI
+nBB
+ycv
+gAn
+jpk
+bOW
+bOW
+bOW
+bOW
+bOW
+peJ
+bOW
+uwI
+fZf
+lIO
+lIO
+mVs
+bia
+cah
+iOB
+iOB
+dEL
+vhc
+dCK
+tYN
+vhc
+iOB
+iOB
+djd
+ery
+oYK
+iMa
+hmr
+iMa
+iMa
+yeK
+iMa
+iMa
+oyx
+drj
+aUl
+opG
+oyL
+wPz
+iOL
+pKn
+mon
+mon
+few
+sDk
+mon
+hib
+iOL
+gAV
+wLi
+rdA
+oaP
+tKR
+rpt
+cQS
+peC
+cQS
+glo
+rDE
+tKh
+bOf
+bdw
+vqf
+sZv
+puk
+rnt
+bOf
+avg
+qvT
+qqq
+cDU
+lXm
+aYK
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (112,1,1) = {"
 tfJ
@@ -116370,6 +120730,7 @@ tfJ
 tfJ
 "}
 (113,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -116882,6 +121243,520 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+dun
+uDs
+oIq
+aMT
+dun
+uDs
+oIq
+aMT
+dun
+uDs
+oIq
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+hBl
+aAO
+kVV
+uFR
+iVT
+hKR
+huf
+ifk
+svM
+pfI
+uWH
+agr
+mma
+vlr
+vlr
+vlr
+rKj
+uai
+mma
+ioQ
+mma
+mma
+bxI
+bxI
+gDC
+woL
+trs
+bco
+bxI
+rlq
+qkn
+ocz
+cyg
+rQz
+uVI
+yjq
+gdO
+qor
+mkp
+jvu
+ilJ
+lWn
+vNZ
+rnW
+ejA
+eoW
+hZJ
+kUL
+qOq
+stD
+lWn
+mUQ
+dgd
+bvR
+xdw
+cBU
+tfu
+axI
+axI
+ryk
+bOW
+bOW
+upc
+lla
+rYP
+cVG
+iPK
+cah
+iOB
+iOB
+iOB
+vhc
+iOB
+iQt
+auR
+auR
+auR
+auR
+auR
+auR
+auR
+pMp
+pMp
+pMp
+auR
+pxI
+pxI
+pxI
+auR
+auR
+kub
+qwt
+rWm
+iOL
+iOL
+iOL
+gaO
+jfd
+wnN
+iDW
+iOL
+iOL
+iOL
+iOL
+iOL
+mYv
+qON
+rdA
+glo
+glo
+glo
+glo
+svL
+pXx
+bOf
+wIi
+vqf
+sZv
+puk
+rnt
+xwJ
+iZh
+iyv
+vNz
+vcw
+nOP
+oVs
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(114,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+dun
+hTD
+oIq
+aMT
+dun
+vud
+oIq
+aMT
+dun
+vud
+oIq
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+dJG
+rQM
+jxO
+dKA
+eDP
+dfQ
+bfu
+sAp
+qno
+guG
+ofy
+mma
+ybt
+qjd
+rJJ
+qUW
+vlr
+mma
+aUb
+nde
+jDQ
+bxI
+bxI
+ufK
+hZv
+oAR
+oAR
+jQE
+mQp
+qkn
+ocz
+mTM
+fGA
+kyi
+gFw
+hMi
+hMi
+fAc
+mHr
+kIy
+lWn
+ejA
+paK
+ejA
+lWn
+gHQ
+jIB
+rki
+rki
+ejd
+kTn
+hzu
+blN
+szJ
+fxT
+qsJ
+epN
+itu
+qXg
+tFX
+bOW
+dUu
+kUD
+oaw
+sQv
+qkk
+cEu
+cEu
+cEu
+cEu
+cEu
+cEu
+iQt
+auR
+rXr
+dqw
+nxL
+fTS
+rXr
+auR
+cZB
+seZ
+qWV
+auR
+cZB
+seZ
+nzM
+auR
+alu
+uII
+tGe
+jsP
+rHc
+wIA
+uBb
+kij
+gwp
+gPn
+mnh
+mCm
+oDu
+pTT
+rMl
+ekt
+qIT
+hFv
+iRM
+xEL
+ieL
+juT
+glo
+pxO
+xKk
+bOf
+sRM
+evT
+xMT
+uYL
+gJt
+hTq
+bwm
+mup
+yif
+ggT
+eJW
+kyN
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (115,1,1) = {"
 tfJ
@@ -118169,6 +123044,7 @@ tfJ
 tfJ
 "}
 (120,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -118424,6 +123300,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+sgO
+uyk
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+cuS
+fRG
+pqa
+clj
+oSE
+oSE
+rMi
+oSE
+oSE
+faf
+bTe
+wRJ
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+kiV
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+anT
+anT
+anT
+anT
+anT
+qBt
+qBt
+aRL
+aRL
+aRL
+aRL
+aRL
+aMT
+azB
+csV
+aUs
+aUs
+aUs
+mSV
+azB
+aMT
+scI
+aVf
+qDx
+vlr
+bxI
+pvq
+nUN
+xQa
+mgs
+bxI
+sbY
+dTM
+sAX
+pga
+qxP
+dKM
+hzh
+pga
+uML
+iVU
+oWf
+wrA
+son
+pII
+xZn
+pga
+btF
+wuW
+ggh
+hNB
+jpk
+jDg
+hCt
+jpk
+jpk
+gFq
+oRc
+iPU
+cLA
+dvB
+jpk
+uIZ
+hdz
+wQB
+lXO
+psB
+rvK
+jPR
+sLm
+qWg
+xCB
+xCB
+wtH
+cEu
+iQt
+auR
+wpl
+bsa
+bsa
+bsa
+bsa
+gkV
+xSg
+xSg
+sSO
+pUU
+bpw
+xSg
+acU
+amM
+wqJ
+coK
+xls
+rXb
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+cUo
+rXb
+tdo
+ttb
+lGm
+iOL
+blK
+tCG
+ljP
+qEV
+cnK
+ueW
+nFc
+xkH
+qPo
+gIk
+qfW
+tsw
+rBv
+jNh
+diA
+hCM
+ngK
+fZt
+hLF
+qoV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (121,1,1) = {"
 tfJ
@@ -122795,6 +127928,7 @@ tfJ
 tfJ
 "}
 (138,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -123050,6 +128184,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+faf
+lCz
+nzP
+ezA
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+gjY
+aMT
+anT
+aMT
+aMT
+aMT
+oSE
+rMi
+oSE
+oSE
+faf
+bTe
+clj
+oSE
+oSE
+oSE
+oSE
+oSE
+oSE
+oSE
+aMT
+aMT
+aMT
+aMT
+mlQ
+uQS
+xPI
+ldh
+dBL
+mTa
+nJr
+wTy
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aUr
+aMT
+aMT
+anT
+aMT
+agn
+bGL
+ltH
+luo
+lXw
+iHM
+nkt
+qOU
+xtT
+kkg
+cCd
+fiI
+bSy
+tly
+wuJ
+xUk
+uGg
+khz
+oBl
+xVD
+xvC
+aRa
+uGg
+qJy
+shJ
+kVl
+kOs
+nDK
+wza
+hpa
+moG
+uKx
+qkn
+qkn
+kam
+tzJ
+rIO
+cRp
+oot
+vqh
+jFd
+cHk
+mUF
+uqK
+jIm
+euf
+uaJ
+cOo
+gmX
+nyG
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+lrx
+uQJ
+ehY
+xVh
+xVx
+jkL
+oDa
+jEE
+boA
+xyL
+rGQ
+dno
+dKW
+seK
+fPo
+wIG
+ugx
+xre
+cyL
+tMU
+hhg
+cVY
+lrD
+ufY
+aYT
+vVE
+qDW
+xpj
+izd
+svy
+anR
+oUF
+ftk
+ska
+sKx
+fQa
+jWy
+fhO
+nwJ
+lbu
+wSv
+fhO
+qCK
+xXa
+xXa
+uNz
+lmv
+wSU
+eed
+ewj
+ecs
+ewj
+uQC
+xXa
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (139,1,1) = {"
 tfJ
@@ -130762,6 +136153,7 @@ tfJ
 tfJ
 "}
 (169,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -131274,6 +136666,520 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+duF
+sRh
+eni
+jOQ
+jLG
+hmy
+tOE
+kxN
+ckG
+leJ
+naL
+naL
+naL
+kFR
+naL
+iRh
+gsB
+xab
+hme
+ord
+uuf
+sUf
+anT
+jdN
+jdN
+fOv
+fOv
+fOv
+fOv
+ivy
+ivy
+fOv
+fOv
+fOv
+fOv
+fOv
+lcq
+mbE
+nIW
+dvZ
+wwY
+btS
+wvu
+cmi
+juL
+aSf
+lgC
+jdf
+jdf
+fuj
+sRq
+cCt
+tRU
+kYy
+lzJ
+fSn
+dUQ
+dWn
+qnp
+lGV
+fMb
+xOz
+rvY
+isl
+the
+cLE
+cWY
+vnp
+the
+the
+kEu
+jiJ
+iwf
+dFi
+vmg
+kjY
+dNK
+fdr
+stB
+iiM
+iJb
+mDk
+lAD
+vBf
+vBf
+vBf
+mEf
+mVi
+mVi
+tiJ
+fHa
+mVi
+mVi
+mql
+gZc
+puu
+gZc
+xAF
+wkq
+ifS
+ifS
+ifS
+qLZ
+ljs
+bLp
+lOg
+sGC
+kfy
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+kfy
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(170,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+duF
+duF
+duF
+duF
+duF
+duF
+duF
+xMp
+xMp
+naL
+naL
+obK
+kSO
+lBj
+wCA
+iRh
+wDq
+hlC
+kgP
+kgV
+kwP
+iRh
+aMT
+jdN
+erD
+ivK
+vrC
+ivK
+swx
+ygp
+nst
+rzV
+nst
+nst
+nst
+jYG
+oUo
+mbE
+ilr
+etf
+lmg
+bNb
+mbE
+cFz
+gAu
+nKK
+jow
+pwV
+mdN
+bxB
+xLR
+jQm
+ogf
+nxV
+wpT
+nRi
+dUQ
+rvY
+kcZ
+tyn
+rvY
+tUy
+rvY
+tow
+rgR
+rLy
+vMP
+vMP
+kkO
+cLM
+gOi
+aOV
+cjE
+rqh
+uWQ
+cWq
+arM
+eyy
+wUP
+hsh
+gqY
+uYV
+umj
+oDH
+aQu
+vBf
+qSI
+eCC
+mIy
+jUV
+irr
+rie
+oaL
+mql
+gZc
+gZc
+gZc
+kfy
+kfy
+dBG
+pLJ
+nAK
+vmW
+pLJ
+gIo
+pQJ
+pLJ
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+kfy
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (171,1,1) = {"
 tfJ
@@ -131790,6 +137696,7 @@ tfJ
 tfJ
 "}
 (173,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -132045,6 +137952,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+anT
+aMT
+aMT
+naL
+vzi
+coJ
+uxT
+mqu
+lVp
+ejJ
+gar
+naL
+naL
+naL
+aMT
+aMT
+anT
+aMT
+jdN
+jdN
+jdN
+mxr
+jdN
+jdN
+jdN
+osX
+ivK
+jdN
+oal
+cBi
+cBi
+wmD
+tlS
+ggl
+rWF
+vrI
+oIj
+vrI
+oIj
+ggl
+kap
+aWM
+wAI
+bkt
+ykd
+aWM
+tlS
+ggl
+odm
+aWM
+aWM
+xRL
+aWM
+rvY
+rvY
+ioB
+rvY
+rot
+rvY
+gWN
+iIy
+jbB
+jQZ
+spc
+ddV
+bkU
+tgi
+eRt
+iwf
+hOJ
+oaL
+syK
+xgV
+xAn
+vBf
+vBf
+hDu
+hDu
+vBf
+vBf
+vBf
+vBf
+oaL
+jhT
+tYC
+rKr
+ejK
+oaL
+oaL
+klU
+kfy
+kHQ
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aiR
+ozr
+gOp
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (174,1,1) = {"
 tfJ
@@ -132304,6 +138468,7 @@ tfJ
 tfJ
 "}
 (175,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -132559,6 +138724,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+naL
+ufw
+tnH
+hjD
+mqu
+tQe
+gQO
+lLV
+jFK
+iwC
+naL
+anT
+anT
+anT
+anT
+jdN
+ivK
+ivK
+nzt
+ivK
+ivK
+jdN
+osX
+ivK
+jdN
+mYB
+cBi
+mYB
+aWM
+ifY
+mwm
+hTA
+vQo
+gRc
+aPr
+xUV
+aPr
+qvA
+cHt
+cHt
+cHt
+cHt
+hZR
+oxG
+pih
+tGu
+aWM
+hfh
+hfh
+hfh
+hfh
+qcT
+hfh
+hfh
+jjI
+wSu
+uiJ
+geZ
+ndf
+olf
+fOx
+caL
+pKR
+gOi
+gCk
+vvv
+dJB
+nzq
+mCO
+bgd
+sZw
+lJx
+sZw
+qdR
+sZw
+usf
+sZw
+bgd
+gyB
+sZw
+rpq
+iNV
+wli
+hmB
+cso
+jSd
+yeH
+gfW
+vRj
+wRJ
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (176,1,1) = {"
 tfJ
@@ -137958,6 +144380,7 @@ tfJ
 tfJ
 "}
 (197,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -138213,6 +144636,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+krU
+rgH
+krU
+kQq
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+uLw
+rEV
+xmJ
+enq
+xsn
+kXc
+oGY
+nBH
+xBm
+xBm
+xBm
+xBm
+cSs
+xBm
+xBm
+tyZ
+xBm
+xBm
+cSs
+xBm
+xBm
+xBm
+xBm
+tHO
+cSs
+xBm
+xBm
+xBm
+xBm
+cSs
+anT
+anT
+anT
+anT
+anT
+aMT
+aMT
+kiV
+anT
+lvw
+tzM
+vDh
+pbS
+vNy
+rwB
+lvw
+lEq
+iHK
+vqK
+lvw
+aMT
+aMT
+xzi
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (198,1,1) = {"
 tfJ
@@ -138986,6 +145666,7 @@ tfJ
 tfJ
 "}
 (201,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -139498,6 +146179,520 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+krU
+lex
+krU
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+qXb
+anT
+qBt
+aMT
+aMT
+anT
+aMT
+aMT
+cSs
+xBm
+xBm
+xBm
+xBm
+nmb
+cSs
+uPs
+luw
+pOY
+lyr
+mmf
+hor
+gJe
+lhd
+hQy
+lDP
+nYw
+lDP
+wGK
+hor
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+fER
+uqS
+vxb
+xAS
+cGR
+cxq
+cxq
+cGX
+fIm
+cxq
+tAp
+tuP
+mUh
+xra
+enn
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(202,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+nLn
+qPJ
+nLn
+nLn
+nLn
+vTR
+iuU
+iKk
+krU
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+amz
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+cSs
+xBm
+xBm
+xBm
+xBm
+xBm
+cOV
+jfH
+wJp
+jzR
+xXD
+joc
+lRU
+pSx
+eJe
+iAW
+uRZ
+tmv
+rbw
+ntM
+hor
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+aMT
+fER
+nyy
+ePy
+pDE
+gbi
+pwq
+pwq
+akb
+aEG
+xbP
+ogo
+lIN
+qzW
+bBT
+enn
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (203,1,1) = {"
 tfJ
@@ -139757,6 +146952,7 @@ tfJ
 tfJ
 "}
 (204,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -140783,6 +147979,1034 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+nLn
+qPJ
+gjj
+hJy
+iyM
+qQf
+krU
+ybF
+bSD
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+euR
+nev
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+cSs
+cSs
+iEk
+iEk
+iEk
+cSs
+cSs
+ite
+wjw
+gBl
+uSx
+vrX
+hor
+llb
+sKm
+cgE
+nqA
+jbW
+nFl
+qhV
+bPu
+anT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+lvw
+oNc
+rKv
+xYg
+swO
+mjr
+xSL
+lvw
+oqD
+pZu
+lYS
+bEr
+wlM
+lvw
+lvw
+fER
+oQu
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(205,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+krU
+nLn
+krU
+krU
+krU
+xyJ
+krU
+krU
+krU
+hAW
+hAW
+hAW
+hAW
+mPy
+jcB
+tGC
+jcB
+tGC
+jcB
+tGC
+jcB
+tGC
+tGC
+mWh
+hqK
+anT
+anT
+anT
+anT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+cSs
+cSs
+cSs
+iEk
+cSs
+cSs
+hor
+hor
+hor
+iox
+hor
+bPu
+bPu
+bPu
+bPu
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+fER
+njW
+pYb
+oMP
+uBe
+vMd
+yeN
+ccd
+iPg
+hkY
+fHb
+qbD
+vSy
+lvw
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(206,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+krU
+weJ
+weJ
+tWu
+weJ
+efi
+krU
+hnT
+nAR
+jWU
+pzm
+hnT
+krU
+krU
+nLn
+nLn
+krU
+krU
+aMT
+anT
+aMT
+aMT
+hqK
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+ecX
+xBm
+ecX
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+lvw
+mzk
+uzk
+qdJ
+swO
+cPB
+vgF
+lvw
+tKg
+eje
+vNT
+bBi
+rfl
+lvw
+aMT
+kiV
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(207,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+tXx
+krU
+weJ
+weJ
+tWu
+weJ
+weJ
+krU
+qCe
+cue
+edS
+cue
+iyM
+krU
+weJ
+weJ
+weJ
+fZo
+krU
+uoU
+iuU
+aMI
+krU
+hqK
+anT
+aMT
+qBt
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+anT
+lvw
+lvw
+lvw
+lvw
+lvw
+hIp
+kOl
+lvw
+iLU
+xxl
+dkn
+cQK
+ghR
+lvw
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (208,1,1) = {"
 tfJ
@@ -141042,6 +149266,7 @@ tfJ
 tfJ
 "}
 (209,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -141297,6 +149522,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+tXx
+tXx
+krU
+weJ
+weJ
+tWu
+weJ
+weJ
+krU
+llm
+ixD
+oqt
+iyM
+foH
+krU
+lxu
+mLx
+mLx
+mLx
+gBJ
+leR
+pMR
+vJk
+krU
+hqK
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qiD
+aMT
+aMT
+aMT
+aMT
+aMT
+fER
+lQW
+pYb
+oMP
+uey
+vMd
+vlN
+ccd
+lQY
+oOE
+nfO
+nrN
+scM
+lvw
+aMT
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> 9e7ef84da6 (Adds vents/scrubbers and fixes xenobio freezer fix for Corg (#4222)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (210,1,1) = {"
 tfJ
