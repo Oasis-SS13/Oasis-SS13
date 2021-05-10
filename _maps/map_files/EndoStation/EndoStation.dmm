@@ -5293,6 +5293,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/medical)
 "bAC" = (
@@ -5301,6 +5302,22 @@
 	name = "Common Channel";
 	pixel_x = -28;
 	pixel_y = 6
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"blL" = (
+/obj/machinery/modular_fabricator/autolathe,
+/obj/machinery/door/window/westleft{
+	base_state = "right";
+	dir = 1;
+	icon_state = "right";
+	name = "Cargo Window";
+	pixel_y = 1;
+	req_access_txt = "31"
+>>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/radio/intercom{
 	freerange = 1;
@@ -26852,8 +26869,15 @@
 	pixel_y = 22
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/brig)
 "hAP" = (
+=======
+/area/hallway/primary/fore)
+"htN" = (
+/obj/machinery/modular_fabricator/exosuit_fab,
+/obj/effect/turf_decal/bot,
+>>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -60221,7 +60245,13 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red{
+=======
+/obj/machinery/modular_fabricator/autolathe,
+/obj/machinery/camera/autoname,
+/obj/machinery/light{
+>>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -72126,6 +72156,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"ubn" = (
+/obj/machinery/modular_fabricator/exosuit_fab,
+/obj/effect/turf_decal/bot,
+>>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "ugp" = (
@@ -74050,10 +74088,35 @@
 	},
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/bridge)
 "uGM" = (
 /obj/machinery/power/apc{
 	areastring = "/area/crew_quarters/heads/captain/private";
+=======
+/area/security/brig)
+"uDs" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/white{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/white{
+	icon_state = "1-8"
+	},
+/turf/open/space/basic,
+/area/solar/port/fore)
+"uDy" = (
+/obj/machinery/modular_fabricator/autolathe,
+/obj/effect/turf_decal/stripes/box,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "research_shutters";
+	name = "research shutters"
+	},
+/obj/machinery/door/window/eastright{
+>>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 2;
 	name = "Captain's Quarters APC";
 	pixel_y = -24
