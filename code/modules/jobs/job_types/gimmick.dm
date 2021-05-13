@@ -14,6 +14,7 @@
 	paycheck_department = ACCOUNT_CIV
 
 	display_order = JOB_DISPLAY_ORDER_ASSISTANT
+	departments = DEPARTMENT_SERVICE
 
 /datum/job/gimmick/New()
 	. = ..()
@@ -67,6 +68,11 @@
 	access = list(ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_MAINT_TUNNELS)
 	gimmick = TRUE
+<<<<<<< HEAD
+=======
+	chat_color = "#929292"
+	departments = NONE		//being hobo is not a real job
+>>>>>>> 51373b362f (Ports station traits (#3842))
 
 /datum/outfit/job/gimmick/hobo
 	name = "Debtor"
@@ -100,6 +106,11 @@
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_MEDICAL)
 	paycheck = PAYCHECK_EASY
 	gimmick = TRUE
+<<<<<<< HEAD
+=======
+	chat_color = "#a2dfdc"
+	departments = DEPARTMENT_MEDICAL
+>>>>>>> 51373b362f (Ports station traits (#3842))
 
 /datum/outfit/job/gimmick/shrink //psychiatrist doesnt get much shit, but he has more access and a cushier paycheck
 	name = "Psychiatrist"

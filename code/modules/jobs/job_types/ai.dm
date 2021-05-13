@@ -14,6 +14,12 @@
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_SILICON
 	display_order = JOB_DISPLAY_ORDER_AI
+<<<<<<< HEAD
+=======
+	departments = DEPARTMENT_SILICON
+	random_spawns_possible = FALSE
+	allow_bureaucratic_error = FALSE
+>>>>>>> 51373b362f (Ports station traits (#3842))
 	var/do_special_check = TRUE
 
 /datum/job/ai/equip(mob/living/carbon/human/H, visualsOnly, announce, latejoin, datum/outfit/outfit_override, client/preference_source = null)

@@ -564,3 +564,31 @@
 	new /obj/item/storage/belt/soulstone/full/purified(src)
 	new /obj/item/sbeacondrop/constructshell(src)
 	new /obj/item/sbeacondrop/constructshell(src)
+<<<<<<< HEAD
+=======
+
+/obj/item/storage/box/syndie_kit/mimesabrekit
+	name = "Baguette blade bundle"
+	desc = "Provides you with a hardly noticable blade hidden inside a baguette disguise."
+
+/obj/item/storage/box/syndie_kit/mimesabrekit/PopulateContents()
+	new /obj/item/storage/belt/sabre/mime(src)
+
+/obj/item/storage/box/syndie_kit/imp_deathrattle
+	name = "deathrattle implant box"
+	desc = "Contains eight linked deathrattle implants."
+
+/obj/item/storage/box/syndie_kit/imp_deathrattle/PopulateContents()
+	new /obj/item/implanter(src)
+
+	var/datum/deathrattle_group/group = new
+
+	var/implants = list()
+	for(var/j in 1 to 8)
+		var/obj/item/implantcase/deathrattle/case = new (src)
+		implants += case.imp
+
+	for(var/i in implants)
+		group.register(i)
+	desc += " The implants are registered to the \"[group.name]\" group."
+>>>>>>> 51373b362f (Ports station traits (#3842))

@@ -353,7 +353,13 @@
 	color = RUNE_COLOR_SUMMON
 	for(var/mob/living/carbon/C in hearers(10, src))
 		C.Stun(350, ignore_canstun = TRUE)
+<<<<<<< HEAD
 	priority_announce("Figments of an elder god have been detected in your sector. Exercise extreme caution, and abide by the 'buddy system' at all times.","Central Command Higher Dimensional Affairs", 'sound/ai/spanomalies.ogg')
+=======
+	priority_announce("Figments of an elder god have been detected in your sector. Exercise extreme caution, and abide by the 'buddy system' at all times.","Central Command Higher Dimensional Affairs", ANNOUNCER_SPANOMALIES)
+	message_admins("A dangerous cluwne rune was invoked at [AREACOORD(src)][ADMIN_COORDJMP(src)]")
+	log_game("A dangerous cluwne rune was invoked at [AREACOORD(src)][ADMIN_COORDJMP(src)]")
+>>>>>>> 51373b362f (Ports station traits (#3842))
 	stoplag(315)
 	for(var/mob/living/carbon/human/H in invokers)
 		if(H.stat == DEAD)

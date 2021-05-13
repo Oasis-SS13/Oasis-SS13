@@ -2307,6 +2307,7 @@ datum/uplink_item/role_restricted/superior_honkrender
 	cost = 2
 	illegal_tech = FALSE
 
+<<<<<<< HEAD
 /datum/uplink_item/device_tools/tc_rod
 	name = "Telecrystal Fuel Rod"
 	desc = "This special fuel rod has eight material slots that can be inserted with telecrystals, \
@@ -2324,3 +2325,15 @@ datum/uplink_item/role_restricted/superior_honkrender
     player_minimum = 20
     cost = 18
     surplus = 15
+=======
+/datum/uplink_item/implants/deathrattle
+	name = "Box of Deathrattle Implants"
+	desc = "A collection of implants (and one reusable implanter) that should be injected into the team. When one of the team \
+	dies, all other implant holders recieve a mental message informing them of their teammates' name \
+	and the location of their death. Unlike most implants, these are designed to be implanted \
+	in any creature, biological or mechanical."
+	item = /obj/item/storage/box/syndie_kit/imp_deathrattle
+	cost = 4
+	surplus = 0
+	include_modes = list(/datum/game_mode/nuclear)
+>>>>>>> 51373b362f (Ports station traits (#3842))
