@@ -244,7 +244,11 @@
 	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
 	icon_state = "knight_green"
 	item_state = "knight_green"
+<<<<<<< HEAD
 	footstep = list()
+=======
+	move_sound = null
+>>>>>>> 4d312d4859 (fix (#4326))
 
 /obj/item/clothing/suit/armor/riot/knight/yellow
 	icon_state = "knight_yellow"
