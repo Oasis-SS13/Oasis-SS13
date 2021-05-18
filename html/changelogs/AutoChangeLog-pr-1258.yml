@@ -1,0 +1,4 @@
+author: PolyTheParrot-PR
+delete-after: true
+changes:
+  - bugfix: Rare case of special traitor equipment not spawning
