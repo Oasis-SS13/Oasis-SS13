@@ -1977,12 +1977,44 @@
 /obj/item/radio/intercom{
 	pixel_x = -26
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/hop)
 "aDO" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Science Maintenance";
 	req_access_txt = "47"
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/nuke_storage)
+"ayV" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
+"ayY" = (
+/obj/structure/chair,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating/airless,
+/area/science/test_area)
+"azd" = (
+/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 4
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -3047,6 +3079,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/science/misc_lab/range)
 "aUh" = (
 /obj/effect/landmark/start/station_engineer,
@@ -3055,6 +3088,18 @@
 "aUm" = (
 /obj/structure/closet/wardrobe/black,
 /obj/effect/decal/cleanable/cobweb,
+=======
+/area/engine/atmos)
+"aKy" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command/glass{
+	name = "Head of Security";
+	req_access_txt = "58";
+	security_level = 6
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aUp" = (
@@ -7821,6 +7866,30 @@
 /area/maintenance/department/engine)
 "ckx" = (
 /obj/effect/spawner/structure/window/reinforced,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/firedoor/window,
+/turf/open/floor/plating,
+/area/maintenance/starboard/secondary)
+"bSH" = (
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/turf/closed/wall/r_wall,
+/area/engine/atmos)
+"bSP" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"bTc" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/structure/mirror{
+	pixel_y = 29
+	},
+/turf/open/floor/carpet/purple,
+/area/crew_quarters/theatre)
+"bTd" = (
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
@@ -8951,7 +9020,16 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "czN" = (
@@ -10095,6 +10173,22 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"cAC" = (
+/obj/effect/landmark/start/cargo_technician,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
@@ -10198,10 +10292,26 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/central)
 "cUb" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
+=======
+/area/engine/atmos)
+"cDm" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen/red,
+/obj/item/stamp/rd,
+/obj/item/aicard,
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/hor)
+"cDp" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -14318,6 +14428,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/science/lab)
 "eeR" = (
@@ -14358,6 +14469,18 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/kitchen/coldroom)
+"dIv" = (
+/turf/closed/wall,
+/area/quartermaster/office)
+"dIy" = (
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple{
@@ -16165,9 +16288,16 @@
 	dir = 4;
 	id = "QMLoad2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plating,
 /area/quartermaster/storage)
 "eFD" = (
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"ehX" = (
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -18692,12 +18822,18 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "fpG" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/deputy,
 /obj/item/flashlight/seclite,
+=======
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
 "fpL" = (
@@ -18977,7 +19113,36 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/sign/poster/contraband/random{
+=======
+/turf/open/floor/carpet/orange,
+/area/quartermaster/qm)
+"eWn" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall10";
+	location = "hall9"
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/starboard)
+"eWI" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/matches,
+/obj/item/storage/fancy/candle_box,
+/obj/structure/sign/departments/holy{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -21133,6 +21298,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -21143,6 +21309,18 @@
 "fYx" = (
 /obj/structure/cable{
 	icon_state = "4-8"
+=======
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -21838,6 +22016,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/camera{
 	c_tag = "AI Chamber Door";
 	dir = 1;
@@ -21848,6 +22027,9 @@
 /area/ai_monitored/turret_protected/ai)
 "gii" = (
 /obj/effect/turf_decal/tile/red{
+=======
+/obj/structure/chair/office{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -21864,6 +22046,9 @@
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/hidden{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -22011,8 +22196,24 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
+=======
+/obj/effect/landmark/start/assistant,
+/obj/structure/window/reinforced/spawner{
+	dir = 4
+	},
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/carpet/green,
+/area/crew_quarters/bar)
+"fQp" = (
+/obj/structure/closet/secure_closet/medical2{
+	req_access = list(29)
+	},
+/obj/item/radio/intercom{
+	pixel_y = 24
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hor)
@@ -23012,7 +23213,34 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue{
+=======
+/turf/open/floor/plasteel,
+/area/maintenance/department/science)
+"gfo" = (
+/obj/machinery/nanite_program_hub,
+/turf/open/floor/circuit,
+/area/science/nanite)
+"gfy" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Beepsky! Powered by a potato and a shot of whiskey, and with a sturdier reinforced chassis, too.";
+	health = 45;
+	maxHealth = 45;
+	name = "Officer Beepsky"
+	},
+/turf/open/floor/plating,
+/area/security/brig)
+"gfB" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -24280,7 +24508,23 @@
 	dir = 1
 	},
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "1-2"
+=======
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"gxs" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/door/firedoor/border_only,
@@ -24559,8 +24803,18 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
+=======
+/obj/structure/table/glass,
+/obj/item/storage/box/bodybags,
+/obj/item/pen,
+/turf/open/floor/plasteel,
+/area/medical/cryo)
+"gAP" = (
+/obj/effect/turf_decal/tile/yellow{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -26789,9 +27043,15 @@
 /obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/starboard)
 "hAl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+=======
+/area/teleporter)
+"heZ" = (
+/obj/machinery/light{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -30528,6 +30788,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
@@ -30543,6 +30804,29 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+=======
+/obj/item/gps,
+/obj/item/gps,
+/obj/item/radio,
+/obj/item/radio,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness/recreation)
+"ifh" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"ifj" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -32080,8 +32364,19 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/door/firedoor/border_only{
+=======
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"iux" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -34080,9 +34375,37 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"iZU" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/bodybags,
+/obj/item/pen,
+/turf/open/floor/plasteel/dark,
+/area/medical/morgue)
+"iZV" = (
+/obj/effect/spawner/structure/window,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/hydroponics/garden)
+"iZW" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input,
+/turf/open/floor/engine/air,
+/area/engine/atmos)
+"iZX" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -35616,6 +35939,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/security/checkpoint/engineering)
 "kem" = (
 /obj/structure/table/wood/fancy,
@@ -35625,6 +35949,21 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/camera/autoname{
 	dir = 10
+=======
+/area/maintenance/fore)
+"jzx" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall11";
+	location = "hall10"
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
@@ -38381,8 +38720,24 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 8
+=======
+/turf/open/floor/carpet/blue,
+/area/crew_quarters/heads/hop)
+"khJ" = (
+/obj/machinery/power/smes,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/atmospherics_engine)
+"kih" = (
+/obj/machinery/door/airlock/external{
+	name = "Solar Panel Airlock";
+	req_access_txt = "10"
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -38832,8 +39187,17 @@
 /obj/item/tank/internals/emergency_oxygen{
 	pixel_x = 3
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/item/tank/internals/emergency_oxygen{
 	pixel_x = 3
+=======
+/turf/open/floor/noslip/white,
+/area/quartermaster/storage)
+"kna" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/item/clothing/mask/breath{
 	pixel_x = -3;
@@ -40977,7 +41341,11 @@
 /obj/item/radio/intercom{
 	pixel_y = 26
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -41579,6 +41947,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Engineering Maintenance Hatch";
 	req_access_txt = "10"
@@ -41590,6 +41959,14 @@
 /obj/item/flashlight/lamp/green{
 	pixel_x = 1;
 	pixel_y = 5
+=======
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit)
+"kZG" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/airalarm{
 	dir = 1;
@@ -42626,8 +43003,18 @@
 /obj/machinery/status_display/evac{
 	pixel_y = -32
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/chair/office/light{
 	dir = 1
+=======
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"lpe" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Brig Control";
+	req_access_txt = "3";
+	security_level = 6
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms)
@@ -45769,7 +46156,16 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/disposal/deliveryChute{
+=======
+/mob/living/simple_animal/bot/cleanbot,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"mcH" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/disposalpipe/segment{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/window/reinforced,
@@ -47522,6 +47918,7 @@
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/maintenance/port/fore)
 "nnI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -47537,6 +47934,16 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/securearea{
 	pixel_x = -32
+=======
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"mHb" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 1
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plating,
 /area/security/warden)
@@ -47809,6 +48216,22 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/heads/captain/private)
+"mPw" = (
+/mob/living/simple_animal/hostile/retaliate/goat{
+	name = "Pete"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -48535,8 +48958,18 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
+=======
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"mVY" = (
+/obj/machinery/door/airlock/security{
+	name = "Armory";
+	req_access_txt = "3";
+	security_level = 6
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -51672,6 +52105,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Maintenance Hatch";
@@ -51688,6 +52122,14 @@
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/security/courtroom)
+"nKq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/closet/secure_closet/engineering_electrical,
 /turf/open/floor/plasteel,
@@ -51700,8 +52142,18 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/obj/machinery/announcement_system,
+/turf/open/floor/plasteel/dark,
+/area/tcommsat/computer)
+"nKK" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
@@ -52127,11 +52579,23 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/power/apc{
 	areastring = "/area/hallway/secondary/entry";
 	dir = 4;
 	name = "Arrivals Hallway APC";
 	pixel_x = 24
+=======
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"nRi" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/secondary/entry)
@@ -55182,6 +55646,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Three"
 	},
@@ -55190,13 +55655,28 @@
 	icon_state = "doors";
 	name = "WARNING: EXTERNAL AIRLOCK";
 	pixel_x = 32
+=======
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plating,
 /area/security/processing)
 "pmI" = (
 /obj/effect/turf_decal/tile/yellow,
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/command{
+	name = "Head of Security";
+	req_access_txt = "58"
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/heads/hos)
+"oLJ" = (
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -60202,8 +60682,16 @@
 	id = "atmos";
 	name = "Atmospherics Blast Door"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+=======
+/mob/living/simple_animal/bot/secbot/pingsky,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"pYO" = (
+/obj/effect/turf_decal/tile/purple{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -60624,17 +61112,44 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/engine/gravity_generator)
 "qNO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel/dark/corner{
+=======
+/obj/machinery/door/airlock/highsecurity{
+	name = "Secure Tech Storage";
+	req_access_txt = "19;23"
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/storage)
+"qeH" = (
+/obj/effect/turf_decal/tile/red{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /area/engine/atmos)
@@ -62966,9 +63481,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/vending/cigarette,
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+=======
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/kitchen/coldroom)
+"qUk" = (
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 4
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
@@ -63224,7 +63749,13 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/blue,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "rEr" = (
@@ -65899,10 +66430,19 @@
 /area/ai_monitored/storage/satellite)
 "stt" = (
 /turf/closed/wall,
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /area/hallway/primary/fore)
 "stB" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
+=======
+/area/hydroponics/garden)
+"rPn" = (
+/obj/machinery/door/airlock/security{
+	name = "Armory";
+	req_access_txt = "3";
+	security_level = 6
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/machinery/power/apc{
 	areastring = "/area/security/warden";
@@ -67671,6 +68211,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/table,
 /turf/open/floor/carpet/purple,
 /area/crew_quarters/dorms)
@@ -67678,6 +68219,14 @@
 /obj/structure/table,
 /obj/item/storage/box/bodybags,
 /obj/item/pen,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "sRV" = (
@@ -68797,8 +69346,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/atmospherics_engine)
+"sFM" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science/research)
@@ -69577,7 +70141,26 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable/yellow{
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 	icon_state = "1-2"
+=======
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"sSq" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
@@ -74192,12 +74775,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "uHW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
+=======
+/turf/open/floor/plasteel/white,
+/area/security/prison)
+"uee" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -74209,9 +74800,19 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"uel" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/item/radio/intercom{
+	pixel_x = -26
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /turf/open/floor/plasteel,
 /area/science/storage)
@@ -76614,6 +77215,12 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"uGc" = (
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -77579,6 +78186,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 2
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs/auxiliary)
 "vFJ" = (
@@ -77587,6 +78195,12 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red{
+=======
+/turf/open/floor/circuit,
+/area/science/server)
+"uUn" = (
+/obj/machinery/computer/teleporter{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -85906,6 +86520,11 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
+=======
+/obj/effect/turf_decal/tile/purple,
+/obj/item/storage/toolbox/mechanical,
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
 "xQD" = (
@@ -86091,10 +86710,22 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"xpk" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -123052,6 +123683,7 @@ tfJ
 tfJ
 "}
 (139,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -123145,6 +123777,455 @@ eMs
 iHY
 xDV
 wpK
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+faf
+lCz
+nzP
+ezA
+kHQ
+kHQ
+gik
+kHQ
+kHQ
+kHQ
+kHQ
+gik
+kHQ
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+uLw
+bTe
+kMU
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+dEw
+ngb
+xXY
+dHO
+kDK
+xOK
+awU
+tpR
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aUr
+aMT
+aMT
+anT
+anT
+gGa
+olg
+nGb
+tKk
+lXw
+oji
+mgW
+sCx
+lXw
+lXw
+bSy
+bSy
+bSy
+qWX
+wuJ
+vCC
+uGg
+qIj
+jos
+lQC
+gqC
+sAT
+uGg
+shJ
+shJ
+izB
+lmQ
+xTD
+xTD
+bmU
+gbK
+eYh
+lXM
+vFv
+nxd
+tmM
+xUq
+cmo
+gmD
+gJG
+qcS
+laf
+ijm
+dNA
+aaD
+cMV
+uaJ
+nyG
+qka
+nyG
+ehY
+ehY
+dmv
+dmv
+ehY
+dmv
+dmv
+ehY
+ehY
+ehY
+ehY
+bhF
+vEa
+lAu
+xVx
+oKB
+oDa
+aBn
+boA
+qTR
+vDl
+sMa
+goa
+svB
+ntO
+tXY
+ugx
+sIf
+cyL
+tMU
+wKw
+woT
+lrD
+aOZ
+jNy
+fXG
+nQL
+ifh
+vEI
+xci
+suR
+eNt
+nSD
+cmV
+xzr
+mvC
+udt
+fhO
+pri
+rTY
+bOr
+fhO
+wYv
+fiS
+lHx
+uru
+hqE
+bHM
+rFj
+ujs
+bzg
+ewj
+uQC
+xXa
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(140,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+faf
+lCz
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+fRG
+gjq
+fRG
+nzP
+ezA
+kHQ
+kHQ
+gik
+kHQ
+kHQ
+sgO
+bTe
+kMU
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+sIx
+sIx
+mLv
+tqE
+pIv
+gyG
+sIx
+sIx
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aiM
+aMT
+aMT
+anT
+aMT
+agn
+dkK
+imy
+aMs
+lXw
+sGH
+uYo
+uKa
+hbk
+lXw
+pgG
+jjm
+mJo
+mJo
+wuJ
+mJo
+uGg
+uGg
+uGg
+uGg
+uGg
+uGg
+uGg
+xUk
+mJo
+ktc
+vRi
+wGS
+npu
+duF
+hmy
+mSH
+hmy
+hmy
+hmy
+nIH
+fNE
+kVl
+qcP
+qcP
+kVl
+teD
+eAa
+czZ
+jIm
+dea
+uaJ
+xhM
+lrx
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+ehY
+lrx
+cGE
+cPf
+odl
+xVx
+gTb
+hKX
+hAs
+boA
+aNL
+vDl
+sMa
+sMa
+sLr
+ntO
+tXY
+ygk
+aYT
+dDI
+tMU
+mra
+fnU
+uvF
+jIR
+mts
+fXG
+gxg
+jHj
+ods
+gEF
+gpF
+vBN
+nMz
+ydK
+xzr
+ucp
+wIa
+fhO
+fhO
+fhO
+tqh
+fhO
+kJF
+fjU
+xXa
+xXa
+xXa
+xXa
+xXa
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 ipP
 sFg
 jXu
@@ -124080,6 +125161,7 @@ tfJ
 tfJ
 "}
 (143,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -124335,6 +125417,263 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+anT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+anT
+gqE
+aMT
+aMT
+aMT
+gqE
+aMT
+aMT
+aMT
+vgb
+cKK
+cSR
+lXw
+lXw
+lXw
+lXw
+lXw
+aMT
+aVq
+aMT
+anT
+aMT
+anT
+aMT
+qiD
+aVq
+aMT
+ktc
+xUk
+xUk
+hOZ
+mJo
+wuJ
+ktc
+kmv
+dpG
+ipV
+duF
+mrs
+dde
+bFR
+gfy
+fwt
+nIH
+jrs
+qhk
+bBw
+nvY
+jrs
+kVl
+qYI
+bKk
+dHI
+jec
+uaJ
+bfH
+xhM
+nyG
+jza
+pzp
+gMB
+fsl
+fsl
+fsl
+gMB
+nfD
+jza
+ehY
+jza
+ehY
+xVx
+xWV
+bAm
+vAI
+srs
+qYI
+boA
+boA
+boA
+boA
+boA
+boA
+bAY
+boA
+dHV
+aYT
+gFl
+byP
+hKC
+pdL
+cyL
+kan
+aYT
+iQi
+cAp
+oPQ
+fhO
+jFA
+eSM
+aLU
+hxC
+cAe
+kCE
+voe
+tLg
+fhO
+tab
+fng
+uWM
+qVx
+rDi
+lsS
+pLJ
+pLJ
+pLJ
+pLJ
+pLJ
+kfy
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (144,1,1) = {"
 tfJ
@@ -124851,6 +126190,7 @@ tfJ
 tfJ
 "}
 (146,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -125620,6 +126960,777 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+uKT
+uKT
+uKT
+uKT
+uKT
+aMT
+kiV
+qBt
+hmy
+aMT
+miv
+aMT
+duF
+duF
+duF
+duF
+vgb
+mkA
+aBp
+vrV
+vrV
+xdF
+lbc
+vgb
+anT
+oXI
+dMz
+suN
+tFu
+qwN
+nNW
+oXI
+aOu
+aMT
+tTo
+tTo
+tTo
+tTo
+tTo
+tTo
+tTo
+jga
+cIn
+wsF
+nET
+rez
+pID
+fSU
+iYG
+xyq
+fyc
+imf
+aIf
+iFJ
+hdb
+xAZ
+xpJ
+qYI
+hGB
+pWt
+xvp
+cRb
+aTb
+jDB
+mcR
+tMI
+tMI
+tMI
+tMI
+ezV
+tMI
+tMI
+tMI
+tMI
+mcR
+tMI
+vjz
+tMI
+imU
+gWk
+tYz
+kfy
+bWV
+bWV
+bWV
+uqv
+mef
+fXM
+boA
+jkg
+gGT
+eJF
+kfy
+iSz
+vUC
+ubS
+fEe
+dIs
+qUb
+vUC
+rKO
+kna
+heZ
+kZG
+kZG
+rNz
+cHW
+fhO
+sag
+kfy
+dzL
+aGP
+avI
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aXM
+pLJ
+lOJ
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(147,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+uKT
+gvo
+ukY
+gaC
+uKT
+opr
+mwG
+anM
+duF
+duF
+lJO
+duF
+duF
+ptG
+imu
+bKJ
+vgb
+qMB
+tLk
+ubm
+ubm
+wYR
+lrP
+vgb
+aMT
+oXI
+xhX
+ipZ
+bqr
+ujg
+vZO
+oXI
+crF
+crF
+tTo
+wCB
+cnX
+jAu
+eKi
+mrc
+tTo
+hLv
+vvb
+vrZ
+dHi
+mEg
+vqG
+wqt
+kNB
+xyq
+ret
+qYX
+gnj
+pBZ
+pBZ
+qok
+kEQ
+qYI
+qYI
+mYq
+hqC
+hhp
+blv
+wuv
+nxh
+pfr
+wuv
+oRS
+wuv
+xji
+wuv
+wuv
+tVV
+vGk
+mkN
+oMo
+wuv
+crM
+wuv
+eGT
+vJF
+vJF
+vJF
+vJF
+vJF
+uHI
+mef
+fXM
+boA
+rEy
+aYy
+orS
+ntu
+nSl
+vUC
+vUr
+mPw
+nss
+bJK
+vUC
+fhO
+fhO
+fhO
+cLc
+iXm
+tvW
+fhO
+fhO
+sag
+kfy
+cIh
+ldj
+avI
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aXM
+pLJ
+lOJ
+aMT
+aMT
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(148,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+kiV
+aMT
+aMT
+qBt
+qBt
+qBt
+uKT
+cLm
+qch
+jRg
+nMU
+aMT
+pxR
+efG
+mnB
+mug
+oIZ
+gNj
+duF
+iLI
+pWb
+mSk
+vgb
+vgb
+lcm
+lcm
+ddE
+lcm
+lcm
+vgb
+aMT
+oXI
+htD
+lYr
+stF
+uyv
+jkd
+rPn
+sir
+sir
+mVY
+rOe
+fMf
+dri
+dNu
+tID
+tht
+kTY
+wod
+prS
+hmy
+hmy
+hmy
+hmy
+hmy
+duF
+lKk
+rSv
+smb
+nqX
+hSD
+uyN
+ezg
+qxJ
+qYI
+ddl
+mFB
+eWn
+tNG
+moS
+iDL
+iDL
+mpD
+gah
+lWS
+pLW
+lWS
+mpD
+iDL
+iDL
+iDL
+iDL
+qYI
+qYI
+vJF
+vJF
+vJF
+xaM
+vKd
+dQY
+vJF
+uHI
+iOp
+fXM
+boA
+boA
+boA
+boA
+kfy
+uyh
+vUC
+hhn
+hrc
+nss
+dpQ
+juC
+fhO
+tHN
+cKR
+fhO
+ibR
+jaX
+fhO
+pXR
+phw
+kfy
+llJ
+kaz
+avI
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aeV
+aXM
+oOs
+kfy
+anT
+anT
+anT
+anT
+aMT
+aMT
+aMT
+kiV
+kiV
+kiV
+kiV
+kiV
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (149,1,1) = {"
 tfJ
@@ -133846,6 +135957,7 @@ tfJ
 tfJ
 "}
 (181,1,1) = {"
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 tfJ
 tfJ
 cDQ
@@ -134358,6 +136470,520 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+anT
+aMT
+luA
+ivK
+ivK
+eVc
+oXu
+vhu
+tSz
+jdN
+aMT
+aMT
+aMT
+anT
+aMT
+aMT
+anT
+aMT
+jdN
+ivK
+ivK
+nzt
+ivK
+ivK
+jdN
+osX
+jdN
+uPp
+oIy
+wLQ
+vrc
+hzB
+igP
+aPr
+fVn
+rcJ
+maD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+maD
+aDH
+pVW
+lMt
+gtK
+aWM
+hfh
+hfh
+hfh
+hfh
+hfh
+hfh
+hfh
+jjI
+wSu
+wSu
+wSu
+rYy
+vQz
+vQz
+vrg
+vQz
+tij
+vXS
+hRF
+vXS
+tij
+oFY
+aLC
+mRi
+ukX
+tij
+ryR
+vWP
+qPy
+tij
+ppd
+xKM
+lzO
+edo
+iZU
+bfm
+jjI
+cOV
+xBm
+ttf
+cSs
+lAz
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(182,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+qBt
+anT
+anT
+anT
+luA
+ivK
+qmR
+mqG
+jdN
+jdN
+sVB
+jdN
+jdN
+jdN
+jdN
+ivy
+jdN
+jdN
+jdN
+jdN
+jdN
+ivK
+ivK
+nzt
+ivK
+ivK
+jdN
+osX
+jdN
+iGZ
+jjp
+koc
+eGI
+oOY
+lfx
+css
+fNW
+eVt
+maD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+maD
+gjM
+xPT
+nOl
+oEE
+aWM
+aMT
+cSs
+jxt
+xBm
+xBm
+xBm
+cOV
+mxu
+qKu
+qKu
+pRD
+htT
+cSs
+xBm
+tyZ
+mCX
+tij
+jis
+hnG
+qBg
+xtJ
+dLf
+hhY
+wSE
+gAP
+tij
+tij
+tij
+tij
+tij
+bfm
+bfm
+bfm
+bfm
+bfm
+cSs
+tyZ
+cSs
+xBm
+xBm
+cSs
+fRb
+anT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (183,1,1) = {"
 tfJ
@@ -134488,6 +137114,7 @@ wfR
 vLU
 sTS
 xEu
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 xmL
 vDn
 jzq
@@ -134872,6 +137499,415 @@ tfJ
 tfJ
 tfJ
 tfJ
+=======
+xJA
+sdz
+flk
+aWM
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aWM
+xJV
+xPT
+iIh
+aMZ
+aWM
+aMT
+cSs
+kuI
+kuI
+cSs
+cSs
+cSs
+cSs
+cSs
+cSs
+cSs
+jjI
+cSs
+xBm
+tyZ
+xBm
+tij
+vWL
+xXc
+xCb
+xAg
+jQK
+ycy
+vHq
+gcw
+tij
+aMT
+cSs
+eBp
+qKu
+ycE
+qKu
+qKu
+qKu
+qKu
+iog
+fZb
+cSs
+jxt
+xBm
+cSs
+fYv
+nCH
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+"}
+(184,1,1) = {"
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+jdN
+jdN
+jdN
+mqG
+jdN
+ivK
+rns
+lTv
+lTv
+oDn
+lTv
+lTv
+lTv
+pyy
+lTv
+tsP
+jdN
+jdN
+jdN
+mxr
+jdN
+jdN
+jdN
+wVG
+uXv
+wWs
+eis
+oCX
+hRa
+aWM
+rLn
+jzk
+gUM
+vlh
+oxs
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+oxs
+aBw
+tAc
+eeK
+gyY
+aWM
+aMT
+cSs
+xBm
+xBm
+cSs
+xBm
+xBm
+xBm
+xBm
+ggg
+cSs
+bHA
+cUF
+iog
+fZb
+xBm
+tij
+jKm
+mln
+csM
+gWu
+pJE
+mln
+xaL
+bdv
+tij
+aMT
+cSs
+jjI
+cSs
+cSs
+cSs
+nBH
+cSs
+cSs
+cSs
+cSs
+cSs
+nyS
+tUq
+iEk
+fYv
+anT
+kBD
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+aMT
+>>>>>>> edb1e0cb6d (Corg station bulk tweaks from feedback thread (#4342)):_maps/map_files/CorgStation/CorgStation.dmm
 "}
 (185,1,1) = {"
 tfJ
