@@ -27,12 +27,25 @@ GLOBAL_LIST_EMPTY(objectives)
 
 //Shared by few objective types
 /datum/objective/proc/admin_simple_target_pick(mob/admin)
+<<<<<<< HEAD
 	var/list/possible_targets = list("Free objective","Random")
+=======
+	var/list/possible_targets = list()
+	var/def_value
+>>>>>>> 3e57a874e6 (Fixes cmp.dm runtime (#4345))
 	for(var/datum/mind/possible_target in SSticker.minds)
 		if ((possible_target != src) && ishuman(possible_target.current))
 			possible_targets += possible_target.current
 
+<<<<<<< HEAD
 	var/mob/new_target = tgui_input_list(admin,"Select target:", "Objective target", sortNames(possible_targets))
+=======
+
+	if(target?.current)
+		def_value = target.current
+
+	var/mob/new_target = input(admin,"Select target:", "Objective target", def_value) as null|anything in (sortNames(possible_targets) | list("Free objective","Random"))
+>>>>>>> 3e57a874e6 (Fixes cmp.dm runtime (#4345))
 	if (!new_target)
 		return
 
