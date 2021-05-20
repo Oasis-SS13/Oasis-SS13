@@ -32,6 +32,7 @@
 	gold_core_spawnable = FRIENDLY_SPAWN
 	collar_type = "cat"
 	can_be_held = TRUE
+	worn_slot_flags = ITEM_SLOT_HEAD
 	held_state = "cat2"
 	mobsay_color = "#FFD586"
 
