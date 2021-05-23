@@ -3,8 +3,13 @@
 	id = "synth"
 	say_mod = "beep boops" //inherited from a user's real species
 	sexes = 0
+<<<<<<< HEAD
 	species_traits = list(NOTRANSSTING) //all of these + whatever we inherit from the real species
 	inherent_traits = list(TRAIT_NODISMEMBER,TRAIT_NOLIMBDISABLE,TRAIT_NOHUNGER,TRAIT_NOBREATH)
+=======
+	species_traits = list(NOTRANSSTING, NOZOMBIE, REVIVESBYHEALING, NOHUSK, NO_DNA_COPY) //all of these + whatever we inherit from the real species
+	inherent_traits = list(TRAIT_NODISMEMBER,TRAIT_NOLIMBDISABLE,TRAIT_NOHUNGER,TRAIT_NOBREATH, TRAIT_NOHUNGER, TRAIT_TOXIMMUNE, TRAIT_NOCRITDAMAGE)
+>>>>>>> 9f8c4fb8fb (Fixes a bug caused by shitcode (#4374))
 	inherent_biotypes = list(MOB_ROBOTIC, MOB_HUMANOID)
 	meat = null
 	damage_overlay_type = "synth"
