@@ -58,7 +58,11 @@
 		return 1
 	if(IsStun() || IsParalyzed())
 		return 1
+<<<<<<< HEAD
 	if(stat)
+=======
+	if(stat >= SOFT_CRIT)
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 		return 1
 	return 0
 

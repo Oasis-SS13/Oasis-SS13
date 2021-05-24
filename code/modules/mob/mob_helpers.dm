@@ -587,6 +587,15 @@
 	if(HAS_TRAIT(src, TRAIT_DISSECTED))
 		. += "<span class='notice'>This body has been dissected and analyzed. It is no longer worth experimenting on.</span><br>"
 
+<<<<<<< HEAD
+=======
+
+//Is the mob aware of their surroundings?
+/// Should be used in place of non-dead stat checks for mobs
+/mob/proc/is_conscious()
+	return stat == CONSCIOUS
+
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 // https://github.com/tgstation/tgstation/pull/44056
 // Used to make sure that a player has a valid job preference setup, used to knock players out of eligibility for anything if their prefs don't make sense.
 // A "valid job preference setup" in this situation means at least having one job set to low, or not having "return to lobby" enabled

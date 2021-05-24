@@ -971,7 +971,11 @@
 			admin_ticket_log(src, msg)
 
 /mob/living/carbon/human/MouseDrop_T(mob/living/target, mob/living/user)
+<<<<<<< HEAD
 	if(pulling != target || grab_state < GRAB_AGGRESSIVE || stat != CONSCIOUS || a_intent != INTENT_GRAB)
+=======
+	if(pulling != target || grab_state < GRAB_AGGRESSIVE || !is_conscious() || a_intent != INTENT_GRAB)
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 		return ..()
 
 	//If they dragged themselves and we're currently aggressively grabbing them try to piggyback
