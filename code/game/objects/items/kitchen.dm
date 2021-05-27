@@ -248,12 +248,12 @@
 			if (H.circumcised)
 				user << "<span class = 'notice'>[H] is already circumcised!</span>"
 				return
-			else
-				visible_message("<span class = 'notice'>[user] starts to circumcise [H]...</span>")
-				if (do_after(user, 90, H) && !H.circumcised)
-					visible_message("<span class = 'notice'>[user] successfully circumcises [H].</span>")
-					H.circumcised = TRUE
-					return
+		
+			visible_message("<span class = 'notice'>[user] starts to circumcise [H]...</span>")
+			if (do_after(user, 90, H) && !H.circumcised)
+				visible_message("<span class = 'notice'>[user] successfully circumcises [H].</span>")
+				H.circumcised = TRUE
+				return
 	return ..()
 
 /obj/item/kitchen/knife/circumcision/suicide_act(mob/user)
