@@ -244,7 +244,7 @@
 /obj/item/kitchen/knife/circumcision/attack(mob/living/carbon/M, mob/living/carbon/user)
 	if (istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-		if (user.a_intent == INTENT_HELP && H.gender == MALE)
+		if (user.a_intent == INTENT_HELP && user.zone_selected == BODY_ZONE_PRECISE_GROIN && H.gender == MALE)
 			if (H.circumcised)
 				user << "<span class = 'notice'>[H] is already circumcised!</span>"
 				return
@@ -254,12 +254,7 @@
 					visible_message("<span class = 'notice'>[user] successfully circumcises [H].</span>")
 					H.circumcised = TRUE
 					return
-				else
-					return ..()
-		else
-			return ..()
-	else
-		return ..()
+	return ..()
 
 /obj/item/kitchen/knife/circumcision/suicide_act(mob/user)
 	if (user.gender == MALE)
