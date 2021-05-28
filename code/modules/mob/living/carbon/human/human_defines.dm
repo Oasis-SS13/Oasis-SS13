@@ -40,6 +40,7 @@
 	var/obj/item/s_store = null
 
 	var/hygiene = HYGIENE_LEVEL_NORMAL
+	var/circumcised = FALSE
 
 	var/special_voice = "" // For changing our voice. Used by a symptom.
 
