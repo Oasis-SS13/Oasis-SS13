@@ -113,9 +113,21 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(check_emote(original_message, forced) || !can_speak_basic(original_message, ignore_spam, forced))
 		return
 
+<<<<<<< HEAD
 	if(in_critical)
 		if(!(crit_allowed_modes[message_mode]))
 			return
+=======
+	if(in_critical) //There are cheaper ways to do this, but they're less flexible, and this isn't ran all that often
+		var/end = TRUE
+		for(var/index in message_mods)
+			if(crit_allowed_modes[index])
+				end = FALSE
+				break
+		if(end)
+			message_mods += MODE_WHISPER // forces people in crit to whisper if they can't do anything else
+
+>>>>>>> 4af7df868d (Reworks Soft Crit (#2997))
 	else if(stat == UNCONSCIOUS)
 		if(!(unconscious_allowed_modes[message_mode]))
 			return
