@@ -184,11 +184,14 @@
 /// Only called if ruleset is flagged as HIGHLANDER_RULESET
 /datum/dynamic_ruleset/proc/round_result()
 
+<<<<<<< HEAD
 /// Checks if round is finished, return true to end the round.
 /// Only called if ruleset is flagged as HIGHLANDER_RULESET
 /datum/dynamic_ruleset/proc/check_finished()
 	return FALSE
 
+=======
+>>>>>>> c6ff95949a (A victory for revolutionaries will no longer end the round on dynamic, instead no new security and command will be allowed to join (tg#55956) (#3966))
 //////////////////////////////////////////////
 //                                          //
 //           ROUNDSTART RULESETS            //
