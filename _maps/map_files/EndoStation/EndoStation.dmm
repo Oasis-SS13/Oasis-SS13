@@ -6758,8 +6758,19 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /turf/open/floor/plasteel{
 	heat_capacity = 1e+006
+=======
+/obj/machinery/holopad,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"bEI" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+>>>>>>> 85fb70c769 (i did a stoopid (#4328)):_maps/map_files/CorgStation/CorgStation.dmm
 	},
 /area/maintenance/port/aft)
 "bUN" = (
@@ -9117,7 +9128,11 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/effect/turf_decal/tile/red{
+=======
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+>>>>>>> 85fb70c769 (i did a stoopid (#4328)):_maps/map_files/CorgStation/CorgStation.dmm
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/yellow{
@@ -38135,6 +38150,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD:_maps/map_files/EndoStation/EndoStation.dmm
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -38166,6 +38182,17 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+>>>>>>> 85fb70c769 (i did a stoopid (#4328)):_maps/map_files/CorgStation/CorgStation.dmm
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "kLZ" = (
