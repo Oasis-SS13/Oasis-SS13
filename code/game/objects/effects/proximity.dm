@@ -107,6 +107,11 @@
 		return INITIALIZE_HINT_QDEL
 
 /obj/effect/abstract/proximity_checker/Destroy()
+<<<<<<< HEAD
+=======
+	if(monitor.checkers)
+		monitor.checkers -= src
+>>>>>>> 928ff31329 (Fixes proximity monitor runtime (#4319))
 	monitor = null
 	return ..()
 
