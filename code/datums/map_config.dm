@@ -25,6 +25,7 @@
 	var/minetype = "lavaland"
 
 	var/allow_custom_shuttles = TRUE
+	var/allow_night_lighting = TRUE
 	var/shuttles = list(
 		"cargo" = "cargo_box",
 		"ferry" = "ferry_fancy",
@@ -135,6 +136,8 @@
 		default_job_faction = json["default_job_faction"]
 
 	allow_custom_shuttles = json["allow_custom_shuttles"] != FALSE
+
+	allow_night_lighting = json["allow_night_lighting"] != FALSE
 
 	defaulted = FALSE
 	return TRUE
