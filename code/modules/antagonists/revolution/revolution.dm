@@ -326,6 +326,104 @@
 	ex_headrevs = get_antag_minds(/datum/antagonist/rev/head, TRUE)
 	ex_revs = get_antag_minds(/datum/antagonist/rev, TRUE)
 
+<<<<<<< HEAD
+=======
+/// Checks if revs have won
+/datum/team/revolution/proc/check_rev_victory()
+	for(var/datum/objective/mutiny/objective in objectives)
+		if(!(objective.check_completion()))
+			return FALSE
+	return TRUE
+
+/// Checks if heads have won
+/datum/team/revolution/proc/check_heads_victory()
+	for(var/datum/mind/rev_mind in head_revolutionaries())
+		var/turf/rev_turf = get_turf(rev_mind.current)
+		if(!considered_afk(rev_mind) && considered_alive(rev_mind) && is_station_level(rev_turf.z))
+			if(ishuman(rev_mind.current))
+				return FALSE
+	return TRUE
+
+/// Updates the state of the world depending on if revs won or loss.
+/// Returns who won, at which case this method should no longer be called.
+/// If revs_win_injection_amount is passed, then that amount of threat will be added if the revs win.
+/datum/team/revolution/proc/process_victory(revs_win_injection_amount)
+	if (check_rev_victory())
+		. = REVOLUTION_VICTORY
+	else if (check_heads_victory())
+		. = STATION_VICTORY
+	else
+		return
+
+	SSshuttle.clearHostileEnvironment(src)
+	save_members()
+
+	// Remove everyone as a revolutionary
+	for (var/_rev_mind in members)
+		var/datum/mind/rev_mind = _rev_mind
+		if (rev_mind.has_antag_datum(/datum/antagonist/rev))
+			var/datum/antagonist/rev/rev_antag = rev_mind.has_antag_datum(/datum/antagonist/rev)
+			rev_antag.remove_revolutionary(FALSE, . == STATION_VICTORY ? DECONVERTER_STATION_WIN : DECONVERTER_REVS_WIN)
+			LAZYADD(rev_mind.special_statuses, "<span class='bad'>Former [(rev_mind in ex_headrevs) ? "head revolutionary" : "revolutionary"]</span>")
+
+	if (. == STATION_VICTORY)
+		// If the revolution was quelled, make rev heads unable to be revived through pods
+		for (var/_rev_head_mind in ex_revs)
+			var/datum/mind/rev_head_mind = _rev_head_mind
+			var/mob/living/carbon/rev_head_body = rev_head_mind.current
+			if(istype(rev_head_body) && rev_head_body.stat == DEAD)
+				rev_head_body.makeUncloneable()
+
+		priority_announce("It appears the mutiny has been quelled. Please return yourself and your incapacitated colleagues to work. \
+		We have remotely blacklisted the head revolutionaries in your medical records to prevent accidental revival.", null, SSstation.announcer.get_rand_report_sound(), null, "Central Command Loyalty Monitoring Division")
+	else
+		for (var/_player in GLOB.player_list)
+			var/mob/player = _player
+			var/datum/mind/mind = player.mind
+
+			if (isnull(mind))
+				continue
+
+			if (!(mind.assigned_role in GLOB.command_positions + GLOB.security_positions))
+				continue
+
+			var/mob/living/carbon/target_body = mind.current
+
+			mind.add_antag_datum(/datum/antagonist/revolution_enemy)
+
+			if (!istype(target_body))
+				continue
+
+			if (target_body.stat == DEAD)
+				target_body.makeUncloneable()
+			else
+				mind.announce_objectives()
+
+		for (var/job_name in GLOB.command_positions + GLOB.security_positions)
+			var/datum/job/job = SSjob.GetJob(job_name)
+			job.allow_bureaucratic_error = FALSE
+			job.total_positions = 0
+
+		if (revs_win_injection_amount)
+			var/datum/game_mode/dynamic/dynamic = SSticker.mode
+			dynamic.create_threat(revs_win_injection_amount)
+			dynamic.threat_log += "[worldtime2text()]: Revolution victory. Added [revs_win_injection_amount] threat."
+
+		priority_announce("A recent assessment of your station has marked your station as a severe risk area for high ranking Nanotrasen officials. \
+		For the safety of our staff, we have blacklisted your station for new employment of security and command. \
+		[pick(world.file2list("strings/anti_union_propaganda.txt"))]", null, SSstation.announcer.get_rand_report_sound(), null, "Central Command Loyalty Monitoring Division")
+		addtimer(CALLBACK(SSshuttle.emergency, /obj/docking_port/mobile/emergency.proc/request, null, 1), 50)
+
+/// Mutates the ticker to report that the revs have won
+/datum/team/revolution/proc/round_result(finished)
+	if (finished == REVOLUTION_VICTORY)
+		SSticker.mode_result = "win - heads killed"
+		SSticker.news_report = REVS_WIN
+	else if (finished == STATION_VICTORY)
+		SSticker.mode_result = "loss - rev heads killed"
+		SSticker.news_report = REVS_LOSE
+
+>>>>>>> 51373b362f (Ports station traits (#3842))
 /datum/team/revolution/roundend_report()
 	if(!members.len && !ex_headrevs.len)
 		return

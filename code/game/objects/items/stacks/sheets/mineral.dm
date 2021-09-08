@@ -368,6 +368,7 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 	recipes = GLOB.bananium_recipes
 	. = ..()
 
+<<<<<<< HEAD
 /obj/item/stack/sheet/mineral/bananium/fifty
 	amount = 50
 
@@ -377,6 +378,8 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 /obj/item/stack/sheet/mineral/bananium/ten
 	amount = 10
 
+=======
+>>>>>>> 51373b362f (Ports station traits (#3842))
 /obj/item/stack/sheet/mineral/bananium/five
 	amount = 5
 

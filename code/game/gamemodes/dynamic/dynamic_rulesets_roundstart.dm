@@ -415,6 +415,7 @@
 	if(!revolution)
 		log_game("DYNAMIC: Something went horrifically wrong with [name] - and the antag datum could not be created. Notify coders.")
 		return
+<<<<<<< HEAD
 	if(check_rev_victory())
 		finished = REVOLUTION_VICTORY
 		return RULESET_STOP_PROCESSING
@@ -436,6 +437,10 @@
 		priority_announce("It appears the mutiny has been quelled. Please return yourself and your incapacitated colleagues to work. \
 			We have remotely blacklisted the head revolutionaries in your medical records to prevent accidental revival.", null, 'sound/ai/attention.ogg', null, "Central Command Loyalty Monitoring Division")
 		return RULESET_STOP_PROCESSING
+=======
+	finished = winner
+	return RULESET_STOP_PROCESSING
+>>>>>>> 51373b362f (Ports station traits (#3842))
 
 /// Checks for revhead loss conditions and other antag datums.
 /datum/dynamic_ruleset/roundstart/revs/proc/check_eligible(var/datum/mind/M)
