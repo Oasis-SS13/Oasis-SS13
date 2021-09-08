@@ -28806,11 +28806,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
-"bCS" = (
-/obj/structure/table,
-/obj/item/surgicaldrill,
-/turf/open/floor/plasteel/white,
-/area/medical/medbay/central)
 "bCT" = (
 /obj/machinery/newscaster{
 	pixel_x = -30
@@ -31240,24 +31235,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
-"bKM" = (
-/obj/structure/table,
-/obj/item/book/manual/wiki/medicine,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/machinery/airalarm{
-	pixel_y = 24
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 10
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/storage)
 "bKN" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -45207,6 +45184,25 @@
 /obj/effect/landmark/start/botanist,
 /turf/open/floor/plasteel,
 /area/hydroponics)
+"dXb" = (
+/obj/structure/table,
+/obj/item/book/manual/wiki/medicine,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/machinery/airalarm{
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/item/glove_box,
+/turf/open/floor/plasteel/white,
+/area/medical/storage)
 "dYq" = (
 /turf/closed/wall,
 /area/science/nanite)
@@ -46546,6 +46542,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
+"fGK" = (
+/obj/machinery/anesthetic_machine,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "fGN" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -50858,6 +50858,14 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"lan" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "laC" = (
 /obj/structure/chair/stool{
 	pixel_y = 8
@@ -52129,6 +52137,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"mxx" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "mxY" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -54531,7 +54546,9 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "pIP" = (
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
@@ -56749,7 +56766,9 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "ssh" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/south{
+	pixel_y = -24
+	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
@@ -59549,6 +59568,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
+"vKq" = (
+/obj/structure/table,
+/obj/item/surgicaldrill,
+/obj/item/glove_box,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "vKs" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -97320,7 +97345,7 @@ bAp
 ctr
 bfG
 bDW
-bhh
+fGK
 bDD
 bFJ
 bof
@@ -97577,7 +97602,7 @@ clk
 bAp
 bfG
 eQq
-bhh
+mxx
 cuy
 bFF
 cvl
@@ -97834,7 +97859,7 @@ clm
 cts
 bfG
 bBe
-bCS
+vKq
 bDE
 bFK
 bof
@@ -98091,7 +98116,7 @@ amB
 bAp
 bfG
 bDW
-bhh
+lan
 cuF
 cve
 bof
@@ -98348,7 +98373,7 @@ bAp
 bAp
 bfG
 eQq
-bhh
+fGK
 bGR
 bIj
 bof
@@ -100408,7 +100433,7 @@ cug
 bGV
 sha
 bRO
-bKM
+dXb
 cvT
 cwc
 bOn
