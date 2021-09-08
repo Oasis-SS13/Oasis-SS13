@@ -1994,3 +1994,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 		else
 			custom_names[name_id] = sanitized_name
+
+/// Handles adding and removing donator items from clients
+/datum/preferences/proc/handle_donator_items()
+	var/datum/loadout_category/DLC = GLOB.loadout_categories["Donator"] // stands for donator loadout category but the other def for DLC works too xD
+	if(!LAZYLEN(GLOB.patrons) || !CONFIG_GET(flag/donator_items)) // donator items are only accesibile by servers with a patreon
+		return
+	if(IS_PATRON(parent.ckey))
+		for(var/gear_id in DLC.gear)
+			var/datum/gear/AG = DLC.gear[gear_id]
+			if(AG.id in purchased_gear)
+				continue
+			purchased_gear += AG.id
+			AG.purchase(parent)
+		save_preferences()
+	else if(purchased_gear.len || equipped_gear.len)
+		for(var/gear_id in DLC.gear)
+			var/datum/gear/RG = DLC.gear[gear_id]
+			equipped_gear -= RG.id
+			purchased_gear -= RG.id
+		save_preferences()
