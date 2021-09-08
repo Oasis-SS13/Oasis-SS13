@@ -31,7 +31,8 @@
 	mobsay_color = "#82AF84"
 	var/list/ratdisease = list()
 	can_be_held = TRUE
-	held_state = "mouse_gray"
+	worn_slot_flags = ITEM_SLOT_HEAD
+
 
 /mob/living/simple_animal/mouse/Initialize()
 	. = ..()
@@ -41,8 +42,14 @@
 	icon_state = "mouse_[body_color]"
 	icon_living = "mouse_[body_color]"
 	icon_dead = "mouse_[body_color]_dead"
+<<<<<<< HEAD
 	if(prob(40))
 		var/datum/disease/advance/R = new /datum/disease/advance/random(rand(2, 4))
+=======
+	held_state = "mouse_[body_color]"
+	if(prob(75))
+		var/datum/disease/advance/R = new /datum/disease/advance/random(rand(3, 6), 9, rand(3,4))
+>>>>>>> d1e066b6ff (Pethats. (#4316))
 		ratdisease += R
 
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE //make mice see in the dark
