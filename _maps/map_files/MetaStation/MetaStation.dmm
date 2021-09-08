@@ -74541,8 +74541,7 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
 "cQG" = (
-/obj/item/storage/book/bible,
-/obj/structure/table/wood,
+/obj/structure/altar_of_gods,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
 "cQH" = (
@@ -84441,6 +84440,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
+"ujB" = (
+/obj/structure/table/wood,
+/obj/item/storage/book/bible,
+/turf/open/floor/plasteel/dark,
+/area/chapel/main)
 "ujJ" = (
 /obj/machinery/door/airlock/external{
 	req_one_access_txt = "13,8"
@@ -108859,7 +108863,7 @@ cOO
 cPo
 cPM
 cQi
-cQF
+ujB
 cOP
 cRp
 cRL
