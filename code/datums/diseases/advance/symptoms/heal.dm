@@ -133,8 +133,14 @@
 
 /datum/symptom/heal/coma/proc/coma(mob/living/M)
 	if(deathgasp)
+<<<<<<< HEAD
 		M.emote("deathgasp")
 	M.fakedeath("regenerative_coma")
+=======
+		M.fakedeath(TRAIT_REGEN_COMA)
+	else
+		M.Unconscious(300, TRUE, TRUE)
+>>>>>>> 9307cf7ca6 (Fixes Mismatches FakeDeath Flags for RegenComa (#4065))
 	M.update_stat()
 	M.update_mobility()
 	addtimer(CALLBACK(src, .proc/uncoma, M), 300)
@@ -143,7 +149,14 @@
 	if(!active_coma)
 		return
 	active_coma = FALSE
+<<<<<<< HEAD
 	M.cure_fakedeath("regenerative_coma")
+=======
+	if(deathgasp)
+		M.cure_fakedeath(TRAIT_REGEN_COMA)
+	else
+		M.SetUnconscious(0)
+>>>>>>> 9307cf7ca6 (Fixes Mismatches FakeDeath Flags for RegenComa (#4065))
 	M.update_stat()
 	M.update_mobility()
 
