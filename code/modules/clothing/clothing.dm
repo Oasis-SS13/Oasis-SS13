@@ -68,7 +68,7 @@
 	foodtype = CLOTH
 
 /obj/item/clothing/attack(mob/M, mob/user, def_zone)
-	if(user.a_intent != INTENT_HARM && ismoth(M))
+	if(user.a_intent != INTENT_HARM && ismoth(M) && !(clothing_flags & NOTCONSUMABLE))
 		var/obj/item/reagent_containers/food/snacks/clothing/clothing_as_food = new
 		clothing_as_food.name = name
 		if(clothing_as_food.attack(M, user, def_zone))
@@ -330,3 +330,22 @@ BLIND     // can't see anything
 		deconstruct(FALSE)
 	else
 		..()
+<<<<<<< HEAD
+=======
+
+/obj/item/clothing/get_armor_rating(d_type, mob/wearer)
+	. = ..()
+	if(high_pressure_multiplier == 1)
+		return
+	var/turf/T = get_turf(wearer)
+	if(!T || !(d_type in high_pressure_multiplier_types))
+		return
+	if(!lavaland_equipment_pressure_check(T))
+		. *= high_pressure_multiplier
+
+#undef SENSORS_OFF
+#undef SENSORS_BINARY
+#undef SENSORS_VITALS
+#undef SENSORS_TRACKING
+#undef SENSOR_CHANGE_DELAY
+>>>>>>> 3618646e5b (fix (#4300))
