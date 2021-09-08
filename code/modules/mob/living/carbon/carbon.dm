@@ -100,7 +100,11 @@
 
 //Throwing stuff
 /mob/living/carbon/proc/toggle_throw_mode()
+<<<<<<< HEAD
 	if(stat)
+=======
+	if(stat >= SOFT_CRIT)
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 		return
 	if(in_throw_mode)
 		throw_mode_off()
@@ -638,7 +642,7 @@
 	if(health <= crit_threshold)
 		var/severity = 0
 		switch(health)
-			if(-20 to -10)
+			if(-20 to 0)
 				severity = 1
 			if(-30 to -20)
 				severity = 2
@@ -769,7 +773,16 @@
 				REMOVE_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
 		else
 			if(health <= crit_threshold && !HAS_TRAIT(src, TRAIT_NOSOFTCRIT))
+<<<<<<< HEAD
 				stat = SOFT_CRIT
+=======
+				// Slower glide movement handled in update_mobility()
+				//Knockdown at the start of critical status.
+				if(stat != SOFT_CRIT)
+					Knockdown(40, TRUE, TRUE)
+				set_stat(SOFT_CRIT)
+				stuttering = 10
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 			else
 				stat = CONSCIOUS
 			adjust_blindness(-1)
@@ -779,6 +792,44 @@
 	update_health_hud()
 	med_hud_set_status()
 
+<<<<<<< HEAD
+=======
+/// Allows mobs to slowly walk in crit for a short time
+/mob/living/carbon/proc/softcrit_damage()
+	if(stat == SOFT_CRIT)
+		var/duration = 0
+		switch(health)
+			if(HEALTH_THRESHOLD_FULLCRIT to -30)
+				if(prob(25 * crit_weight))
+					duration = 60
+
+				if(prob(30 * crit_weight))
+					INVOKE_ASYNC(src, /mob.proc/emote, "gasp")
+			if(-30 to -20)
+				if(prob(20 * crit_weight))
+					duration = 60
+
+				if(prob(25 * crit_weight))
+					INVOKE_ASYNC(src, /mob.proc/emote, "gasp")
+			if(-20 to -10)
+				if(prob(15 * crit_weight))
+					duration = 40
+
+				if(prob(20 * crit_weight))
+					INVOKE_ASYNC(src, /mob.proc/emote, "cough")
+			if(-10 to HEALTH_THRESHOLD_CRIT)
+				if(prob(15 * crit_weight))
+					duration = 20
+
+				if(prob(20 * crit_weight))
+					INVOKE_ASYNC(src, /mob.proc/emote, "cough")
+		if(duration)
+			crit_weight = initial(crit_weight) // reset our crit chance multiplier
+			AdjustKnockdown(rand(duration, duration * 2), ignore_canstun = TRUE)
+		else
+			crit_weight += 0.2
+
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 //called when we get cuffed/uncuffed
 /mob/living/carbon/proc/update_handcuffed()
 	if(handcuffed)

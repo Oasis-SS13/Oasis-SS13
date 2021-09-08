@@ -94,6 +94,11 @@
 
 				adjust_hygiene(hygiene_loss)
 
+<<<<<<< HEAD
+=======
+		if(InCritical())
+			softcrit_damage()
+>>>>>>> 31fa0d0d10 (Reworks reworked softcrit. (#4372))
 		dna.species.spec_life(src) // for mutantraces
 
 	//Update our name based on whether our face is obscured/disfigured
